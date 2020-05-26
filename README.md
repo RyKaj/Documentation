@@ -1,2 +1,2 @@
 
-[Infrastructure Architecture](./InfrastructureArchitecture/ReadMe.md)
+[Infrastructure Architecture](.blob/master/InfrastructureArchitecture/ReadMe.md)
