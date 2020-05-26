@@ -5,7 +5,7 @@
 -   [Monolithic Architecture](Monolithic-Architecture.md)
 
 -   Cloud
-    -   [Architecture](Cloud%20-%20Architecture.md)     
+    -   [Cloud Architecture](Cloud%20-%20Architecture.md)     
     -   [Cloud Computing Overview](Cloud-Computing-Overview.md)    
     -   [Cloud Design Patterns](Cloud-Design-Patterns.md)
 
