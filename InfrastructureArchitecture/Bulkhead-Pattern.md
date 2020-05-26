@@ -1,11 +1,4 @@
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Bulkhead Pattern
 ============================================
@@ -79,7 +72,6 @@ Service B and C are not affected and can continue working without
 interruption.
 
 ![](attachments/463533301/463533299.png)
-.confluence-thumbnail .confluence-content-image-border height="150"}
 
 The next diagram shows multiple clients calling a single service. Each
 client is assigned a separate service instance. Client 1 has made too
@@ -88,7 +80,6 @@ instance is isolated from the others, the other clients can continue
 making calls.
 
 ![](attachments/463533301/463533300.png)
-.confluence-content-image-border height="150"}
 
 Issues and Considerations
 -------------------------
@@ -135,10 +126,5 @@ This pattern may not be suitable when:
 -   Less efficient use of resources may not be acceptable in the
     project.
 -   The added complexity is not necessary
-
-
-
- 
-
 
 
