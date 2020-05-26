@@ -38,7 +38,7 @@ Richardson***](https://www.chrisrichardson.net/)  or
 Adopting  [**Microservices at Netflix: Lessons for Architectural
 Design**](https://microservices.io/patterns/microservices.html)
  by  [**Tony
-Mauro**](https://www.nginx.com/people/tony-mauro/) .
+Mauro**](https://www.nginx.com/people/tony-mauro/).
 There are also some great talks e.g.  [**Microservices Patterns and
 Antipatterns**](https://www.youtube.com/watch?v=RsyOkifmamI)
  by  [***Stefan
@@ -47,7 +47,7 @@ Tilkov***](https://www.innoq.com/en/staff/stefan-tilkov/)
 Microservices**](https://www.youtube.com/watch?v=X0tjziAQfNQ)
  by  **David Schmitz**,  [**Principles of
 Microservices**](https://www.youtube.com/watch?v=PFQnNFe27kU)
- by  [***Sam Newman***](https://samnewman.io/) .
+ by  [***Sam Newman***](https://samnewman.io/).
 
 1. Domain Driven Design
 -----------------------
@@ -59,7 +59,7 @@ tightly coupled Microservices which will have all the disadvantages of a
 Monolith and all the complexities of Microservices aka  **Distributed
 Monolith**. Fortunately, there is already a Solution which can greatly
 help in this regard.  [***Eric
-Evans***](https://twitter.com/ericevans0?lang=en) , a
+Evans***](https://twitter.com/ericevans0?lang=en), a
 Software Engineering Consultant back then, had encountered recurring
 issues regarding software complexity in Business Applications across
 different companies and has summarized his valuable insight in the book
@@ -85,7 +85,7 @@ Evans***](https://twitter.com/ericevans0?lang=en)  or a
 bit modern DDD book  [**Implementing Domain Driven
 Design**](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/ref=sr_1_3?keywords=Domain+driven+design&qid=1574198067&s=books&sr=1-3)
 (Red Book) of  [***Vaughn
-Vernon***](https://vaughnvernon.co/) . If a large system
+Vernon***](https://vaughnvernon.co/). If a large system
 is divided into Core Domain and Sub-domains and the Core Domain and
 Sub-domains are then mapped to one or more Microservices, then we will
 get the ideal loosely coupled Microservices.

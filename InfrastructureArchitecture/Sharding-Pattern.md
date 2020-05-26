@@ -141,7 +141,7 @@ shard key. Multiple tenants might share the same shard, but the data for
 a single tenant won\'t be spread across multiple shards. The figure
 illustrates sharding tenant data based on tenant IDs.
 
-![](attachments/463533404/463533401.png){.confluence-embedded-image
+![](attachments/463533404/463533401.png)
 .confluence-thumbnail .confluence-content-image-border height="150"}
 
 The mapping between the shard key and the physical storage can be based
@@ -168,7 +168,7 @@ performing a large number of point queries (queries that return a single
 data item). The next figure illustrates storing sequential sets (ranges)
 of data in shard.
 
-![](attachments/463533404/463533402.png){.confluence-embedded-image
+![](attachments/463533404/463533402.png)
 .confluence-thumbnail .confluence-content-image-border height="150"}
 
 In this example, the shard key is a composite key containing the order
@@ -192,7 +192,7 @@ possibly by introducing some random element into the computation. The
 next figure illustrates sharding tenant data based on a hash of tenant
 IDs.
 
-![](attachments/463533404/463533403.png){.confluence-embedded-image
+![](attachments/463533404/463533403.png)
 .confluence-thumbnail .confluence-content-image-border height="150"}
 
 To understand the advantage of the Hash strategy over other sharding

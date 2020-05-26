@@ -75,7 +75,7 @@ store for only a specific period, and with specific restrictions on
 access permissions, as shown in the figure. After the specified period,
 the key becomes invalid and won\'t allow access to the resource.
 
-![](attachments/463533414/463533413.png){.confluence-embedded-image
+![](attachments/463533414/463533413.png)
 .confluence-thumbnail .confluence-content-image-border height="150"}
 
 It\'s also possible to configure a key that has other dependencies, such

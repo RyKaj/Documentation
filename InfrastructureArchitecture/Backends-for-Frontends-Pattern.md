@@ -43,7 +43,7 @@ in the development process. Conflicting update requirements, and the
 need to keep the service working for both frontends, can result in
 spending a lot of effort on a single deployable resource.
 
-![](attachments/463533297/463533295.png){.confluence-embedded-image
+![](attachments/463533297/463533295.png)
 .confluence-thumbnail .confluence-content-image-border height="150"}
 
 As the development activity focuses on the backend service, a separate
@@ -62,7 +62,7 @@ performance of each backend to best match the needs of the frontend
 environment, without worrying about affecting other frontend
 experiences.
 
-![](attachments/463533297/463533296.png){.confluence-embedded-image
+![](attachments/463533297/463533296.png)
 .confluence-thumbnail .confluence-content-image-border height="150"}
 
 Because each backend is specific to one interface, it can be optimized

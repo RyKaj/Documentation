@@ -43,7 +43,7 @@ the queue are automatically reordered so that those with a higher
 priority will be received before those with a lower priority. The figure
 illustrates a queue with priority messaging.
 
-![](attachments/463533389/463533387.png){.confluence-embedded-image
+![](attachments/463533389/463533387.png)
 .confluence-content-image-border height="150"}
 
 > Most message queue implementations support multiple consumers
@@ -60,7 +60,7 @@ queues can have a larger pool of consumers running on faster hardware
 than lower priority queues. The next figure illustrates using separate
 message queues for each priority.
 
-![](attachments/463533389/463533388.png){.confluence-embedded-image
+![](attachments/463533389/463533388.png)
 .confluence-thumbnail .confluence-content-image-border height="150"}
 
 A variation on this strategy is to have a single pool of consumers that

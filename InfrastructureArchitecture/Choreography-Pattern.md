@@ -50,7 +50,7 @@ of the communication path. While you can configure the workflow, add or
 remove services easily with a well-designed orchestrator, such an
 implementation is complex hard to maintain.
 
-![](attachments/463533308/463533306.png){.confluence-embedded-image
+![](attachments/463533308/463533306.png)
 .confluence-content-image-border height="150"}
 
 Solution
@@ -63,7 +63,7 @@ One way to implement choreography is to use the  [asynchronous messaging
 pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/publisher-subscriber) to
 coordinate the business operations.
 
-![](attachments/463533308/463533307.png){.confluence-embedded-image
+![](attachments/463533308/463533307.png)
 .confluence-content-image-border height="150"}
 
 A client request publishes messages to a message queue. As messages

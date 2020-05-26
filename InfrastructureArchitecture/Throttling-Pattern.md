@@ -93,7 +93,7 @@ tasks, a piece of code that performs a complex calculation, or an
 element that provides a service such as an in-memory cache. These
 features are labeled A, B, and C.
 
-![](attachments/463533412/463533410.png){.confluence-embedded-image
+![](attachments/463533412/463533410.png)
 .confluence-thumbnail .confluence-content-image-border height="150"}
 
 > The area immediately below the line for a feature indicates the
@@ -125,7 +125,7 @@ The next figure shows an area graph of the overall resource use by all
 applications running in a system against time, and illustrates how
 throttling can be combined with autoscaling.
 
-![](attachments/463533412/463533411.png){.confluence-embedded-image
+![](attachments/463533412/463533411.png)
 .confluence-thumbnail .confluence-content-image-border height="150"}
 
 At time T1, the threshold specifying the soft limit of resource use is

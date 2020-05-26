@@ -119,7 +119,7 @@ states that mimic the functionality of an electrical circuit breaker:
     > recovery is complete, but while recovery is in progress a flood of
     > work can cause the service to time out or fail again.
 
-![](attachments/463533311/463533310.png){.confluence-embedded-image
+![](attachments/463533311/463533310.png)
 .confluence-thumbnail .confluence-content-image-border height="150"}
 
 In the figure, the failure counter used by the  **Closed** state is time

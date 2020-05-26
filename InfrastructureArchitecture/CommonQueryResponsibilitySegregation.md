@@ -41,8 +41,8 @@ subscribing to  [Domain
 events](https://microservices.io/patterns/data/domain-event.html) published
 by the service that own the data.
 
-![](https://microservices.io/i/patterns/data/QuerySideService.png){.confluence-embedded-image
-.img-responsive .confluence-external-resource
+![](https://microservices.io/i/patterns/data/QuerySideService.png)
+
 .confluence-content-image-border height="250"}
 
 Examples

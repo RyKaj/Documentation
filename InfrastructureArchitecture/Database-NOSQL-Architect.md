@@ -557,10 +557,8 @@ limitations by using the following design patterns.
 
 ### Query Command Segregation Pattern
 
-[![](https://3.bp.blogspot.com/-rOTILpreL1o/V1_X0cpsuDI/AAAAAAAANTw/U7P0N151mhQIwQ5UrV4ZClLgg5T94DibQCLcB/s400/segregate.png){.confluence-embedded-image
-.fr-fin .fr-dib .confluence-external-resource
-.confluence-content-image-border width="387"
-height="197"}](https://3.bp.blogspot.com/-rOTILpreL1o/V1_X0cpsuDI/AAAAAAAANTw/U7P0N151mhQIwQ5UrV4ZClLgg5T94DibQCLcB/s1600/segregate.png)
+[![](https://3.bp.blogspot.com/-rOTILpreL1o/V1_X0cpsuDI/AAAAAAAANTw/U7P0N151mhQIwQ5UrV4ZClLgg5T94DibQCLcB/s400/segregate.png)
+[![](https://3.bp.blogspot.com/-rOTILpreL1o/V1_X0cpsuDI/AAAAAAAANTw/U7P0N151mhQIwQ5UrV4ZClLgg5T94DibQCLcB/s1600/segregate.png)
 
 Segregate responsibility to different nodes in the replica set. The
 primary node may have priority 1 and may keep only indexes required for
@@ -888,30 +886,24 @@ The following diagram illustrates the MongoDB "standard minimal
 deployment" pattern.
 
 [![Mongo
-deploy](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/Mongo-deploy.2.png){.confluence-embedded-image
-.confluence-external-resource .confluence-content-image-border
-.image-left
-height="250"}](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-deploy.2.png)
+deploy](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/Mongo-deploy.2.png)
+https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-deploy.2.png)
 
 During primary node failover, one of the available secondary nodes in
 either data center will be elected as the new primary node, as shown in
 the following diagram.
 
 [![Mongo before
-failover](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/Mongo-before-failover.3.png){.confluence-embedded-image
-.confluence-external-resource .confluence-content-image-border
-.image-left
-height="250"}](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-before-failover.3.png)
+failover](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/Mongo-before-failover.3.png)
+(https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-before-failover.3.png)
 
 During site or data center failure, one of the available secondary nodes
 in other data centers will be elected as the new primary node, as shown
 in the following diagram.
 
 [![Mongo after
-failover](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/Mongo-after-failover.4.png){.confluence-embedded-image
-.confluence-external-resource .confluence-content-image-border
-.image-left
-height="250"}](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-after-failover.4.png)
+failover](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/Mongo-after-failover.4.png)
+(https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-after-failover.4.png)
 
 ### Couchbase standard minimal deployment
 
@@ -1082,39 +1074,31 @@ nodes. The following operations illustrate how data loss can happen:
     secondary node.
 
 [![Mongo Non-Synchronous Writes
-A](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.a.8.png){.confluence-embedded-image
-.confluence-external-resource .confluence-content-image-border
-.image-left
-height="250"}](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.a.8.png)
+A](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.a.8.png)
+https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.a.8.png)
 
 -   The primary node fails before all five documents reach both of the
     two secondary nodes
 
 [![Mongo Non-Synchronous Writes
-B](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.b.9.png){.confluence-embedded-image
-.confluence-external-resource .confluence-content-image-border
-.image-left
-height="250"}](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.b.9.png)
+B](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.b.9.png)
+(https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.b.9.png)
 
 -   Quorum voting re-elects the second secondary node as the new primary
     node because it receives the third document, that is, more recently
     than the third secondary node
 
 [![Mongo Non-Synchronous Writes
-C](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.c.10.png){.confluence-embedded-image
-.confluence-external-resource .confluence-content-image-border
-.image-left
-height="250"}](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.c.10.png)
+C](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.c.10.png)
+(https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.c.10.png)
 
 -   The original primary node steps down to be a secondary and rolls
     back its fourth and fifth documents, since they didn't reach other
     two secondary nodes
 
 [![Mongo Non-Synchronous Writes
-D](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.d.11.png){.confluence-embedded-image
-.confluence-external-resource .confluence-content-image-border
-.image-left
-height="250"}](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.d.11.png)
+D](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.d.11.png)
+(https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.d.11.png)
 
 -   In effect, the application loses the fourth and fifth documents even
     though it receives confirmation from the original primary node. The
@@ -1280,7 +1264,7 @@ The following operations illustrate how both functions work.
     E](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.5.19.png){height="250"}
 6.  Lastly, for multi-data center/cluster durability, use the design
     pattern described in " [Couchbase multi-cluster write durability
-    pattern](https://tech.ebayinc.com/Cbmcwdpattern) .
+    pattern](https://tech.ebayinc.com/Cbmcwdpattern).
 
 ### Couchbase multi-cluster write durability pattern
 

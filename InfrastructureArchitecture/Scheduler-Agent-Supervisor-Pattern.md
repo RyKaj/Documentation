@@ -105,7 +105,7 @@ The Supervisor can use this information to help determine whether a step
 has failed. The figure illustrates the relationship between the
 Scheduler, the Agents, the Supervisor, and the state store.
 
-![](attachments/463533397/463533396.png){.confluence-embedded-image
+![](attachments/463533397/463533396.png)
 .confluence-thumbnail .confluence-content-image-border height="150"}
 
 > This diagram shows a simplified version of the pattern. In a real

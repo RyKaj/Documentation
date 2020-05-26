@@ -78,7 +78,7 @@ thread pool assigned to Service A are affected. Workloads that use
 Service B and C are not affected and can continue working without
 interruption.
 
-![](attachments/463533301/463533299.png){.confluence-embedded-image
+![](attachments/463533301/463533299.png)
 .confluence-thumbnail .confluence-content-image-border height="150"}
 
 The next diagram shows multiple clients calling a single service. Each
@@ -87,7 +87,7 @@ many requests and overwhelmed its instance. Because each service
 instance is isolated from the others, the other clients can continue
 making calls.
 
-![](attachments/463533301/463533300.png){.confluence-embedded-image
+![](attachments/463533301/463533300.png)
 .confluence-content-image-border height="150"}
 
 Issues and Considerations

@@ -86,7 +86,7 @@ service using this pattern. If the request is unsuccessful after a
 predefined number of attempts, the application should treat the fault as
 an exception and handle it accordingly.
 
-![](attachments/463533395/463533394.png){.confluence-embedded-image
+![](attachments/463533395/463533394.png)
 .confluence-thumbnail .confluence-content-image-border height="150"}
 
 The application should wrap all attempts to access a remote service in

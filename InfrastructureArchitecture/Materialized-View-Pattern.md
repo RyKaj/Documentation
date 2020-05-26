@@ -68,7 +68,7 @@ In some cases it might be necessary to regenerate the view manually. The
 figure shows an example of how the Materialized View pattern might be
 used.
 
-![](attachments/463533369/463533368.png){.confluence-embedded-image
+![](attachments/463533369/463533368.png)
 .confluence-content-image-border height="150"}
 
 Issues and Considerations

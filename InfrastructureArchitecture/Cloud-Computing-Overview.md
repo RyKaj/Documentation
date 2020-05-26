@@ -34,7 +34,7 @@ billed by consumption."
 Cloud Computing Models Cloud Providers offer services that can be
 grouped into three categories.
 
-![](https://miro.medium.com/max/963/1*F_EB3zGRdsahx01e8nLW4w.png){.confluence-embedded-image
+![](https://miro.medium.com/max/963/1*F_EB3zGRdsahx01e8nLW4w.png)
 .confluence-external-resource .confluence-content-image-border
 height="250"}
 
@@ -169,10 +169,10 @@ challenges are:
 4 Main Cloud Deployment
 -----------------------
 
-![](https://qph.fs.quoracdn.net/main-qimg-34fbe07d9311be4084f7b7b8a502a307){.confluence-embedded-image
+![](https://qph.fs.quoracdn.net/main-qimg-34fbe07d9311be4084f7b7b8a502a307)
 .confluence-external-resource .confluence-content-image-border
 height="250"}
-![](https://erpsoftwareblog.com/cloud/wp-content/uploads/4-Primary-Cloud-Deployment-Models-Infographic-Turnkey-Technologies1.png){.confluence-embedded-image
+![](https://erpsoftwareblog.com/cloud/wp-content/uploads/4-Primary-Cloud-Deployment-Models-Infographic-Turnkey-Technologies1.png)
 .confluence-external-resource .confluence-content-image-border
 height="400"}
 
@@ -217,7 +217,7 @@ That\'s more than enough for a large chunk of businesses. But even
 especially in highly regulated fields like healthcare and
 government---hence the remaining three cloud deployment models.
 
-![](https://www.sam-solutions.com/blog/wp-content/uploads/2017/08/a-cloud-provider@2x.png){.confluence-embedded-image
+![](https://www.sam-solutions.com/blog/wp-content/uploads/2017/08/a-cloud-provider@2x.png)
 .confluence-external-resource .confluence-content-image-border
 height="250"}
 
@@ -240,7 +240,7 @@ cloud workloads. However, 75% reported using private cloud to some
 extent, hosting some workloads privately and entrusting others to public
 cloud providers. This is what\'s referred to as a hybrid cloud.
 
-![](https://www.sam-solutions.com/blog/wp-content/uploads/2017/08/a-private-cloud@2x.png){.confluence-embedded-image
+![](https://www.sam-solutions.com/blog/wp-content/uploads/2017/08/a-private-cloud@2x.png)
 .confluence-external-resource .confluence-content-image-border
 width="230" height="250"}
 
@@ -264,7 +264,7 @@ extent. However, if you have a lot of legacy to support yet still wish
 to benefit from the public cloud for your other workloads, for instance,
 hybrid is often the best-case scenario.
 
-![](https://www.sam-solutions.com/blog/wp-content/uploads/2017/08/hybrid-cloud@2x.png){.confluence-embedded-image
+![](https://www.sam-solutions.com/blog/wp-content/uploads/2017/08/hybrid-cloud@2x.png)
 .confluence-external-resource .confluence-content-image-border
 height="250"}
 
@@ -294,7 +294,7 @@ each stakeholder. Use cases for community cloud deployments are limited,
 but this model comes with highly advantageous cost savings for those to
 which it applies.
 
-![](https://www.sam-solutions.com/blog/wp-content/uploads/2017/08/community-cloud@2x.png){.confluence-embedded-image
+![](https://www.sam-solutions.com/blog/wp-content/uploads/2017/08/community-cloud@2x.png)
 .confluence-external-resource .confluence-content-image-border
 height="250"}
 

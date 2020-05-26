@@ -37,7 +37,7 @@ sources. The data from each source is processed by a separate module
 that performs a series of tasks to transform this data, before passing
 the result to the business logic of the application.
 
-![](attachments/463533386/463533383.png){.confluence-embedded-image
+![](attachments/463533386/463533383.png)
 .confluence-thumbnail .confluence-content-image-border height="150"}
 
 Some of the tasks that the monolithic modules perform are functionally
@@ -66,7 +66,7 @@ or integrate additional components if the processing requirements
 change. The next figure shows a solution implemented using pipes and
 filters.
 
-![](attachments/463533386/463533384.png){.confluence-embedded-image
+![](attachments/463533386/463533384.png)
 .confluence-content-image-border height="150"}
 
 The time it takes to process a single request depends on the speed of
@@ -86,7 +86,7 @@ geographic location, which allows each element in a pipeline to run in
 an environment close to the resources it requires. The next figure shows
 an example applied to the pipeline for the data from Source 1.
 
-![](attachments/463533386/463533385.png){.confluence-embedded-image
+![](attachments/463533386/463533385.png)
 .confluence-content-image-border height="150"}
 
 If the input and output of a filter are structured as a stream, it\'s

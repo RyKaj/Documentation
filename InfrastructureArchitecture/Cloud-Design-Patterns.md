@@ -1,10 +1,4 @@
-
-
-
-
-
-3.  [Cloud](Cloud_463533284.html)
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Cloud Design Patterns
 =================================================
@@ -25,7 +19,7 @@ other cloud platforms.
 Cloud Development Categories
 ----------------------------
 
-### Availability {#CloudDesignPatterns-Availability}
+### Availability
 
 Availability is the proportion of time that the system is functional and
 working, usually measured as a percentage of uptime. It can be affected
@@ -34,7 +28,7 @@ load. Cloud applications typically provide users with a service level
 agreement (SLA), so applications must be designed to maximize
 availability.
 
-### Data Management {#CloudDesignPatterns-DataManagement}
+### Data Management  
 
 Data management is the key element of cloud applications, and influences
 most of the quality attributes. Data is typically hosted in different
@@ -43,7 +37,7 @@ scalability or availability, and this can present a range of challenges.
 For example, data consistency must be maintained, and data will
 typically need to be synchronized across different locations.
 
-### Design and Implementation {#CloudDesignPatterns-DesignandImplementation}
+### Design and Implementation  
 
 Good design encompasses factors such as consistency and coherence in
 component design and deployment, maintainability to simplify
@@ -53,7 +47,7 @@ Decisions made during the design and implementation phase have a huge
 impact on the quality and the total cost of ownership of cloud hosted
 applications and services.
 
-### Messaging {#CloudDesignPatterns-Messaging}
+### Messaging
 
 The distributed nature of cloud applications requires a messaging
 infrastructure that connects the components and services, ideally in a
@@ -62,7 +56,7 @@ messaging is widely used, and provides many benefits, but also brings
 challenges such as the ordering of messages, poison message management,
 idempotency, and more.
 
-### Management and Monitoring {#CloudDesignPatterns-ManagementandMonitoring}
+### Management and Monitoring 
 
 Cloud applications run in a remote datacenter where you do not have full
 control of the infrastructure or, in some cases, the operating system.
@@ -73,7 +67,7 @@ system, as well as supporting changing business requirements and
 customization without requiring the application to be stopped or
 redeployed.
 
-### Performance and Scalability {#CloudDesignPatterns-PerformanceandScalability}
+### Performance and Scalability  
 
 Performance is an indication of the responsiveness of a system to
 execute any action within a given time interval, while scalability is
@@ -86,7 +80,7 @@ within limits to meet peaks in demand, and scale in when demand
 decreases. Scalability concerns not just compute instances, but other
 elements such as data storage, messaging infrastructure, and more.
 
-### Resiliency {#CloudDesignPatterns-Resiliency}
+### Resiliency 
 
 Resiliency is the ability of a system to gracefully handle and recover
 from failures. The nature of cloud hosting, where applications are often
@@ -96,7 +90,7 @@ means there is an increased likelihood that both transient and more
 permanent faults will arise. Detecting failures, and recovering quickly
 and efficiently, is necessary to maintain resiliency.
 
-### Security {#CloudDesignPatterns-Security}
+### Security  
 
 Security is the capability of a system to prevent malicious or
 accidental actions outside of the designed usage, and to prevent
@@ -194,8 +188,7 @@ as an out-of-process proxy that is co-located with the client.
 
 This pattern can be useful for offloading common client connectivity
 tasks such as monitoring, logging, routing, security (such as TLS), and 
-[resiliency
-patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/resiliency) in
+[resiliency patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/resiliency) in
 a language agnostic way. It is often used with legacy applications, or
 other applications that are difficult to modify, in order to extend
 their networking capabilities. It can also enable a specialized team to
@@ -203,8 +196,7 @@ implement those features.
 
 #### Context and Problem
 
-Resilient cloud-based applications require features such as  [circuit
-breaking](https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker),
+Resilient cloud-based applications require features such as  [circuit breaking](https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker),
 routing, metering and monitoring, and the ability to make
 network-related configuration updates. It may be difficult or impossible
 to update legacy applications or existing code libraries to add these
@@ -230,8 +222,7 @@ pattern to standardize and extend instrumentation. The proxy can monitor
 performance metrics such as latency or resource usage, and this
 monitoring happens in the same host environment as the application.
 
-![](attachments/463533289/463533288.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533289/463533288.png)
 
 Features that are offloaded to the ambassador can be managed
 independently of the application. You can update and modify the
@@ -296,8 +287,7 @@ as an out-of-process proxy that is co-located with the client.
 
 This pattern can be useful for offloading common client connectivity
 tasks such as monitoring, logging, routing, security (such as TLS), and 
-[resiliency
-patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/resiliency) in
+[resiliency patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/resiliency) in
 a language agnostic way. It is often used with legacy applications, or
 other applications that are difficult to modify, in order to extend
 their networking capabilities. It can also enable a specialized team to
@@ -305,8 +295,7 @@ implement those features.
 
 #### Context and Problem
 
-Resilient cloud-based applications require features such as  [circuit
-breaking](https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker),
+Resilient cloud-based applications require features such as  [circuit breaking](https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker),
 routing, metering and monitoring, and the ability to make
 network-related configuration updates. It may be difficult or impossible
 to update legacy applications or existing code libraries to add these
@@ -332,8 +321,8 @@ pattern to standardize and extend instrumentation. The proxy can monitor
 performance metrics such as latency or resource usage, and this
 monitoring happens in the same host environment as the application.
 
-![](attachments/463533416/463533415.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533416/463533415.png)
+
 
 Features that are offloaded to the ambassador can be managed
 independently of the application. You can update and modify the
@@ -482,8 +471,8 @@ much extra complexity.
 
 The following diagram shows a typical flow:
 
-![](attachments/463533293/463533292.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533293/463533292.png)
+
 
 1.  The client sends a request and receives an HTTP 202 (Accepted)
     response.
@@ -518,10 +507,8 @@ The following diagram shows a typical flow:
     response headers or payload depending on the underlying services
     used.
 
--   If the status endpoint redirects on completion, either  [HTTP
-    302](https://tools.ietf.org/html/rfc7231#section-6.4.3) or 
-    [HTTP
-    303](https://tools.ietf.org/html/rfc7231#section-6.4.4) are
+-   If the status endpoint redirects on completion, either  [HTTP 302](https://tools.ietf.org/html/rfc7231#section-6.4.3) or 
+    [HTTP 303](https://tools.ietf.org/html/rfc7231#section-6.4.4) are
     appropriate return codes, depending on the exact semantics you
     support.
 
@@ -537,17 +524,14 @@ The following diagram shows a typical flow:
 -   Not all solutions will implement this pattern in the same way and
     some services will include additional or alternate headers. For
     example, Azure Resource Manager uses a modified variant of this
-    pattern. For more information, see  [Azure Resource Manager Async
-    Operations](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-async-operations).
+    pattern. For more information, see  [Azure Resource Manager Async Operations](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-async-operations).
 
 -   Legacy clients might not support this pattern. In that case, you
     might need to place a facade over the asynchronous API to hide the
     asynchronous processing from the original client. For example, Azure
     Logic Apps supports this pattern natively can be used as an
     integration layer between an asynchronous API and a client that
-    makes synchronous calls. See  [Perform long-running tasks with the
-    webhook action
-    pattern](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-create-api-app#perform-long-running-tasks-with-the-webhook-action-pattern).
+    makes synchronous calls. See  [Perform long-running tasks with the webhook action pattern](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-create-api-app#perform-long-running-tasks-with-the-webhook-action-pattern).
 
 -   In some scenarios, you might want to provide a way for clients to
     cancel a long-running request. In that case, the backend service
@@ -613,8 +597,7 @@ in the development process. Conflicting update requirements, and the
 need to keep the service working for both frontends, can result in
 spending a lot of effort on a single deployable resource.
 
-![](attachments/463533297/463533295.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533297/463533295.png)
 
 As the development activity focuses on the backend service, a separate
 team may be created to manage and maintain the backend. Ultimately, this
@@ -631,8 +614,7 @@ performance of each backend to best match the needs of the frontend
 environment, without worrying about affecting other frontend
 experiences.
 
-![](attachments/463533297/463533296.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533297/463533296.png)
 
 Because each backend is specific to one interface, it can be optimized
 for that interface. As a result, it will be smaller, less complex, and
@@ -643,8 +625,7 @@ development team. This gives the interface team flexibility in language
 selection, release cadence, prioritization of workload, and feature
 integration in their backend.
 
-For more information, see  [Pattern: Backends For
-Frontends](https://samnewman.io/patterns/architectural/bff/).
+For more information, see  [Pattern: Backends For Frontends](https://samnewman.io/patterns/architectural/bff/).
 
 #### Issues and Considerations
 
@@ -746,8 +727,7 @@ thread pool assigned to Service A are affected. Workloads that use
 Service B and C are not affected and can continue working without
 interruption.
 
-![](attachments/463533301/463533299.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533301/463533299.png)
 
 The next diagram shows multiple clients calling a single service. Each
 client is assigned a separate service instance. Client 1 has made too
@@ -755,8 +735,8 @@ many requests and overwhelmed its instance. Because each service
 instance is isolated from the others, the other clients can continue
 making calls.
 
-![](attachments/463533301/463533300.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533301/463533300.png)
+
 
 #### Issues and Considerations
 
@@ -838,8 +818,7 @@ implementing the cache-aside strategy. This strategy loads data into the
 cache on demand. The figure illustrates using the Cache-Aside pattern to
 store data in the cache.
 
-![](attachments/463533304/463533303.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533304/463533303.png)
 
 If an application updates information, it can follow the write-through
 strategy by making the modification to the data store, and by
@@ -956,20 +935,17 @@ of the communication path. While you can configure the workflow, add or
 remove services easily with a well-designed orchestrator, such an
 implementation is complex hard to maintain.
 
-![](attachments/463533308/463533306.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533308/463533306.png)
 
 #### Solution
 
 Let each service decide when and how a business operation is processed,
 instead of depending on a central orchestrator.
 
-One way to implement choreography is to use the  [asynchronous messaging
-pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/publisher-subscriber) to
+One way to implement choreography is to use the  [asynchronous messaging pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/publisher-subscriber) to
 coordinate the business operations.
 
-![](attachments/463533308/463533307.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533308/463533307.png)
 
 A client request publishes messages to a message queue. As messages
 arrive, they are pushed to subscribers, or services, interested in that
@@ -997,8 +973,7 @@ workflow.
 If a service fails to complete a business operation, it can be difficult
 to recover from that failure. One way is to have the service indicate
 failure by firing an event. Another service subscribes to those failed
-events takes necessary actions such as applying  [compensating
-transactions](https://docs.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction) to
+events takes necessary actions such as applying  [compensating transactions](https://docs.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction) to
 undo successful operations in a request. The failed service might also
 fail to fire an event for the failure. In that case, consider using a
 retry and, or time out mechanism to recognize that operation as a
@@ -1061,8 +1036,7 @@ fail due to transient faults, such as slow network connections,
 timeouts, or the resources being overcommitted or temporarily
 unavailable. These faults typically correct themselves after a short
 period of time, and a robust cloud application should be prepared to
-handle them by using a strategy such as the  [Retry
-pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/retry).
+handle them by using a strategy such as the  [Retry pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/retry).
 
 However, there can also be situations where faults are due to
 unanticipated events, and that might take much longer to fix. These
@@ -1092,8 +1066,7 @@ succeed.
 #### Solution
 
 The Circuit Breaker pattern, popularized by Michael Nygard in his book, 
-[Release
-It!](https://pragprog.com/book/mnee/release-it), can
+[Release It!](https://pragprog.com/book/mnee/release-it), can
 prevent an application from repeatedly trying to execute an operation
 that\'s likely to fail. Allowing it to continue without waiting for the
 fault to be fixed or wasting CPU cycles while it determines that the
@@ -1152,8 +1125,8 @@ states that mimic the functionality of an electrical circuit breaker:
     > recovery is complete, but while recovery is in progress a flood of
     > work can cause the service to time out or fail again.
 
-![](attachments/463533311/463533310.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533311/463533310.png)
+
 
 In the figure, the failure counter used by the  **Closed** state is time
 based. It\'s automatically reset at periodic intervals. This helps to
@@ -1233,8 +1206,7 @@ resource to determine whether it\'s become available again. This ping
 could take the form of an attempt to invoke an operation that had
 previously failed, or it could use a special operation provided by the
 remote service specifically for testing the health of the service, as
-described by the  [Health Endpoint Monitoring
-pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/health-endpoint-monitoring).
+described by the  [Health Endpoint Monitoring pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/health-endpoint-monitoring).
 
 **Manual Override**. In a system where the recovery time for a failing
 operation is extremely variable, it\'s beneficial to provide a manual
@@ -1340,8 +1312,7 @@ to retrieve a piece of luggage, hence the name of the pattern. Clients
 interested in processing that specific message can use the obtained
 reference to retrieve the payload, if needed.
 
-![](attachments/463533314/463533313.jpg){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533314/463533313.jpg) 
 
 #### Issues and Considerations
 
@@ -1403,8 +1374,7 @@ does too much.
 Read and write workloads are often asymmetrical, with very different
 performance and scale requirements.
 
-![](attachments/463533319/463533316.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533319/463533316.png)
 
 -   There is often a mismatch between the read and write representations
     of the data, such as additional columns or properties that must be
@@ -1437,8 +1407,7 @@ CQRS separates reads and writes into different models, using 
 The models can then be isolated, as shown in the following diagram,
 although that\'s not an absolute requirement.
 
-![](attachments/463533319/463533317.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533319/463533317.png)
 
 Having separate query and update models simplifies the design and
 implementation. However, one disadvantage is that CQRS code can\'t
@@ -1460,8 +1429,7 @@ sync. Typically this is accomplished by having the write model publish
 an event whenever it updates the database. Updating the database and
 publishing the event must occur in a single transaction.
 
-![](attachments/463533319/463533318.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533319/463533318.png)
 
 The read store can be a read-only replica of the write store, or the
 read and write stores can have a different structure altogether. Using
@@ -1590,8 +1558,7 @@ performed, the overall view of the system state might be inconsistent,
 but when the operation has completed and all of the steps have been
 executed the system should become consistent again.
 
-> The  [Data Consistency
-> Primer](https://msdn.microsoft.com/library/dn589800.aspx) provides
+> The  [Data Consistency Primer](https://msdn.microsoft.com/library/dn589800.aspx) provides
 > information about why distributed transactions don\'t scale well, and
 > the principles of the eventual consistency model.
 
@@ -1641,17 +1608,14 @@ compensating transaction might not have to undo the work in the exact
 reverse order of the original operation, and it might be possible to
 perform some of the undo steps in parallel.
 
-> This approach is similar to the Sagas strategy discussed in  [Clemens
-> Vasters'
-> blog](https://vasters.com/clemensv/2012/09/01/Sagas.aspx).
+> This approach is similar to the Sagas strategy discussed in  [Clemens Vasters' blog](https://vasters.com/clemensv/2012/09/01/Sagas.aspx).
 
 A compensating transaction is also an eventually consistent operation
 and it could also fail. The system should be able to resume the
 compensating transaction at the point of failure and continue. It might
 be necessary to repeat a step that\'s failed, so the steps in a
 compensating transaction should be defined as idempotent commands. For
-more information, see  [Idempotency
-Patterns](https://blog.jonathanoliver.com/idempotency-patterns/) on
+more information, see  [Idempotency Patterns](https://blog.jonathanoliver.com/idempotency-patterns/) on
 Jonathan Oliver's blog.
 
 In some cases it might not be possible to recover from a step that has
@@ -1764,8 +1728,7 @@ approach enables the same pool of consumer service instances to handle
 messages from any instance of the application. The figure illustrates
 using a message queue to distribute work to instances of a service.
 
-![](attachments/463533328/463533327.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533328/463533327.png)
 
 This solution has the following benefits:
 
@@ -1916,8 +1879,7 @@ computational unit. Each computational unit runs in its own virtual
 environment. Each function has been implemented as a separate task
 (labeled Task A through Task E) running in its own computational unit.
 
-![](attachments/463533330/463533329.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533330/463533329.png)
 
 Each computational unit consumes chargeable resources, even when it\'s
 idle or lightly used. Therefore, this isn\'t always the most
@@ -2140,8 +2102,7 @@ options for using the event stream such as creating a materialized view,
 integrating events with external applications and systems, and replaying
 events to create projections of the current state of specific entities.
 
-![](attachments/463533332/463533331.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533332/463533331.png)
 
 The Event Sourcing pattern provides the following advantages:
 
@@ -2386,8 +2347,7 @@ production, including multiple release versions of each one).
 > The figure illustrates an overview of the External Configuration Store
 > pattern with optional local cache.
 
-![](attachments/463533334/463533333.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533334/463533333.png)
 
 #### Issues and Considerations
 
@@ -2531,8 +2491,7 @@ authenticated user. This information, referred to as claims, includes
 the user's identity, and might also include other information such as
 role membership and more granular access rights.
 
-![](attachments/463533336/463533335.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533336/463533335.png)
 
 This model is often called claims-based access control. Applications and
 services authorize access to features and functionality based on the
@@ -2693,8 +2652,7 @@ and then hands off the request---perhaps through a decoupled
 interface---to the hosts or tasks that\'ll handle the request. The
 figure provides a high-level overview of this pattern.
 
-![](attachments/463533347/463533346.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533347/463533346.png)
 
 The gatekeeper pattern can be used to simply protect storage, or it can
 be used as a more comprehensive façade to protect all of the functions
@@ -2788,8 +2746,7 @@ request may be done in parallel, the application must send, wait, and
 process data for each request, all on separate connections, increasing
 the chance of failure.
 
-![](attachments/463533350/463533348.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533350/463533348.png)
 
 #### Solution
 
@@ -2810,23 +2767,16 @@ relevant service (2). Each service returns a response to the gateway
 response to the application (4). The application makes a single request
 and receives only a single response from the gateway.
 
-![](attachments/463533350/463533349.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
-![New-API-GW-Diagram](https://d1.awsstatic.com/serverless/New-API-GW-Diagram.c9fc9835d2a9aa00ef90d0ddc4c6402a2536de0d.png){.confluence-embedded-image
-.confluence-external-resource .confluence-content-image-border
-height="150"}
-![](https://microservices.io/i/apigateway.jpg){.confluence-embedded-image
-.img-responsive .confluence-external-resource
-.confluence-content-image-border height="150"}
-![](attachments/463533350/463533529.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
-![](attachments/463533350/463533530.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
-![](https://microservices.io/i/bffe.png){.confluence-embedded-image
-.img-responsive .confluence-external-resource
-.confluence-content-image-border height="150"}
+![](attachments/463533350/463533349.png)
+![New-API-GW-Diagram](https://d1.awsstatic.com/serverless/New-API-GW-Diagram.c9fc9835d2a9aa00ef90d0ddc4c6402a2536de0d.png)
+![](https://microservices.io/i/apigateway.jpg)
+![](attachments/463533350/463533529.png)
+![](attachments/463533350/463533530.png)
 
-#### Using an API gateway has the following benefits {#CloudDesignPatterns-UsinganAPIgatewayhasthefollowingbenefits}
+![](https://microservices.io/i/bffe.png)
+
+
+#### Using an API gateway has the following benefits
 
 -   Insulates the clients from how the application is partitioned into
     microservices
@@ -2944,8 +2894,7 @@ The following diagram shows an API gateway that terminates inbound SSL
 connections. It requests data on behalf of the original requestor from
 any HTTP server upstream of the API gateway.
 
-![](attachments/463533352/463533351.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533352/463533351.png)
 
 Benefits of this pattern include:
 
@@ -3036,8 +2985,7 @@ whatever service or services need to handle the expected client
 behavior, allowing you to add, split, and reorganize services behind the
 gateway without changing the client.
 
-![](attachments/463533354/463533353.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533354/463533353.png)
 
 This pattern can also help with deployment, by allowing you to manage
 how updates are rolled out to users. When a new version of your service
@@ -3087,8 +3035,7 @@ any request for any client in any region. This pattern allows serving
 requests in an  *active-active* style, improving latency and increasing
 availability by distributing request processing around the globe.
 
-![](attachments/463533357/463533355.jpg){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533357/463533355.jpg)
 
 #### Context and Problem
 
@@ -3129,8 +3076,7 @@ The key difference between a deployment stamp and a geode is that geodes
 never exist in isolation. There should always be more than one geode in
 a production platform.
 
-![](attachments/463533357/463533356.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533357/463533356.png)
 
 Geodes have the following characteristics:
 
@@ -3281,8 +3227,7 @@ optionally, any components or services it uses. The latency or response
 time check is performed by the monitoring tool or framework. The figure
 provides an overview of the pattern.
 
-![](attachments/463533359/463533358.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533359/463533358.png)
 
 Other checks that might be carried out by the health monitoring code in
 the application include:
@@ -3489,8 +3434,7 @@ data. The figure shows an example of a data store holding customer
 information. The primary key is the Customer ID. The figure shows
 customer information organized by the primary key (Customer ID).
 
-![](attachments/463533366/463533360.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533366/463533360.png)
 
 While the primary key is valuable for queries that fetch data based on
 the value of this key, an application might not be able to use the
@@ -3534,8 +3478,7 @@ organize it by different keys (complete denormalization). The next
 figure shows index tables that organize the same customer information by
 Town and LastName.
 
-![](attachments/463533366/463533361.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533366/463533361.png)
 
 This strategy is appropriate if the data is relatively static compared
 to the number of times it\'s queried using each key. If the data is more
@@ -3549,8 +3492,7 @@ different keys and reference the original data by using the primary key
 rather than duplicating it, as shown in the following figure. The
 original data is called a fact table.
 
-![](attachments/463533366/463533362.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533366/463533362.png)
 
 This technique saves space and reduces the overhead of maintaining
 duplicate data. The disadvantage is that an application has to perform
@@ -3564,8 +3506,7 @@ Reference the fact table to access less frequently accessed fields. The
 next figure shows how commonly accessed data is duplicated in each index
 table.
 
-![](attachments/463533366/463533363.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533366/463533363.png)
 
 With this strategy, you can strike a balance between the first two
 approaches. The data for common queries can be retrieved quickly by
@@ -3580,8 +3521,7 @@ LastName attribute. The next figure shows an index table based on
 composite keys. The keys are sorted by Town, and then by LastName for
 records that have the same value for Town.
 
-![](attachments/463533366/463533364.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533366/463533364.png)
 
 Index tables can speed up query operations over sharded data, and are
 especially useful where the shard key is hashed. The next figure shows
@@ -3596,7 +3536,7 @@ resolved by locating the matching items in the index table, where
 they\'re all stored in a contiguous block. Then, follow the references
 to the customer data using the shard keys stored in the index table.
 
-![](attachments/463533366/463533365.png){.confluence-embedded-image
+![](attachments/463533366/463533365.png)
 height="250"}
 
 #### Issues and Considerations
@@ -3851,8 +3791,7 @@ In some cases it might be necessary to regenerate the view manually. The
 figure shows an example of how the Materialized View pattern might be
 used.
 
-![](attachments/463533369/463533368.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533369/463533368.png)
 
 #### Issues and Considerations
 
@@ -3961,8 +3900,7 @@ sources. The data from each source is processed by a separate module
 that performs a series of tasks to transform this data, before passing
 the result to the business logic of the application.
 
-![](attachments/463533386/463533383.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533386/463533383.png)
 
 Some of the tasks that the monolithic modules perform are functionally
 very similar, but the modules have been designed separately. The code
@@ -3989,8 +3927,7 @@ or integrate additional components if the processing requirements
 change. The next figure shows a solution implemented using pipes and
 filters.
 
-![](attachments/463533386/463533384.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533386/463533384.png)
 
 The time it takes to process a single request depends on the speed of
 the slowest filter in the pipeline. One or more filters could be a
@@ -4009,8 +3946,7 @@ geographic location, which allows each element in a pipeline to run in
 an environment close to the resources it requires. The next figure shows
 an example applied to the pipeline for the data from Source 1.
 
-![](attachments/463533386/463533385.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533386/463533385.png)
 
 If the input and output of a filter are structured as a stream, it\'s
 possible to perform the processing for each filter in parallel. The
@@ -4147,8 +4083,7 @@ the queue are automatically reordered so that those with a higher
 priority will be received before those with a lower priority. The figure
 illustrates a queue with priority messaging.
 
-![](attachments/463533389/463533387.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533389/463533387.png)
 
 > Most message queue implementations support multiple consumers
 > (following the  [Competing Consumers
@@ -4164,8 +4099,7 @@ queues can have a larger pool of consumers running on faster hardware
 than lower priority queues. The next figure illustrates using separate
 message queues for each priority.
 
-![](attachments/463533389/463533388.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533389/463533388.png)
 
 A variation on this strategy is to have a single pool of consumers that
 check for messages on high priority queues first, and only then start to
@@ -4315,8 +4249,7 @@ following:
 
 The following diagram shows the logical components of this pattern:
 
-![](attachments/463533391/463533390.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533391/463533390.png)
 
 Pub/sub messaging has the following benefits:
 
@@ -4505,8 +4438,7 @@ highly variable rate, can be passed to the service through the same
 message queue. This figure shows using a queue to level the load on a
 service.
 
-![](attachments/463533393/463533392.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533393/463533392.png)
 
 The queue decouples the tasks from the service, and the service can
 handle the messages at its own pace regardless of the volume of requests
@@ -4635,8 +4567,7 @@ service using this pattern. If the request is unsuccessful after a
 predefined number of attempts, the application should treat the fault as
 an exception and handle it accordingly.
 
-![](attachments/463533395/463533394.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533395/463533394.png)
 
 The application should wrap all attempts to access a remote service in
 code that implements a retry policy matching one of the strategies
@@ -4847,8 +4778,7 @@ The Supervisor can use this information to help determine whether a step
 has failed. The figure illustrates the relationship between the
 Scheduler, the Agents, the Supervisor, and the state store.
 
-![](attachments/463533397/463533396.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533397/463533396.png)
 
 > This diagram shows a simplified version of the pattern. In a real
 > implementation, there might be many instances of the Scheduler running
@@ -5066,8 +4996,7 @@ The Supervisor can use this information to help determine whether a step
 has failed. The figure illustrates the relationship between the
 Scheduler, the Agents, the Supervisor, and the state store.
 
-![](attachments/463533397/463533396.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533397/463533396.png)
 
 > This diagram shows a simplified version of the pattern. In a real
 > implementation, there might be many instances of the Scheduler running
@@ -5225,14 +5154,12 @@ message at a time.
 
 Here\'s what the general Sequential Convoy pattern looks like:
 
-![](attachments/463533400/463533398.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533400/463533398.png)
 
 In the queue, messages for different categories may be interleaved, as
 shown in the following diagram:
 
-![](attachments/463533400/463533399.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533400/463533399.png)
 
 #### Issues and Considerations
 
@@ -5366,8 +5293,7 @@ shard key. Multiple tenants might share the same shard, but the data for
 a single tenant won\'t be spread across multiple shards. The figure
 illustrates sharding tenant data based on tenant IDs.
 
-![](attachments/463533404/463533401.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533404/463533401.png)
 
 The mapping between the shard key and the physical storage can be based
 on physical shards where each shard key maps to a physical partition.
@@ -5393,8 +5319,7 @@ performing a large number of point queries (queries that return a single
 data item). The next figure illustrates storing sequential sets (ranges)
 of data in shard.
 
-![](attachments/463533404/463533402.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533404/463533402.png)
 
 In this example, the shard key is a composite key containing the order
 month as the most significant element, followed by the order day and the
@@ -5417,8 +5342,7 @@ possibly by introducing some random element into the computation. The
 next figure illustrates sharding tenant data based on a hash of tenant
 IDs.
 
-![](attachments/463533404/463533403.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533404/463533403.png)
 
 To understand the advantage of the Hash strategy over other sharding
 strategies, consider how a multi-tenant application that enrolls new
@@ -5700,8 +5624,7 @@ Co-locate a cohesive set of tasks with the primary application, but
 place them inside their own process or container, providing a
 homogeneous interface for platform services across languages.
 
-![](attachments/463533406/463533405.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533406/463533405.png)
 
 A sidecar service is not necessarily part of the application, but is
 connected to it. It goes wherever the parent application goes. Sidecars
@@ -5925,8 +5848,7 @@ either to the legacy application or the new services. Existing features
 can be migrated to the new system gradually, and consumers can continue
 using the same interface, unaware that any migration has taken place.
 
-![](attachments/463533409/463533408.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533409/463533408.png)
 
 This pattern helps to minimize risk from the migration, and spread the
 development effort over time. With the façade safely routing users to
@@ -6040,8 +5962,7 @@ tasks, a piece of code that performs a complex calculation, or an
 element that provides a service such as an in-memory cache. These
 features are labeled A, B, and C.
 
-![](attachments/463533412/463533410.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533412/463533410.png)
 
 > The area immediately below the line for a feature indicates the
 > resources that are used by applications when they invoke this feature.
@@ -6072,8 +5993,7 @@ The next figure shows an area graph of the overall resource use by all
 applications running in a system against time, and illustrates how
 throttling can be combined with autoscaling.
 
-![](attachments/463533412/463533411.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533412/463533411.png)
 
 At time T1, the threshold specifying the soft limit of resource use is
 reached. At this point, the system can start to scale out. However, if
@@ -6195,8 +6115,7 @@ store for only a specific period, and with specific restrictions on
 access permissions, as shown in the figure. After the specified period,
 the key becomes invalid and won\'t allow access to the resource.
 
-![](attachments/463533414/463533413.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533414/463533413.png)
 
 It\'s also possible to configure a key that has other dependencies, such
 as the scope of the data. For example, depending on the data store
@@ -6376,8 +6295,7 @@ This pattern might not be useful in the following situations:
 
 References
 
--   [MS Doc  - architecture
-    patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/)
+-   [MS Doc  - architecture patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/)
 
 
  

@@ -60,7 +60,7 @@ Co-locate a cohesive set of tasks with the primary application, but
 place them inside their own process or container, providing a
 homogeneous interface for platform services across languages.
 
-![](attachments/463533406/463533405.png){.confluence-embedded-image
+![](attachments/463533406/463533405.png)
 .confluence-content-image-border height="150"}
 
 A sidecar service is not necessarily part of the application, but is

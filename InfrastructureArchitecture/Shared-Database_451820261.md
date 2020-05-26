@@ -3,7 +3,7 @@
 
 
 
-3.  [Microservices & Distributed
+[comment]: [Architecture](ReadMe.MD)
     System](Microservice-DistributedSystem.html)
 
 
@@ -38,8 +38,8 @@ example, the `Order Service`{.highlighter-rouge} stores information
 about orders and the `Customer Service`{.highlighter-rouge} stores
 information about customers.
 
-![](https://microservices.io/i/customersandorders.png){.confluence-embedded-image
-.img-responsive .confluence-external-resource
+![](https://microservices.io/i/customersandorders.png)
+
 .confluence-content-image-border height="150"}
 
 

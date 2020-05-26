@@ -16,7 +16,7 @@ Generic Environment
 
 ### ELK or Elastic Stack
 
-![](https://miro.medium.com/max/384/1*f76792PlJa2SKG-Y9wioLQ.png){.confluence-embedded-image
+![](https://miro.medium.com/max/384/1*f76792PlJa2SKG-Y9wioLQ.png)
 .confluence-external-resource .confluence-content-image-border
 width="200"}
 
@@ -43,7 +43,7 @@ reasons:
     would have searched for in the previous logging frameworks, but this
     one does it regardless of the service technology.
 
-![](https://miro.medium.com/max/1135/0*6Fdv9a-zWRjmgVHQ.png){.confluence-embedded-image
+![](https://miro.medium.com/max/1135/0*6Fdv9a-zWRjmgVHQ.png)
 .confluence-external-resource .confluence-content-image-border
 height="150"}
 
@@ -58,7 +58,7 @@ but with the following drawbacks:
 
 ### Keep it Simpel Stupid (Only log to Console)
 
-![](https://miro.medium.com/max/1365/0*JOq9Dop40d6lr6tR){.confluence-embedded-image
+![](https://miro.medium.com/max/1365/0*JOq9Dop40d6lr6tR)
 .confluence-external-resource .confluence-content-image-border
 width="200"}
 
@@ -78,7 +78,7 @@ extensions which logs to Console.
 
 ### Application Insights
 
-![](https://miro.medium.com/max/1236/0*JoMeJ-2QEvQRCF69.png){.confluence-embedded-image
+![](https://miro.medium.com/max/1236/0*JoMeJ-2QEvQRCF69.png)
 .confluence-external-resource .confluence-content-image-border
 width="200"}
 
@@ -105,7 +105,7 @@ solution in the beginning but doesn't scale well in real production.
 
 ### NLog
 
-![](https://miro.medium.com/max/352/0*JSHjcgoJSVvjwEcS){.confluence-embedded-image
+![](https://miro.medium.com/max/352/0*JSHjcgoJSVvjwEcS)
 .confluence-external-resource width="200"}
 
 This usually is the first thing that comes to your mind. Let's get NLog

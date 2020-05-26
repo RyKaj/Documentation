@@ -49,7 +49,7 @@ implementing the cache-aside strategy. This strategy loads data into the
 cache on demand. The figure illustrates using the Cache-Aside pattern to
 store data in the cache.
 
-![](attachments/463533304/463533303.png){.confluence-embedded-image
+![](attachments/463533304/463533303.png)
 .confluence-thumbnail .confluence-content-image-border height="150"}
 
 If an application updates information, it can follow the write-through

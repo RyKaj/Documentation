@@ -98,18 +98,10 @@ Big Data, NoSQL, unstructured, semi-structured data integration coupled
 with SDLC best practices on how to use it. Perfect timing, I'd say. So
 here we are ...
 
-![](https://www.talend.com/wp-content/uploads/280px-Relational_Model_svg-1.png){.confluence-embedded-image
-.wp-image-28612 .alignleft .confluence-external-resource
-.confluence-content-image-border height="250"}
-![](https://www.talend.com/wp-content/uploads/the-data-vault-2.jpg){.confluence-embedded-image
-.alignleft .wp-image-28619 .size-full .confluence-external-resource
-.confluence-content-image-border width="352" height="250"}
-![](https://www.talend.com/wp-content/uploads/dim1-1.jpg){.confluence-embedded-image
-.wp-image-28613 .alignright .confluence-external-resource
-.confluence-content-image-border height="250"}
-![](https://www.talend.com/wp-content/uploads/320px-Network_Model_svg-1.png){.confluence-embedded-image
-.size-full .wp-image-28610 .alignright .confluence-external-resource
-.confluence-content-image-border height="250"}
+![](https://www.talend.com/wp-content/uploads/280px-Relational_Model_svg-1.png)
+![](https://www.talend.com/wp-content/uploads/the-data-vault-2.jpg)
+![](https://www.talend.com/wp-content/uploads/dim1-1.jpg)
+![](https://www.talend.com/wp-content/uploads/320px-Network_Model_svg-1.png)
 
 A Data Model Summary
 --------------------
@@ -196,9 +188,7 @@ Let us consider then a database design best practice: The design and
 release process of a data model. I believe that when crafting a data
 model one should follow a prescribed process similar to this:
 
-![](https://www.talend.com/wp-content/uploads/DDLC_DBdesignflow-3.png){.confluence-embedded-image
-.size-full .wp-image-28615 .aligncenter .confluence-external-resource
-.confluence-content-image-border height="150"}
+![](https://www.talend.com/wp-content/uploads/DDLC_DBdesignflow-3.png)
 
 Self-explanatory to most perhaps, yet let me emphasize the importance of
 adopting this process. While schema changes are inevitable, getting a
@@ -1056,9 +1046,7 @@ app has only one tenant, and therefore needs only one database. The
 tenant has the database all to itself.
 
 ![Design of standalone app with exactly one single-tenant
-database.](https://docs.microsoft.com/en-us/azure/sql-database/media/saas-tenancy-app-design-patterns/saas-standalone-app-single-tenant-database-11.png){.confluence-embedded-image
-.confluence-external-resource .confluence-content-image-border
-height="250"}
+database.](https://docs.microsoft.com/en-us/azure/sql-database/media/saas-tenancy-app-design-patterns/saas-standalone-app-single-tenant-database-11.png)
 
 Each app instance is installed in a separate Azure resource group. The
 resource group can belong to a subscription that is owned by either the
@@ -1099,8 +1087,8 @@ by adding more nodes. The scaling is based on workload, and is
 independent of the number or scale of the individual databases.
 
 ![Design of multi-tenant app with
-database-per-tenant.](https://docs.microsoft.com/en-us/azure/sql-database/media/saas-tenancy-app-design-patterns/saas-multi-tenant-app-database-per-tenant-13.png){.confluence-embedded-image
-.confluence-external-resource}
+database-per-tenant.](https://docs.microsoft.com/en-us/azure/sql-database/media/saas-tenancy-app-design-patterns/saas-multi-tenant-app-database-per-tenant-13.png)
+ 
 
 #### Customize for a tenant
 
@@ -1127,8 +1115,8 @@ peaks that it experiences. Even though pooled databases share access to
 resources they can still achieve a high degree of performance isolation.
 
 ![Design of multi-tenant app with database-per-tenant, using elastic
-pool.](https://docs.microsoft.com/en-us/azure/sql-database/media/saas-tenancy-app-design-patterns/saas-multi-tenant-app-database-per-tenant-pool-15.png){.confluence-embedded-image
-.confluence-external-resource}
+pool.](https://docs.microsoft.com/en-us/azure/sql-database/media/saas-tenancy-app-design-patterns/saas-multi-tenant-app-database-per-tenant-pool-15.png)
+ 
 
 Azure SQL Database provides the tools necessary to configure, monitor,
 and manage the sharing. Both pool-level and database-level performance
@@ -1248,9 +1236,7 @@ in one shard. Combined with a multi-tenant database pattern, a sharded
 model allows almost limitless scale.
 
 ![Design of multi-tenant app with sharded multi-tenant
-databases.](https://docs.microsoft.com/en-us/azure/sql-database/media/saas-tenancy-app-design-patterns/saas-multi-tenant-app-sharded-multi-tenant-databases-17.png){.confluence-embedded-image
-.confluence-external-resource .confluence-content-image-border
-height="250"}
+databases.](https://docs.microsoft.com/en-us/azure/sql-database/media/saas-tenancy-app-design-patterns/saas-multi-tenant-app-sharded-multi-tenant-databases-17.png)
 
 #### Manage shards {#DatabaseSQLArchitect-Manageshards}
 
@@ -1380,9 +1366,7 @@ AntiPattern
 
 ### Common Lookup Tables
 
-![843-Fig1.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig1.jpg){.confluence-embedded-image
-.confluence-external-resource .confluence-content-image-border
-height="250"}
+![843-Fig1.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig1.jpg)
 
 Figure 1
 
@@ -1413,18 +1397,10 @@ small tables (in the example, these are tables that represent distinct
 types of entities such as 'status of orders', 'priority of financial
 assets', 'location codes', 'type of warehouses' etc.).
 
-![843-Fig2.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig2.jpg){.confluence-embedded-image
-.confluence-external-resource .confluence-content-image-border
-width="259" height="124"}
-![843-Fig3.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig3.jpg){.confluence-embedded-image
-.confluence-external-resource .confluence-content-image-border
-width="314" height="188"}
-![843-Fig4.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig4.jpg){.confluence-embedded-image
-.confluence-external-resource .confluence-content-image-border
-width="285" height="124"}
-![843-Fig5.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig5.jpg){.confluence-embedded-image
-.confluence-external-resource .confluence-content-image-border
-width="253" height="146"}
+![843-Fig2.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig2.jpg)
+![843-Fig3.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig3.jpg)
+![843-Fig4.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig4.jpg)
+![843-Fig5.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig5.jpg)
 
 Figures 2-5
 
@@ -1518,9 +1494,7 @@ So then, should you ever avoid using a check constraint? Well, let's
 consider the cases where a referencing table (a table with a foreign
 key) can be used to restrain the column with a specific set of values.
 
-![843-Fig6.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig6.jpg){.confluence-embedded-image
-.confluence-external-resource .confluence-content-image-border
-height="250"}
+![843-Fig6.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig6.jpg)
 
 Figure 6
 
@@ -1565,9 +1539,7 @@ entity and a third one for the actual value of that property.
 Consider the following example of a table that records data about
 employees:
 
-![843-Fig7.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig7.jpg){.confluence-embedded-image
-.confluence-external-resource .confluence-content-image-border
-width="383" height="145"}
+![843-Fig7.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig7.jpg)
 
 Fig 7
 
@@ -1575,9 +1547,7 @@ Now, the EAV approach shuffles up the data, in order to  represent the
 attributes as values in one column and the corresponding values of those
 attributes in another column:
 
-![843-Fig8.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig8.jpg){.confluence-embedded-image
-.confluence-external-resource .confluence-content-image-border
-width="291" height="251"}
+![843-Fig8.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig8.jpg)
 
 Fig 8
 
@@ -1726,9 +1696,7 @@ Consider a table that represents the sales figures of some salesmen that
 work for a company. Let's assume that the following design is adopted so
 as to make it easier to retrieve the data in order to display it:
 
-![843-Fig9.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig9.jpg){.confluence-embedded-image
-.confluence-external-resource .confluence-content-image-border
-width="460" height="145"}
+![843-Fig9.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig9.jpg)
 
 Figure 9
 
@@ -1759,9 +1727,7 @@ Form](http://www.simple-talk.com/sql/learn-sql-server/facts-and-fallacies-about-
 The ideal way to design this table would be something along the lines
 of:
 
-![843-Fig10.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig10.jpg){.confluence-embedded-image
-.confluence-external-resource .confluence-content-image-border
-width="501" height="402"}
+![843-Fig10.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig10.jpg)
 
 Fig 10
 
@@ -1845,45 +1811,19 @@ a resultset  from the code  in a few different ways:
                     sales FOR 'month' IN ( jan , feb , mar , apr , may ) ) m ;
                         
 
-As usual, you will have to test against the underlying tables,  and
-consider such things as the magnitude of the data and  existing indexes
-to  make sure which method is the most efficient .
+As usual, you will have to test against the underlying tables,  and consider such things as the magnitude of the data and  existing indexes to  make sure which method is the most efficient .
 
-The other variation of this approach is to split the attributes across
-tables, i.e. using data values as part of the table name itself. This is
-commonly done by having multiple tables that are similarly structured.
+The other variation of this approach is to split the attributes across tables, i.e. using data values as part of the table name itself. This is commonly done by having multiple tables that are similarly structured.
 Consider the following set of tables:
 
-![843-Fig12.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig12.jpg){.confluence-embedded-image
-.confluence-external-resource .confluence-content-image-border
-width="630" height="138"}
-
+![843-Fig12.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig12.jpg)
 Figure 11
 
-Here, the individual values of the attribute 'month' are assigned to
-each table. This design shares similar shortcomings such as the
-duplication of constraints and the difficulty in expressing simple
-queries.  To be useful, the tables will have to be UNION-ed to form a
-single table with an additional column representing the month. It would
-have been easier to start with a  single base table.
+Here, the individual values of the attribute 'month' are assigned to each table. This design shares similar shortcomings such as the duplication of constraints and the difficulty in expressing simple queries.  To be useful, the tables will have to be UNION-ed to form a single table with an additional column representing the month. It would have been easier to start with a  single base table.
 
-We should be careful not to confuse splitting attributes with the
-logical design principle with table partitioning, a data reorganization
-process done at the physical level that creates smaller subsets of data
-from a large table or index in an attempt manage and access them
-efficiently.
+We should be careful not to confuse splitting attributes with the logical design principle with table partitioning, a data reorganization process done at the physical level that creates smaller subsets of data from a large table or index in an attempt manage and access them efficiently.
 
-Just as a side note, this problem has been discussed heavily by
-relational theorists specifically with respect to the limitations it
-imposes on view updates. Some have identified it as a direct violation
-of the Information Principle (a relational principle that requires the
-representation of all data in a database solely as values in a table)
-and recommended that  **no two tables in a database should have
-overlapped meanings**.   Originally defined as the New Design Principle,
-this recommendation for each table to have a single meaning or predicate
-is currently known as the Principle of Orthogonal Design in relational
-literature  [(Date & McGoveran,
-1995)](https://www.red-gate.com/simple-talk/sql/database-administration/five-simple-database-design-errors-you-should-avoid/#date).
+Just as a side note, this problem has been discussed heavily by relational theorists specifically with respect to the limitations it imposes on view updates. Some have identified it as a direct violation of the Information Principle (a relational principle that requires the representation of all data in a database solely as values in a table) and recommended that  **no two tables in a database should have overlapped meanings**.   Originally defined as the New Design Principle, this recommendation for each table to have a single meaning or predicate is currently known as the Principle of Orthogonal Design in relational literature  [(Date & McGoveran, 1995)](https://www.red-gate.com/simple-talk/sql/database-administration/five-simple-database-design-errors-you-should-avoid/#date).
 
 References
 
@@ -1894,10 +1834,3 @@ References
 -   <https://database-programmer.blogspot.com/2008/07/different-foreign-keys-for-different.html>
 -   <https://database-programmer.blogspot.com/2008/01/table-design-patterns-cross-reference.html>
 -   <http://www.databaseanswers.org/data_models/>
-
-
-
- 
-
-
-

@@ -27,8 +27,8 @@ typically runs in a virtualized or containerized environments where the
 number of instances of a service and their locations changes
 dynamically.
 
-![](https://microservices.io/i/servicediscovery/discovery-problem.jpg){.confluence-embedded-image
-.img-responsive .confluence-external-resource
+![](https://microservices.io/i/servicediscovery/discovery-problem.jpg)
+
 .confluence-content-image-border height="250"}
 
 Consequently, you must implement a mechanism for that enables the
@@ -66,8 +66,8 @@ available service instance.
 
 The following diagram shows the structure of this pattern.
 
-![](https://microservices.io/i/servicediscovery/server-side-discovery.jpg){.confluence-embedded-image
-.img-responsive .confluence-external-resource
+![](https://microservices.io/i/servicediscovery/server-side-discovery.jpg)
+
 .confluence-content-image-border height="250"}
 
 Examples
