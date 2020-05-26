@@ -57,7 +57,7 @@ overall task.
     for ensuring that the steps in this workflow are performed in the
     right order. As each step is performed, the Scheduler records the
     state of the workflow, such as \"step not yet started,\" \"step
-    running,\" or \"step completed.\" The state information should also
+    running,\" or \"step completed." The state information should also
     include an upper limit of the time allowed for the step to finish,
     called the complete-by time. If a step requires access to a remote
     service or resource, the Scheduler invokes the appropriate Agent,

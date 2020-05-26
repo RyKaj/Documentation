@@ -1,12 +1,4 @@
-
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Microservice Architecture Style
 ===========================================================

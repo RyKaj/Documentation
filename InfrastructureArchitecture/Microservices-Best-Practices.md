@@ -1,10 +1,4 @@
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 
 Infrastructure Architecture - Microservices Best Practices
@@ -220,7 +214,7 @@ Cold-start problems. Netflix later moved on Polyglot Microservice
 paradigm and decided not to develop the Netflix OSS further which lead
 the follower companies into trouble. So, instead of investing heavily in
 a language-specific library (e.g. Java based Netflix OSS), it is wiser
-to use frameworks (e.g. Service Meshes, API gateway).\
+to use frameworks (e.g. Service Meshes, API gateway).
 
 10. Organizational Considerations
 ---------------------------------
@@ -235,7 +229,7 @@ Microservice Architecture, then it should make the team size accordingly
 (two "American" Pizza team: 7±2 person). Also, the team should be
 cross-functional and ideally will have Frontend/Backend Developer, Ops
 Engineering and Tester. Microservice Architecture will only work if the
-higher Management also changes their viewpoint and vision accordingly.\
+higher Management also changes their viewpoint and vision accordingly.
 
 References
 

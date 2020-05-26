@@ -1,13 +1,4 @@
-
-
-
-
-
 [comment]: [Architecture](ReadMe.MD)
-    System](Microservice-DistributedSystem.html)
-
-
-
 
 Infrastructure Architecture - Microservice - Anti Patterns
 ========================================================
@@ -46,8 +37,6 @@ what a typical migration might look like when both the service code and
 the corresponding data are migrated at the same time.
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0101-1691c33f307ff43a4a6756e744196034.png)
-.iimagesdata-driven-1png .confluence-external-resource
-.confluence-content-image-border height="400"}
 
 Figure 1-1. Service and data migration
 
@@ -77,14 +66,12 @@ illustrated in 
 [Figure 1-2](https://www.oreilly.com/ideas/microservices-antipatterns-and-pitfalls#fig_102).
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0102-d855332b87b6d933ed19a6e1e63f988c.png)
-.iimagesdata-driven-2apng .confluence-external-resource
-.confluence-content-image-border height="400"}
 
 Figure 1-2. Extra data migration after service granularity adjustment
 
 My good friend and fellow O\'Reilly author Alan Beaulieu ( *Learning
 SQL*) once told me \"Data is a corporate asset, not an application
-asset.\" Given Alan\'s statement, you can gain an appreciation for the
+asset." Given Alan\'s statement, you can gain an appreciation for the
 risk involved and the concerns raised with continually migrating data.
 Data migrations are complex and error-prone---much more so than source
 code migrations. Optimally you want to migrate the data for each service
@@ -111,17 +98,12 @@ solution, because now you can learn more about how the service is used
 and what type of requests will be handled by each service.
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0103-a1612b6cf55fa76e3bf16720379b5092.png)
-.iimagesdata-driven-4apng .confluence-external-resource
-.confluence-content-image-border height="400"}
 
 Figure 1-3. Migrate service functionality first, then data portion later
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0201-dbf84b2d7ad3988944fba173326ee193.png)
-.iimagestimeout-1png .confluence-external-resource
-.confluence-content-image-border height="250"}
 
-In 
-[Figure 1-3](https://www.oreilly.com/ideas/microservices-antipatterns-and-pitfalls#fig_103),
+In [Figure 1-3](https://www.oreilly.com/ideas/microservices-antipatterns-and-pitfalls#fig_103),
 notice how the service was found to be too coarse-grained and was
 consequently split into two smaller services. Now that the granularity
 is correct, the data can be migrated to create the bounded context
@@ -202,8 +184,6 @@ successful and was in the process of sending you back the confirmation
 number.
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0202-24f51f9c4f7e334861b69ca641e5c605.png)
-.iimagestimeout-2png .confluence-external-resource
-.confluence-content-image-border height="250"}
 
 Figure 2-2. Calculating a timeout value
 
@@ -239,8 +219,6 @@ software circuit breaker can continue monitoring the service and close
 itself once the remote service becomes responsive again.
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0203-f6181a9a1ef2e1cf22272aa45b15c0fd.png)
-.iimagestimeout-3png .confluence-external-resource
-.confluence-content-image-border height="250"}
 
 Figure 2-3. Circuit breaker pattern
 
@@ -305,8 +283,6 @@ illustrated in 
 where every service is dependent on multiple custom shared libraries.
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0301-f22b1304590c1e0f709bc503083918ef.png)
-.iimagesshare-1png .confluence-external-resource
-.confluence-content-image-border height="250"}
 
 Figure 3-1. Sharing multiple custom libraries
 
@@ -326,8 +302,6 @@ the two main artifacts (abstract classes and shared utilities) that end
 up being shared in most monolithic layered architectures.
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0302-737e345baac230f8d2d858fb3588a826.png)
-.iimagesshare-2png .confluence-external-resource
-.confluence-content-image-border height="400"}
 
 Figure 3-2. Sharing inheritance structures and utility classes
 
@@ -361,8 +335,6 @@ shared projects, shared libraries, replication, and service
 consolidation.
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0303-01d235fa9dce344af9b47b4a83906185.png)
-.iimagesshare-3png .confluence-external-resource
-.confluence-content-image-border height="400"}
 
 Figure 3-3. Module-sharing techniques
 
@@ -428,7 +400,7 @@ There are four main techniques for handling reporting in a microservices
 architecture: the database pull model, HTTP pull model, batch pull
 model, and finally the event-based push model. The first three
 techniques pull data from each of the service databases, hence the
-antipattern name \"reach-in reporting.\" Since the first three models
+antipattern name \"reach-in reporting." Since the first three models
 represent the problem associated with this antipattern, let\'s take a
 look at those techniques first to see why they lead you into trouble.
 
@@ -447,8 +419,6 @@ directly from the service databases. This technique is illustrated in 
 [Figure 4-1](https://www.oreilly.com/ideas/microservices-antipatterns-and-pitfalls#fig_401).
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0401-a7a59563a7133ee4938c443d340796b5.png)
-.iimagesreporting-1png .confluence-external-resource
-.confluence-content-image-border height="250"}
 
 Figure 4-1. Database pull-reporting model
 
@@ -470,8 +440,6 @@ illustrated in 
 [Figure 4-2](https://www.oreilly.com/ideas/microservices-antipatterns-and-pitfalls#fig_402).
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0402-e19c666b435bddd479fc979b169fafeb.png)
-.iimagesreporting-2png .confluence-external-resource
-.confluence-content-image-border height="250"}
 
 Figure 4-2. HTTP pull-reporting model
 
@@ -491,8 +459,6 @@ and reduce that data, and insert it into the reporting database or data
 warehouse.
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0403-57f5f96c50ff3bbcb8090d8a40179562.png)
-.iimagesreporting-3png .confluence-external-resource
-.confluence-content-image-border height="250"}
 
 Figure 4-3. Batch pull-reporting model
 
@@ -512,8 +478,6 @@ relies on asynchronous event processing to make sure the reporting
 database has the right information as soon as possible.
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0404-5e3d704e2514e97a18cc37967dbb1b45.png)
-.iimagesreporting-4png .confluence-external-resource
-.confluence-content-image-border height="250"}
 
 Figure 4-4. Event-based push-reporting model
 
@@ -545,8 +509,6 @@ both the bounded context of each service and the timeliness of reporting
 data.
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0405-045896b43f3d055a16b0fb5e555c47a3.png)
-.iimagesreporting-5png .confluence-external-resource
-.confluence-content-image-border height="250"}
 
 Figure 4-5. Comparing reporting models
 
@@ -590,8 +552,6 @@ single class tend to have classes that are too big and carry too much
 responsibility, making them hard to maintain and test.
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0501-664db0319ecaca44fe861eb5f617bb32.png)
-.iimagessand-1png .confluence-external-resource
-.confluence-content-image-border height="250"}
 
 Figure 5-1. Relationship between modules and a service
 
@@ -644,8 +604,6 @@ function you will likely find that your services are too coarse-grained
 and you will move toward services that are more fine-grained.
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0502-9be9f37a8cf617b1fda9e83ff72847c8.png)
-.iimagessand-2png .confluence-external-resource
-.confluence-content-image-border height="150"}
 
 Figure 5-2. Impact of analyzing service functionality and scope
 
@@ -687,8 +645,6 @@ coordinated within a single service context, as illustrated in 
 [Figure 5-3](https://www.oreilly.com/ideas/microservices-antipatterns-and-pitfalls#fig_503).
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0503-be24bd98df9293d6521d884c01eb922f.png)
-.iimagessand-3png .confluence-external-resource
-.confluence-content-image-border height="250"}
 
 Figure 5-3. Impact of analyzing database transactions
 
@@ -728,8 +684,6 @@ that are more coarse-grained, as illustrated in 
 [Figure 5-4](https://www.oreilly.com/ideas/microservices-antipatterns-and-pitfalls#fig_504).
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0504-582836e8a516762ca9e6bbea1e8e7562.png)
-.iimagessand-4png .confluence-external-resource
-.confluence-content-image-border height="400"}
 
 Figure 5-4. Impact of analyzing service choreography
 
@@ -760,9 +714,9 @@ I have observed more times that I can count architects and developers
 making decisions about various aspects of microservices, particularly
 with regards to service granularity and devops tools, for all the wrong
 reasons. It all boils down to tradeoffs. Rich Hickey says \"Programmers
-know the benefits of everything and the tradeoffs of nothing.\" My
+know the benefits of everything and the tradeoffs of nothing." My
 friend Neal Ford likes to follow up on Rich\'s quote by saying
-\"Architects must understand both.\" I maintain that developers should
+\"Architects must understand both." I maintain that developers should
 know both as well. 
 
 ### Making the Wrong Decisions
@@ -776,8 +730,6 @@ services should be consolidated into a single, more coarse-grained
 service to address the performance and reliability issues.
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0601-b939ef333e833d8a8d7b39a937ee48fd.png)
-.iimagesdev-cause-1png .confluence-external-resource
-.confluence-content-image-border height="150"}
 
 Figure 6-1. Moving from fine-grained to coarse-grained
 
@@ -796,8 +748,6 @@ services to reduce the scope of each service, therefore making them
 easier to test and deploy.
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0602-7a5bf86583bcf72e62a49e851a76bd1c.png)
-.iimagesdev-cause-2png .confluence-external-resource
-.confluence-content-image-border height="150"}
 
 Figure 6-2. Moving from coarse-grained to fine-grained
 
@@ -856,11 +806,9 @@ Then, anytime there is a decision on service granularity or tool
 selection, the team can always look up, refer to the whiteboard, and say
 \"oh, yeah, that\'s right. Okay, let\'s keep the services fine-grained
 and figure out another way to address the performance and reliability
-issues.\"
+issues."
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0603-5967c15f2e14fd97af2f16716dbbc24c.png)
-.iimagesdev-cause-3png .confluence-external-resource
-.confluence-content-image-border height="250"}
 
 Figure 6-3. Put business drivers on the whiteboard
 
@@ -1069,7 +1017,7 @@ simply creating a new version of the contract, say version 1.1. Clients
 2 and 3 are both using version 1.0 of the contract, so now you can
 implement the change right away without having to wait for client 2 or
 client 3 to respond. In addition, you can make the change without making
-what is called a \"breaking change.\"
+what is called a \"breaking change."
 
 There are two basic techniques for contract versioning: versioning at
 the header level and versioning in the contract schema itself. In this
@@ -1142,8 +1090,6 @@ contained within the header of the remote access protocol (e.g., REST,
 SOAP, AMQP, JMS, MSMQ, etc.).
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0801-dba99afe9ad48007a770a13d03a90971.png)
-.iimagescontract1png .confluence-external-resource
-.confluence-content-image-border height="150"}
 
 Figure 8-1. Header contract versioning
 
@@ -1208,8 +1154,6 @@ of the remote access protocol. Nothing needs to be specified in the
 headers of the remote access protocol in order to use versioning.
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0802-d3d57571e3ffca3dcc869c7b0c692548.png)
-.iimagescontract2png .confluence-external-resource
-.confluence-content-image-border height="150"}
 
 Figure 8-2. Schema-based contract versioning
 
@@ -1314,8 +1258,6 @@ these benchmarks on a variety of business requests with different load
 profiles.
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0901-c8ab60023fcfbfd715852085a98198c3.png)
-.iimageslatency1png .image .confluence-external-resource
-.confluence-content-image-border height="150"}
 
 Figure 9-1. Comparing remote access latency
 
@@ -1382,8 +1324,6 @@ when making a request, as illustrated in 
 This is sometimes referred to as \"fire-and-forget\" processing.
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_1001-b9d72dc996b8bbf29e62f8997d2681b5.png)
-.iimagesrest-1png .confluence-external-resource
-.confluence-content-image-border height="150"}
 
 Figure 10-1. Asynchronous communications using messaging
 
@@ -1408,8 +1348,6 @@ standard you are using). 
 the basic behavior of broadcast messaging.
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_1002-2199c81cd88d8b44336193d5f8662b83.png)
-.iimagesrest-2png .confluence-external-resource
-.confluence-content-image-border height="250"}
 
 Figure 10-2. Broadcast capabilities using messaging
 
@@ -1437,8 +1375,6 @@ the queues. Once the service consumer performs a commit, both messages
 are then released.
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_1003-b683f3dc56d5ceca76c43d6874cdc577.png)
-.iimagesrest-3png .confluence-external-resource
-.confluence-content-image-border height="250"}
 
 Figure 10-3. Transaction capabilities of messaging
 

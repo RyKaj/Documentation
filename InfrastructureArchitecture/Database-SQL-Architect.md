@@ -422,7 +422,7 @@ happen?
 
 The near-universal answer is that the user should be denied the action.
 An error should come back that says \"That customer has orders, cannot
-delete.\" We want it this way because we never want to delete any parent
+delete." We want it this way because we never want to delete any parent
 row and \"orphan\" the child rows. Database programmers know from long
 experience that if you allow the DELETE, your queries will give
 incorrect results, or you will work extremely hard with lots of weird
@@ -562,7 +562,7 @@ When we look at rule one we see that it splits into two requirements:
     allowed (or qualified) classes.
 
 When I see these two requirements together I automatically think
-\"validate against a cross reference.\" I call this the \"Cross
+\"validate against a cross reference." I call this the \"Cross
 Reference Validation\" pattern. It is different from a simple foreign
 key validation. Let\'s go through it and see why.
 
@@ -731,7 +731,7 @@ we see three distinct patterns:
 ### FETECH Pattern
 
 Consider a shopping cart that has a column \"sku\" and another column
-\"price.\" Most programmers lay out these tables and write some code
+\"price." Most programmers lay out these tables and write some code
 that copies the price from the ITEMS table to the ORDER\_LINES table. I
 call this pattern the \"FETCH\" because the price is FETCHed from the
 ITEMS table and written into the ORDER\_LINES table.
@@ -902,7 +902,7 @@ A resolution pattern has these characteristics:
     the default rate for an activity.
 
 Resolutions are not always easy to recognize. Mostly this is because
-customers do not tell you \"we have a resolution.\" Instead they tell
+customers do not tell you \"we have a resolution." Instead they tell
 you they have a billing rate. The explanation of the special overrides
 for employees comes in a different conversation, and perhaps to a
 different member of your team. Then later comes the explanation of the
@@ -1436,7 +1436,7 @@ So what is wrong with it?
     column is applicable to them or not.  What about complexity? Often
     the idea of using common lookup tables come from the idea of
     generalizing entities where by a single table represents a "thing"
-    -- pretty much anything.\
+    -- pretty much anything.
     Contrast this with the fundamental rule that a well-designed table
     represents a set of facts about entities or relationships of the
     same kind. The problem with generalizing entities is that a table

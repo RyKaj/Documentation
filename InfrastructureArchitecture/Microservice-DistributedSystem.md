@@ -1,9 +1,4 @@
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Microservices & Distributed System
 ==============================================================
@@ -2804,9 +2799,9 @@ Examples
 
  {.panelContent}
 Here, at Pinnacle, we do benefit from this pattern greatly. It is a nice
-way to enforce practices while we promote reusable code.\
+way to enforce practices while we promote reusable code.
 For all our .Net Core APIs, we always reference the following
-nuget [Pinnacle.CustomerTeam.Api](http://devtools.pinnacle.com:81/feeds/Default/Pinnacle.CustomerTeam.Api).\
+nuget [Pinnacle.CustomerTeam.Api](http://devtools.pinnacle.com:81/feeds/Default/Pinnacle.CustomerTeam.Api).
 Once referenced, developer makes sure to configure the required cross
 cutting concerns for the given project. \
 \
@@ -5170,7 +5165,7 @@ Cold-start problems. Netflix later moved on Polyglot Microservice
 paradigm and decided not to develop the Netflix OSS further which lead
 the follower companies into trouble. So, instead of investing heavily in
 a language-specific library (e.g. Java based Netflix OSS), it is wiser
-to use frameworks (e.g. Service Meshes, API gateway).\
+to use frameworks (e.g. Service Meshes, API gateway).
 
 
 
@@ -5190,7 +5185,7 @@ Microservice Architecture, then it should make the team size accordingly
 (two "American" Pizza team: 7±2 person). Also, the team should be
 cross-functional and ideally will have Frontend/Backend Developer, Ops
 Engineering and Tester. Microservice Architecture will only work if the
-higher Management also changes their viewpoint and vision accordingly.\
+higher Management also changes their viewpoint and vision accordingly.
 
 
 
@@ -5325,7 +5320,7 @@ Figure 1-2. Extra data migration after service granularity adjustment
 
 My good friend and fellow O\'Reilly author Alan Beaulieu (*Learning
 SQL*) once told me \"Data is a corporate asset, not an application
-asset.\" Given Alan\'s statement, you can gain an appreciation for the
+asset." Given Alan\'s statement, you can gain an appreciation for the
 risk involved and the concerns raised with continually migrating data.
 Data migrations are complex and error-prone---much more so than source
 code migrations. Optimally you want to migrate the data for each service
@@ -5718,7 +5713,7 @@ There are four main techniques for handling reporting in a microservices
 architecture: the database pull model, HTTP pull model, batch pull
 model, and finally the event-based push model. The first three
 techniques pull data from each of the service databases, hence the
-antipattern name \"reach-in reporting.\" Since the first three models
+antipattern name \"reach-in reporting." Since the first three models
 represent the problem associated with this antipattern, let\'s take a
 look at those techniques first to see why they lead you into trouble.
 
@@ -6093,9 +6088,9 @@ I have observed more times that I can count architects and developers
 making decisions about various aspects of microservices, particularly
 with regards to service granularity and devops tools, for all the wrong
 reasons. It all boils down to tradeoffs. Rich Hickey says \"Programmers
-know the benefits of everything and the tradeoffs of nothing.\" My
+know the benefits of everything and the tradeoffs of nothing." My
 friend Neal Ford likes to follow up on Rich\'s quote by saying
-\"Architects must understand both.\" I maintain that developers should
+\"Architects must understand both." I maintain that developers should
 know both as well. 
 
 
@@ -6202,7 +6197,7 @@ Then, anytime there is a decision on service granularity or tool
 selection, the team can always look up, refer to the whiteboard, and say
 \"oh, yeah, that\'s right. Okay, let\'s keep the services fine-grained
 and figure out another way to address the performance and reliability
-issues.\"
+issues."
 
 ![](https://d3ansictanv2wj.cloudfront.net/mapr_0603-5967c15f2e14fd97af2f16716dbbc24c.png)
 .iimagesdev-cause-3png .confluence-external-resource
@@ -6438,7 +6433,7 @@ simply creating a new version of the contract, say version 1.1. Clients
 2 and 3 are both using version 1.0 of the contract, so now you can
 implement the change right away without having to wait for client 2 or
 client 3 to respond. In addition, you can make the change without making
-what is called a \"breaking change.\"
+what is called a \"breaking change."
 
 There are two basic techniques for contract versioning: versioning at
 the header level and versioning in the contract schema itself. In this

@@ -29,7 +29,7 @@ API Model
 ---------
 
 The underlying data model can be considered as a large Hashtable
-(key/value store).\
+(key/value store).
 \
 The basic form of API access is
 
@@ -65,7 +65,7 @@ Data Partitioning (Consistent Hashing)
 --------------------------------------
 
 Since the overall hashtable is distributed across many VNs, we need a
-way to map each key to the corresponding VN.\
+way to map each key to the corresponding VN.
 \
 One way is to use\
 partition = key mod (total\_VNs)\
@@ -105,7 +105,7 @@ Membership Changes
 ------------------
 
 Notice that virtual nodes can join and leave the network at any time
-without impacting the operation of the ring.\
+without impacting the operation of the ring.
 \
 When a new node joins the network
 
@@ -126,12 +126,12 @@ Notice that other nodes may not have their membership view updated yet
 so they may still forward the request to the old nodes. But since these
 old nodes (which is the neighbor of the new joined node) has been
 updated (in step 2), so they will forward the request to the new joined
-node.\
+node.
 \
 On the other hand, the new joined node may still in the process of
 downloading the data and not ready to serve yet. We use the vector clock
 (described below) to determine whether the new joined node is ready to
-serve the request and if not, the client can contact another replica.\
+serve the request and if not, the client can contact another replica.
 \
 When an existing node leaves the network (e.g. crash)
 
@@ -148,7 +148,7 @@ physical nodes. Many schemes are possible with the main goal that
 Virtual Node replicas should not be sitting on the same physical node.
 One simple scheme is to assigned Virtual node to Physical node in a
 random manner but check to make sure that a physical node doesn\'t
-contain replicas of the same key ranges.\
+contain replicas of the same key ranges.
 \
 Notice that since machine crashes happen at the physical node level,
 which has many virtual nodes runs on it. So when a single Physical node
@@ -160,7 +160,7 @@ node crashes is evenly balanced.
 
 Once we have multiple copies of the same data, we need to worry about
 how to synchronize them such that the client can has a consistent view
-of the data.\
+of the data.
 \
 There is a number of client consistency models
 
@@ -201,12 +201,12 @@ slaves. All update requests has to go to the master where update is
 applied and then asynchronously propagated to the slaves. Notice that
 there is a time window of data lost if the master crashes before it
 propagate its update to any slaves, so some system will wait
-synchronously for the update to be propagated to at least one slave.\
+synchronously for the update to be propagated to at least one slave.
 \
 Read requests can go to any replicas if the client can tolerate some
 degree of data staleness. This is where the read workload is distributed
 among many replicas. If the client cannot tolerate staleness for certain
-data, it also need to go to the master.\
+data, it also need to go to the master.
 \
 Note that this model doesn\'t mean there is one particular physical node
 that plays the role as the master. The granularity of \"mastership\"
@@ -218,23 +218,23 @@ partitioning rather than replicas\
 \
 When a physical node crashes, the masters of certain partitions will be
 lost. Usually, the most updated slave will be nominated to become the
-new master.\
+new master.
 \
 Master Slave model works very well in general when the application has a
 high read/write ratio. It also works very well when the update happens
 evenly in the key range. So it is the predominant model of data
-replication.\
+replication.
 \
 There are 2 ways how the master propagate updates to the slave; State
 transfer and Operation transfer. In State transfer, the master passes
 its latest state to the slave, which then replace its current state with
 the latest state. In operation transfer, the master propagate a sequence
 of operations to the slave which then apply the operations in its local
-state.\
+state.
 \
 The state transfer model is more robust against message lost because as
 long as a latter more updated message arrives, the replica still be able
-to advance to the latest state.\
+to advance to the latest state.
 \
 Even in state transfer mode, we don\'t want to send the full object for
 updating other replicas because changes typically happens within a small
@@ -244,7 +244,7 @@ detect and send just the delta (the portion that has been changed). One
 common approach is break the object into chunks and compute a  [hash
 tree](http://en.wikipedia.org/wiki/Hash_tree) of the
 object. So the replica can just compare their hash tree to figure out
-which chunk of the object has been changed and only send those over.\
+which chunk of the object has been changed and only send those over.
 \
 In operation transfer mode, usually much less data need to be send over
 the network. However, it requires a reliable message mechanism with
@@ -256,7 +256,7 @@ Multi-Master (or No Master) Model
 If there is hot spots in certain key range, and there is intensive write
 request, the master slave model will be unable to spread the workload
 evenly. Multi-master model allows updates to happen at any replica (I
-think call it \"No-Master\" is more accurate).\
+think call it \"No-Master\" is more accurate).
 \
 If any client can issue any update to any server, how do we synchronize
 the states such that we can retain client consistency and also
@@ -272,31 +272,31 @@ is N replicas for a data. When the data is update, there is a
 \"prepare\" phase where the coordinator ask every replica to confirm
 whether each of them is ready to perform the update. Each of the replica
 will then write the data to a log file and when success, respond to the
-coordinator.\
+coordinator.
 \
 After gathering all replicas responses positively, the coordinator will
 initiate the second \"commit\" phase and then ask every replicas to
 commit and each replica then write another log entry to confirm the
 update. Notice that there are some scalability issue as the coordinator
 need to \"synchronously\" wait for quite a lot of back and forth network
-roundtrip and disk I/O to complete.\
+roundtrip and disk I/O to complete.
 \
 On the other hand, if any one of the replica crashes, the update will be
 unsuccessful. As there are more replicas, chance of having one of them
 increases. Therefore, replication is hurting the availability rather
 than helping. This make traditional 2PC not a popular choice for high
-throughput transactional system.\
+throughput transactional system.
 \
 A more efficient way is to use the quorum based 2PC (e.g. PAXOS). In
 this model, the coordinator only need to update W replicas (rather than
 all N replicas) synchronously. The coordinator still write to all the N
 replicas but only wait for positive acknowledgment for any W of the N to
-confirm. This is much more efficient from a probabilistic standpoint.\
+confirm. This is much more efficient from a probabilistic standpoint.
 \
 However, since no all replicas are update, we need to be careful when
 reading the data to make sure the read can reach at least one replica
 that has been previously updated successful. When reading the data, we
-need to read R replicas and return the one with the latest timestamp.\
+need to read R replicas and return the one with the latest timestamp.
 \
 For \"strict consistency\", the important condition is to make sure the
 read set and the write set overlap. ie: W + R \> N
@@ -309,10 +309,10 @@ height="141"}](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwOHybHlzHI/AAAAAAAAATE/-Na
 As you can see, the quorum based 2PC can be considered as a general 2PC
 protocol where the traditional 2PC is a special case where W = N and R =
 1. The general quorum-based model allow us to pick W and R according to
-our tradeoff decisions between read and write workload ratio.\
+our tradeoff decisions between read and write workload ratio.
 \
 If the user cannot afford to pick W, R large enough, ie: W + R \<= N,
-then the client is relaxing its consistency model to a weaker one.\
+then the client is relaxing its consistency model to a weaker one.
 \
 If the client can tolerate a more relax consistency model, we don\'t
 need to use the 2PC commit or quorum based protocol as above. Here we
@@ -360,7 +360,7 @@ Depends on what information is passed in the message, the situation can
 be different. This will affect how the vector clock will be advanced. In
 below, we describe the \"state transfer model\" and the \"operation
 transfer model\" which has different information passed in the message
-and the advancement of their vector clock will also be different.\
+and the advancement of their vector clock will also be different.
 \
 Because state is always flow from the replica to the client but not the
 other way round, the client doesn\'t have an entry in the Vector clock.
@@ -377,7 +377,7 @@ Gossip (State Transfer Model)
 In a state transfermodel, each replica maintain a vector clock as well
 as a state version tree where each state is neither \> or \< among each
 other (based on vector clock comparison). In other words, the state
-version tree contains all the conflicting updates.\
+version tree contains all the conflicting updates.
 \
 At query time, the client will attach its vector clock and the replica
 will send back a subset of the state tree which precedes the client\'s
@@ -413,16 +413,16 @@ executing the operation until all the preceding operations has been
 executed. Therefore replicas save the operation request to a log file
 and exchange the log among each other and consolidate these operation
 logs to figure out the right sequence to apply the operations to their
-local store in an appropriate order.\
+local store in an appropriate order.
 \
 \"Causal order\" means every replica will apply changes to the
 \"causes\" before apply changes to the \"effect\". \"Total order\"
-requires that every replica applies the operation in the same sequence.\
+requires that every replica applies the operation in the same sequence.
 \
 In this model, each replica keeps a list of vector clock, Vi is the
 vector clock the replica itself and Vj is the vector clock when replica
 i receive replica j\'s gossip message. There is also a V-state that
-represent the vector clock of the last updated state.\
+represent the vector clock of the last updated state.
 \
 When a query is submitted by the client, it will also send along its
 vector clock which reflect the client\'s view of the world. The replica
@@ -436,7 +436,7 @@ When an update operation is received, the replica will buffer the update
 operation until it can be applied to the local state. Every submitted
 operation will be tag with 2 timestamp, V-client indicates the client\'s
 view when he is making the update request. V-\@receive is the replica\'s
-view when it receives the submission.\
+view when it receives the submission.
 \
 This update operation request will be sitting in the queue until the
 replica has received all the other updates that this one depends on.
@@ -461,7 +461,7 @@ height="359"}
 The concurrent update problem at different replica can also happen.
 Which means there can be multiple valid sequences of operation. In order
 for different replica to apply concurrent update in the same order, we
-need a total ordering mechanism.\
+need a total ordering mechanism.
 \
 One approach is whoever do the update first acquire a monotonic sequence
 number and late comers follow the sequence. On the other hand, if the
@@ -480,7 +480,7 @@ Map Reduce Execution
 Notice that the distributed store architecture fits well into
 distributed processing as well. For example, to process a  [Map/Reduce
 operation](http://horicky.blogspot.com/2008/11/hadoop-mapreduce-implementation.html) over
-an input key list.\
+an input key list.
 \
 The system will push the map and reduce function to all the nodes (ie:
 moving the processing logic towards the data). The map function of the
@@ -499,7 +499,7 @@ In a multi-master replication system, we use Vector clock timestamp to
 determine causal order, we need to handle \"delete\" very carefully such
 that we don\'t lost the associated timestamp information of the deleted
 object, otherwise we cannot even reason the order of when to apply the
-delete.\
+delete.
 \
 Therefore, we typically handle delete as a special update by marking the
 object as \"deleted\" but still keep its metadata / timestamp
@@ -512,12 +512,12 @@ Storage Implementaton
 
 One strategy is to use make the storage implementation pluggable. e.g. A
 local MySQL DB, Berkeley DB, Filesystem or even a in memory Hashtable
-can be used as a storage mechanism.\
+can be used as a storage mechanism.
 \
 Another strategy is to implement the storage in a highly scalable way.
 Here are some techniques that I learn from 
 [CouchDB](http://horicky.blogspot.com/2008/10/couchdb-implementation.html) and
-Google BigTable.\
+Google BigTable.
 \
 CouchDB has a MVCC model that uses a copy-on-modified approach. Any
 update will cause a private copy being made which in turn cause the
@@ -546,7 +546,7 @@ height="293"}\
 
 When update happens, both the mem data and the commit log will be
 written so that if the machine crashes before the mem data flush to
-disk, it can be recovered from the commit log.\
+disk, it can be recovered from the commit log.
 
 MongoDB Design Pattern
 ----------------------
@@ -1234,22 +1234,22 @@ The following operations illustrate how both functions work.
 
 1.  Assume that the Couchbase topology contains four nodes per data
     center/cluster with each storing two copies of the same document
-    replicated through XDCR between clusters.\
+    replicated through XDCR between clusters.
     ![Couchbase Local Cluster Write Durability Pattern
     A](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.1.15.png){width="318"
     height="250"}
-2.  The application in Data Center 1 writes documentP1 to nodeN1.\
+2.  The application in Data Center 1 writes documentP1 to nodeN1.
     ![Couchbase Local Cluster Write Durability Pattern
     B](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.2.16.png){height="250"}
 3.  BeforeP1 is replicated to the replica node in the local cluster or
     to the remote data center/cluster, nodeN1 fails, and as a result the
-    application suffers data loss.\
+    application suffers data loss.
     ![Couchbase Local Cluster Write Durability Pattern
     C](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.3.17.png){height="250"}
 4.  BeforeP1 reaches the remote data center/cluster, even thoughP1 has
     been replicated successfully in memory to the local cluster replica
     nodeN4, if bothN1 andN4 nodes fail, the application still suffers
-    data loss.\
+    data loss.
     ![Couchbase Local Cluster Write Durability Pattern
     D](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.4.18.png){width="318"
     height="250"}
@@ -1259,7 +1259,7 @@ The following operations illustrate how both functions work.
     , and using the PersistTo function can circumvent the failure
     described in  [step
     4](https://tech.ebayinc.com/engineering/practical-nosql-resilience-design-pattern-for-the-enterprise/#step4)
-    , as shown in the following figure.\
+    , as shown in the following figure.
     ![Couchbase Local Cluster Write Durability Pattern
     E](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.5.19.png){height="250"}
 6.  Lastly, for multi-data center/cluster durability, use the design
