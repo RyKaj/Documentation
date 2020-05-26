@@ -1,11 +1,4 @@
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Anti-Corruption Layer Pattern
 =========================================================
@@ -60,7 +53,6 @@ performance metrics such as latency or resource usage, and this
 monitoring happens in the same host environment as the application.
 
 ![](attachments/463533416/463533415.png)
-.confluence-content-image-border height="150"}
 
 Features that are offloaded to the ambassador can be managed
 independently of the application. You can update and modify the

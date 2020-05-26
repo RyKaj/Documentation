@@ -1,11 +1,4 @@
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Asynchronous Request-Reply Pattern
 ==============================================================
@@ -108,7 +101,6 @@ much extra complexity.
 The following diagram shows a typical flow:
 
 ![](attachments/463533293/463533292.png)
-.confluence-content-image-border height="150"}
 
 1.  The client sends a request and receives an HTTP 202 (Accepted)
     response.
