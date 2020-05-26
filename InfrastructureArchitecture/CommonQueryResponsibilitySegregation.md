@@ -1,17 +1,7 @@
-
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Command Query Responsibility Segregation (CQRS)
 ===========================================================================
-
-
  
 Context
 -------
@@ -43,7 +33,6 @@ by the service that own the data.
 
 ![](https://microservices.io/i/patterns/data/QuerySideService.png)
 
-.confluence-content-image-border height="250"}
 
 Examples
 --------
@@ -85,10 +74,4 @@ This pattern has the following drawbacks:
     generates the events
 -   CQRS is often used with  [Event
     sourcing](https://microservices.io/patterns/data/event-sourcing.html)
-
-
-
- 
-
-
 
