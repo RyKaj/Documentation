@@ -1,2 +1,2 @@
 
-[Cloud Design Patterns](./Infrastructure Architecture/ReadMe.md)
+[Cloud Design Patterns](./InfrastructureArchitecture/ReadMe.md)
