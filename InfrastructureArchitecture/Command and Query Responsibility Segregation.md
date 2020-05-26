@@ -1,17 +1,7 @@
-::: {#main}
-::: {#main-header}
-::: {#breadcrumb-section}
-1.  [Information Technology](index.html)
-2.  [2.0 Architectures](2.0-Architectures_451824369.html)
-3.  [Infrastructure Design
-    Patterns](Infrastructure-Design-Patterns_463533493.html)
-:::
+[comment]: [Architecture](ReadMe.MD)
 
-Infrastructure Architecture Command and Query Responsibility Segregation (CQRS) Pattern {#title-heading .pagetitle}
+Infrastructure Architecture Command and Query Responsibility Segregation (CQRS) Pattern
 =======================================================================================
-:::
-
-::: {#content .view}
 Overview
 --------
 
@@ -38,8 +28,7 @@ does too much.
 Read and write workloads are often asymmetrical, with very different
 performance and scale requirements.
 
-![](attachments/463533319/463533316.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533319/463533316.png)
 
 -   There is often a mismatch between the read and write representations
     of the data, such as additional columns or properties that must be
@@ -73,8 +62,7 @@ CQRS separates reads and writes into different models, using 
 The models can then be isolated, as shown in the following diagram,
 although that\'s not an absolute requirement.
 
-![](attachments/463533319/463533317.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533319/463533317.png)
 
 Having separate query and update models simplifies the design and
 implementation. However, one disadvantage is that CQRS code can\'t
@@ -96,8 +84,7 @@ sync. Typically this is accomplished by having the write model publish
 an event whenever it updates the database. Updating the database and
 publishing the event must occur in a single transaction.
 
-![](attachments/463533319/463533318.png){.confluence-embedded-image
-.confluence-content-image-border height="150"}
+![](attachments/463533319/463533318.png)
 
 The read store can be a read-only replica of the write store, or the
 read and write stores can have a different structure altogether. Using
@@ -204,10 +191,3 @@ This pattern isn\'t recommended when:
 
 Consider applying CQRS to limited sections of your system where it will
 be most valuable.
-:::
-:::
-
-::: {#footer role="contentinfo"}
-::: {.section .footer-body}
-:::
-:::

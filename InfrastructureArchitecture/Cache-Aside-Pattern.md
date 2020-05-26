@@ -1,10 +1,4 @@
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 
 Infrastructure Architecture - Cache-Aside Pattern
@@ -50,7 +44,6 @@ cache on demand. The figure illustrates using the Cache-Aside pattern to
 store data in the cache.
 
 ![](attachments/463533304/463533303.png)
-.confluence-thumbnail .confluence-content-image-border height="150"}
 
 If an application updates information, it can follow the write-through
 strategy by making the modification to the data store, and by
@@ -131,9 +124,6 @@ This pattern might not be suitable:
     a web farm. In this environment, you should avoid introducing
     dependencies based on client-server affinity.
 
-
-
- 
 
 
 

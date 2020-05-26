@@ -1,16 +1,7 @@
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Compensating Transaction Pattern
 ============================================================
-
-
  
 Overview
 --------

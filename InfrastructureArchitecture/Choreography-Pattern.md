@@ -1,11 +1,4 @@
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Choreography Pattern
 ================================================
@@ -51,7 +44,6 @@ remove services easily with a well-designed orchestrator, such an
 implementation is complex hard to maintain.
 
 ![](attachments/463533308/463533306.png)
-.confluence-content-image-border height="150"}
 
 Solution
 --------
@@ -64,7 +56,6 @@ pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/publisher-
 coordinate the business operations.
 
 ![](attachments/463533308/463533307.png)
-.confluence-content-image-border height="150"}
 
 A client request publishes messages to a message queue. As messages
 arrive, they are pushed to subscribers, or services, interested in that

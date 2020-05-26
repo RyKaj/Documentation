@@ -1,10 +1,4 @@
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 
 Infrastructure Architecture - Claim-Check Pattern
@@ -55,7 +49,6 @@ interested in processing that specific message can use the obtained
 reference to retrieve the payload, if needed.
 
 ![](attachments/463533314/463533313.jpg)
-.confluence-content-image-border height="150"}
 
 Issues and Considerations
 -------------------------

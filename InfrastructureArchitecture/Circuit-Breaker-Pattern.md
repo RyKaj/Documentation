@@ -1,16 +1,7 @@
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Circuit Breaker Pattern
 ===================================================
-
-
  
 Overview
 --------
@@ -120,7 +111,6 @@ states that mimic the functionality of an electrical circuit breaker:
     > work can cause the service to time out or fail again.
 
 ![](attachments/463533311/463533310.png)
-.confluence-thumbnail .confluence-content-image-border height="150"}
 
 In the figure, the failure counter used by the  **Closed** state is time
 based. It\'s automatically reset at periodic intervals. This helps to
