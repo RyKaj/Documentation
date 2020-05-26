@@ -1,10 +1,4 @@
-
-
-
-
-
-3.  [Cloud](Cloud_463533284.html)
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Cloud Computing Overview
 ====================================================
@@ -35,8 +29,6 @@ Cloud Computing Models Cloud Providers offer services that can be
 grouped into three categories.
 
 ![](https://miro.medium.com/max/963/1*F_EB3zGRdsahx01e8nLW4w.png)
-.confluence-external-resource .confluence-content-image-border
-height="250"}
 
 **Software as a Service (SaaS)**: In this model, a complete application
 is offered to the customer, as a service on demand. A single instance of
@@ -170,11 +162,7 @@ challenges are:
 -----------------------
 
 ![](https://qph.fs.quoracdn.net/main-qimg-34fbe07d9311be4084f7b7b8a502a307)
-.confluence-external-resource .confluence-content-image-border
-height="250"}
 ![](https://erpsoftwareblog.com/cloud/wp-content/uploads/4-Primary-Cloud-Deployment-Models-Infographic-Turnkey-Technologies1.png)
-.confluence-external-resource .confluence-content-image-border
-height="400"}
 
 ### Public Cloud {#CloudComputingOverview-PublicCloud}
 
@@ -218,8 +206,6 @@ especially in highly regulated fields like healthcare and
 government---hence the remaining three cloud deployment models.
 
 ![](https://www.sam-solutions.com/blog/wp-content/uploads/2017/08/a-cloud-provider@2x.png)
-.confluence-external-resource .confluence-content-image-border
-height="250"}
 
 ### Private Cloud {#CloudComputingOverview-PrivateCloud}
 
@@ -241,8 +227,6 @@ extent, hosting some workloads privately and entrusting others to public
 cloud providers. This is what\'s referred to as a hybrid cloud.
 
 ![](https://www.sam-solutions.com/blog/wp-content/uploads/2017/08/a-private-cloud@2x.png)
-.confluence-external-resource .confluence-content-image-border
-width="230" height="250"}
 
 ### Hybird Cloud {#CloudComputingOverview-HybirdCloud}
 
@@ -265,8 +249,6 @@ to benefit from the public cloud for your other workloads, for instance,
 hybrid is often the best-case scenario.
 
 ![](https://www.sam-solutions.com/blog/wp-content/uploads/2017/08/hybrid-cloud@2x.png)
-.confluence-external-resource .confluence-content-image-border
-height="250"}
 
 ### Community Cloud {#CloudComputingOverview-CommunityCloud}
 
@@ -295,8 +277,6 @@ but this model comes with highly advantageous cost savings for those to
 which it applies.
 
 ![](https://www.sam-solutions.com/blog/wp-content/uploads/2017/08/community-cloud@2x.png)
-.confluence-external-resource .confluence-content-image-border
-height="250"}
 
 Types of Cloud Deployment Models - The Comparison
 -------------------------------------------------
