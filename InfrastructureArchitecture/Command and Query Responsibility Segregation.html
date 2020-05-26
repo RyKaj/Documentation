@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Infrastructure Architecture Command and Query Responsibility Segregation (CQRS) Pattern</title>
+    <link rel="stylesheet" href="styles/site.css" type="text/css" />
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body class="theme-default aui-theme-default">
+    <div id="page">
+        <div id="main" class="aui-page-panel">
+            <div id="main-header">
+                <div id="breadcrumb-section">
+                    <ol id="breadcrumbs">
+                        <li>
+                            <a href="index.html">Information Technology</a>
+                        </li>
+                        <li>
+                            <a href="2.0-Architectures_451824369.html">2.0 Architectures</a>
+                        </li>
+                        <li>
+                            <a href="Infrastructure-Design-Patterns_463533493.html">Infrastructure Design Patterns</a>
+                        </li>
+                    </ol>
+                </div>
+                <h1 id="title-heading" class="pagetitle">
+                    Infrastructure Architecture Command and Query Responsibility Segregation (CQRS) Pattern
+                </h1>
+            </div>
+            <div id="content" class="view">
+                <h2>Overview</h2>
+                <p>The Command and Query Responsibility Segregation (CQRS) pattern separates read and update operations for a data store. Implementing CQRS in your application can maximize its performance, scalability, and security. The flexibility created by migrating to CQRS allows a system to better evolve over time and prevents update commands from causing merge conflicts at the domain level.</p>
+                <h2>Context and Problem</h2>
+                <p>In traditional architectures, the same data model is used to query and update a database. That's simple and works well for basic CRUD operations. In more complex applications, however, this approach can become unwieldy. For example, on the read side, the application may perform many different queries, returning data transfer objects (DTOs) with different shapes. Object mapping can become complicated. On the write side, the model may implement complex validation and business logic. As a result, you can end up with an overly complex model that does too much.</p>
+                <p>Read and write workloads are often asymmetrical, with very different performance and scale requirements.</p>
+                <p style="margin-left: 30.0px;">
+                    <img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" height="150" src="attachments/463533319/463533316.png" data-image-src="attachments/463533319/463533316.png" data-unresolved-comment-count="0" data-linked-resource-id="463533316" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="command-and-query-responsibility-segregation-cqrs-tradition-crud.png" data-base-url="https://wiki.pinnacle.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="463533319" data-linked-resource-container-version="1">
+                </p>
+                <ul>
+                    <li>
+                        <p>There is often a mismatch between the read and write representations of the data, such as additional columns or properties that must be updated correctly even though they aren't required as part of an operation.</p>
+                    </li>
+                    <li>
+                        <p>Data contention can occur when operations are performed in parallel on the same set of data.</p>
+                    </li>
+                    <li>
+                        <p>The traditional approach can have a negative effect on performance due to load on the data store and data access layer, and the complexity of queries required to retrieve information.</p>
+                    </li>
+                    <li>
+                        <p>Managing security and permissions can become complex, because each entity is subject to both read and write operations, which might expose data in the wrong context.</p>
+                    </li>
+                </ul>
+                <h2>Solution</h2>
+                <p>
+                    CQRS separates reads and writes into different models, using 
+                    <strong>commands</strong> to update data, and 
+                    <strong>queries</strong> to read data.
+                </p>
+                <ul>
+                    <li>Commands should be task based, rather than data centric. (&quot;Book hotel room&quot;, not &quot;set ReservationStatus to Reserved&quot;).</li>
+                    <li>Commands may be placed on a queue for asynchronous processing, rather than being processed synchronously.</li>
+                    <li>Queries never modify the database. A query returns a DTO that does not encapsulate any domain knowledge.</li>
+                </ul>
+                <p>The models can then be isolated, as shown in the following diagram, although that's not an absolute requirement.</p>
+                <p style="margin-left: 30.0px;">
+                    <img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" height="150" src="attachments/463533319/463533317.png" data-image-src="attachments/463533319/463533317.png" data-unresolved-comment-count="0" data-linked-resource-id="463533317" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="command-and-query-responsibility-segregation-cqrs-basic.png" data-base-url="https://wiki.pinnacle.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="463533319" data-linked-resource-container-version="1">
+                </p>
+                <p>Having separate query and update models simplifies the design and implementation. However, one disadvantage is that CQRS code can't automatically be generated from a database schema using scaffolding mechanisms such as O/RM tools.</p>
+                <p>
+                    For greater isolation, you can physically separate the read data from the write data. In that case, the read database can use its own data schema that is optimized for queries. For example, it can store a 
+                    <a style="text-decoration: underline;" href="https://docs.microsoft.com/en-us/azure/architecture/patterns/materialized-view" class="external-link" rel="nofollow">materialized view</a> of the data, in order to avoid complex joins or complex O/RM mappings. It might even use a different type of data store. For example, the write database might be relational, while the read database is a document database.
+                </p>
+                <p>If separate read and write databases are used, they must be kept in sync. Typically this is accomplished by having the write model publish an event whenever it updates the database. Updating the database and publishing the event must occur in a single transaction.</p>
+                <p style="margin-left: 30.0px;">
+                    <img class="confluence-embedded-image confluence-content-image-border" height="150" src="attachments/463533319/463533318.png" data-image-src="attachments/463533319/463533318.png" data-unresolved-comment-count="0" data-linked-resource-id="463533318" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="command-and-query-responsibility-segregation-cqrs-separate-stores.png" data-base-url="https://wiki.pinnacle.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="463533319" data-linked-resource-container-version="1">
+                </p>
+                <p>The read store can be a read-only replica of the write store, or the read and write stores can have a different structure altogether. Using multiple read-only replicas can increase query performance, especially in distributed scenarios where read-only replicas are located close to the application instances.</p>
+                <p>Separation of the read and write stores also allows each to be scaled appropriately to match the load. For example, read stores typically encounter a much higher load than write stores.</p>
+                <p>
+                    Some implementations of CQRS use the 
+                    <a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/event-sourcing" style="text-decoration: underline;" class="external-link" rel="nofollow">Event Sourcing pattern</a>. With this pattern, application state is stored as a sequence of events. Each event represents a set of changes to the data. The current state is constructed by replaying the events. In a CQRS context, one benefit of Event Sourcing is that the same events can be used to notify other components — in particular, to notify the read model. The read model uses the events to create a snapshot of the current state, which is more efficient for queries. However, Event Sourcing adds complexity to the design.
+                </p>
+                <p>Benefits of CQRS include:</p>
+                <ul>
+                    <li>
+                        <strong>Independent scaling</strong>. CQRS allows the read and write workloads to scale independently, and may result in fewer lock contentions.
+                    </li>
+                    <li>
+                        <strong>Optimized data schemas</strong>. The read side can use a schema that is optimized for queries, while the write side uses a schema that is optimized for updates.
+                    </li>
+                    <li>
+                        <strong>Security</strong>. It's easier to ensure that only the right domain entities are performing writes on the data.
+                    </li>
+                    <li>
+                        <strong>Separation of concerns</strong>. Segregating the read and write sides can result in models that are more maintainable and flexible. Most of the complex business logic goes into the write model. The read model can be relatively simple.
+                    </li>
+                    <li>
+                        <strong>Simpler queries</strong>. By storing a materialized view in the read database, the application can avoid complex joins when querying.
+                    </li>
+                </ul>
+                <h2>Issues and Considerations</h2>
+                <p>Some challenges of implementing this pattern include:</p>
+                <ul>
+                    <li>
+                        <p>
+                            <strong>Complexity</strong>. The basic idea of CQRS is simple. But it can lead to a more complex application design, especially if they include the Event Sourcing pattern.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Messaging</strong>. Although CQRS does not require messaging, it's common to use messaging to process commands and publish update events. In that case, the application must handle message failures or duplicate messages.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Eventual consistency</strong>. If you separate the read and write databases, the read data may be stale. The read model store must be updated to reflect changes to the write model store, and it can be difficult to detect when a user has issued a request based on stale read data.
+                        </p>
+                    </li>
+                </ul>
+                <h2>When to use this Pattern</h2>
+                <p>Consider CQRS for the following scenarios:</p>
+                <ul>
+                    <li>
+                        <p>Collaborative domains where many users access the same data in parallel. CQRS allows you to define commands with enough granularity to minimize merge conflicts at the domain level, and conflicts that do arise can be merged by the command.</p>
+                    </li>
+                    <li>
+                        <p>Task-based user interfaces where users are guided through a complex process as a series of steps or with complex domain models. The write model has a full command-processing stack with business logic, input validation, and business validation. The write model may treat a set of associated objects as a single unit for data changes (an aggregate, in DDD terminology) and ensure that these objects are always in a consistent state. The read model has no business logic or validation stack, and just returns a DTO for use in a view model. The read model is eventually consistent with the write model.</p>
+                    </li>
+                    <li>
+                        <p>Scenarios where performance of data reads must be fine tuned separately from performance of data writes, especially when the number of reads is much greater than the number of writes. In this scenario, you can scale out the read model, but run the write model on just a few instances. A small number of write model instances also helps to minimize the occurrence of merge conflicts.</p>
+                    </li>
+                    <li>
+                        <p>Scenarios where one team of developers can focus on the complex domain model that is part of the write model, and another team can focus on the read model and the user interfaces.</p>
+                    </li>
+                    <li>
+                        <p>Scenarios where the system is expected to evolve over time and might contain multiple versions of the model, or where business rules change regularly.</p>
+                    </li>
+                    <li>
+                        <p>Integration with other systems, especially in combination with event sourcing, where the temporal failure of one subsystem shouldn't affect the availability of the others.</p>
+                    </li>
+                </ul>
+                <p>This pattern isn't recommended when:</p>
+                <ul>
+                    <li>
+                        <p>The domain or the business rules are simple.</p>
+                    </li>
+                    <li>
+                        <p>A simple CRUD-style user interface and data access operations are sufficient.</p>
+                    </li>
+                </ul>
+                <p>Consider applying CQRS to limited sections of your system where it will be most valuable.</p>
+            </div>
+        </div>
+        <div id="footer" role="contentinfo">
+            <section class="footer-body">
+            </section>
+        </div>
+    </div>
+</body>
+</html>

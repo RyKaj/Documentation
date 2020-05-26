@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Infrastructure Architecture Sagas</title>
+    <link rel="stylesheet" href="styles/site.css" type="text/css" />
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body class="theme-default aui-theme-default">
+    <div id="page">
+        <div id="main" class="aui-page-panel">
+            <div id="main-header">
+                <div id="breadcrumb-section">
+                    <ol id="breadcrumbs">
+                        <li>
+                            <a href="index.html">Information Technology</a>
+                        </li>
+                        <li>
+                            <a href="2.0-Architectures_451824369.html">2.0 Architectures</a>
+                        </li>
+                        <li>
+                            <a href="451820182.html">Microservices &amp; Distributed System</a>
+                        </li>
+                        <li>
+                            <a href="Microservice-Architecture_451820190.html">Microservice Architecture</a>
+                        </li>
+                    </ol>
+                </div>
+                <h1 id="title-heading" class="pagetitle">
+
+                    Infrastructure Architecture Sagas
+
+                </h1>
+            </div>
+            <div id="content" class="view">
+                <h2>Context</h2>
+                <p>
+                    You have applied the 
+                    <a href="https://microservices.io/patterns/data/database-per-service.html" style="text-decoration: none;" class="external-link" rel="nofollow">Database per Service</a> pattern. Each service has its own database. Some business transactions, however, span multiple service so you need a mechanism to ensure data consistency across services. For example, lets imagine that you are building an e-commerce store where customers have a credit limit. The application must ensure that a new order will not exceed the customer’s credit limit. Since Orders and Customers are in different databases the application cannot simply use a local ACID transaction.
+                </p>
+                <h2>Problem</h2>
+                <p>How to maintain data consistency across services?</p>
+                <h2>Forces</h2>
+                <ul>
+                    <li>2PC is not an option</li>
+                </ul>
+                <h2>Solution</h2>
+                <p>Implement each business transaction that spans multiple services as a saga. A saga is a sequence of local transactions. Each local transaction updates the database and publishes a message or event to trigger the next local transaction in the saga. If a local transaction fails because it violates a business rule then the saga executes a series of compensating transactions that undo the changes that were made by the preceding local transactions.</p>
+                <p style="margin-left: 30.0px;">
+                    <img class="confluence-embedded-image img-responsive confluence-external-resource confluence-content-image-border" height="250" src="https://microservices.io/i/data/saga.jpg" data-image-src="https://microservices.io/i/data/saga.jpg">
+                </p>
+                <h2>Examples</h2>
+                <p>There are two ways of coordination sagas:</p>
+                <ul>
+                    <li>Choreography - each local transaction publishes domain events that trigger local transactions in other services</li>
+                    <li>Orchestration - an orchestrator (object) tells the participants what local transactions to execute</li>
+                </ul>
+                <h2 id="Sagas-Example:Choreography-basedsaga">Example: Choreography-based saga</h2>
+                <p style="margin-left: 30.0px;">
+                    <img class="confluence-embedded-image img-responsive confluence-external-resource confluence-content-image-border" height="250" src="https://microservices.io/i/data/Saga_Choreography_Flow.001.jpeg" data-image-src="https://microservices.io/i/data/Saga_Choreography_Flow.001.jpeg">
+                </p>
+                <p>An e-commerce application that uses this approach would create an order using a choreography-based saga that consists of the following steps:</p>
+                <ol>
+                    <li>
+                        The 
+                        <code class="highlighter-rouge">Order Service</code> creates an Order in a 
+                        <em>pending</em> state and publishes an 
+                        <code class="highlighter-rouge">OrderCreated</code> event
+                    </li>
+                    <li>
+                        The 
+                        <code class="highlighter-rouge">Customer Service</code> receives the event attempts to reserve credit for that Order. It publishes either a 
+                        <code class="highlighter-rouge">Credit Reserved</code> event or a 
+                        <code class="highlighter-rouge">CreditLimitExceeded</code> event.
+                    </li>
+                    <li>
+                        The 
+                        <code class="highlighter-rouge">Order Service</code> receives the event and changes the state of the order to either 
+                        <em>approved</em> or 
+                        <em>cancelled</em>
+                    </li>
+                </ol>
+                <h3 id="Sagas-Example:Orchestration-basedsaga">Example: Orchestration-based saga</h3>
+                <p style="margin-left: 30.0px;">
+                    <img class="confluence-embedded-image img-responsive confluence-external-resource confluence-content-image-border" height="250" src="https://microservices.io/i/data/Saga_Orchestration_Flow.001.jpeg" data-image-src="https://microservices.io/i/data/Saga_Orchestration_Flow.001.jpeg">
+                </p>
+                <p>An e-commerce application that uses this approach would create an order using an orchestration-based saga that consists of the following steps:</p>
+                <ol>
+                    <li>
+                        The 
+                        <code class="highlighter-rouge">Order Service</code> creates an Order in a 
+                        <em>pending</em> state and creates a 
+                        <code class="highlighter-rouge">CreateOrderSaga</code>
+                    </li>
+                    <li>
+                        The 
+                        <code class="highlighter-rouge">CreateOrderSaga</code> sends a 
+                        <code class="highlighter-rouge">ReserveCredit</code> command to the 
+                        <code class="highlighter-rouge">Customer Service</code>
+                    </li>
+                    <li>
+                        The 
+                        <code class="highlighter-rouge">Customer Service</code> attempts to reserve credit for that Order and sends back a reply
+                    </li>
+                    <li>
+                        The 
+                        <code class="highlighter-rouge">CreateOrderSaga</code> receives the reply and sends either an 
+                        <code class="highlighter-rouge">ApproveOrder</code> or 
+                        <code class="highlighter-rouge">RejectOrder</code> command to the 
+                        <code class="highlighter-rouge">Order Service</code>
+                    </li>
+                    <li>
+                        The 
+                        <code class="highlighter-rouge">Order Service</code> changes the state of the order to either 
+                        <em>approved</em> or 
+                        <em>cancelled</em>
+                    </li>
+                </ol>
+                <h2>Resulting Context</h2>
+                <p>This pattern has the following benefits:</p>
+                <ul>
+                    <li>It enables an application to maintain data consistency across multiple services without using distributed transactions</li>
+                </ul>
+                <p>This solution has the following drawbacks:</p>
+                <ul>
+                    <li>The programming model is more complex. For example, a developer must design compensating transactions that explicitly undo changes made earlier in a saga.</li>
+                </ul>
+                <p>There are also the following issues to address:</p>
+                <ul>
+                    <li>
+                        In order to be reliable, a service must atomically update its database 
+                        <em>and</em> publish a message/event. It cannot use the traditional mechanism of a distributed transaction that spans the database and the message broker. Instead, it must use one of the patterns listed below.
+                    </li>
+                </ul>
+                <b>Related Patterns</b>
+                <ul>
+                    <li>
+                        The 
+                        <a style="text-decoration: none;" href="https://microservices.io/patterns/data/database-per-service.html" class="external-link" rel="nofollow">Database per Service pattern</a> creates the need for this pattern
+                    </li>
+                    <li>
+                        The following patterns are ways to 
+                        <em>atomically</em> update state 
+                        <em>and</em> publish messages/events:
+                        <ul>
+                            <li>
+                                <a href="https://microservices.io/patterns/data/event-sourcing.html" style="text-decoration: none;" class="external-link" rel="nofollow">Event sourcing</a>
+                            </li>
+                            <li>
+                                <a style="text-decoration: none;" href="https://microservices.io/patterns/data/transactional-outbox.html" class="external-link" rel="nofollow">Transactional Outbox</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        A choreography-based saga can publish events using 
+                        <a href="https://microservices.io/patterns/data/aggregate.html" style="text-decoration: none;" class="external-link" rel="nofollow">Aggregates</a> and 
+                        <a style="text-decoration: none;" href="https://microservices.io/patterns/data/domain-event.html" class="external-link" rel="nofollow">Domain Events</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer" role="contentinfo">
+        <section class="footer-body">
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Infrastructure Architecture General Architecture</title>
+    <link rel="stylesheet" href="styles/site.css" type="text/css" />
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body class="theme-default aui-theme-default">
+    <div id="page">
+        <div id="main" class="aui-page-panel">
+            <div id="main-header">
+                <div id="breadcrumb-section">
+                    <ol id="breadcrumbs">
+                        <li>
+                            <a href="index.html">Information Technology</a>
+                        </li>
+                        <li>
+                            <a href="2.0-Architectures_451824369.html">2.0 Architectures</a>
+                        </li>
+                    </ol>
+                </div>
+                <h1 id="title-heading" class="pagetitle">
+                    Infrastructure Architecture General Architecture
+                </h1>
+            </div>
+            <div id="content" class="view">
+                <p>According to Wikipedia,</p>
+                <blockquote class="mr ms mt">
+                    <p>
+                        An 
+                        <strong>architectural pattern</strong> is a general, reusable solution to a commonly occurring problem in software architecture within a given context. Architectural patterns are similar to software design pattern but have a broader scope.
+                    </p>
+                </blockquote>
+                <h2>Blackboard Pattern</h2>
+                <p>This pattern is useful for problems for which no deterministic solution strategies are known. The blackboard pattern consists of 3 main components.</p>
+                <ul>
+                    <li style="list-style-type: disc;">
+                        <strong>blackboard </strong>— a structured global memory containing objects from the solution space
+                    </li>
+                    <li style="list-style-type: disc;">
+                        <strong>knowledge source</strong> — specialized modules with their own representation
+                    </li>
+                    <li style="list-style-type: disc;">
+                        <strong>control component</strong> — selects, configures and executes modules.
+                    </li>
+                </ul>
+                <p>All the components have access to the blackboard. Components may produce new data objects that are added to the blackboard. Components look for particular kinds of data on the blackboard, and may find these by pattern matching with the existing knowledge source.</p>
+                <h3 id="GeneralArchitecture-Usage">Usage</h3>
+                <ul>
+                    <li style="list-style-type: disc;">Speech recognition</li>
+                    <li style="list-style-type: disc;">Vehicle identification and tracking</li>
+                    <li style="list-style-type: disc;">Protein structure identification</li>
+                    <li style="list-style-type: disc;">Sonar signals interpretation.</li>
+                </ul>
+                <p style="list-style-type: disc;margin-left: 30.0px;">
+                    <img height="299" width="530" src="https://miro.medium.com/max/530/1*ArbMx7A21I47llvwUTiSDg.png" data-image-src="https://miro.medium.com/max/530/1*ArbMx7A21I47llvwUTiSDg.png">
+                </p>
+                <h2>Broker Pattern</h2>
+                <p>
+                    This pattern is used to structure distributed systems with decoupled components. These components can interact with each other by remote service invocations. A 
+                    <strong>broker </strong>component is responsible for the coordination of communication among 
+                    <strong>components</strong>.
+                </p>
+                <p>Servers publish their capabilities (services and characteristics) to a broker. Clients request a service from the broker, and the broker then redirects the client to a suitable service from its registry.</p>
+                <h3>Usage</h3>
+                <ul>
+                    <li style="list-style-type: disc;">
+                        Message broker software such as 
+                        <a href="https://en.wikipedia.org/wiki/Apache_ActiveMQ" class="external-link" style="text-decoration: none;" rel="nofollow">
+                            <strong>Apache ActiveMQ</strong>
+                        </a>, 
+                        <a href="https://en.wikipedia.org/wiki/Apache_Kafka" style="text-decoration: none;" class="external-link" rel="nofollow">
+                            <strong>Apache Kafka</strong>
+                        </a>, 
+                        <a style="text-decoration: none;" class="external-link" href="https://en.wikipedia.org/wiki/RabbitMQ" rel="nofollow">
+                            <strong>RabbitMQ</strong>
+                        </a> and 
+                        <a href="https://en.wikipedia.org/wiki/JBoss_Messaging" class="external-link" style="text-decoration: none;" rel="nofollow">
+                            <strong>JBoss Messaging</strong>
+                        </a>.
+                    </li>
+                </ul>
+                <p style="list-style-type: disc;margin-left: 30.0px;">
+                    <img width="530" src="https://miro.medium.com/max/700/1*1qRQZjLRAd0yY_T9p2OgBw.png" data-image-src="https://miro.medium.com/max/700/1*1qRQZjLRAd0yY_T9p2OgBw.png">
+                </p>
+                <h2>Client Server Pattern</h2>
+                <p>
+                    This pattern consists of two parties; a 
+                    <strong>server</strong> and multiple 
+                    <strong>clients</strong>. The server component will provide services to multiple client components. Clients request services from the server and the server provides relevant services to those clients. Furthermore, the server continues to listen to client requests.
+                </p>
+                <h3>Usage</h3>
+                <ul>
+                    <li style="list-style-type: disc;">Online applications such as email, document sharing and banking.</li>
+                </ul>
+                <p style="margin-left: 30.0px;">
+                    <img height="320" width="284" src="https://miro.medium.com/max/284/1*4xX_WQQuD2u0PMK5bcWFkQ.png" data-image-src="https://miro.medium.com/max/284/1*4xX_WQQuD2u0PMK5bcWFkQ.png">
+                </p>
+                <h2>Event Bus Pattern</h2>
+                <p>
+                    This pattern primarily deals with events and has 4 major components; 
+                    <strong>event source</strong>, 
+                    <strong>event listener</strong>, 
+                    <strong>channel </strong>and 
+                    <strong>event bus</strong>. Sources publish messages to particular channels on an event bus. Listeners subscribe to particular channels. Listeners are notified of messages that are published to a channel to which they have subscribed before.
+                </p>
+                <h3 id="GeneralArchitecture-Usage.3">Usage</h3>
+                <ul>
+                    <li style="list-style-type: disc;">Android development</li>
+                    <li style="list-style-type: disc;">Notification services</li>
+                </ul>
+                <p style="list-style-type: disc;margin-left: 30.0px;">
+                    <img width="530" src="https://miro.medium.com/max/632/1*DOZ4nVR9zkJm-EnXT3KOGQ.png" data-image-src="https://miro.medium.com/max/632/1*DOZ4nVR9zkJm-EnXT3KOGQ.png">
+                </p>
+                <h2>Interpreter Pattern</h2>
+                <p>This pattern is used for designing a component that interprets programs written in a dedicated language. It mainly specifies how to evaluate lines of programs, known as sentences or expressions written in a particular language. The basic idea is to have a class for each symbol of the language.</p>
+                <h3 id="GeneralArchitecture-Usage.4">Usage</h3>
+                <ul>
+                    <li style="list-style-type: disc;">Database query languages such as SQL.</li>
+                    <li style="list-style-type: disc;">Languages used to describe communication protocols.</li>
+                </ul>
+                <p style="list-style-type: disc;margin-left: 30.0px;">
+                    <img width="530" src="https://miro.medium.com/max/660/1*DrC3T5R4SsdcQY6aXLCRZA.png" data-image-src="https://miro.medium.com/max/660/1*DrC3T5R4SsdcQY6aXLCRZA.png">
+                </p>
+                <h2>Layered Pattern</h2>
+                <p>This pattern can be used to structure programs that can be decomposed into groups of subtasks, each of which is at a particular level of abstraction. Each layer provides services to the next higher layer.</p>
+                <p>The most commonly found 4 layers of a general information system are as follows.</p>
+                <ul>
+                    <li style="list-style-type: disc;">
+                        <strong>Presentation layer </strong>(also known as 
+                        <strong>UI layer</strong>)
+                    </li>
+                    <li style="list-style-type: disc;">
+                        <strong>Application layer </strong>(also known as 
+                        <strong>service layer</strong>)
+                    </li>
+                    <li style="list-style-type: disc;">
+                        <strong>Business logic layer </strong>(also known as 
+                        <strong>domain layer</strong>)
+                    </li>
+                    <li style="list-style-type: disc;">
+                        <strong>Data access layer</strong> (also known as 
+                        <strong>persistence layer</strong>)
+                    </li>
+                </ul>
+                <h3 id="GeneralArchitecture-Usage.5">Usage</h3>
+                <ul>
+                    <li style="list-style-type: disc;">General desktop applications.</li>
+                    <li style="list-style-type: disc;">E commerce web applications.</li>
+                </ul>
+                <p style="list-style-type: disc;margin-left: 30.0px;">
+                    <img height="329" width="188" src="https://miro.medium.com/max/188/1*jMWk_JqqyyloVPhTs_Zd1A.png" data-image-src="https://miro.medium.com/max/188/1*jMWk_JqqyyloVPhTs_Zd1A.png">
+                    <img alt="An illustration showing a three-tier architecture where each tier is hosted in a dedicated virtual machine." width="120" src="https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-networking/media/2-three-tier.png" data-image-src="https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-networking/media/2-three-tier.png">
+                </p>
+                <h2>Master Slave Pattern</h2>
+                <p>
+                    This pattern consists of two parties; 
+                    <strong>master</strong> and 
+                    <strong>slaves</strong>. The master component distributes the work among identical slave components, and computes a final result from the results which the slaves return.
+                </p>
+                <h3>Usage</h3>
+                <ul>
+                    <li style="list-style-type: disc;">In database replication, the master database is regarded as the authoritative source, and the slave databases are synchronized to it.</li>
+                    <li style="list-style-type: disc;">Peripherals connected to a bus in a computer system (master and slave drives).</li>
+                </ul>
+                <p style="list-style-type: disc;margin-left: 30.0px;">
+                    <img height="212" width="542" src="https://miro.medium.com/max/542/1*lsK9QntZl2d5oLojwRGXDg.png" data-image-src="https://miro.medium.com/max/542/1*lsK9QntZl2d5oLojwRGXDg.png">
+                </p>
+                <h2>Model View Controller Pattern (MVC)</h2>
+                <p>This pattern, also known as MVC pattern, divides an interactive application in to 3 parts as,</p>
+                <ol>
+                    <li class="kx ky ea ap kz b la lb lc ld le lf lg lh li lj lk mw mx my" style="list-style-type: decimal;">
+                        <strong>model</strong> — contains the core functionality and data
+                    </li>
+                    <li class="kx ky ea ap kz b la mz lc na le nb lg nc li nd lk mw mx my" style="list-style-type: decimal;">
+                        <strong>view</strong> — displays the information to the user (more than one view may be defined)
+                    </li>
+                    <li class="kx ky ea ap kz b la mz lc na le nb lg nc li nd lk mw mx my" style="list-style-type: decimal;">
+                        <strong>controller</strong> — handles the input from the user
+                    </li>
+                </ol>
+                <p>This is done to separate internal representations of information from the ways information is presented to, and accepted from, the user. It decouples components and allows efficient code reuse.</p>
+                <h3 id="GeneralArchitecture-Usage.7">Usage</h3>
+                <ul>
+                    <li style="list-style-type: disc;">Architecture for World Wide Web applications in major programming languages.</li>
+                    <li style="list-style-type: disc;">
+                        Web frameworks such as 
+                        <a class="external-link" style="text-decoration: none;" href="https://en.wikipedia.org/wiki/Django_(web_framework)" rel="nofollow">
+                            <strong>Django </strong>
+                        </a>and 
+                        <a href="https://en.wikipedia.org/wiki/Ruby_on_Rails" style="text-decoration: none;" class="external-link" rel="nofollow">
+                            <strong>Rails</strong>
+                        </a>.
+                    </li>
+                </ul>
+                <p style="list-style-type: disc;margin-left: 30.0px;">
+                    <img height="304" width="700" src="https://miro.medium.com/max/700/1*OP0CS6O5Sb66jpc-H-IuRQ.png" data-image-src="https://miro.medium.com/max/700/1*OP0CS6O5Sb66jpc-H-IuRQ.png">
+                </p>
+                <h2>Peer to Peeer Pattern</h2>
+                <p>
+                    In this pattern, individual components are known as 
+                    <strong>peers</strong>. Peers may function both as a 
+                    <strong>client</strong>, requesting services from other peers, and as a 
+                    <strong>server</strong>, providing services to other peers. A peer may act as a client or as a server or as both, and it can change its role dynamically with time.
+                </p>
+                <h3 id="GeneralArchitecture-Usage.8">Usage</h3>
+                <ul>
+                    <li style="list-style-type: disc;">
+                        File-sharing networks such as 
+                        <a style="text-decoration: none;" href="https://en.wikipedia.org/wiki/Gnutella" class="external-link" rel="nofollow">
+                            <strong>Gnutella</strong>
+                        </a>
+                        and 
+                        <a style="text-decoration: none;" href="https://en.wikipedia.org/wiki/Gnutella2" class="external-link" rel="nofollow">
+                            <strong>G2</strong>
+                        </a>)
+                    </li>
+                    <li style="list-style-type: disc;">
+                        Multimedia protocols such as 
+                        <a class="external-link" style="text-decoration: none;" href="https://en.wikipedia.org/wiki/P2PTV" rel="nofollow">
+                            <strong>P2PTV</strong>
+                        </a>
+                        and 
+                        <a href="https://en.wikipedia.org/wiki/Peer_Distributed_Transfer_Protocol" class="external-link" style="text-decoration: none;" rel="nofollow">
+                            <strong>PDTP</strong>
+                        </a>.
+                    </li>
+                </ul>
+                <p style="list-style-type: disc;margin-left: 30.0px;">
+                    <img height="248" width="260" src="https://miro.medium.com/max/260/1*ROvkckSTw1UncrbQSmUJUQ.png" data-image-src="https://miro.medium.com/max/260/1*ROvkckSTw1UncrbQSmUJUQ.png">
+                </p>
+                <h2>Pipe Filter Pattern</h2>
+                <p>
+                    This pattern can be used to structure systems which produce and process a stream of data. Each processing step is enclosed within a 
+                    <strong>filter </strong>component. Data to be processed is passed through 
+                    <strong>pipes</strong>. These pipes can be used for buffering or for synchronization purposes.
+                </p>
+                <h3 id="GeneralArchitecture-Usage.9">Usage</h3>
+                <ul>
+                    <li style="list-style-type: disc;">Compilers. The consecutive filters perform lexical analysis, parsing, semantic analysis, and code generation.</li>
+                    <li style="list-style-type: disc;">Workflows in bioinformatics.</li>
+                </ul>
+                <p style="list-style-type: disc;margin-left: 30.0px;">
+                    <img height="133" width="700" src="https://miro.medium.com/max/700/1*qikehZcDhhl_wWsqeI_nvg.png" data-image-src="https://miro.medium.com/max/700/1*qikehZcDhhl_wWsqeI_nvg.png">
+                </p>
+                <h3>Comparison of Architectural Patterns</h3>
+                <p>The table given below summarizes the pros and cons of each architectural pattern.</p>
+                <p style="margin-left: 30.0px;">
+                    <img height="559" width="1000" src="https://miro.medium.com/max/1000/1*Z9dKeyf6yi0nFMaUZF1P3Q.png" data-image-src="https://miro.medium.com/max/1000/1*Z9dKeyf6yi0nFMaUZF1P3Q.png">
+                </p>
+                <h7>References</h7>
+                <ul>
+                    <li>
+                        <a href="https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013" class="external-link" rel="nofollow">10 Common Software Architectural Patterns in a nutshell</a>
+                    </li>
+                    <li>
+                        <a href="https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-networking/2-deploy-to-azure" class="external-link" rel="nofollow">MS Docs  2-deploy-to-azure</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer" role="contentinfo">
+        <section class="footer-body">
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Infrastructure Architecture Throttling Pattern</title>
+    <link rel="stylesheet" href="styles/site.css" type="text/css" />
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body class="theme-default aui-theme-default">
+    <div id="page">
+        <div id="main" class="aui-page-panel">
+            <div id="main-header">
+                <div id="breadcrumb-section">
+                    <ol id="breadcrumbs">
+                        <li>
+                            <a href="index.html">Information Technology</a>
+                        </li>
+                        <li>
+                            <a href="2.0-Architectures_451824369.html">2.0 Architectures</a>
+                        </li>
+                        <li>
+                            <a href="Infrastructure-Design-Patterns_463533493.html">Infrastructure Design Patterns</a>
+                        </li>
+                    </ol>
+                </div>
+                <h1 id="title-heading" class="pagetitle">
+                    Infrastructure Architecture Throttling Pattern
+                </h1>
+            </div>
+            <div id="content" class="view">
+                <h2>Overview</h2>
+                <p>Control the consumption of resources used by an instance of an application, an individual tenant, or an entire service. This can allow the system to continue to function and meet service level agreements, even when an increase in demand places an extreme load on resources.</p>
+                <h2>Context and Problem</h2>
+                <p>The load on a cloud application typically varies over time based on the number of active users or the types of activities they are performing. For example, more users are likely to be active during business hours, or the system might be required to perform computationally expensive analytics at the end of each month. There might also be sudden and unanticipated bursts in activity. If the processing requirements of the system exceed the capacity of the resources that are available, it'll suffer from poor performance and can even fail. If the system has to meet an agreed level of service, such failure could be unacceptable.</p>
+                <p>There're many strategies available for handling varying load in the cloud, depending on the business goals for the application. One strategy is to use autoscaling to match the provisioned resources to the user needs at any given time. This has the potential to consistently meet user demand, while optimizing running costs. However, while autoscaling can trigger the provisioning of additional resources, this provisioning isn't immediate. If demand grows quickly, there can be a window of time where there's a resource deficit.</p>
+                <h2>Solution</h2>
+                <p>
+                    An alternative strategy to autoscaling is to allow applications to use resources only up to a limit, and then throttle them when this limit is reached. The system should monitor how it's using resources so that, when usage exceeds the threshold, it can throttle requests from one or more users. This will enable the system to continue functioning and meet any service level agreements (SLAs) that are in place. For more information on monitoring resource usage, see the 
+                    <a href="https://msdn.microsoft.com/library/dn589775.aspx" style="text-decoration: underline;" class="external-link" rel="nofollow">Instrumentation and Telemetry Guidance</a>.
+                </p>
+                <p>The system could implement several throttling strategies, including:</p>
+                <ul>
+                    <li>
+                        <p>
+                            Rejecting requests from an individual user who's already accessed system APIs more than n times per second over a given period of time. This requires the system to meter the use of resources for each tenant or user running an application. For more information, see the 
+                            <a href="https://msdn.microsoft.com/library/dn589796.aspx" style="text-decoration: underline;" class="external-link" rel="nofollow">Service Metering Guidance</a>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>Disabling or degrading the functionality of selected nonessential services so that essential services can run unimpeded with sufficient resources. For example, if the application is streaming video output, it could switch to a lower resolution.</p>
+                    </li>
+                    <li>
+                        <p>
+                            Using load leveling to smooth the volume of activity (this approach is covered in more detail by the 
+                            <a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/queue-based-load-leveling" style="text-decoration: underline;" class="external-link" rel="nofollow">Queue-based Load Leveling pattern</a>). In a multi-tenant environment, this approach will reduce the performance for every tenant. If the system must support a mix of tenants with different SLAs, the work for high-value tenants might be performed immediately. Requests for other tenants can be held back, and handled when the backlog has eased. The 
+                            <a style="text-decoration: underline;" href="https://docs.microsoft.com/en-us/azure/architecture/patterns/priority-queue" class="external-link" rel="nofollow">Priority Queue pattern</a> could be used to help implement this approach.
+                        </p>
+                    </li>
+                    <li>
+                        <p>Deferring operations being performed on behalf of lower priority applications or tenants. These operations can be suspended or limited, with an exception generated to inform the tenant that the system is busy and that the operation should be retried later.</p>
+                    </li>
+                </ul>
+                <p>The figure shows an area graph for resource use (a combination of memory, CPU, bandwidth, and other factors) against time for applications that are making use of three features. A feature is an area of functionality, such as a component that performs a specific set of tasks, a piece of code that performs a complex calculation, or an element that provides a service such as an in-memory cache. These features are labeled A, B, and C.</p>
+                <p style="margin-left: 30.0px;">
+                    <img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" height="150" src="attachments/463533412/463533410.png" data-image-src="attachments/463533412/463533410.png" data-unresolved-comment-count="0" data-linked-resource-id="463533410" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="throttling-resource-utilization.png" data-base-url="https://wiki.pinnacle.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="463533412" data-linked-resource-container-version="1">
+                </p>
+                <blockquote>
+                    <p>The area immediately below the line for a feature indicates the resources that are used by applications when they invoke this feature. For example, the area below the line for Feature A shows the resources used by applications that are making use of Feature A, and the area between the lines for Feature A and Feature B indicates the resources used by applications invoking Feature B. Aggregating the areas for each feature shows the total resource use of the system.</p>
+                </blockquote>
+                <p>The previous figure illustrates the effects of deferring operations. Just prior to time T1, the total resources allocated to all applications using these features reach a threshold (the limit of resource use). At this point, the applications are in danger of exhausting the resources available. In this system, Feature B is less critical than Feature A or Feature C, so it's temporarily disabled and the resources that it was using are released. Between times T1 and T2, the applications using Feature A and Feature C continue running as normal. Eventually, the resource use of these two features diminishes to the point when, at time T2, there is sufficient capacity to enable Feature B again.</p>
+                <p>The autoscaling and throttling approaches can also be combined to help keep the applications responsive and within SLAs. If the demand is expected to remain high, throttling provides a temporary solution while the system scales out. At this point, the full functionality of the system can be restored.</p>
+                <p>The next figure shows an area graph of the overall resource use by all applications running in a system against time, and illustrates how throttling can be combined with autoscaling.</p>
+                <p style="margin-left: 30.0px;">
+                    <img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" height="150" src="attachments/463533412/463533411.png" data-image-src="attachments/463533412/463533411.png" data-unresolved-comment-count="0" data-linked-resource-id="463533411" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="throttling-autoscaling.png" data-base-url="https://wiki.pinnacle.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="463533412" data-linked-resource-container-version="1">
+                </p>
+                <p>At time T1, the threshold specifying the soft limit of resource use is reached. At this point, the system can start to scale out. However, if the new resources don't become available quickly enough, then the existing resources might be exhausted and the system could fail. To prevent this from occurring, the system is temporarily throttled, as described earlier. When autoscaling has completed and the additional resources are available, throttling can be relaxed.</p>
+                <h2>Issues and Considerations</h2>
+                <p>You should consider the following points when deciding how to implement this pattern:</p>
+                <ul>
+                    <li>
+                        <p>Throttling an application, and the strategy to use, is an architectural decision that impacts the entire design of a system. Throttling should be considered early in the application design process because it isn't easy to add once a system has been implemented.</p>
+                    </li>
+                    <li>
+                        <p>Throttling must be performed quickly. The system must be capable of detecting an increase in activity and react accordingly. The system must also be able to revert to its original state quickly after the load has eased. This requires that the appropriate performance data is continually captured and monitored.</p>
+                    </li>
+                    <li>
+                        <p>If a service needs to temporarily deny a user request, it should return a specific error code so the client application understands that the reason for the refusal to perform an operation is due to throttling. The client application can wait for a period before retrying the request.</p>
+                    </li>
+                    <li>
+                        <p>Throttling can be used as a temporary measure while a system autoscales. In some cases it's better to simply throttle, rather than to scale, if a burst in activity is sudden and isn't expected to be long lived because scaling can add considerably to running costs.</p>
+                    </li>
+                    <li>
+                        <p>If throttling is being used as a temporary measure while a system autoscales, and if resource demands grow very quickly, the system might not be able to continue functioning—even when operating in a throttled mode. If this isn't acceptable, consider maintaining larger capacity reserves and configuring more aggressive autoscaling.</p>
+                    </li>
+                </ul>
+                <h2>When to use this Pattern</h2>
+                <p>Use this pattern:</p>
+                <ul>
+                    <li>
+                        <p>To ensure that a system continues to meet service level agreements.</p>
+                    </li>
+                    <li>
+                        <p>To prevent a single tenant from monopolizing the resources provided by an application.</p>
+                    </li>
+                    <li>
+                        <p>To handle bursts in activity.</p>
+                    </li>
+                    <li>
+                        <p>To help cost-optimize a system by limiting the maximum resource levels needed to keep it functioning.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer" role="contentinfo">
+            <section class="footer-body">
+            </section>
+        </div>
+    </div>
+</body>
+</html>

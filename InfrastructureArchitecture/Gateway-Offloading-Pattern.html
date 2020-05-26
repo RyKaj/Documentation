@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Infrastructure Architecture Gateway Offloading Pattern</title>
+    <link rel="stylesheet" href="styles/site.css" type="text/css" />
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body class="theme-default aui-theme-default">
+    <div id="page">
+        <div id="main" class="aui-page-panel">
+            <div id="main-header">
+                <div id="breadcrumb-section">
+                    <ol id="breadcrumbs">
+                        <li>
+                            <a href="index.html">Information Technology</a>
+                        </li>
+                        <li>
+                            <a href="2.0-Architectures_451824369.html">2.0 Architectures</a>
+                        </li>
+                        <li>
+                            <a href="Infrastructure-Design-Patterns_463533493.html">Infrastructure Design Patterns</a>
+                        </li>
+                    </ol>
+                </div>
+                <h1 id="title-heading" class="pagetitle">
+                    Infrastructure Architecture Gateway Offloading Pattern
+                </h1>
+            </div>
+            <div id="content" class="view">
+                <h2>Overview</h2>
+                <p>Offload shared or specialized service functionality to a gateway proxy. This pattern can simplify application development by moving shared service functionality, such as the use of SSL certificates, from other parts of the application into the gateway.</p>
+                <h2>Context and Problem</h2>
+                <p>Some features are commonly used across multiple services, and these features require configuration, management, and maintenance. A shared or specialized service that is distributed with every application deployment increases the administrative overhead and increases the likelihood of deployment error. Any updates to a shared feature must be deployed across all services that share that feature.</p>
+                <p>Properly handling security issues (token validation, encryption, SSL certificate management) and other complex tasks can require team members to have highly specialized skills. For example, a certificate needed by an application must be configured and deployed on all application instances. With each new deployment, the certificate must be managed to ensure that it does not expire. Any common certificate that is due to expire must be updated, tested, and verified on every application deployment.</p>
+                <p>
+                    Other common services such as authentication, authorization, logging, monitoring, or 
+                    <a style="text-decoration: underline;" href="https://docs.microsoft.com/en-us/azure/architecture/patterns/throttling" class="external-link" rel="nofollow">throttling</a> can be difficult to implement and manage across a large number of deployments. It may be better to consolidate this type of functionality, in order to reduce overhead and the chance of errors.
+                </p>
+                <h2>Solution</h2>
+                <p>Offload some features into an API gateway, particularly cross-cutting concerns such as certificate management, authentication, SSL termination, monitoring, protocol translation, or throttling.</p>
+                <p>The following diagram shows an API gateway that terminates inbound SSL connections. It requests data on behalf of the original requestor from any HTTP server upstream of the API gateway.</p>
+                <p style="margin-left: 30.0px;">
+                    <img class="confluence-embedded-image confluence-content-image-border" height="150" src="attachments/463533352/463533351.png" data-image-src="attachments/463533352/463533351.png" data-unresolved-comment-count="0" data-linked-resource-id="463533351" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="gateway-offload.png" data-base-url="https://wiki.pinnacle.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="463533352" data-linked-resource-container-version="1">
+                </p>
+                <p>Benefits of this pattern include:</p>
+                <ul>
+                    <li>
+                        <p>Simplify the development of services by removing the need to distribute and maintain supporting resources, such as web server certificates and configuration for secure websites. Simpler configuration results in easier management and scalability and makes service upgrades simpler.</p>
+                    </li>
+                    <li>
+                        <p>Allow dedicated teams to implement features that require specialized expertise, such as security. This allows your core team to focus on the application functionality, leaving these specialized but cross-cutting concerns to the relevant experts.</p>
+                    </li>
+                    <li>
+                        <p>Provide some consistency for request and response logging and monitoring. Even if a service is not correctly instrumented, the gateway can be configured to ensure a minimum level of monitoring and logging.</p>
+                    </li>
+                </ul>
+                <h2>Issues and Considerations</h2>
+                <ul>
+                    <li>Ensure the API gateway is highly available and resilient to failure. Avoid single points of failure by running multiple instances of your API gateway.</li>
+                    <li>Ensure the gateway is designed for the capacity and scaling requirements of your application and endpoints. Make sure the gateway does not become a bottleneck for the application and is sufficiently scalable.</li>
+                    <li>Only offload features that are used by the entire application, such as security or data transfer.</li>
+                    <li>Business logic should never be offloaded to the API gateway.</li>
+                    <li>If you need to track transactions, consider generating correlation IDs for logging purposes.</li>
+                </ul>
+                <h2>When to use this Pattern</h2>
+                <p>Use this pattern when:</p>
+                <ul>
+                    <li>An application deployment has a shared concern such as SSL certificates or encryption.</li>
+                    <li>A feature that is common across application deployments that may have different resource requirements, such as memory resources, storage capacity or network connections.</li>
+                    <li>You wish to move the responsibility for issues such as network security, throttling, or other network boundary concerns to a more specialized team.</li>
+                </ul>
+                <p>This pattern may not be suitable if it introduces coupling across services.</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer" role="contentinfo">
+        <section class="footer-body">
+        </section>
+    </div>
+</body>
+</html>

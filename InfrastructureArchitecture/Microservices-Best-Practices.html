@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Infrastructure Architecture Microservices Best Practices</title>
+    <link rel="stylesheet" href="styles/site.css" type="text/css" />
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body class="theme-default aui-theme-default">
+    <div id="page">
+        <div id="main-header">
+            <div id="breadcrumb-section">
+                <ol id="breadcrumbs">
+                    <li>
+                        <a href="index.html">Information Technology</a>
+                    </li>
+                    <li>
+                        <a href="2.0-Architectures_451824369.html">2.0 Architectures</a>
+                    </li>
+                    <li>
+                        <a href="451820182.html">Microservices &amp; Distributed System</a>
+                    </li>
+                    <li>
+                        <a href="Microservice-Architecture_451820190.html">Microservice Architecture</a>
+                    </li>
+                </ol>
+            </div>
+            <h1 id="title-heading" class="pagetitle">
+
+                Infrastructure Architecture Microservices Best Practices
+
+            </h1>
+        </div>
+        <div id="content" class="view">
+            <p>Designing Microservice Architecture the right way is quite challenging and difficult. On contrary to Monolith Architecture which gives one solution for all, Microservice Architecture gives a different solution for different problems. If the wrong solution is chosen, then the Microservice Architecture is just a ticking time bomb that is destined to explode. A badly designed Microservice Architecture is worse than a Monolith. Defining a set of Best practices for Microservice Architecture is also challenging. I have seen some conference talks where some renowned and respected Software Engineers have proposed Microservice Architecture best practices which are counterproductive.</p>
+            <p>
+                Here I am proposing some best practices which will help to develop effective Microservice Applications where the target project is supposed to live more than 6 months and team size is moderate to large (6+ developers). Full disclosure, there also some other posts regarding Microservice Architecture best practices e.g. 
+                <a style="text-decoration: none;" class="external-link" href="https://martinfowler.com/articles/microservices.html#SynchronousCallsConsideredHarmful" rel="nofollow">
+                    <strong>Characteristics of a Microservice Architecture</strong>
+                </a>
+                >by
+                <a class="external-link" style="text-decoration: none;" href="https://martinfowler.com/" rel="nofollow">
+                    <strong>
+                        <em class="ig">Martin Fowler</em>
+                    </strong>
+                </a>
+                or 
+                <a href="https://microservices.io/patterns/microservices.html" style="text-decoration: none;" class="external-link" rel="nofollow">
+                    <strong>Microservices Patterns</strong>
+                </a> by 
+                <a style="text-decoration: none;" class="external-link" href="https://www.chrisrichardson.net/" rel="nofollow">
+                    <strong>
+                        <em class="ig">Chris Richardson</em>
+                    </strong>
+                </a> or Adopting 
+                <a style="text-decoration: none;" href="https://microservices.io/patterns/microservices.html" class="external-link" rel="nofollow">
+                    <strong>Microservices at Netflix: Lessons for Architectural Design</strong>
+                </a> by 
+                <a style="text-decoration: none;" href="https://www.nginx.com/people/tony-mauro/" class="external-link" rel="nofollow">
+                    <strong>Tony Mauro</strong>
+                </a>. There are also some great talks e.g. 
+                <a class="external-link" href="https://www.youtube.com/watch?v=RsyOkifmamI" style="text-decoration: none;" rel="nofollow">
+                    <strong>Microservices Patterns and Antipatterns</strong>
+                </a> by 
+                <a style="text-decoration: none;" class="external-link" href="https://www.innoq.com/en/staff/stefan-tilkov/" rel="nofollow">
+                    <strong>
+                        <em class="ig">Stefan Tilkov</em>
+                    </strong>
+                </a>, 
+                <a href="https://www.youtube.com/watch?v=X0tjziAQfNQ" style="text-decoration: none;" class="external-link" rel="nofollow">
+                    <strong>10 Tips for failing badly at Microservices</strong>
+                </a> by 
+                <strong>David Schmitz</strong>, 
+                <a href="https://www.youtube.com/watch?v=PFQnNFe27kU" class="external-link" style="text-decoration: none;" rel="nofollow">
+                    <strong>Principles of Microservices</strong>
+                </a> by 
+                <a href="https://samnewman.io/" class="external-link" style="text-decoration: none;" rel="nofollow">
+                    <strong>
+                        <em class="ig">Sam Newman</em>
+                    </strong>
+                </a>.
+            </p>
+            <h2>1. Domain Driven Design</h2>
+            <p>
+                The foremost challenge to develop Microservices is to split a large, complex application into small, autonomous, independently deployable Modules. If Microservices are not split in the right way, there will be tightly coupled Microservices which will have all the disadvantages of a Monolith and all the complexities of Microservices aka 
+                <strong>Distributed Monolith</strong>. Fortunately, there is already a Solution which can greatly help in this regard. 
+                <a style="text-decoration: none;" href="https://twitter.com/ericevans0?lang=en" class="external-link" rel="nofollow">
+                    <strong>
+                        <em class="ig">Eric Evans</em>
+                    </strong>
+                </a>, a Software Engineering Consultant back then, had encountered recurring issues regarding software complexity in Business Applications across different companies and has summarized his valuable insight in the book “
+                <a href="http://dddcommunity.org/book/evans_2003/" class="external-link" style="text-decoration: none;" rel="nofollow">
+                    <strong>Domain Driven Design: Tackling Complexity in the Heart of Software</strong>
+                </a>” in 2004. The book outlined three Core Concepts:
+            </p>
+            <ul>
+                <li style="list-style-type: disc;">The software development team should work in close co-operation with the Business department or Domain Experts.</li>
+                <li style="list-style-type: disc;">The Architects/Developers and Domain Experts should first make the Strategic Design: Finding the Bounded Context and related Core Domain and Ubiquitous Language, Subdomains, Context Maps.</li>
+                <li style="list-style-type: disc;">The Architects/Developers should then make the Tactical Design to decompose the Core Domain into fine-grained Building blocks: Entity, Value Object, Aggregate, Aggregate Root</li>
+            </ul>
+            <p>
+                A detail discussion of Domain-Driven Design is out of the scope of this post but you should read either the original DDD book 
+                <a class="external-link" style="text-decoration: none;" href="http://dddcommunity.org/book/evans_2003/" rel="nofollow">
+                    <strong>Domain Driven Design: Tackling Complexity in the Heart of Software</strong>
+                </a>
+                <strong></strong>(Blue Book) of 
+                <a href="https://twitter.com/ericevans0?lang=en" class="external-link" style="text-decoration: none;" rel="nofollow">
+                    <strong>
+                        <em class="ig">Eric Evans</em>
+                    </strong>
+                </a> or a bit modern DDD book 
+                <a style="text-decoration: none;" class="external-link" href="https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/ref=sr_1_3?keywords=Domain+driven+design&amp;qid=1574198067&amp;s=books&amp;sr=1-3" rel="nofollow">
+                    <strong>Implementing Domain Driven Design</strong>
+                </a>(Red Book) of 
+                <a style="text-decoration: none;" class="external-link" href="https://vaughnvernon.co/" rel="nofollow">
+                    <strong>
+                        <em class="ig">Vaughn Vernon</em>
+                    </strong>
+                </a>. If a large system is divided into Core Domain and Sub-domains and the Core Domain and Sub-domains are then mapped to one or more Microservices, then we will get the ideal loosely coupled Microservices.
+            </p>
+            <h2>2. Database per Microservice</h2>
+            <p>After splitting the Complex application into Micro-Service Modules, the next challenge arises, what to do with the Database? Shall we share the database among Microservices or not. The answer to the question is the double edge sword. On the one hand, sharing the database among microservices will lead to strong coupling among the Microservices which is exactly the opposite of the goal of Microservices Architecture. Even a small change in a database will need synchronization among teams. Also, managing Transaction and Locking of a Database in one service is challenging enough. But managing Transaction/Locking among multiple distributed Microservices is a daunting task. On the other hand, if every Microservice has own database/private tables, then exchanging data between Microservices opens the pandora’s box of challenges. As a result, many prominent Software Engineers have advocated for a shared database among Microservices as a pragmatic solution. However, in my opinion, Microservice is all about sustainable and long term software development. As a result, every Microservice should have its Database (or Private Tables).</p>
+            <h2>3. Micro Frontends</h2>
+            <p>
+                Unfortunately, most of the Backend developers have a backdated view about Frontend Development and think that Frontend Development is simple. As most Software Architects are Backend Developers, they have little regard for Frontend and Frontend is usually neglected in the Architecture Design. Very often in Microservice projects, backends are very finely modularized with their database but there is one Monolith Frontend. In the best case, they consider one of the hottest SPA (React, Angular, Vue) to develop the Monolith Frontend. The main problem of this approach is that Frontend Monolith is as bad as Backend Monolith as I have described 
+                <a style="text-decoration: none;" class="external-link" href="https://towardsdatascience.com/microservice-architecture-a-brief-overview-and-why-you-should-use-it-in-your-next-project-a17b6e19adfd" rel="nofollow">
+                    <strong>previously</strong>
+                </a>. Also, when the Frontend needs to be modernized due to changes in Browser, then it requires a Big Bang modernization (
+                <em class="ig">That is the reason why so many companies are still using the outdated Angular 1 framework</em>). The web is simple yet very powerful and inherently offers transclusion. There are many ways to develop SPA based Microfrontends: with iFrame, Web Components or via (Angular/React) Elements.
+            </p>
+            <h2>4. Continuous Delivery</h2>
+            <p>
+                One of the key USP of Microservice Architecture is that each Microservice can be deployed independently. If you have a system of e.g. 100 Microservices and only one Microservice needs to be changed, then you can update only one Microservice without touching the other 99. But deploying 100 Microservices independently without Automation (DevOps, CI/CD) is a daunting task. To take full advantage of this Microservice feature, one needs CI/CD and DevOps. Using Microservice Architecture without CI/CD, DevOps, Automation is like buying the latest Porsche and then drive it with hand-brake. It is no wonder that 
+                <a style="text-decoration: none;" class="external-link" href="https://martinfowler.com/bliki/MicroservicePrerequisites.html" rel="nofollow">
+                    <strong>CI/CD</strong>
+                </a> is listed as one of the three prerequisites to use Microservice Architecture by Microservice Expert 
+                <strong>
+                    <em class="ig">Martin Fowler</em>
+                </strong>.
+            </p>
+            <h2>5. Observability</h2>
+            <p>
+                One of the main drawbacks of Microservice Architecture is that Software Development became simple at the expense of Operations. With one Monolith, it is much simpler to monitor the application. But having many microservices run on containers, observability of the whole system became very crucial and complicated. Even Logging became complicated to aggregate logs from many containers/machines into a central place. Fortunately, there are already many Enterprise grade solutions in the market. For example, 
+                <strong>ELK/Splunk</strong> offers Logging for Microservices. 
+                <strong>Prometheus/App Dynamics</strong> offers industry-grade monitoring. Another very crucial observability tool in the Microservice world is Tracing. Often one API request to a microservice leads to several cascaded calls to other microservices. To analyze the latency of a Microservice system, it is necessary to measure the latency of each individual Microservice. 
+                <strong>Zipkin/Jaeger</strong> offers excellent tracing support for Microservices.
+            </p>
+            <h2>6. Unified Tech Stack</h2>
+            <p>Microservice Architecture tells us that for a Microservice, take the programming language and framework best suitable for that microservice. This statement should not be taken literally. Sometime, a microservice may need a new Tech Stack e.g. for CPU heavy/high-performance tasks, programming language like C++/Rust may be chosen. If a Microservice works with Machine learning, maybe Python is a better choice. But using different programming languages/frameworks without any solid reason can lead to too many programming languages and frameworks without any real benefit. Think about the scenario where one microservice is developed using Spring Boot + Kotlin+ React + MySQL, the other one is with JakartaEE + Java + Angular + PostgreSQL, the next one with Scala + Play Framework + VueJS + Oracle then it will need a lots of effort to maintain the different programming language, databases, frameworks without too much gain.</p>
+            <h2>7. Asynchronous Communications</h2>
+            <p>One of the most challenging design decisions in Microservice Architecture is how the services will communicate and share data among themselves. This is even more important when each Microservice has its own Data Storage. Typically, one Microservice can exist along but it cannot fulfill all the business goals alone. All the Microservices work together to fulfill the Business goal and to work together, they need to exchange data or trigger other Microservices to do a task. The easiest and most common way to communicate between Microservices is via Synchronous REST API which is pragmatic but a short term solution. If Service A calls Service B, Service B calls Service C, Service C calls service D Synchronously, then latencies added up. Also as Microservices are mostly distributed systems, they could fail. Often Synchronous Microservices lead to failure cascading i.e. Failure in one Service can lead to failure in other services. Synchronous Communication between Microservices also leads to tight coupling between Microservices. For a long term solution, Microservices should communicate Asynchronously. There are many ways for Asynchronous communication between Microservices: via Message Queue e.g. Kafka, via asynchronous REST (ATOM) or CQRS.</p>
+            <h2>9. Infrastructure over Libraries</h2>
+            <p>
+                During the early days of Microservice Software development, Netflix used mainly Java programming to develop Microservices. They also developed many libraries (Netflix OSS Stack including Hystrix, Zuul). Many companies follow through Netflix and started to use the librariesNetflix OSS. Later, many companies (including Netflix) found that Java is not the de facto language to develop Microservices due to its Bulky size and Cold-start problems. Netflix later moved on Polyglot Microservice paradigm and decided not to develop the Netflix OSS further which lead the follower companies into trouble. So, instead of investing heavily in a language-specific library (e.g. Java based Netflix OSS), it is wiser to use frameworks (e.g. Service Meshes, API gateway).
+                <br />
+            </p>
+            <h2>10. Organizational Considerations</h2>
+            <p>
+                Almost 50 years ago (1967), 
+                <a class="external-link" href="https://en.wikipedia.org/wiki/Melvin_Conway" style="text-decoration: none;" rel="nofollow">Melvin Conway</a> gave an observation that the Software Architecture of a company is limited by Organizational Structure (Conway’s Law). Although the observation is 50 years old, MIT and Harvard Business School have recently found that the law is still valid in modern days. If an organization plans to develop Microservice Architecture, then it should make the team size accordingly (two “American” Pizza team: 7±2 person). Also, the team should be cross-functional and ideally will have Frontend/Backend Developer, Ops Engineering and Tester. Microservice Architecture will only work if the higher Management also changes their viewpoint and vision accordingly.
+                <br />
+            </p>
+            <h7>References</h7>
+            <ul>
+                <li>
+                    <a href="https://towardsdatascience.com/microservice-architecture-a-brief-overview-and-why-you-should-use-it-in-your-next-project-a17b6e19adfd" class="external-link" rel="nofollow">Towards Data Science - microservice architecture a brief overview and why you should use it in your next project</a>
+                </li>
+            </ul>
+        </div>
+        <div id="footer" role="contentinfo">
+            <section class="footer-body">
+            </section>
+        </div>
+    </div>
+</body>
+</html>

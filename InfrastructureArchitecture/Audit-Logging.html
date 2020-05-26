@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Infrastructure Architecture Audit Logging</title>
+    <link rel="stylesheet" href="styles/site.css" type="text/css" />
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body class="theme-default aui-theme-default">
+    <div id="page">
+        <div id="main" class="aui-page-panel">
+            <div id="main-header">
+                <div id="breadcrumb-section">
+                    <ol id="breadcrumbs">
+                        <li>
+                            <a href="index.html">Information Technology</a>
+                        </li>
+                        <li>
+                            <a href="2.0-Architectures_451824369.html">2.0 Architectures</a>
+                        </li>
+                        <li>
+                            <a href="451820182.html">Microservices &amp; Distributed System</a>
+                        </li>
+                        <li>
+                            <a href="Microservice-Architecture_451820190.html">Microservice Architecture</a>
+                        </li>
+                    </ol>
+                </div>
+                <h1 id="title-heading" class="pagetitle">
+
+                    Infrastructure Architecture Audit Logging
+
+
+                </h1>
+            </div>
+            <div id="content" class="view">
+                <h2>Context</h2>
+                <p>
+                    You have applied the 
+                    <a href="https://microservices.io/patterns/microservices.html" style="text-decoration: none;" class="external-link" rel="nofollow">Microservice architecture pattern</a>.
+                </p>
+                <h2>Problem</h2>
+                <p>How to understand the behavior of users and the application and troubleshoot problems?</p>
+                <h2>Forces</h2>
+                <ul>
+                    <li>It is useful to know what actions a user has recently performed: customer support, compliance, security, etc.</li>
+                </ul>
+                <h2>Solution</h2>
+                <p>Record user activity in a database.</p>
+                <h2>Examples</h2>
+                <p>This pattern is widely used.</p>
+                <h2>Resulting Context</h2>
+                <p>This pattern has the following benefits:</p>
+                <ul>
+                    <li>Provides a record of user actions</li>
+                </ul>
+                <p>This pattern has the following drawbacks:</p>
+                <ul>
+                    <li>The auditing code is intertwined with the business logic, which makes the business logic more complicated</li>
+                </ul>
+                <h2>Examples</h2>
+                <ul>
+                    <li>
+                        <a style="text-decoration: none;" href="https://microservices.io/patterns/data/event-sourcing.html" class="external-link" rel="nofollow">Event Sourcing</a> is a reliable way to implement auditing
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer" role="contentinfo">
+        <section class="footer-body">
+        </section>
+    </div>
+</body>
+</html>

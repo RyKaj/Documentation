@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Infrastructure Architecture Publisher-Subscriber Pattern</title>
+    <link rel="stylesheet" href="styles/site.css" type="text/css" />
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body class="theme-default aui-theme-default">
+    <div id="page">
+        <div id="main" class="aui-page-panel">
+            <div id="main-header">
+                <div id="breadcrumb-section">
+                    <ol id="breadcrumbs">
+                        <li>
+                            <a href="index.html">Information Technology</a>
+                        </li>
+                        <li>
+                            <a href="2.0-Architectures_451824369.html">2.0 Architectures</a>
+                        </li>
+                        <li>
+                            <a href="Infrastructure-Design-Patterns_463533493.html">Infrastructure Design Patterns</a>
+                        </li>
+                    </ol>
+                </div>
+                <h1 id="title-heading" class="pagetitle">
+                    Infrastructure Architecture Publisher-Subscriber Pattern
+                </h1>
+            </div>
+            <div id="content" class="view">
+                <h2>Overview</h2>
+                <p>Enable an application to announce events to multiple interested consumers asynchronously, without coupling the senders to the receivers.</p>
+                <p>
+                    <strong>Also called</strong>: Pub/sub messaging
+                </p>
+                <h2>Context and Problem</h2>
+                <p>In cloud-based and distributed applications, components of the system often need to provide information to other components as events happen.</p>
+                <p>Asynchronous messaging is an effective way to decouple senders from consumers, and avoid blocking the sender to wait for a response. However, using a dedicated message queue for each consumer does not effectively scale to many consumers. Also, some of the consumers might be interested in only a subset of the information. How can the sender announce events to all interested consumers without knowing their identities?</p>
+                <h2>Solution</h2>
+                <p>Introduce an asynchronous messaging subsystem that includes the following:</p>
+                <ul>
+                    <li>
+                        <p>
+                            An input messaging channel used by the sender. The sender packages events into messages, using a known message format, and sends these messages via the input channel. The sender in this pattern is also called the 
+                            <em>publisher</em>.
+                        </p>
+                        <p class="alert-title"> Note</p>
+                        <p>
+                            A 
+                            <em>message</em> is a packet of data. An 
+                            <em>event</em> is a message that notifies other components about a change or an action that has taken place.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            One output messaging channel per consumer. The consumers are known as 
+                            <em>subscribers</em>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>A mechanism for copying each message from the input channel to the output channels for all subscribers interested in that message. This operation is typically handled by an intermediary such as a message broker or event bus.</p>
+                    </li>
+                </ul>
+                <p>The following diagram shows the logical components of this pattern:</p>
+                <p style="margin-left: 30.0px;">
+                    <img class="confluence-embedded-image confluence-content-image-border" height="150" src="attachments/463533391/463533390.png" data-image-src="attachments/463533391/463533390.png" data-unresolved-comment-count="0" data-linked-resource-id="463533390" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="publish-subscribe.png" data-base-url="https://wiki.pinnacle.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="463533391" data-linked-resource-container-version="1">
+                </p>
+                <p>Pub/sub messaging has the following benefits:</p>
+                <ul>
+                    <li>
+                        <p>It decouples subsystems that still need to communicate. Subsystems can be managed independently, and messages can be properly managed even if one or more receivers are offline.</p>
+                    </li>
+                    <li>
+                        <p>It increases scalability and improves responsiveness of the sender. The sender can quickly send a single message to the input channel, then return to its core processing responsibilities. The messaging infrastructure is responsible for ensuring messages are delivered to interested subscribers.</p>
+                    </li>
+                    <li>
+                        <p>It improves reliability. Asynchronous messaging helps applications continue to run smoothly under increased loads and handle intermittent failures more effectively.</p>
+                    </li>
+                    <li>
+                        <p>It allows for deferred or scheduled processing. Subscribers can wait to pick up messages until off-peak hours, or messages can be routed or processed according to a specific schedule.</p>
+                    </li>
+                    <li>
+                        <p>It enables simpler integration between systems using different platforms, programming languages, or communication protocols, as well as between on-premises systems and applications running in the cloud.</p>
+                    </li>
+                    <li>
+                        <p>It facilitates asynchronous workflows across an enterprise.</p>
+                    </li>
+                    <li>
+                        <p>It improves testability. Channels can be monitored and messages can be inspected or logged as part of an overall integration test strategy.</p>
+                    </li>
+                    <li>
+                        <p>It provides separation of concerns for your applications. Each application can focus on its core capabilities, while the messaging infrastructure handles everything required to reliably route messages to multiple consumers.</p>
+                    </li>
+                </ul>
+                <h2>Issues and Considerations</h2>
+                <p>Consider the following points when deciding how to implement this pattern:</p>
+                <ul>
+                    <li>
+                        <p>
+                            <strong>Existing technologies.</strong> It is strongly recommended to use available messaging products and services that support a publish-subscribe model, rather than building your own. In Azure, consider using 
+                            <a href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/" style="text-decoration: underline;" class="external-link" rel="nofollow">Service Bus</a> or 
+                            <a style="text-decoration: underline;" href="https://docs.microsoft.com/en-us/azure/event-grid/" class="external-link" rel="nofollow">Event Grid</a>. Other technologies that can be used for pub/sub messaging include Redis, RabbitMQ, and Apache Kafka.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Subscription handling.</strong> The messaging infrastructure must provide mechanisms that consumers can use to subscribe to or unsubscribe from available channels.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Security.</strong> Connecting to any message channel must be restricted by security policy to prevent eavesdropping by unauthorized users or applications.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Subsets of messages.</strong> Subscribers are usually only interested in subset of the messages distributed by a publisher. Messaging services often allow subscribers to narrow the set of messages received by:
+                        </p>
+                        <ul>
+                            <li>
+                                <strong>Topics.</strong> Each topic has a dedicated output channel, and each consumer can subscribe to all relevant topics.
+                            </li>
+                            <li>
+                                <strong>Content filtering.</strong> Messages are inspected and distributed based on the content of each message. Each subscriber can specify the content it is interested in.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Wildcard subscribers.</strong> Consider allowing subscribers to subscribe to multiple topics via wildcards.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Bi-directional communication.</strong> The channels in a publish-subscribe system are treated as unidirectional. If a specific subscriber needs to send acknowledgment or communicate status back to the publisher, consider using the 
+                            <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReply.html" style="text-decoration: underline;" class="external-link" rel="nofollow">Request/Reply Pattern</a>. This pattern uses one channel to send a message to the subscriber, and a separate reply channel for communicating back to the publisher.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Message ordering.</strong> The order in which consumer instances receive messages isn't guaranteed, and doesn't necessarily reflect the order in which the messages were created. Design the system to ensure that message processing is idempotent to help eliminate any dependency on the order of message handling.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Message priority.</strong> Some solutions may require that messages are processed in a specific order. The 
+                            <a style="text-decoration: underline;" href="https://docs.microsoft.com/en-us/azure/architecture/patterns/priority-queue" class="external-link" rel="nofollow">Priority Queue pattern</a> provides a mechanism for ensuring specific messages are delivered before others.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Poison messages.</strong> A malformed message, or a task that requires access to resources that aren't available, can cause a service instance to fail. The system should prevent such messages being returned to the queue. Instead, capture and store the details of these messages elsewhere so that they can be analyzed if necessary.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Repeated messages.</strong> The same message might be sent more than once. For example, the sender might fail after posting a message. Then a new instance of the sender might start up and repeat the message. The messaging infrastructure should implement duplicate message detection and removal (also known as de-duping) based on message IDs in order to provide at-most-once delivery of messages.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Message expiration.</strong> A message might have a limited lifetime. If it isn't processed within this period, it might no longer be relevant and should be discarded. A sender can specify an expiration time as part of the data in the message. A receiver can examine this information before deciding whether to perform the business logic associated with the message.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Message scheduling.</strong> A message might be temporarily embargoed and should not be processed until a specific date and time. The message should not be available to a receiver until this time.
+                        </p>
+                    </li>
+                </ul>
+                <h2>When to use this Pattern</h2>
+                <p>Use this pattern when:</p>
+                <ul>
+                    <li>
+                        <p>An application needs to broadcast information to a significant number of consumers.</p>
+                    </li>
+                    <li>
+                        <p>An application needs to communicate with one or more independently-developed applications or services, which may use different platforms, programming languages, and communication protocols.</p>
+                    </li>
+                    <li>
+                        <p>An application can send information to consumers without requiring real-time responses from the consumers.</p>
+                    </li>
+                    <li>
+                        <p>The systems being integrated are designed to support an eventual consistency model for their data.</p>
+                    </li>
+                    <li>
+                        <p>An application needs to communicate information to multiple consumers, which may have different availability requirements or uptime schedules than the sender.</p>
+                    </li>
+                </ul>
+                <p>This pattern might not be useful when:</p>
+                <ul>
+                    <li>
+                        <p>An application has only a few consumers who need significantly different information from the producing application.</p>
+                    </li>
+                    <li>
+                        <p>An application requires near real-time interaction with consumers.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer" role="contentinfo">
+            <section class="footer-body">
+            </section>
+        </div>
+    </div>
+</body>
+</html>

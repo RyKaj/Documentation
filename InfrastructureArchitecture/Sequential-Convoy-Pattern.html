@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Infrastructure Architecture Sequential Convoy Pattern</title>
+    <link rel="stylesheet" href="styles/site.css" type="text/css" />
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body class="theme-default aui-theme-default">
+    <div id="page">
+        <div id="main" class="aui-page-panel">
+            <div id="main-header">
+                <div id="breadcrumb-section">
+                    <ol id="breadcrumbs">
+                        <li>
+                            <a href="index.html">Information Technology</a>
+                        </li>
+                        <li>
+                            <a href="2.0-Architectures_451824369.html">2.0 Architectures</a>
+                        </li>
+                        <li>
+                            <a href="Infrastructure-Design-Patterns_463533493.html">Infrastructure Design Patterns</a>
+                        </li>
+                    </ol>
+                </div>
+                <h1 id="title-heading" class="pagetitle">
+                    Infrastructure Architecture Sequential Convoy Pattern
+                </h1>
+            </div>
+            <div id="content" class="view">
+                <h2>Overview</h2>
+                <p>Process a set of related messages in a defined order, without blocking processing of other groups of messages.</p>
+                <h2>Context and Problem</h2>
+                <p>
+                    Applications often need to process a sequence of messages in the order they arrive, while still being able to scale out to handle increased load. In a distributed architecture, processing these messages in order is not straightforward, because the workers can scale independently and often pull messages independently, using a 
+                    <a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/competing-consumers" style="text-decoration: underline;" class="external-link" rel="nofollow">Competing Consumers pattern</a>.
+                </p>
+                <p>For example, an order tracking system receives a ledger containing orders and the relevant operations on those orders. These operations could be to create an order, add a transaction to the order, modify a past transaction, or delete an order. In this system, operations must be performed in a first-in-first-out (FIFO) manner, but only at the order level. However, the initial queue receives a ledger containing transactions for many orders, which may be interleaved.</p>
+                <h2>Solution</h2>
+                <p>Push related messages into categories within the queuing system, and have the queue listeners lock and pull only from one category, one message at a time.</p>
+                <p>Here's what the general Sequential Convoy pattern looks like:</p>
+                <p style="margin-left: 30.0px;">
+                    <img class="confluence-embedded-image confluence-content-image-border" height="150" src="attachments/463533400/463533398.png" data-image-src="attachments/463533400/463533398.png" data-unresolved-comment-count="0" data-linked-resource-id="463533398" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="sequential-convoy-overall.png" data-base-url="https://wiki.pinnacle.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="463533400" data-linked-resource-container-version="1">
+                </p>
+                <p>In the queue, messages for different categories may be interleaved, as shown in the following diagram:</p>
+                <p style="margin-left: 30.0px;">
+                    <img class="confluence-embedded-image confluence-content-image-border" height="150" src="attachments/463533400/463533399.png" data-image-src="attachments/463533400/463533399.png" data-unresolved-comment-count="0" data-linked-resource-id="463533399" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="sequential-convoy-queuemessages.png" data-base-url="https://wiki.pinnacle.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="463533400" data-linked-resource-container-version="1">
+                </p>
+                <h2>Issues and Considerations</h2>
+                <h2>When to use this Pattern</h2>
+            </div>
+        </div>
+        <div id="footer" role="contentinfo">
+            <section class="footer-body">
+            </section>
+        </div>
+    </div>
+</body>
+</html>

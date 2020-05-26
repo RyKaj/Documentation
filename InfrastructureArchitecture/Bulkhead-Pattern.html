@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Infrastructure Architecture Bulkhead Pattern</title>
+    <link rel="stylesheet" href="styles/site.css" type="text/css" />
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body class="theme-default aui-theme-default">
+    <div id="page">
+        <div id="main" class="aui-page-panel">
+            <div id="main-header">
+                <div id="breadcrumb-section">
+                    <ol id="breadcrumbs">
+                        <li>
+                            <a href="index.html">Information Technology</a>
+                        </li>
+                        <li>
+                            <a href="2.0-Architectures_451824369.html">2.0 Architectures</a>
+                        </li>
+                        <li>
+                            <a href="Infrastructure-Design-Patterns_463533493.html">Infrastructure Design Patterns</a>
+                        </li>
+                    </ol>
+                </div>
+                <h1 id="title-heading" class="pagetitle">
+                    Infrastructure Architecture Bulkhead Pattern
+                </h1>
+            </div>
+            <div id="content" class="view">
+                <h2>Overview</h2>
+                <p>The Bulkhead pattern is a type of application design that is tolerant of failure. In a bulkhead architecture, elements of an application are isolated into pools so that if one fails, the others will continue to function. It's named after the sectioned partitions (bulkheads) of a ship's hull. If the hull of a ship is compromised, only the damaged section fills with water, which prevents the ship from sinking.</p>
+                <h2>Context and Problem</h2>
+                <p>A cloud-based application may include multiple services, with each service having one or more consumers. Excessive load or failure in a service will impact all consumers of the service.</p>
+                <p>Moreover, a consumer may send requests to multiple services simultaneously, using resources for each request. When the consumer sends a request to a service that is misconfigured or not responding, the resources used by the client's request may not be freed in a timely manner. As requests to the service continue, those resources may be exhausted. For example, the client's connection pool may be exhausted. At that point, requests by the consumer to other services are affected. Eventually the consumer can no longer send requests to other services, not just the original unresponsive service.</p>
+                <p>The same issue of resource exhaustion affects services with multiple consumers. A large number of requests originating from one client may exhaust available resources in the service. Other consumers are no longer able to consume the service, causing a cascading failure effect.</p>
+                <h2>Solution</h2>
+                <p>Partition service instances into different groups, based on consumer load and availability requirements. This design helps to isolate failures, and allows you to sustain service functionality for some consumers, even during a failure.</p>
+                <p>A consumer can also partition resources, to ensure that resources used to call one service don't affect the resources used to call another service. For example, a consumer that calls multiple services may be assigned a connection pool for each service. If a service begins to fail, it only affects the connection pool assigned for that service, allowing the consumer to continue using the other services.</p>
+                <p>The benefits of this pattern include:</p>
+                <ul>
+                    <li>Isolates consumers and services from cascading failures. An issue affecting a consumer or service can be isolated within its own bulkhead, preventing the entire solution from failing.</li>
+                    <li>Allows you to preserve some functionality in the event of a service failure. Other services and features of the application will continue to work.</li>
+                    <li>Allows you to deploy services that offer a different quality of service for consuming applications. A high-priority consumer pool can be configured to use high-priority services.</li>
+                </ul>
+                <p>The following diagram shows bulkheads structured around connection pools that call individual services. If Service A fails or causes some other issue, the connection pool is isolated, so only workloads using the thread pool assigned to Service A are affected. Workloads that use Service B and C are not affected and can continue working without interruption.</p>
+                <p style="margin-left: 30.0px;">
+                    <img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" height="150" src="attachments/463533301/463533299.png" data-image-src="attachments/463533301/463533299.png" data-unresolved-comment-count="0" data-linked-resource-id="463533299" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="bulkhead-1.png" data-base-url="https://wiki.pinnacle.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="463533301" data-linked-resource-container-version="1">
+                </p>
+                <p>The next diagram shows multiple clients calling a single service. Each client is assigned a separate service instance. Client 1 has made too many requests and overwhelmed its instance. Because each service instance is isolated from the others, the other clients can continue making calls.</p>
+                <p>
+                    <img class="confluence-embedded-image confluence-content-image-border" height="150" src="attachments/463533301/463533300.png" data-image-src="attachments/463533301/463533300.png" data-unresolved-comment-count="0" data-linked-resource-id="463533300" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="bulkhead-2.png" data-base-url="https://wiki.pinnacle.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="463533301" data-linked-resource-container-version="1">
+                </p>
+                <h2>Issues and Considerations</h2>
+                <ul>
+                    <li>Define partitions around the business and technical requirements of the application.</li>
+                    <li>When partitioning services or consumers into bulkheads, consider the level of isolation offered by the technology as well as the overhead in terms of cost, performance and manageability.</li>
+                    <li>Consider combining bulkheads with retry, circuit breaker, and throttling patterns to provide more sophisticated fault handling.</li>
+                    <li>
+                        When partitioning consumers into bulkheads, consider using processes, thread pools, and semaphores. Projects like 
+                        <a href="https://github.com/resilience4j/resilience4j" style="text-decoration: none;" class="external-link" rel="nofollow">resilience4j</a> and 
+                        <a href="https://github.com/App-vNext/Polly" style="text-decoration: none;" class="external-link" rel="nofollow">Polly</a> offer a framework for creating consumer bulkheads.
+                    </li>
+                    <li>When partitioning services into bulkheads, consider deploying them into separate virtual machines, containers, or processes. Containers offer a good balance of resource isolation with fairly low overhead.</li>
+                    <li>Services that communicate using asynchronous messages can be isolated through different sets of queues. Each queue can have a dedicated set of instances processing messages on the queue, or a single group of instances using an algorithm to dequeue and dispatch processing.</li>
+                    <li>Determine the level of granularity for the bulkheads. For example, if you want to distribute tenants across partitions, you could place each tenant into a separate partition, or put several tenants into one partition.</li>
+                    <li>Monitor each partition’s performance and SLA.</li>
+                </ul>
+                <h2>When to use this Pattern</h2>
+                <p>Use this pattern to:</p>
+                <ul>
+                    <li>Isolate resources used to consume a set of backend services, especially if the application can provide some level of functionality even when one of the services is not responding.</li>
+                    <li>Isolate critical consumers from standard consumers.</li>
+                    <li>Protect the application from cascading failures.</li>
+                </ul>
+                <p>This pattern may not be suitable when:</p>
+                <ul>
+                    <li>Less efficient use of resources may not be acceptable in the project.</li>
+                    <li>The added complexity is not necessary</li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer" role="contentinfo">
+            <section class="footer-body">
+            </section>
+        </div>
+    </div>
+</body>
+</html>

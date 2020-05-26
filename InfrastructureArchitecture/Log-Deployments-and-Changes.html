@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Infrastructure Architecture Log Deployments and Changes</title>
+    <link rel="stylesheet" href="styles/site.css" type="text/css" />
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body class="theme-default aui-theme-default">
+    <div id="page">
+        <div id="main" class="aui-page-panel">
+            <div id="main-header">
+                <div id="breadcrumb-section">
+                    <ol id="breadcrumbs">
+                        <li>
+                            <a href="index.html">Information Technology</a>
+                        </li>
+                        <li>
+                            <a href="2.0-Architectures_451824369.html">2.0 Architectures</a>
+                        </li>
+                        <li>
+                            <a href="451820182.html">Microservices &amp; Distributed System</a>
+                        </li>
+                        <li>
+                            <a href="Microservice-Architecture_451820190.html">Microservice Architecture</a>
+                        </li>
+                    </ol>
+                </div>
+                <h1 id="title-heading" class="pagetitle">
+
+                    Infrastructure Architecture Log Deployments and Changes
+
+                </h1>
+            </div>
+            <div id="content" class="view">
+                <h2>Context</h2>
+                <p>
+                    You have applied the 
+                    <a href="https://microservices.io/patterns/microservices.html" style="text-decoration: none;" class="external-link" rel="nofollow">Microservice architecture pattern</a>.
+                </p>
+                <h2>Problem</h2>
+                <p>How to understand the behavior of an application and troubleshoot problems?</p>
+                <h2>Forces</h2>
+                <ul>
+                    <li>It useful to see when deployments and other changes occur since issues usually occur immediately after a change</li>
+                </ul>
+                <h2>Solution</h2>
+                <p>Log every deployment and every change to the (production) environment.</p>
+                <h2>Examples</h2>
+                <p>
+                    A deployment tool can, for example, publish 
+                    <a href="https://microservices.io/patterns/observability/application-metrics.html" style="text-decoration: none;" class="external-link" rel="nofollow">a pseudo-metric</a> whenever it deploys a new version of a service. This metric can then be displayed alongside other metrics enabling changes in application behavior to be correlated with deployments. See 
+                    <a style="text-decoration: none;" href="https://codeascraft.com/2010/12/08/track-every-release/" class="external-link" rel="nofollow">Tracking Every Release by Mike Brittain</a>
+                </p>
+                <p>
+                    <a href="https://aws.amazon.com/cloudtrail/" style="text-decoration: none;" class="external-link" rel="nofollow">AWS Cloud Trail</a> provides logs of AWS API calls.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="footer" role="contentinfo">
+        <section class="footer-body">
+        </section>
+    </div>
+</body>
+</html>

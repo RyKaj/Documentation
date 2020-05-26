@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Infrastructure Architecture Gateway Aggregation Pattern</title>
+    <link rel="stylesheet" href="styles/site.css" type="text/css" />
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body class="theme-default aui-theme-default">
+    <div id="page">
+        <div id="main" class="aui-page-panel">
+            <div id="main-header">
+                <div id="breadcrumb-section">
+                    <ol id="breadcrumbs">
+                        <li>
+                            <a href="index.html">Information Technology</a>
+                        </li>
+                        <li>
+                            <a href="2.0-Architectures_451824369.html">2.0 Architectures</a>
+                        </li>
+                        <li>
+                            <a href="Infrastructure-Design-Patterns_463533493.html">Infrastructure Design Patterns</a>
+                        </li>
+                    </ol>
+                </div>
+                <h1 id="title-heading" class="pagetitle">
+                    Infrastructure Architecture Gateway Aggregation Pattern
+                </h1>
+            </div>
+            <div id="content" class="view">
+                <h2>Overview</h2>
+                <p>Use a gateway to aggregate multiple individual requests into a single request. This pattern is useful when a client must make multiple calls to different backend systems to perform an operation.</p>
+                <h2>Context and Problem</h2>
+                <p>To perform a single task, a client may have to make multiple calls to various backend services. An application that relies on many services to perform a task must expend resources on each request. When any new feature or service is added to the application, additional requests are needed, further increasing resource requirements and network calls. This chattiness between a client and a backend can adversely impact the performance and scale of the application. Microservice architectures have made this problem more common, as applications built around many smaller services naturally have a higher amount of cross-service calls.</p>
+                <p>In the following diagram, the client sends requests to each service (1,2,3). Each service processes the request and sends the response back to the application (4,5,6). Over a cellular network with typically high latency, using individual requests in this manner is inefficient and could result in broken connectivity or incomplete requests. While each request may be done in parallel, the application must send, wait, and process data for each request, all on separate connections, increasing the chance of failure.</p>
+                <p style="margin-left: 30.0px;">
+                    <img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" height="150" src="attachments/463533350/463533348.png" data-image-src="attachments/463533350/463533348.png" data-unresolved-comment-count="0" data-linked-resource-id="463533348" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="gateway-aggregation-problem (1).png" data-base-url="https://wiki.pinnacle.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="463533350" data-linked-resource-container-version="3">
+                </p>
+                <h2>Solution</h2>
+                <p>Use a gateway to reduce chattiness between the client and the services. The gateway receives client requests, dispatches requests to the various backend systems, and then aggregates the results and sends them back to the requesting client.</p>
+                <p>This pattern can reduce the number of requests that the application makes to backend services, and improve application performance over high-latency networks.</p>
+                <p>In the following diagram, the application sends a request to the gateway (1). The request contains a package of additional requests. The gateway decomposes these and processes each request by sending it to the relevant service (2). Each service returns a response to the gateway (3). The gateway combines the responses from each service and sends the response to the application (4). The application makes a single request and receives only a single response from the gateway.</p>
+                <p style="margin-left: 30.0px;">
+                    <img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" height="150" src="attachments/463533350/463533349.png" data-image-src="attachments/463533350/463533349.png" data-unresolved-comment-count="0" data-linked-resource-id="463533349" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="gateway-aggregation (1).png" data-base-url="https://wiki.pinnacle.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="463533350" data-linked-resource-container-version="3">
+                    <img class="confluence-embedded-image confluence-external-resource confluence-content-image-border" alt="New-API-GW-Diagram" height="150" src="https://d1.awsstatic.com/serverless/New-API-GW-Diagram.c9fc9835d2a9aa00ef90d0ddc4c6402a2536de0d.png" data-image-src="https://d1.awsstatic.com/serverless/New-API-GW-Diagram.c9fc9835d2a9aa00ef90d0ddc4c6402a2536de0d.png">
+                    <img class="confluence-embedded-image img-responsive confluence-external-resource confluence-content-image-border" height="150" src="https://microservices.io/i/apigateway.jpg" data-image-src="https://microservices.io/i/apigateway.jpg">
+                    <img class="confluence-embedded-image confluence-thumbnail confluence-content-image-border" height="150" src="attachments/463533350/463533529.png" data-image-src="attachments/463533350/463533529.png" data-unresolved-comment-count="0" data-linked-resource-id="463533529" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen-Shot-2020-02-25-at-11.19.16-AM-768x631.png" data-base-url="https://wiki.pinnacle.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="463533350" data-linked-resource-container-version="3">
+                    <img class="confluence-embedded-image confluence-content-image-border" height="150" src="attachments/463533350/463533530.png" data-image-src="attachments/463533350/463533530.png" data-unresolved-comment-count="0" data-linked-resource-id="463533530" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen-Shot-2020-02-25-at-11.20.01-AM-1536x545.png" data-base-url="https://wiki.pinnacle.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="463533350" data-linked-resource-container-version="3">
+                    <img class="confluence-embedded-image img-responsive confluence-external-resource confluence-content-image-border" height="150" src="https://microservices.io/i/bffe.png" data-image-src="https://microservices.io/i/bffe.png">
+                </p>
+                <h3 id="GatewayAggregationPattern-UsinganAPIgatewayhasthefollowingbenefits">Using an API gateway has the following benefits</h3>
+                <ul>
+                    <li>Insulates the clients from how the application is partitioned into microservices</li>
+                    <li>Insulates the clients from the problem of determining the locations of service instances</li>
+                    <li>Provides the optimal API for each client</li>
+                    <li>Reduces the number of requests/roundtrips. For example, the API gateway enables clients to retrieve data from multiple services with a single round-trip. Fewer requests also means less overhead and improves the user experience. An API gateway is essential for mobile applications.</li>
+                    <li>Simplifies the client by moving logic for calling multiple services from the client to API gateway</li>
+                    <li>Translates from a “standard” public web-friendly API protocol to whatever protocols are used internally</li>
+                </ul>
+                <h2>Issues and Considerations</h2>
+                <ul>
+                    <li>The gateway should not introduce service coupling across the backend services.</li>
+                    <li>The gateway should be located near the backend services to reduce latency as much as possible.</li>
+                    <li>The gateway service may introduce a single point of failure. Ensure the gateway is properly designed to meet your application's availability requirements.</li>
+                    <li>The gateway may introduce a bottleneck. Ensure the gateway has adequate performance to handle load and can be scaled to meet your anticipated growth.</li>
+                    <li>Perform load testing against the gateway to ensure you don't introduce cascading failures for services.</li>
+                    <li>
+                        Implement a resilient design, using techniques such as 
+                        <a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/bulkhead" style="text-decoration: none;" class="external-link" rel="nofollow">bulkheads</a>, 
+                        <a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker" style="text-decoration: none;" class="external-link" rel="nofollow">circuit breaking</a>, 
+                        <a style="text-decoration: none;" href="https://docs.microsoft.com/en-us/azure/architecture/patterns/retry" class="external-link" rel="nofollow">retry</a>, and timeouts.
+                    </li>
+                    <li>If one or more service calls takes too long, it may be acceptable to timeout and return a partial set of data. Consider how your application will handle this scenario.</li>
+                    <li>Use asynchronous I/O to ensure that a delay at the backend doesn't cause performance issues in the application.</li>
+                    <li>Implement distributed tracing using correlation IDs to track each individual call.</li>
+                    <li>Monitor request metrics and response sizes.</li>
+                    <li>Consider returning cached data as a failover strategy to handle failures.</li>
+                    <li>Instead of building aggregation into the gateway, consider placing an aggregation service behind the gateway. Request aggregation will likely have different resource requirements than other services in the gateway and may impact the gateway's routing and offloading functionality.</li>
+                    <li>How implement the API gateway? An event-driven/reactive approach is best if it must scale to scale to handle high loads. On the JVM, NIO-based libraries such as Netty, Spring Reactor, etc. make sense. NodeJS is another option.</li>
+                </ul>
+                <h2>When to use this Pattern</h2>
+                <p>Use this pattern when:</p>
+                <ul>
+                    <li>A client needs to communicate with multiple backend services to perform an operation.</li>
+                    <li>The client may use networks with significant latency, such as cellular networks.</li>
+                </ul>
+                <p>This pattern may not be suitable when:</p>
+                <ul>
+                    <li>You want to reduce the number of calls between a client and a single service across multiple operations. In that scenario, it may be better to add a batch operation to the service.</li>
+                    <li>The client or application is located near the backend services and latency is not a significant factor.</li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer" role="contentinfo">
+            <section class="footer-body">
+            </section>
+        </div>
+    </div>
+</body>
+</html>

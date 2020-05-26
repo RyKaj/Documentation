@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Infrastructure Architecture Command Query Responsibility Segregation (CQRS)</title>
+    <link rel="stylesheet" href="styles/site.css" type="text/css" />
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body class="theme-default aui-theme-default">
+    <div id="page">
+        <div id="main" class="aui-page-panel">
+            <div id="main-header">
+                <div id="breadcrumb-section">
+                    <ol id="breadcrumbs">
+                        <li>
+                            <a href="index.html">Information Technology</a>
+                        </li>
+                        <li>
+                            <a href="2.0-Architectures_451824369.html">2.0 Architectures</a>
+                        </li>
+                        <li>
+                            <a href="451820182.html">Microservices &amp; Distributed System</a>
+                        </li>
+                        <li>
+                            <a href="Microservice-Architecture_451820190.html">Microservice Architecture</a>
+                        </li>
+                    </ol>
+                </div>
+                <h1 id="title-heading" class="pagetitle">
+
+                    Infrastructure Architecture Command Query Responsibility Segregation (CQRS)
+
+                </h1>
+            </div>
+            <div id="content" class="view">
+                <h2>Context</h2>
+                <p>
+                    You have applied the 
+                    <a style="text-decoration: none;" href="https://microservices.io/patterns/microservices.html" class="external-link" rel="nofollow">Microservices architecture pattern</a> and the 
+                    <a style="text-decoration: none;" href="https://microservices.io/patterns/data/database-per-service.html" class="external-link" rel="nofollow">Database per service pattern</a>. As a result, it is no longer straightforward to implement queries that join data from multiple services. Also, if you have applied the 
+                    <a href="https://microservices.io/patterns/data/event-sourcing.html" style="text-decoration: none;" class="external-link" rel="nofollow">Event sourcing pattern</a> then the data is no longer easily queried.
+                </p>
+                <h2>Problem</h2>
+                <p>How to implement a query that retrieves data from multiple services in a microservice architecture?</p>
+                <h2>Solution</h2>
+                <p>
+                    Define a view database, which is a read-only replica that is designed to support that query. The application keeps the replica up to data by subscribing to 
+                    <a style="text-decoration: none;" href="https://microservices.io/patterns/data/domain-event.html" class="external-link" rel="nofollow">Domain events</a> published by the service that own the data.
+                </p>
+                <p style="margin-left: 30.0px;">
+                    <img class="confluence-embedded-image img-responsive confluence-external-resource confluence-content-image-border" height="250" src="https://microservices.io/i/patterns/data/QuerySideService.png" data-image-src="https://microservices.io/i/patterns/data/QuerySideService.png">
+                </p>
+                <h2>Examples</h2>
+                <ul>
+                    <li>
+                        <p>
+                            My book’s FTGO example application has the 
+                            <a style="text-decoration: none;" href="https://github.com/microservices-patterns/ftgo-application#chapter-7-implementing-queries-in-a-microservice-architecture" class="external-link" rel="nofollow">
+                                <code class="highlighter-rouge">Order History Service</code>
+                            </a>, which implements this pattern.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            There are 
+                            <a href="http://eventuate.io/exampleapps.html" style="text-decoration: none;" class="external-link" rel="nofollow">several Eventuate-based example applications</a> that illustrate how to use this pattern.
+                        </p>
+                    </li>
+                </ul>
+                <h2>Resulting Context</h2>
+                <p>This pattern has the following benefits:</p>
+                <ul>
+                    <li>Supports multiple denormalized views that are scalable and performant</li>
+                    <li>Improved separation of concerns = simpler command and query models</li>
+                    <li>Necessary in an event sourced architecture</li>
+                </ul>
+                <p>This pattern has the following drawbacks:</p>
+                <ul>
+                    <li>Increased complexity</li>
+                    <li>Potential code duplication</li>
+                    <li>Replication lag/eventually consistent views</li>
+                </ul>
+                <b>Related Patterns</b>
+                <ul>
+                    <li>
+                        The 
+                        <a href="https://microservices.io/patterns/data/database-per-service.html" style="text-decoration: none;" class="external-link" rel="nofollow">Database per Service pattern</a> creates the need for this pattern
+                    </li>
+                    <li>
+                        The 
+                        <a style="text-decoration: none;" href="https://microservices.io/patterns/data/api-composition.html" class="external-link" rel="nofollow">API Composition pattern</a> is an alternative solution
+                    </li>
+                    <li>
+                        The 
+                        <a style="text-decoration: none;" href="https://microservices.io/patterns/data/domain-event.html" class="external-link" rel="nofollow">Domain event</a> pattern generates the events
+                    </li>
+                    <li>
+                        CQRS is often used with 
+                        <a href="https://microservices.io/patterns/data/event-sourcing.html" style="text-decoration: none;" class="external-link" rel="nofollow">Event sourcing</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer" role="contentinfo">
+        <section class="footer-body">
+        </section>
+    </div>
+</body>
+</html>

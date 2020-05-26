@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Infrastructure Architecture Single Service Instance per Host</title>
+    <link rel="stylesheet" href="styles/site.css" type="text/css" />
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body class="theme-default aui-theme-default">
+    <div id="page">
+        <div id="main" class="aui-page-panel">
+            <div id="main-header">
+                <div id="breadcrumb-section">
+                    <ol id="breadcrumbs">
+                        <li>
+                            <a href="index.html">Information Technology</a>
+                        </li>
+                        <li>
+                            <a href="2.0-Architectures_451824369.html">2.0 Architectures</a>
+                        </li>
+                        <li>
+                            <a href="451820182.html">Microservices &amp; Distributed System</a>
+                        </li>
+                        <li>
+                            <a href="Microservice-Architecture_451820190.html">Microservice Architecture</a>
+                        </li>
+                    </ol>
+                </div>
+                <h1 id="title-heading" class="pagetitle">
+
+                    Infrastructure Architecture Single Service Instance per Host
+
+                </h1>
+            </div>
+            <div id="content" class="view">
+                <h2>Context</h2>
+                You have applied the 
+                <a style="text-decoration: none;" href="https://microservices.io/patterns/microservices.html" class="external-link" rel="nofollow">Microservice architecture pattern</a> and architected your system as a set of services. Each service is deployed as a set of service instances for throughput and availability.
+                <h2>Problem</h2>
+                How are services packaged and deployed?
+                <h2>Forces</h2>
+                <ul>
+                    <li>Services are written using a variety of languages, frameworks, and framework versions</li>
+                    <li>Each service consists of multiple service instances for throughput and availability</li>
+                    <li>Service must be independently deployable and scalable</li>
+                    <li>Service instances need to be isolated from one another</li>
+                    <li>You need to be able to quickly build and deploy a service</li>
+                    <li>You need to be able to constrain the resources (CPU and memory) consumed by a service</li>
+                    <li>You need to monitor the behavior of each service instance</li>
+                    <li>You want deployment to reliable</li>
+                    <li>You must deploy the application as cost-effectively as possible</li>
+                </ul>
+                <h2>Solution</h2>
+                Deploy each single service instance on its own host
+                <h2>Examples</h2>
+                <h2>Resulting Context</h2>
+                <p>The benefits of this approach include:</p>
+                <ul>
+                    <li>Services instances are isolated from one another</li>
+                    <li>There is no possibility of conflicting resource requirements or dependency versions</li>
+                    <li>A service instance can only consume at most the resources of a single host</li>
+                    <li>Its straightforward to monitor, manage, and redeploy each service instance</li>
+                </ul>
+                <p>The drawbacks of this approach include:</p>
+                <ul>
+                    <li>
+                        Potentially less efficient resource utilization compared to 
+                        <a style="text-decoration: none;" href="https://microservices.io/patterns/deployment/multiple-services-per-host.html" class="external-link" rel="nofollow">Multiple Services per Host</a> because there are more hosts
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer" role="contentinfo">
+            <section class="footer-body">
+            </section>
+        </div>
+    </div>
+</body>
+</html>
