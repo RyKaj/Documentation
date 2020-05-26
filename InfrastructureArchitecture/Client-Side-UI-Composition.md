@@ -1,12 +1,4 @@
-
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Client-Side UI Composition
 ======================================================
@@ -58,10 +50,5 @@ build pages/screens by composing multiple, service-specific UI
 components.
 
 **Resulting Context**
-
-
-
- 
-
 
 
