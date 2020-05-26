@@ -1,12 +1,4 @@
-
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Shared Database
 ===========================================
@@ -25,8 +17,6 @@ about orders and the  `Customer Service`{.highlighter-rouge} stores
 information about customers.
 
 ![](https://microservices.io/i/customersandorders.png)
-
-.confluence-content-image-border height="150"}
 
 Problem
 -------

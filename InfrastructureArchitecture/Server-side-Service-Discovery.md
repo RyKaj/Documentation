@@ -1,11 +1,4 @@
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 
 Infrastructure Architecture - Server-side Service Discovery
@@ -28,8 +21,6 @@ number of instances of a service and their locations changes
 dynamically.
 
 ![](https://microservices.io/i/servicediscovery/discovery-problem.jpg)
-
-.confluence-content-image-border height="250"}
 
 Consequently, you must implement a mechanism for that enables the
 clients of service to make requests to a dynamically changing set of
@@ -68,7 +59,6 @@ The following diagram shows the structure of this pattern.
 
 ![](https://microservices.io/i/servicediscovery/server-side-discovery.jpg)
 
-.confluence-content-image-border height="250"}
 
 Examples
 --------

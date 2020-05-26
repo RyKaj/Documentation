@@ -1,12 +1,4 @@
-
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Server-Side page Fragment Composition
 =================================================================

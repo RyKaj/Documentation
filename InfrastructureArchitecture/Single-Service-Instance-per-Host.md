@@ -1,12 +1,4 @@
-
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Single Service Instance per Host
 ============================================================

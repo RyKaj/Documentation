@@ -1,10 +1,4 @@
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Logging in the microservices
 ========================================================
@@ -17,8 +11,6 @@ Generic Environment
 ### ELK or Elastic Stack
 
 ![](https://miro.medium.com/max/384/1*f76792PlJa2SKG-Y9wioLQ.png)
-.confluence-external-resource .confluence-content-image-border
-width="200"}
 
 Then comes the need to aggregate these logs into a central location, and
 being able to monitor, search and diagnose problems in these logs. The
@@ -44,8 +36,6 @@ reasons:
     one does it regardless of the service technology.
 
 ![](https://miro.medium.com/max/1135/0*6Fdv9a-zWRjmgVHQ.png)
-.confluence-external-resource .confluence-content-image-border
-height="150"}
 
 This approach works anywhere, in any environment, with any technology,
 but with the following drawbacks:
@@ -59,8 +49,6 @@ but with the following drawbacks:
 ### Keep it Simpel Stupid (Only log to Console)
 
 ![](https://miro.medium.com/max/1365/0*JOq9Dop40d6lr6tR)
-.confluence-external-resource .confluence-content-image-border
-width="200"}
 
 That's why when we are in the microservices world, it's always
 recommended that you keep the real logging work out of the service code.
@@ -79,8 +67,6 @@ extensions which logs to Console.
 ### Application Insights
 
 ![](https://miro.medium.com/max/1236/0*JoMeJ-2QEvQRCF69.png)
-.confluence-external-resource .confluence-content-image-border
-width="200"}
 
 Another solution that makes sense for .NET developers is Application
 Insights. It fully supports .NET among some other technologies. It's
@@ -106,7 +92,6 @@ solution in the beginning but doesn't scale well in real production.
 ### NLog
 
 ![](https://miro.medium.com/max/352/0*JSHjcgoJSVvjwEcS)
-.confluence-external-resource width="200"}
 
 This usually is the first thing that comes to your mind. Let's get NLog
 or Serilog to do all the logging especially with all the different

@@ -1,12 +1,4 @@
-
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Sagas
 =================================
@@ -49,8 +41,6 @@ preceding local transactions.
 
 ![](https://microservices.io/i/data/saga.jpg)
 
-.confluence-content-image-border height="250"}
-
 Examples
 --------
 
@@ -65,8 +55,6 @@ Example: Choreography-based saga {#Sagas-Example:Choreography-basedsaga}
 --------------------------------
 
 ![](https://microservices.io/i/data/Saga_Choreography_Flow.001.jpeg)
-
-.confluence-content-image-border height="250"}
 
 An e-commerce application that uses this approach would create an order
 using a choreography-based saga that consists of the following steps:
@@ -85,7 +73,6 @@ using a choreography-based saga that consists of the following steps:
 
 ![](https://microservices.io/i/data/Saga_Orchestration_Flow.001.jpeg)
 
-.confluence-content-image-border height="250"}
 
 An e-commerce application that uses this approach would create an order
 using an orchestration-based saga that consists of the following steps:
