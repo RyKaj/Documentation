@@ -70,7 +70,7 @@ The number of days/weeks/months that have passed is the approximate average cycl
 
 > ***The distance between the lines of a CFD will show you the problems of your workflow.***
 
-![](attachments/451819528/451819532.jpg)
+<img src="./attachments/451819532.jpg" alt="">
 
 Team Velocity
 -------------

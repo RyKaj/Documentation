@@ -20,7 +20,7 @@ agile](https://reqtest.com/agile-blog/scaling-agile-reqtest/) and
 lean.
 
 ![SAFe](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/SAFe.png)
-![](attachments/463506521/471992239.png)
+<img src="./attachments/471992239.png" alt="">
 
 Scaled Agile Framework addresses the problems encountered when scaling
 agile beyond a single team.  SAFe promotes collaboration, coordination,
@@ -175,7 +175,7 @@ supports the full range of development environments with four
 configurations,
 
 ![SAFe Configuration](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/SAFe-Configuration.png)
-![](attachments/463506521/471992241.png)
+<img src="./attachments/471992241.png" alt="">
 
 ### 1. Essential SAFe 
 
@@ -232,7 +232,7 @@ The Foundation contains the supporting principles, values, mindset,
 implementation guidance, and leadership roles that are required to
 deliver the value successfully at scale.
 
-![](attachments/463506521/471992242.png)
+<img src="./attachments/471992242.png" alt="">
 
 Lean-Agile Leaders 
 ------------------

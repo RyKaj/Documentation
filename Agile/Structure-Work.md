@@ -135,19 +135,3 @@ References
 -   [Microsoft - Define features epics](https://docs.microsoft.com/en-us/azure/devops/boards/backlogs/define-features-epics?view=azure-devops)
 -   [Dzone - Requirements epic feature user story task size](https://dzone.com/articles/requirements-epic-feature-user-story-task-size-and)
 
-
-
-
-###### Attachments: {#attachments .pageSectionTitle}
-
--   [image2018-7-19\_8-7-52.png](attachments/451819575/451819577.png)
--   [Ticket Linking Jira](attachments/451819575/451819580)
--   [Ticket Linking Jira.png](attachments/451819575/451819581.png)
--   [Ticket Linking Jira](attachments/451819575/451819578)
--   [Ticket Linking Jira.png](attachments/451819575/451819579.png)
-
-
-
-
-
-

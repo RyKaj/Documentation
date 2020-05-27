@@ -17,7 +17,7 @@ Frameworks
 Scrum
 -----
 
-![](attachments/451819468/463531684.jpg)
+<img src="./attachments/463531684.jpg" alt="">
 [T]{style="color: rgb(0,128,0);"}eams commit to ship working software
 through set intervals called sprints. Their goal is to create learning
 loops to quickly gather and integrate customer feedback. Scrum teams
@@ -93,7 +93,7 @@ meetings. These scrum ceremonies are lightweight and run on a continuous
 basis.
 
 ![Diagram of the Scrum framework at a glance.](https://uploads.toptal.io/blog/image/127503/toptal-blog-image-1540989875651-a45bb8fe0b7a490aa2f9fe2365e59cf2.png)
-![](attachments/451819468/463529391.png)
+<img src="./attachments/463529391.png" alt="">
 
 ### Product backlog
 
@@ -150,7 +150,7 @@ what went wrong, and what they could do differently.
 
 ### Scrum Roles
 
-![](attachments/451818035/463513501.png)
+<img src="./attachments/463513501.png" alt="">
 ![What is Scrum Team](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-scrum-team/sites/7/2018/10/what-is-scrum-team.png)
 ![What is Scrum Team](https://www.visual-paradigm.com/servlet/editor-content/scrum/how-scrum-team-works/sites/7/2018/12/what-is-a-scrum-team.png)
 
@@ -1387,7 +1387,7 @@ manufacturing, it later made its way into agile software development
 teams.
 
 ![What is Kanban - Scrum vs Kanban - Edureka](https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/07/What-is-Kanban-Scrum-vs-Kanban-Edureka.png)
-![](attachments/451819468/463529392.png)
+<img src="./attachments/463529392.png" alt="">
 
 
 ### Cadence
@@ -1976,7 +1976,7 @@ clearly, and demonstrate control.
 # Lean Software Development - LSD
 
 
-![](attachments/451819468/458555851.png)
+<img src="./attachments/458555851.png" alt="">
 
 Lean Software Development takes Lean manufacturing and Lean IT
 principles and applies them to software development. It can be
@@ -2186,7 +2186,7 @@ osmotic communication preferably by being co-located.
 
 
 
-![](attachments/451819468/463529379.png)
+<img src="./attachments/4463529379.png" alt="">
 
  
 # Scrum & Kanban

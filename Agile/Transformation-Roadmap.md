@@ -1255,29 +1255,6 @@ Find the template  [here!](https://docs.google.com/presentation/d/1owLm-nxH-bVq
 
 
 
-
-PDF
-===
-
-Enterprice Transition Framework
--------------------------------
-
-[![](rest/documentConversion/latest/conversion/thumbnail/451819493/1){height="250"}](/download/attachments/451819467/Agile42%20Enterprise%20Transition%20Poster.pdf?version=1&modificationDate=1566134816183&api=v2){.confluence-embedded-file}
-
-Deloitte
---------
-
-[![](rest/documentConversion/latest/conversion/thumbnail/451819495/1){height="250"}](/download/attachments/451819467/Deloitte%20Agile%20Transformation-approach.pdf?version=1&modificationDate=1566135151207&api=v2){.confluence-embedded-file}
-
-Agile Velocity
---------------
-
-[![](rest/documentConversion/latest/conversion/thumbnail/451819496/1){height="250"}](/download/attachments/451819467/Scrum%20Alliance%20Steps%20to%20a%20Successsful%20Enterprise%20Agile%20Transformation.pdf?version=1&modificationDate=1566135343337&api=v2){.confluence-embedded-file}
-
-
-
-
-
 Management Transformation
 =========================
 

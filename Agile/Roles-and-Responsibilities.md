@@ -6,7 +6,7 @@
 Agile : Roles and Responsibilities 
 ==================================
 
-![](attachments/451818035/463513501.png)
+<img src="./attachments/463513501.png" alt="">
 ![What is Scrum Team](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-scrum-team/sites/7/2018/10/what-is-scrum-team.png)
 ![What is Scrum Team](https://www.visual-paradigm.com/servlet/editor-content/scrum/how-scrum-team-works/sites/7/2018/12/what-is-a-scrum-team.png)
 

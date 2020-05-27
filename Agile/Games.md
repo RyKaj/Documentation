@@ -17,7 +17,7 @@ Agile Values Puzzle
 
 -   [Agile Value Cards](https://docs.google.com/document/d/1j__hNNxdkz4CON9Bgq5JqlkV17W9zyj3PrMQck_KorE/edit)
     [![](rest/documentConversion/latest/conversion/thumbnail/451826976/1)](/download/attachments/451826901/Agile%20Value%20cards.pdf?version=1&modificationDate=1568912013793&api=v2)
--   [Twelve Agile Principles Cards](https://docs.google.com/document/d/16OGdiy8QwFveSdzJyhF8CrFr9gdiHU3Lze613909oXo/edit) [![](rest/documentConversion/latest/conversion/thumbnail/451826977/1)](/download/attachments/451826901/Twelve%20Agile%20Principles%20cards.pdf?version=1&modificationDate=1568912015337&api=v2)
+-   [Twelve Agile Principles Cards](https://docs.google.com/document/d/16OGdiy8QwFveSdzJyhF8CrFr9gdiHU3Lze613909oXo/edit) 
 -   I like to print them in A4 colored pages so one can put them in a board and they are visible and readable by all attendees.
 -   To let participants learn and discover about agile values and principles in fully interactive and participative mode, without presentations, minimal facilitation, full debate and fun.
 
@@ -1558,16 +1558,4 @@ References
 7.  [XP123 - Agile 06 workshop example based specifications](https://xp123.com/articles/agile-06-workshop-example-based-specifications/)
 8.  [Agile42 - kanban pizza game](https://www.agile42.com/en/training/kanban-pizza-game/)
 9.  [Linkedin Teaching learning scrum agile values puzzle game ignaciopaz](https://www.linkedin.com/pulse/teaching-learning-scrum-agile-values-puzzle-game-ignacio-paz/)
-
-###### Attachments: 
-
-
-![](images/icons/bullet_blue.gif) [Agile Multitasking Name Game agile.pdf](attachments/451826901/451826922.pdf)
-![](images/icons/bullet_blue.gif) [Agile Manifesto Values Cards - EN.pdf](attachments/451826901/451826974.pdf) 
-![](images/icons/bullet_blue.gif) [Agile Manifesto Values Cards - EN.pdf](attachments/451826901/451826973.pdf)
-![](images/icons/bullet_blue.gif) [Agile Value cards.pdf](attachments/451826901/451826976.pdf) 
-![](images/icons/bullet_blue.gif) [Twelve Agile Principles cards.pdf](attachments/451826901/451826977.pdf)
-
-
-
 
