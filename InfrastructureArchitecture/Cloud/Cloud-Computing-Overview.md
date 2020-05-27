@@ -318,11 +318,6 @@ References
 -   [Sam Solutions - four best cloud deployment models you need to
     know](https://www.sam-solutions.com/blog/four-best-cloud-deployment-models-you-need-to-know/)
 
-Attachments:
-
--   [Git guide-to-the-cloud.pdf](attachments/458557144/463519185.pdf)
--   [Azure\_Developer\_Guide\_eBook.pdf](attachments/458557144/463519186.pdf)
-
 
 
  
