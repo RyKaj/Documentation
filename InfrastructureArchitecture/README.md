@@ -1,3 +1,5 @@
+[Documentation](https://github.com/RyKaj/Documentation/README.md)
+
 # Infrastructure Architecture
 
 -   [General Architecture](General-Architecture.md)
