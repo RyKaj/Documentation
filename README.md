@@ -1,3 +1,2 @@
-# Topics
 
--  [Infrasturture Architect / Design Patterns](./InfrastructureArchitecture/README.md)
+[Infrastructure Architecture](./InfrastructureArchitecture/README.md)
