@@ -462,7 +462,7 @@ Traditional Management \<=\> Agile Leadership
 Subway Map to Agile Practices
 -----------------------------
 
-![](attachments/451817509/451817512.jpg?raw=true)
+![](./attachments/451817509/451817512.jpg?raw=true)
 test1
 <img src="./attachments/451817512.jpg" alt="" style="max-width:100%;">
 
