@@ -1,11 +1,4 @@
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Compute Resource Consolidation Pattern
 ==================================================================
@@ -40,7 +33,6 @@ environment. Each function has been implemented as a separate task
 (labeled Task A through Task E) running in its own computational unit.
 
 ![](attachments/463533330/463533329.png)
-.confluence-thumbnail .confluence-content-image-border height="150"}
 
 Each computational unit consumes chargeable resources, even when it\'s
 idle or lightly used. Therefore, this isn\'t always the most
