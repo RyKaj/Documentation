@@ -225,7 +225,7 @@ pattern to standardize and extend instrumentation. The proxy can monitor
 performance metrics such as latency or resource usage, and this
 monitoring happens in the same host environment as the application.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533288.png)
+<img src="./attachments/463533288.png" alt="">
 
 Features that are offloaded to the ambassador can be managed
 independently of the application. You can update and modify the
@@ -324,7 +324,7 @@ pattern to standardize and extend instrumentation. The proxy can monitor
 performance metrics such as latency or resource usage, and this
 monitoring happens in the same host environment as the application.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533415.png)
+<img src="./attachments/463533415.jpg" alt="">
 
 
 Features that are offloaded to the ambassador can be managed
@@ -600,7 +600,7 @@ in the development process. Conflicting update requirements, and the
 need to keep the service working for both frontends, can result in
 spending a lot of effort on a single deployable resource.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533295.png)
+<img src="./attachments/463533295.png" alt="">
 
 As the development activity focuses on the backend service, a separate
 team may be created to manage and maintain the backend. Ultimately, this
@@ -617,7 +617,7 @@ performance of each backend to best match the needs of the frontend
 environment, without worrying about affecting other frontend
 experiences.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533296.png)
+<img src="./attachments/463533296.png" alt="">
 
 Because each backend is specific to one interface, it can be optimized
 for that interface. As a result, it will be smaller, less complex, and
@@ -730,7 +730,7 @@ thread pool assigned to Service A are affected. Workloads that use
 Service B and C are not affected and can continue working without
 interruption.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533299.png)
+<img src="./attachments/463533299.png" alt="">
 
 The next diagram shows multiple clients calling a single service. Each
 client is assigned a separate service instance. Client 1 has made too
@@ -738,7 +738,7 @@ many requests and overwhelmed its instance. Because each service
 instance is isolated from the others, the other clients can continue
 making calls.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533300.png)
+<img src="./attachments/463533300.png" alt="">
 
 
 #### Issues and Considerations
@@ -821,7 +821,7 @@ implementing the cache-aside strategy. This strategy loads data into the
 cache on demand. The figure illustrates using the Cache-Aside pattern to
 store data in the cache.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533303.png)
+<img src="./attachments/463533303.png" alt="">
 
 If an application updates information, it can follow the write-through
 strategy by making the modification to the data store, and by
@@ -938,7 +938,7 @@ of the communication path. While you can configure the workflow, add or
 remove services easily with a well-designed orchestrator, such an
 implementation is complex hard to maintain.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533306.png)
+<img src="./attachments/463533306.png" alt="">
 
 #### Solution
 
@@ -948,7 +948,7 @@ instead of depending on a central orchestrator.
 One way to implement choreography is to use the  [asynchronous messaging pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/publisher-subscriber) to
 coordinate the business operations.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533307.png)
+<img src="./attachments/463533307.png" alt="">
 
 A client request publishes messages to a message queue. As messages
 arrive, they are pushed to subscribers, or services, interested in that
@@ -1128,7 +1128,7 @@ states that mimic the functionality of an electrical circuit breaker:
     > recovery is complete, but while recovery is in progress a flood of
     > work can cause the service to time out or fail again.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533310.png)
+<img src="./attachments/463533310.png" alt="">
 
 
 In the figure, the failure counter used by the  **Closed** state is time
@@ -1315,7 +1315,7 @@ to retrieve a piece of luggage, hence the name of the pattern. Clients
 interested in processing that specific message can use the obtained
 reference to retrieve the payload, if needed.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533313.jpg) 
+<img src="./attachments/463533313.png" alt="">
 
 #### Issues and Considerations
 
@@ -1377,7 +1377,7 @@ does too much.
 Read and write workloads are often asymmetrical, with very different
 performance and scale requirements.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533316.png)
+<img src="./attachments/463533316.png" alt="">
 
 -   There is often a mismatch between the read and write representations
     of the data, such as additional columns or properties that must be
@@ -1410,7 +1410,7 @@ CQRS separates reads and writes into different models, using 
 The models can then be isolated, as shown in the following diagram,
 although that\'s not an absolute requirement.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533317.png)
+<img src="./attachments/463533317.png" alt="">
 
 Having separate query and update models simplifies the design and
 implementation. However, one disadvantage is that CQRS code can\'t
@@ -1432,7 +1432,7 @@ sync. Typically this is accomplished by having the write model publish
 an event whenever it updates the database. Updating the database and
 publishing the event must occur in a single transaction.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533318.png)
+<img src="./attachments/463533318.png" alt="">
 
 The read store can be a read-only replica of the write store, or the
 read and write stores can have a different structure altogether. Using
@@ -1731,7 +1731,7 @@ approach enables the same pool of consumer service instances to handle
 messages from any instance of the application. The figure illustrates
 using a message queue to distribute work to instances of a service.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533327.png)
+<img src="./attachments/463533327.png" alt="">
 
 This solution has the following benefits:
 
@@ -1882,7 +1882,7 @@ computational unit. Each computational unit runs in its own virtual
 environment. Each function has been implemented as a separate task
 (labeled Task A through Task E) running in its own computational unit.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533329.png)
+<img src="./attachments/463533329.png" alt="">
 
 Each computational unit consumes chargeable resources, even when it\'s
 idle or lightly used. Therefore, this isn\'t always the most
@@ -2105,7 +2105,7 @@ options for using the event stream such as creating a materialized view,
 integrating events with external applications and systems, and replaying
 events to create projections of the current state of specific entities.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533331.png)
+<img src="./attachments/463533331.png" alt="">
 
 The Event Sourcing pattern provides the following advantages:
 
@@ -2345,7 +2345,7 @@ production, including multiple release versions of each one).
 > The figure illustrates an overview of the External Configuration Store
 > pattern with optional local cache.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533333.png)
+<img src="./attachments/463533333.png" alt="">
 
 #### Issues and Considerations
 
@@ -2489,7 +2489,7 @@ authenticated user. This information, referred to as claims, includes
 the user's identity, and might also include other information such as
 role membership and more granular access rights.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533335.png)
+<img src="./attachments/463533335.png" alt="">
 
 This model is often called claims-based access control. Applications and
 services authorize access to features and functionality based on the
@@ -2650,7 +2650,7 @@ and then hands off the request---perhaps through a decoupled
 interface---to the hosts or tasks that\'ll handle the request. The
 figure provides a high-level overview of this pattern.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533346.png)
+<img src="./attachments/463533346.png" alt="">
 
 The gatekeeper pattern can be used to simply protect storage, or it can
 be used as a more comprehensive façade to protect all of the functions
@@ -2744,7 +2744,7 @@ request may be done in parallel, the application must send, wait, and
 process data for each request, all on separate connections, increasing
 the chance of failure.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533348.png)
+<img src="./attachments/463533348.png" alt="">
 
 #### Solution
 
@@ -2765,11 +2765,11 @@ relevant service (2). Each service returns a response to the gateway
 response to the application (4). The application makes a single request
 and receives only a single response from the gateway.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533349.png)
+<img src="./attachments/463533349.png" alt="">
 ![New-API-GW-Diagram](https://d1.awsstatic.com/serverless/New-API-GW-Diagram.c9fc9835d2a9aa00ef90d0ddc4c6402a2536de0d.png)
 ![](https://microservices.io/i/apigateway.jpg)
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533529.png)
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533530.png)
+<img src="./attachments/463533529.png" alt="">
+<img src="./attachments/463533530.png" alt="">
 
 ![](https://microservices.io/i/bffe.png)
 
@@ -2891,7 +2891,7 @@ The following diagram shows an API gateway that terminates inbound SSL
 connections. It requests data on behalf of the original requestor from
 any HTTP server upstream of the API gateway.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533351.png)
+<img src="./attachments/463533351.png" alt="">
 
 Benefits of this pattern include:
 
@@ -2981,7 +2981,7 @@ whatever service or services need to handle the expected client
 behavior, allowing you to add, split, and reorganize services behind the
 gateway without changing the client.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533353.png)
+<img src="./attachments/463533353.png" alt="">
 
 This pattern can also help with deployment, by allowing you to manage
 how updates are rolled out to users. When a new version of your service
@@ -3031,7 +3031,7 @@ any request for any client in any region. This pattern allows serving
 requests in an  *active-active* style, improving latency and increasing
 availability by distributing request processing around the globe.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533355.jpg)
+<img src="./attachments/463533355.png" alt="">
 
 #### Context and Problem
 
@@ -3072,7 +3072,7 @@ The key difference between a deployment stamp and a geode is that geodes
 never exist in isolation. There should always be more than one geode in
 a production platform.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533356.png)
+<img src="./attachments/463533356.png" alt="">
 
 Geodes have the following characteristics:
 
@@ -3220,7 +3220,7 @@ optionally, any components or services it uses. The latency or response
 time check is performed by the monitoring tool or framework. The figure
 provides an overview of the pattern.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533358.png)
+<img src="./attachments/463533358.png" alt="">
 
 Other checks that might be carried out by the health monitoring code in
 the application include:
@@ -3427,7 +3427,7 @@ data. The figure shows an example of a data store holding customer
 information. The primary key is the Customer ID. The figure shows
 customer information organized by the primary key (Customer ID).
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533360.png)
+<img src="./attachments/463533360.png" alt="">
 
 While the primary key is valuable for queries that fetch data based on
 the value of this key, an application might not be able to use the
@@ -3471,7 +3471,7 @@ organize it by different keys (complete denormalization). The next
 figure shows index tables that organize the same customer information by
 Town and LastName.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533361.png)
+<img src="./attachments/463533361.png" alt="">
 
 This strategy is appropriate if the data is relatively static compared
 to the number of times it\'s queried using each key. If the data is more
@@ -3485,7 +3485,7 @@ different keys and reference the original data by using the primary key
 rather than duplicating it, as shown in the following figure. The
 original data is called a fact table.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533362.png)
+<img src="./attachments/463533362.png" alt="">
 
 This technique saves space and reduces the overhead of maintaining
 duplicate data. The disadvantage is that an application has to perform
@@ -3499,7 +3499,7 @@ Reference the fact table to access less frequently accessed fields. The
 next figure shows how commonly accessed data is duplicated in each index
 table.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533363.png)
+<img src="./attachments/463533363.png" alt="">
 
 With this strategy, you can strike a balance between the first two
 approaches. The data for common queries can be retrieved quickly by
@@ -3514,7 +3514,7 @@ LastName attribute. The next figure shows an index table based on
 composite keys. The keys are sorted by Town, and then by LastName for
 records that have the same value for Town.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533364.png)
+<img src="./attachments/463533364.png" alt="">
 
 Index tables can speed up query operations over sharded data, and are
 especially useful where the shard key is hashed. The next figure shows
@@ -3529,7 +3529,7 @@ resolved by locating the matching items in the index table, where
 they\'re all stored in a contiguous block. Then, follow the references
 to the customer data using the shard keys stored in the index table.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533365.png)
+<img src="./attachments/463533365.png" alt="">
 
 
 #### Issues and Considerations
@@ -3782,7 +3782,7 @@ In some cases it might be necessary to regenerate the view manually. The
 figure shows an example of how the Materialized View pattern might be
 used.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533368.png)
+<img src="./attachments/463533368.png" alt="">
 
 #### Issues and Considerations
 
@@ -3891,7 +3891,7 @@ sources. The data from each source is processed by a separate module
 that performs a series of tasks to transform this data, before passing
 the result to the business logic of the application.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533383.png)
+<img src="./attachments/463533383.png" alt="">
 
 Some of the tasks that the monolithic modules perform are functionally
 very similar, but the modules have been designed separately. The code
@@ -3918,7 +3918,7 @@ or integrate additional components if the processing requirements
 change. The next figure shows a solution implemented using pipes and
 filters.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533384.png)
+<img src="./attachments/463533384.png" alt="">
 
 The time it takes to process a single request depends on the speed of
 the slowest filter in the pipeline. One or more filters could be a
@@ -3937,7 +3937,7 @@ geographic location, which allows each element in a pipeline to run in
 an environment close to the resources it requires. The next figure shows
 an example applied to the pipeline for the data from Source 1.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533385.png)
+<img src="./attachments/463533385.png" alt="">
 
 If the input and output of a filter are structured as a stream, it\'s
 possible to perform the processing for each filter in parallel. The
@@ -4073,7 +4073,7 @@ the queue are automatically reordered so that those with a higher
 priority will be received before those with a lower priority. The figure
 illustrates a queue with priority messaging.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533387.png)
+<img src="./attachments/463533387.png" alt="">
 
 > Most message queue implementations support multiple consumers
 > (following the  [Competing Consumers
@@ -4089,7 +4089,7 @@ queues can have a larger pool of consumers running on faster hardware
 than lower priority queues. The next figure illustrates using separate
 message queues for each priority.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533388.png)
+<img src="./attachments/463533388.png" alt="">
 
 A variation on this strategy is to have a single pool of consumers that
 check for messages on high priority queues first, and only then start to
@@ -4237,7 +4237,7 @@ following:
 
 The following diagram shows the logical components of this pattern:
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533390.png)
+<img src="./attachments/463533390.png" alt="">
 
 Pub/sub messaging has the following benefits:
 
@@ -4424,7 +4424,7 @@ highly variable rate, can be passed to the service through the same
 message queue. This figure shows using a queue to level the load on a
 service.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533392.png)
+<img src="./attachments/463533392.png" alt="">
 
 The queue decouples the tasks from the service, and the service can
 handle the messages at its own pace regardless of the volume of requests
@@ -4552,7 +4552,7 @@ service using this pattern. If the request is unsuccessful after a
 predefined number of attempts, the application should treat the fault as
 an exception and handle it accordingly.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533394.png)
+<img src="./attachments/463533394.png" alt="">
 
 The application should wrap all attempts to access a remote service in
 code that implements a retry policy matching one of the strategies
@@ -4759,7 +4759,7 @@ The Supervisor can use this information to help determine whether a step
 has failed. The figure illustrates the relationship between the
 Scheduler, the Agents, the Supervisor, and the state store.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533396.png)
+<img src="./attachments/463533396.png" alt="">
 
 > This diagram shows a simplified version of the pattern. In a real
 > implementation, there might be many instances of the Scheduler running
@@ -4976,7 +4976,7 @@ The Supervisor can use this information to help determine whether a step
 has failed. The figure illustrates the relationship between the
 Scheduler, the Agents, the Supervisor, and the state store.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533396.png)
+<img src="./attachments/463533396.png" alt="">
 
 > This diagram shows a simplified version of the pattern. In a real
 > implementation, there might be many instances of the Scheduler running
@@ -5131,12 +5131,12 @@ message at a time.
 
 Here\'s what the general Sequential Convoy pattern looks like:
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533398.png)
+<img src="./attachments/463533398.png" alt="">
 
 In the queue, messages for different categories may be interleaved, as
 shown in the following diagram:
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533399.png)
+<img src="./attachments/463533399.png" alt="">
 
 #### Issues and Considerations
 
@@ -5270,7 +5270,7 @@ shard key. Multiple tenants might share the same shard, but the data for
 a single tenant won\'t be spread across multiple shards. The figure
 illustrates sharding tenant data based on tenant IDs.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533401.png)
+<img src="./attachments/463533401.png" alt="">
 
 The mapping between the shard key and the physical storage can be based
 on physical shards where each shard key maps to a physical partition.
@@ -5296,7 +5296,7 @@ performing a large number of point queries (queries that return a single
 data item). The next figure illustrates storing sequential sets (ranges)
 of data in shard.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533402.png)
+<img src="./attachments/463533402.png" alt="">
 
 In this example, the shard key is a composite key containing the order
 month as the most significant element, followed by the order day and the
@@ -5319,7 +5319,7 @@ possibly by introducing some random element into the computation. The
 next figure illustrates sharding tenant data based on a hash of tenant
 IDs.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533403.png)
+<img src="./attachments/463533403.png" alt="">
 
 To understand the advantage of the Hash strategy over other sharding
 strategies, consider how a multi-tenant application that enrolls new
@@ -5599,7 +5599,7 @@ Co-locate a cohesive set of tasks with the primary application, but
 place them inside their own process or container, providing a
 homogeneous interface for platform services across languages.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533405.png)
+<img src="./attachments/463533405.png" alt="">
 
 A sidecar service is not necessarily part of the application, but is
 connected to it. It goes wherever the parent application goes. Sidecars
@@ -5823,7 +5823,7 @@ either to the legacy application or the new services. Existing features
 can be migrated to the new system gradually, and consumers can continue
 using the same interface, unaware that any migration has taken place.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533408.png)
+<img src="./attachments/463533408.png" alt="">
 
 This pattern helps to minimize risk from the migration, and spread the
 development effort over time. With the façade safely routing users to
@@ -5935,7 +5935,7 @@ tasks, a piece of code that performs a complex calculation, or an
 element that provides a service such as an in-memory cache. These
 features are labeled A, B, and C.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533410.png)
+<img src="./attachments/463533410.png" alt="">
 
 > The area immediately below the line for a feature indicates the
 > resources that are used by applications when they invoke this feature.
@@ -5966,7 +5966,7 @@ The next figure shows an area graph of the overall resource use by all
 applications running in a system against time, and illustrates how
 throttling can be combined with autoscaling.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533411.png)
+<img src="./attachments/463533411.png" alt="">
 
 At time T1, the threshold specifying the soft limit of resource use is
 reached. At this point, the system can start to scale out. However, if
@@ -6083,7 +6083,7 @@ store for only a specific period, and with specific restrictions on
 access permissions, as shown in the figure. After the specified period,
 the key becomes invalid and won\'t allow access to the resource.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463533413.png)
+<img src="./attachments/463533413.png" alt="">
 
 It\'s also possible to configure a key that has other dependencies, such
 as the scope of the data. For example, depending on the data store
