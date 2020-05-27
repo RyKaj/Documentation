@@ -1,4 +1,4 @@
-[Documentation](https://github.com/RyKaj/Documentation/README.md)
+[Documentation](https://github.com/RyKaj/Documentation/blob/master/README.md)
 
 # Infrastructure Architecture
 
