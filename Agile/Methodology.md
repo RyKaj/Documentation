@@ -64,7 +64,7 @@ helping others do it.*
 
 *That is, while there is value in the items on the right, we value the items on the left more.*
 
-*![The Agile mindset](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fstevedenning%2Ffiles%2F2016%2F06%2FWhat-is-Ageil-by-Ahmed-Sidky-r1-e1525717850723.jpg)
+![The Agile mindset](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fstevedenning%2Ffiles%2F2016%2F06%2FWhat-is-Ageil-by-Ahmed-Sidky-r1-e1525717850723.jpg)
 ![](https://miro.medium.com/max/762/0*9Y9PqVi1GXK7uICp) 
 
 Human Resource Manifesto
@@ -462,7 +462,7 @@ Traditional Management \<=\> Agile Leadership
 Subway Map to Agile Practices
 -----------------------------
 
-![](attachments/451817509/451817512.jpg)
+![](./attachments/451817509/451817512.jpg)
 
 References
 
