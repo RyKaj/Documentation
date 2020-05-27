@@ -1,4 +1,5 @@
-[comment]: [Architecture](ReadMe.MD)
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Infrastructure Architecture](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/README.md) |
+------------
 
 Infrastructure Architecture - Single Service Instance per Host
 ============================================================

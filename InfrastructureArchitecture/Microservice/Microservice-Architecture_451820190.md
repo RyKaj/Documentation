@@ -1,10 +1,5 @@
-
-
-
-
-
-3.  [Microservices & Distributed
-    System](Microservice-DistributedSystem.html)
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Infrastructure Architecture](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/README.md) |
+------------
 
 
 Infrastructure Architecture - Microservice Architecture
