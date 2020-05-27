@@ -1,11 +1,10 @@
-[comment]: [Architecture](ReadMe.MD)
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Infrastructure Architecture](https://github.com/RyKaj/Documentation/tree/master/Agile/README.md) |
+------------
 
 
 
 Agile : Methodology 
 ===================
-
-
 
 >     “agile” is a state of being, not a process. It is a feeling that drives development and delivery. In teams I would consider agile, none of them operated exactly like the others; and some actions that would improve agility in one team would harm it in another. Some companies are able to mimic that feeling by embracing agile principles, and others aren’t. The important part isn’t the specific methodology that others say will help you achieve max productivity for your team, it’s the process that aligns with your culture and your software and your customer.
 
@@ -474,8 +473,3 @@ References
 -   [George Stocker - agile cant save us](https://georgestocker.com/2019/10/30/agile-cant-save-us/?utm_source=rss&utm_medium=rss&utm_campaign=agile-cant-save-us)
 -   [Medium techcatch - modern agile is the agile manifesto outdated](https://medium.com/techcatch/modern-agile-is-the-agile-manifesto-outdated-c207bb960606)
 
-Attachments:
-
-
-![](images/icons/bullet_blue.gif) [Capture.jpg](attachments/451817509/451817513.jpg) 
-![](images/icons/bullet_blue.gif)[Capture.jpg](attachments/451817509/451817512.jpg)
