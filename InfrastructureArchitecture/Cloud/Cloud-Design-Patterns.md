@@ -102,7 +102,7 @@ access to only approved users, and protects sensitive data.
 
 ### Catalog of Patterns
 
- {.table-wrap}
+      {.table-wrap}
   Category                      Pattern                                                                                           Summary
   ----------------------------- ------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Availability                  [Geodes](Geodes_463533357.html)                                                                   Deploy backend services into a set of geographical nodes, each of which can service any client request in any region.
@@ -3070,7 +3070,7 @@ to a nearby geode, which improves latency and performance.  Each geode
 is behind a global load balancer, and uses a geo-replicated read-write
 service to host the data plane, ensuring cross-geode data consistency.
 Data replication services ensure that data stores are identical across
-geodes, so  *all* requests can be served from  *all* geodes.\
+geodes, so  *all* requests can be served from  *all* geodes.
 
 The key difference between a deployment stamp and a geode is that geodes
 never exist in isolation. There should always be more than one geode in
@@ -4730,7 +4730,7 @@ overall task.
     for ensuring that the steps in this workflow are performed in the
     right order. As each step is performed, the Scheduler records the
     state of the workflow, such as \"step not yet started,\" \"step
-    running,\" or \"step completed.\" The state information should also
+    running,\" or \"step completed." The state information should also
     include an upper limit of the time allowed for the step to finish,
     called the complete-by time. If a step requires access to a remote
     service or resource, the Scheduler invokes the appropriate Agent,
@@ -4948,7 +4948,7 @@ overall task.
     for ensuring that the steps in this workflow are performed in the
     right order. As each step is performed, the Scheduler records the
     state of the workflow, such as \"step not yet started,\" \"step
-    running,\" or \"step completed.\" The state information should also
+    running,\" or \"step completed." The state information should also
     include an upper limit of the time allowed for the step to finish,
     called the complete-by time. If a step requires access to a remote
     service or resource, the Scheduler invokes the appropriate Agent,
