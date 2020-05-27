@@ -1,3 +1,5 @@
+[comment]: [Architecture](ReadMe.MD)
+
 Infrastructure Architecture - Gateway Offloading Pattern
 ======================================================
 
@@ -46,7 +48,7 @@ The following diagram shows an API gateway that terminates inbound SSL
 connections. It requests data on behalf of the original requestor from
 any HTTP server upstream of the API gateway.
 
-![](attachments/463533352/463533351.png){.confluence-embedded-image .confluence-content-image-border height="150"}
+![](attachments/463533352/463533351.png)
 
 Benefits of this pattern include:
 

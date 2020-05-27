@@ -1,16 +1,7 @@
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Materialized View Pattern
 =====================================================
-
-
  
 Overview
 --------
@@ -69,7 +60,6 @@ figure shows an example of how the Materialized View pattern might be
 used.
 
 ![](attachments/463533369/463533368.png)
-.confluence-content-image-border height="150"}
 
 Issues and Considerations
 -------------------------
@@ -154,10 +144,4 @@ This pattern isn\'t useful in the following situations:
     overhead of creating views.
 -   Consistency is a high priority. The views might not always be fully
     consistent with the original data.
-
-
-
- 
-
-
 

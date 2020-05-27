@@ -1,3 +1,5 @@
+[comment]: [Architecture](ReadMe.MD)
+
 Infrastructure Architecture - Gateway Aggregation Pattern
 =======================================================
 
@@ -30,7 +32,7 @@ request may be done in parallel, the application must send, wait, and
 process data for each request, all on separate connections, increasing
 the chance of failure.
 
-![](attachments/463533350/463533348.png){.confluence-embedded-image .confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463533350/463533348.png)
 
 Solution
 --------
@@ -53,13 +55,13 @@ response to the application (4). The application makes a single request
 and receives only a single response from the gateway.
 
 ![](attachments/463533350/463533349.png){.confluence-embedded-image
-.confluence-thumbnail .confluence-content-image-border height="150"}
-![New-API-GW-Diagram](https://d1.awsstatic.com/serverless/New-API-GW-Diagram.c9fc9835d2a9aa00ef90d0ddc4c6402a2536de0d.png){.confluence-embedded-image .confluence-external-resource .confluence-content-image-border height="150"}
-![](https://microservices.io/i/apigateway.jpg){.confluence-embedded-image .img-responsive .confluence-external-resource .confluence-content-image-border height="150"}
-![](attachments/463533350/463533529.png){.confluence-embedded-image .confluence-thumbnail .confluence-content-image-border height="150"} ![](attachments/463533350/463533530.png){.confluence-embedded-image .confluence-content-image-border height="150"}
-![](https://microservices.io/i/bffe.png){.confluence-embedded-image .img-responsive .confluence-external-resource .confluence-content-image-border height="150"} 
+![New-API-GW-Diagram](https://d1.awsstatic.com/serverless/New-API-GW-Diagram.c9fc9835d2a9aa00ef90d0ddc4c6402a2536de0d.png)
+![](https://microservices.io/i/apigateway.jpg)
+![](attachments/463533350/463533529.png)
+![](attachments/463533350/463533530.png)
+![](https://microservices.io/i/bffe.png)
 
-### Using an API gateway has the following benefits {#GatewayAggregationPattern-UsinganAPIgatewayhasthefollowingbenefits}
+### Using an API gateway has the following benefits
 
 -   Insulates the clients from how the application is partitioned into
     microservices

@@ -1,17 +1,8 @@
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Sidecar Pattern
 ===========================================
 
-
- 
 Overview
 --------
 
@@ -61,7 +52,6 @@ place them inside their own process or container, providing a
 homogeneous interface for platform services across languages.
 
 ![](attachments/463533406/463533405.png)
-.confluence-content-image-border height="150"}
 
 A sidecar service is not necessarily part of the application, but is
 connected to it. It goes wherever the parent application goes. Sidecars
@@ -143,10 +133,5 @@ This pattern may not be suitable:
 -   When the service needs to scale differently than or independently
     from the main applications. If so, it may be better to deploy the
     feature as a separate service.
-
-
-
- 
-
 
 

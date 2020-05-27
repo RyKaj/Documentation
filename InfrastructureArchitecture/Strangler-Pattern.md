@@ -1,11 +1,4 @@
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Strangler Pattern
 =============================================
@@ -49,7 +42,7 @@ can be migrated to the new system gradually, and consumers can continue
 using the same interface, unaware that any migration has taken place.
 
 ![](attachments/463533409/463533408.png)
-.confluence-content-image-border height="150"}
+
 
 This pattern helps to minimize risk from the migration, and spread the
 development effort over time. With the façade safely routing users to
@@ -84,10 +77,3 @@ This pattern may not be suitable:
 -   When requests to the back-end system cannot be intercepted.
 -   For smaller systems where the complexity of wholesale replacement is
     low.
-
-
-
- 
-
-
-

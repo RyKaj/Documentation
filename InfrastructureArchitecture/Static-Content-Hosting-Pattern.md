@@ -1,16 +1,7 @@
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Static Content Hosting Pattern
 ==========================================================
-
-
  
 Overview
 --------
@@ -122,10 +113,4 @@ This pattern might not be useful in the following situations:
 -   The volume of static content is very small. The overhead of
     retrieving this content from separate storage can outweigh the cost
     benefit of separating it out from the compute resource.
-
-
-
- 
-
-
 

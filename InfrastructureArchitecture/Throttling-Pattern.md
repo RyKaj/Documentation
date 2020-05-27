@@ -1,16 +1,7 @@
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Throttling Pattern
 ==============================================
-
-
  
 Overview
 --------
@@ -179,12 +170,9 @@ When to use this Pattern
 Use this pattern:
 
 -   To ensure that a system continues to meet service level agreements.
-
 -   To prevent a single tenant from monopolizing the resources provided
     by an application.
-
 -   To handle bursts in activity.
-
 -   To help cost-optimize a system by limiting the maximum resource
     levels needed to keep it functioning.
 

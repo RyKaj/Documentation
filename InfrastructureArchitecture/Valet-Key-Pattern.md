@@ -1,16 +1,7 @@
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Valet Key Pattern
 =============================================
-
-
  
 Overview
 --------

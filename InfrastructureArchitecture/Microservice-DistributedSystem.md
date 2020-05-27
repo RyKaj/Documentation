@@ -20,12 +20,12 @@ Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 
 \
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Monolithic Architecture**
 
 
- {.panelContent}
+ 
  {#expander-1791488753 .expand-container}
  {#expander-control-1791488753 .expand-control}
 Monolithic
@@ -38,13 +38,13 @@ Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 
 \
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 You are developing a server-side enterprise application. It must support
 a variety of different clients including desktop browsers, mobile
 browsers and native mobile applications. The application might also
@@ -58,12 +58,12 @@ application.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Limitation of Monolithic Architrecture**
 
 
- {.panelContent}
+ 
 -   **Application Scaling:**As the successful Web Scale companies enjoy
     exponential growth, their softwares also need to support high
     horizontal scalability. Sometimes, only a part of the software which
@@ -119,24 +119,24 @@ application.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 What's the application's deployment architecture?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 -   There is a team of developers working on the application
 -   New team members must quickly become productive
 -   The application must be easy to understand and modify
@@ -149,13 +149,13 @@ Forces
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 Build an application with a monolithic architecture. For example:
 
 -   a single Java WAR file.
@@ -163,12 +163,12 @@ Build an application with a monolithic architecture. For example:
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Example**
 
 
- {.panelContent}
+ 
 Let's imagine that you are building an e-commerce application that takes
 orders from customers, verifies inventory and available credit, and
 ships them. The application consists of several components including the
@@ -190,13 +190,13 @@ and improve availability.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Resulting Context
 -----------------
 
 
- {.panelContent}
+ 
 This solution has a number of benefits:
 
 -   Simple to develop - the goal of current development tools and IDEs
@@ -309,12 +309,12 @@ References
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Microservice Architecture**
 
 
- {.panelContent}
+ 
  {#expander-407096013 .expand-container}
  {#expander-control-407096013 .expand-control}
 Microservice
@@ -605,12 +605,12 @@ some disadvantages of Microservice Architecture:
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Considerations**
 
 
- {.panelContent}
+ 
 When switching to microservices, there are two main areas of design
 considerations:
 
@@ -842,12 +842,12 @@ owned by multiple services.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Decomposition Patterns**
 
 
- {.panelContent}
+ 
 How to decompose the application into services? {#Microservices&DistributedSystem-Howtodecomposetheapplicationintoservices?}
 -----------------------------------------------
 
@@ -895,13 +895,13 @@ Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 
 \
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 You are developing a large, complex application and want to use
 the [microservice
 architecture](https://microservices.io/patterns/microservices.html).
@@ -948,24 +948,24 @@ help ensure that each change should impact only one service.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 How to decompose an application into services?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 -   The architecture must be stable
 -   Services must be cohesive. A service should implement a small set of
     strongly related functions.
@@ -984,13 +984,13 @@ Forces
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 Define services corresponding to business capabilities. A business
 capability is a concept from business architecture modeling. It is
 something that a business does in order to generate value. A business
@@ -1006,13 +1006,13 @@ delivery*, *Demand generation*, etc.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Examples
 --------
 
 
- {.panelContent}
+ 
 The business capabilities of an online store include:
 
 -   Product catalog management
@@ -1030,13 +1030,13 @@ corresponding to each of these capabilities.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Resulting Context
 -----------------
 
 
- {.panelContent}
+ 
 This pattern has the following benefits:
 
 -   Stable architecture since the business capabilities are relatively
@@ -1047,12 +1047,12 @@ This pattern has the following benefits:
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Issues**
 
 
- {.panelContent}
+ 
 There are the following issues to address:
 
 -   **How to identify business capabilities?** Identifying business
@@ -1083,13 +1083,13 @@ Author [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 You are developing a large, complex application and want to use
 the [microservice
 architecture](https://microservices.io/patterns/microservices.html).
@@ -1136,24 +1136,24 @@ help ensure that each change should impact only one service.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 How to decompose an application into services?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 -   The architecture must be stable
 -   Services must be cohesive. A service should implement a small set of
     strongly related functions.
@@ -1172,13 +1172,13 @@ Forces
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 Define services corresponding to Domain-Driven Design (DDD) subdomains.
 DDD refers to the application's problem space - the business - as the
 domain. A domain is consists of multiple subdomains. Each subdomain
@@ -1195,13 +1195,13 @@ Subdomains can be classified as follows:
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Examples
 --------
 
 
- {.panelContent}
+ 
 The subdomains of an online store include:
 
 -   Product catalog
@@ -1219,13 +1219,13 @@ corresponding to each of these subdomains.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Resulting Context
 -----------------
 
 
- {.panelContent}
+ 
 This pattern has the following benefits:
 
 -   Stable architecture since the subdomains are relatively stable
@@ -1235,12 +1235,12 @@ This pattern has the following benefits:
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Issues**
 
 
- {.panelContent}
+ 
 There are the following issues to address:
 
 -   **How to identify the subdomains?** Identifying subdomains and hence
@@ -1261,12 +1261,12 @@ There are the following issues to address:
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Database**
 
 
- {.panelContent}
+ 
  {#expander-1436843970 .expand-container}
  {#expander-control-1436843970 .expand-control}
 Database per Service Pattern
@@ -1277,13 +1277,13 @@ Author [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 Let's imagine you are developing an online store application using
 the [Microservice architecture
 pattern](https://microservices.io/patterns/microservices.html).
@@ -1298,24 +1298,24 @@ information about customers.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 What's the database architecture in a microservices application?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 -   Services must be loosely coupled so that they can be developed,
     deployed and scaled independently
 
@@ -1347,13 +1347,13 @@ Forces
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 Keep each microservice's persistent data private to that service and
 accessible only via its API. A service's transactions only involve its
 database.
@@ -1392,13 +1392,13 @@ tempted to bypass a service's API and access it's data directly.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Examples
 --------
 
 
- {.panelContent}
+ 
 The [FTGO
 application](https://chrisrichardson.net/post/microservices/patterns/data/2019/07/15/ftgo-database-per-service.html) is
 an example of an application that uses this approach. Each service has
@@ -1408,13 +1408,13 @@ post](https://chrisrichardson.net/post/microservices/patterns/data/2019/07/15/ft
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Resulting Context
 -----------------
 
 
- {.panelContent}
+ 
 Using a database per service has the following benefits:
 
 -   Helps ensure that the services are loosely coupled. Changes to one
@@ -1478,13 +1478,13 @@ Author [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 Let's imagine you are developing an online store application using
 the [Microservice architecture
 pattern](https://microservices.io/patterns/microservices.html).
@@ -1499,24 +1499,24 @@ information about customers.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 What's the database architecture in a microservices application?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 -   Services must be loosely coupled so that they can be developed,
     deployed and scaled independently
 
@@ -1548,36 +1548,36 @@ Forces
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 Use a (single) database that is shared by multiple services. Each
 service freely accesses data owned by other services using local ACID
 transactions.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Examples
 --------
 
 
- {.panelContent}
+ 
 \
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Related Context**
 
 
- {.panelContent}
+ 
 The benefits of this pattern are:
 
 -   A developer uses familiar and straightforward ACID transactions to
@@ -1615,13 +1615,13 @@ Author [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 You have applied the [Database per
 Service](https://microservices.io/patterns/data/database-per-service.html) pattern.
 Each service has its own database. Some business transactions, however,
@@ -1634,35 +1634,35 @@ application cannot simply use a local ACID transaction.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 How to maintain data consistency across services?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 -   2PC is not an option
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 Implement each business transaction that spans multiple services as a
 saga. A saga is a sequence of local transactions. Each local transaction
 updates the database and publishes a message or event to trigger the
@@ -1677,13 +1677,13 @@ preceding local transactions.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Examples
 --------
 
 
- {.panelContent}
+ 
 There are two ways of coordination sagas:
 
 -   Choreography - each local transaction publishes domain events that
@@ -1738,13 +1738,13 @@ using an orchestration-based saga that consists of the following steps:
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Resulting Context
 -----------------
 
 
- {.panelContent}
+ 
 This pattern has the following benefits:
 
 -   It enables an application to maintain data consistency across
@@ -1766,12 +1766,12 @@ There are also the following issues to address:
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Related Patterns**
 
 
- {.panelContent}
+ 
 -   The [Database per Service
     pattern](https://microservices.io/patterns/data/database-per-service.html) creates
     the need for this pattern
@@ -1799,13 +1799,13 @@ Author [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 You have applied the [Microservices architecture
 pattern](https://microservices.io/patterns/microservices.html) and
 the [Database per service
@@ -1818,25 +1818,25 @@ the data is no longer easily queried.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 How to implement a query that retrieves data from multiple services in a
 microservice architecture?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 Define a view database, which is a read-only replica that is designed to
 support that query. The application keeps the replica up to data by
 subscribing to [Domain
@@ -1849,13 +1849,13 @@ by the service that own the data.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Examples
 --------
 
 
- {.panelContent}
+ 
 -   My book's FTGO example application has
     the [`Order History Service`{.highlighter-rouge}](https://github.com/microservices-patterns/ftgo-application#chapter-7-implementing-queries-in-a-microservice-architecture),
     which implements this pattern.
@@ -1866,13 +1866,13 @@ Examples
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Resulting Context
 -----------------
 
 
- {.panelContent}
+ 
 This pattern has the following benefits:
 
 -   Supports multiple denormalized views that are scalable and
@@ -1888,12 +1888,12 @@ This pattern has the following drawbacks:
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Related Patterns**
 
 
- {.panelContent}
+ 
 -   The [Database per Service
     pattern](https://microservices.io/patterns/data/database-per-service.html) creates
     the need for this pattern
@@ -1912,12 +1912,12 @@ This pattern has the following drawbacks:
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **API Gateway Pattern**
 
 
- {.panelContent}
+ 
  {#expander-568804725 .expand-container}
  {#expander-control-568804725 .expand-control}
 Gatewapy API
@@ -1928,26 +1928,26 @@ Author: [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Overview
 --------
 
 
- {.panelContent}
+ 
 Use a gateway to aggregate multiple individual requests into a single
 request. This pattern is useful when a client must make multiple calls
 to different backend systems to perform an operation.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context and Problem
 -------------------
 
 
- {.panelContent}
+ 
 To perform a single task, a client may have to make multiple calls to
 various backend services. An application that relies on many services to
 perform a task must expend resources on each request. When any new
@@ -1974,13 +1974,13 @@ the chance of failure.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 Use a gateway to reduce chattiness between the client and the services.
 The gateway receives client requests, dispatches requests to the various
 backend systems, and then aggregates the results and sends them back to
@@ -2033,13 +2033,13 @@ Using an API gateway has the following benefits {#Microservices&DistributedSyste
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Issues and Considerations
 -------------------------
 
 
- {.panelContent}
+ 
 -   The gateway should not introduce service coupling across the backend
     services.
 -   The gateway should be located near the backend services to reduce
@@ -2078,13 +2078,13 @@ Issues and Considerations
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 When to use this Pattern
 ------------------------
 
 
- {.panelContent}
+ 
 Use this pattern when:
 
 -   A client needs to communicate with multiple backend services to
@@ -2106,12 +2106,12 @@ This pattern may not be suitable when:
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Service Discovery**
 
 
- {.panelContent}
+ 
  {#expander-49741670 .expand-container}
  {#expander-control-49741670 .expand-control}
 Client Side
@@ -2122,13 +2122,13 @@ Author [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 Services typically need to call one another. In a monolithic
 application, services invoke one another through language-level method
 or procedure calls. In a traditional distributed system deployment,
@@ -2150,25 +2150,25 @@ ephemeral service instances.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 How does the client of a service - the API gateway or another service -
 discover the location of a service instance?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 -   Each instance of a service exposes a remote API such as HTTP/REST,
     or Thrift etc. at a particular location (host and port)
 -   The number of services instances and their locations changes
@@ -2181,13 +2181,13 @@ Forces
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 When making a request to a service, the client obtains the location of a
 service instance by querying a [Service
 Registry](https://microservices.io/patterns/service-registry.html),
@@ -2204,13 +2204,13 @@ framework](https://microservices.io/patterns/microservice-chassis.html)
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Examples
 --------
 
 
- {.panelContent}
+ 
 The [Microservices Example
 application](https://github.com/cer/microservices-examples) is
 an example of an application that uses client-side service discovery. It
@@ -2291,13 +2291,13 @@ instances.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Resulting Context
 -----------------
 
 
- {.panelContent}
+ 
 Client-side discovery has the following benefits:
 
 -   Fewer moving parts and network hops compared to [Server-side
@@ -2327,13 +2327,13 @@ Author [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 Services typically need to call one another. In a monolithic
 application, services invoke one another through language-level method
 or procedure calls. In a traditional distributed system deployment,
@@ -2355,25 +2355,25 @@ ephemeral service instances.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 How does the client of a service - the API gateway or another service -
 discover the location of a service instance?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 -   Each instance of a service exposes a remote API such as HTTP/REST,
     or Thrift etc. at a particular location (host and port)
 -   The number of services instances and their locations changes
@@ -2386,13 +2386,13 @@ Forces
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 When making a request to a service, the client makes a request via a
 router (a.k.a load balancer) that runs at a well known location. The
 router queries a [service
@@ -2408,13 +2408,13 @@ The following diagram shows the structure of this pattern.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Examples
 --------
 
 
- {.panelContent}
+ 
 An AWS Elastic Load Balancer (ELB) is an example of a server-side
 discovery router. A client makes HTTP(s) requests (or opens TCP
 connections) to the ELB, which load balances the traffic amongst a set
@@ -2434,12 +2434,12 @@ to a service instance running somewhere in the cluster.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Related Context**
 
 
- {.panelContent}
+ 
 Server-side service discovery has a number of benefits:
 
 -   Compared to [client-side
@@ -2465,12 +2465,12 @@ It also has the following drawbacks:
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Service per Host**
 
 
- {.panelContent}
+ 
  {#expander-2033847321 .expand-container}
  {#expander-control-2033847321 .expand-control}
 Single
@@ -2481,13 +2481,13 @@ Author [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 You have applied the [Microservice architecture
 pattern](https://microservices.io/patterns/microservices.html) and
 architected your system as a set of services. Each service is deployed
@@ -2495,24 +2495,24 @@ as a set of service instances for throughput and availability.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 How are services packaged and deployed?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 -   Services are written using a variety of languages, frameworks, and
     framework versions
 -   Each service consists of multiple service instances for throughput
@@ -2528,35 +2528,35 @@ Forces
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 Deploy each single service instance on its own host
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Examples
 --------
 
 
- {.panelContent}
+ 
 \
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Resulting Context
 -----------------
 
 
- {.panelContent}
+ 
 The benefits of this approach include:
 
 -   Services instances are isolated from one another
@@ -2592,13 +2592,13 @@ Author [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 You have applied the [Microservice architecture
 pattern](https://microservices.io/patterns/microservices.html) and
 architected your system as a set of services. Each service is deployed
@@ -2606,24 +2606,24 @@ as a set of service instances for throughput and availability.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 How are services packaged and deployed?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 -   Services are written using a variety of languages, frameworks, and
     framework versions
 -   Each service consists of multiple service instances for throughput
@@ -2639,13 +2639,13 @@ Forces
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 Run multiple instances of different services on a host (Physical or
 Virtual machine).
 
@@ -2659,24 +2659,24 @@ including:
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Examples
 --------
 
 
- {.panelContent}
+ 
 \
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Resulting Context
 -----------------
 
 
- {.panelContent}
+ 
 The benefits of this pattern include:
 
 -   More efficient resource utilization than the [Service Instance per
@@ -2698,12 +2698,12 @@ The drawbacks of this approach include:
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Cross-Cutting Concerns**
 
 
- {.panelContent}
+ 
  {#expander-1671284356 .expand-container}
  {#expander-control-1671284356 .expand-control}
 Microservice chassis
@@ -2714,13 +2714,13 @@ Author [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 When you start the development of an application you often spend a
 significant amount of time putting in place the mechanisms to handle
 cross-cutting concerns. Examples of cross-cutting concern include:
@@ -2763,13 +2763,13 @@ breakers for reliably handling partial failure.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 -   Creating a new microservice should be fast and easy
 -   When creating a microservice you must handle cross-cutting concerns
     such as externalized configuration, logging, health checks, metrics,
@@ -2779,25 +2779,25 @@ Forces
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 Build your microservices using a microservice chassis framework, which
 handles cross-cutting concerns
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Examples
 --------
 
 
- {.panelContent}
+ 
 Here, at Pinnacle, we do benefit from this pattern greatly. It is a nice
 way to enforce practices while we promote reusable code.
 For all our .Net Core APIs, we always reference the following
@@ -2819,13 +2819,13 @@ https://stash.pinnacle.com/projects/CUS/repos/shared/browse/Pinnacle.CustomerTea
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Resulting Context
 -----------------
 
 
- {.panelContent}
+ 
 The major benefit of a microservice chassis is that you can quickly and
 easy get started with developing a microservice.
 
@@ -2855,13 +2855,13 @@ Author [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 An application typically uses one or more infrastructure and 3rd party
 services. Examples of infrastructure services include: a [Service
 registry](https://microservices.io/patterns/service-registry.html),
@@ -2870,25 +2870,25 @@ include: payment processing, email and messaging, etc.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 How to enable a service to run in multiple environments without
 modification?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 -   A service must be provided with configuration data that tells it how
     to connect to the external/3rd party services. For example, the
     database network location and credentials
@@ -2901,13 +2901,13 @@ Forces
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 Externalize all application configuration including the database
 credentials and network location. On startup, a service reads the
 configuration from an external source, e.g. OS environment variables,
@@ -2915,13 +2915,13 @@ etc.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Examples
 --------
 
 
- {.panelContent}
+ 
 [Spring Boot externalized
 configuration](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html) reads
 values from a variety of sources including operating system environment
@@ -2962,12 +2962,12 @@ discovery](https://microservices.io/patterns/client-side-discovery.html).
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Related Context**
 
 
- {.panelContent}
+ 
 This pattern has the following benefits:
 
 -   The application runs in multiple environments without modification
@@ -2984,12 +2984,12 @@ There are the following issues with this pattern:
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Testing patterns**
 
 
- {.panelContent}
+ 
  {#expander-1401732336 .expand-container}
  {#expander-control-1401732336 .expand-control}
 Service Component Test
@@ -3000,13 +3000,13 @@ Author [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 You have applied the [Microservice
 architecture](https://microservices.io/patterns/Microservices.html) pattern.
 The application consists of numerous services. Services often invoke
@@ -3015,61 +3015,61 @@ service behaves correctly.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 How do you easily test a service?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 -   End to end testing (i.e. tests that launch multiple services) is
     difficult, slow, brittle, and expensive.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 A test suite that tests a service in isolation using test doubles for
 any services that it invokes.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Examples
 --------
 
 
- {.panelContent}
+ 
 [Spring Cloud
 Contract](https://cloud.spring.io/spring-cloud-contract/) is
 an open source project that supports this style of testing.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Examples
 --------
 
 
- {.panelContent}
+ 
 This pattern has the following benefits:
 
 -   Testing a service in isolation is easier, faster, more reliable and
@@ -3098,13 +3098,13 @@ Author [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 You have applied the [Microservice
 architecture](https://microservices.io/patterns/Microservices.html) pattern.
 The application consists of numerous services. Services often invoke
@@ -3113,62 +3113,62 @@ service behaves correctly.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 How to easily test that a service provides an API that its clients
 expect?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 -   End to end testing (i.e. tests that launch multiple services) is
     difficult, slow, brittle, and expensive.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 A test suite for a service that is written by the developers of another
 service that consumes it. The test suite verifies that the service meets
 the consuming service's expectations.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Examples
 --------
 
 
- {.panelContent}
+ 
 [Spring Cloud
 Contract](https://cloud.spring.io/spring-cloud-contract/) is
 an open source project that supports this style of testing.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Related Context**
 
 
- {.panelContent}
+ 
 This pattern has the following benefits:
 
 -   Testing a service in isolation is easier, faster, more reliable and
@@ -3189,12 +3189,12 @@ This pattern has the following issues:
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Circuit Breaker**
 
 
- {.panelContent}
+ 
  {#expander-1636977580 .expand-container}
  {#expander-control-1636977580 .expand-control}
 Circuit Breaker
@@ -3205,26 +3205,26 @@ Author: [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Overview
 --------
 
 
- {.panelContent}
+ 
 Handle faults that might take a variable amount of time to recover from,
 when connecting to a remote service or resource. This can improve the
 stability and resiliency of an application.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context and Problem
 -------------------
 
 
- {.panelContent}
+ 
 In a distributed environment, calls to remote resources and services can
 fail due to transient faults, such as slow network connections,
 timeouts, or the resources being overcommitted or temporarily
@@ -3260,13 +3260,13 @@ succeed.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 The Circuit Breaker pattern, popularized by Michael Nygard in his
 book, [Release
 It!](https://pragprog.com/book/mnee/release-it), can
@@ -3368,13 +3368,13 @@ is meaningful to the application.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Issues and Considerations
 -------------------------
 
 
- {.panelContent}
+ 
 You should consider the following points when deciding how to implement
 this pattern:
 
@@ -3469,13 +3469,13 @@ up a significant number of threads before they all fail.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 When to use this Pattern
 ------------------------
 
 
- {.panelContent}
+ 
 Use this pattern:
 
 -   To prevent an application from trying to invoke a remote service or
@@ -3495,12 +3495,12 @@ This pattern isn\'t recommended:
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Access**
 
 
- {.panelContent}
+ 
  {#expander-1120609739 .expand-container}
  {#expander-control-1120609739 .expand-control}
 Access Token
@@ -3511,13 +3511,13 @@ Author [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 You have applied the [Microservice
 architecture](https://microservices.io/patterns/microservices.html) and [API
 Gateway](https://microservices.io/patterns/apigateway.html) patterns.
@@ -3528,37 +3528,37 @@ services.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 How to communicate the identity of the requestor to the services that
 handle the request?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 -   Services often need to verify that a user is authorized to perform
     an operation
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 The [API
 Gateway](https://microservices.io/patterns/apigateway.html) authenticates
 the request and passes an access token (e.g. [JSON Web
@@ -3568,13 +3568,13 @@ access token in requests it makes to other services.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Examples
 --------
 
 
- {.panelContent}
+ 
 See [JSON Web Token](https://jwt.io/) for usage examples
 and supporting libraries.
 
@@ -3588,12 +3588,12 @@ and supporting libraries.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Observability Patterns**
 
 
- {.panelContent}
+ 
  {#expander-1992655312 .expand-container}
  {#expander-control-1992655312 .expand-control}
 Log Aggregation
@@ -3604,13 +3604,13 @@ Author [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 You have applied the [Microservice architecture
 pattern](https://microservices.io/patterns/microservices.html).
 The application consists of multiple services and service instances that
@@ -3623,61 +3623,61 @@ errors, warnings, information and debug messages.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 How to understand the behavior of an application and troubleshoot
 problems?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 -   Any solution should have minimal runtime overhead
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 Use a centralized logging service that aggregates logs from each service
 instance. The users can search and analyze the logs. They can configure
 alerts that are triggered when certain messages appear in the logs.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Examples
 --------
 
 
- {.panelContent}
+ 
 -   [AWS Cloud
     Watch](https://aws.amazon.com/cloudwatch/)
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Resulting Context
 -----------------
 
 
- {.panelContent}
+ 
 This pattern has the following issues:
 
 
@@ -3696,48 +3696,48 @@ Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 
 \
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 You have applied the [Microservice architecture
 pattern](https://microservices.io/patterns/microservices.html).
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 How to understand the behavior of an application and troubleshoot
 problems?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 -   Any solution should have minimal runtime overhead
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 Instrument a service to gather statistics about individual operations.
 Aggregate metrics in centralized metrics service, which provides
 reporting and alerting. There are two models for aggregating metrics:
@@ -3747,13 +3747,13 @@ reporting and alerting. There are two models for aggregating metrics:
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Examples
 --------
 
 
- {.panelContent}
+ 
 -   Instrumentation libraries:
     -   Coda Hale/Yammer [Java Metrics
         Library](http://metrics.dropwizard.io/3.1.0/)
@@ -3766,12 +3766,12 @@ Examples
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Resulting Conext**
 
 
- {.panelContent}
+ 
 This pattern has the following benefits:
 
 -   It provides deep insight into application behavior
@@ -3799,71 +3799,71 @@ Author [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 You have applied the [Microservice architecture
 pattern](https://microservices.io/patterns/microservices.html).
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 How to understand the behavior of users and the application and
 troubleshoot problems?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 -   It is useful to know what actions a user has recently performed:
     customer support, compliance, security, etc.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 Record user activity in a database.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Examples
 --------
 
 
- {.panelContent}
+ 
 This pattern is widely used.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Resulting Context
 -----------------
 
 
- {.panelContent}
+ 
 This pattern has the following benefits:
 
 -   Provides a record of user actions
@@ -3875,13 +3875,13 @@ This pattern has the following drawbacks:
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Examples
 --------
 
 
- {.panelContent}
+ 
 -   [Event
     Sourcing](https://microservices.io/patterns/data/event-sourcing.html) is
     a reliable way to implement auditing
@@ -3900,13 +3900,13 @@ Author [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 You have applied the [Microservice architecture
 pattern](https://microservices.io/patterns/microservices.html).
 Requests often span multiple services. Each service handles a request by
@@ -3915,25 +3915,25 @@ messages, etc.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 How to understand the behavior of an application and troubleshoot
 problems?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 -   External monitoring only tells you the overall response time and
     number of invocations - no insight into the individual operations
 -   Any solution should have minimal runtime overhead
@@ -3941,13 +3941,13 @@ Forces
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 Instrument services with code that
 
 -   Assigns each external request a unique external request id
@@ -3965,13 +3965,13 @@ framework](https://microservices.io/patterns/microservice-chassis.html).
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Resulting Context
 -----------------
 
 
- {.panelContent}
+ 
 This pattern has the following benefits:
 
 -   It provides useful insight into the behavior of the system including
@@ -3988,12 +3988,12 @@ This pattern has the following issues:
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Related Patterns**
 
 
- {.panelContent}
+ 
 -   [Log
     aggregation](https://microservices.io/patterns/observability/application-logging.html) -
     the external request id is included in each log message
@@ -4012,13 +4012,13 @@ Author [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 You have applied the [Microservice architecture
 pattern](https://microservices.io/patterns/microservices.html).
 The application consists of multiple services and service instances that
@@ -4028,50 +4028,50 @@ which contains an error message and a stack trace.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 How to understand the behavior of an application and troubleshoot
 problems?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 -   Exceptions must be de-duplicated, recorded, investigated by
     developers and the underlying issue resolved
 -   Any solution should have minimal runtime overhead
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 Report all exceptions to a centralized exception tracking service that
 aggregates and tracks exceptions and notifies developers.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Resulting Context
 -----------------
 
 
- {.panelContent}
+ 
 This pattern has the following benefits:
 
 -   It is easier to view exceptions and track their resolution
@@ -4082,12 +4082,12 @@ This pattern has the following drawbacks:
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Related Patterns**
 
 
- {.panelContent}
+ 
 -   [Log
     aggregation](https://microservices.io/patterns/observability/application-logging.html) -
     exceptions should be logged as well as reported to a tracking
@@ -4107,13 +4107,13 @@ Author [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 You have applied the [Microservice architecture
 pattern](https://microservices.io/patterns/microservices.html).
 Requests often span multiple services. Each service handles a request by
@@ -4122,25 +4122,25 @@ messages, etc.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 How to understand the behavior of an application and troubleshoot
 problems?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 -   External monitoring only tells you the overall response time and
     number of invocations - no insight into the individual operations
 -   Any solution should have minimal runtime overhead
@@ -4148,13 +4148,13 @@ Forces
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 Instrument services with code that
 
 -   Assigns each external request a unique external request id
@@ -4172,13 +4172,13 @@ framework](https://microservices.io/patterns/microservice-chassis.html).
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Resulting Context
 -----------------
 
 
- {.panelContent}
+ 
 This pattern has the following benefits:
 
 -   It provides useful insight into the behavior of the system including
@@ -4195,12 +4195,12 @@ This pattern has the following issues:
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Related Patterns**
 
 
- {.panelContent}
+ 
 -   [Log
     aggregation](https://microservices.io/patterns/observability/application-logging.html) -
     the external request id is included in each log message
@@ -4219,13 +4219,13 @@ Author [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 You have applied the [Microservice architecture
 pattern](https://microservices.io/patterns/microservices.html).
 The application consists of multiple services and service instances that
@@ -4235,50 +4235,50 @@ which contains an error message and a stack trace.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 How to understand the behavior of an application and troubleshoot
 problems?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 -   Exceptions must be de-duplicated, recorded, investigated by
     developers and the underlying issue resolved
 -   Any solution should have minimal runtime overhead
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 Report all exceptions to a centralized exception tracking service that
 aggregates and tracks exceptions and notifies developers.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Resulting Context
 -----------------
 
 
- {.panelContent}
+ 
 This pattern has the following benefits:
 
 -   It is easier to view exceptions and track their resolution
@@ -4289,12 +4289,12 @@ This pattern has the following drawbacks:
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Related Patterns**
 
 
- {.panelContent}
+ 
 -   [Log
     aggregation](https://microservices.io/patterns/observability/application-logging.html) -
     exceptions should be logged as well as reported to a tracking
@@ -4314,26 +4314,26 @@ Author: [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Overview
 --------
 
 
- {.panelContent}
+ 
 Implement functional checks in an application that external tools can
 access through exposed endpoints at regular intervals. This can help to
 verify that applications and services are performing correctly.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context and Problem
 -------------------
 
 
- {.panelContent}
+ 
 It\'s a good practice, and often a business requirement, to monitor web
 applications and back-end services, to ensure they\'re available and
 performing correctly. However, it\'s more difficult to monitor services
@@ -4352,13 +4352,13 @@ might be part of your service level agreement (SLA).
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 Implement health monitoring by sending requests to an endpoint on the
 application. The application should perform the necessary checks, and
 return an indication of its status.
@@ -4432,13 +4432,13 @@ one storage account, the monitoring process should check all of these.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Issues and Considerations
 -------------------------
 
 
- {.panelContent}
+ 
 Consider the following points when deciding how to implement this
 pattern:
 
@@ -4556,13 +4556,13 @@ techniques:
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 When to use this Pattern
 ------------------------
 
 
- {.panelContent}
+ 
 This pattern is useful for:
 
 -   Monitoring websites and web applications to verify availability.
@@ -4592,60 +4592,60 @@ Author [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 You have applied the [Microservice architecture
 pattern](https://microservices.io/patterns/microservices.html).
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 How to understand the behavior of an application and troubleshoot
 problems?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 -   It useful to see when deployments and other changes occur since
     issues usually occur immediately after a change
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 Log every deployment and every change to the (production) environment.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Examples
 --------
 
 
- {.panelContent}
+ 
 A deployment tool can, for example, publish [a
 pseudo-metric](https://microservices.io/patterns/observability/application-metrics.html) whenever
 it deploys a new version of a service. This metric can then be displayed
@@ -4663,12 +4663,12 @@ of AWS API calls.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **UI Patterns**
 
 
- {.panelContent}
+ 
  {#expander-2086851366 .expand-container}
  {#expander-control-2086851366 .expand-control}
 Client-side UI composition
@@ -4679,13 +4679,13 @@ Author [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 You have applied the [Microservice architecture
 pattern](https://microservices.io/patterns/microservices.html).
 Services are developed by [business
@@ -4710,36 +4710,36 @@ is, therefore, the responsibility of a different team.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 How to implement a UI screen or page that displays data from multiple
 services?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 \
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 Each team develops a client-side UI component, such an AngularJS
 directive, that implements the region of the page/screen for their
 service. A UI team is responsible implementing the page skeletons that
@@ -4748,13 +4748,13 @@ components.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Resulting Context
 -----------------
 
 
- {.panelContent}
+ 
 \
 
 
@@ -4775,13 +4775,13 @@ Author [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Context
 -------
 
 
- {.panelContent}
+ 
 You have applied the [Microservice architecture
 pattern](https://microservices.io/patterns/microservices.html).
 Services are developed by [business
@@ -4806,25 +4806,25 @@ is, therefore, the responsibility of a different team.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Problem
 -------
 
 
- {.panelContent}
+ 
 How to implement a UI screen or page that displays data from multiple
 services?
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Solution
 --------
 
 
- {.panelContent}
+ 
 Each team developers a web application that generates the HTML fragment
 that implements the region of the page for their service. A UI team is
 responsible for developing the page templates that build pages by
@@ -4833,24 +4833,24 @@ mechanism) of the service-specific HTML fragments.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Forces
 ------
 
 
- {.panelContent}
+ 
 \
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 Examples
 --------
 
 
- {.panelContent}
+ 
 \
 
 
@@ -4863,12 +4863,12 @@ Examples
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Known Uses**
 
 
- {.panelContent}
+ 
 Most large scale web sites
 including [Netflix](http://techblog.netflix.com/), [Amazon](http://highscalability.com/blog/2007/9/18/amazon-architecture.html) and [eBay](http://www.addsimplicity.com/downloads/eBaySDForum2006-11-29.pdf) have
 evolved from a monolithic architecture to a microservice architecture.
@@ -4904,12 +4904,12 @@ companies using the microservice architecture.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Best Practices**
 
 
- {.panelContent}
+ 
  {#expander-948944712 .expand-container}
  {#expander-control-948944712 .expand-control}
 Best Practices
@@ -5217,12 +5217,12 @@ References
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Anti Patterns**
 
 
- {.panelContent}
+ 
  {#expander-268313638 .expand-container}
  {#expander-control-268313638 .expand-control}
 Anti Patterns
@@ -5235,12 +5235,12 @@ Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 
 \
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Design**
 
 
- {.panelContent}
+ 
  {#expander-1438363502 .expand-container}
  {#expander-control-1438363502 .expand-control}
 Data-Driven Migration AntiPattern
@@ -7031,12 +7031,12 @@ innovation, and productivity. 
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Philosophy**
 
 
- {.panelContent}
+ 
  {#expander-2046062596 .expand-container}
  {#expander-control-2046062596 .expand-control}
 I need a change
@@ -7252,12 +7252,12 @@ References
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Logging**
 
 
- {.panelContent}
+ 
  {#expander-398030170 .expand-container}
  {#expander-control-398030170 .expand-control}
 Logging Applications
@@ -7268,12 +7268,12 @@ Author: [Ryan
 Kajiura](https://wiki.pinnacle.com/display/~ryank){.confluence-userlink
 .user-mention .current-user-mention}
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Generic Environment**
 
 
- {.panelContent}
+ 
  {#expander-258706190 .expand-container}
  {#expander-control-258706190 .expand-control}
 ELK or Elastic Stack
@@ -7341,12 +7341,12 @@ extensions which logs to Console.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **.NET Environment**
 
 
- {.panelContent}
+ 
  {#expander-994961723 .expand-container}
  {#expander-control-994961723 .expand-control}
 Application Insights
@@ -7410,12 +7410,12 @@ problem.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Best Practices**
 
 
- {.panelContent}
+ 
 Then comes possible solutions, which start by minimizing the number of
 logs in production. For example:
 
@@ -7446,12 +7446,12 @@ that takes care of everything.
 
 
 
- {.panel style="border-width: 1px;"}
- {.panelHeader style="border-bottom-width: 1px;"}
+ 
+ 
 **Cost of Logging**
 
 
- {.panelContent}
+ 
 Now to get more insights into the cost problem. Consider a scenario
 where we are calling 1 REST API in a service that does 1 database
 operation. Let's imaging how many logs we would normally incur if we

@@ -1,3 +1,5 @@
+[comment]: [Architecture](ReadMe.MD)
+
 
 Infrastructure Architecture - Geodes
 ==================================
@@ -7,7 +9,7 @@ Overview
 
 The geode pattern involves deploying a collection of backend services into a set of  **ge**ographical n **ode**s, each of which can service any request for any client in any region. This pattern allows serving requests in an  *active-active* style, improving latency and increasing availability by distributing request processing around the globe.
 
-![](attachments/463533357/463533355.jpg){.confluence-embedded-image .confluence-content-image-border height="150"}
+![](attachments/463533357/463533355.jpg)
 
 Context and Problem
 -------------------
@@ -29,7 +31,7 @@ Deploy the service into a number of satellite deployments spread around the glob
 
 The key difference between a deployment stamp and a geode is that geodes never exist in isolation. There should always be more than one geode in a production platform.
 
-![](attachments/463533357/463533356.png){.confluence-embedded-image .confluence-content-image-border height="150"}
+![](attachments/463533357/463533356.png)
 
 Geodes have the following characteristics:
 

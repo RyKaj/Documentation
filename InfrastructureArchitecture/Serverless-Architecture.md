@@ -1,9 +1,4 @@
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Serverless Architecture
 ===================================================
@@ -13,8 +8,6 @@ Infrastructure Architecture - Serverless Architecture
 ![Diagram showing a comparison of virtual machines, containers, and
 serverless
 computing](https://docs.microsoft.com/en-us/learn/modules/principles-cloud-computing/media/2-vm-vs-container-vs-serverless.png)
-.confluence-external-resource .confluence-content-image-border
-height="250"}
 
 Overview
 --------
@@ -194,7 +187,7 @@ instantiating multiple copies of the function code. Depending on how we
 wrote the original process this may be a new concept we need to
 consider.
 
-Unpacking \"Function as a Service\" {#ServerlessArchitecture-Unpacking\"FunctionasaService\"}
+Unpacking \"Function as a Service\"
 -----------------------------------
 
 We\'ve mentioned FaaS a lot already, but it\'s time to dig into what it
@@ -509,7 +502,7 @@ Before we start looking at the very important area of benefits and
 drawbacks, I\'d like to spend one more quick moment on definition. Let's
 define what Serverless isn\'t.
 
-Comparison with PaaS {#ServerlessArchitecture-ComparisonwithPaaS}
+Comparison with PaaS 
 --------------------
 
 Given that Serverless FaaS functions are very similar to  [Twelve-Factor
@@ -546,7 +539,7 @@ provide a common development experience across a hybrid public and
 private cloud; at time of writing there isn't a FaaS equivalent as
 mature as this.
 
-Comparison with containers {#ServerlessArchitecture-Comparisonwithcontainers}
+Comparison with containers 
 --------------------------
 
 One of the reasons to use Serverless FaaS is to avoid having to manage
@@ -599,7 +592,7 @@ in a fairly short period of time that many applications and teams will
 use both architectural approaches, and it will be fascinating to see
 patterns of such use emerge.
 
-\#NoOps {#ServerlessArchitecture-#NoOps}
+\#NoOps 
 -------
 
 Serverless doesn't mean \"No Ops\"---though it might mean "No sysadmin"
@@ -628,7 +621,7 @@ operations?](https://charity.wtf/2016/05/31/wtf-is-operations-serverless/) and�
 [Operational Best
 Practices](https://charity.wtf/2016/05/31/operational-best-practices-serverless/).)
 
-Stored Procedures as a Service {#ServerlessArchitecture-StoredProceduresasaService}
+Stored Procedures as a Service 
 ------------------------------
 
 Another theme I've seen is that Serverless FaaS is "Stored Procedures as
@@ -681,7 +674,7 @@ Repository](https://blog.symphonia.io/examining-the-aws-serverless-application-r
 Law of Serverless
 -----------------
 
-Law of Furthest Abstraction {#ServerlessArchitecture-LawofFurthestAbstraction}
+Law of Furthest Abstraction 
 ---------------------------
 
 The "Law of Furthest Abstraction" says that you have no knowledge of the
@@ -716,7 +709,7 @@ How does that even work?!?
 It works becdause of the second law of Serverless: The Law of Inherent
 Scale.
 
-### Law of Inherent Scale {#ServerlessArchitecture-LawofInherentScale}
+### Law of Inherent Scale 
 
 The Law of Inherent Scale says that scaling is an intrinsic attribute of
 the technology; so much so that it just happens automatically.
@@ -758,7 +751,7 @@ don't need the entire amount of that compute. This means that you are
 paying for compute whether you use it or not. This brings us to the
 third and final Serverless Law - the "Law of Least Consumption".
 
-### Law of Least Consumption {#ServerlessArchitecture-LawofLeastConsumption}
+### Law of Least Consumption 
 
 The Law of Least Consumption says that you only pay for what you use.
 Coincidentally, this also everyone's most favorite law. Money talks. But
@@ -794,13 +787,13 @@ by need and not just allocating it in "use it or lose it" buckets.
 
 \
 
-### Applying the Serverles Law {#ServerlessArchitecture-ApplyingtheServerlesLaw}
+### Applying the Serverles Law 
 
 Now that I have established an irrefutable framework to determine if
 something is Serverless, we can apply these laws to any technology to
 determine if it is or is NOT Serverless.
 
-#### Azure Service that are Serverles {#ServerlessArchitecture-AzureServicethatareServerles}
+#### Azure Service that are Serverles 
 
 -   Azure Static Sites
 -   Logic Apps

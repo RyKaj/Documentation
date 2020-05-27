@@ -1,14 +1,8 @@
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 
 Infrastructure Architecture - Database NOSQL Architect
 ====================================================
-
-
  
 These solutions has a number of characteristics in common
 
@@ -58,8 +52,7 @@ capacity in terms of CPU, memory and disk storage. Within each PN, there
 will be a variable number of virtual node (VN) running according to the
 available hardware capacity of the PN.
 
-![](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwogI5pkEEI/AAAAAAAAAXE/xhrfSf8dmI4/s320/p1.png){width="320"
-height="277"}
+![](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwogI5pkEEI/AAAAAAAAAXE/xhrfSf8dmI4/s320/p1.png)
 
 Data Partitioning (Consistent Hashing)
 --------------------------------------
@@ -75,8 +68,7 @@ the ownership of existing keys has changed dramatically, which requires
 full data redistribution. Most large scale store use a \"consistent
 hashing\" technique to minimize the amount of ownership changes.
 
-![](http://1.bp.blogspot.com/_j6mB7TMmJJY/SwohQZ9HTAI/AAAAAAAAAXM/X9CAGfpnL2o/s320/p1.png){width="320"
-height="196"}
+![](http://1.bp.blogspot.com/_j6mB7TMmJJY/SwohQZ9HTAI/AAAAAAAAAXM/X9CAGfpnL2o/s320/p1.png)
 
 In the consistent hashing scheme, the key space is finite and lie on the
 circumference of a ring. The virtual node id is also allocated from the
@@ -95,7 +87,7 @@ need to replicate the data partitions.
 Replication not only improves the overall reliability of data, it also
 helps performance by spreading the workload across multiple replicas.
 
-![](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwohcYWqCDI/AAAAAAAAAXU/oH0pDuht4vo/s320/P2.png){height="250"}
+![](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwohcYWqCDI/AAAAAAAAAXU/oH0pDuht4vo/s320/P2.png)
 
 While read-only request can be dispatched to any replicas, update
 request is more challenging because we need to carefully co-ordinate the
@@ -119,8 +111,7 @@ When a new node joins the network
 4.  The membership change is asynchronously propagate to the other
     nodes.
 
-![](http://1.bp.blogspot.com/_j6mB7TMmJJY/Sw1b9Sv0fmI/AAAAAAAAAXc/4-YNzhA3LCQ/s320/p1.png){width="320"
-height="233"}
+![](http://1.bp.blogspot.com/_j6mB7TMmJJY/Sw1b9Sv0fmI/AAAAAAAAAXc/4-YNzhA3LCQ/s320/p1.png)
 
 Notice that other nodes may not have their membership view updated yet
 so they may still forward the request to the old nodes. But since these
@@ -140,8 +131,7 @@ When an existing node leaves the network (e.g. crash)
 2.  The neighbor will update the membership changes and copy data
     asynchronously
 
-![](http://2.bp.blogspot.com/_j6mB7TMmJJY/Sw1jGP6y5tI/AAAAAAAAAXk/rM9k-jNcsKQ/s320/P2.png){width="320"
-height="249"}
+![](http://2.bp.blogspot.com/_j6mB7TMmJJY/Sw1jGP6y5tI/AAAAAAAAAXk/rM9k-jNcsKQ/s320/P2.png)
 
 We haven\'t talked about how the virtual nodes is mapped into the
 physical nodes. Many schemes are possible with the main goal that
@@ -302,8 +292,7 @@ For \"strict consistency\", the important condition is to make sure the
 read set and the write set overlap. ie: W + R \> N
 
 \
-[![](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwOHybHlzHI/AAAAAAAAATE/-NaXjP_S2H8/s400/P7.png){width="400"
-height="141"}](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwOHybHlzHI/AAAAAAAAATE/-NaXjP_S2H8/s1600/P7.png)
+[![](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwOHybHlzHI/AAAAAAAAATE/-NaXjP_S2H8/s400/P7.png)](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwOHybHlzHI/AAAAAAAAATE/-NaXjP_S2H8/s1600/P7.png)
 
 \
 As you can see, the quorum based 2PC can be considered as a general 2PC
@@ -338,8 +327,7 @@ vector clock.
     advance its clock Vj\[j\] and then merge its clock with the clock Vm
     attached in the message. ie: Vj\[k\] = max(Vj\[k\], Vm\[k\])
 
-![](http://2.bp.blogspot.com/_j6mB7TMmJJY/SwoSGODJQuI/AAAAAAAAAWs/OefcWLxdsmI/s320/p1.png){width="320"
-height="219"}
+![](http://2.bp.blogspot.com/_j6mB7TMmJJY/SwoSGODJQuI/AAAAAAAAAWs/OefcWLxdsmI/s320/p1.png)
 
 A partial order relationship can be defined such that Vi \> Vj iff for
 all k, Vi\[k\] \>= Vj\[k\]. We can use these partial ordering to derive
@@ -387,21 +375,18 @@ means the client is responsible to resolve the conflict of all these
 versions because when the client sends the update later, its vector
 clock will precede all these versions.
 
-![](http://2.bp.blogspot.com/_j6mB7TMmJJY/SwmXpttEVKI/AAAAAAAAAVc/BuDsgnTJoZM/s400/p1.png){width="391"
-height="400"}
+![](http://2.bp.blogspot.com/_j6mB7TMmJJY/SwmXpttEVKI/AAAAAAAAAVc/BuDsgnTJoZM/s400/p1.png)
 
 At update, the client will send its vector clock and the replica will
 check whether the client state precedes any of its existing version, if
 so, it will throw away the client\'s update.
 
-![](http://2.bp.blogspot.com/_j6mB7TMmJJY/SwmX6waHqPI/AAAAAAAAAVk/48TsSr21pUU/s400/P2.png){width="400"
-height="375"}
+![](http://2.bp.blogspot.com/_j6mB7TMmJJY/SwmX6waHqPI/AAAAAAAAAVk/48TsSr21pUU/s400/P2.png)
 
 Replicas also gossip among each other in the background and try to merge
 their version tree together.
 
-![](http://2.bp.blogspot.com/_j6mB7TMmJJY/SwmYWE4O5sI/AAAAAAAAAV0/2QDGlh-JAGA/s320/P3.png){width="289"
-height="320"}
+![](http://2.bp.blogspot.com/_j6mB7TMmJJY/SwmYWE4O5sI/AAAAAAAAAV0/2QDGlh-JAGA/s320/P3.png)
 
 Gossip (Operation Transfer Model)
 ---------------------------------
@@ -429,8 +414,7 @@ vector clock which reflect the client\'s view of the world. The replica
 will check if it has a view of the state that is later than the
 client\'s view.
 
-![](http://3.bp.blogspot.com/_j6mB7TMmJJY/SwmlOzM4YuI/AAAAAAAAAV8/vXWT2gsQvNc/s400/p1.png){width="376"
-height="400"}
+![](http://3.bp.blogspot.com/_j6mB7TMmJJY/SwmlOzM4YuI/AAAAAAAAAV8/vXWT2gsQvNc/s400/p1.png)
 
 When an update operation is received, the replica will buffer the update
 operation until it can be applied to the local state. Every submitted
@@ -443,8 +427,7 @@ replica has received all the other updates that this one depends on.
 This condition is reflected in the vector clock Vi when it is larger
 than V-client
 
-![](http://3.bp.blogspot.com/_j6mB7TMmJJY/Swmll8oYbqI/AAAAAAAAAWE/F_oI7WwWep0/s400/P2.png){width="400"
-height="353"}
+![](http://3.bp.blogspot.com/_j6mB7TMmJJY/Swmll8oYbqI/AAAAAAAAAWE/F_oI7WwWep0/s400/P2.png)
 
 On the background, different replicas exchange their log for the queued
 updates and update each other\'s vector clock. After the log exchange,
@@ -455,8 +438,7 @@ ready for applying at the same time, the replica will sort these
 operation in causal order (by using the Vector clock comparison) and
 apply them in the right order.
 
-![](http://4.bp.blogspot.com/_j6mB7TMmJJY/Swml33Xp04I/AAAAAAAAAWM/yCHvTCgTzF8/s400/P3.png){width="400"
-height="359"}
+![](http://4.bp.blogspot.com/_j6mB7TMmJJY/Swml33Xp04I/AAAAAAAAAWM/yCHvTCgTzF8/s400/P3.png)
 
 The concurrent update problem at different replica can also happen.
 Which means there can be multiple valid sequences of operation. In order
@@ -489,10 +471,9 @@ and then forward the map output to the reduce function, where the
 aggregation logic will be executed.
 
 \
-[![](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwoeUzwoKrI/AAAAAAAAAW0/ch01mbMkRuk/s320/p1.png){width="320"
-height="266"}](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwoeUzwoKrI/AAAAAAAAAW0/ch01mbMkRuk/s1600/p1.png)
+[![](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwoeUzwoKrI/AAAAAAAAAW0/ch01mbMkRuk/s320/p1.png)](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwoeUzwoKrI/AAAAAAAAAW0/ch01mbMkRuk/s1600/p1.png)
 
-Handling Deletes {#DatabaseNOSQLArchitect-HandlingDeletes}
+Handling Deletes 
 ----------------
 
 In a multi-master replication system, we use Vector clock timestamp to
@@ -524,16 +505,14 @@ update will cause a private copy being made which in turn cause the
 index also need to be modified and causing the a private copy of the
 index as well, all the way up to the root pointer.
 
-![](http://1.bp.blogspot.com/_j6mB7TMmJJY/SwjQAV_JShI/AAAAAAAAAU8/ndAucGpmwzI/s400/p1.png){width="400"
-height="281"}
+![](http://1.bp.blogspot.com/_j6mB7TMmJJY/SwjQAV_JShI/AAAAAAAAAU8/ndAucGpmwzI/s400/p1.png)
 
 Notice that the update happens in an append-only mode where the modified
 data is appended to the file and the old data becomes garbage. Periodic
 garbage collection is done to compact the data. Here is how the model is
 implemented in memory and disks
 
-![](http://2.bp.blogspot.com/_j6mB7TMmJJY/SwjQd22AlMI/AAAAAAAAAVE/bUDkgpnPu5Q/s400/P2.png){width="400"
-height="303"}
+![](http://2.bp.blogspot.com/_j6mB7TMmJJY/SwjQd22AlMI/AAAAAAAAAVE/bUDkgpnPu5Q/s400/P2.png)
 
 In Google BigTable model, the data is broken down into multiple
 generations and the memory is use to hold the newest generation. Any
@@ -541,8 +520,7 @@ query will search the mem data as well as all the data sets on disks and
 merge all the return results. Fast detection of whether a generation
 contains a key can be done by checking a bloom filter.
 
-![](http://3.bp.blogspot.com/_j6mB7TMmJJY/SwnJ4-X4GjI/AAAAAAAAAWk/Wy8cW8f8dwM/s400/p1.png){width="400"
-height="293"}\
+![](http://3.bp.blogspot.com/_j6mB7TMmJJY/SwnJ4-X4GjI/AAAAAAAAAWk/Wy8cW8f8dwM/s400/p1.png)
 
 When update happens, both the mem data and the commit log will be
 written so that if the machine crashes before the mem data flush to
@@ -603,7 +581,7 @@ If you have a tree pattern of data model where the same object type is a
 child of an object, you can use the materialized path pattern for more
 efficient search/queries. A sample is given below.
 
-![](https://1.bp.blogspot.com/-xiU2cUyIsSU/V1_cVnm-_0I/AAAAAAAANUI/qnliOY0DnH4WQigYgekIGcxl9lKFXh9OwCLcB/s400/tree.png){height="150"}
+![](https://1.bp.blogspot.com/-xiU2cUyIsSU/V1_cVnm-_0I/AAAAAAAANUI/qnliOY0DnH4WQigYgekIGcxl9lKFXh9OwCLcB/s400/tree.png)
 
 Resiliency Design Patterns
 --------------------------
@@ -654,8 +632,7 @@ resilience pattern is to ensure that only qualified use cases will use
 it. With that, we recommend the following guidelines when qualifying new
 NoSQL use cases.
 
-![NoSQL qualifying
-guidelines](https://tech.ebayinc.com/assets/Uploads/Blog/2017/02/_resampled/ScaleWidthWzc1MF0/NoSQL-qualifying-guidelines.1.png){height="250"}
+![NoSQL qualifying guidelines](https://tech.ebayinc.com/assets/Uploads/Blog/2017/02/_resampled/ScaleWidthWzc1MF0/NoSQL-qualifying-guidelines.1.png)
 
 ### NoSQL resiliency design pattern approach
 
@@ -665,10 +642,8 @@ databases. To achieve this objective, we devised the following steps in
 our approach:
 
 1.  Identify a meaningful NoSQL database architectural abstraction based
-    on the  [CAP
-    theorem](https://fenix.tecnico.ulisboa.pt/downloadFile/1126518382178117/10.e-CAP-3.pdf), 
-    [ACID/BASE
-    properties](http://queue.acm.org/detail.cfm?id=1394128),
+    on the  [CAP theorem](https://fenix.tecnico.ulisboa.pt/downloadFile/1126518382178117/10.e-CAP-3.pdf), 
+    [ACID/BASE properties](http://queue.acm.org/detail.cfm?id=1394128),
     and performance characteristics.
 2.  Categorize and define types of different resilience patterns based
     on workload, performance, and consistency properties that are
@@ -687,8 +662,7 @@ web-centric e-commerce businesses like eBay, this blog will use two of
 the top document-centric NoSQL databases (MongoDB and Couchbase) to
 illustrate our proposed resilience design pattern.
 
-![DB
-comparison](https://tech.ebayinc.com/assets/Uploads/Blog/2017/02/_resampled/ScaleWidthWzc1MF0/DB-comparison.2.png){height="250"}
+![DB comparison](https://tech.ebayinc.com/assets/Uploads/Blog/2017/02/_resampled/ScaleWidthWzc1MF0/DB-comparison.2.png)
 
 Although a tutorial on MongoDB and Couchbase is beyond the scope of this
 blog, the high-level comparison between them in Table 1 helps illustrate

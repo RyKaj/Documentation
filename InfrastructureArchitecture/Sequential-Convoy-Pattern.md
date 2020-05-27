@@ -1,17 +1,9 @@
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Sequential Convoy Pattern
 =====================================================
 
 
- 
 Overview
 --------
 
@@ -46,13 +38,11 @@ message at a time.
 Here\'s what the general Sequential Convoy pattern looks like:
 
 ![](attachments/463533400/463533398.png)
-.confluence-content-image-border height="150"}
 
 In the queue, messages for different categories may be interleaved, as
 shown in the following diagram:
 
 ![](attachments/463533400/463533399.png)
-.confluence-content-image-border height="150"}
 
 Issues and Considerations
 -------------------------

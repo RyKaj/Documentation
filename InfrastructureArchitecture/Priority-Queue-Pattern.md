@@ -1,10 +1,4 @@
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 
 Infrastructure Architecture - Priority Queue Pattern
@@ -44,7 +38,6 @@ priority will be received before those with a lower priority. The figure
 illustrates a queue with priority messaging.
 
 ![](attachments/463533389/463533387.png)
-.confluence-content-image-border height="150"}
 
 > Most message queue implementations support multiple consumers
 > (following the  [Competing Consumers
@@ -61,7 +54,6 @@ than lower priority queues. The next figure illustrates using separate
 message queues for each priority.
 
 ![](attachments/463533389/463533388.png)
-.confluence-thumbnail .confluence-content-image-border height="150"}
 
 A variation on this strategy is to have a single pool of consumers that
 check for messages on high priority queues first, and only then start to
@@ -164,12 +156,5 @@ This pattern is useful in scenarios where:
 
 -   The system must handle multiple tasks that have different
     priorities.
-
 -   Different users or tenants should be served with different priority.
-
-
-
- 
-
-
 

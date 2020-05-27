@@ -1,3 +1,5 @@
+[comment]: [Architecture](ReadMe.MD)
+
 Infrastructure Architecture - Health Endpoint Monitoring Pattern
 ==============================================================
  

@@ -1,16 +1,7 @@
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Sharding Pattern
 ============================================
-
-
  
 Overview
 --------
@@ -124,7 +115,7 @@ Table](https://docs.microsoft.com/en-us/azure/architecture/patterns/index-table)
 provide fast lookup to data based on attributes that aren\'t covered by
 the shard key.
 
-Sharding Strategies {#ShardingPattern-ShardingStrategies}
+Sharding Strategies
 -------------------
 
 Three strategies are commonly used when selecting the shard key and
@@ -142,7 +133,7 @@ a single tenant won\'t be spread across multiple shards. The figure
 illustrates sharding tenant data based on tenant IDs.
 
 ![](attachments/463533404/463533401.png)
-.confluence-thumbnail .confluence-content-image-border height="150"}
+
 
 The mapping between the shard key and the physical storage can be based
 on physical shards where each shard key maps to a physical partition.
@@ -169,7 +160,6 @@ data item). The next figure illustrates storing sequential sets (ranges)
 of data in shard.
 
 ![](attachments/463533404/463533402.png)
-.confluence-thumbnail .confluence-content-image-border height="150"}
 
 In this example, the shard key is a composite key containing the order
 month as the most significant element, followed by the order day and the
@@ -193,7 +183,6 @@ next figure illustrates sharding tenant data based on a hash of tenant
 IDs.
 
 ![](attachments/463533404/463533403.png)
-.confluence-thumbnail .confluence-content-image-border height="150"}
 
 To understand the advantage of the Hash strategy over other sharding
 strategies, consider how a multi-tenant application that enrolls new
@@ -258,7 +247,7 @@ multi-tenant application:
 -   The data for tenants that need a high degree of data isolation and
     privacy can be stored on a completely separate server.
 
-### Scaling and data movement operations {#ShardingPattern-Scalinganddatamovementoperations}
+### Scaling and data movement operations
 
 Each of the sharding strategies implies different capabilities and
 levels of complexity for managing scale in, scale out, data movement,
@@ -429,10 +418,4 @@ perform maintenance or recovery of one or more partitions without making
 the entire data for an application inaccessible. For more information,
 see the  [Data Partitioning
 Guidance](https://msdn.microsoft.com/library/dn589795.aspx).
-
-
-
- 
-
-
 

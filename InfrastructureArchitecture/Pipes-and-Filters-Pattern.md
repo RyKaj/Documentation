@@ -1,16 +1,7 @@
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Pipes and Filters Pattern
 =====================================================
-
-
  
 Overview
 --------
@@ -38,7 +29,6 @@ that performs a series of tasks to transform this data, before passing
 the result to the business logic of the application.
 
 ![](attachments/463533386/463533383.png)
-.confluence-thumbnail .confluence-content-image-border height="150"}
 
 Some of the tasks that the monolithic modules perform are functionally
 very similar, but the modules have been designed separately. The code
@@ -67,7 +57,7 @@ change. The next figure shows a solution implemented using pipes and
 filters.
 
 ![](attachments/463533386/463533384.png)
-.confluence-content-image-border height="150"}
+
 
 The time it takes to process a single request depends on the speed of
 the slowest filter in the pipeline. One or more filters could be a
@@ -87,7 +77,7 @@ an environment close to the resources it requires. The next figure shows
 an example applied to the pipeline for the data from Source 1.
 
 ![](attachments/463533386/463533385.png)
-.confluence-content-image-border height="150"}
+
 
 If the input and output of a filter are structured as a stream, it\'s
 possible to perform the processing for each filter in parallel. The

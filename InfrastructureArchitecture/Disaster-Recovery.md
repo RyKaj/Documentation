@@ -1,3 +1,5 @@
+[comment]: [Architecture](ReadMe.MD)
+
 Infrastructure Architecture - Disaster Recovery
 =============================================
 
@@ -11,8 +13,7 @@ production center, interrupted service delivery, and a loss of
 credibility with your customers.
 
 To avoid the risk of putting the business in danger, it is essential to
-prepare yourself in advance by designing an effective  [disaster
-recovery](https://www.nakivo.com/vm-disaster-recovery/) (DR)
+prepare yourself in advance by designing an effective [disaster recovery](https://www.nakivo.com/vm-disaster-recovery/) (DR)
 plan. One of the main components of a DR plan is the secondary site
 (also known as DR site), which will be used for data storage and rapid
 recovery in case disaster strikes. This blog post discusses the role of
@@ -84,9 +85,9 @@ second most expensive option.
 Below you can see the main features of disaster recovery sites and how
 they compare.
 
-![](attachments/463534692/463534690.jpg){.confluence-embedded-image .confluence-content-image-border height="150"}
+![](attachments/463534692/463534690.jpg)
 
-![](attachments/463534692/463534691.jpg){.confluence-embedded-image .confluence-thumbnail .confluence-content-image-border height="150"}
+![](attachments/463534692/463534691.jpg)
 
 References
 

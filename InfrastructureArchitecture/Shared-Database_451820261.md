@@ -4,10 +4,6 @@
 
 
 [comment]: [Architecture](ReadMe.MD)
-    System](Microservice-DistributedSystem.html)
-
-
-
 
 Infrastructure Architecture - Shared Database
 ===========================================

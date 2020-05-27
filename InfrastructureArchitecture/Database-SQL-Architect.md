@@ -1,3 +1,5 @@
+[comment]: [Architecture](ReadMe.MD)
+
 Infrastructure Architecture - Database SQL Architect
 ==================================================
  
@@ -353,13 +355,11 @@ entity.
 
 ### Foreign Key Patterns
 
-There are  [two fundamental kinds of foreign
-key](http://database-programmer.blogspot.com/2008/07/different-foreign-keys-for-different.html),
+There are  [two fundamental kinds of foreign key](http://database-programmer.blogspot.com/2008/07/different-foreign-keys-for-different.html),
 which correspond to the \"master table\" and \"transaction tables\"
 types.
 
-[The cross-reference validation
-pattern](http://database-programmer.blogspot.com/2008/01/table-design-patterns-cross-reference.html) occurs
+[The cross-reference validation pattern](http://database-programmer.blogspot.com/2008/01/table-design-patterns-cross-reference.html) occurs
 when an entry must be validated against some previously defined
 relationship between master items.
 
@@ -372,10 +372,8 @@ standard patterns.
 
 Welcome to the Database Programmer blog. This series of essays is for
 anybody who wants to learn about databases on their own terms. There is
-a complete  [Table of
-Contents](http://database-programmer.blogspot.com/2007/12/database-skills-complete-contents.html),
-as well as a summary of  [Table Design
-Patterns](http://database-programmer.blogspot.com/2008/01/table-design-patterns.html).
+a complete  [Table of Contents](http://database-programmer.blogspot.com/2007/12/database-skills-complete-contents.html),
+as well as a summary of  [Table Design Patterns](http://database-programmer.blogspot.com/2008/01/table-design-patterns.html).
 There is a new essay in this spot each Monday morning.
 
 #### A Simple Example of Two Foreign Keys
@@ -401,18 +399,17 @@ There are two foreign keys here. CART has a foreign key to CUSTOMERS,
 and CART\_LINES has a foreign key to CART, but the two foreign keys
 should behave very differently.
 
-Table Types and Table Design Patterns {#DatabaseSQLArchitect-TableTypesandTableDesignPatterns}
+Table Types and Table Design Patterns 
 -------------------------------------
 
-In  [A Sane Approach To Choosing Primary
-Keys](http://database-programmer.blogspot.com/2008/01/database-skills-sane-approach-to.html) we
+In  [A Sane Approach To Choosing Primary Keys](http://database-programmer.blogspot.com/2008/01/database-skills-sane-approach-to.html) we
 saw that table design begins with identifying the basic kinds of tables:
 Reference and Small Master Tables, Large Master Tables, Transactions,
 and Cross-References. Just as we picked different kinds of primary keys
 for the different tables, so will we pick different kinds of foreign
 keys between these tables.
 
-Deleting a Customer {#DatabaseSQLArchitect-DeletingaCustomer}
+Deleting a Customer 
 -------------------
 
 Imagine you have a customer who has made 10 orders in 2 years. A system
@@ -683,7 +680,7 @@ application code solution.
 In short, if you\'re worried about performance, use foreign keys, not
 application code.
 
-#### Architecture Note: Server-Side Errors {#DatabaseSQLArchitect-ArchitectureNote:Server-SideErrors}
+#### Architecture Note: Server-Side Errors
 
 Many programmers are taught not to use foreign keys and so they are not
 used to the idea that the database server will throw errors. Once you
@@ -692,7 +689,7 @@ and more on the errors it throws, so you want to make sure your
 framework can read them and report them to the user the same way it
 reports your application-generated errors.
 
-#### Conclusion: Learn to Recognize Foreign Keys {#DatabaseSQLArchitect-Conclusion:LearntoRecognizeForeignKeys}
+#### Conclusion: Learn to Recognize Foreign Keys
 
 User requirements will never be expressed as program code or table
 design, but we can recognize common patterns in them. One of those
@@ -858,7 +855,7 @@ The main theme of these essays is that your applications will be leaner,
 faster, and easier to write and maintain if you understand how databases
 work.
 
-#### Basic Description and Example {#DatabaseSQLArchitect-BasicDescriptionandExample}
+#### Basic Description and Example
 
 A resolution pattern occurs when you need a value and there is more than
 one place where it might be. As an example, consider the case of a
@@ -888,7 +885,7 @@ line, you must  ***resolve***  the actual hourly billing rate out of
 several possibilities. Because you must resolve the value, this pattern
 is called a resolution.
 
-#### Precise Description of the Resolution Pattern {#DatabaseSQLArchitect-PreciseDescriptionoftheResolutionPattern}
+#### Precise Description of the Resolution Pattern
 
 A resolution pattern has these characteristics:
 
@@ -911,7 +908,7 @@ requirements are all sorted out and put next to each other. Then
 somebody says, \"Hey, there are four different formulas for the billing
 rate!\" Then you know you have a resolution.
 
-#### The Table Design {#DatabaseSQLArchitect-TheTableDesign}
+#### The Table Design
 
 A resolution requires one table for each possible level of detail where
 a value might be supplied. In our example there will be a table for:
@@ -1176,7 +1173,7 @@ selectively retrieved. Further, the schema might require a few tables or
 columns that are used by only a subset of tenants. However, static code
 and reference data is stored only once and is shared by all tenants.
 
-Tenant isolation is sacrificed {#DatabaseSQLArchitect-Tenantisolationissacrificed}
+Tenant isolation is sacrificed
 ------------------------------
 
 *Data:*  A multi-tenant database necessarily sacrifices tenant
@@ -1197,7 +1194,7 @@ workload of one overactive tenant impacts the performance experience of
 other tenants in the same database. Additional application-level
 monitoring could monitor tenant-level performance.
 
-Lower cost {#DatabaseSQLArchitect-Lowercost}
+Lower cost
 ----------
 
 In general, multi-tenant databases have the lowest per-tenant cost.
@@ -1238,7 +1235,7 @@ model allows almost limitless scale.
 ![Design of multi-tenant app with sharded multi-tenant
 databases.](https://docs.microsoft.com/en-us/azure/sql-database/media/saas-tenancy-app-design-patterns/saas-multi-tenant-app-sharded-multi-tenant-databases-17.png)
 
-#### Manage shards {#DatabaseSQLArchitect-Manageshards}
+#### Manage shards
 
 Sharding adds complexity both to the design and operational management.
 A catalog is required in which to maintain the mapping between tenants
@@ -1261,7 +1258,7 @@ tenants as offline prior to moving them. After the move, the app updates
 the catalog again with the new mapping, and marking the tenant as back
 online.
 
-#### Smaller databases more easily managed {#DatabaseSQLArchitect-Smallerdatabasesmoreeasilymanaged}
+#### Smaller databases more easily managed
 
 By distributing tenants across multiple databases, the sharded
 multi-tenant solution results in smaller databases that are more easily
@@ -1271,7 +1268,7 @@ rather than a larger database that contains all tenants. The database
 size, and number of tenants per database, can be chosen to balance the
 workload and the management efforts.
 
-#### Tenant identifier in the schema {#DatabaseSQLArchitect-Tenantidentifierintheschema}
+#### Tenant identifier in the schema 
 
 Depending on the sharding approach used, additional constraints may be
 imposed on the database schema. The SQL Database split/merge application
@@ -1281,7 +1278,7 @@ the primary key of all sharded tables. The tenant identifier enables the
 split/merge application to quickly locate and move data associated with
 a specific tenant.
 
-#### Elastic pool for shards {#DatabaseSQLArchitect-Elasticpoolforshards}
+#### Elastic pool for shards 
 
 Sharded multi-tenant databases can be placed in elastic pools. In
 general, having many single-tenant databases in a pool is as cost
@@ -1317,7 +1314,7 @@ moved to another multi-tenant database that might have fewer tenants. A
 subscriber that pays for the premium service tier could be moved to its
 own new single-tenant database.
 
-Pools {#DatabaseSQLArchitect-Pools}
+Pools
 -----
 
 In this hybrid model, the single-tenant databases for subscriber tenants
@@ -1586,9 +1583,6 @@ EAV models have a host of problems.
     a simple query to retrieve the employees who are born after 1950. In
     the traditional model, you'd have:
 
-```{=html}
-<!-- -->
-```
             SELECT  first_name , last_name
             FROM    Employees
             WHERE   date_of_birth > '12/31/1950' ;
@@ -1666,7 +1660,7 @@ declarative integrity enforcement via keys and constraints isn't
 possible. Only application-specific rules need to be implemented via the
 application.
 
-##### Application Tail wagging the Database Dog: {#DatabaseSQLArchitect-ApplicationTailwaggingtheDatabaseDog:}
+##### Application Tail wagging the Database Dog:
 
 There is a growing trend among the developer community to treat the
 database as being a mere component of the 'application domain'. Often,
@@ -1681,7 +1675,7 @@ effort to develop a good design based on the rules that are specific to
 the business segment in context.  [(Teorey,
 1994).](https://www.red-gate.com/simple-talk/sql/database-administration/five-simple-database-design-errors-you-should-avoid/#teorey)
 
-#### Misusing Data values as Data Elements {#DatabaseSQLArchitect-MisusingDatavaluesasDataElements}
+#### Misusing Data values as Data Elements
 
 Let's just clarify something before proceeding further:  a 'data value'
 here refers to the value of an attribute of an entity; a 'data element'

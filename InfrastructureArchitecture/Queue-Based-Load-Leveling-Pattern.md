@@ -1,11 +1,4 @@
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Queue-Based Load Leveling Pattern
 =============================================================
@@ -54,7 +47,6 @@ message queue. This figure shows using a queue to level the load on a
 service.
 
 ![](attachments/463533393/463533392.png)
-.confluence-content-image-border height="150"}
 
 The queue decouples the tasks from the service, and the service can
 handle the messages at its own pace regardless of the volume of requests

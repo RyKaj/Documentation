@@ -1,11 +1,4 @@
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Retry Pattern
 =========================================
@@ -87,7 +80,6 @@ predefined number of attempts, the application should treat the fault as
 an exception and handle it accordingly.
 
 ![](attachments/463533395/463533394.png)
-.confluence-thumbnail .confluence-content-image-border height="150"}
 
 The application should wrap all attempts to access a remote service in
 code that implements a retry policy matching one of the strategies
@@ -207,10 +199,4 @@ This pattern might not be useful:
 -   As an alternative to addressing scalability issues in a system. If
     an application experiences frequent busy faults, it\'s often a sign
     that the service or resource being accessed should be scaled up.
-
-
-
- 
-
-
 

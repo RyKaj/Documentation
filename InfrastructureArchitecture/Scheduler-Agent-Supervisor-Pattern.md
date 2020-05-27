@@ -1,15 +1,7 @@
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Scheduler Agent Supervisor Pattern
 ==============================================================
-
 
  
 Overview
@@ -106,7 +98,6 @@ has failed. The figure illustrates the relationship between the
 Scheduler, the Agents, the Supervisor, and the state store.
 
 ![](attachments/463533397/463533396.png)
-.confluence-thumbnail .confluence-content-image-border height="150"}
 
 > This diagram shows a simplified version of the pattern. In a real
 > implementation, there might be many instances of the Scheduler running
@@ -233,10 +224,4 @@ operational failure.
 
 This pattern might not be suitable for tasks that don\'t invoke remote
 services or access remote resources.
-
-
-
- 
-
-
 

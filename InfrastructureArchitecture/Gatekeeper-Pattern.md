@@ -1,3 +1,5 @@
+[comment]: [Architecture](ReadMe.MD)
+
 Infrastructure Architecture - Gatekeeper Pattern
 ==============================================
  
@@ -37,7 +39,7 @@ and then hands off the request---perhaps through a decoupled
 interface---to the hosts or tasks that\'ll handle the request. The
 figure provides a high-level overview of this pattern.
 
-![](attachments/463533347/463533346.png){.confluence-embedded-image .confluence-content-image-border height="150"}
+![](attachments/463533347/463533346.png)
 
 The gatekeeper pattern can be used to simply protect storage, or it can
 be used as a more comprehensive façade to protect all of the functions

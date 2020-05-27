@@ -1,17 +1,9 @@
-
-
-
-
-
-
-
-
+[comment]: [Architecture](ReadMe.MD)
 
 Infrastructure Architecture - Publisher-Subscriber Pattern
 ========================================================
 
 
- 
 Overview
 --------
 
@@ -62,7 +54,6 @@ following:
 The following diagram shows the logical components of this pattern:
 
 ![](attachments/463533391/463533390.png)
-.confluence-content-image-border height="150"}
 
 Pub/sub messaging has the following benefits:
 
@@ -212,10 +203,4 @@ This pattern might not be useful when:
     different information from the producing application.
 
 -   An application requires near real-time interaction with consumers.
-
-
-
- 
-
-
 
