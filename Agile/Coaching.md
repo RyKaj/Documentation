@@ -1,4 +1,4 @@
-###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Infrastructure Architecture](https://github.com/RyKaj/Documentation/tree/master/Agile/README.md) |
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Agile](https://github.com/RyKaj/Documentation/tree/master/Agile/README.md) |
 ------------
 
 
@@ -249,9 +249,6 @@ The Enterprise Agile Coaches must be knowledgeable about these areas and
 should have relevant experience to develop an expertise in the
 respective Coaching competency.
 
-![No alt text provided for this image](https://media.licdn.com/dms/image/C4D12AQE1Lh_JoenT7w/article-inline_image-shrink_1500_2232/0?e=1572480000&v=beta&t=Y-HLvbWaMbZQVqH6pHl-FsOECQ3qr-N09SvUJPuzkZ0)
-
-Figure: 1
 
 Overview of each Coaching Competency
 ------------------------------------
