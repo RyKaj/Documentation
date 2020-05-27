@@ -1,5 +1,5 @@
-[Documentation](https://github.com/RyKaj/Documentation/blob/master/README.md) | Infrastructure Architecture
-
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | 
+------------
 
 # Infrastructure Architecture
 
