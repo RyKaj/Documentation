@@ -1,11 +1,6 @@
-[comment]: [Architecture](ReadMe.MD)
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Infrastructure Architecture](https://github.com/RyKaj/Documentation/tree/master/Agile/README.md) |
+------------
 
-
-
-
-
-
-3.  [SAFe (Scaled Agile Framework)](451819560.html)
 
 
 Information Technology : SAFe Program Level 

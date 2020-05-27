@@ -1,11 +1,5 @@
-[comment]: [Architecture](ReadMe.MD)
-
-
-
-
-
-
-3.  [SAFe (Scaled Agile Framework)]
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Infrastructure Architecture](https://github.com/RyKaj/Documentation/tree/master/Agile/README.md) |
+------------
 
 
 Information Technology : SAFe Value Stream 

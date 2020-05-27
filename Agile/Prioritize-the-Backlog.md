@@ -1,4 +1,6 @@
-[comment]: [Architecture](ReadMe.MD)
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Infrastructure Architecture](https://github.com/RyKaj/Documentation/tree/master/Agile/README.md) |
+------------
+
 
 
 Agile : Prioritize the Backlog 
