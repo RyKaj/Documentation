@@ -701,45 +701,15 @@ considering.
 In the table below, we take a look at the benefits versus challenges of
 microservice style applications.
 
- {.table-wrap}
-+----------------------------------+----------------------------------+
-| **Benefits**                     | **Challenges**                   |
-+==================================+==================================+
-| Enables the continuous delivery  | There is an additional           |
-| and deployment of large, complex | complexity of creating a         |
-| applications.                    | distributed system.              |
-+----------------------------------+----------------------------------+
-| Improved maintainability: Each   | Implementing requests that span  |
-| service is relatively small so   | multiple services is more        |
-| it's easier to understand and    | difficult.                       |
-| change.                          |                                  |
-|                                  | Maintaining data consistency     |
-|                                  | between service(s) is a          |
-|                                  | challenge.                       |
-+----------------------------------+----------------------------------+
-| Better Testability: services are | Testing the interactions between |
-| smaller and faster to test.      | services is more difficult.      |
-+----------------------------------+----------------------------------+
-| Better deployability: services   | Increased operational and        |
-| can be deployed independently.   | deployment complexity of         |
-|                                  | deploying and managing a system  |
-|                                  | comprised of many different      |
-|                                  | services.                        |
-+----------------------------------+----------------------------------+
-| Each team can develop, test,     | Implementing requests that span  |
-| deploy and scale their services  | multiple services requires       |
-| independently of all of the      | careful coordination between the |
-| other teams.                     | teams.                           |
-+----------------------------------+----------------------------------+
-| Improved fault isolation.        | Inter-service communication and  |
-|                                  | dealing with partial failure     |
-|                                  | implementation is challenging.   |
-+----------------------------------+----------------------------------+
-| Eliminates long-term commitment  | Overhead of multiple JVM         |
-| to a technology stack.           | runtimes (or equivalent) and     |
-|                                  | increase in memory consumption   |
-|                                  | needs to be taken care of.       |
-+----------------------------------+----------------------------------+
+ |Benefits|Challenges|
+|--- |--- |
+|Enables the continuous delivery and deployment of large, complex applications.|There is an additional complexity of creating a distributed system.|
+|Improved maintainability: Each service is relatively small so it’s easier to understand and change.|Implementing requests that span multiple services is more difficult. Maintaining data consistency between service(s) is a challenge.|
+|Better Testability: services are smaller and faster to test.|Testing the interactions between services is more difficult.|
+|Better deployability: services can be deployed independently.|Increased operational and deployment complexity of deploying and managing a system comprised of many different services.|
+|Each team can develop, test, deploy and scale their services independently of all of the other teams.|Implementing requests that span multiple services requires careful coordination between the teams.|
+|Improved fault isolation.|Inter-service communication and dealing with partial failure implementation is challenging.|
+|Eliminates long-term commitment to a technology stack.|Overhead of multiple JVM runtimes (or equivalent) and increase in memory consumption needs to be taken care of.|
 
 
 
