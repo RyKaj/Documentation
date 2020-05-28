@@ -57,34 +57,21 @@ After relative sizing of all the product backlog items have been done, ensure th
 Fibonacci Value Representation
 ------------------------------
 
- {.table-wrap}
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   Fibonacci Value  Meaning / Definition                                                                                                                                     \
-  ----------------- -------------------------------------------------------------------------------------------------------------------------------------------------------- ---
-          0         A zero value indicates that nothing has to be done to finish the story. It\'s mostly used when a deployment is pending.                                  \
+|Fibonacci Value|Meaning / Definition||
+|--- |--- |--- |
+|0|A zero value indicates that nothing has to be done to finish the story. It's mostly used when a deployment is pending.||
+|0.5|It's not zero, but it's a piece of cake that can be made with almost blind eyes.||
+|1|It's a small story with very low complexity or effort.||
+|2|Doubling up what a 1 means.||
+|3|A little bit more than a 2.||
+|5|This is an interesting card. There are some brainpower and effort involved to achieve this story. Widely used when the story starts to become serious.||
+|8|Much more than a five, but still somehow manageable.||
+|13|This number indicates that the user story is at a sharp edge to become too complex to be treated as just one story. Consider story splitting.||
+|20|This card mostly just express some desperation of the team member. As a team, you should consider story splitting.||
+|40|These cards mostly just express some desperation of the team member. As a team, you should consider story splitting.||
+|100|These cards mostly just express some desperation of the team member. As a team, you should consider story splitting.||
+|?|The question mark card shows up, that a developer has no clue how to estimate the story.||
 
-         0.5        It\'s not zero, but it\'s a piece of cake that can be made with almost blind eyes.                                                                       \
-
-          1         It\'s a small story with very low complexity or effort.                                                                                                  \
-
-          2         Doubling up what a 1 means.                                                                                                                              \
-
-          3         A little bit more than a 2.                                                                                                                              \
-
-          5         This is an interesting card. There are some brainpower and effort involved to achieve this story. Widely used when the story starts to become serious.   \
-
-          8         Much more than a five, but still somehow manageable.                                                                                                     \
-
-         13         This number indicates that the user story is at a sharp edge to become too complex to be treated as just one story. Consider story splitting.            \
-
-         20         This card mostly just express some desperation of the team member. As a team, you should consider story splitting.                                       \
-
-         40         These cards mostly just express some desperation of the team member. As a team, you should consider story splitting.                                     \
-
-         100        These cards mostly just express some desperation of the team member. As a team, you should consider story splitting.                                     \
-
-          ?         The question mark card shows up, that a developer has no clue how to estimate the story.                                                                 \
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 Estimation Technique
@@ -109,18 +96,13 @@ Story point represents the effort required to put that single Story production.
 T-Shirt size to Fibonacci
 -------------------------
 
- {.table-wrap}
-+---------+-----------+------------------------------------+
-| T-Shirt | Fibonacci | Notes                              |
-+=========+===========+====================================+
-| S       | 1         | \                                  |
-+---------+-----------+------------------------------------+
-| M       | 5         | \                                  |
-+---------+-----------+------------------------------------+
-| L       | 8         | \                                  |
-+---------+-----------+------------------------------------+
-| XL      | ∞         | Epic/Story needs to be broken down |
-+---------+-----------+------------------------------------+
+|T-Shirt|Fibonacci|Notes|
+|--- |--- |--- |
+|S|1||
+|M|5||
+|L|8||
+|XL|∞|Epic/Story needs to be broken down|
+
 
 
 Planning Poker

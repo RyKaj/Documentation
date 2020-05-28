@@ -1638,10 +1638,5 @@ Success Factor.)
 -   [Medium swlh - agile planning delivery five common mistakes and how to fix them](https://medium.com/swlh/agile-planning-delivery-five-common-mistakes-and-how-to-fix-them-400d1f040a45)
 -   [ASPE Training - scrum master antipatterns](https://aspetraining.com/resources/blog/scrum-master-antipatterns)
 -   [Business 2 community - 5 mistakes agile leaders need to watch out for](https://www.business2community.com/leadership/5-mistakes-agile-leaders-need-to-watch-out-for-02180482/amp)
--   S [crumOrg -  27 sprint anti patterns](https://www.scrum.org/resources/blog/27-sprint-anti-patterns)
-
-
-
-
-
+-   [ScrumOrg -  27 sprint anti patterns](https://www.scrum.org/resources/blog/27-sprint-anti-patterns)
 
