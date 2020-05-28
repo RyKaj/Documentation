@@ -403,7 +403,6 @@ microservice style applications.
 
 
 
-
  {#expander-1914198527 .expand-container}
  {#expander-control-1914198527 .expand-control}
 Scenarios Where You Can Consider Going for Microservice
