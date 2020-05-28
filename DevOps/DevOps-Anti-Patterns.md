@@ -6,8 +6,6 @@ DevOps :  Anti-Patterns
 DevOps :  Anti-Patterns
 =============================================
 
-Created by Ryan Kajiura, last modified on Dec 03, 2019
-
 Anti-Patterns: Department Structures
 
 Dev and Ops Silos (Anti-Type A)
@@ -17,7 +15,7 @@ This is the classic ‘throw it over the wall’ split between Dev and Ops. It m
 
 We likely all know this topology is bad, but I think there are actually worse topologies; at least with Anti-Type A (Dev and Ops Silos), we know there is a problem.
 
-![](attachments/451824401/451824402.png)
+<img src="./attachments/451824402.png" alt="">
 
 DevOps Team Silo (Anti-Type B)
 ------------------------------
@@ -26,7 +24,7 @@ The DevOps Team Silo (Anti-Type B) typically results from a manager or exec deci
 
 The only situation where a separate DevOps silo really makes sense is when the team is temporary, lasting less than (say) 12 or 18 months, with the express purpose of bringing Dev and Ops closer together, and with a clear mandate to make the DevOps team superfluous after that time; this becomes what I have called a [Type 5 DevOps Topology](https://web.devopstopologies.com/#type-five).
 
-![](attachments/451824401/451824402.png)
+<img src="./attachments/451824402.png" alt="">
 
 Dev Don't Need Ops (Anti-Type C)
 --------------------------------
@@ -35,7 +33,7 @@ This topology is borne of a combination of naivety and arrogance from developers
 
 Such an Anti-Type C DevOps topology will probably end up needing either a [Type 3 (Ops as IaaS)](https://web.devopstopologies.com/#type-three) or a [Type 4 (DevOps-as-a-Service)](https://web.devopstopologies.com/#type-four) topology when their software becomes more involved and operational activities start to swamp ‘development’ (aka coding) time. If only such teams recognised the importance of Operations as a discipline as important and valuable as software development, they would be able to avoid much pain and unnecessary (and quite basic) operational mistakes.
 
-![](attachments/451824401/451824402.png)
+<img src="./attachments/451824402.png" alt="">
 
 DevOps as Tools Team (Anti-Type D)
 ----------------------------------
@@ -44,7 +42,7 @@ In order to "become DevOps" without losing current dev teams velocity (read deli
 
 Although the outcomes of this dedicated team can be beneficial in terms of an improved tool chain, its impact is limited. The fundamental problem of lack of early Ops involvement and collaboration in the application development lifecycle remains unchanged.
 
-![](attachments/451824401/451824402.png)
+<img src="./attachments/451824402.png" alt="">
 
 Rebranded SysAdmin (Anti-Type E)
 --------------------------------
@@ -53,7 +51,7 @@ This anti-type is typical in organizations with low engineering maturity. They w
 
 DevOps becomes just a rebranding of the role previously known as SysAdmin, with no real cultural/organizational change taking place. This anti-type is becoming more and more widespread as unscrupulous recruiters jump on the bandwagon searching for candidates with automation and tooling skills. Unfortunately, it's the human communication skills that can make DevOps thrive in an organization.
 
-![](attachments/451824401/451824402.png)
+<img src="./attachments/451824402.png" alt="">
 
 Ops Embedded in Dev Team (Anti-Type F)
 --------------------------------------
@@ -64,7 +62,7 @@ In this anti-type the organization shows lack of appreciation for the importance
 
 _Thanks to [Scott Prugh](https://twitter.com/ScottPrugh) for suggesting clarifications on how Anti-Type F differs from Type 2._
 
-![](attachments/451824401/451824402.png)
+<img src="./attachments/451824402.png" alt="">
 
 Dev and DBA Silos (Anti-Type G)
 -------------------------------
@@ -73,7 +71,7 @@ This is a form of [Anti-Type A (Dev and Ops Silos)](https://web.devopstopologie
 
 Furthermore, just like Ops in [Anti-Type A](https://web.devopstopologies.com/#anti-type-a), the DBA team is not involved early in the application development, thus data problems (migrations, performance, etc) are found late in the delivery cycle. Coupled with the overload of supporting multiple applications databases, the end result is constant firefighting and mounting pressure to deliver.
 
-![](attachments/451824401/451824402.png)
+<img src="./attachments/451824402.png" alt="">
 
 Anti-Pattern Philosophy
 
