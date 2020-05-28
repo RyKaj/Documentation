@@ -82,13 +82,3 @@ shortest sustainable lead time.
 -   It gives additional roles which are: Value Stream Engineer, Solution
     Architect/Engineering, and Solution Management.
 
-\
-
-
-
-
-
-
-
-
-

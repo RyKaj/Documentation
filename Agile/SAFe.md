@@ -381,7 +381,6 @@ and face-to-face communication. Business stakeholders and developers
 must work together to align the product with customer needs and company
 goals.
 
-\
 
 #### Agile Manifesto
 
@@ -401,7 +400,7 @@ helping others do it.*
 *That is, while there is value in the items on the right, we value the
 items on the left more.*
 
-*![The Agile mindset](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fstevedenning%2Ffiles%2F2016%2F06%2FWhat-is-Ageil-by-Ahmed-Sidky-r1-e1525717850723.jpg)
+![The Agile mindset](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fstevedenning%2Ffiles%2F2016%2F06%2FWhat-is-Ageil-by-Ahmed-Sidky-r1-e1525717850723.jpg)
 ![](https://miro.medium.com/max/762/0*9Y9PqVi1GXK7uICp)
 
 #### Human Resource Manifesto
@@ -1645,5 +1644,5 @@ improving business results.
 -   [How to conduct a Distributed Paperless quarterly planning and not  screw it up?](https://m.habr.com/ru/post/453180/)
 -   [https://www.scaledagileframework.com/\#](https://www.scaledagileframework.com/)
 -   [Reqtest - scaled agile framework safe](https://reqtest.com/agile-blog/scaled-agile-framework-safe/)
--   Guru99 - S [caled Agile Framework](https://www.guru99.com/scaled-agile-framework.html)
+-   [Guru99 - Scaled Agile Framework](https://www.guru99.com/scaled-agile-framework.html)
 -   [CIO - what is safe the scaled agile framework explained](https://www.cio.com/article/3434530/what-is-safe-the-scaled-agile-framework-explained.html)
