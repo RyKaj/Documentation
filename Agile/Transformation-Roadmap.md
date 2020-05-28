@@ -1265,54 +1265,14 @@ Transformation
 
 [As a manager, you are no longer able to tell the members of your team (often called a squad) what to do and how to do it. You were also told that the product manager is responsible for prioritizing activities and that improving operational processes falls under the oversight of the scrum master.]
 
- {.table-wrap}
-Transitioning to the Role of Agile Manager
+|Transitioning to the Role of Agile Manager||
+|--- |--- |
+|Former Role - Traditional Manager|New Role - Agile Manager|
+|A generalist manager responsible for the following activities: 1) Managing the members of their team - Business knowledge and/or technical expertise. 2) Process or Project Management| A manager specialized in one (1) of the following areas of activity: 1) People / talent management. 2) Product or business line management. 3. Project or process management|
+||With unchanging responsibilities…1) Communicating the business's vision and keeping everything aligned with the company's values. 2) Removing obstacles that impair the team. 3) Defining the team’s business objectives|
+|| With changing responsibilities that need to be delegated to the team… 1) Choosing tools and methods. 2) Hiring, integration (and firing). 3) Performance reviews (individual and team). 4) Skills development. 5)Budget management|
+||And with new responsibilities to integrate…1) mplementing and supporting self-organization. 2) Coaching and mentoring in your new area of expertise. 3) Supporting the team’s continual development. 4) Creating a work environment that is conducive to motivation and performance. 5) Being a facilitator (not a supervisor)
 
-
-
-Former Role - Traditional Manager
-
-New Role - Agile Manager
-
-A generalist manager responsible for the following activities:
-
--   Managing the members of their team - Business knowledge and/or
-    technical expertise
--   Process or Project Management
-
-A manager specialized in one (1) of the following areas of activity:
-
--   People / talent management
--   Product or business line management
--   Project or process management
-
-
-**With unchanging responsibilities...**
-
--   Communicating the business's vision and keeping everything aligned
-    with the company's values
--   Removing obstacles that impair the team
--   Defining the team's business objectives
-
-
-**With changing responsibilities that need to be delegated to the
-team...**
-
--   Choosing tools and methods
--   Hiring, integration (and firing)
--   Performance reviews (individual and team)
--   Skills development
--   Budget management
-
-
-**And with new responsibilities to integrate...**
-
--   Implementing and supporting self-organization
--   Coaching and mentoring in your new area of expertise
--   Supporting the team's continual development
--   Creating a work environment that is conducive to motivation and
-    performance
--   Being a facilitator (not a supervisor)
 
 #### Different Roles of a Manager in a Traditional Business
 
@@ -1530,41 +1490,16 @@ charge of or contribute to these key skills:
     how to overcome obstacles without imposing decisions. Supporting the
     squad when it faces obstacles and needs help.
 
- {.table-wrap}
-New Skills Agile Manager Needs to Incorporate
+  |New Skills Agile Manager Needs to Incorporate||
+|--- |--- |
+|Agile Manager do this|Not this|
+|Are there to help their team and promote collaboration|Manager and control their team|
+|Listen and use powerful questions|Tell their team what to do and/pr how to do it|
+|Act as a coach and mentor|Act as an expert|
+|Facilitate their team and treat its members as competent, autonomous adults|Put themselves at the centre of the team's success|
+|Trust their team and treat its members as competent, autonomous adults|Control their team and treat its members as (Incompetent, dependent) "children"|
+|See their roles as a complement to the role of the team members|See their roles as more important than the role of the team members|
 
-
-
-
-Agile Manager do this
-
-Not this
-
-Are there to help their team and promote collaboration
-
-Manager and control their team
-
-Listen and use powerful questions
-
-Tell their team what to do and/pr how to do it
-
-Act as a coach and mentor
-
-Act as an expert
-
-Facilitate their team and treat its members as competent, autonomous
-adults
-
-Put themselves at the centre of the team\'s success
-
-Trust their team and treat its members as competent, autonomous adults
-
-Control their team and treat its members as (Incompetent, dependent)
-\"children\"
-
-See their roles as a complement to the role of the team members
-
-See their roles as more important than the role of the team members
 
 Why Care about Agile
 --------------------
