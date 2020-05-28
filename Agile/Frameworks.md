@@ -1568,8 +1568,6 @@ projects and programmers, pairing might improve productivity. However,
 it may not always be appropriate for every project. The best thing to do
 is experiment and see if it works for you.
 
-![No alt text provided for this image](https://media.licdn.com/dms/image/C5112AQF6AzJz2wNNug/article-inline_image-shrink_1500_2232/0?e=1570665600&v=beta&t=BgCsrqDcAhirRWmDIFcg0-SuzFjj2wxD5zcefsvSBjA)
-
 ### Cadence
 
 XP (and Scrum) are founded on the notion of iterations (or Sprints),
@@ -1782,8 +1780,7 @@ smaller steps that then become features.
 Outcome
 
 -   Features List
--   A list of subject areas and list the corresponding business
-    activities
+-   A list of subject areas and list the corresponding business activities
 
 Plan By Feature 
 ---------------
@@ -2222,138 +2219,24 @@ the very similar focus on a highly visible workflow that keeps all team
 membe3rs in the loop on the \"Work In Progress\".
 
 
+|Scrum||Kanban|
+|--- |--- |--- |
+|A Scrum Master, Product Owner and Team Members make up a Scrum Team.|Team Roles|No set roles are defined. Roles are not required to be cross functional.|
+|Columns are labeled to reflect periods in the work flow from beginning through the team’s definition of doneA Scrum board is reset between each sprint|Work Boards|Columns are likewise labeled to show work flow states, but also publish the max number of stories allowed in column at onceA kanban board is persistent|
+|Scrum processes place heavy emphasis on schedule with a prioritized list of story points. This iterative process enables accurate estimations of work flow and effective management of multiple projects.Regular fixed length sprints (ie, 2 weeks)|Scheduling/ Cadence|There are no required time boxes or iterations. While the Kanban method is iterative in nature, the continual improvement is expected to occur in an evolutionary fashion as work is continually completed.Continuous flow|
+|At the end of each sprint|Release methodology|Continuous delivery|
+|VelocityUses Velocity as default metric for planning and process improvementBurndown chart prescribedWIP limited indirectly (per sprint)|Key Metrics|Lead timecycle timeWIPUses Lead time as default metric for planning and process improvementNo particular type of diagram is prescribed|
+|Every member of the scrum team has a fixed job description and responsibilities that come with itPrescribes 3 roles (PO/SM/Team)|Roles & Responsibilities|Kanban does not have set roles and it portrays complete flexibility in terms of individual responsibilities.Doesn’t prescribe any roles|
+|Members are required to commit to a specific amount of workTimeboxed iterations prescribedTeam commits to a specific amount of work for this iterationItems must be broken down so they can be completed within 1 sprint|Teams & Commitment / Timebox|Commitment is an option and not a compulsion for teamsTimeboxed iterations optional. Can have separate cadences for planning, release, and process improvement. Can be event-driven instead of timeboxedCommitment optionalNo particular item size is prescribed|
+|Any obstacles or challenges that arise need to be immediately dealt with.|Addressing Challenges|Hurdles are avoided to ensure smooth flow of work.|
+|Cross-functional teams are necessary for Scrum.|Types of Teams / Cross-functional|In Kanban, specialized teams are encouraged. Cross-functional teams optional. Specialist teams allowed|
+|Teams focus to collaborate and complete the tasks to produce something of greater value.|Objective of the Team|Teams strive to achieve goals and reduce the amount of time taken to complete the entire process.|
+|One cannot add new items to ongoing iterations|Iterations|New items can be continuously added whenever additional capacity is available|
+|One team owns the backlog at a time|Ownership|Kanban boards have no ownership|
+|Estimation prescribed|Estimation|Estimation optional|
+|A sprint backlog is owned by one specific team|Backlog|A kanban board may be shared by multiple teams or individuals|
+|Prescribes a prioritized product backlog|Priority|Prioritization is optional|
 
- {.table-wrap}
-+----------------------+----------------------+----------------------+
-| Scrum                | \                    | Kanban               |
-+======================+======================+======================+
-| A Scrum Master,      | Team Roles           | No set roles are     |
-| Product Owner and    |                      | defined. Roles are   |
-| Team Members make up |                      | not required to be   |
-| a Scrum Team.        |                      | cross functional.    |
-+----------------------+----------------------+----------------------+
-| -   Columns are      | Work Boards          | -   Columns are      |
-|     labeled to       |                      |     likewise labeled |
-|     reflect periods  |                      |     to show work     |
-|     in the work flow |                      |     flow states, but |
-|     from beginning   |                      |     also publish the |
-|     through the      |                      |     max number of    |
-|     team's           |                      |     stories allowed  |
-|     definition of    |                      |     in column at     |
-|     done             |                      |     once             |
-| -   A Scrum board is |                      | -   A kanban board   |
-|     reset between    |                      |     is persistent    |
-|     each sprint      |                      |                      |
-+----------------------+----------------------+----------------------+
-| Scrum processes      | Scheduling/ ### Cadence  | There are no         |
-| place heavy emphasis |                      | required time boxes  |
-| on schedule with a   |                      | or iterations. While |
-| prioritized list of  |                      | the Kanban method is |
-| story points. This   |                      | iterative in nature, |
-| iterative process    |                      | the continual        |
-| enables accurate     |                      | improvement is       |
-| estimations of work  |                      | expected to occur in |
-| flow and effective   |                      | an evolutionary      |
-| management of        |                      | fashion as work is   |
-| multiple projects.   |                      | continually          |
-|                      |                      | completed.           |
-| Regular fixed length |                      |                      |
-| sprints (ie, 2       |                      | Continuous flow\     |
-| weeks)\              |                      |                      |
-+----------------------+----------------------+----------------------+
-| At the end of each   | Release methodology  | Continuous delivery  |
-| sprint               |                      |                      |
-+----------------------+----------------------+----------------------+
-| -   Velocity         | ### Key Metrics          | -   Lead time        |
-| -   Uses Velocity as |                      | -   cycle time       |
-|     default metric   |                      | -   WIP              |
-|     for planning and |                      | -   Uses Lead time   |
-|     process          |                      |     as default       |
-|     improvement      |                      |     metric for       |
-| -   Burndown chart   |                      |     planning and     |
-|     prescribed       |                      |     process          |
-| -   WIP limited      |                      |     improvement\     |
-|     indirectly (per  |                      | -   No particular    |
-|     sprint)          |                      |     type of diagram  |
-|                      |                      |     is prescribed    |
-+----------------------+----------------------+----------------------+
-| -   Every member of  | Roles &              | -   Kanban does not  |
-|     the scrum team   | Responsibilities     |     have set roles   |
-|     has a fixed job  |                      |     and it portrays  |
-|     description and  |                      |     complete         |
-|     responsibilities |                      |     flexibility in   |
-|     that come with   |                      |     terms of         |
-|     it               |                      |     individual       |
-| -   Prescribes 3     |                      |                      |
-|     roles            |                      |    responsibilities. |
-|     (PO/SM/Team)     |                      | -   Doesn't          |
-|                      |                      |     prescribe any    |
-| \                    |                      |     roles            |
-+----------------------+----------------------+----------------------+
-| -   Members are      | Teams & Commitment / | -   Commitment is an |
-|     required to      | Timebox\             |     option and not a |
-|     commit to a      |                      |     compulsion for   |
-|     specific amount  |                      |     teams            |
-|     of work          |                      | -   Timeboxed        |
-| -   Timeboxed        |                      |     iterations       |
-|     iterations       |                      |     optional. Can    |
-|     prescribed       |                      |     have separate    |
-| -   Team commits to  |                      |     ### Cadences for     |
-|     a specific       |                      |     planning,        |
-|     amount of work   |                      |     release, and     |
-|     for this         |                      |     process          |
-|     iteration        |                      |     improvement. Can |
-| -   Items must be    |                      |     be event-driven  |
-|     broken down so   |                      |     instead of       |
-|     they can be      |                      |     timeboxed        |
-|     completed within |                      | -   Commitment       |
-|     1 sprint         |                      |     optional         |
-|                      |                      | -   No particular    |
-|                      |                      |     item size is     |
-|                      |                      |     prescribed       |
-+----------------------+----------------------+----------------------+
-| Any obstacles or     | Addressing           | Hurdles are avoided  |
-| challenges that      | Challenges           | to ensure smooth     |
-| arise need to be     |                      | flow of work.        |
-| immediately dealt    |                      |                      |
-| with.                |                      |                      |
-+----------------------+----------------------+----------------------+
-| Cross-functional     | Types of Teams /     | In Kanban,           |
-| teams are necessary  | Cross-functional\    | specialized teams    |
-| for Scrum.           |                      | are encouraged.      |
-|                      |                      | Cross-functional     |
-|                      |                      | teams optional.      |
-|                      |                      | Specialist teams     |
-|                      |                      | allowed\             |
-+----------------------+----------------------+----------------------+
-| Teams focus to       | Objective of the     | Teams strive to      |
-| collaborate and      | Team                 | achieve goals and    |
-| complete the tasks   |                      | reduce the amount of |
-| to produce something |                      | time taken to        |
-| of greater value.    |                      | complete the entire  |
-|                      |                      | process.             |
-+----------------------+----------------------+----------------------+
-| One cannot add new   | Iterations           | New items can be     |
-| items to ongoing     |                      | continuously added   |
-| iterations           |                      | whenever additional  |
-|                      |                      | capacity is          |
-|                      |                      | available            |
-+----------------------+----------------------+----------------------+
-| One team owns the    | Ownership            | Kanban boards have   |
-| backlog at a time    |                      | no ownership         |
-+----------------------+----------------------+----------------------+
-| Estimation           | Estimation           | Estimation optional  |
-| prescribed           |                      |                      |
-+----------------------+----------------------+----------------------+
-| A sprint backlog is  | Backlog              | A kanban board may   |
-| owned by one         |                      | be shared by         |
-| specific team        |                      | multiple teams or    |
-|                      |                      | individuals          |
-+----------------------+----------------------+----------------------+
-| Prescribes a         | Priority             | Prioritization is    |
-| prioritized product  |                      | optional             |
-| backlog              |                      |                      |
-+----------------------+----------------------+----------------------+
 
 
 ![Scrum vs agile](https://www.smartsheet.com/sites/default/files/matrix-scrum-agile%402x.gif)
