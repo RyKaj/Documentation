@@ -1,16 +1,7 @@
-Information Technology : Kubernetes  
-
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [DevOps](https://github.com/RyKaj/Documentation/tree/master/DevOps/README.md) |
 ------------
 
-Information Technology : Kubernetes
-===================================
-
-Created by Ryan Kajiura, last modified on May 12, 2020
-
-
-
-  
+# DevOps : Kubernetes
 
 Containers provide a best way to bundle and run your applications. Containers allow developers to easily deploy any image in OS. In production management, you need containers that run the applications without any downtime. For instance, if one container goes down, another container needs to restart. To handle this kind of instance Kubernetes comes into existence
 
@@ -18,28 +9,18 @@ Kubernetes is  basically an open-source system which allows you to run containe
 
 Used as a platform for automating deployment, scaling, and management of containerized applications. There are several ways to set up a Kubernetes cluster, but for simplicity.
 
-  
 
-**Training**
 
-eBooks
-
-*     
-    [![](rest/documentConversion/latest/conversion/thumbnail/451826810/1)](/download/attachments/451820631/OReilly%20-%20Kubernetes%20Up%20and%20Running.pdf?version=1&modificationDate=1568894278537&api=v2)
-
-Online
-
-Sandbox
--------
+#####  Sandbox
 
 *   [Github - kubernetes-workshop](https://github.com/eon01/kubernetes-workshop)
 
-Tutorials
----------
+##### Tutorials
 
 *   [Magalix - the best kubernetes tutorials](https://www.magalix.com/blog/the-best-kubernetes-tutorials)
 
-**How it works**
+
+## How it works
 
 ![Deployment evolution](https://d33wubrfki0l68.cloudfront.net/26a177ede4d7b032362289c6fccd448fc4a91174/eb693/images/docs/container_evolution.svg)
 
@@ -55,13 +36,14 @@ If a worker node goes down, Kubernetes starts new pods on a functioning worker n
 
   
 
-![](https://lh4.googleusercontent.com/hCfk3E8n1pRBMugPOvTunPYk4od_jN-BCgrkTCENDvpTM3DxgLibvCORmmaKuqZYqqvfWdWckToIU8484oiiKySqTrs9OIwHjGpRxvU-Dbmh39OPwI89npvq3Tz2Q8pwAWSpcrK5) ![](https://miro.medium.com/max/800/0*HuSzmzk6Nmeu1Bhz) ![No alternative text description for this image](https://media-exp1.licdn.com/dms/image/C5122AQHid2Gl2S1DYA/feedshare-shrink_2048_1536/0?e=1583366400&v=beta&t=vb85kW8G17A8Zcpvopi0860KLxDFgfAxJA0P9l_cYTM)
+![](https://lh4.googleusercontent.com/hCfk3E8n1pRBMugPOvTunPYk4od_jN-BCgrkTCENDvpTM3DxgLibvCORmmaKuqZYqqvfWdWckToIU8484oiiKySqTrs9OIwHjGpRxvU-Dbmh39OPwI89npvq3Tz2Q8pwAWSpcrK5)
+![](https://miro.medium.com/max/800/0*HuSzmzk6Nmeu1Bhz)
 
 A container orchestrator is essentially an administrator in charge of operating a fleet of containerized applications. If a container needs to be restarted or acquire more resources, the orchestrator takes care of it for you.
 
 That's a fairly broad outline of how most container orchestrators work. Let's take a deeper look at all the specific components of Kubernetes that make this happen.
 
-**Containers Change How we Deploy Software**
+### Containers Change How we Deploy Software
 
 In the old days, software deployment was hard, time-consuming, and error-prone. To install an application, you need to purchase a number of physical machines and pay for CPU and memory than you might actually need. A few years later, virtualization was dominant. This saved you some costs as one powerful bare-metal server can host multiple machines. Thus, CPU and memory could be shared. In modern days, machines can be split into even smaller parts than virtual servers: **containers**. Containers became so popular only a few years ago. So, what exactly is a Linux container? And where does Docker fit?
 

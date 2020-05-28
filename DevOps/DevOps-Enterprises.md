@@ -1,12 +1,8 @@
-DevOps :  - Enterprises  
-
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [DevOps](https://github.com/RyKaj/Documentation/tree/master/DevOps/README.md) |
 ------------
 
-DevOps :  - Enterprises
+DevOps : Enterprises
 =============================================
-
-Created by Ryan Kajiura on Mar 18, 2020
 
 
 
@@ -27,17 +23,6 @@ The Perfect Blend of Methodologies
 ----------------------------------
 
   
-
-[![](download/resources/com.atlassian.confluence.plugins.confluence-view-file-macro:view-file-macro-resources/images/placeholder-small-file.png)value-stream-management-devops-plus-agile.svg](/download/attachments/463532376/value-stream-management-devops-plus-agile.svg?version=1&modificationDate=1584537414063&api=v2)
-
-  
-
-  
-
-Attachments:
-------------
-
-![](images/icons/bullet_blue.gif) [value-stream-management-devops-plus-agile.svg](attachments/463532376/463532372.svg) (image/svg+xml)  
-
+<img src="./attachments/463532372.svg" alt="">
 
 

@@ -1,23 +1,16 @@
-DevOps :  - Immature Teams vs Mature Teams  
 
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [DevOps](https://github.com/RyKaj/Documentation/tree/master/DevOps/README.md) |
 ------------
 
-DevOps :  - Immature Teams vs Mature Teams
+DevOps : Immature Teams vs Mature Teams
 ================================================================
-
-Created by Ryan Kajiura, last modified on Mar 18, 2020
-
-
-
   
 
 As a DevOps team matures, they often find that their environment fills with a growing number of moving parts. When all of these pieces are moving in concert, new features are released regularly and smoothly. This isn’t only true for technology. Mature DevOps teams have processes that work harmoniously with one another to make shipping code smoother. The same is not necessarily true for immature teams. Immature teams rely on faulty processes and poorly-configured architecture. These delay releases, suck up engineer time with tedious tasks, and cause the team to ship more bugs to customers.
 
 Savvy teams seek ways to avoid these kinds of failures. As a team learns, it progresses through various states of DevOps maturity. Sometimes those tools to avoid failure will be technical in nature, but just as often they’ll be changes to process or lines of communication. A team can have the best tech in the world, but if they have bad processes, they’re still going to fail as often as they succeed.
 
-![](attachments/463532396/463532394.png)
-
+<img src="./attachments/463532394.png" alt="">
   
 
 **Release management** is the process of how a team coordinates the actual release of code to customers. Good code tends to pass through a variety of steps so that stakeholders throughout the business can verify its validity. Beyond simply designing and writing the code, code needs to go through testing, user acceptance, and compliance phases. These steps ensure that the code does what it says it does, that customers are happy with what it does, and that it doesn’t expose the company to risk.
@@ -109,17 +102,3 @@ Finally, moving more testing into automated tests means that the team ships fewe
   
 
   
-
-  
-
-  
-
-  
-
-Attachments:
-------------
-
-![](images/icons/bullet_blue.gif) [DevOps-Process-Aligned-Teams-.png](attachments/463532396/463532394.png) (image/png)  
-
-
-

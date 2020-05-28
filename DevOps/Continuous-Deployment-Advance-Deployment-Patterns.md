@@ -1,18 +1,13 @@
-Information Technology : Continuous Deployment - Advance Deployment Patterns  
-
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [DevOps](https://github.com/RyKaj/Documentation/tree/master/DevOps/README.md) |
 ------------
 
- Continuous Deployment - Advance Deployment Patterns
-============================================================================
+# Continuous Deployment - Advance Deployment Patterns
   
 
-![](attachments/451819634/451824926.jpg)  
+<img src="./attachments/451824926.jpg" alt="">
 
-  
 
-Rolling Deployments
-
+## Rolling Deployments
 
 Rolling deployments are a pattern whereby, instead of deploying a package to all servers at once, we slowly roll out the release by deploying it to each server one-by-one. In load balanced scenarios, this allows us to reduce overall downtime.
 
@@ -25,8 +20,7 @@ When a single step targets multiple machines, the step is run on those machines�
 
 However, sometimes this isn't desired. If you are deploying to a farm of 10 web servers, it might be nice to deploy to one machine at a time, or to batches of machines at a time. This is called a **rolling deployment**.
 
-Guided Failures
-===============
+## Guided Failures
 
 When deployments encounter errors, they will typically fail. However, the **guided failure** mode provides an option to prompt a user to intervene when a deployment encounters an error so that the deployment can continue. With guided failure mode enabled, the user can fail the process, and retry or ignore any steps that failed the first time.
 
@@ -71,8 +65,8 @@ So do blue-green deployment if you’re committed to practices that allow you to
 
 The essence of blue-green is deploying all at once and the essence of canary deployment is deploying incrementally, so given a single pool of users I can’t think of a process that I would describe as doing both at the same time. If you had multiple independent pools of users, e.g. using different regional data centers, you could do blue-green within each data center and canary across data centers. Although if you didn’t need canary deployment within a data center, you probably wouldn’t need it across data centers.
 
-Best Practices
---------------
+## Best Practices
+
 
 ### Choose Load Balancing Over DNS Switching
 
@@ -85,7 +79,7 @@ Instead, use load balancing. Load balancers enable you to set your new servers i
 Switching all your servers from an old version to a new one at once may result in downtime.  
 To avoid that, you can execute a “rolling update”. This means that instead of switching from all Blue servers to all Green servers in a single cut-off, you can work with an integrated environment. Add one new server, retire one old server, and repeat this until all the new servers are inside (see image below):
 
-![](attachments/451819634/451819638.png)
+<img src="./attachments/451819638.png" alt="">
 
 One thing to make sure though, is that your new code can run alongside your old code, because they will be running together side-by-side (see more on backward and forward compatibility below).
 
@@ -120,7 +114,7 @@ This type of release will require the following steps:
 *   Run data migration - rename the field to “username” across the all records/documents in the database (this can take seconds or days, it depends on the the dataset size)
 *   Release the final version of the code, supporting only “username”, and remove completely the old code supporting “user\_name”.
 
-Blue Green and Red Black Deployment
+#### Blue Green and Red Black Deployment
 
 Then deploying new versions of a centralized application like a web service, there is a strategy you can use to direct production traffic to the new version only after it has been successfully deployed and optionally tested. This strategy goes by the name blue/green or red/black, with each color representing a copy of the target environment. Traffic is routed to one color or the other (or potentially both in a canary deployment or during A/B testing, but that's a story for another time). Having two environments running side by side hosting different versions of an application means traffic can be switched over, and back again if an issue is found, with little to no downtime.
 
@@ -132,7 +126,7 @@ Netflix treats blue/green and red/black as the same thing. The documentation eve
 
 ![Deployment Strategies](https://i.octopus.com/blog/2019-05/blue-green-red-black/deployment-strategies.png)
 
-A/B Testing
+#### A/B Testing
 
 A/B testing is **NOT** blue-green deployments. I’ve run into groups that mistake this. A/B testing is a way of _testing features in your application_ for various reasons like usability, popularity, noticeability, etc, and how those factors influence the bottom line. It’s usually associated with UI parts of the app, but of course, the backend services need to be available to do this. You can implement this with application-level switches (ie, smart logic that knows when to display certain UI controls), static switches (in the application), and also use Canary releases (as discussed below).
 
@@ -143,7 +137,6 @@ The number of visitors on your website equals the number of opportunities you ha
 One way to optimize your website’s funnel is A/B testing. A/B testing (also sometimes referred to as split testing) is the practice of showing 2 variants of the same web page to different segments of visitors at the same time and comparing which variant drives more conversions. Typically, the one that gives higher conversions is the winning variant, applying which can help you optimize your site for better results.
 
   
-
 ![green deployment](http://blog.christianposta.com/images/abtesting.png)
 
 The difference between blue-green deployments and A/B testing is A/B testing is for measuring functionality in the app. Blue-green deployments are about releasing new software safely and rolling back predictably. You can obviously combine them: use blue-green deployments to deploy new features in an app that can be used for A/B testing.
@@ -152,9 +145,9 @@ The number of visitors on your website equals the number of opportunities you ha
 
 One way to optimize your website’s funnel is A/B testing. A/B testing (also sometimes referred to as split testing) is the practice of showing 2 variants of the same web page to different segments of visitors at the same time and comparing which variant drives more conversions. Typically, the one that gives higher conversions is the winning variant, applying which can help you optimize your site for better results.
 
-![](https://static.wingify.com/vwo/wp-content/themes/vwo/images/ab-test-with-text.svg)
 
-### How A/B Testing Works
+
+#### A/B Testing Works
 
 In an A/B test, you take a webpage or app screen and modify it to create a second version of the same page. This change can be as simple as a single headline or button, or be a complete redesign of the page. Then, half of your traffic is shown the original version of the page (known as the control) and half are shown the modified version of the page (the variation).
 
@@ -164,7 +157,7 @@ As visitors are served either the control or variation, their engagement with ea
 
   
 
-Canary Release
+## Canary Release
 
   
 
@@ -208,13 +201,7 @@ Another scenario where using canary releases is hard is when you distribute soft
 
 Managing database changes also requires attention when doing canary releases. Again, using [ParallelChange](https://martinfowler.com/bliki/ParallelChange.html) is a technique to mitigate this problem. It allows the database to support both versions of the application during the rollout phase.
 
-**Kubernetes**
-
-Kubernetes
-
-
-
-  
+## Kubernetes
 
 Containers provide a best way to bundle and run your applications. Containers allow developers to easily deploy any image in OS. In production management, you need containers that run the applications without any downtime. For instance, if one container goes down, another container needs to restart. To handle this kind of instance Kubernetes comes into existence
 
@@ -223,13 +210,7 @@ Kubernetes is  basically an open-source system which allows you to run containe
 Used as a platform for automating deployment, scaling, and management of containerized applications. There are several ways to set up a Kubernetes cluster, but for simplicity.
 
   
-
-Tutorials
----------
-
-*   [Magalix - the best kubernetes tutorials](https://www.magalix.com/blog/the-best-kubernetes-tutorials)
-
-**How it works**
+### How it works
 
 ![Deployment evolution](https://d33wubrfki0l68.cloudfront.net/26a177ede4d7b032362289c6fccd448fc4a91174/eb693/images/docs/container_evolution.svg)
 
@@ -245,13 +226,15 @@ If a worker node goes down, Kubernetes starts new pods on a functioning worker n
 
   
 
-![](https://lh4.googleusercontent.com/hCfk3E8n1pRBMugPOvTunPYk4od_jN-BCgrkTCENDvpTM3DxgLibvCORmmaKuqZYqqvfWdWckToIU8484oiiKySqTrs9OIwHjGpRxvU-Dbmh39OPwI89npvq3Tz2Q8pwAWSpcrK5) ![](https://miro.medium.com/max/800/0*HuSzmzk6Nmeu1Bhz) ![No alternative text description for this image](https://media-exp1.licdn.com/dms/image/C5122AQHid2Gl2S1DYA/feedshare-shrink_2048_1536/0?e=1583366400&v=beta&t=vb85kW8G17A8Zcpvopi0860KLxDFgfAxJA0P9l_cYTM)
+![](https://lh4.googleusercontent.com/hCfk3E8n1pRBMugPOvTunPYk4od_jN-BCgrkTCENDvpTM3DxgLibvCORmmaKuqZYqqvfWdWckToIU8484oiiKySqTrs9OIwHjGpRxvU-Dbmh39OPwI89npvq3Tz2Q8pwAWSpcrK5) 
+![](https://miro.medium.com/max/800/0*HuSzmzk6Nmeu1Bhz) 
+
 
 A container orchestrator is essentially an administrator in charge of operating a fleet of containerized applications. If a container needs to be restarted or acquire more resources, the orchestrator takes care of it for you.
 
 That's a fairly broad outline of how most container orchestrators work. Let's take a deeper look at all the specific components of Kubernetes that make this happen.
 
-**Containers Change How we Deploy Software**
+### Containers Change How we Deploy Software
 
 In the old days, software deployment was hard, time-consuming, and error-prone. To install an application, you need to purchase a number of physical machines and pay for CPU and memory than you might actually need. A few years later, virtualization was dominant. This saved you some costs as one powerful bare-metal server can host multiple machines. Thus, CPU and memory could be shared. In modern days, machines can be split into even smaller parts than virtual servers: **containers**. Containers became so popular only a few years ago. So, what exactly is a Linux container? And where does Docker fit?
 
@@ -269,7 +252,7 @@ This means you’ll only pay for one physical host, install one OS, and run as m
 
 In 2010, Docker was founded. Docker may refer to both the company and the product. Docker made it very easy for users and companies to utilize containers for software deployment. An important thing to note, though, is that Docker is not the only tool in the market that does this. Other applications exist like [rkt](https://github.com/rkt/rkt), [Apache Mesos](http://mesos.apache.org/), [LXC](https://en.wikipedia.org/wiki/LXC) among others. Docker is just the most popular one.
 
-Containers and Microservices: The Need For An Orchestrator
+### Containers and Microservices: The Need For An Orchestrator
 
 The ability to run complete services in the form of processes (a.k.a containers) on the same OS was revolutionary. It brought a lot of possibilities of its own:
 
@@ -294,7 +277,7 @@ You use containers to make the best use of the hardware at hand. However, with s
 
 You need a container orchestrator!
 
-**Kubernetes terminology and architecture**
+### Kubernetes terminology and architecture
 
 Kubernetes is a Greek word that [stands for helmsman](https://en.wikipedia.org/wiki/Kubernetes) or captain. It is the governor of your cluster, the maestro of the orchestra. To be able to do this critical job, Kubernetes was designed in a highly modular manner. Each part of the technology provides the necessary foundation for the services that depend on it. The illustration below represents a high overview of how the application works. Each module is contained inside a larger one that relies on it to function. Let’s dig deeper into each one of these.
 
@@ -309,12 +292,11 @@ Also referred to as the control plane, it is the most basic part of the whole sy
 The core is also responsible for contacting other layers (through kubelet) to fully manage containers. Let’s have a brief look at each of them:
 
   
-
-**Container Runtime**
+### Container Runtime
 
 Kubernetes uses [Container Runtime Interface](https://kubernetes.io/blog/2016/12/container-runtime-interface-cri-in-kubernetes/) **(CRI)** to transparently manage your containers without necessarily having to know (or deal with) the runtime used. When we discussed containers, we mentioned that Docker, despite its popularity, is not the only container management system available. Kubernetes uses [containerd](https://containerd.io/) (pronounced _container d_) by default as a container runtime. This is how you are able to issue standard Docker commands against Kubernetes containers. It also uses **rkt** as an alternative runtime. Don’t be too confused at this part. This is the very inner workings of Kubernetes that, although you need to understand, you won’t have to deal with almost entirely. Kubernetes abstracts this layer through its rich set of APIs.
 
-**The Network Plugin**
+### The Network Plugin
 
 As we discussed earlier, a container orchestration system is responsible (among other things) for managing the network through which containers and services communicate. Kubernetes uses a library called [Container Network Interface](https://github.com/containernetworking/cni) **(CNI)** as an interface between the cluster and various network providers. There are a number of network providers that can be used in Kubernetes. This number is constantly changing. To name a few:
 
@@ -325,37 +307,37 @@ As we discussed earlier, a container orchestration system is responsible (among 
 
 The list is too long to mention here. You might be asking: why does Kubernetes need more than one networking provider to choose from? Kubernetes was designed mainly to be deployed in diverse environments. A Kubernetes node can be anything from a bare metal physical server, a virtual machine, or a cloud instance. With such diversity, you have a _virtually_ endless number of options for how your containers will communicate with each other. This requires more than one to choose among. That is why Kubernetes designers chose to abstract the network provider layer behind CNI.
 
-**The Volume Plugin**
+## The Volume Plugin
 
 A volume broadly refers to the storage that will be availed for the [pod](https://kubernetes.io/docs/concepts/workloads/pods/pod/). A pod is one or more containers managed by Kubernetes as one unit. Because Kubernetes was designed to be deployed in multiple environments, there is a level of abstraction between the cluster and the underlying storage. Kubernetes also uses the CSI ([Container Storage Interface](https://github.com/container-storage-interface/spec)) to interact with various storage plugins that are already available.
 
-**Image Registry**
+## Image Registry
 
 Kubernetes must contact an image registry (whether public or private) to be able to pull images and spin out containers.
 
-**Cloud Provider**
+## Cloud Provider
 
 Kubernetes can be deployed on almost any platform you may think of. However, the majority of users resort to cloud providers like AWS, Azure, or GCP to save even more costs. Kubernetes depends on the cloud provider APIs to perform scalability and resources provisioning tasks, such as provisioning load balancers, accessing cloud storage, utilizing the inter-node network and so on.
 
-**Identity Provider**
+## Identity Provider
 
 If you’re provisioning a Kubernetes cluster in a small company with a small number of users, authentication won’t be a big issue. You can create an account for each user and that’s it. But, if you’re working in a large enterprise, with hundreds or even thousands of developers, operators, testers, security professionals...etc. then having to manually create an account for each person may quickly turn into a nightmare. Kubernetes designers had that in mind when working on the authentication mechanism. You can use your own identity provider system to authenticate your users to the cluster as long as it uses [OpenID connect](https://openid.net/connect/).
 
-Kubernetes Controllers Layer
+## Kubernetes Controllers Layer
 
 This is also referred to as the service fabric layer. It is responsible for some higher level functions of the cluster: routing, self-healing, load balancing, service discovery, and basic deployment(for more info, [https://kubernetes.io/docs/concepts/services-networking](https://kubernetes.io/docs/concepts/services-networking/), and [https://kubernetes.io/docs/concepts/workloads/controllers/deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) ), among other things.
 
-Management Layer
+## Management Layer
 
 This is where policy enforcement options are applied. In this layer, functions like metrics collection, and autoscaling are performed. It also controls authorization, and quotas among different resources like the network and storage. You can learn more about resource quotas [here](https://kubernetes.io/docs/concepts/policy/resource-quotas/).
 
-The Interface Layer
+## The Interface Layer
 
 In this layer, we have the client-facing tools that are used to interact with the cluster. [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) is the most popular client-side program out there. Behind the scenes, it issues RESTful API requests to Kubernetes and displays the response either in JSON or YAML depending on the options provided. _kubectl_ can be easily integrated with other higher level tools to facilitate cluster management.
 
 In the same area, we have [helm](https://helm.sh/), which can be thought of as an application package manager running on top of Kubernetes. Using **helm-charts**, you can build a full application on Kubernetes by just defining its properties in a configuration file.
 
-The DevOps and Infrastructure Environment
+## The DevOps and Infrastructure Environment
 
 Kubernetes is one of the busiest open-source projects out there. It has a large, vibrant community and it’s constantly changing to adapt to new requirements and challenges. Kubernetes provides a tremendous number of features. Although it is only a few years old, it is able to support almost all types of environments. Kubernetes is used in many modern software building/deployment practices including:
 
@@ -369,7 +351,7 @@ Kubernetes is one of the busiest open-source projects out there. It has a large,
 
 Kubernetes introduces a lot of vocabulary to describe how your application is organized. We'll start from the smallest layer and work our way up.
 
-Pods
+### Pods
 
 A Kubernetes pod is a group of containers, and is the smallest unit that Kubernetes administers. Pods have a single IP address that is applied to every container within the pod. Containers in a pod share the same resources such as memory and storage. This allows the individual Linux containers inside a pod to be treated collectively as a single application, as if all the containerized processes were running together on the same host in more traditional workloads. It’s quite common to have a pod with only a single container, when the application or service is a single process that needs to run. But when things get more complicated, and multiple processes need to work together using the same shared data volumes for correct operation, multi-container pods ease deployment configuration compared to setting up shared resources between containers on your own.
 
@@ -377,7 +359,7 @@ A Kubernetes pod is a group of containers, and is the smallest unit that Kuberne
 
 For example, if you were working on an image-processing service that created GIFs, one pod might have several containers working together to resize images. The primary container might be running the non-blocking microservice application taking in requests, and then one or more auxiliary (side-car) containers running batched background processes or cleaning up data artifacts in the storage volume as part of managing overall application performance.
 
-Deployments
+### Deployments
 
 Kubernetes deployments define the scale at which you want to run your application by letting you set the details of how you would like pods replicated on your Kubernetes nodes. Deployments describe the number of desired identical pod replicas to run and the preferred update strategy used when updating the deployment. Kubernetes will track pod health, and will remove or add pods as needed to bring your application deployment to the desired state.
 
@@ -387,7 +369,7 @@ A deployment in Kubernetes consists of a ReplicaSet with its Pod template. Consi
 
 The deployment will create a new ReplicaSet B of the V2 template with only 1 instance. And once this instance got created, it will scale down ReplicaSet A by 1 instance, and will keep doing that scaling up B and scaling down A, until B is fully populated and healthy and A reaches 0 instances. This is called rolling update deployment and helps keeping the old version of the service running while the new version is being provisioned.
 
-Services
+### Services
 
 The lifetime of an individual pod cannot be relied upon; everything from their IP addresses to their very existence are prone to change. In fact, within the DevOps community, there’s the notion of treating servers as either “pets” or “cattle.” A pet is something you take special care of, whereas cows are viewed as somewhat more expendable. In the same vein, Kubernetes doesn’t treat its pods as unique, long-running instances; if a pod encounters an issue and dies, it’s Kubernetes’ job to replace it so that the application doesn’t experience any downtime.
 
@@ -401,15 +383,15 @@ A service refers to the backend Pods by using labels, as per the earlier example
 
 Services simplify network communications for a microservices architected solution.
 
-Nodes
+### Nodes
 
 A Kubernetes node manages and runs pods; it's the machine (whether virtualized or physical) that performs the given work. Just as pods collect individual containers that operate together, a node collects entire pods that function together. When you're operating at scale, you want to be able to hand work over to a node whose pods are free to take it.
 
-Master Server
+### Master Server
 
 This is the main entry point for administrators and users to manage the various nodes. Operations are issued to it either through HTTP calls or connecting to the machine and running command-line scripts.
 
-Cluster
+### Cluster
 
 A cluster is all of the above components put together as a single unit. Consists of nodes (real machines or VMs). One or more of these nodes are master(s) which control the others.
 
@@ -427,7 +409,7 @@ A ReplicaSet is a Kubernetes controller, which runs in the background and makes 
 
 Note that ReplicaSets are only concerned about deploying, monitoring and scaling Pods.
 
-**Kubernetes components**
+## Kubernetes components
 
 With a general idea of how Kubernetes is assembled, it's time to take a look at the various software components that make sure everything runs smoothly. Both the master server and individual worker nodes have three main components each.
 
@@ -459,38 +441,36 @@ Node components run on every node, maintaining running pods and providing the Ku
 
   
 
-**Master server components**
+## Master server components
 
-API Server
+### API Server
 
 The API server exposes a REST interface to the Kubernetes cluster. All operations against pods, services, and so forth, are executed programmatically by communicating with the endpoints provided by it.
 
-Scheduler
+### Scheduler
 
 The scheduler is responsible for assigning work to the various nodes. It keeps watch over the resource capacity and ensures that a worker node’s performance is within an appropriate threshold.
 
-Controller Manager
+### Controller Manager
 
 The controller-manager is responsible for making sure that the shared state of the cluster is operating as expected. More accurately, the controller manager oversees various controllers which respond to events (e.g., if a node goes down).
 
-**Worker node components**
+### Worker node components
 
-Kubelet
+#### Kubelet
 
 A Kubelet tracks the state of a pod to ensure that all the containers are running. It provides a heartbeat message every few seconds to the master server. If a replication controller does not receive that message, the node is marked as unhealthy.
 
-Kube Proxy
+#### Kube Proxy
 
 The Kube proxy routes traffic coming into a node from the service. It forwards requests for work to the correct containers.
 
-etcd
+####  etcd
 
 [etcd](https://coreos.com/etcd/docs/latest/) is a distributed key-value store that Kubernetes uses to share information about the overall state of a cluster. Additionally, nodes can refer to the global configuration data stored there to set themselves up whenever they are regenerated.
 
-What happens when you create a Pod on a Kubernetes Cluster?
 
-What happens when you create a Pod on a Kubernetes Cluster?
------------------------------------------------------------
+## What happens when you create a Pod on a Kubernetes Cluster?
 
 In a matter of seconds, the Pod is up and running on one of the cluster nodes. However, a lot has happened within those seconds. Let’s see:
 
@@ -499,8 +479,8 @@ In a matter of seconds, the Pod is up and running on one of the cluster nodes. H
 3.  The [kubelet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/) on the chosen node is notified that there is a pod that is pending execution.
 4.  The kubelet executes the Pod, and the latter starts running on the node.
 
-How Kubernetes Selects the Right node?
---------------------------------------
+## How Kubernetes Selects the Right node?
+
 
 Perhaps the hardest part of the above steps is when the Scheduler decides which node it should select for running the pod. Indeed, this part takes the most work as there are several algorithms that the Scheduler must use to make this decision. Some of those algorithms depend on user-supplied options, while Kubernetes itself calculates others. They can be explained like a set of questions that the Scheduler asks the node to decide it.
 
@@ -514,8 +494,8 @@ Sometimes, the user needs to make this decision on behalf of Kubernetes. Let’s
 
 As demonstrated in the above graph, the predicate decision resolves to either True (yes, deploy the pod on that node) or False (no, don’t deploy on that one).
 
-Are you a better candidate for having this pod (priorities)?
-------------------------------------------------------------
+## Are you a better candidate for having this pod (priorities)?
+
 
 In addition to true/false decisions a.k.a predicates, the scheduler executes some calculations (or functions) to determine which node is more suited to be hosting the pod in question.
 
@@ -525,8 +505,8 @@ Another example is when the scheduler favors a node that does not include other 
 
 Several decisions, like the above examples, are grouped, and weight is calculated for each node based on the final decision. The node with the highest priority wins the pod deployment.
 
-The final decision
-------------------
+## The final decision
+
 
 You may be asking, if there are so many factors that the Kubernetes Scheduler must consider before selecting a node for deploying the pod, how does it get to choose the right one?
 
@@ -536,8 +516,8 @@ You may be asking, if there are so many factors that the Kubernetes Scheduler mu
 4.  The scheduler runs priority tests against the possible nodes. Candidates are ordered by their score with the highest ones on the top. At this point, the highest-scoring possible node gets chosen. But sometimes there may be more than one node with the same score.
 5.  If nodes have the same score, they are moved to the final list. The Kubernetes Scheduler selects the winning node in a round-robin fashion to ensure that it equally spreads the load among the machines.
 
-What if that was not the best decision?
----------------------------------------
+## What if that was not the best decision?
+
 
 In busy Kubernetes Clusters, the time between the Scheduler choosing the right node and the kubelet on that node executing the pod may be sufficient for changes to occur on the nodes. Even if that time is no more than a few milliseconds, a pod may get terminated on one of the nodes that were filtered out due to insufficient memory. That node could’ve had a higher score on the priority test only if it wasn’t overloaded back then. But now, perhaps a less-suitable node was selected for the pod.
 
@@ -545,8 +525,8 @@ Some projects aim at addressing this situation like the Kubernetes Descheduler P
 
 Perhaps a more difficult situation could occur when the opposite scenario happens. Let’s say that a node was tested against whether or not it could provide 2 GB of memory. At the time the Scheduler was doing the predicate check, the node did have some spare RAM. However, while kubelet is executing the pod against the node, a DaemonSet was deployed to the same node. This DaemonSet entailed some resource-heavy operation that consumed the remaining 2 GB. Now, when the pod tries to run, and since it is missing the amount of memory it requires to function correctly, it fails. If this pod was deployed using just a pod definition, then the application that it runs on would fail to start, and Kubernetes could do nothing about it. However, if this pod was part of a pod controller like a [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) or a [ReplicaSet](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/), then once it fails, the controller will detect that there is a smaller number of replicas than it should be handling. Accordingly, the controller will request another pod to be scheduled. The Scheduler will run all the checks again and schedules the pod to a different node. This is one of the reasons why it is always advised to use a higher-level object like Deployments when creating pods.
 
-User-defined decision-making
-============================
+## User-defined decision-making
+
 
 Earlier in this article, we mentioned that a user could simply choose to run a pod on a specific node using the [](https://kubernetes.io/docs/concepts/configuration/assign-pod-node/) [.spec.nodeSelector](https://kubernetes.io/docs/concepts/configuration/assign-pod-node/) parameter in the Pod definition or template. The
 
@@ -554,29 +534,10 @@ nodeSelector selects nodes that have specific one or more labels. However, somet
 
 requirements get more complicated. A nodeSelector, for example, selects nodes that have all the labels defined in the parameter. What if you want to make a more flexible selection?
 
-Node Affinity
--------------
+## Node Affinity
 
-Let’s consider our earlier example when we wanted to schedule our pod to run on the machines with the SSD disks. Let’s say that we want them also to use the eight-cored hosts. Node affinity allows for flexible decisions like this. The following pod template chooses nodes that have labels of feature=ssd or feature=eight-cores:
+Let’s consider our earlier example when we wanted to schedule our pod to run on the machines with the SSD disks. Let’s say that we want them also to use the eight-cored hosts. Node affinity allows for flexible decisions like this.
 
->     apiVersion: v1
->     kind: Pod
->     metadata:
->      name: mongo
->     spec:
->      affinity:
->        nodeAffinity:
->          requiredDuringSchedulingIgnoredDuringExecution:
->            nodeSelectorTerms:
->            - matchExpressions:
->              - key: feature
->                operator: In
->                values:
->                - ssd
->                - eight-cores
->      containers:
->      - name: mongodb
->        image: mogo
 
 ### The requiredDuringSchedulingIgnoredDuringExecution option
 
@@ -586,75 +547,16 @@ There’s a new option here: [requiredDuringSchedulingIgnoredDuringExecution](ht
 
 Let’s say that we’re interested in running the pod on our selected nodes. But, since launching the pod is of an absolute priority, we demand to run it even if the selected nodes are not available. In this case, we can use the [preferredDuringSchedulingIgnoredDuringExecution](https://kubernetes.io/docs/concepts/configuration/assign-pod-node/) option. This option will try to run the pod on the nodes specified by the selector. But if those nodes are not available (failed the tests), the Scheduler will try to run the pod on the next best node.
 
-The Node Anti-Affinity
-----------------------
+##  The Node Anti-Affinity
 
-Some scenarios require that you don’t use one or more nodes except for particular pods. Think of the nodes that host your monitoring application. Those nodes shouldn’t have many resources due to the nature of their role. Thus, if other pods than those which have the monitoring app are scheduled to those nodes, they hurt monitoring and also degrades the application they are hosting. In such a case, you need to use node anti-affinity to keep pods away from a set of nodes. The following is the previous pod definition with anti-affinity added:
 
-> apiVersion: v1
-> 
-> kind: Pod
-> 
-> metadata:
-> 
->  name: mongo
-> 
-> spec:
-> 
->  affinity:
-> 
->    nodeAffinity:
-> 
->      requiredDuringSchedulingIgnoredDuringExecution:
-> 
->        nodeSelectorTerms:
-> 
->        - matchExpressions:
-> 
->          - key: feature
-> 
->            operator: In
-> 
->            values:
-> 
->            - ssd
-> 
->            - eight-cores
-> 
->          - key: role
-> 
->            operator: NotIn
-> 
->            values:
-> 
->            - monitoring
-> 
->  containers:
-> 
->  - name: mongodb
-> 
->    image: mogo
+Some scenarios require that you don’t use one or more nodes except for particular pods. Think of the nodes that host your monitoring application. Those nodes shouldn’t have many resources due to the nature of their role. Thus, if other pods than those which have the monitoring app are scheduled to those nodes, they hurt monitoring and also degrades the application they are hosting. In such a case, you need to use node anti-affinity to keep pods away from a set of nodes.
 
-Adding another key to the matchExpressions with the operator NotIn will avoid scheduling the mongo pods on any node labelled role=monitoring.
-
-Nodes taints and Tolerations
-----------------------------
+## Nodes taints and Tolerations
 
 While nodes anti-affinity patterns allow you to prevent pods from running on specific nodes, they suffer from a drawback: the pod definition must explicitly declare that it shouldn’t run on those nodes. So, what if a new member joins the development team, writes a Deployment for her application, but forgets to exclude the monitoring nodes from the target nodes? Kubernetes administrators need a way to repel pods from nodes without having to modify every pod definition. That’s the role of [taints and tolerations](https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/).
 
-When you taint a node, it is automatically excluded from pod scheduling. When the schedule runs the predicate tests on a tainted node, they’ll fail unless the pod has toleration for that node. For example, let’s taint the monitoring node, mon01:
-
->     kubectl taint nodes mon01 role=monitoring:NoSchedule
-
-Now, for a pod to run on this node, it must have a toleration for it. For example, the following .spec.toleration:
-
->     tolerations:
->     - key: "role"
->       operator: "Equal"
->       value: "monitoring"
->       effect: "NoSchedule"
-
-matches the key, value, and effect of the taint on mon01. This means that mon01 will pass the predicate test when the Scheduler decides whether or not it can use it for deploying this pod.
+When you taint a node, it is automatically excluded from pod scheduling. When the schedule runs the predicate tests on a tainted node, they’ll fail unless the pod has toleration for that node.
 
 An important thing to notice, though, is that tolerations may enable a tainted node to accept a pod but it does not guarantee that this pod runs on that specific node. In other words, the tainted node mon01 will be considered as one of the candidates for running our pod. However, if another node has a higher priority score, it will be chosen instead. For situations like this, you need to combine the toleration with nodeSelector or node affinity parameters.
 
@@ -671,10 +573,9 @@ An important thing to notice, though, is that tolerations may enable a tainted n
 
 *   Taints and tolerations work in the same manner as node affinity. However, their default action is to repel pods from the tainted nodes unless the pods have the necessary tolerations (which are just a key, a value, and an effect). Tolerations are often combined with node affinity or node selector parameters to guarantee that only the matched nodes are used for pod scheduling.
 
-State of the Pods
+## State of the Pods
 
-The difference between a Statefulset and a Deployment
-=====================================================
+### The difference between a Statefulset and a Deployment
 
 A Statefulset is a Kubernetes controller that is used to manage and maintain one or more Pods. However, so do other controllers like ReplicaSets and, the more robust, Deployments. So what does Kubernetes use StatefulSets for? To answer this question, we need to discuss stateless versus stateful applications.
 
@@ -686,323 +587,19 @@ Given this difference, Deployment is more suited to work with stateless applicat
 
 ![kubernetes statefulsets illustration](https://www.magalix.com/hs-fs/hubfs/kubernetes%20statefulsets%20illustration.png?width=1200&name=kubernetes%20statefulsets%20illustration.png)
 
-Exposing a StatefulSet
-======================
+### Exposing a StatefulSet
+
 
 A Kubernetes Service acts as an abstraction layer. In a stateless application like an Nginx web server, the client does not (and should not) care which pod receives a response to the request. The connection reaches the Service, and it routes it to any backend pod. This is not the case in stateful apps. In the above diagram, a Solr pod may need to reach the Zookeeper master, not any pod. For this reason, part of the Statefulset definition entails a [Headless Service](https://www.magalix.com/blog/kubernetes-services-101-the-pods-interfaces). A Headless Service does not contain a ClusterIP. Instead, it creates several Endpoints that are used to produce DNS records. Each DNS record is bound to a pod. All of this is done internally by Kubernetes, but it’s good to have an idea about how it does it.
-
-How To Deploy a Stateful Application Using Kubernetes Statefulset?
-==================================================================
-
-In below code snippet we are deploying a stateful application. For simplicity, are using Apache as the pod image. The deployment is made up of three Apache web servers; all of them are connected to a persistent volume. Create a new file and name it apache\_stateful.yaml. Add the following to it:
-
-> kind: StorageClass  
-> apiVersion: [storage.k8s.io/v1](http://storage.k8s.io/v1)  
-> metadata:  
->   name: www-disk  
-> provisioner: [kubernetes.io/gce-pd](http://kubernetes.io/gce-pd)  
-> parameters:  
->   type: pd-ssd  
->   zone: us-central1-a  
-> \---  
-> apiVersion: apps/v1  
-> kind: StatefulSet  
-> metadata:  
->   name: webapp  
-> spec:  
->   selector:  
->     matchLabels:  
->       app: web  
->   serviceName: web-svc  
->   replicas: 3  
->   template:  
->     metadata:  
->       labels:  
->         app: web  
->     spec:  
->       terminationGracePeriodSeconds: 10  
->       containers:  
->       - name: web  
->         image: httpd:2.4  
->         ports:  
->         - containerPort: 80  
->           name: http  
->         volumeMounts:  
->         - name: www  
->           mountPath: /var/www/html  
->   volumeClaimTemplates:  
->   - metadata:  
->       name: www  
->       annotations:  
->         [volume.beta.kubernetes.io/storage-class](http://volume.beta.kubernetes.io/storage-class): www-disk  
->     spec:  
->       accessModes: \[ "ReadWriteOnce" \]  
->       resources:  
->         requests:  
->           storage: 1Gi
-
-Before we start discussing the details of this definition, notice that the file actually contains two definitions: the storage class that the StatefulSet is using and the StatefulSet itself.
-
-Storage Class
--------------
+### Storage Class
 
 Storage classes are Kubernetes objects that let the users specify which type of storage they need from the cloud provider. Different storage classes represent various service quality, such as disk latency and throughput, and are selected depending on the scenario they are used for and the cloud provider’s support. Persistent Volumes and Persistent Volume Claims use Storage Classes.
 
-Persistent Volumes and Persistent Volume Claims
------------------------------------------------
+### Persistent Volumes and Persistent Volume Claims
 
 Persistent volumes act as an abstraction layer to save the user from going into the details of how storage is managed and provisioned by each cloud provider (in this example, we are using Google GCE). By definition, StatefulSets are the most frequent users of Persistent Volumes since they need permanent storage for their pods.
 
-A Persistent Volume Claim is a request to use a Persistent Volume. If we are to use the Pods and Nodes analogy, then consider Persistent Volumes as the “nodes” and Persistent Volume Claims as the “pods” that use the node resources. The resources we are talking about here are storage properties, such as storage size, latency, throughput, etc.
-
-Provisioning The StatefulSet
-----------------------------
-
-> apiVersion: apps/v1
-> 
-> kind: StatefulSet
-> 
-> metadata:
-> 
->   name: webapp
-
-The definition starts with the API version that recognizes StatefulSets, the kind of the resource, and the metadata. In this example, we only added the resource name to the metadata, but you can also add labels to identify it further.
-
-  
-
-> spec:
-> 
->   selector:
-> 
->     matchLabels:
-> 
->       app: web
-> 
->   serviceName: web-svc
-
-The next thing we have is the spec, and the spec contains the pod selector. Like other Kubernetes controllers (for example, Deployments and ReplicaSets), StatefulSets use matchLabels to choose and acquire the pods that it should manage.
-
-We also have a reference to a service that we are yet to create, the Headless Service that provides access to our pods.
-
-> replicas: 3
-
-The replicas object defines how many pods will this StatefulSet create.
-
-The pod template defines how the pods get created. It contains the labels that the pods have (they must match the pod selector).
-
->   template:
-> 
->     metadata:
-> 
->       labels:
-> 
->         app: web
-> 
->     spec:
-> 
->       terminationGracePeriodSeconds: 10
-> 
->       containers:
-> 
->       - name: web
-> 
->         image: httpd:2.4
-> 
->         ports:
-> 
->         - containerPort: 80
-> 
->           name: http
-> 
->         volumeMounts:
-> 
->         - name: www
-> 
->           mountPath: /var/www/html
-
-The pod template spec part contains the terminationGracePeriodSeconds. This setting defines how long should Kubernetes wait after sending the shutdown signal to the pod before forcing deleting it. Kubernetes strongly recommends that you do not set this value to 0 (disabled) as pods in a StatefulSet are usually parts of clusters and should be allowed enough period to do a clean shutdown.
-
-The containers part defines the image that this container uses (Apache httpd:2.4 in our case) and the port that the container will listen on (80).
-
-The volumeMounts part is where you define the Persistent Volume Claim. The name of the volume claim is essential here, and it must match the VolumeClaimTemplate. It also represents the mount point that will be used inside the pod to access the persistent disk (/var/www/html).
-
-Creating the StatefulSet
-------------------------
-
-Now that we have the definition file in place, we can use kubectl to apply it as follows:
-
-Since the definition file contains a StorageClass and a StatefulSet resource, the following output is displayed:
-
-Our resources are available. Let’s see whether or not we have pods:
-
-You may notice two things here: (1) there is only one pod created while we asked for three, and (2) the pod name contains the StatefulSet name.
-
-This is the expected behavior. The StatefulSet will not create all the pods at once, like a Deployment, for example. It maintains order when starting and stopping the pods. Since StatefulSets maintain the pod identity, the pod name is the StatefulSet name followed by an incremental number.
-
-Wait a few seconds and issue kubectl get pods again, you should see an output similar to the following:
-
-Later on, the output becomes:
-
-All our pods are now started.
-
->   volumeClaimTemplates:  
->   - metadata:  
->       name: www  
->       annotations:  
->         [volume.beta.kubernetes.io/storage-class](http://volume.beta.kubernetes.io/storage-class): www-disk  
->     spec:  
->       accessModes: \[ "ReadWriteOnce" \]  
->       resources:  
->         requests:  
->           storage: 1Gi
-
-Creating a Headless Service for our StatefulSet
-===============================================
-
-Right now, the pods are running. But how can a web server access another one? This is done through the Service, so we need to create one. Open a new YAML file called apache\_statefulset\_service.yaml and add the following to it:
-
-> kubectl apply -f apache-stateful.yaml
-
-Since the definition file contains a StorageClass and a StatefulSet resource, the following output is displayed:
-
-> [storageclass.storage.k8s.io/www-disk](http://storageclass.storage.k8s.io/www-disk) created  
-> statefulset.apps/webapp created
-
-Our resources are available. Let’s see whether or not we have pods:
-
-> kubectl get pods
-> 
-> NAME       READY   STATUS              RESTARTS   AGE
-> 
-> webapp-0   0/1     ContainerCreating   0          8s
-
-You may notice two things here: (1) there is only one pod created while we asked for three, and (2) the pod name contains the StatefulSet name.
-
-This is the expected behavior. The StatefulSet will not create all the pods at once, like a Deployment, for example. It maintains order when starting and stopping the pods. Since StatefulSets maintain the pod identity, the pod name is the StatefulSet name followed by an incremental number.
-
-Wait a few seconds and issue kubectl get pods again, you should see an output similar to the following:
-
-> NAME       READY   STATUS              RESTARTS   AGE
-> 
-> webapp-0   1/1     Running             0          43s
-> 
-> webapp-1   0/1     ContainerCreating   0          11s
-
-Later on, the output becomes:
-
-> NAME       READY   STATUS    RESTARTS   AGE
-> 
-> webapp-0   1/1     Running   0          112m
-> 
-> webapp-1   1/1     Running   0          111m
-> 
-> webapp-2   1/1     Running   0          111m
-
-All our pods are now started.
-
-Creating a Headless Service for our StatefulSet
-===============================================
-
-Right now, the pods are running. But how can a web server access another one? This is done through the Service, so we need to create one. Open a new YAML file called apache\_statefulset\_service.yaml and add the following to it:
-
-> apiVersion: v1
-> 
-> kind: Service
-> 
-> metadata:
-> 
->   name: web-svc
-> 
->   labels:
-> 
->     app: web
-> 
-> spec:
-> 
->   ports:
-> 
->   - port: 80
-> 
->     name: web
-> 
->   clusterIP: None
-> 
->   selector:
-> 
->     app: web
-
-Don’t forget to specify the service name and the pod selector labels to match the ones that you defined in the StatefulSet definition file.
-
-Create the service by using kubectl:
-
-> kubectl apply -f apache\_statefulset\_service.yamlservice/web-access-svc created
-
-Listing the created components
-==============================
-
-Let’s have a look at the created components:
-
-> $ kubectl get statefulset
-> 
-> NAME     READY   AGE
-> 
-> webapp   3/3     21h
-> 
-> $ kubectl get pv
-> 
-> NAME                                       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                  STORAGECLASS   REASON   AGE
-> 
-> pvc-077a1891-a25b-11e9-9ecf-42010a800184   1Gi        RWO            Delete           Bound    default/www-webapp-2   www-disk                21h
-> 
-> pvc-e79d8843-a25a-11e9-9ecf-42010a800184   1Gi        RWO            Delete           Bound    default/www-webapp-0   www-disk                21h
-> 
-> pvc-fa398e2a-a25a-11e9-9ecf-42010a800184   1Gi        RWO            Delete           Bound    default/www-webapp-1   www-disk                21h
-
-And the Persistent Volume Claims. Let’s see how we can connect and use our pods.
-
-Connecting one pod to another through the Headless Service
-==========================================================
-
-We need to test our setup. Let’s open a bash shell to one of the pods:
-
-> kubectl exec -it webapp-0 bash
-
-The httpd image isn’t shipped with curl by default, so we need to install it:
-
-> apt update && apt install curl
-
-Once it is installed, we can try connecting to the Service:
-
-> root@[webapp-0:/usr/local/apache2#](http://webapp-0/usr/local/apache2) curl web-svc<html><body><h1>It works!</h1></body></html>>
-
-This is the default page that Apache displays. The Service is routing the request to the backend pods.
-
-The StatefulSet is all about uniquely identifying pods. So, let’s try connecting to a specific pod:
-
-By prefixing the service name to the pod name, you can connect to that specific pod.
-
-Deleting the StatefulSet
-========================
-
-We start by deleting the Headless Service:
-
-> kubectl delete -f apache\_stateful\_service.yamlservice "web-svc" deleted
-
-We could equally achieve the same result by running kubectl delete service web-svc
-
-To delete the StatefulSet with the Persistent Volume and the Persistent Volume Claims, we use the definition file:
-
-> kubectl delete -f [apache\_stateful.yamlstorageclass.storage.k8s.io](http://apache_stateful.yamlstorageclass.storage.k8s.io) "www-disk" deletedstatefulset.apps "webapp" deleted
-
-The controller honors the ten seconds grace time and gives the pods time to clean up. In our example, Apache should not take more than a few milliseconds to shut down. But, if it were serving thousands of requests, it would take more time to terminate.
-
-*   A StatefulSet is another Kubernetes controller that manages pods just like Deployments. But it differs from a Deployment in that it is more suited for stateful apps.
-*   A stateful application requires pods with a unique identity (for example, hostname). One pod should be able to reach other pods with well-defined names.
-*   For a StatefulSet to work, it needs a Headless Service. A Headless Service does not have an IP address. Internally, it creates the necessary endpoints to expose pods with DNS names. The StatefulSet definition includes a reference to the Headless Service, but you have to create it separately.
-*   By nature, a StatefulSet needs persistent storage so that the hosted application saves its state and data across restarts. Kubernetes provides Storage Classes, Persistent Volumes, and Persistent Volume Claims to provide an abstraction layer above the cloud provider’s storage-offering mechanism.
-*   Once the StatefulSet and the Headless Service are created, a pod can access another one by name prefixed with the service name.
-
-Cluster Networking
+### Cluster Networking
 
 Kubernetes is a technology that helps you get the most out of your hardware. Containers are deployed on several nodes, making sure that every CPU cycle, every byte of memory, and every block of storage is not wasted. However, this is no easy task. Several challenges must be addressed when designing how the cluster will handle networking among containers:
 
@@ -1011,8 +608,7 @@ Kubernetes is a technology that helps you get the most out of your hardware. Con
 *   How the cluster can receive external traffic. This topic is also covered by [Kubernetes Services](https://www.magalix.com/blog/kubernetes-services-101-the-pods-interfaces).
 *   How a pod can contact another pod on the same node or on a different one, which is the main focus of this article.
 
-Kubernetes Networking Rules
-===========================
+#### Kubernetes Networking Rules
 
 Kubernetes is a highly modular, open-source project. Several components were left to the community to develop. In particular, implementing a cluster-networking solution must conform to a set of high-level rules. They can be summarized as follows:
 
@@ -1028,23 +624,21 @@ So, as you can see Kubernetes eliminates the need for NAT or link containers.
 
 There are a number of networking models that adhere to the above rules. In this article, we’ll select some of them for discussion. But, before listing the different network plugin examples, let’s have a quick overview of some important Kubernetes networking terms.
 
-What Is An Overlay Network?
----------------------------
+#### What Is An Overlay Network?
 
 In general, we can define networks as underlay and overlay types:
 
-### Underlay network
+#### Underlay network
 
 Underlay network is closer to the physical layer. It includes switches, routers, VLANs and so on. It is the basis on which overlay networks are built. It tends to be less scalable due to technical limitations. However, since it’s closer to the actual hardware, it is slightly faster than an overlay.
 
-### Overlay network
+#### Overlay network
 
 Overlay network refers to the virtual network layer. In this type, you’ll hear terms like veth (virtual eth or virtual network interface), and [VxLAN](https://en.wikipedia.org/wiki/Virtual_Extensible_LAN). It is designed to be highly scalable than the underlying network. For example, while VLANs in the underlying network support only 4096 identifiers, [VxLAN can reach up to 16 million ones](https://whatis.techtarget.com/definition/VXLAN).
 
 Kubernetes supports both networking models, so you can base your model of choice on other factors than whether or not the cluster can handle it.
 
-What is a Container Network Interface (CNI)?
-============================================
+## What is a Container Network Interface (CNI)?
 
 A CNI is simply a link between the container runtime (like Docker or rkt) and the network plugin. The network plugin is nothing but the executable that handles the actual connection of the container to or from the network, according to a set of rules defined by the CNI. So, to put it simply, a CNI is a set of rules and [Go](https://en.wikipedia.org/wiki/Go_(programming_language)) libraries that aid in container/network-plugin integration.
 
@@ -1092,7 +686,6 @@ Then we briefly discussed some of the Kubernetes networking concepts that help y
 
 Deciding on which network plugin to use with your coming project largely depends on what this project is, its network requirements, and the level and type of network security it needs to implement.
 
-The Cluster Sailors
 
 What Is a Pod in Kubernetes?
 ============================
@@ -1112,280 +705,25 @@ Having both containers on the same pod allows them to communicate through the lo
 
 ![two containers in the same kubernetes pod-1](https://www.magalix.com/hs-fs/hubfs/two%20containers%20in%20the%20same%20kubernetes%20pod-1.jpg?width=467&name=two%20containers%20in%20the%20same%20kubernetes%20pod-1.jpg)
 
-Our First Pod
-=============
+# FAQs
 
-In order to work with this example, you’ll need a Kubernetes cluster running. Open your favorite text editor, create a new file called pods01.yaml and add the following to it:
-
-> apiVersion: v1
-> 
-> kind: Pod
-> 
-> metadata:
-> 
->   name: webserver
-> 
-> spec:
-> 
->   containers:
-> 
->   - name: webserver
-> 
->     image: nginx:latest
-> 
->     ports:
-> 
->     - containerPort: 80
-
-Let’s first have a quick look at each line in this file:
-
-*   [apiVersion](https://kubernetes.io/docs/concepts/overview/kubernetes-api/): this is the version of the API used by the cluster. With new versions of Kubernetes being released, new functionality is introduced and, hence, new API versions may be defined. For the pod object, we use API version v1.
-*   [Metadata](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#metadata): here we can define data about the object we are about to create. In this example, we only provide the name of the pod. But you can provide other details like the namespace.
-*   The [spec](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status) part defines the characteristics that a given Kubernetes object _should_ have. It is the cluster’s responsibility to update the status of the object to always match the desired configuration. In our example, the spec instructs that this object (the pod) should have one container with some attributes.
-*   **containers:** the _containers_ part is an array where one or more container specs can be added. For example:
-    *   The name that this container will have.
-    *   The image on which it is based.
-    *   The port(s) that will be open.
-
-Let’s _apply_ this configuration to the cluster. Issue the following command:
-
-> kubectl apply -f pods01.yaml
-
-You should see an output similar to the following:
-
-> pod/webserver created
-
-Kubectl
-=======
-
-[Kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) is the client tool that is used to send API requests to Kubernetes. You could’ve used kubectl to achieve the same results using a command like the following:
-
-> kubectl run webserver --image=nginx --port=80
-
-However, it is highly recommended that you use YAML (or JSON) files to build and configure your cluster. This will allow you to put your infrastructure under a version control system like [Git](https://git-scm.com/).
-
-Kubectl can be used for building, deleting, viewing, and updating Kubernetes resources. In fact, kubectl sends API requests to the cluster behind the scenes. So, technically you can get rid of the tool and issue all your cluster commands through an HTTP client like [cURL](https://en.wikipedia.org/wiki/CURL). However, it is strongly recommended that you use kubectl; as it is far easier than sending raw HTTP requests.
-
-Viewing Your Pods
-=================
-
-One of the most repetitive tasks you’ll do as a [K8s](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) (k8s is the de facto abbreviation for Kubernetes) administrator is to view the status of your cluster resources. The following command allows you to view the pods running on your cluster:
-
-> kubectl get pods
-
-The output should be similar to the following:
-
-> NAME READY STATUS RESTARTS AGE
-> 
-> webserver 1/1 Running 0 19m
-
-*   Notice that the READY column is displaying 1/1, which means that this pod has only one container out of one, and it is ready.
-*   The status is running, which means that the pod is in service and it can receive and respond to requests.
-*   The restarts column represents how many times this pod was restarted. Kubernetes will attempt to restart a failing pod whenever it fails.
-*   The age represents how much time has passed since this pod was created.
-
-Which Node Is This Pod Running On?
-==================================
-
-You’ll typically run Kubernetes on more than one node. The master node is responsible for scheduling pods on nodes. Kubernetes allows you to force a pod to be scheduled on a specific node. Let’s say you have recently purchased a powerful machine with a huge amount of memory, and you want your [MongoDB](https://www.mongodb.com/) pod(s) to always use this node in order to benefit from the increased RAM. But, is the pod running on this node as you wished? You can use the following command to make sure it is:
-
-> kubectl get pods -o wide
-
-The output should resemble the following:
-
-> NAME READY STATUS RESTARTS AGE IP NODE
-> 
-> webserver 1/1 Running 1 1h 10.1.0.4 docker-for-desktop
-
-Now, we have the node name (I’m using Kubernetes on macOS). We also have the internal IP address of the pod.
-
-I Need The Output In JSON
-=========================
-
-Like other Kubernetes components, kubectl was designed to be modular. You can have its output _piped_ to other tools. Commonly, tools use [JSON](https://en.wikipedia.org/wiki/JSON) as their preferred communication language. Kubectl allows you to have the output of its subcommands in either [YAML](https://en.wikipedia.org/wiki/YAML) or JSON, with YAML being the default. Let’s have a quick example:
-
-> kubectl get pods -o json
-
-The output is too long to be presented here. You can easily pipe it to a JSON parser like [jq](https://stedolan.github.io/jq/):
-
-> kubectl get pods -o json | jq
-
-I hope that by now you come to appreciate the power of kubectl.
-
-The Pod Is Failing But I Don’t Know Why
-=======================================
-
-While the get pods subcommand may be useful most of the times, there’s a good chance that you’ll need more details about a pod. Let’s say that you ran kubectl get pods and the output looked like the following:
-
-> NAME READY STATUS RESTARTS AGE
-> 
-> webserver 0/1 ErrImagePull 0 42m
-
-Later on, the output is something like:
-
-> NAME READY STATUS RESTARTS AGE
-> 
-> webserver 0/1 CrashLoopBackOff 0 45m
-
-The get pods subcommand shows that the pod is not ready. But, that’s it. To know what made the pod fail, let’s issue the following command:
-
-> kubectl describe pods webserver
-
-The output will be kind of verbose, so I’m not going to show all of it here, only the important parts:
-
-> Normal   Pulled                 47m                    kubelet, docker-for-desktop  Successfully pulled image "nginx:latest"
-> 
-> Warning  Failed                 3m29s (x4 over 4m58s)  kubelet, docker-for-desktop  Failed to pull image "ngnx:latest": rpc error: code = Unknown desc = Error response from daemon: pull access denied for ngnx, repository does not exist or may require 'docker login'
-
-It’s clear now that the pod was trying to pull an image that was misspelled (ngnx instead of the correct nginx).
-
-kubectl describe pods will give you more than just the status of the image. It will print any logs that the pod produces, which is invaluable when troubleshooting a misbehaving pod.
-
-Executing Commands Against Pods
-===============================
-
-If you’re a Docker user, you’d probably needed to execute commands against running containers, mostly for troubleshooting purposes. A Docker exec command may look like this:
-
-> docker exec -it webserver /bin/bash
-
-The above command will immediately execute /bin/bash against the container, which - if [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) is installed - will open a shell inside the container.
-
-Kubectl has borrowed this functionality from Docker. You can issue a very similar command against the pod as follows:
-
-> kubectl exec -it webserver -- /bin/bash
-
-Notice that we used the pod name not the container. Remember, pods host containers. We also used the -- to inform kubectl that we’re no longer adding any more subcommands or arguments and that the coming is the actual command that needs to be executed against the pod.
-
-We mentioned before that a pod can contain multiple containers, so which container will kubectl execute bash against? Good question. Kubectl will select the first available container in the pod. If you want to run the command against a specific container in a multi-container pod, you can do this by adding \-c container name option. More on that later.
-
-Terminating a Pod
-=================
-
-By default, Kubernetes will restart a pod if it exits. Let’s see this in action:
-
-> $ kubectl exec -it webserver -- /bin/bash -c "kill 1"$
-> 
-> kubectl get pods
-> 
-> NAME READY STATUS RESTARTS AGE
-> 
-> webserver 0/1 Completed 2 3h
-
-We killed Nginx, the main process that keeps the container running (hence, it has the pid of 1). When we check on the pods status we see that the status is no longer running. But, after a few seconds, we can see that the pod is in the running state again. The Age column is still reflecting 3 hours because Kubernetes did not _recreate_ the pod. It only restarted it.
-
-> $ kubectl get pods
-> 
-> NAME READY STATUS RESTARTS AGE
-> 
-> webserver 1/1 Running 3 3h
-
-But what if we really need the pod to go down? The following command will do the job:
-
-> kubectl delete pods webserver
-
-A Kubernetes object configuration file can also be used to terminate an object just like it was used to create it:
-
-> kubectl delete -f pods01.yaml
-
-Notice that here we didn’t specify pods as the type of resource that Kubernetes will act upon. This has been intelligently inferred by kubectl from the YAML file.
-
-Both commands may have similar results. However, a YAML file can contain more than one resource. For example, you can specify a deployment, a secret, and a volume in the same YAML file. Calling kubectl against the file will automatically create or terminate all the objects contained in it.
-
-Let’s Add A Second Container To The Pod
-=======================================
-
-As a bonus, let’s demonstrate how a pod can host more than one container. Let’s create another YAML file. Call it pods02.yaml and add the following:
-
-> apiVersion: v1
-> 
-> kind: Pod
-> 
-> metadata:
-> 
->   name: webserver
-> 
-> spec:
-> 
->   containers:
-> 
->   - name: webserver
-> 
->     image: nginx:latest
-> 
->     ports:
-> 
->     - containerPort: 80
-> 
->   - name: webwatcher
-> 
->     image: afakharany/watcher:latest
-
-The only change we made here is adding a new container to the containers array. The name of the container now is more important than before; as it will be used whenever you need to execute commands against this specific container in the pod.
-
-Again, let’s apply the configuration by issuing kubectl apply -f pods02.yaml then kubectl get pods. You should see an output close to the following:
-
-> NAME READY STATUS RESTARTS AGE
-> 
-> webserver 2/2 Running 0 8s
-
-Notice that the READY column now has two containers running out of two.
-
-The second container features a parser that will count the number of ‘n’ characters in the HTML returned from the web-server’s home page. In a real-world case, this may be processing JSON output from an API, but let’s keep things simple. The Dockerfile used to create this second container is as follows:
-
-> FROM python:3.6
-> 
-> RUN pip install requests
-> 
-> COPY watcher.py /
-> 
-> ENTRYPOINT \["python", "/watcher.py"\]
-
-And the watcher.py file contents are:
-
-> import requests  
-> import time  
-> r = requests.get("[http://127.0.0.1](http://127.0.0.1)").text  
-> while True:  
->     num = r.count("n")  
->     print("There are " + str(num) + " occurrences of 'n'")  
->     time.sleep(5)
-
-You don’t need any Python knowledge here. Just notice that the GET request (line 3) is directed to 127.0.0.1. This is the loopback interface, but it is shared by the web server and the watcher containers. Communicating with localhost provides as low network latency as possible.
-
-Since we have two containers in a pod, we will need to use the -c option with kubectl when we need to address a specific container. For example:
-
-> kubectl exec -it webserver -c webwatcher -- /bin/bash
-
-*   Kubernetes pods are the foundational unit for all higher Kubernetes objects.
-*   A pod hosts one or more containers. It can be created using either a command or a YAML/JSON file.
-*   Use kubectl to create pods, view the running ones, modify their configuration, or terminate them. Kuberbetes will attempt to restart a failing pod by default.
-*   If the pod fails to start indefinitely, we can use the kubectl describe command to know what went wrong.
-*   Finally, we had a demonstration showing how and why a pod can host more than one container.
-
-FAQs
-
-Resources: FAQs + further reading
----------------------------------
+## Resources: FAQs + further reading
 
 There's _a lot_ more to cover when it comes to Kubernetes. For more information on how Kubernetes works, you can read [this extensive breakdown from DigitalOcean](https://www.digitalocean.com/community/tutorials/an-introduction-to-kubernetes), as well as posts from the [Cloud Native Computing Foundation](https://www.cncf.io/newsroom/blog/). And, don’t miss Sensu CEO Caleb Hailey’s [webinar on August 13 @ 10am PT on monitoring Kubernetes](https://zoom.us/webinar/register/2615639142591/WN_EbMfvUzkSOuSTF-6foa1Mg), hosted by the CNCF.
 
-### FAQs
-
-#### What is Kubernetes used for?
+### What is Kubernetes used for?
 
 Kubernetes keeps track of your container applications that are deployed into the cloud. It restarts orphaned containers, shuts down containers when they’re not being used, and automatically provisions resources like memory, storage, and CPU when necessary.
 
-#### How does Kubernetes work with Docker?
+### How does Kubernetes work with Docker?
 
 Actually, Kubernetes supports several base container engines, and Docker is just one of them. The two technologies work great together, since Docker containers are an efficient way to distribute packaged applications, and Kubernetes is designed to coordinate and schedule those applications.
 
-#### How do I use Kubernetes?
+### How do I use Kubernetes?
 
 If you’re interested in trying Kubernetes out, you can install [Minikube](https://kubernetes.io/docs/tutorials/hello-minikube/) as a local testing environment. When you’re ready to try Kubernetes out for real, you’ll use [kubectl](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/) to deploy your application managed by Kubernetes.
 
-  
-
-**Benefits does Kubernetes offer**
+#### Benefits does Kubernetes offer
 
 ![](https://miro.medium.com/max/1355/1*UccIelFIJ5Ivqzdqk_w4fA.png)
 
@@ -1406,12 +744,11 @@ These key **K8S** features make your containerized application scale efficiently
 
   
 
-**Kubernetes vs Docker**
+## Kubernetes vs Docker
 
 Container orchestration is fast evolving and Kubernetes and Docker Swarm are the two major players in this field. Both Kubernetes and Docker Swarm are important tools that are used to deploy containers inside a cluster. Kubernetes and Docker Swarm has many their prominent niche USPs and Pros in the field and they are here to stay. Though both of them have quite a different and unique way to meet the goals, at the end of the day their endpoint remains quite near.
 
-Overview of Kubernetes
-----------------------
+### Overview of Kubernetes
 
 Kubernetes is based on years of Google’s experience of running workloads at a huge scale in production. As per Kubernetes website, “Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.”
 
@@ -1419,8 +756,7 @@ Kubernetes is based on years of Google’s experience of running workloads at a 
 
 It groups containers that make up an application into logical units for easy management and discovery. Kubernetes builds upon [15 years of experience of running production workloads at Google](http://queue.acm.org/detail.cfm?id=2898444), combined with best-of-breed ideas and practices from the community.
 
-Overview of Docker Swarm
-------------------------
+### Overview of Docker Swarm
 
 Docker swarm is Docker’s own container’s orchestration system. It uses the standard Docker API and networking, making it easy to drop into an environment where you’re already working with the Docker containers. Docker Swarm is designed to work around four key principles:
 
@@ -1431,8 +767,7 @@ Docker swarm is Docker’s own container’s orchestration system. It uses the s
 
   
 
-If both are same, which one to use?
------------------------------------
+### If both are same, which one to use?
 
 Although both of the orchestration tools are quite similar there are some technical and functional variations and differences which make them different and also good or bad in their own niches. Some of those points are listed below.
 
@@ -1469,19 +804,31 @@ Kubernetes network is flat, as it enables all pods to communicate with one anoth
 
 In a Docker Swarm, a node joining a cluster creates an overlay network of services that span all of the hosts in the Swarm and a host only Docker bridge network for containers. In Docker Swarm, users have the option to encrypt container data traffic when creating an overlay network by on their own.
 
-Benefits & drawbacks of Kubernetes
-----------------------------------
+### Benefits & drawbacks of Kubernetes
 
 ![](https://miro.medium.com/max/1024/0*Ep7gU9yH1Mi2xUQd.png)
 
-### Benefits of Kubernetes
+#### Benefits of Kubernetes
 
 *   Kubernetes is backed by the Cloud Native Computing Foundation (CNCF).
 *   Kubernetes has an impressively huge community among container orchestration tools. Over 50,000 commits and 1200 contributors.
 *   Kubernetes is an open source and modular tool that works with most OS.
 *   Kubernetes provides easy service organization with pods
 
-### Drawbacks of Kubernetes
+#### Drawbacks of Kubernetes
+
+*   When doing it yourself, Kubernetes installation can be quite complex with steep learning curve. An option to solve this issue is to opt for a managed Kubernetes-as-a-service such as ours.
+*   In Kubernetes, it is required to have a separate set of tools for management, including kubectl CLI.
+*   It is incompatible with existing Docker CLI and Compose tools
+
+#### Benefits & drawbacks of Docker Swarm
+
+*   Kubernetes is backed by the Cloud Native Computing Foundation (CNCF).
+*   Kubernetes has an impressively huge community among container orchestration tools. Over 50,000 commits and 1200 contributors.
+*   Kubernetes is an open source and modular tool that works with most OS.
+*   Kubernetes provides easy service organization with pods
+
+#### Drawbacks of Kubernetes
 
 *   When doing it yourself, Kubernetes installation can be quite complex with steep learning curve. An option to solve this issue is to opt for a managed Kubernetes-as-a-service such as ours.
 *   In Kubernetes, it is required to have a separate set of tools for management, including kubectl CLI.
@@ -1489,48 +836,32 @@ Benefits & drawbacks of Kubernetes
 
 ### Benefits & drawbacks of Docker Swarm
 
-*   Kubernetes is backed by the Cloud Native Computing Foundation (CNCF).
-*   Kubernetes has an impressively huge community among container orchestration tools. Over 50,000 commits and 1200 contributors.
-*   Kubernetes is an open source and modular tool that works with most OS.
-*   Kubernetes provides easy service organization with pods
-
-### Drawbacks of Kubernetes
-
-*   When doing it yourself, Kubernetes installation can be quite complex with steep learning curve. An option to solve this issue is to opt for a managed Kubernetes-as-a-service such as ours.
-*   In Kubernetes, it is required to have a separate set of tools for management, including kubectl CLI.
-*   It is incompatible with existing Docker CLI and Compose tools
-
-Benefits & drawbacks of Docker Swarm
-------------------------------------
-
-### Benefits of Docker Swarm
+#### Benefits of Docker Swarm
 
 *   Docker Swarm is easy to install with a fast setup
 *   Docker Swarm is a lightweight installation. It is simpler to deploy and Swarm mode is included in the Docker engine.
 *   Docker Swarm has an easier learning curve.
 *   Docker Swarm smoothly integrates with Docker Compose and Docker CLI. That’s because these are native Docker tools. Most of the Docker CLI commands will work with Swarm.
 
-### Drawbacks of Docker Swarm
+#### Drawbacks of Docker Swarm
 
 *   Docker Swarm provides limited functionality.
 *   Docker Swarm has limited fault tolerance.
 *   Docker Swarm have smaller community and project as compared to Kubernetes community
 *   In Docker Swarm, services can be scaled manually.
 
-  
+   
 
-  
+## Patterns
 
-**Patterns**
-
-Best Practice Patterns
+### Best Practice Patterns
 
 These patterns advocates usage of additional containers to complement the **primary / main container** and have these containers form an **atomic unit**. The usage of additional containers as recommended by design patterns are based on some of the following **design guidelines**:
 
 *   Separation of concerns
 *   Containers’ reusability (Cohesive containers); Recall Uncle Bob’s ([Robert Martin](https://en.wikipedia.org/wiki/Robert_C._Martin)) single responsibility principle (SOLID) when working with object-oriented programming
 
-Sidecar Pattern
+#### Sidecar Pattern
 
 Sidecar design pattern is a form of **single-node, multiple containers application patterns**. Sidecar pattern advocates the usage of additional container for extending or enhancing the main container. This container can be called as a **sidecar pattern**.
 
@@ -1552,11 +883,9 @@ The following are some of the related examples:
 *   Another example could be to use have web server deployed with a sidecar container that synchronizes file system with git repository; Notice the reusability of git synchronizer container. Application container is simply connecting to a Redis server on localhost. Following diagram represents the same  
     ![Sidecar container (git synchronizer)](https://vitalflux.com/wp-content/uploads/2017/12/Screen-Shot-2017-12-09-at-10.11.23-AM.png)
     
-    Figure 2. Sidecar container (git synchronizer) {_image credit: Kubernetes}  
-    _
     
 
-Ambassador Pattern
+#### Ambassador Pattern
 
 Ambassador pattern is another form of **single-node, multiple containers application patterns**. This pattern advocates usage of additional containers as proxies to the external group/cluster of servers. The primary goal is to **simplify the access of external servers** using the ambassador container. This container can be grouped as a logical atomic unit such that the application container can invoke this ambassador/proxy container which can, then, invoke the cluster of servers. The following is primary advantage of using ambassador container:
 
@@ -1576,7 +905,7 @@ The following are some of the examples:
 
 Figure 4. Ambassador (redis) container {_image credit: [Kubernetes](http://blog.kubernetes.io/2015/06/the-distributed-system-toolkit-patterns.html)_}
 
-Adapter Pattern
+#### Adapter Pattern
 
 Adapter pattern is yet another form of **single-node, multiple containers application patterns**. It advocates usage of additional containers to **present a simplified, homogenized view of an application running within a container**. These containers can be called as adapter container. The main container communicates with the adapter container through localhost or a shared local volume. This is unlike ambassador container which simply the access to external servers.
 
@@ -1586,7 +915,7 @@ A concrete example of the adapter pattern is adapters that ensure all containers
 
 Figure 5. Adaptor (monitoring) container
 
-Container Patterns for Kubernetes Pods
+#### Container Patterns for Kubernetes Pods
 
 Applying above container design patterns, Kuberentes pods can comprise of following containers in addition to main / application container.
 
@@ -1594,7 +923,7 @@ Applying above container design patterns, Kuberentes pods can comprise of follow
 *   One or more containers running within a pod for accessing external applications/servers (Redis cluster, memcache cluster); These are called **ambassador** container
 *   One or more containers running within a pod to allow access to application running within the container (Monitoring container); These are called as **adapter** containers
 
-Anti Patterns
+#### Anti Patterns
 
 1.  **Data or logs in containers** – Containers are ideal for stateless applications and are meant to be ephemeral. This means no data or logs should be stored in the container otherwise they’ll be lost when the container terminates. Instead use [volume mapping](http://blog.couchbase.com/2016/october/persisting-couchbase-data-across-container-restarts) to persist them outside the containers. [ELK stack](http://blog.arungupta.me/getting-started-elk-stack-wildfly/) could be used to store and process logs. If managed volumes are used during early testing process, then remove them using `-v` switch with the `docker rm` command.
 2.   **IP addresses of container** – Each container is assigned an IP address. Multiple containers communicate with each other to create an application, for example an application deployed on an application server will need to talk with a database. Existing containers are terminated and new containers are started all the time. Relying upon the IP address of the container will require constantly updating the application configuration. This will make the application fragile. Instead create services. This will provide a logical name that can be referred independent of the growing and shrinking number of containers. And it also provides a basic load balancing as well.
@@ -1609,9 +938,9 @@ Anti Patterns
 11.  **Root user** – Don’t run containers as root user. The host and the container share the same kernel. If the container is compromised, a root user can do more damage to the underlying hosts. Use `RUN groupadd -r couchbase && useradd -r -g couchbase couchbase` to create a group and a user in it. Use the `USER` instruction to switch to that user. Each `USER` creates a new layer in the image. Avoid switching the user back and forth to reduce the number of layers. Thanks to [@Aleksandar\_78](https://twitter.com/Aleksandar_78/status/792997901488234496) for this tip!
 12.  **Dependency between containers** – Often applications rely upon containers to be started in a certain order. For example, a database container must be up before an application can connect to it. The application should be resilient to such changes as the containers may be terminated or started at any time. In this case, have the application container wait for the database connection to succeed before proceeding further. Do not use wait-for scripts in Dockerfile for the containers to startup in a specific order. Particularly waiting for a certain number of seconds for a particular container to start is very fragile. Thanks to [@ratnopam](https://twitter.com/ratnopam/status/793115894004129792) for this tip!
 
-**Capacity Planning**
+## Capacity Planning
 
-Storage Dependency
+### Storage Dependency
 
 Let’s explore the most common runtime requirement of an application: persistent storage. By default, any modifications made to the filesystem of a running container are lost when the container is restarted. Kubernetes provides two solutions to ensure that changes persist: emptyDir and Persistent Volumes.
 
@@ -1620,16 +949,15 @@ Using Persistent Volumes, you can store data that does not get deleted even if t
 1.  Creating the Persistent Volume: this is the disk on which Pods _claim_ space. This step differs depending on the hosting environment.
 2.  Creating a Persistent Volume Claim: this is where you actually provision the storage for the Pod by claiming space on the Persistent Volume.
 
-The hostPort Dependency
+#### The hostPort Dependency
 
 If you are using the [hostPort](http://alesnosek.com/blog/2017/02/14/accessing-kubernetes-pods-from-outside-of-the-cluster/) option, you are explicitly allowing the internal container port to be accessible from outside the host. A Pod that uses hostPort cannot have more than one replica on the same host because of port conflicts. If no node can provide the required the port (let’s say it is a standard port number like port 80 or 443), then the Pod using in the hostPort option will never get scheduled. Additionally, this creates a one-to-one relationship between the Pod and its hosting node. So, in a cluster with four nodes, you can only have a maximum of four Pods that use the hostPort option (provided that the port is available on each node).
 
-Configuration Dependency
+#### Configuration Dependency
 
 Almost all applications are designed so that they can be customized through variables. For example, MySQL needs at least the initial root credentials; WordPress needs the database host and name, and so on. Kubernetes provides configMaps for injecting variables to containers inside Pods and Secrets for supplying confidential variables like account credentials.
 
-Resource Dependencies
-
+#### Resource Dependencies
   
 
 ![Kubernetes Patterns - Capacity](https://www.magalix.com/hs-fs/hubfs/Kubernetes%20Patterns%20-%20Capacity.jpg?width=720&name=Kubernetes%20Patterns%20-%20Capacity.jpg)
@@ -1650,8 +978,7 @@ The distinction between both resource types is crucial for a good design. Kubern
 *   **requests:** this is the minimum amount of resources that the Pod needs. For example, you may already have the knowledge that the hosted application will fail to start if it does not have access to at least 512 MB of memory.
 *   **limits:** the limits define the maximum amount of resources that you need to supply for a given Pod.
 
-How Are the Resource Requests and Limits Calculated?
-----------------------------------------------------
+## How Are the Resource Requests and Limits Calculated?
 
 Memory is calculated in bytes, but you are allowed to use units like Mi and Gi to specify the requested amount. Notice that you should not specify a memory limit that is higher than the amount of memory on your nodes. If you did, the Pod would never get scheduled. Additionally, since memory is a non-shareable resource as we discussed, if a container tried to request more memory than the limit, it will get killed. Pods that are created through a higher controller like a ReplicaSet or a Deployment have their containers restarted automatically when they crash or get terminated. Hence, it is always recommended that you create Pods through a controller.
 
@@ -1675,8 +1002,7 @@ Pod Priority and Preemption
 
 Sometimes you may need to have more fine-grained control over which of your Pods get evicted first in the event of resource starvation. You can guarantee that a given Pod get evicted last if you set the request and limit to equal values. However, consider a scenario when you have two Pods, one hosting your core application and another hosting its database. You need those Pods to have the highest priority among other Pods that coexist with them. But you have an additional requirement: you want the application Pods to get evicted _before_ the database ones do. Fortunately, Kubernetes has a feature that addresses this need: Pod Priority and preemption. Pod Priority and preemption is stable as of Kubernetes 1.14 or higher. The feature is enabled by default since Kubernetes version 1.11 (beta release). If your cluster version is less than 1.11, you will need to enable this feature explicitly.
 
-How Pods Get scheduled Given their PriorityClass Value?
--------------------------------------------------------
+## How Pods Get scheduled Given their PriorityClass Value?
 
 When we have multiple Pods with different PriorityClass values, the admission controller starts by sorting Pods according to their priority. Highest priority Pods (those having the highest PriorityClass numbers) get scheduled first as long as no other constraints are preventing their scheduling.
 
@@ -1684,8 +1010,7 @@ Now, what happens if there are no nodes with available resources to schedule a h
 
 This feature helps you when you design the cluster so that you ensure that the highest priority Pods (for example, the core application and database) are never evicted unless no other option is possible. At the same time, they also get scheduled first.
 
-Things to Consider in Your Design When Using QoS and Pod Priority
------------------------------------------------------------------
+## Things to Consider in Your Design When Using QoS and Pod Priority
 
 You may be asking what happens when you use resources and limits (QoS) combined with the PriorityClass parameter. Do they overlap or override each other? In the following lines, we show you some of the essential things to note when influencing the schedule decisions:
 
@@ -1693,9 +1018,9 @@ You may be asking what happens when you use resources and limits (QoS) combined 
 *   The scheduler considers the PriorityClass of the Pod before the QoS. It does not attempt to evict Pods unless higher-priority Pods need to be scheduled and the node does not have enough room for them.
 *   When the scheduler decides to preempt lower-priority pods, it attempts a clean shutdown and respects the grace period (thirty seconds by default). However, it does not honor[PodDisruptionBudget](https://kubernetes.io/docs/concepts/workloads/pods/disruptions/), which may lead to disrupting the cluster quorum of several low priority Pods.
 
-**Application Process Management**
+### Application Process Management
 
-What is Application Lifecycle Management
+#### What is Application Lifecycle Management
 
 Many programming languages frameworks implement the concept of lifecycle management. The term refers to how the platform can interact with the component it creates right after it starts or before it stops.
 
@@ -1705,7 +1030,7 @@ In the application process management pattern, we ensure that our containerized 
 
 ![25 png-1](https://www.magalix.com/hs-fs/hubfs/25%20png-1.png?width=720&name=25%20png-1.png)
 
-How Kubernetes Terminates Pods
+#### How Kubernetes Terminates Pods
 
 Through its lifecycle, a container may get terminated. Perhaps because the Pod it belongs to is being shut down or failing one or both of the liveness or readiness probes. In all cases, Kubernetes follows a standard way of destroying a running container: by sending kill signals. In the end, a container is just a process running on the machine.
 
@@ -1721,11 +1046,11 @@ SIGKILL is the same signal sent to a running process when you issue the popular 
 
 Once the kernel detects this signal, it stops provisioning any resources to the process in question. The kernel also stops any CPU threads currently in use by the dangling process. In other words, it cuts the power off the process, forcing it to die.
 
-Communicating with Containers
+#### Communicating with Containers
 
 So far, Kubernetes treats containers the same way any Linux system administrator deals with the running process: sending signals to the process or the kernel. But, because containers are part of larger applications with complex functions and tasks, signals are not enough. For that reason, Kubernetes offers postStart and preStop hooks.
 
-When Containers Starts with postStart Hook
+#### When Containers Starts with postStart Hook
 
 You can think of a hook as a placeholder for executing code at a specific stage. You may or may not use the hook depending on your needs. The postStart hook is a placeholder for any logic that you need to execute as soon as the container starts. Example use cases are many:
 
@@ -1733,7 +1058,7 @@ You can think of a hook as a placeholder for executing code at a specific stage.
 *   When the container needs to execute some activities before the primary process launches such as resetting users’ passwords or logging events to a log or database.
 *   When there is a need to fulfil a specific condition before the container comes into service, for example, you may probe an external API for several seconds; if the check fails after that number of seconds passes, the prober returns a non-zero exit code. When the non-zero exit code is returned, Kubernetes automatically kills the container’s main process.
 
-This is what happened in sequence:
+#### This is what happened in sequence:
 
 1.  Kubernetes pulled the nginx image
 2.  It created the container and prepared to start it
@@ -1741,7 +1066,7 @@ This is what happened in sequence:
 4.  The postStart script pauses the thread for ten seconds before it returns a non-zero exit status.
 5.  When Kubernetes detects the non-zero exit status, it kills and restarts the container again, and the whole cycle repeats indefinitely.
 
-postStart Script Methods
+#### postStart Script Methods
 
 postStart script uses the following methods for running the checks:
 
@@ -2303,9 +1628,7 @@ After installation, [create a Docker group](https://docs.docker.com/engine/insta
 
 
 
-  
-
-![](attachments/471992252/471992249.png)
+<img src="./attachments/471992249.png" alt="">
 
 **Foundational Patterns**
 
@@ -2488,7 +1811,7 @@ An _Operator_ is a Controller that uses a CustomResourceDefinitions to encapsu
 
 Kubernetes is the new application portability layer and the common denominator among everybody on the cloud. If you are a software developer or architect, the odds are that Kubernetes will become part of your life in one form or another. Learning about the Kubernetes patterns described here will change the way you think about this platform. I believe that Kubernetes and the concepts originating from it will become as fundamental as object-oriented programming concepts.
 
-![](attachments/471992252/471992250.png)
+<img src="./attachments/471992250.png" alt="">
 
   
 
