@@ -102,7 +102,7 @@ Ball Point
 5.  Allow the team one minute to discuss how to improve the process.
 6.  Repeat for five iterations. Make the fifth iteration a challenge. If you need to, make up some ridiculous statistic such as "The world record is 150 points. Can you beat that?"
 
-\
+
 
 1.  #### Conclusion 
 
@@ -252,8 +252,8 @@ Purpose: Trip to agile conference\
 
 An analysis of states:
 
-New -- Open, can't pay, can't approve, can't close\
-Submitted -- Open, can't pay, can approve, can't close\
+New -- Open, can't pay, can't approve, can't close
+Submitted -- Open, can't pay, can approve, can't close
 
 ||Is Open|Can Pay|Can Approve|Can Close|
 |--- |--- |--- |--- |--- |
@@ -1145,8 +1145,7 @@ time -- and then passed the stack to the next worker in the chain who
 will flip and stack one coin at a time. Once the stack have been
 processed by the team, they are considered "done".
 
-Workers may only pass the coins once the full batch of coins is
-complete.\
+Workers may only pass the coins once the full batch of coins is complete.
 
 1.  #### Team 2 - Agile 
 To process the coins. Each coin must be flipped before passing it to the
