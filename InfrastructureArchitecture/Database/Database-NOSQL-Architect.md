@@ -670,62 +670,17 @@ blog, the high-level comparison between them in Table 1 helps illustrate
 their differences. It also helps explain how these differences influence
 respective resilience design patterns for each product.
 
- {.table-wrap}
-Table 1. Comparison of MongoDB and Couchbase
+ ######  Throughout this blog post, for convenience we designate one Couchbase cluster per data center even though multiple clusters can be set up per data center. However, nodes in the same Couchbase cluster do not span across multiple data centers.
 
-MongoDB
+|MongoDB|Couchbase||||
+|--- |--- |--- |--- |--- |
+|Architecture||Master-slave|Peer-to-peer||
+|Replication||Master to slave (or primary to secondary) nodes|Local cluster|Primary to replica nodes|
+|Multiple cluster|Bi- or uni-directional Cross Data Center Replication (XDCR)||||
+|Sharding||Optional|Built-in||
+|Quorum|Read|Yes|No||
+|Write|Yes|||||
 
-
-
-
-Couchbase
-
-\* Throughout this blog post, for convenience we designate one Couchbase
-cluster per data center even though multiple clusters can be set up per
-data center. However, nodes in the same Couchbase cluster do not span
-across multiple data centers.
-
-Name
-
-Replica set/sharded cluster
-
-"Cluster"\*
-
-Architecture
-
-Master-slave
-
-Peer-to-peer
-
-Replication
-
-Master to slave (or primary to secondary) nodes
-
-Local cluster
-
-Primary to replica nodes
-
-Multiple cluster
-
-Bi- or uni-directional Cross Data Center Replication (XDCR)
-
-Sharding
-
-Optional
-
-Built-in
-
-Quorum
-
-Read
-
-Yes
-
-No
-
-Write
-
-Yes
 
 From the comparison above, we observe the following characteristics when
 designing a resilience pattern design:
@@ -741,43 +696,21 @@ different categories, as shown in the Table 2. For brevity, we will
 focus the examples on the following three categories: workload,
 durability, and application sharding.
 
- {.table-wrap}
-Table 2. Categories of Resilience Design Patterns
+ ###### Table 2. Categories of Resilience Design Patterns
 
-Category
+|Category|Pattern|
+|--- |--- |
+|Workload|General purpose mixed read and write|
+|Performance|High performance read and/or write|
+|Durability|100% durability|
+|High local and/or cross data center durability||
+|High availability (HA)|High availability local read and write|
+|High availability multi-data center read and write||
+|High Read and write consistency|High local data center read and write consistency|
+|High multi-data center read and write consistency||
+|Others|Administration, backup and restore, application sharding|
 
 
-Pattern
-
-Workload
-
-General purpose mixed read and write 
-
-Performance
-
-High performance read and/or write
-
-Durability
-
-100% durability
-
-High local and/or cross data center durability 
-
-High availability (HA)
-
-High availability local read and write
-
-High availability multi-data center read and write
-
-High Read and write consistency
-
-High local data center read and write consistency
-
-High multi-data center read and write consistency
-
-Others
-
-Administration, backup and restore, application sharding
 
 ### Standard minimal deployment
 
@@ -810,52 +743,12 @@ deployments:
     set can be deployed in only one data center if applications do not
     require remote DR capability.
 
- {.table-wrap}
-Table 3. MongoDB Standard Minimal Deployments
+###### Table 3. MongoDB Standard Minimal Deployments
+|Data Center 1|Data Center 2|Data Center 3||||
+|--- |--- |--- |--- |--- |--- |
+|1|Standard deployment with built-in DR capability|Minimum three nodes, which include one primary and two secondary nodes|Minimum two secondary nodes|Minimum two secondary or arbiter nodes.This is to ensure that should any one data center experience total failure, it is not excluded from quorum voting for new primary node.|In selected high traffic or important use cases, additional secondary nodes may be added in each data center. The purpose is to increase application read resilience so that surviving nodes won’t be overwhelmed in case of one or more secondary nodes fail in any data center.|
+|2|Special qualified use case without DR|Three (one primary, two secondary nodes)|||This deployment pattern is for use cases that do not require remote DR since applications can rebuild the entire dataset from an external data source.Furthermore, the lifespan of data can be relatively short-lived and may expire in a matter of minutes, if not seconds. In selected high traffic or important use cases, additional secondary nodes may be added to the replica set to help increase resilience.|
 
-Deployment Type\<
-
-
-MongoDB Replica Set Nodes Configuration\<
-
-Description\<
-
-Data Center 1
-
-Data Center 2
-
-Data Center 3
-
-1
-
-Standard deployment with built-in DR capability
-
-Minimum three nodes, which include one primary and two secondary nodes
-
-Minimum two secondary nodes
-
-Minimum two secondary or arbiter nodes.This is to ensure that should any
-one data center experience total failure, it is not excluded from quorum
-voting for new primary node.
-
-In selected high traffic or important use cases,
-additional secondary nodes may be added in each data center. The purpose
-is to increase application read resilience so that surviving nodes won't
-be overwhelmed in case of one or more secondary nodes fail in any data
-center.
-
-2
-
-Special qualified use case without DR
-
-Three (one primary, two secondary nodes)
-
-This deployment pattern is for use cases that do not require remote DR
-since applications can rebuild the entire dataset from an external data
-source.Furthermore, the lifespan of data can be relatively short-lived
-and may expire in a matter of minutes, if not seconds. In selected high
-traffic or important use cases, additional secondary nodes may be added
-to the replica set to help increase resilience.
 
 The following diagram illustrates the MongoDB "standard minimal
 deployment" pattern.
@@ -892,41 +785,13 @@ scenario if they were provisioned in different fault domains in the
 first place). With that, we feel that a minimal four nodes per data
 center are sufficient for most Couchbase use cases to start with.
 
- {.table-wrap}
-Table 4. Couchbase Standard Minimal Deployments
+###### Table 4. Couchbase Standard Minimal DeploymentsTable 4. Couchbase Standard Minimal Deployments
 
-Deployment Type
+|Data Center 1|Data Center 2|Data Center 3 (Optional)||||
+|--- |--- |--- |--- |--- |--- |
+|1|Standard deployment with built-in DR capability|4+ nodes|4+ nodes|4+ nodes|See description above|
+|2|Special qualified use case without DR|4+ nodes|||Same as MongoDB|
 
-
-Couchbase Replica Set Nodes Configuration
-
-Description
-
-Data Center 1
-
-Data Center 2
-
-Data Center 3 (Optional)
-
-1
-
-Standard deployment with built-in DR capability
-
-4+ nodes
-
-4+ nodes
-
-4+ nodes
-
-See description above
-
-2
-
-Special qualified use case without DR
-
-4+ nodes
-
-Same as MongoDB
 
 The following diagram illustrates the Couchbase "standard minimal
 deployment" pattern where each data center/cluster has two copies of the
@@ -962,65 +827,16 @@ MongoDB and Couchbase in terms of high availability, consistency,
 durability, and DR across local and multiple data centers. The following
 table highlights their differences.
 
- {.table-wrap}
-Table 5. Comparison of MongoDB and Couchbase Resilience Capabilities
+###### Table 5. Comparison of MongoDB and Couchbase Resilience CapabilitiesTable 5. Comparison of MongoDB and Couchbase Resilience Capabilities
 
-NoSQL Database
+|NoSQL Database|Data center|High Availability|High Consistency|High Durability|DR|
+|--- |--- |--- |--- |--- |--- |
+|* MCA (Multi-Cluster Awareness) and TbCR (Timestamp-based Conflict Resolution) will be available in a future Couchbase v4.x release.||||||
+|MongoDB|Local DC|No for Write <br />Yes for Read|Yes|Yes|No|
+|Multi DC|Yes|||||
+|Couchbase|Local DC|No for Write<br />Yes for Read|Yes|Yes|No|
+|Multi DC|Yes with MCA*|No|Yes with MCA and TbCR*|Yes|||
 
-
-Data center
-
-High Availability
-
-High Consistency
-
-High Durability
-
-DR
-
-\* MCA (Multi-Cluster Awareness) and TbCR ( [Timestamp-based Conflict
-Resolution](https://developer.couchbase.com/documentation/server/4.6/xdcr/xdcr-timestamp-based-conflict-resolution.html))
-will be available in a future Couchbase v4.x release.
-
-MongoDB
-
-Local DC
-
-No for Write\
-Yes for Read
-
-Yes
-
-Yes
-
-No
-
-Multi DC
-
-Yes
-
-Couchbase
-
-Local DC
-
-No for Write\
-Yes for Read
-
-Yes
-
-Yes
-
-No
-
-Multi DC
-
-Yes with MCA\*
-
-No
-
-Yes with MCA and TbCR\*
-
-Yes
 
 From the above comparison, we observe one similarity between MongoDB and
 Couchbase in their support for high-availability writes or the lack of.

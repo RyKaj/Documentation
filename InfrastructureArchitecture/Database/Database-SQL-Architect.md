@@ -257,88 +257,14 @@ These patterns were described in the entry on  [A Sane Approach to
 Primary
 Keys](http://database-programmer.blogspot.com/2008/01/database-skills-sane-approach-to.html).
 
- {.table-wrap}
-+-------------+-------------+-------------+-----------+-------------+
-| Pattern     | Relative    | Relative    | Type      | Notes       |
-| Name        | Column      | Row Count   |           |             |
-|             | Count       |             |           |             |
-+=============+=============+=============+===========+=============+
-| [Reference  | Small       | Small       | Permanent | Use         |
-| ](http://da |             |             |           | si          |
-| tabase-prog |             |             |           | ngle-column |
-| rammer.blog |             |             |           | character   |
-| spot.com/20 |             |             |           | primary     |
-| 08/01/datab |             |             |           | key.        |
-| ase-skills- |             |             |           |             |
-| sane-approa |             |             |           |             |
-| ch-to.html# |             |             |           |             |
-| rule1){.ext |             |             |           |             |
-| ernal-link} |             |             |           |             |
-+-------------+-------------+-------------+-----------+-------------+
-| [Small      | Small       | Small       | Permanent | Use         |
-| Master      |             |             |           | si          |
-| ](http://da |             |             |           | ngle-column |
-| tabase-prog |             |             |           | character   |
-| rammer.blog |             |             |           | primary     |
-| spot.com/20 |             |             |           | key.        |
-| 08/01/datab |             |             |           |             |
-| ase-skills- |             |             |           |             |
-| sane-approa |             |             |           |             |
-| ch-to.html# |             |             |           |             |
-| rule2){.ext |             |             |           |             |
-| ernal-link} |             |             |           |             |
-+-------------+-------------+-------------+-----------+-------------+
-| [Large      | Large       | Large       | Permanent | Use integer |
-| Master      |             |             |           | au          |
-| ](http://da |             |             |           | to-assigned |
-| tabase-prog |             |             |           | primary key |
-| rammer.blog |             |             |           |             |
-| spot.com/20 |             |             |           |             |
-| 08/01/datab |             |             |           |             |
-| ase-skills- |             |             |           |             |
-| sane-approa |             |             |           |             |
-| ch-to.html# |             |             |           |             |
-| rule3){.ext |             |             |           |             |
-| ernal-link} |             |             |           |             |
-+-------------+-------------+-------------+-----------+-------------+
-| [T          | n/a         | n/a         | Transient | Describes   |
-| ransactions |             |             |           | i           |
-| ](http://da |             |             |           | nteractions |
-| tabase-prog |             |             |           | between     |
-| rammer.blog |             |             |           | things,     |
-| spot.com/20 |             |             |           | like a      |
-| 08/01/datab |             |             |           | customer    |
-| ase-skills- |             |             |           | purchase of |
-| sane-approa |             |             |           | an item or  |
-| ch-to.html# |             |             |           | a           |
-| rule4){.ext |             |             |           | student\'s  |
-| ernal-link} |             |             |           | enrollment  |
-|             |             |             |           | in a class. |
-|             |             |             |           | Use integer |
-|             |             |             |           | au          |
-|             |             |             |           | to-assigned |
-|             |             |             |           | primary key |
-+-------------+-------------+-------------+-----------+-------------+
-| [Cross      | n/a         | n/a         | Permanent | Describes   |
-| Reference   |             |             |           | re          |
-| ](http://da |             |             |           | lationships |
-| tabase-prog |             |             |           | between     |
-| rammer.blog |             |             |           | master      |
-| spot.com/20 |             |             |           | entries,    |
-| 08/01/datab |             |             |           | such as an  |
-| ase-skills- |             |             |           | item\'s     |
-| sane-approa |             |             |           | price group |
-| ch-to.html# |             |             |           | or a        |
-| rule5){.ext |             |             |           | teacher\'s  |
-| ernal-link} |             |             |           | department. |
-|             |             |             |           | Use         |
-|             |             |             |           | m           |
-|             |             |             |           | ulti-column |
-|             |             |             |           | primary     |
-|             |             |             |           | keys.       |
-|             |             |             |           |             |
-|             |             |             |           | \           |
-+-------------+-------------+-------------+-----------+-------------+
+ |Pattern Name|Relative Column Count|Relative Row Count|Type|Notes|
+|--- |--- |--- |--- |--- |
+|Reference|Small|Small|Permanent|Use single-column character primary key.|
+|Small Master|Small|Small|Permanent|Use single-column character primary key.|
+|Large Master|Large|Large|Permanent|Use integer auto-assigned primary key|
+|Transactions|n/a|n/a|Transient|Describes interactions between things, like a customer purchase of an item or a student's enrollment in a class. Use integer auto-assigned primary key|
+|Cross Reference|n/a|n/a|Permanent|Describes relationships between master entries, such as an item's price group or a teacher's department. Use multi-column primary keys.|
+
 
 
 ### Expanded Table Types
@@ -1327,36 +1253,14 @@ This is also done in the database-per-tenant model.
 The following table summarizes the differences between the main tenancy
 models.
 
- {.table-wrap}
-  ---------------------------------------------------------------------------
-  Measurement       Standalone app    Database-per-tenant   Sharded
-                                                            multi-tenant
-  ----------------- ----------------- --------------------- -----------------
-  Scale             Medium\           Very high\            Unlimited\
-                    1-100s            1-100,000s            1-1,000,000s
-
-  Tenant isolation  Very high         High                  Low; except for
-                                                            any single tenant
-                                                            (that is alone in
-                                                            an MT db).
-
-  Database cost per High; is sized    Low; pools used.      Lowest, for small
-  tenant            for peaks.                              tenants in MT
-                                                            DBs.
-
-  Performance       Per-tenant only   Aggregate +           Aggregate;
-  monitoring and                      per-tenant            although is
-  management                                                per-tenant only
-                                                            for singles.
-
-  Development       Low               Low                   Medium; due to
-  complexity                                                sharding.
-
-  Operational       Low-High.         Low-Medium. Patterns  Low-High.
-  complexity        Individually      address complexity at Individual tenant
-                    simple, complex   scale.                management is
-                    at scale.                               complex.
-  ---------------------------------------------------------------------------
+ |Measurement|Standalone app|Database-per-tenant|Sharded multi-tenant|
+|--- |--- |--- |--- |
+|Scale|Medium <br>1-100s|Very high<br>1-100,000s|Unlimited<br>1-1,000,000s|
+|Tenant isolation|Very high|High|Low; except for any single tenant (that is alone in an MT db).|
+|Database cost per tenant|High; is sized for peaks.|Low; pools used.|Lowest, for small tenants in MT DBs.|
+|Performance monitoring and management|Per-tenant only|Aggregate + per-tenant|Aggregate; although is per-tenant only for singles.|
+|Development complexity|Low|Low|Medium; due to sharding.|
+|Operational complexity|Low-High. Individually simple, complex at scale.|Low-Medium. Patterns address complexity at scale.|Low-High. Individual tenant management is complex.|
 
 
 AntiPattern
