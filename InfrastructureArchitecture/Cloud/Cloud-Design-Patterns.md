@@ -104,78 +104,76 @@ deployed in a way that protects them from malicious attacks, restricts
 access to only approved users, and protects sensitive data.
 
 ### Catalog of Patterns
-
-      {.table-wrap}
-  Category                      Pattern                                                                                           Summary
-  ----------------------------- ------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Availability                  [Geodes](Geodes_463533357.html)                                                                   Deploy backend services into a set of geographical nodes, each of which can service any client request in any region.
-  Availability                  [Health Endpoint Monitoring Pattern](Health-Endpoint-Monitoring-Pattern_463533359.html)           Implement functional checks in an application that external tools can access through exposed endpoints at regular intervals.
-  Availability                  [Queue-Based Load Leveling Pattern](Queue-Based-Load-Leveling-Pattern_463533393.html)             Use a queue that acts as a buffer between a task and a service that it invokes, to smooth intermittent heavy loads.
-  Availability                  [Throttling Pattern](Throttling-Pattern_463533412.html)                                           Control the consumption of resources by an instance of an application, an individual tenant, or an entire service.
-  Data Management               [Cache-Aside Pattern](Cache-Aside-Pattern_463533304.html)                                         Load data on demand into a cache from a data store
-  Data Management               [Command and Query Responsibility Segregation (CQRS) Pattern](463533319.html)                     Segregate operations that read data from operations that update data by using separate interfaces.
-  Data Management               [Event Sourcing Pattern](Event-Sourcing-Pattern_463533332.html)                                   Use an append-only store to record the full series of events that describe actions taken on data in a domain
-  Data Management               [Index Table Pattern](Index-Table-Pattern_463533366.html)                                         Create indexes over the fields in data stores that are frequently referenced by queries.
-  Data Management               [Materialized View Pattern](Materialized-View-Pattern_463533369.html)                             Generate prepopulated views over the data in one or more data stores when the data isn\'t ideally formatted for required query operations.
-  Data Management               [Sharding Pattern](Sharding-Pattern_463533404.html)                                               Divide a data store into a set of horizontal partitions or shards.
-  Data Management               [Static Content Hosting Pattern](Static-Content-Hosting-Pattern_463533407.html)                   Deploy static content to a cloud-based storage service that can deliver them directly to the client.
-  Data Management               [Valet Key Pattern](Valet-Key-Pattern_463533414.html)                                             Use a token or key that provides clients with restricted direct access to a specific resource or service.
-  Design and Implementation     [Ambassador Pattern](Ambassador-Pattern_463533289.html)                                           Create helper services that send network requests on behalf of a consumer service or application.
-  Design and Implementation     [Anti-Corruption Layer Pattern](Anti-Corruption-Layer-Pattern_463533416.html)                     Implement a façade or adapter layer between a modern application and a legacy system.
-  Design and Implementation     [Backends for Frontends Pattern](Backends-for-Frontends-Pattern_463533297.html)                   Create separate backend services to be consumed by specific frontend applications or interfaces.
-  Design and Implementation     [Command and Query Responsibility Segregation (CQRS) Pattern](463533319.html)                     Segregate operations that read data from operations that update data by using separate interfaces
-  Design and Implementation     [Compute Resource Consolidation Pattern](Compute-Resource-Consolidation-Pattern_463533330.html)   Consolidate multiple tasks or operations into a single computational unit
-  Design and Implementation     [External Configuration Store Pattern](External-Configuration-Store-Pattern_463533334.html)       Move configuration information out of the application deployment package to a centralized location.
-  Design and Implementation     [Gateway Aggregation Pattern](Gateway-Aggregation-Pattern_463533350.html)                         Use a gateway to aggregate multiple individual requests into a single request.
-  Design and Implementation     [Gateway Offloading Pattern](Gateway-Offloading-Pattern_463533352.html)                           Offload shared or specialized service functionality to a gateway proxy
-  Design and Implementation     [Gateway Routing Pattern](Gateway-Routing-Pattern_463533354.html)                                 Route requests to multiple services using a single endpoint.
-  Design and Implementation     [Leader Election Pattern](Leader-Election-Pattern_463533367.html)                                 Coordinate the actions performed by a collection of collaborating task instances in a distributed application by electing one instance as the leader that assumes responsibility for managing the other instances.
-  Design and Implementation     [Pipes and Filters Pattern](Pipes-and-Filters-Pattern_463533386.html)                             Break down a task that performs complex processing into a series of separate elements that can be reused.
-  Design and Implementation     [Sidecar Pattern](Sidecar-Pattern_463533406.html)                                                 Deploy components of an application into a separate process or container to provide isolation and encapsulation.
-  Design and Implementation     [Static Content Hosting Pattern](Static-Content-Hosting-Pattern_463533407.html)                   Deploy static content to a cloud-based storage service that can deliver them directly to the client.
-  Design and Implementation     [Strangler Pattern](Strangler-Pattern_463533409.html)                                             Incrementally migrate a legacy system by gradually replacing specific pieces of functionality with new applications and services.
-  Management and Monitoring     [Ambassador Pattern](Ambassador-Pattern_463533289.html)                                           Create helper services that send network requests on behalf of a consumer service or application.
-  Management and Monitoring     [Anti-Corruption Layer Pattern](Anti-Corruption-Layer-Pattern_463533416.html)                     Implement a façade or adapter layer between a modern application and a legacy system.
-  Management and Monitoring     [External Configuration Store Pattern](External-Configuration-Store-Pattern_463533334.html)       Move configuration information out of the application deployment package to a centralized location.
-  Management and Monitoring     [Gateway Aggregation Pattern](Gateway-Aggregation-Pattern_463533350.html)                         Use a gateway to aggregate multiple individual requests into a single request.
-  Management and Monitoring     [Gateway Offloading Pattern](Gateway-Offloading-Pattern_463533352.html)                           Offload shared or specialized service functionality to a gateway proxy.
-  Management and Monitoring     [Gateway Routing Pattern](Gateway-Routing-Pattern_463533354.html)                                 Route requests to multiple services using a single endpoint.
-  Management and Monitoring     [Health Endpoint Monitoring Pattern](Health-Endpoint-Monitoring-Pattern_463533359.html)           Implement functional checks in an application that external tools can access through exposed endpoints at regular intervals.
-  Management and Monitoring     [Sidecar Pattern](Sidecar-Pattern_463533406.html)                                                 Deploy components of an application into a separate process or container to provide isolation and encapsulation.
-  Management and Monitoring     [Strangler Pattern](Strangler-Pattern_463533409.html)                                             Incrementally migrate a legacy system by gradually replacing specific pieces of functionality with new applications and services.
-  Messaging                     [Asynchronous Request-Reply Pattern](Asynchronous-Request-Reply-Pattern_463533293.html)           Decouple backend processing from a frontend host, where backend processing needs to be asynchronous, but the frontend still needs a clear response.
-  Messaging                     [Claim-Check Pattern](Claim-Check-Pattern_463533314.html)                                         Split a large message into a claim check and a payload to avoid overwhelming a message bus.
-  Messaging                     [Choreography Pattern](Choreography-Pattern_463533308.html)                                       Have each component of the system participate in the decision-making process about the workflow of a business transaction, instead of relying on a central point of control.
-  Messaging                     [Competing Consumers Pattern](Competing-Consumers-Pattern_463533328.html)                         Enable multiple concurrent consumers to process messages received on the same messaging channel.
-  Messaging                     [Pipes and Filters Pattern](Pipes-and-Filters-Pattern_463533386.html)                             Break down a task that performs complex processing into a series of separate elements that can be reused.
-  Messaging                     [Priority Queue Pattern](Priority-Queue-Pattern_463533389.html)                                   Prioritize requests sent to services so that requests with a higher priority are received and processed more quickly than those with a lower priority.
-  Messaging                     [Publisher-Subscriber Pattern](Publisher-Subscriber-Pattern_463533391.html)                       Enable an application to announce events to multiple interested consumers asynchronously, without coupling the senders to the receivers.
-  Messaging                     [Queue-Based Load Leveling Pattern](Queue-Based-Load-Leveling-Pattern_463533393.html)             Use a queue that acts as a buffer between a task and a service that it invokes in order to smooth intermittent heavy loads.
-  Messaging                     [Scheduler Agent Supervisor Pattern](Scheduler-Agent-Supervisor-Pattern_463533397.html)           Coordinate a set of actions across a distributed set of services and other remote resources.
-  Messaging                     [Sequential Convoy Pattern](Sequential-Convoy-Pattern_463533400.html)                             Process a set of related messages in a defined order, without blocking processing of other groups of messages.
-  Performance and Scalability   [Cache-Aside Pattern](Cache-Aside-Pattern_463533304.html)                                         Load data on demand into a cache from a data store
-  Performance and Scalability   [Choreography Pattern](Choreography-Pattern_463533308.html)                                       Have each component of the system participate in the decision-making process about the workflow of a business transaction, instead of relying on a central point of control.
-  Performance and Scalability   [Command and Query Responsibility Segregation (CQRS) Pattern](463533319.html)                     Segregate operations that read data from operations that update data by using separate interfaces.
-  Performance and Scalability   [Event Sourcing Pattern](Event-Sourcing-Pattern_463533332.html)                                   Use an append-only store to record the full series of events that describe actions taken on data in a domain.
-  Performance and Scalability   [Geodes](Geodes_463533357.html)                                                                   Deploy backend services into a set of geographical nodes, each of which can service any client request in any region.
-  Performance and Scalability   [Index Table Pattern](Index-Table-Pattern_463533366.html)                                         Create indexes over the fields in data stores that are frequently referenced by queries.
-  Performance and Scalability   [Materialized View Pattern](Materialized-View-Pattern_463533369.html)                             Generate prepopulated views over the data in one or more data stores when the data isn\'t ideally formatted for required query operations.
-  Performance and Scalability   [Priority Queue Pattern](Priority-Queue-Pattern_463533389.html)                                   Prioritize requests sent to services so that requests with a higher priority are received and processed more quickly than those with a lower priority.
-  Performance and Scalability   [Queue-Based Load Leveling Pattern](Queue-Based-Load-Leveling-Pattern_463533393.html)             Use a queue that acts as a buffer between a task and a service that it invokes in order to smooth intermittent heavy loads.
-  Performance and Scalability   [Sharding Pattern](Sharding-Pattern_463533404.html)                                               Divide a data store into a set of horizontal partitions or shards.
-  Performance and Scalability   [Static Content Hosting Pattern](Static-Content-Hosting-Pattern_463533407.html)                   Deploy static content to a cloud-based storage service that can deliver them directly to the client.
-  Performance and Scalability   [Throttling Pattern](Throttling-Pattern_463533412.html)                                           Control the consumption of resources used by an instance of an application, an individual tenant, or an entire service.
-  Resiliency                    [Bulkhead Pattern](Bulkhead-Pattern_463533301.html)                                               Isolate elements of an application into pools so that if one fails, the others will continue to function.
-  Resiliency                    [Circuit Breaker Pattern](Circuit-Breaker-Pattern_463533311.html)                                 Handle faults that might take a variable amount of time to fix when connecting to a remote service or resource.
-  Resiliency                    [Compensating Transaction Pattern](Compensating-Transaction-Pattern_463533321.html)               Undo the work performed by a series of steps, which together define an eventually consistent operation.
-  Resiliency                    [Health Endpoint Monitoring Pattern](Health-Endpoint-Monitoring-Pattern_463533359.html)           Implement functional checks in an application that external tools can access through exposed endpoints at regular intervals.
-  Resiliency                    [Leader Election Pattern](Leader-Election-Pattern_463533367.html)                                 Coordinate the actions performed by a collection of collaborating task instances in a distributed application by electing one instance as the leader that assumes responsibility for managing the other instances.
-  Resiliency                    [Queue-Based Load Leveling Pattern](Queue-Based-Load-Leveling-Pattern_463533393.html)             Use a queue that acts as a buffer between a task and a service that it invokes in order to smooth intermittent heavy loads.
-  Resiliency                    [Retry Pattern](Retry-Pattern_463533395.html)                                                     Enable an application to handle anticipated, temporary failures when it tries to connect to a service or network resource by transparently retrying an operation that\'s previously failed.
-  Resiliency                    [Scheduler Agent Supervisor Pattern](Scheduler-Agent-Supervisor-Pattern_463533397.html)           Coordinate a set of actions across a distributed set of services and other remote resources.
-  Security                      [Federated Identity Pattern](Federated-Identity-Pattern_463533336.html)                           Delegate authentication to an external identity provider.
-  Security                      [Gatekeeper Pattern](Gatekeeper-Pattern_463533347.html)                                           Protect applications and services by using a dedicated host instance that acts as a broker between clients and the application or service, validates and sanitizes requests, and passes requests and data between them.
-  Security                      [Valet Key Pattern](Valet-Key-Pattern_463533414.html)                                             Use a token or key that provides clients with restricted direct access to a specific resource or service.
+|Category|Pattern|Summary|
+|--- |--- |--- |
+|Availability|Geodes|Deploy backend services into a set of geographical nodes, each of which can service any client request in any region.|
+|Availability|Health Endpoint Monitoring Pattern|Implement functional checks in an application that external tools can access through exposed endpoints at regular intervals.|
+|Availability|Queue-Based Load Leveling Pattern|Use a queue that acts as a buffer between a task and a service that it invokes, to smooth intermittent heavy loads.|
+|Availability|Throttling Pattern|Control the consumption of resources by an instance of an application, an individual tenant, or an entire service.|
+|Data Management|Cache-Aside Pattern|Load data on demand into a cache from a data store|
+|Data Management|Command and Query Responsibility Segregation (CQRS) Pattern|Segregate operations that read data from operations that update data by using separate interfaces.|
+|Data Management|Event Sourcing Pattern|Use an append-only store to record the full series of events that describe actions taken on data in a domain|
+|Data Management|Index Table Pattern|Create indexes over the fields in data stores that are frequently referenced by queries.|
+|Data Management|Materialized View Pattern|Generate prepopulated views over the data in one or more data stores when the data isn't ideally formatted for required query operations.|
+|Data Management|Sharding Pattern|Divide a data store into a set of horizontal partitions or shards.|
+|Data Management|Static Content Hosting Pattern|Deploy static content to a cloud-based storage service that can deliver them directly to the client.|
+|Data Management|Valet Key Pattern|Use a token or key that provides clients with restricted direct access to a specific resource or service.|
+|Design and Implementation|Ambassador Pattern|Create helper services that send network requests on behalf of a consumer service or application.|
+|Design and Implementation|Anti-Corruption Layer Pattern|Implement a façade or adapter layer between a modern application and a legacy system.|
+|Design and Implementation|Backends for Frontends Pattern|Create separate backend services to be consumed by specific frontend applications or interfaces.|
+|Design and Implementation|Command and Query Responsibility Segregation (CQRS) Pattern|Segregate operations that read data from operations that update data by using separate interfaces|
+|Design and Implementation|Compute Resource Consolidation Pattern|Consolidate multiple tasks or operations into a single computational unit|
+|Design and Implementation|External Configuration Store Pattern|Move configuration information out of the application deployment package to a centralized location.|
+|Design and Implementation|Gateway Aggregation Pattern|Use a gateway to aggregate multiple individual requests into a single request.|
+|Design and Implementation|Gateway Offloading Pattern|Offload shared or specialized service functionality to a gateway proxy|
+|Design and Implementation|Gateway Routing Pattern|Route requests to multiple services using a single endpoint.|
+|Design and Implementation|Leader Election Pattern|Coordinate the actions performed by a collection of collaborating task instances in a distributed application by electing one instance as the leader that assumes responsibility for managing the other instances.|
+|Design and Implementation|Pipes and Filters Pattern|Break down a task that performs complex processing into a series of separate elements that can be reused.|
+|Design and Implementation|Sidecar Pattern|Deploy components of an application into a separate process or container to provide isolation and encapsulation.|
+|Design and Implementation|Static Content Hosting Pattern|Deploy static content to a cloud-based storage service that can deliver them directly to the client.|
+|Design and Implementation|Strangler Pattern|Incrementally migrate a legacy system by gradually replacing specific pieces of functionality with new applications and services.|
+|Management and Monitoring|Ambassador Pattern|Create helper services that send network requests on behalf of a consumer service or application.|
+|Management and Monitoring|Anti-Corruption Layer Pattern|Implement a façade or adapter layer between a modern application and a legacy system.|
+|Management and Monitoring|External Configuration Store Pattern|Move configuration information out of the application deployment package to a centralized location.|
+|Management and Monitoring|Gateway Aggregation Pattern|Use a gateway to aggregate multiple individual requests into a single request.|
+|Management and Monitoring|Gateway Offloading Pattern|Offload shared or specialized service functionality to a gateway proxy.|
+|Management and Monitoring|Gateway Routing Pattern|Route requests to multiple services using a single endpoint.|
+|Management and Monitoring|Health Endpoint Monitoring Pattern|Implement functional checks in an application that external tools can access through exposed endpoints at regular intervals.|
+|Management and Monitoring|Sidecar Pattern|Deploy components of an application into a separate process or container to provide isolation and encapsulation.|
+|Management and Monitoring|Strangler Pattern|Incrementally migrate a legacy system by gradually replacing specific pieces of functionality with new applications and services.|
+|Messaging|Asynchronous Request-Reply Pattern|Decouple backend processing from a frontend host, where backend processing needs to be asynchronous, but the frontend still needs a clear response.|
+|Messaging|Claim-Check Pattern|Split a large message into a claim check and a payload to avoid overwhelming a message bus.|
+|Messaging|Choreography Pattern|Have each component of the system participate in the decision-making process about the workflow of a business transaction, instead of relying on a central point of control.|
+|Messaging|Competing Consumers Pattern|Enable multiple concurrent consumers to process messages received on the same messaging channel.|
+|Messaging|Pipes and Filters Pattern|Break down a task that performs complex processing into a series of separate elements that can be reused.|
+|Messaging|Priority Queue Pattern|Prioritize requests sent to services so that requests with a higher priority are received and processed more quickly than those with a lower priority.|
+|Messaging|Publisher-Subscriber Pattern|Enable an application to announce events to multiple interested consumers asynchronously, without coupling the senders to the receivers.|
+|Messaging|Queue-Based Load Leveling Pattern|Use a queue that acts as a buffer between a task and a service that it invokes in order to smooth intermittent heavy loads.|
+|Messaging|Scheduler Agent Supervisor Pattern|Coordinate a set of actions across a distributed set of services and other remote resources.|
+|Messaging|Sequential Convoy Pattern|Process a set of related messages in a defined order, without blocking processing of other groups of messages.|
+|Performance and Scalability|Cache-Aside Pattern|Load data on demand into a cache from a data store|
+|Performance and Scalability|Choreography Pattern|Have each component of the system participate in the decision-making process about the workflow of a business transaction, instead of relying on a central point of control.|
+|Performance and Scalability|Command and Query Responsibility Segregation (CQRS) Pattern|Segregate operations that read data from operations that update data by using separate interfaces.|
+|Performance and Scalability|Event Sourcing Pattern|Use an append-only store to record the full series of events that describe actions taken on data in a domain.|
+|Performance and Scalability|Geodes|Deploy backend services into a set of geographical nodes, each of which can service any client request in any region.|
+|Performance and Scalability|Index Table Pattern|Create indexes over the fields in data stores that are frequently referenced by queries.|
+|Performance and Scalability|Materialized View Pattern|Generate prepopulated views over the data in one or more data stores when the data isn't ideally formatted for required query operations.|
+|Performance and Scalability|Priority Queue Pattern|Prioritize requests sent to services so that requests with a higher priority are received and processed more quickly than those with a lower priority.|
+|Performance and Scalability|Queue-Based Load Leveling Pattern|Use a queue that acts as a buffer between a task and a service that it invokes in order to smooth intermittent heavy loads.|
+|Performance and Scalability|Sharding Pattern|Divide a data store into a set of horizontal partitions or shards.|
+|Performance and Scalability|Static Content Hosting Pattern|Deploy static content to a cloud-based storage service that can deliver them directly to the client.|
+|Performance and Scalability|Throttling Pattern|Control the consumption of resources used by an instance of an application, an individual tenant, or an entire service.|
+|Resiliency|Bulkhead Pattern|Isolate elements of an application into pools so that if one fails, the others will continue to function.|
+|Resiliency|Circuit Breaker Pattern|Handle faults that might take a variable amount of time to fix when connecting to a remote service or resource.|
+|Resiliency|Compensating Transaction Pattern|Undo the work performed by a series of steps, which together define an eventually consistent operation.|
+|Resiliency|Health Endpoint Monitoring Pattern|Implement functional checks in an application that external tools can access through exposed endpoints at regular intervals.|
+|Resiliency|Leader Election Pattern|Coordinate the actions performed by a collection of collaborating task instances in a distributed application by electing one instance as the leader that assumes responsibility for managing the other instances.|
+|Resiliency|Queue-Based Load Leveling Pattern|Use a queue that acts as a buffer between a task and a service that it invokes in order to smooth intermittent heavy loads.|
+|Resiliency|Retry Pattern|Enable an application to handle anticipated, temporary failures when it tries to connect to a service or network resource by transparently retrying an operation that's previously failed.|
+|Resiliency|Scheduler Agent Supervisor Pattern|Coordinate a set of actions across a distributed set of services and other remote resources.|
+|Security|Federated Identity Pattern|Delegate authentication to an external identity provider.|
+|Security|Gatekeeper Pattern|Protect applications and services by using a dedicated host instance that acts as a broker between clients and the application or service, validates and sanitizes requests, and passes requests and data between them.|
+|Security|Valet Key Pattern|Use a token or key that provides clients with restricted direct access to a specific resource or service.|
 
 
 Design Patterns
@@ -499,12 +497,10 @@ The following diagram shows a typical flow:
     the client should poll for the response. It should have the
     following additional headers:
 
-     {.table-wrap}
-      Header        Description                                           Notes
-      ------------- ----------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-      Location      A URL the client should poll for a response status.   This URL could be a SAS token with the  [Valet Key Pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/valet-key) being appropriate if this location needs access control. The valet key pattern is also valid when response polling needs offloading to another backend
-      Retry-After   An estimate of when processing will complete          This header is designed to prevent polling clients from overwhelming the back-end with retries.
-    
+    |Header|Description|Notes|
+    |--- |--- |--- |
+    |Location|A URL the client should poll for a response status.|This URL could be a SAS token with the Valet Key Pattern being appropriate if this location needs access control. The valet key pattern is also valid when response polling needs offloading to another backend|
+    |Retry-After|An estimate of when processing will complete|This header is designed to prevent polling clients from overwhelming the back-end with retries.|
 
 -   You may need to use a processing proxy or facade to manipulate the
     response headers or payload depending on the underlying services

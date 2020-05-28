@@ -281,46 +281,23 @@ which it applies.
 
 ![](https://www.sam-solutions.com/blog/wp-content/uploads/2017/08/community-cloud@2x.png)
 
-Types of Cloud Deployment Models - The Comparison
--------------------------------------------------
-
- {.table-wrap}
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  \                              Public             Private                                  Community                                Hybird
-  ------------------------------ ------------------ ---------------------------------------- ---------------------------------------- ----------------------------------------------------------------
-  Easy of setup and use          Easy               Requires IT proficiency                  Requires IT proficiency                  Requires IT proficiency
-
-  Data security and privacy      Low                High                                     Comparatively high                       High
-
-  Data Control                   Little to none     High                                     Comparatively high                       Comparatively high
-
-  Reliability                    Vulnerable         High                                     Comparatively high                       High
-
-  Scalability and flexibility    High               High                                     Fixed capacity                           High
-
-  Cost-effectiveness             The cheapest one   Cost-intensive, the most expensive one   Cost is shared among community members   Cheaper than a private model but more costly than a public one
-
-  Demand for in-house hardware   No                 Depends                                  Depends                                  Depends
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+||Public|Private|Community|Hybird|
+|--- |--- |--- |--- |--- |
+|Easy of setup and use|Easy|Requires IT proficiency|Requires IT proficiency|Requires IT proficiency|
+|Data security and privacy|Low|High|Comparatively high|High|
+|Data Control|Little to none|High|Comparatively high|Comparatively high|
+|Reliability|Vulnerable|High|Comparatively high|High|
+|Scalability and flexibility|High|High|Fixed capacity|High|
+|Cost-effectiveness|The cheapest one|Cost-intensive, the most expensive one|Cost is shared among community members|Cheaper than a private model but more costly than a public one|
+|Demand for in-house hardware|No|Depends|Depends|Depends|
 
 
 References
 
--   [Medium - Cloud computing
-    overview](https://medium.com/@nikitaag3110/cloud-computing-overview-1921bb5fd6ec)
--   [Quora - What are the different deployment models in Cloud
-    computing](https://www.quora.com/What-are-the-different-deployment-models-in-Cloud-computing)
--   [Sharegate - cloud deployment models
-    compared](https://sharegate.com/blog/cloud-deployment-models-compared)
--   [Solutions Review - cloud platforms understanding the 4 biggest
-    cloud deployment
-    models](https://solutionsreview.com/cloud-platforms/understanding-the-4-biggest-cloud-deployment-models/)
--   [Sam Solutions - four best cloud deployment models you need to
-    know](https://www.sam-solutions.com/blog/four-best-cloud-deployment-models-you-need-to-know/)
-
-
-
- 
-
+-   [Medium - Cloud computing overview](https://medium.com/@nikitaag3110/cloud-computing-overview-1921bb5fd6ec)
+-   [Quora - What are the different deployment models in Cloud computing](https://www.quora.com/What-are-the-different-deployment-models-in-Cloud-computing)
+-   [Sharegate - cloud deployment models compared](https://sharegate.com/blog/cloud-deployment-models-compared)
+-   [Solutions Review - cloud platforms understanding the 4 biggest cloud deployment models](https://solutionsreview.com/cloud-platforms/understanding-the-4-biggest-cloud-deployment-models/)
+-   [Sam Solutions - four best cloud deployment models you need to know](https://www.sam-solutions.com/blog/four-best-cloud-deployment-models-you-need-to-know/)
 
 
