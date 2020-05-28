@@ -100,82 +100,15 @@ Fake Agile versus True Agile
 
 ![fake agile timeline](https://www.process.st/wp-content/uploads/2019/08/Fake-Agile-Timeline.png)
 
- {.table-wrap}
-+----------------------+----------------------+----------------------+
-| \                    | True Agile           | Fake Agile           |
-+======================+======================+======================+
-| Ignoring Users       | Developers           | Developers are not   |
-|                      | understand the       | interested in        |
-|                      | importance of        | communicating with   |
-|                      | communicating and    | real users of the    |
-|                      | involving customers  | application (program |
-|                      | and users with the   | testing and          |
-|                      | development and      | evaluation don't     |
-|                      | development          | count); if there is  |
-|                      | process. They will   | feedback, it is not  |
-|                      | share development    | continuous (only     |
-|                      | progress and         | happens at the start |
-|                      | actively seek        | of the project, for  |
-|                      | feedback in order    | example).            |
-|                      | to improve the       |                      |
-|                      | process or product.  |                      |
-+----------------------+----------------------+----------------------+
-| Time Management and  | Prioritizes working  | Attention to         |
-| diminishing returns  | builds and           | requirements over    |
-|                      | understands the      | quickly deploying    |
-|                      | importance of rapid  | something useful.    |
-|                      | iteration. New       | Rarely has a working |
-|                      | working builds       | build ready to show  |
-|                      | either weekly or at  | at the end of a      |
-|                      | least at the end of  | sprint; working      |
-|                      | each sprint.         | build is pushed to   |
-|                      |                      | the hardening sprint |
-|                      |                      | or "next sprint".    |
-+----------------------+----------------------+----------------------+
-| Responsibility       | Developers are       | Developers defer     |
-|                      | active and willing   | responsibility and   |
-|                      | to take              | act like "it's not   |
-|                      | responsibility for   | my job".             |
-|                      | their role in        |                      |
-|                      | providing the        |                      |
-|                      | customer with value, |                      |
-|                      | and improving upon   |                      |
-|                      | their offering.      |                      |
-+----------------------+----------------------+----------------------+
-| Streamlined          | Processes            | Processes are mostly |
-| Processes            | are automated as     | manual; lots of      |
-|                      | much as possible to  | scope for            |
-|                      | eliminate tedious    | automation.          |
-|                      | manual tasks and     |                      |
-|                      | focus on providing   |                      |
-|                      | value to the         |                      |
-|                      | customer             |                      |
-+----------------------+----------------------+----------------------+
-| Importance of        | Focus on iterative   | Focus on compliance  |
-| functionality        | development of       | and requirements     |
-|                      | working software,    | where working        |
-|                      | where feedback from  | software is a nice   |
-|                      | key stakeholders is  | bonus that is        |
-|                      | crucial at every     | normatively pushed   |
-|                      | step.                | back to "another     |
-|                      |                      | sprint".             |
-+----------------------+----------------------+----------------------+
-| Misguided Agile      | Agile is different   | A common theme with  |
-| Leadership           | because the nature   | this problem is the  |
-|                      | of responsibility is | idea that there must |
-|                      | fundamentally        | be a "single throat  |
-|                      | different.           | to choke". This is   |
-|                      | Individuals in a     | expected in          |
-|                      | high-performing      | traditional          |
-|                      | agile development    | development          |
-|                      | team should have a   | structures, where    |
-|                      | shared sense of      | the project manager  |
-|                      | responsibility.      | is essentially       |
-|                      |                      | responsible for      |
-|                      | \                    | making sure each     |
-|                      |                      | member of the team   |
-|                      |                      | is getting their     |
-|                      |                      | work done.           |
+
+ ||True Agile|Fake Agile|
+|--- |--- |--- |
+|Ignoring Users|Developers understand the importance of communicating and involving customers and users with the development and development process. They will share development progress and actively seek feedback in order to improve the process or product.|Developers are not interested in communicating with real users of the application (program testing and evaluation don’t count); if there is feedback, it is not continuous (only happens at the start of the project, for example).|
+|Time Management and diminishing returns|Prioritizes working builds and understands the importance of rapid iteration. New working builds either weekly or at least at the end of each sprint.|Attention to requirements over quickly deploying something useful. Rarely has a working build ready to show at the end of a sprint; working build is pushed to the hardening sprint or “next sprint”.|
+|Responsibility|Developers are active and willing to take responsibility for their role in providing the customer with value, and improving upon their offering.|Developers defer responsibility and act like “it’s not my job”.|
+|Streamlined Processes|Processes are automated as much as possible to eliminate tedious manual tasks and focus on providing value to the customer|Processes are mostly manual; lots of scope for automation.|
+|Importance of functionality|Focus on iterative development of working software, where feedback from key stakeholders is crucial at every step.|Focus on compliance and requirements where working software is a nice bonus that is normatively pushed back to “another sprint”.|
+|Misguided Agile Leadership|Agile is different because the nature of responsibility is fundamentally different. Individuals in a high-performing agile development team should have a shared sense of responsibility.|A common theme with this problem is the idea that there must be a “single throat to choke”. This is expected in traditional development structures, where the project manager is essentially responsible for making sure each member of the team is getting their work done.|
 +----------------------+----------------------+----------------------+
 
 
