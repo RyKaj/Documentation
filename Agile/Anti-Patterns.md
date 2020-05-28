@@ -109,7 +109,7 @@ Fake Agile versus True Agile
 |Streamlined Processes|Processes are automated as much as possible to eliminate tedious manual tasks and focus on providing value to the customer|Processes are mostly manual; lots of scope for automation.|
 |Importance of functionality|Focus on iterative development of working software, where feedback from key stakeholders is crucial at every step.|Focus on compliance and requirements where working software is a nice bonus that is normatively pushed back to “another sprint”.|
 |Misguided Agile Leadership|Agile is different because the nature of responsibility is fundamentally different. Individuals in a high-performing agile development team should have a shared sense of responsibility.|A common theme with this problem is the idea that there must be a “single throat to choke”. This is expected in traditional development structures, where the project manager is essentially responsible for making sure each member of the team is getting their work done.|
-+----------------------+----------------------+----------------------+
+
 
 
 Product owners and scrum masters are there to fulfil key roles like
