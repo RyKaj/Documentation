@@ -42,7 +42,7 @@ Process
 
   
 
-![](attachments/451824424/463531992.png)
+<img src="./attachments/463531992.png" alt="">
 
   
 
