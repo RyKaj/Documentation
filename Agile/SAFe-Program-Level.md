@@ -26,27 +26,27 @@ operating at the Program Level are ultimately responsible for creating
 and releasing value in flow at the frequency needed by the enterprise to
 meet market and customer demand. The mindsets and practices in this
 level contribute to the enterprise competency of DevOps and Release on
-Demand that makes this flow of value possible.\
-\
+Demand that makes this flow of value possible.
 
- {.table-wrap}
-  **Roles/Teams**                  **Events**                          **Artifacts**
-  -------------------------------- ----------------------------------- ---------------------------------------
-  \* DevOps                        \* PI(Program Increment) Planning   \* Vision
-  \* System Team                   \* System Demos                     \* Roadmap
-  \* Release Management            \* Inspect and Adopt Workshop       \* Metrics
-  \* Product Management            \* Architectural Runway             \* Milestones
-  \* UEX Architect                 \* Release Any Time                 \* Releases
-  \* Release Train Engineer(RTE)   \* Agile Release Train              \* Program Epics
-  \* System Architect/Engineer     \* Release                          \* Program Kanban
-  \* Business Owners                                                   \* Program Backlog
-  \* Lean-Agile Leaders                                                \* Non-Functional Requirements
-  \* Communities of Practice                                           \* Weighted Shortest Job First (WSJF)
-  \* Shared Services                                                   \* Program PI Objectives
-  \* Customer                                                          \* Feature
-                                                                       \* Enabler
-                                                                       \* Solution
-                                                                       \* Value Stream Coordination
+
+|Roles/Teams|Events|Artifacts|
+|--- |--- |--- |
+|* DevOps|* PI(Program Increment) Planning|* Vision|
+|* System Team|* System Demos|* Roadmap|
+|* Release Management|* Inspect and Adopt Workshop|* Metrics|
+|* Product Management|* Architectural Runway|* Milestones|
+|* UEX Architect|* Release Any Time|* Releases|
+|* Release Train Engineer(RTE)|* Agile Release Train|* Program Epics|
+|* System Architect/Engineer|* Release|* Program Kanban|
+|* Business Owners||* Program Backlog|
+|* Lean-Agile Leaders||* Non-Functional Requirements|
+|* Communities of Practice||* Weighted Shortest Job First (WSJF)|
+|* Shared Services||* Program PI Objectives|
+|* Customer||* Feature|
+|||* Enabler|
+|||* Solution|
+|||* Value Stream Coordination|
+
 
 
 -   In Program level, Value of SAFe is delivered by long-lived Agile

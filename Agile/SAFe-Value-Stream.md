@@ -25,29 +25,29 @@ stream mapping can be used to identify and address delays and
 non-value-added activities to accomplish the Lean-Agile goal of the
 shortest sustainable lead time.
 
- {.table-wrap}
-  **Roles/Teams**                  **Events**                                       **Artifacts**
-  -------------------------------- ------------------------------------------------ ---------------------------------------
-  \* DevOps                        \* Pre and Post PI(Program Increment) Planning   \* Vision
-  \* System Team                   \* Solution Demos                                \* Roadmap
-  \* Release Management            \* Inspect and Adopt Workshop                    \* Metrics
-  \* Solution Management           \* Agile Release Train                           \* Milestones
-  \* UEX Architect                                                                  \* Releases
-  \* Value Stream Engineer(RTE)                                                     \*Value Stream Epics
-  \* Solution Architect/Engineer                                                    \* Value Stream Kanban
-  \* Shared Services                                                                \* Value Stream Backlog
-  \* Customer                                                                       \* Non-Functional Requirements
-  \* Supplier                                                                       \* Weighted Shortest Job First (WSJF)
-                                                                                    \* Value Stream PI Objectives
-                                                                                    \* Capability
-                                                                                    \* Enabler
-                                                                                    \* Solution Context
-                                                                                    \* Value Stream Coordination
-                                                                                    \* Economic Framework
-                                                                                    \* Solution Intent
-                                                                                    \* MBSE
-                                                                                    \* Set Based
-                                                                                    \* Agile Architecture
+ |Roles/Teams|Events|Artifacts|
+|--- |--- |--- |
+|* DevOps|* Pre and Post PI(Program Increment) Planning|* Vision|
+|* System Team|* Solution Demos|* Roadmap|
+|* Release Management|* Inspect and Adopt Workshop|* Metrics|
+|* Solution Management|* Agile Release Train|* Milestones|
+|* UEX Architect||* Releases|
+|* Value Stream Engineer(RTE)||*Value Stream Epics|
+|* Solution Architect/Engineer||* Value Stream Kanban|
+|* Shared Services||* Value Stream Backlog|
+|* Customer||* Non-Functional Requirements|
+|* Supplier||* Weighted Shortest Job First (WSJF)|
+|||* Value Stream PI Objectives|
+|||* Capability|
+|||* Enabler|
+|||* Solution Context|
+|||* Value Stream Coordination|
+|||* Economic Framework|
+|||* Solution Intent|
+|||* MBSE|
+|||* Set Based|
+|||* Agile Architecture|
+
 
 
 -   The Value Stream Level is optional in SAFe.

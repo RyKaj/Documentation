@@ -1014,17 +1014,16 @@ with more than 500 to 1,000 technical practitioners---there can be
 multiple SAFe portfolios, typically one for each line of business, or as
 otherwise structured around the business organization and funding model.
 
- {.table-wrap}
-  **Roles/Teams**             **Events**                           **Artifacts**
-  --------------------------- ------------------------------------ --------------------------------
-  \* Enterprise Architect     \* Strategic Investment Planning     \* Strategic Themes
-  \* Program Portfolio Mgmt   \* Kanban Portfolio(Epic) Planning   \* Enterprise
-  \* Epic Owners                                                   \* Portfolio Backlog
-                                                                   \* Portfolio Kanban
-                                                                   \* Non-Functional Requirements
-                                                                   \* Epic and Enabler
-                                                                   \* Value Stream
-                                                                   \* Budgets(CapEx and OpEx)
+|Roles/Teams|Events|Artifacts|
+|--- |--- |--- |
+|* Enterprise Architect|* Strategic Investment Planning|* Strategic Themes|
+|* Program Portfolio Mgmt|* Kanban Portfolio(Epic) Planning|* Enterprise|
+|* Epic Owners||* Portfolio Backlog|
+|||* Portfolio Kanban|
+|||* Non-Functional Requirements|
+|||* Epic and Enabler|
+|||* Value Stream|
+|||* Budgets(CapEx and OpEx)|
 
 
 -   Highest level of interest/ concern /involvement/ in SAFe is  **SAFe
@@ -1348,24 +1347,23 @@ level contribute to the enterprise competency of DevOps and Release on
 Demand that makes this flow of value possible.
 
 
- {.table-wrap}
-  **Roles/Teams**                  **Events**                          **Artifacts**
-  -------------------------------- ----------------------------------- ---------------------------------------
-  \* DevOps                        \* PI(Program Increment) Planning   \* Vision
-  \* System Team                   \* System Demos                     \* Roadmap
-  \* Release Management            \* Inspect and Adopt Workshop       \* Metrics
-  \* Product Management            \* Architectural Runway             \* Milestones
-  \* UEX Architect                 \* Release Any Time                 \* Releases
-  \* Release Train Engineer(RTE)   \* Agile Release Train              \* Program Epics
-  \* System Architect/Engineer     \* Release                          \* Program Kanban
-  \* Business Owners                                                   \* Program Backlog
-  \* Lean-Agile Leaders                                                \* Non-Functional Requirements
-  \* Communities of Practice                                           \* Weighted Shortest Job First (WSJF)
-  \* Shared Services                                                   \* Program PI Objectives
-  \* Customer                                                          \* Feature
-                                                                       \* Enabler
-                                                                       \* Solution
-                                                                       \* Value Stream Coordination
+|Roles/Teams|Events|Artifacts|
+|--- |--- |--- |
+|* DevOps|* PI(Program Increment) Planning|* Vision|
+|* System Team|* System Demos|* Roadmap|
+|* Release Management|* Inspect and Adopt Workshop|* Metrics|
+|* Product Management|* Architectural Runway|* Milestones|
+|* UEX Architect|* Release Any Time|* Releases|
+|* Release Train Engineer(RTE)|* Agile Release Train|* Program Epics|
+|* System Architect/Engineer|* Release|* Program Kanban|
+|* Business Owners||* Program Backlog|
+|* Lean-Agile Leaders||* Non-Functional Requirements|
+|* Communities of Practice||* Weighted Shortest Job First (WSJF)|
+|* Shared Services||* Program PI Objectives|
+|* Customer||* Feature|
+|||* Enabler|
+|||* Solution|
+|||* Value Stream Coordination|
 
 
 -   In Program level, Value of SAFe is delivered by long-lived Agile
@@ -1435,18 +1433,18 @@ two weeks. This ensures that all teams in the ART create an integrated
 and tested system that stakeholders can evaluate and respond to with
 fast feedback.
 
- {.table-wrap}
-  **Roles/Teams**    **Events**                **Artifacts**
-  ------------------ ------------------------- --------------------------------
-  \* Agile Team      \* Sprint Planning        \* Team Backlog
-  \* Product Owner   \* Backlog Grooming       \* Non-Functional Requirements
-  \* Scrum Master    \* Daily Stand-Up         \* Team PI Objectives
-                     \* Execution              \* Iterations
-                     \* Sprint Demo            \* Stories(Working Software)
-                     \* Sprint Retrospective   \* Sprint Goals
-                     \* IP Sprints             \* Built-In Quality
-                                               \* Spikes
-                                               \* Team Kanban
+|Roles/Teams|Events|Artifacts|
+|--- |--- |--- |
+|* Agile Team|* Sprint Planning|* Team Backlog|
+|* Product Owner|* Backlog Grooming|* Non-Functional Requirements|
+|* Scrum Master|* Daily Stand-Up|* Team PI Objectives|
+||* Execution|* Iterations|
+||* Sprint Demo|* Stories(Working Software)|
+||* Sprint Retrospective|* Sprint Goals|
+||* IP Sprints|* Built-In Quality|
+|||* Spikes|
+|||* Team Kanban|
+
 
 
 -   All SAFe teams are part of one or other Agile Release Train (ART).
@@ -1517,29 +1515,28 @@ stream mapping can be used to identify and address delays and
 non-value-added activities to accomplish the Lean-Agile goal of the
 shortest sustainable lead time.
 
- {.table-wrap}
-  **Roles/Teams**                  **Events**                                       **Artifacts**
-  -------------------------------- ------------------------------------------------ ---------------------------------------
-  \* DevOps                        \* Pre and Post PI(Program Increment) Planning   \* Vision
-  \* System Team                   \* Solution Demos                                \* Roadmap
-  \* Release Management            \* Inspect and Adopt Workshop                    \* Metrics
-  \* Solution Management           \* Agile Release Train                           \* Milestones
-  \* UEX Architect                                                                  \* Releases
-  \* Value Stream Engineer(RTE)                                                     \*Value Stream Epics
-  \* Solution Architect/Engineer                                                    \* Value Stream Kanban
-  \* Shared Services                                                                \* Value Stream Backlog
-  \* Customer                                                                       \* Non-Functional Requirements
-  \* Supplier                                                                       \* Weighted Shortest Job First (WSJF)
-                                                                                    \* Value Stream PI Objectives
-                                                                                    \* Capability
-                                                                                    \* Enabler
-                                                                                    \* Solution Context
-                                                                                    \* Value Stream Coordination
-                                                                                    \* Economic Framework
-                                                                                    \* Solution Intent
-                                                                                    \* MBSE
-                                                                                    \* Set Based
-                                                                                    \* Agile Architecture
+|Roles/Teams|Events|Artifacts|
+|--- |--- |--- |
+|* DevOps|* Pre and Post PI(Program Increment) Planning|* Vision|
+|* System Team|* Solution Demos|* Roadmap|
+|* Release Management|* Inspect and Adopt Workshop|* Metrics|
+|* Solution Management|* Agile Release Train|* Milestones|
+|* UEX Architect||* Releases|
+|* Value Stream Engineer(RTE)||*Value Stream Epics|
+|* Solution Architect/Engineer||* Value Stream Kanban|
+|* Shared Services||* Value Stream Backlog|
+|* Customer||* Non-Functional Requirements|
+|* Supplier||* Weighted Shortest Job First (WSJF)|
+|||* Value Stream PI Objectives|
+|||* Capability|
+|||* Enabler|
+|||* Solution Context|
+|||* Value Stream Coordination|
+|||* Economic Framework|
+|||* Solution Intent|
+|||* MBSE|
+|||* Set Based|
+|||* Agile Architecture|
 
 
 -   The Value Stream Level is optional in SAFe.

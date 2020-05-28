@@ -28,17 +28,17 @@ with more than 500 to 1,000 technical practitioners---there can be
 multiple SAFe portfolios, typically one for each line of business, or as
 otherwise structured around the business organization and funding model.
 
- {.table-wrap}
-  **Roles/Teams**             **Events**                           **Artifacts**
-  --------------------------- ------------------------------------ --------------------------------
-  \* Enterprise Architect     \* Strategic Investment Planning     \* Strategic Themes
-  \* Program Portfolio Mgmt   \* Kanban Portfolio(Epic) Planning   \* Enterprise
-  \* Epic Owners                                                   \* Portfolio Backlog
-                                                                   \* Portfolio Kanban
-                                                                   \* Non-Functional Requirements
-                                                                   \* Epic and Enabler
-                                                                   \* Value Stream
-                                                                   \* Budgets(CapEx and OpEx)
+|Roles/Teams|Events|Artifacts|
+|--- |--- |--- |
+|* Enterprise Architect|* Strategic Investment Planning|* Strategic Themes|
+|* Program Portfolio Mgmt|* Kanban Portfolio(Epic) Planning|* Enterprise|
+|* Epic Owners||* Portfolio Backlog|
+|||* Portfolio Kanban|
+|||* Non-Functional Requirements|
+|||* Epic and Enabler|
+|||* Value Stream|
+|||* Budgets(CapEx and OpEx)|
+
 
 
 -   Highest level of interest/ concern /involvement/ in SAFe is  **SAFe

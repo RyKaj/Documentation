@@ -32,18 +32,18 @@ two weeks. This ensures that all teams in the ART create an integrated
 and tested system that stakeholders can evaluate and respond to with
 fast feedback.
 
- {.table-wrap}
-  **Roles/Teams**    **Events**                **Artifacts**
-  ------------------ ------------------------- --------------------------------
-  \* Agile Team      \* Sprint Planning        \* Team Backlog
-  \* Product Owner   \* Backlog Grooming       \* Non-Functional Requirements
-  \* Scrum Master    \* Daily Stand-Up         \* Team PI Objectives
-                     \* Execution              \* Iterations
-                     \* Sprint Demo            \* Stories(Working Software)
-                     \* Sprint Retrospective   \* Sprint Goals
-                     \* IP Sprints             \* Built-In Quality
-                                               \* Spikes
-                                               \* Team Kanban
+|Roles/Teams|Events|Artifacts|
+|--- |--- |--- |
+|* Agile Team|* Sprint Planning|* Team Backlog|
+|* Product Owner|* Backlog Grooming|* Non-Functional Requirements|
+|* Scrum Master|* Daily Stand-Up|* Team PI Objectives|
+||* Execution|* Iterations|
+||* Sprint Demo|* Stories(Working Software)|
+||* Sprint Retrospective|* Sprint Goals|
+||* IP Sprints|* Built-In Quality|
+|||* Spikes|
+|||* Team Kanban|
+
 
 
 -   All SAFe teams are part of one or other Agile Release Train (ART).
