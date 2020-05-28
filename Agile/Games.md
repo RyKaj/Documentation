@@ -134,66 +134,20 @@ Their test:
 
 (A, B, and Y are inputs; b0, b1, b2, and b12 are outputs, produced by a process of matrix algebra.)
 
- {.table-wrap}
-A
+|A|B|Y|b0|b1|b2|b12|
+|--- |--- |--- |--- |--- |--- |--- |
+|10|75|8|11.0|5.0|8.0|12.0|
+|20|75|12|||||
+|10|100|10|||||
+|20|100|15||||||
 
-
-
-
-
-
-
-
-B
-
-Y
-
-b0
-
-b1
-
-b2
-
-b12
-
-10
-
-75
-
-8
-
-11.0
-
-5.0
-
-8.0
-
-12.0
-
-20
-
-75
-
-12
-
-10
-
-100
-
-10
-
-20
-
-100
-
-15
 
 This is a textual representation of the graph
 
- {.table-wrap}
-  b0   b1   b2   b12   B-1         B-2           B+1          B+2
-  ---- ---- ---- ----- ----------- ------------- ------------ ------------
-  0    5    8    12    (1,1,RGB)   (10,10,RGB)   (10,1,RGB)   (1,10,RGB)
+|b0|b1|b2|b12|B-1|B-2|B+1|B+2|
+|--- |--- |--- |--- |--- |--- |--- |--- |
+|0|5|8|12|(1,1,RGB)|(10,10,RGB)|(10,1,RGB)|(1,10,RGB)|
+
 
 
 Their expected graph (described here, though the team drew a picture):
@@ -241,98 +195,31 @@ conspiracies. (Tool helps build a network of connections between
 people).
 
 Their test:
+||||
+|--- |--- |--- |
+|Select template criminal|||
+|Create node|||
+|Create node|||
+|Select|link template|?|
+|Create link|||
+|Check|count links|1|
+|Delete node|1||
+|Check|count links|0|
+|Create node|policeman||
+|Set|first name|Tom|
+|Set|last name|Nassau|
+|Create criminal|||
+|Set|last name|Soze|
+|Select link template|arrest||
+|Create link|Nassau to Soze||
+|Check|link exists||
+|Select template|policeman||
+|Create node|||
+|Add role|||
+|Select node|1||
+|Check|has role|policeman|
+|Check|has role|drug dealer|
 
- {.table-wrap}
-Select template criminal
-
-
-Create node
-
-Create node
-
-Select
-
-link template
-
-?
-
-Create link
-
-Check
-
-count links
-
-1
-
-Delete node
-
-1
-
-Check
-
-count links
-
-0
-
-Create node
-
-policeman
-
-Set
-
-first name
-
-Tom
-
-Set
-
-last name
-
-Nassau
-
-Create criminal
-
-Set
-
-last name
-
-Soze
-
-Select link template
-
-arrest
-
-Create link
-
-Nassau to Soze
-
-Check
-
-link exists
-
-Select template
-
-policeman
-
-Create node
-
-Add role
-
-Select node
-
-1
-
-Check
-
-has role
-
-policeman
-
-Check
-
-has role
-
-drug dealer
 
 1.  #### Group 4 
 
@@ -343,22 +230,21 @@ A GUI mockup:
 Manager approval:
     Purpose:
 
- {.table-wrap}
-  Type   Date   Description                    Amount     Needs Receipt
-  ------ ------ ------------------------------ ---------- ---------------
-                American Airlines SEA to MSP   \$600.00   
-                                                          X
+|Type|Date|Description|Amount|Needs Receipt|
+|--- |--- |--- |--- |--- |
+|||American Airlines SEA to MSP|$600.00||
+|||||X|
+
+
                                                           
-
-
 Issues: editing, are you sure?, manager approval, expense group
 
 Test:
 
- {.table-wrap}
-  Type      Date      Vendor v   Description   Amount
-  --------- --------- ---------- ------------- --------
-  Air tix   7/16/06   AA         ORD to MSP    763.42
+|Type|Date|Vendor v|Description|Amount|
+|--- |--- |--- |--- |--- |
+|Air tix|7/16/06|AA|ORD to MSP|763.42|
+
 
 
 Purpose: Trip to agile conference\
@@ -369,14 +255,14 @@ An analysis of states:
 New -- Open, can't pay, can't approve, can't close\
 Submitted -- Open, can't pay, can approve, can't close\
 
- {.table-wrap}
-              Is Open   Can Pay   Can Approve   Can Close
-  ----------- --------- --------- ------------- -----------
-  New                                           
-  Submitted                                     
-  Approved                                      
-  Paid                                          
-  Closed                                        
+||Is Open|Can Pay|Can Approve|Can Close|
+|--- |--- |--- |--- |--- |
+|New|||||
+|Submitted|||||
+|Approved|||||
+|Paid|||||
+|Closed||||||
+                                     
 
 
 1.  #### Group 5 {#Agile-Games-Group5}
@@ -385,45 +271,18 @@ A stock trading program
 
 A screen mockup with annotations:
 
- {.table-wrap}
-Start Time
+ ||||
+|--- |--- |--- |
+|Start Time|[   ] v : [   ] v|9:30-16:00 ET (market start to market end)|
+|End time|[   ] v : [   ] v||
+|Stock Symbol|[    ]|1-4 alpha|
+|# Shares|[    ]|1|
+|Order Size|[    ]|100->1 million (int) (+- 100)|
+||[Buy/Sell]||
+|Price|$ [    ]|(optional) numeric + 2 decimal optional|
+||||
+||[OK]    [Cancel]|||
 
-
-\[   \] v : \[   \] v
-
-9:30-16:00 ET (market start to market end)
-
-End time
-
-\[   \] v : \[   \] v
-
-Stock Symbol
-
-\[    \]
-
-1-4 alpha
-
-\# Shares
-
-\[    \]
-
-1
-
-Order Size
-
-\[    \]
-
-100-\>1 million (int) (+- 100)
-
-\[Buy/Sell\]
-
-Price
-
-\$ \[    \]
-
-(optional) numeric + 2 decimal optional
-
-\[OK\]    \[Cancel\]
 
 Test of algorithm:
 
@@ -449,28 +308,28 @@ Test 1 -- Sunny day
 
 Add table:
 
- {.table-wrap}
-  ------------------- ------------ ------------------
-  Johnson, David      name         15ch, 15ch
-  1200 Nicolette Dr   addr1        40ch
-  12345               addr2        5d or 5d-4d
-  123456789           taxid        9 ch num
-  ALLINA              network id   must exist in db
-  ------------------- ------------ ------------------
+||||
+|--- |--- |--- |
+|Johnson, David|name|15ch, 15ch|
+|1200 Nicolette Dr|addr1|40ch|
+|12345|addr2|5d or 5d-4d|
+|123456789|taxid|9 ch num|
+|ALLINA|network id|must exist in db|
+
 
 
 Read: (same)
 
 Test 2- Invalid zip code (and more like this...)
 
- {.table-wrap}
-  ------------------- ------------ ------------------
-  Johnson, David      name         15ch, 15ch
-  1200 Nicolette Dr   addr1        40ch
-  1234                addr2        5d or 5d-4d
-  123456789           taxid        9 ch num
-  ALLINA              network id   must exist in db
-  ------------------- ------------ ------------------
+||||
+|--- |--- |--- |
+|Johnson, David|name|15ch, 15ch|
+|1200 Nicolette Dr|addr1|40ch|
+|12345|addr2|5d or 5d-4d|
+|123456789|taxid|9 ch num|
+|ALLINA|network id|must exist in db|
+
 
 
 Expected error: \"Invalid zip could should be 5 digits\"
@@ -482,15 +341,15 @@ Test 1 -- Sunny day
 
 Populate database -- set up claim 1
 
- {.table-wrap}
-  --------------- ----------------
-  Date of claim   30 days ago
-  Member name     Doe, Jane
-  Provider name   Johnson, David
-  Diagnosis       769
-  Charge          \$500.00
-  Network id      ALLINA
-  --------------- ----------------
+|||
+|--- |--- |
+|Date of claim|30 days ago|
+|Member name|Doe, Jane|
+|Provider name|Johnson, David|
+|Diagnosis|769|
+|Charge|$500.00|
+|Network id|ALLINA|
+
 
 
 Step 1. Analyst views pending claims \< 60 days (display claim A =\> OK)
@@ -510,74 +369,41 @@ Domain: Shipping company.
 Test: 1. Customer ABC call to know where shipment with order \#33 is.
 The system should answer, \"Last stop was Tampa, FL.\"
 
- {.table-wrap}
-  Note                   Order \# from Customer   Request          Answer from System
-  ---------------------- ------------------------ ---------------- --------------------
-  Truck left origin      \#33                     last stop?       Tampa, FL
-  Not in truck           \#34                     last stop?       nothing
-  Truck at destination   \#35                     last stop?       Daytona, FL
-  Truck at destination   \#35                     arrived?         yes
-  Not in truck           \#34                     arrived?         no
-  Not arrived            \#34                     expected date?   26/7
-  Arrived                \#35                     expected date?   25/7
-  Truck underway         \#33                     arrived?         no
+|Note|Order # from Customer|Request|Answer from System|
+|--- |--- |--- |--- |
+|Truck left origin|#33|last stop?|Tampa, FL|
+|Not in truck|#34|last stop?|nothing|
+|Truck at destination|#35|last stop?|Daytona, FL|
+|Truck at destination|#35|arrived?|yes|
+|Not in truck|#34|arrived?|no|
+|Not arrived|#34|expected date?|26/7|
+|Arrived|#35|expected date?|25/7|
+|Truck underway|#33|arrived?|no|
+
 
 
 Example context:
+|#|Pick up origin|Final drop destination|Expected Date|
+|--- |--- |--- |--- |
+|#33|Tampa, FL|Toronto, ONT|27/7|
+|time 24/7 8 AM||||
+|#34|Vancouver, BC|Toronto, ONT|26/7|
+|time||||
+|#35|Toronto, ONT|Daytona, FL|25/7|
+|time 24/7 17:00|time 25/7 10:00||||
 
- {.table-wrap}
-\#
-
-
-Pick up origin
-
-Final drop destination
-
-Expected Date
-
-\#33
-
-Tampa, FL
-
-Toronto, ONT
-
-27/7
-
-time 24/7 8 AM
-
-\#34
-
-Vancouver, BC
-
-Toronto, ONT
-
-26/7
-
-time
-
-\#35
-
-Toronto, ONT
-
-Daytona, FL
-
-25/7
-
-time 24/7 17:00
-
-time 25/7 10:00
 
 Test 2: I want the system to help me minimize empty truck displacement.
 For example, I want to be able to ask if there is an empty truck in
 Ontario on July 27. Arrival within 2 days.
 
- {.table-wrap}
-  ----------------- ---------------- ---------------------------------
-  Empty truck in?   Shipment order   
-  Ontario/27/07     \#33, \#34       truck at city
-  Ontario/25/07                      no truck because wrong date
-  Montreal/QC                        no truck because wrong location
-  ----------------- ---------------- ---------------------------------
+||||
+|--- |--- |--- |
+|Empty truck in?|Shipment order||
+|Ontario/27/07|#33, #34|truck at city|
+|Ontario/25/07||no truck because wrong date|
+|Montreal/QC||no truck because wrong location|
+
 
 
 1.  Conclusion 
