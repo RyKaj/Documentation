@@ -3,8 +3,6 @@
 
 DevOps 
 ======
-
-
 *   1.0 DevOps
     *   [DevOps Principles, Practices, Values](PrinciplesPracticesValues.md)
     *   [DevOps Culture](DevOps-Culture.md) 
@@ -16,8 +14,7 @@ DevOps
     *   [DevOps Delivering Continuous Value](DevOps-Delivering-Continuous-Value.md)
     *   [DevOps - Enterprises](DevOps---Enterprises_463532376.md)
     *   [DevOps - Immature Teams vs Mature Teams](DevOps---Immature-Teams-vs-Mature-Teams_463532396.md)
-    *   [DevOps Maturity Model](DevOps-Maturity-Model_463534853.md)
-    
+    *   [DevOps Maturity Model](DevOps-Maturity-Model_463534853.md)    
     *   [DevOps Workflow](DevOps-Workflow_462586629.md)
     *   [DevSecOps Term](DevSecOps-Term.md)
     *   [Infrastructure as Code (IaC)](InfrastructureasCode.md)

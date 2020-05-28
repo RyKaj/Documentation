@@ -436,7 +436,7 @@ As a DevOps team matures, they often find that their environment fills with a gr
 
 Savvy teams seek ways to avoid these kinds of failures. As a team learns, it progresses through various states of DevOps maturity. Sometimes those tools to avoid failure will be technical in nature, but just as often they’ll be changes to process or lines of communication. A team can have the best tech in the world, but if they have bad processes, they’re still going to fail as often as they succeed.
 
-![](attachments/463532396/463532394.png)
+<img src="./attachments/463532394.png" alt="">
 
   
 
