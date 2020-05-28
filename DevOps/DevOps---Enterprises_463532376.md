@@ -1,0 +1,43 @@
+DevOps :  - Enterprises  
+
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [DevOps](https://github.com/RyKaj/Documentation/tree/master/DevOps/README.md) |
+------------
+
+DevOps :  - Enterprises
+=============================================
+
+Created by Ryan Kajiura on Mar 18, 2020
+
+
+
+Over the last decade, **DevOps processes and technology have matured and proven to both accelerate software delivery and improve its quality**. With its significant benefits, DevOps is quickly becoming the standard software development methodology. However, adopting DevOps decentralized development and loosely coupled teams is not always straightforward for an enterprise. It is a transformational operating model after all. It makes sense that implementation can be tricky. Just as the DevOps matured, so have the processes that support its implementation at scale, including value stream management (VSM). VSM extends the continuous improvement through small iterations fundamental to DevOps to its implementation. This helps enterprises navigate their digital transformation journey to begin realizing the benefits of Agile + DevOps.
+
+**DevOps at Scale gives you a background on DevOps, and how it is now implemented at the enterprise level.** In every organization, the transition to DevOps begins with an individual or team to champion its introduction. Your organization’s DevOps journey starts with you. Explore DevOps benefits, processes, and tools to discover what DevOps in your enterprise could achieve.
+
+  
+
+**Value Stream Management**
+
+Agile + DevOps + Measured Outcomes
+----------------------------------
+
+Intermix and transition traditional application delivery pipelines with Agile + DevOps methods improving delivery velocity, quality and compliance with complete transparency and business alignment
+
+The Perfect Blend of Methodologies
+----------------------------------
+
+  
+
+[![](download/resources/com.atlassian.confluence.plugins.confluence-view-file-macro:view-file-macro-resources/images/placeholder-small-file.png)value-stream-management-devops-plus-agile.svg](/download/attachments/463532376/value-stream-management-devops-plus-agile.svg?version=1&modificationDate=1584537414063&api=v2)
+
+  
+
+  
+
+Attachments:
+------------
+
+![](images/icons/bullet_blue.gif) [value-stream-management-devops-plus-agile.svg](attachments/463532376/463532372.svg) (image/svg+xml)  
+
+
+
