@@ -58,7 +58,7 @@ authenticated user. This information, referred to as claims, includes
 the user's identity, and might also include other information such as
 role membership and more granular access rights.
 
-![](attachments/463533336/463533335.png){.confluence-embedded-image
+<kbd>![](attachments/463533336/463533335.png){.confluence-embedded-image
 .confluence-thumbnail .confluence-content-image-border height="150"}
 
 This model is often called claims-based access control. Applications and

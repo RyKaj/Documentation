@@ -98,7 +98,7 @@ The Supervisor can use this information to help determine whether a step
 has failed. The figure illustrates the relationship between the
 Scheduler, the Agents, the Supervisor, and the state store.
 
-![](attachments/463533397/463533396.png)
+<kbd>![](attachments/463533397/463533396.png)
 
 > This diagram shows a simplified version of the pattern. In a real
 > implementation, there might be many instances of the Scheduler running

@@ -86,9 +86,9 @@ second most expensive option.
 Below you can see the main features of disaster recovery sites and how
 they compare.
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463534690.jpg)
+<kbd>![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463534690.jpg)
 
-![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463534691.jpg)
+<kbd>![](https://github.com/RyKaj/Documentation/tree/master/InfrastructureArchitecture/attachments/463534691.jpg)
 
 References
 

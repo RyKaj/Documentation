@@ -42,7 +42,7 @@ either to the legacy application or the new services. Existing features
 can be migrated to the new system gradually, and consumers can continue
 using the same interface, unaware that any migration has taken place.
 
-![](attachments/463533409/463533408.png)
+<kbd>![](attachments/463533409/463533408.png)
 
 
 This pattern helps to minimize risk from the migration, and spread the

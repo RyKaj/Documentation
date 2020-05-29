@@ -33,7 +33,7 @@ computational unit. Each computational unit runs in its own virtual
 environment. Each function has been implemented as a separate task
 (labeled Task A through Task E) running in its own computational unit.
 
-![](attachments/463533330/463533329.png)
+<kbd>![](attachments/463533330/463533329.png)
 
 Each computational unit consumes chargeable resources, even when it\'s
 idle or lightly used. Therefore, this isn\'t always the most

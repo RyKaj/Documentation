@@ -6,7 +6,7 @@ Infrastructure Architecture - Serverless Architecture
 
 
  
-![Diagram showing a comparison of virtual machines, containers, and
+<kbd>![Diagram showing a comparison of virtual machines, containers, and
 serverless
 computing](https://docs.microsoft.com/en-us/learn/modules/principles-cloud-computing/media/2-vm-vs-container-vs-serverless.png)
 
@@ -692,7 +692,7 @@ of App Service Plan you want to use. That service plan defines how much
 memory and CPU your instance will receive. For instance, here's what the
 B (Basic) tier App Service Plans look like...
 
-![A listing of B tier service plans and resources granted with each
+<kbd>![A listing of B tier service plans and resources granted with each
 one](https://burkeholland.github.io/media/b-service-plans.png)
 .confluence-external-resource .confluence-content-image-border
 height="150"}
@@ -730,7 +730,7 @@ You can actually watch this happen in realtime by simulating some load
 on an Azure Functions instance. Watch the GIF below and you can see the
 number of servers increase as the CPU gets pegged.
 
-![](https://burkeholland.github.io/media/function-scaling-demo.gif)
+<kbd>![](https://burkeholland.github.io/media/function-scaling-demo.gif)
 .confluence-external-resource .confluence-content-image-border
 height="250"}
 

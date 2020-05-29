@@ -49,7 +49,7 @@ to retrieve a piece of luggage, hence the name of the pattern. Clients
 interested in processing that specific message can use the obtained
 reference to retrieve the payload, if needed.
 
-![](attachments/463533314/463533313.jpg)
+<kbd>![](attachments/463533314/463533313.jpg)
 
 Issues and Considerations
 -------------------------

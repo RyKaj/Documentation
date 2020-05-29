@@ -38,12 +38,12 @@ message at a time.
 
 Here\'s what the general Sequential Convoy pattern looks like:
 
-![](attachments/463533400/463533398.png)
+<kbd>![](attachments/463533400/463533398.png)
 
 In the queue, messages for different categories may be interleaved, as
 shown in the following diagram:
 
-![](attachments/463533400/463533399.png)
+<kbd>![](attachments/463533400/463533399.png)
 
 Issues and Considerations
 -------------------------

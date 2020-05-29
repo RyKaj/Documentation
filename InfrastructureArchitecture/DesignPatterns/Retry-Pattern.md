@@ -80,7 +80,7 @@ service using this pattern. If the request is unsuccessful after a
 predefined number of attempts, the application should treat the fault as
 an exception and handle it accordingly.
 
-![](attachments/463533395/463533394.png)
+<kbd>![](attachments/463533395/463533394.png)
 
 The application should wrap all attempts to access a remote service in
 code that implements a retry policy matching one of the strategies

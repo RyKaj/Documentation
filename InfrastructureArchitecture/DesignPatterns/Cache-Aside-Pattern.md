@@ -44,7 +44,7 @@ implementing the cache-aside strategy. This strategy loads data into the
 cache on demand. The figure illustrates using the Cache-Aside pattern to
 store data in the cache.
 
-![](attachments/463533304/463533303.png)
+<kbd><img src="./attachments/463533303.png" alt=""></kbd>
 
 If an application updates information, it can follow the write-through
 strategy by making the modification to the data store, and by

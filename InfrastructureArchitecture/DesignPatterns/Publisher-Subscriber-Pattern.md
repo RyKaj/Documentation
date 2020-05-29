@@ -54,7 +54,7 @@ following:
 
 The following diagram shows the logical components of this pattern:
 
-![](attachments/463533391/463533390.png)
+<kbd>![](attachments/463533391/463533390.png)
 
 Pub/sub messaging has the following benefits:
 

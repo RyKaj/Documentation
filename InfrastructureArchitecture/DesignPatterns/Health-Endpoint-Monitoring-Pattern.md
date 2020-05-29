@@ -28,7 +28,7 @@ A health monitoring check typically combines two factors:
 
 The response code indicates the status of the application and, optionally, any components or services it uses. The latency or response time check is performed by the monitoring tool or framework. The figure provides an overview of the pattern.
 
-![](attachments/463533359/463533358.png){.confluence-embedded-image .confluence-thumbnail .confluence-content-image-border height="150"}
+<kbd>![](attachments/463533359/463533358.png){.confluence-embedded-image .confluence-thumbnail .confluence-content-image-border height="150"}
 
 Other checks that might be carried out by the health monitoring code in the application include:
 

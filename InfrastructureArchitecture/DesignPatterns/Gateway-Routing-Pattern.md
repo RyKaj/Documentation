@@ -43,7 +43,7 @@ whatever service or services need to handle the expected client
 behavior, allowing you to add, split, and reorganize services behind the
 gateway without changing the client.
 
-![](attachments/463533354/463533353.png)
+<kbd>![](attachments/463533354/463533353.png)
 
 This pattern can also help with deployment, by allowing you to manage
 how updates are rolled out to users. When a new version of your service

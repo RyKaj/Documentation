@@ -51,7 +51,7 @@ approach enables the same pool of consumer service instances to handle
 messages from any instance of the application. The figure illustrates
 using a message queue to distribute work to instances of a service.
 
-![](attachments/463533328/463533327.png)
+<kbd>![](attachments/463533328/463533327.png)
 
 This solution has the following benefits:
 

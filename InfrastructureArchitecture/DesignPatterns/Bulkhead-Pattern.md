@@ -72,7 +72,7 @@ thread pool assigned to Service A are affected. Workloads that use
 Service B and C are not affected and can continue working without
 interruption.
 
-![](attachments/463533301/463533299.png)
+<kbd><img src="./attachments/463533299.png" alt=""></kbd>
 
 The next diagram shows multiple clients calling a single service. Each
 client is assigned a separate service instance. Client 1 has made too
@@ -80,7 +80,7 @@ many requests and overwhelmed its instance. Because each service
 instance is isolated from the others, the other clients can continue
 making calls.
 
-![](attachments/463533301/463533300.png)
+<kbd><img src="./attachments/463533300.png" alt=""></kbd>
 
 Issues and Considerations
 -------------------------

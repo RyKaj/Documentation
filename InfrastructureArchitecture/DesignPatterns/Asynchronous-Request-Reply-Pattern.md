@@ -101,7 +101,7 @@ much extra complexity.
 
 The following diagram shows a typical flow:
 
-![](attachments/463533293/463533292.png)
+<kbd><img src="./attachments/463533292.png" alt=""></kbd>
 
 1.  The client sends a request and receives an HTTP 202 (Accepted)
     response.

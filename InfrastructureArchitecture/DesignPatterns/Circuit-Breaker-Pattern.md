@@ -111,7 +111,7 @@ states that mimic the functionality of an electrical circuit breaker:
     > recovery is complete, but while recovery is in progress a flood of
     > work can cause the service to time out or fail again.
 
-![](attachments/463533311/463533310.png)
+<kbd><img src="./attachments/463533310.png" alt=""></kbd>
 
 In the figure, the failure counter used by the  **Closed** state is time
 based. It\'s automatically reset at periodic intervals. This helps to

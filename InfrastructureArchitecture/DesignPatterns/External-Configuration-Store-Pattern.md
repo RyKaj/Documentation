@@ -66,7 +66,7 @@ production, including multiple release versions of each one).
 > The figure illustrates an overview of the External Configuration Store
 > pattern with optional local cache.
 
-![](attachments/463533334/463533333.png){.confluence-embedded-image .confluence-content-image-border height="150"}
+<kbd>![](attachments/463533334/463533333.png){.confluence-embedded-image .confluence-content-image-border height="150"}
 
 Issues and Considerations
 -------------------------

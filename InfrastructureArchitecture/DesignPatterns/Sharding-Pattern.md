@@ -133,7 +133,7 @@ shard key. Multiple tenants might share the same shard, but the data for
 a single tenant won\'t be spread across multiple shards. The figure
 illustrates sharding tenant data based on tenant IDs.
 
-![](attachments/463533404/463533401.png)
+<kbd>![](attachments/463533404/463533401.png)
 
 
 The mapping between the shard key and the physical storage can be based
@@ -160,7 +160,7 @@ performing a large number of point queries (queries that return a single
 data item). The next figure illustrates storing sequential sets (ranges)
 of data in shard.
 
-![](attachments/463533404/463533402.png)
+<kbd>![](attachments/463533404/463533402.png)
 
 In this example, the shard key is a composite key containing the order
 month as the most significant element, followed by the order day and the
@@ -183,7 +183,7 @@ possibly by introducing some random element into the computation. The
 next figure illustrates sharding tenant data based on a hash of tenant
 IDs.
 
-![](attachments/463533404/463533403.png)
+<kbd>![](attachments/463533404/463533403.png)
 
 To understand the advantage of the Hash strategy over other sharding
 strategies, consider how a multi-tenant application that enrolls new

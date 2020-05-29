@@ -44,7 +44,7 @@ of the communication path. While you can configure the workflow, add or
 remove services easily with a well-designed orchestrator, such an
 implementation is complex hard to maintain.
 
-![](attachments/463533308/463533306.png)
+<kbd><img src="./attachments/463533306.png" alt=""></kbd>
 
 Solution
 --------
@@ -52,11 +52,9 @@ Solution
 Let each service decide when and how a business operation is processed,
 instead of depending on a central orchestrator.
 
-One way to implement choreography is to use the  [asynchronous messaging
-pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/publisher-subscriber) to
-coordinate the business operations.
+One way to implement choreography is to use the  [asynchronous messaging pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/publisher-subscriber) to coordinate the business operations.
 
-![](attachments/463533308/463533307.png)
+<kbd><img src="./attachments/463533307.png" alt=""></kbd>
 
 A client request publishes messages to a message queue. As messages
 arrive, they are pushed to subscribers, or services, interested in that

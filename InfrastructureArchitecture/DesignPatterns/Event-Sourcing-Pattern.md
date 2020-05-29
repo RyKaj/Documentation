@@ -87,7 +87,7 @@ options for using the event stream such as creating a materialized view,
 integrating events with external applications and systems, and replaying
 events to create projections of the current state of specific entities.
 
-![](attachments/463533332/463533331.png){.confluence-embedded-image .confluence-thumbnail .confluence-content-image-border height="150"}
+<kbd>![](attachments/463533332/463533331.png){.confluence-embedded-image .confluence-thumbnail .confluence-content-image-border height="150"}
 
 The Event Sourcing pattern provides the following advantages:
 

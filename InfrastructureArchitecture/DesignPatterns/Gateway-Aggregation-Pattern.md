@@ -33,7 +33,7 @@ request may be done in parallel, the application must send, wait, and
 process data for each request, all on separate connections, increasing
 the chance of failure.
 
-![](attachments/463533350/463533348.png)
+<kbd>![](attachments/463533350/463533348.png)
 
 Solution
 --------
@@ -55,12 +55,12 @@ relevant service (2). Each service returns a response to the gateway
 response to the application (4). The application makes a single request
 and receives only a single response from the gateway.
 
-![](attachments/463533350/463533349.png){.confluence-embedded-image
-![New-API-GW-Diagram](https://d1.awsstatic.com/serverless/New-API-GW-Diagram.c9fc9835d2a9aa00ef90d0ddc4c6402a2536de0d.png)
-![](https://microservices.io/i/apigateway.jpg)
-![](attachments/463533350/463533529.png)
-![](attachments/463533350/463533530.png)
-![](https://microservices.io/i/bffe.png)
+<kbd>![](attachments/463533350/463533349.png){.confluence-embedded-image
+<kbd>![New-API-GW-Diagram](https://d1.awsstatic.com/serverless/New-API-GW-Diagram.c9fc9835d2a9aa00ef90d0ddc4c6402a2536de0d.png)
+<kbd>![](https://microservices.io/i/apigateway.jpg)
+<kbd>![](attachments/463533350/463533529.png)
+<kbd>![](attachments/463533350/463533530.png)
+<kbd>![](https://microservices.io/i/bffe.png)
 
 ### Using an API gateway has the following benefits
 

@@ -29,7 +29,7 @@ does too much.
 Read and write workloads are often asymmetrical, with very different
 performance and scale requirements.
 
-![](attachments/463533319/463533316.png)
+<kbd>![](attachments/463533319/463533316.png)
 
 -   There is often a mismatch between the read and write representations
     of the data, such as additional columns or properties that must be
@@ -63,7 +63,7 @@ CQRS separates reads and writes into different models, using 
 The models can then be isolated, as shown in the following diagram,
 although that\'s not an absolute requirement.
 
-![](attachments/463533319/463533317.png)
+<kbd>![](attachments/463533319/463533317.png)
 
 Having separate query and update models simplifies the design and
 implementation. However, one disadvantage is that CQRS code can\'t
@@ -85,7 +85,7 @@ sync. Typically this is accomplished by having the write model publish
 an event whenever it updates the database. Updating the database and
 publishing the event must occur in a single transaction.
 
-![](attachments/463533319/463533318.png)
+<kbd>![](attachments/463533319/463533318.png)
 
 The read store can be a read-only replica of the write store, or the
 read and write stores can have a different structure altogether. Using
