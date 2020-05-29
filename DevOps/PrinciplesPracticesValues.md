@@ -7,9 +7,9 @@ DevOps :  Principles, Practices, Values
 =============================================================
 
 
-![Practices, Principles, Values](http://brodzinski.com/wp-content/uploads/iceberg.png) 
-![](https://www.capgemini.com/wp-content/uploads/2019/09/DevOps-2.jpg) 
-![](https://www.capgemini.com/wp-content/uploads/2019/09/Devops-culture.png)
+<kbd>![Practices, Principles, Values](http://brodzinski.com/wp-content/uploads/iceberg.png) </kbd>
+<kbd>![](https://www.capgemini.com/wp-content/uploads/2019/09/DevOps-2.jpg) </kbd>
+<kbd>![](https://www.capgemini.com/wp-content/uploads/2019/09/Devops-culture.png)</kbd>
 
  
 
@@ -41,7 +41,7 @@ Training, having security champions across teams, incorporating DevSecOps proces
 ## Process
   
 
-<img src="./attachments/463531992.png" alt="">
+<kbd><img src="./attachments/463531992.png" alt=""></kbd>
 
   
 
@@ -214,7 +214,7 @@ Continuous integration and continuous delivery have measurable outcomes, they ar
 
 > We’ve created a DevOps team to implement CI/CD pipelines and manage the releases. We’re DevOps now!”
 
-![](https://miro.medium.com/max/700/0*mJgJdiv-doCupLgH.jpg)
+<kbd>![](https://miro.medium.com/max/700/0*mJgJdiv-doCupLgH.jpg)</kbd>
 
 How many of you just cringed?
 
