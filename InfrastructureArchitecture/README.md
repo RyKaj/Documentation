@@ -85,4 +85,3 @@
 -   Database Architecture
     -   [Database NOSQL Architect](./Database/Database-NOSQL-Architect.md)
     -   [Database SQL Architect](./Database/Database-SQL-Architect.md)
-    -   [Shared Database](./Database/Shared-Database.md)
