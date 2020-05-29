@@ -86,7 +86,7 @@ You use containers to make the best use of the hardware at hand. However, with s
 
 You need a container orchestrator!
 
-**Kubernetes terminology and architecture**
+### Kubernetes terminology and architecture
 
 Kubernetes is a Greek word that [stands for helmsman](https://en.wikipedia.org/wiki/Kubernetes) or captain. It is the governor of your cluster, the maestro of the orchestra. To be able to do this critical job, Kubernetes was designed in a highly modular manner. Each part of the technology provides the necessary foundation for the services that depend on it. The illustration below represents a high overview of how the application works. Each module is contained inside a larger one that relies on it to function. Let’s dig deeper into each one of these.
 
@@ -100,13 +100,11 @@ Also referred to as the control plane, it is the most basic part of the whole sy
 
 The core is also responsible for contacting other layers (through kubelet) to fully manage containers. Let’s have a brief look at each of them:
 
-  
-
-**Container Runtime**
+### Container Runtime
 
 Kubernetes uses [Container Runtime Interface](https://kubernetes.io/blog/2016/12/container-runtime-interface-cri-in-kubernetes/) **(CRI)** to transparently manage your containers without necessarily having to know (or deal with) the runtime used. When we discussed containers, we mentioned that Docker, despite its popularity, is not the only container management system available. Kubernetes uses [containerd](https://containerd.io/) (pronounced _container d_) by default as a container runtime. This is how you are able to issue standard Docker commands against Kubernetes containers. It also uses **rkt** as an alternative runtime. Don’t be too confused at this part. This is the very inner workings of Kubernetes that, although you need to understand, you won’t have to deal with almost entirely. Kubernetes abstracts this layer through its rich set of APIs.
 
-**The Network Plugin**
+### The Network Plugin
 
 As we discussed earlier, a container orchestration system is responsible (among other things) for managing the network through which containers and services communicate. Kubernetes uses a library called [Container Network Interface](https://github.com/containernetworking/cni) **(CNI)** as an interface between the cluster and various network providers. There are a number of network providers that can be used in Kubernetes. This number is constantly changing. To name a few:
 
@@ -117,19 +115,19 @@ As we discussed earlier, a container orchestration system is responsible (among 
 
 The list is too long to mention here. You might be asking: why does Kubernetes need more than one networking provider to choose from? Kubernetes was designed mainly to be deployed in diverse environments. A Kubernetes node can be anything from a bare metal physical server, a virtual machine, or a cloud instance. With such diversity, you have a _virtually_ endless number of options for how your containers will communicate with each other. This requires more than one to choose among. That is why Kubernetes designers chose to abstract the network provider layer behind CNI.
 
-**The Volume Plugin**
+### The Volume Plugin
 
 A volume broadly refers to the storage that will be availed for the [pod](https://kubernetes.io/docs/concepts/workloads/pods/pod/). A pod is one or more containers managed by Kubernetes as one unit. Because Kubernetes was designed to be deployed in multiple environments, there is a level of abstraction between the cluster and the underlying storage. Kubernetes also uses the CSI ([Container Storage Interface](https://github.com/container-storage-interface/spec)) to interact with various storage plugins that are already available.
 
-**Image Registry**
+### Image Registry
 
 Kubernetes must contact an image registry (whether public or private) to be able to pull images and spin out containers.
 
-**Cloud Provider**
+### Cloud Provider
 
 Kubernetes can be deployed on almost any platform you may think of. However, the majority of users resort to cloud providers like AWS, Azure, or GCP to save even more costs. Kubernetes depends on the cloud provider APIs to perform scalability and resources provisioning tasks, such as provisioning load balancers, accessing cloud storage, utilizing the inter-node network and so on.
 
-**Identity Provider**
+### Identity Provider
 
 If you’re provisioning a Kubernetes cluster in a small company with a small number of users, authentication won’t be a big issue. You can create an account for each user and that’s it. But, if you’re working in a large enterprise, with hundreds or even thousands of developers, operators, testers, security professionals...etc. then having to manually create an account for each person may quickly turn into a nightmare. Kubernetes designers had that in mind when working on the authentication mechanism. You can use your own identity provider system to authenticate your users to the cluster as long as it uses [OpenID connect](https://openid.net/connect/).
 
@@ -161,7 +159,7 @@ Kubernetes is one of the busiest open-source projects out there. It has a large,
 
 Kubernetes introduces a lot of vocabulary to describe how your application is organized. We'll start from the smallest layer and work our way up.
 
-Pods
+## Pods
 
 A Kubernetes pod is a group of containers, and is the smallest unit that Kubernetes administers. Pods have a single IP address that is applied to every container within the pod. Containers in a pod share the same resources such as memory and storage. This allows the individual Linux containers inside a pod to be treated collectively as a single application, as if all the containerized processes were running together on the same host in more traditional workloads. It’s quite common to have a pod with only a single container, when the application or service is a single process that needs to run. But when things get more complicated, and multiple processes need to work together using the same shared data volumes for correct operation, multi-container pods ease deployment configuration compared to setting up shared resources between containers on your own.
 
@@ -169,7 +167,7 @@ A Kubernetes pod is a group of containers, and is the smallest unit that Kuberne
 
 For example, if you were working on an image-processing service that created GIFs, one pod might have several containers working together to resize images. The primary container might be running the non-blocking microservice application taking in requests, and then one or more auxiliary (side-car) containers running batched background processes or cleaning up data artifacts in the storage volume as part of managing overall application performance.
 
-Deployments
+## Deployments
 
 Kubernetes deployments define the scale at which you want to run your application by letting you set the details of how you would like pods replicated on your Kubernetes nodes. Deployments describe the number of desired identical pod replicas to run and the preferred update strategy used when updating the deployment. Kubernetes will track pod health, and will remove or add pods as needed to bring your application deployment to the desired state.
 
@@ -179,7 +177,7 @@ A deployment in Kubernetes consists of a ReplicaSet with its Pod template. Consi
 
 The deployment will create a new ReplicaSet B of the V2 template with only 1 instance. And once this instance got created, it will scale down ReplicaSet A by 1 instance, and will keep doing that scaling up B and scaling down A, until B is fully populated and healthy and A reaches 0 instances. This is called rolling update deployment and helps keeping the old version of the service running while the new version is being provisioned.
 
-Services
+## Services
 
 The lifetime of an individual pod cannot be relied upon; everything from their IP addresses to their very existence are prone to change. In fact, within the DevOps community, there’s the notion of treating servers as either “pets” or “cattle.” A pet is something you take special care of, whereas cows are viewed as somewhat more expendable. In the same vein, Kubernetes doesn’t treat its pods as unique, long-running instances; if a pod encounters an issue and dies, it’s Kubernetes’ job to replace it so that the application doesn’t experience any downtime.
 
@@ -193,15 +191,15 @@ A service refers to the backend Pods by using labels, as per the earlier example
 
 Services simplify network communications for a microservices architected solution.
 
-Nodes
+## Nodes
 
 A Kubernetes node manages and runs pods; it's the machine (whether virtualized or physical) that performs the given work. Just as pods collect individual containers that operate together, a node collects entire pods that function together. When you're operating at scale, you want to be able to hand work over to a node whose pods are free to take it.
 
-Master Server
+## Master Server
 
 This is the main entry point for administrators and users to manage the various nodes. Operations are issued to it either through HTTP calls or connecting to the machine and running command-line scripts.
 
-Cluster
+## Cluster
 
 A cluster is all of the above components put together as a single unit. Consists of nodes (real machines or VMs). One or more of these nodes are master(s) which control the others.
 
@@ -213,13 +211,13 @@ The master node, has a kubelet plus an API server which provides REST APIs to co
 
 One more thing to note before moving from here, is that each node in the cluster obviously has an IP address, MAC address and can communicate together and with external network/internet. This is the external network of cluster. On the other hand, inside the cluster there is an internal virtual network. That will assign a different space of network IPs to the containers inside. The internal cluster network, allows different containers to communicate with each other using internal IPs. And if they want to expose services to the outside world, we must use something to expose that, coming shortly.
 
-ReplicaSets
+## ReplicaSets
 
 A ReplicaSet is a Kubernetes controller, which runs in the background and makes sure that there are specific number of Pods running from a specific application. For example we need a web application to have 2 instances running at the same time. This means we will create a ReplicaSet with a Pod template that runs our web application container, and tells the ReplicaSet that we need 2 instances. Once we defined this in Kubernetes as the **desired state** (you will hear this word a lot), the ReplicaSet will now create 2 Pods using this template, and it will keep monitoring if one of them goes down for any reason, it will kill it and will create a new Pod instead. Whenever you need to scale this web application to 3 instances, you will modify the ReplicaSet number of replicas property which indicates the desired state and the ReplicaSet will always try to achieve this state by provisioning new Pods or removing Pods.
 
 Note that ReplicaSets are only concerned about deploying, monitoring and scaling Pods.
 
-**Kubernetes components**
+### Kubernetes components
 
 With a general idea of how Kubernetes is assembled, it's time to take a look at the various software components that make sure everything runs smoothly. Both the master server and individual worker nodes have three main components each.
 
@@ -251,13 +249,13 @@ Node components run on every node, maintaining running pods and providing the Ku
 
   
 
-**Master server components**
+### Master server components
 
-API Server
+#### API Server
 
 The API server exposes a REST interface to the Kubernetes cluster. All operations against pods, services, and so forth, are executed programmatically by communicating with the endpoints provided by it.
 
-Scheduler
+#### Scheduler
 
 The scheduler is responsible for assigning work to the various nodes. It keeps watch over the resource capacity and ensures that a worker node’s performance is within an appropriate threshold.
 
@@ -265,21 +263,20 @@ Controller Manager
 
 The controller-manager is responsible for making sure that the shared state of the cluster is operating as expected. More accurately, the controller manager oversees various controllers which respond to events (e.g., if a node goes down).
 
-**Worker node components**
+### Worker node components
 
-Kubelet
+#### Kubelet
 
 A Kubelet tracks the state of a pod to ensure that all the containers are running. It provides a heartbeat message every few seconds to the master server. If a replication controller does not receive that message, the node is marked as unhealthy.
 
-Kube Proxy
+#### Kube Proxy
 
 The Kube proxy routes traffic coming into a node from the service. It forwards requests for work to the correct containers.
 
-etcd
+#### etcd
 
 [etcd](https://coreos.com/etcd/docs/latest/) is a distributed key-value store that Kubernetes uses to share information about the overall state of a cluster. Additionally, nodes can refer to the global configuration data stored there to set themselves up whenever they are regenerated.
 
-What happens when you create a Pod on a Kubernetes Cluster?
 
 What happens when you create a Pod on a Kubernetes Cluster?
 -----------------------------------------------------------
