@@ -16,10 +16,6 @@ DevOps
     *   [Mature Model](DevOps-Maturity-Model.md)
     *   [Immature vs Mature Teams](DevOps-Immature-Teams-vs-Mature-Teams.md)
     *   [Terminology](DevSecOps-Term.md)
-    *   [Kubernetes Design Patterns ](Kubernetes-Design-Patterns.md)
-
-
-[comment]: InfrastructureasCode.md
-[comment]: Kubernetes_451820631.md
-[comment]: _Containers_451825069.md
-[comment]: Docker-Configuration-Notes_463513540.md
+    *   Kubernetes
+        *   [Kubernetes Design Patterns ](Kubernetes-Design-Patterns.md)
+        *   [Docker-Configuration.md](Docker-Configuration-Notes.md)
