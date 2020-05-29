@@ -9,7 +9,7 @@ Context
 
 Services typically need to call one another. In a monolithic application, services invoke one another through language-level method or procedure calls. In a traditional distributed system deployment, services run at fixed, well known locations (hosts and ports) and so can easily call one another using HTTP/REST or some RPC mechanism. However, a modern [microservice-based](https://microservices.io/patterns/microservices.html) application typically runs in a virtualized or containerized environments where the number of instances of a service and their locations changes dynamically.
 
-![](https://microservices.io/i/servicediscovery/discovery-problem.jpg)
+<kbd>![](https://microservices.io/i/servicediscovery/discovery-problem.jpg)</kbd>
 
 Consequently, you must implement a mechanism for that enables the clients of service to make requests to a dynamically changing set of ephemeral service instances.
 
@@ -34,7 +34,7 @@ When making a request to a service, the client obtains the location of a service
 
 The following diagram shows the structure of this pattern.
 
-![](https://microservices.io/i/servicediscovery/client-side-discovery.jpg)
+<kbd>![](https://microservices.io/i/servicediscovery/client-side-discovery.jpg)</kbd>
 
 This is typically handled by a  [Microservice chassis framework](https://microservices.io/patterns/microservice-chassis.html)
 

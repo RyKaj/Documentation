@@ -21,7 +21,7 @@ typically runs in a virtualized or containerized environments where the
 number of instances of a service and their locations changes
 dynamically.
 
-![](https://microservices.io/i/servicediscovery/discovery-problem.jpg)
+<kbd>![](https://microservices.io/i/servicediscovery/discovery-problem.jpg)
 
 Consequently, you must implement a mechanism for that enables the
 clients of service to make requests to a dynamically changing set of
@@ -58,7 +58,7 @@ available service instance.
 
 The following diagram shows the structure of this pattern.
 
-![](https://microservices.io/i/servicediscovery/server-side-discovery.jpg)
+<kbd>![](https://microservices.io/i/servicediscovery/server-side-discovery.jpg)
 
 
 Examples

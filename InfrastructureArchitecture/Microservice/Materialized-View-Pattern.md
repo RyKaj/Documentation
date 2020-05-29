@@ -60,7 +60,7 @@ In some cases it might be necessary to regenerate the view manually. The
 figure shows an example of how the Materialized View pattern might be
 used.
 
-![](attachments/463533369/463533368.png)
+<kbd><img src="./attachments/463533368.png" alt=""></kbd>
 
 Issues and Considerations
 -------------------------

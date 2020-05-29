@@ -32,7 +32,7 @@ subscribing to  [Domain
 events](https://microservices.io/patterns/data/domain-event.html) published
 by the service that own the data.
 
-![](https://microservices.io/i/patterns/data/QuerySideService.png)
+<kbd>![](https://microservices.io/i/patterns/data/QuerySideService.png)</kbd>
 
 
 Examples

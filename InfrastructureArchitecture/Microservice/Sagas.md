@@ -40,7 +40,7 @@ it violates a business rule then the saga executes a series of
 compensating transactions that undo the changes that were made by the
 preceding local transactions.
 
-![](https://microservices.io/i/data/saga.jpg)
+<kbd>![](https://microservices.io/i/data/saga.jpg)
 
 Examples
 --------
@@ -55,7 +55,7 @@ There are two ways of coordination sagas:
 Example: Choreography-based saga {#Sagas-Example:Choreography-basedsaga}
 --------------------------------
 
-![](https://microservices.io/i/data/Saga_Choreography_Flow.001.jpeg)
+<kbd>![](https://microservices.io/i/data/Saga_Choreography_Flow.001.jpeg)
 
 An e-commerce application that uses this approach would create an order
 using a choreography-based saga that consists of the following steps:
@@ -72,7 +72,7 @@ using a choreography-based saga that consists of the following steps:
 
 ### Example: Orchestration-based saga {#Sagas-Example:Orchestration-basedsaga}
 
-![](https://microservices.io/i/data/Saga_Orchestration_Flow.001.jpeg)
+<kbd>![](https://microservices.io/i/data/Saga_Orchestration_Flow.001.jpeg)
 
 
 An e-commerce application that uses this approach would create an order

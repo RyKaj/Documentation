@@ -14,7 +14,7 @@ loosely coupled services. The goal of the microservice architecture is
 to accelerate software development by enabling continuous
 delivery/deployment.
 
-![](https://microservices.io/i/successtriangle.png){.confluence-embedded-image .img-responsive .confluence-external-resource .confluence-content-image-border height="250"}
+<kbd>![](https://microservices.io/i/successtriangle.png)</kbd>
 
 The microservice architecture does this in two ways:
 
@@ -101,7 +101,7 @@ The business capabilities of an online store include:
 The corresponding microservice architecture would have services
 corresponding to each of these capabilities.
 
-![](https://microservices.io/i/decompose-by-business-capability.png)
+<kbd>![](https://microservices.io/i/decompose-by-business-capability.png)</kbd>
 
 Resulting Context
 -----------------

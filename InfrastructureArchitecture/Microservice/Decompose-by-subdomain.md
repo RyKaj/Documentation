@@ -14,7 +14,7 @@ loosely coupled services. The goal of the microservice architecture is
 to accelerate software development by enabling continuous
 delivery/deployment.
 
-![](https://microservices.io/i/successtriangle.png)
+<kbd>![](https://microservices.io/i/successtriangle.png)</kbd>
 
 The microservice architecture does this in two ways:
 
@@ -102,7 +102,7 @@ The subdomains of an online store include:
 The corresponding microservice architecture would have services
 corresponding to each of these subdomains.
 
-![](https://microservices.io/i/decompose-by-subdomain.png)
+<kbd>![](https://microservices.io/i/decompose-by-subdomain.png)</kbd>
 
 Resulting Context
 -----------------

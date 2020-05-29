@@ -17,7 +17,7 @@ example, the  `Order Service`{.highlighter-rouge} stores information
 about orders and the  `Customer Service`{.highlighter-rouge} stores
 information about customers.
 
-![](https://microservices.io/i/customersandorders.png)
+<kbd>![](https://microservices.io/i/customersandorders.png)
 
 Problem
 -------
