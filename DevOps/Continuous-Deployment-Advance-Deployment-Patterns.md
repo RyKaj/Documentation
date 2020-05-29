@@ -24,7 +24,7 @@ However, sometimes this isn't desired. If you are deploying to a farm of 10 web 
 
 When deployments encounter errors, they will typically fail. However, the **guided failure** mode provides an option to prompt a user to intervene when a deployment encounters an error so that the deployment can continue. With guided failure mode enabled, the user can fail the process, and retry or ignore any steps that failed the first time.
 
-Blue Green Deployments
+### Blue Green Deployments
 
 "Blue-green deployment is a technique that reduces downtime and risk by running two identical production environments called Blue and Green."- cloudfoundry. Could not have said it better myself. Two environments, both production. One might have version 1.0.0 (green) while blue has 1.0.1. Many times traffic is slowly increased to blue while watching for errors or undesirable changes in user behavior. Once all the traffic is moved off from the green (1.0.0) version the environment is shut down. At that point "blue" becomes "green" and the cycle starts over.
 

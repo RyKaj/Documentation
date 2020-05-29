@@ -10,10 +10,6 @@ DevOps :  Periodical Table
 
   
 
-[![](rest/documentConversion/latest/conversion/thumbnail/458555843/1)](/download/attachments/periodic-table-of-devops-tools-v3-1.pdf?version=1&modificationDate=1569932698433&api=v2)
-
-  
-
 **Interactive site** - [https://xebialabs.com/periodic-table-of-devops-tools/](https://xebialabs.com/periodic-table-of-devops-tools/)
 
   

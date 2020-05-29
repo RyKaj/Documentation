@@ -10,7 +10,7 @@ DevOps
     *   [Culture](DevOps-Culture.md) 
     *   [Periodical Table](DevOps-Periodical-Table.md)    
     *   [Continuous Deployment & Delivery](ContinuousDeploymentDelivery.md)
-    *   [Advance Cotinuous Deployment & Delivery](Continuous-Deployment-Advance-Deployment-Patterns.md)
+    *   [Advance Continuous Deployment & Delivery](Continuous-Deployment-Advance-Deployment-Patterns.md)
     *   [Enterprise](DevOps-Enterprises.md)
     *   [Anti-Patterns](DevOps-Anti-Patterns.md)
     *   [Mature Model](DevOps-Maturity-Model.md)

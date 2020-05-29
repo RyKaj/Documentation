@@ -72,7 +72,7 @@ Due to their differences, continuous integration and delivery have their own uni
 
 Continuous delivery provides most of the uses of continuous integration, but it is less about testing and more about product readiness and convenience. With continuous delivery, you can deploy any version of your software with the push of a button. This makes it easy to track progress across multiple departments. Smaller changes can be deployed frequently, so you do not have the risk of a large deployment where a lot of things can go wrong.
 
-Continuous Monitoring - tomorrow’s app today
+#### Continuous Monitoring - tomorrow’s app today
 
 You can’t manage what you can’t measure. Continuous Monitoring will help you keep your CI/CD pipelines flowing smoothly, giving you more confidence in your deployments and allowing you to react to changing customer needs even faster. By monitoring your system and its environment you will know immediately whether your application is performing as desired, or if its performance has degraded. You can then react accordingly.
 
@@ -87,7 +87,7 @@ When implementing continuous monitoring the right way you need to track several 
 
 A lion’s share of your monitoring process should be automated not only to provide you with continuous feedback in real time, but also to allow your system to take proactive actions. You don’t want to be reacting manually each time something happens. Life’s more beautiful when you have clearly defined your triggers and created what-if automation rules to ensure self-improvement of your system.
 
-Virtualization and containerization – let’s go micro-services
+#### Virtualization and containerization – let’s go micro-services
 
 Virtualization is basically just another abstraction layer. It abstracts away physical hardware components to create aggregated pools of resources. Speaking about server virtualization, the main goal is to achieve greater computing density by overbooking hardware resources. It means you trade off the consistency of your workloads for cheaper hardware. It’s the main reason of why Virtual Machines have thrived for the last decade, despite of the noisy neighbor problem and some inherent security vulnerabilities they possess.
 

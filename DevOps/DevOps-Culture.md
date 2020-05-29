@@ -1,10 +1,7 @@
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [DevOps](https://github.com/RyKaj/Documentation/tree/master/DevOps/README.md) |
 ------------
 
-DevOps :  Culture
-=======================================
-
-  
+# DevOps :  Culture
 
 ![](https://miro.medium.com/max/700/0*_-Zy4-1gSw2KWvXL.jpg)
 ![](https://miro.medium.com/max/1138/1*OXVb_Awnzc6fV7i1cM2YZw.png)   
@@ -13,7 +10,7 @@ DevOps :  Culture
 
  
 
-What Is the Goal of DevOps
+## What Is the Goal of DevOps
 
 Improve collaboration between all stakeholders from planning through delivery and automation of the delivery process in order to:
 
@@ -25,7 +22,7 @@ Improve collaboration between all stakeholders from planning through delivery an
 
 ![](https://miro.medium.com/max/700/0*AaDgibL0vgllaaWx.png)
 
-Where Are You on the DevOps Continuum
+## Where Are You on the DevOps Continuum
 
 The DevOps continuum is a helpful way to look at the different aspects of DevOps. The bottom horizontal axis represents what people perceive DevOps to fundamentally be focused on. Some people adamantly feel that DevOps should focus on culture more than tools, while on the other people tend to value tools over culture.
 
@@ -44,11 +41,8 @@ Another important point is that moving up and to the right takes time and many o
 
 DevOps can be a blend of culture, tools and maturity that make sense for your organization and what makes sense will most likely evolve over time. The important thing is to continually strive to break down the walls and bottlenecks between the phases of software delivery by improving collaboration and automation. In the following sections we dive deeper into each aspect of the DevOps continuum to help you better understand where you fit.
 
-Maturity Model
 
-
-
-Maturity Model
+## Maturity Model
 
 By definition, DevOps Maturity is described as a model that determines an organization’s standing in DevOps journey along with determining what more to be accomplished to achieve the desired results. Understanding DevOps adoption ‘as a continuous journey, not a destination’ stands crucial to achieving DevOps maturity.  The DevOps maturity model determines growth through continuous learning from both teams and organizational perspectives. More the capabilities and skills, more will be the ability to handle issues of scale and complexities.
 
@@ -60,25 +54,23 @@ Based in the C.A.L.M.S. definition of DevOps, the framework defines a set of cap
 *   **M**easurement
 *   **S**haring
 
-  
-
-**Culture and Strategy**
+### Culture and Strategy
 
 DevOps has to be understood as a culture-driven approach that brings together different teams, driving them towards a common objective. Transition to DevOps means a transformation in the organization’s operating culture backed by a set of policies and process frameworks. So, that needs proper planning and perfect strategy
 
-**Automation**
+### Automation
 
 Automation is key to continuous delivery and continuous deployment mechanisms in DevOps process. By automating repetitive tasks, the automation process eases development, testing and production in a DevOps cycle, thus saving time and enhancing resource efficiency.
 
-**Structure and Process**
+### Structure and Process
 
 Modern-day IT functioning is process-oriented and involves processes across all stages of the Software Development Life Cycle (SDLC). This has advanced in a DevOps environment, where every stage is a set of processes in line with corporate policies and business objectives.
 
-**Collaboration and Sharing**
+### Collaboration and Sharing
 
 This is the most important aspect of [DevOps culture](https://www.veritis.com/solutions/devops/). Collaboration and sharing are key to DevOps and teams (on the same location or a different location) will need to align tools and resources towards achieving common goals and objectives.
 
-**According to Forbes research, organizations, most commonly, find themselves in one of the following stages as part of their DevOps journey:**
+According to Forbes research, organizations, most commonly, find themselves in one of the following stages as part of their DevOps journey:
 
 *   **Unconscious incompetence:** Organizations fail to understand DevOps and its advantages
 *   **Conscious incompetence:** Organizations still see siloed processes even after 12-18 months of DevOps journey with some automation
@@ -135,221 +127,124 @@ There are a set of parameters to be measured at every stage of DevOps Maturity M
 
 The stage-wise process and the above parameters define an organization’s DevOps maturity success.
 
-Framework
----------
+## Framework
 
 1.  The first step will be to do a self-assessment of the current status of your Product Team for each one of the identified capabilities.
-    
 2.  Define the desired end-point at the end of the next improvement cycle, a cycle can be a month, a quarter, a semester ... every team can define their improvement cycles although a good start would be to set quarterly targets to be able to define meaningful actions.
-    
 3.  Identify the actions you will need to achieve the desired end-point.
     
 
 ### Development
 
-Capability
+*  Capability
+*  Crawl
+*  Walk
+*  Run
+*  Use version control for all production artifacts
+*  No version control
+*  Source code or other assets under version control
+*  Source code or other assets under version control and all production artifacts versioned and stored in the corresponding artifact repository
+*  Automate deployment processes
+*  Manual deployment process
+*  Partially automated deployment process
+*  Fully automated deployment process
+*  Implement test automation
+*  Manual test script execution
+*  Partially automated testing (unit or regression or performance tests)
+*  Fully automated testing (unit and regression and performance tests)
+*  Implement infrastructure automation
+*  Manual deployment process
+*  Partially automated deployment process. Provisioning is done by the teams
+*  Fully automated deployment (infrastructure-as-code). Platform Engineering provides base images
+*  Support test data management
+*  No test data management
+*  Partially automated test data management (e.g. manually triggered import and export of test data)
+*  Fully automated test data management incl. strategy (e.g. consumer data only in PROD)
+*  Implement continuous delivery
+*  No continuous delivery
+*  Partially automated delivery pipeline (e.g. automated build, test process with the manual deployment)
+*  Fully automated pipeline (automated build, test, deployment across environments)
+*  Include NFR’s in Definition of Done
+*  No NFR's used
+*  Ad-hoc NFR checks
+*  Standardised NFR checklist as acceptance criteria for successful releases
+*  Shift left on security
+*  No security aspects considered during development cycle
+*  Security aspects considered during development cycle but shifted towards release (not a priority)
+*  Security aspects included during development cycle from the very start
+*  Build for resilience
+*  No resilience build into system
+*  Design infrastructure and code for failure
+*  Design infrastructure and code for failure with fully automated error recovery (self-healing)
+*  Enable team for troubleshooting
+*  No control over development lifecycle (e.g. access to PROD)
+*  Team has full control over development lifecycle (e.g. access to PROD), but no access to logs and tools relevant for troubleshooting
+*  Team has full control over development lifecycle (e.g. access to PROD) and full access to logs and tools for troubleshooting
 
-Crawl
-
-Walk
-
-Run
-
-Use version control for all production artifacts
-
-No version control
-
-Source code or other assets under version control
-
-Source code or other assets under version control and all production artifacts versioned and stored in the corresponding artifact repository
-
-Automate deployment processes
-
-Manual deployment process
-
-Partially automated deployment process
-
-Fully automated deployment process
-
-Implement test automation
-
-Manual test script execution
-
-Partially automated testing (unit or regression or performance tests)
-
-Fully automated testing (unit and regression and performance tests)
-
-Implement infrastructure automation
-
-Manual deployment process
-
-Partially automated deployment process. Provisioning is done by the teams
-
-Fully automated deployment (infrastructure-as-code). Platform Engineering provides base images
-
-Support test data management
-
-No test data management
-
-Partially automated test data management (e.g. manually triggered import and export of test data)
-
-Fully automated test data management incl. strategy (e.g. consumer data only in PROD)
-
-Implement continuous delivery
-
-No continuous delivery
-
-Partially automated delivery pipeline (e.g. automated build, test process with the manual deployment)
-
-Fully automated pipeline (automated build, test, deployment across environments)
-
-Include NFR’s in Definition of Done
-
-No NFR's used
-
-Ad-hoc NFR checks
-
-Standardised NFR checklist as acceptance criteria for successful releases
-
-Shift left on security
-
-No security aspects considered during development cycle
-
-Security aspects considered during development cycle but shifted towards release (not a priority)
-
-Security aspects included during development cycle from the very start
-
-Build for resilience
-
-No resilience build into system
-
-Design infrastructure and code for failure
-
-Design infrastructure and code for failure with fully automated error recovery (self-healing)
-
-Enable team for troubleshooting
-
-No control over development lifecycle (e.g. access to PROD)
-
-Team has full control over development lifecycle (e.g. access to PROD), but no access to logs and tools relevant for troubleshooting
-
-Team has full control over development lifecycle (e.g. access to PROD) and full access to logs and tools for troubleshooting
 
 ### Product & Processes
 
-  
-
-Capability
-
-Crawl
-
-Walk
-
-Run
-
-Gather and implement customer feedback
-
-No customer (internal or external) feedback gathered in development cycles
-
-Customer feedback (internal or external) gathered on an ad-hoc basis
-
-Customer feedback (internal or external) gathered after all releases
-
-Work in small batches and deploy more frequently
-
-Big work batch size and releases on a monthly basis or longer
-
-Work batch size optimized for weekly releases, but deployment frequency not in sync with business requirements (e.g lead time)
-
-Work batch size optimized for frequent releases and deployment frequency in sync with business requirements (e.g. lead time)
-
-Have a lightweight change approval process
-
-Change approval needed from multiple parties outside the team
-
-Change approval needed within the team
-
-No change approval needed or change approval process totally automated
-
-Integrate application data into Big Data Platform
-
-No application data transferred at all
-
-Partial business-relevant application data transferred to Big Data Platform or provided via API
-
-All business-relevant application data transferred to Big Data Platform
+*  Capability
+*  Crawl
+*  Walk
+*  Run
+*  Gather and implement customer feedback
+*  No customer (internal or external) feedback gathered in development cycles
+*  Customer feedback (internal or external) gathered on an ad-hoc basis
+*  Customer feedback (internal or external) gathered after all releases
+*  Work in small batches and deploy more frequently
+*  Big work batch size and releases on a monthly basis or longer
+*  Work batch size optimized for weekly releases, but deployment frequency not in sync with business requirements (e.g lead time)
+*  Work batch size optimized for frequent releases and deployment frequency in sync with business requirements (e.g. lead time)
+*  Have a lightweight change approval process
+*  Change approval needed from multiple parties outside the team
+*  Change approval needed within the team
+*  No change approval needed or change approval process totally automated
+*  Integrate application data into Big Data Platform
+*  No application data transferred at all
+*  Partial business-relevant application data transferred to Big Data Platform or provided via API
+*  All business-relevant application data transferred to Big Data Platform
 
 ### Management & Monitoring
 
-Capability
+*  Capability
+*  Crawl
+*  Walk
+*  Run
+*  Monitor application and infrastructure performance
+*  No monitoring in place
+*  Application or infrastructure performance monitored but no alerting in place
+*  Application and infrastructure performance is monitored; alerting in place for relevant KPI's
+*  Monitor software delivery performance
+*  No metrics monitored
+*  Selected metrics monitored
+*  All key metrics monitored
+*  Limit Work in Progress
+*  More than 10 features in progress
+*  Less than 10 features in progress
+*  Not more than 5 features in progress
 
-Crawl
-
-Walk
-
-Run
-
-Monitor application and infrastructure performance
-
-No monitoring in place
-
-Application or infrastructure performance monitored but no alerting in place
-
-Application and infrastructure performance is monitored; alerting in place for relevant KPI's
-
-Monitor software delivery performance
-
-No metrics monitored
-
-Selected metrics monitored
-
-All key metrics monitored
-
-Limit Work in Progress
-
-More than 10 features in progress
-
-Less than 10 features in progress
-
-Not more than 5 features in progress
-
-  
 
 ### Architecture
 
-Capability
+*  Capability
+*  Crawl
+*  Walk
+*  Run
+*  Use a loosely coupled architecture
+*  Monolithic application with a high level of interdependencies
+*  Re-architecture in progress moving from a monolithic solution to a microservice-based architecture
+*  System has no or very few direct dependencies to other systems. And those dependencies are tied to open standards and not tied to technologies and frameworks (e.g. Java RPC)
+*  Focus on independent deployability and testability
+*  Dependent deployability and testability across teams
+*  Some components can be deployed and tested independently but parts of the components still have dependencies across teams
+*  Teams can deploy and test their systems independently
+*  Use established Platform Engineering solutions as a default
+*  Custom solutions used even though provided by Platform Engineering
+*  All solution aligned with Platform Engineering, Solution and Domain Architecture, but exceptions were granted
+*  All solutions aligned with Platform Engineering, Solution and Domain Architecture and no custom solutions used that are provided by Platform Engineering
 
-Crawl
-
-Walk
-
-Run
-
-Use a loosely coupled architecture
-
-Monolithic application with a high level of interdependencies
-
-Re-architecture in progress moving from a monolithic solution to a microservice-based architecture
-
-System has no or very few direct dependencies to other systems. And those dependencies are tied to open standards and not tied to technologies and frameworks (e.g. Java RPC)
-
-Focus on independent deployability and testability
-
-Dependent deployability and testability across teams
-
-Some components can be deployed and tested independently but parts of the components still have dependencies across teams
-
-Teams can deploy and test their systems independently
-
-Use established Platform Engineering solutions as a default
-
-Custom solutions used even though provided by Platform Engineering
-
-All solution aligned with Platform Engineering, Solution and Domain Architecture, but exceptions were granted
-
-All solutions aligned with Platform Engineering, Solution and Domain Architecture and no custom solutions used that are provided by Platform Engineering
-
-**DevOps Maturity Linked to Security**
+## DevOps Maturity Linked to Security
 
 DevOps maturity is directly linked to DevOps security. As organizations progress in DevOps journey, competitive edge becomes a serious demand calling for faster release cycles and digital innovation demands a strong pitch.
 
@@ -381,8 +276,7 @@ What are the Phases of DevOps Maturity
 
 There are several phases to DevOps maturity; here are a few of the key phases you need to know.
 
-Continuous Integration
-----------------------
+## Continuous Integration
 
 Continuous integration is the practice of quickly integrating newly developed code with the main body of code that is to be released. Continuous integration saves a lot of time when the team is ready to release the code.
 
@@ -398,8 +292,7 @@ So, you come to work and pull code into your private workspace. The coffee is be
 
 Each developer is responsible for doing a complete build and passing all the tests. The main point of CI is that everyone is working on a known stable code base. Therefore, if your build fails, nothing has a higher priority than fixing the build.
 
-Continuous Delivery
--------------------
+### Continuous Delivery
 
 Continuous delivery is an extension of continuous integration \[DevOps stage 2\]. It sits on top of continuous integration. When executing continuous delivery, you add additional automation and testing so that you don’t just merge the code with the main code line frequently, but you get the code nearly ready to deploy with almost no human intervention. It’s the practice of having the code base continuously in a ready-to-deploy state.
 
@@ -407,16 +300,13 @@ Continuous Delivery (CD) is the next logical step from CI. It is the practice of
 
 With CD your code is not released straight to production, so you can still do manual user testing in the staging environment. This can be very handy if your business operates in a sensitive domain, like telecom and medical, where regulations require extensive testing to be made. Some of your customers may not want continuous updates to their systems. Finally, there may be some edge cases where code releases cannot be easily verified with automation – building automated tests can simply take unreasonably long time and still be error prone.
 
-Continuous Deployment
----------------------
+### Continuous Deployment
 
 Continuous deployment, not to be confused with continuous delivery \[DevOps nirvana\], is the most advanced evolution of continuous delivery. It’s the practice of deploying all the way into production without any human intervention.
 
 In a Continuous Deployment process, every validated build is automatically released. Once the developer commits his code change, there is zero manual intervention before it gets to production. You can now build even smaller and more frequent releases. This way you accelerate time to production, reduce complexity by not having a staging environment and no longer need to schedule your releases. Your feedback loop gets shorter, since you now get user feedback quicker.
 
 Continuous Deployment is the golden goose of DevOps, but it is best applied after your DevOps team has nailed down its processes. For continuous deployment to work well, organizations need to have a rigorous and reliable automated testing environment. If you are not there yet, start with Continuous Delivery to have that extra safety step and transition gradually.
-
-  
 
  ![continuous-delivery-vs-continous-deployment](https://devtipscurator.files.wordpress.com/2017/02/continuous-delivery-vs-continous-deployment.png?w=736)    ![](https://miro.medium.com/max/700/0*NU_81jBIf1JTVNjT.jpg) 
 
@@ -426,10 +316,7 @@ There are a very small number of companies that are truly practicing continuous 
 
 While DevOps nirvana is often not the end goal for most enterprises, they often focus on moving towards continuous delivery.
 
-DevOps - Immature Teams vs Mature Teams
-
-
-
+## DevOps - Immature Teams vs Mature Teams
   
 
 As a DevOps team matures, they often find that their environment fills with a growing number of moving parts. When all of these pieces are moving in concert, new features are released regularly and smoothly. This isn’t only true for technology. Mature DevOps teams have processes that work harmoniously with one another to make shipping code smoother. The same is not necessarily true for immature teams. Immature teams rely on faulty processes and poorly-configured architecture. These delay releases, suck up engineer time with tedious tasks, and cause the team to ship more bugs to customers.
@@ -438,7 +325,6 @@ Savvy teams seek ways to avoid these kinds of failures. As a team learns, it pro
 
 <img src="./attachments/463532394.png" alt="">
 
-  
 
 **Release management** is the process of how a team coordinates the actual release of code to customers. Good code tends to pass through a variety of steps so that stakeholders throughout the business can verify its validity. Beyond simply designing and writing the code, code needs to go through testing, user acceptance, and compliance phases. These steps ensure that the code does what it says it does, that customers are happy with what it does, and that it doesn’t expose the company to risk.
 
@@ -448,12 +334,12 @@ Savvy teams seek ways to avoid these kinds of failures. As a team learns, it pro
 
   
 
-**Immature Teams**
+## Immature Teams
 
-Release Management
-------------------
+### Release Management
 
-### How Do Immature Teams Do Release Management?
+
+#### How Do Immature Teams Do Release Management?
 
 Anyone who’s worked in a big organization before innately understands immature release management. Usually, the process for release management is (in a word) slow. A feature will experience lengthy stops at each gate of the process. Oftentimes, a feature will sit in a queue, meaning that it’ll wait days or weeks before someone is able to evaluate the code’s fitness. Then, as is common with any bit of code, it’s likely that the gatekeeper will discover some issues. The developer responsible for those features is able to begin to correct the problems. Then, they’ll send it back through the gates. Again, at each stop along the way, the code will experience lengthy delays before a human actually looks at it.
 
@@ -461,14 +347,14 @@ Just like developers, operations staff suffer from this degree of manual process
 
 Once those systems are set up, monitoring them is also a manual task. Operations staff need to manually collect metrics, and when those metrics are outside of acceptable parameters, they report that manually, too.
 
-### Immature Teams Don’t Think Past the Release
+#### Immature Teams Don’t Think Past the Release
 
 Eventually, the wait between writing the code and releasing it becomes so lengthy that developers will probably need to combine it with some other group of features and bug fixes into a bigger release. This means the process starts all over. The result is significant frustration for technical and project management teams. No one can predict when a new feature will ship to customers. No one is ever sure which features or bug fixes will be part of a release.
 
 What’s more, this kind of gating ignores a crucial part of release management: post-launch support. Clever readers will notice that the entirety of the release management process described above focuses on what happens before a release. Obviously, software isn’t released into a void. Customers have feedback. Their needs change. Bugs the testing team didn’t catch rear their heads. Immature teams have no plans for the way that they’ll deal with these issues.
 
-Test Environment Management
----------------------------
+## Test Environment Management
+
 
 ### How Do Immature Teams Do Test Environment Management?
 
@@ -478,7 +364,7 @@ Some organizations will choose to simply copy their production database straight
 
 As noted previously, fully-manual testing processes are prone to long delays. People get busy. This is especially true of project gatekeepers in large organizations. Those gatekeepers can only test one thing at a time, which increases the time between writing code and testing it. The problem compounds when some new feature introduces a new dependency to the test environment. These delays pile up on top of each other. By the time code gets back to a developer, they’ve forgotten most of what they wrote, and the cost for putting that code back in its proper context is high. These costs go straight to the bottom line of the company, resulting in a longer time to develop new features and respond to shifting environments.
 
-Deployment Planning
+## Deployment Planning
 -------------------
 
 Once again, this is something that immature teams rarely do. The development and project management teams will regularly toss new requirements over the wall to operations staff. They won’t discuss the feasibility or efficiency of architectural decisions. Decision-makers finalize decisions before consulting all the team’s technical experts on a topic. This means that it’s often difficult to correctly configure production environments for a release. An entirely manual configuration management strategy compounds these challenges.
@@ -487,20 +373,18 @@ The slow, painful process for getting a feature to release adds another layer of
 
 All of this adds up to stressful deployment planning. A hallmark of this kind of disjointed planning is operations staff regularly needing to play the hero. Immature DevOps teams regularly see their operations staff working long hours or needing to manually prepare releases for hours ahead of time.
 
-  
+## Mature Teams
 
-**Mature Teams**
+### Release Management
 
-Release Management
-------------------
 
-### How Do Mature Teams Do Release Management?
+#### How Do Mature Teams Do Release Management?
 
 Mature teams approach release management from an entirely different perspective. For starters, their focus with release management is just as much on how to support new features after they’re released as in shepherding that code before it goes to customers. They have simple, straightforward processes for gathering user feedback and listening to customers about how their needs are changing.
 
 Instead of large, unwieldy manual gates, mature DevOps teams seek to involve stakeholders earlier in the process. Stakeholders test and evaluate code soon after developers write it. This means that developers can create automated tests which help ensure that the code does what it’s designed to do as they work on it. Since that manual feedback comes earlier in the process, there is less confusion around the status of a project. Developers spend less time [context switching](https://simpleprogrammer.com/context-switching/) between different features because stakeholder feedback comes quickly and clearly. Because stakeholders are able to confirm the quality of code during the development process, quality gates are now automatic.
 
-### Mature Teams Automate As Much As They Can
+#### Mature Teams Automate As Much As They Can
 
 Operations staff are able to configure [CI/CD](https://www.redhat.com/en/topics/devops/what-is-ci-cd) systems to automatically move code quickly from finished to general availability. Developers don’t have to suffer through round after round of feedback before their code ships. What’s more, if a developer does launch code and learn only after shipping that there’s a flaw customers discovered, there are mechanisms in place to deal with that. Feedback is quickly gathered, and the developer can work on the code—while it’s fresh on their mind—to correct the mistake.
 
@@ -508,8 +392,8 @@ While CI/CD is beneficial for deployment, mature DevOps teams move past just bui
 
 These teams also configure effective metric measurement and notification systems. Everything happens automatically, meaning that operations staff are free to work on bigger problems.
 
-Test Environment Management
----------------------------
+### Test Environment Management
+
 
 ### How Do Mature Teams Manage Test Environment Management?
 
@@ -517,8 +401,7 @@ Mature teams, like with release management, automate as much as they can. For te
 
 Instead of using outdated databases, or leaving in rows which contain sensitive information, a mature DevOps team uses an automated script to create new testing databases. This script anonymizes data before it moves to the pre-production server, so sensitive information doesn’t leak. Much like test environments, these databases are trivial to stand up and tear down. Operations teams easily build new test environments, including a completely separate database, for every feature.
 
-Deployment Planning
--------------------
+### Deployment Planning
 
 A mature DevOps team turns that kind of thinking on its head. Their attitude is that operations staff should not need to be manually involved in a release. Instead, continuous delivery systems mean that as developers finish features, they’re deployed automatically. Planning phases for new features involve operations experts, so they’re never surprised by what architecture they need for a feature.
 
@@ -527,13 +410,11 @@ As features and releases become smaller, releases become more frequent. This is 
 Finally, moving more testing into automated tests means that the team ships fewer bugs to customers. This decreases long-term support costs and makes the lives of both developers and operations staff less stressful as a result.
  
 
-  
-
-What Are the Values of DevOps
+## What Are the Values of DevOps
 
 DevOps focuses heavily on establishing a collaborative culture and improving efficiency through automation with DevOps tools. While some organizations and people tend to value one more than the other, the reality is it takes a combination of both culture and tools to be successful. Here’s what you need to know about these two DevOps values.
 
-DevOps Culture
+### DevOps Culture
 
 DevOps culture is characterized by increased collaboration, decreasing silos, shared responsibility, autonomous teams, improving quality, valuing feedback and increasing automation. Many of the DevOps values are agile values as DevOps is an extension of agile.
 
@@ -558,8 +439,8 @@ This is why instilling key cultural values is critical for DevOps. This isn’t 
 *   Collaboration and shared roles. In DevOps, no single engineer should exclusively own a particular task. Some people might bear primary responsibility for certain tasks, but at the end of the day, everyone should be permitted, qualified and willing to assist with any task.
 *   Support from management for all of the above. Executives need to embrace the concept of collective ownership for IT processes, while also giving IT teams the flexibility to scale and change tools and processes as needed.
 
-Your Ecosystem and Your Culture
--------------------------------
+### Your Ecosystem and Your Cultur
+
 
 How do you actually construct a DevOps culture founded on principles like those described above? Part of the answer lies in evaluating your current internal company culture, of course, and taking steps to change it.
 
@@ -571,8 +452,8 @@ To be clear, I’m not suggesting you look only for partners who have won accola
 
 Those are the organizations that have sophisticated, organic cultures. They’re also the ones that know what it takes to update existing cultures to support DevOps. And they may be able to help you identify the specific tools and processes that will enable DevOps for your business.
 
-Building a Healthy DevOps Ecosystem
------------------------------------
+### Building a Healthy DevOps Ecosystem
+
 
 As an example of what the process of constructing an effective DevOps culture might look like in practice, consider how you might approach this challenge if your ecosystem (like many today) includes a mix of modern, cloud-based infrastructure on the one hand, and mainframes on the other.
 
@@ -582,46 +463,38 @@ But that is not the case. IBM offers a range of solutions to help integrate main
 
 Of course, integrating mainframe infrastructure into the rest of your ecosystem using tooling like this also requires a culture and attitude adjustment. Developers and ITOps admins must move past the cliché that mainframes have no role to play in modern DevOps shops, or that they are too difficult to integrate into modern ecosystems. That’s not at all true and building a successful DevOps culture that embraces the mainframe means discarding this inaccurate viewpoint.
 
-What Tools Are Used in DevOps
+## What Tools Are Used in DevOps
 
-  
 
 DevOps tools consist of configuration management, test and build systems, application deployment, version control and monitoring tools. Continuous integration, continuous delivery and continuous deployment require different tools. While all three practices can use the same tools, you will need more tools as you progress through the delivery chain.
 
-Planning and collaboration
---------------------------
+### Planning and collaboration
 
 You need a tool to help you track the progress of your job when working on a project. Technologies like Jira, Asana and Trello are all worth considering.
 
-Source code management
-----------------------
+### Source code management
 
 A source code repository is a place where developers check in and change code. The source code repository manages the various versions of code that are checked in, so developers don’t write over each other’s work.
 
 Source control has probably been around for forty years, but it’s a major component of continuous integration.
 
-Package management
-------------------
+### Package management
 
 Containers are de-facto building blocks of a modern DevOps micro-services application. You would probably stick with Docker, due to its matureness and wide adoption, but rkt is out there as well.
 
-Continuous Integration - CI
----------------------------
+### Continuous Integration - CI
 
 Automated code integration, building and testing processes are at the heart of every DevOps culture. The build server is an automation tool that compiles the code in the source code repository into executable code base.  
 
-Continuous Deployment/Deliver - CD
-----------------------------------
+### Continuous Deployment/Deliver - CD
 
 Automated processes to deploy package and configure on destination server. A pipeline is like a manufacturing assembly line that happens from the time a developer says, “I think I’m done,” all the way to the time that the code gets deployed in the production or a late-stage pre-production environment.  
 
-Configuration management
-------------------------
+### Configuration management
 
 Being a DevOps engineer you want to ensure that your infrastructure is deployed and managed reliably all the time. Configuration management defines the configuration of a server or an environment.
 
-Infrastructure management
--------------------------
+### Infrastructure management
 
 Treat your infrastructure as code to get resources on demand from your chosen cloud provider. Don’t bother looking further than Terraform. It has outdistanced all its competitors by far.
 
@@ -630,13 +503,11 @@ Scheduling and orchestration
 
 Group containers, load balance them, self-heal your system, auto-scale it, manage DNS and do many other incredible things with Kubernetes out of the box. In case you don’t need that much control and complexity, you can get away with Docker Swarm as well.
 
-Continuous Monitoring
----------------------
+### Continuous Monitoring
 
 Smart DevOps engineers improve their applications and tool-chains before problems even show up.
 
-Virtual Infrastructure
-----------------------
+### Virtual Infrastructure
 
 Amazon Web Services and Microsoft Azure are examples of virtual infrastructures. Virtual infrastructures are provided by cloud vendors that sell infrastructure or platform as a service (PaaS). These infrastructures have APIs to allow you to programmatically create new machines with configuration management tools such as Puppet and Chef.
 
@@ -644,8 +515,7 @@ There are also private clouds. For example, VMware has vCloud. Private virtual i
 
 Virtual infrastructures combined with automation tools to empower organizations practicing DevOps with the ability to configure a server without any fingers on the keyboard. If you want to test your brand-new code, you can automatically send it to your cloud infrastructure, build the environment and then run all of the tests without human intervention.
 
-Test Automation
----------------
+### Test Automation
 
 Test automation has been around for a long time. DevOps testing focuses on automated testing within your build pipeline to ensure that by the time that you have a deployable build, you are confident it is ready to be deployed. You can’t get to the point of continuous delivery where you’re fairly confident without any human intervention that your code is deployable without an extensive automated testing strategy. Popular tools are Selenium and Water.
 

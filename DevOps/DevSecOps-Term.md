@@ -8,10 +8,12 @@ Information Technology : DevSecOps Term
 
 
 ![pic](https://3ovyg21t17l11k49tk1oma21-wpengine.netdna-ssl.com/wp-content/uploads/2016/09/pic.png) 
-![](https://miro.medium.com/max/496/0*X8A5EUUH-GNeBtlx.png)![](attachments/451824839/463532002.jpg)
+![](https://miro.medium.com/max/496/0*X8A5EUUH-GNeBtlx.png)
+
+<img src="./attachments/451824839.png" alt="">
   
 
-What is DevOps
+## What is DevOps
 
 DevOps is the union of people, process, and products to enable continuous delivery of value to our end users. The contraction of “Dev” and “Ops” refers to replacing soiled Development and Operations to create multidisciplinary teams that now work together with shared and efficient practices and tools. Essential DevOps practices include agile planning, continuous integration, continuous delivery, and monitoring of applications.
 
@@ -25,7 +27,7 @@ In transitioning to DevOps, teams shift their priority from optimizing mean time
 
 DevOps teams think in terms of competencies, not roles. While they include both developmental and operational skills and awareness, they share responsibility for running the live site. That means that developers on the team accept responsibility for the health of the running services and will rotate time on-call. The principle is, if you build it, you run it.
 
-What is DevSecOps
+## What is DevSecOps
 
 The term DevSecOps refers to a development and operations concept which integrates and emphasizes secure design as well as security automation throughout the continuous software development and delivery life cycle. DevSecOps ultimately strives for achieving a software development and delivery pipeline that is _secure_ _by default_. This blog post will briefly cover the concepts and philosophy behind DevSecOps.
 
@@ -38,8 +40,7 @@ The DevSecOps philosophy asserts that shifting security toward the left of the c
 *   the stigma associated with writing bad code — some developers may prefer to have their errors pointed out by automated testing systems, as opposed to their colleagues — for which static application security testing at build time may be a solution;
 *   external identification and potential exploitation of a particular bug — that may have otherwise been caught during the development life cycle.
 
-Some benefits of DevOps, or rather, DevSecOps provides.
--------------------------------------------------------
+## Some benefits of DevOps, or rather, DevSecOps provides.
 
 *   Security joining directly toward the start
     
@@ -75,7 +76,7 @@ DevOps puts light on the centrality of streamlining forms over the pipeline. Thi
 *   Increased accountability among teams for security
 *   Cost reduction since security challenges are detected and averted early on in the development phase
 
-DevSecOps Manifesto
+## DevSecOps Manifesto
 
 Similarly to DevOps, DevSecOps can also be called a culture of its own. DevSecOps is a philosophy of integrating security methods into a DevOps process. Team work is as crucial to a DevSecOps engineer as it is to a DevOps engineer: their ability to resolve conflicts and conduct productive negotiations plays a crucial role in creating secure applications. From the very start of a SDLC, DevSecOps works to make the application secure by introducing a variety of security techniques.
 
