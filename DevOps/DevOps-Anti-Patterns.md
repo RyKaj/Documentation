@@ -15,7 +15,7 @@ This is the classic ‘throw it over the wall’ split between Dev and Ops. It m
 
 We likely all know this topology is bad, but I think there are actually worse topologies; at least with Anti-Type A (Dev and Ops Silos), we know there is a problem.
 
-<img src="./attachments/451824402.png" alt="">
+<img src="./attachments/451824402.png" alt=""></kbd>
 
 DevOps Team Silo (Anti-Type B)
 ------------------------------
@@ -24,7 +24,7 @@ The DevOps Team Silo (Anti-Type B) typically results from a manager or exec deci
 
 The only situation where a separate DevOps silo really makes sense is when the team is temporary, lasting less than (say) 12 or 18 months, with the express purpose of bringing Dev and Ops closer together, and with a clear mandate to make the DevOps team superfluous after that time; this becomes what I have called a [Type 5 DevOps Topology](https://web.devopstopologies.com/#type-five).
 
-<img src="./attachments/451824402.png" alt="">
+<img src="./attachments/451824402.png" alt=""></kbd>
 
 Dev Don't Need Ops (Anti-Type C)
 --------------------------------
@@ -33,7 +33,7 @@ This topology is borne of a combination of naivety and arrogance from developers
 
 Such an Anti-Type C DevOps topology will probably end up needing either a [Type 3 (Ops as IaaS)](https://web.devopstopologies.com/#type-three) or a [Type 4 (DevOps-as-a-Service)](https://web.devopstopologies.com/#type-four) topology when their software becomes more involved and operational activities start to swamp ‘development’ (aka coding) time. If only such teams recognised the importance of Operations as a discipline as important and valuable as software development, they would be able to avoid much pain and unnecessary (and quite basic) operational mistakes.
 
-<img src="./attachments/451824402.png" alt="">
+<img src="./attachments/451824402.png" alt=""></kbd>
 
 DevOps as Tools Team (Anti-Type D)
 ----------------------------------
@@ -42,7 +42,7 @@ In order to "become DevOps" without losing current dev teams velocity (read deli
 
 Although the outcomes of this dedicated team can be beneficial in terms of an improved tool chain, its impact is limited. The fundamental problem of lack of early Ops involvement and collaboration in the application development lifecycle remains unchanged.
 
-<img src="./attachments/451824402.png" alt="">
+<img src="./attachments/451824402.png" alt=""></kbd>
 
 Rebranded SysAdmin (Anti-Type E)
 --------------------------------
@@ -51,7 +51,7 @@ This anti-type is typical in organizations with low engineering maturity. They w
 
 DevOps becomes just a rebranding of the role previously known as SysAdmin, with no real cultural/organizational change taking place. This anti-type is becoming more and more widespread as unscrupulous recruiters jump on the bandwagon searching for candidates with automation and tooling skills. Unfortunately, it's the human communication skills that can make DevOps thrive in an organization.
 
-<img src="./attachments/451824402.png" alt="">
+<img src="./attachments/451824402.png" alt=""></kbd>
 
 Ops Embedded in Dev Team (Anti-Type F)
 --------------------------------------
@@ -62,7 +62,7 @@ In this anti-type the organization shows lack of appreciation for the importance
 
 _Thanks to [Scott Prugh](https://twitter.com/ScottPrugh) for suggesting clarifications on how Anti-Type F differs from Type 2._
 
-<img src="./attachments/451824402.png" alt="">
+<img src="./attachments/451824402.png" alt=""></kbd>
 
 Dev and DBA Silos (Anti-Type G)
 -------------------------------
@@ -71,7 +71,7 @@ This is a form of [Anti-Type A (Dev and Ops Silos)](https://web.devopstopologie
 
 Furthermore, just like Ops in [Anti-Type A](https://web.devopstopologies.com/#anti-type-a), the DBA team is not involved early in the application development, thus data problems (migrations, performance, etc) are found late in the delivery cycle. Coupled with the overload of supporting multiple applications databases, the end result is constant firefighting and mounting pressure to deliver.
 
-<img src="./attachments/451824402.png" alt="">
+<img src="./attachments/451824402.png" alt=""></kbd>
 
 Anti-Pattern Philosophy
 
@@ -210,11 +210,11 @@ As long as you are integrating tools with clear and standard APIs, the orchestra
 
 Tooling integration cost is not zero, but it’s negligible when compared to the potential cost of not integrating. One-stop solutions might embed erroneous concepts. Any tool might. The problem is that the former will propagate them across the entire lifecycle.
 
-![Image title](https://dzone.com/storage/temp/4177775-screen-shot-2017-01-30-at-25229-pm.png)
+<kbd>![Image title](https://dzone.com/storage/temp/4177775-screen-shot-2017-01-30-at-25229-pm.png) </kbd>
 
 Instead, single-purpose, focused tools with a well-de ned API help reduce the blast radius of bad practices. And you can swap them easily when they don’t match your requirements anymore. A flexible toolchain standardizes practices, not tools. It supports certain capabilities, which are easy to locate and expand on, replacing particular components (tools) when required.
 
-![Image title](https://dzone.com/storage/temp/4177777-screen-shot-2017-01-30-at-25340-pm.png)  
+<kbd>![Image title](https://dzone.com/storage/temp/4177777-screen-shot-2017-01-30-at-25340-pm.png)  
 
 Another gain with individual tools: you can actually expect an answer from the vendor when you ask for a feature since they have a reduced feature set and faster change cycles. A vendor of a one-stop solution has a lot more requests in its backlog. Chances are, if you’re not a major client, your requests will get buried for months or even years.
 
@@ -227,7 +227,7 @@ Unfortunately, our industry is still plagued with the “abstraction everywhere 
 
 The problem is these tools assume they have all the use cases and all the failure scenarios covered. That is untrue for any tool, or any software in fact. We will always need access to information to troubleshoot issues. The more information we have, the more likely we can correlate events and the causes.
 
-![Image title](https://dzone.com/storage/temp/4177783-screen-shot-2017-01-30-at-25650-pm.png)
+<kbd>![Image title](https://dzone.com/storage/temp/4177783-screen-shot-2017-01-30-at-25650-pm.png)
 
 Think of all the time spent deciphering error messages, trying to guess what went wrong, or waiting for a vendor’s support to get back to you (if you hit the jackpot with a technical issue deep in the tool’s gut, good luck waiting for the support-to-engineering return trip time). That time alone is an order of magnitude higher than any individual tool integration time you’d have spent.
 
@@ -244,7 +244,7 @@ A pipeline stage represents an activity in the delivery chain. It might require:
 
 Thus pipeline stages should not be tightly coupled to environments. Assuming only the first option above leads to pipelines that contemplate only automatable activities, hiding other (often non-technical) activities that are part of delivery as well. In turn, this leads to lack of visibility on (real) bottlenecks and local optimization (technical steps) instead of global (cycle time).
 
-![Image title](https://dzone.com/storage/temp/4177787-screen-shot-2017-01-30-at-30135-pm.png)
+<kbd>![Image title](https://dzone.com/storage/temp/4177787-screen-shot-2017-01-30-at-30135-pm.png)
 
 Flexing Is for Fitness, Not for Principles
 ------------------------------------------
@@ -262,7 +262,7 @@ A pipeline status should be binary. Red or green. Not orange. Not gray. Not blue
 
 CD equivalent to warnings at compilation time. If the first warnings are ignored by developer A, then developer B and developer C will ignore them, as well. Soon, everyone just assumes having 372 warnings is OK.
 
-![Image title](https://dzone.com/storage/temp/4177796-screen-shot-2017-01-30-at-30530-pm.png)
+<kbd>![Image title](https://dzone.com/storage/temp/4177796-screen-shot-2017-01-30-at-30530-pm.png)
 
 Having an uncontested pipeline status is a prerequisite to the Continuous Delivery principle of “stopping the line” when a pipeline fails (then either x it quickly or revert the changes that broke it). Interestingly, this is also a prerequisite to getting rid of those nasty compilation warnings (try making the pipeline go red if there are compilation warnings).
 
@@ -273,7 +273,7 @@ Another plague in our industry is the proliferation of terminology. We have enou
 
 One puzzling example we have come across of terminology failures is calling a pipeline trigger from a successful build a “continuous deployment.”
 
-![Image title](https://dzone.com/storage/temp/4177799-screen-shot-2017-01-30-at-30640-pm.png)
+<kbd>![Image title](https://dzone.com/storage/temp/4177799-screen-shot-2017-01-30-at-30640-pm.png)
 
 Another example are “release definitions” instead of “pipeline definitions” (the image above is a release definition configuration). Legacy terminology leads to legacy behaviors, thinking of releases and work batches instead of pipelines and frequent delivery of small, low-risk changes in production.
 

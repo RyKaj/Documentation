@@ -34,7 +34,7 @@ Teams who implement IaC can deliver stable environments rapidly and at scale. T
 
 Development engineers can utilize code to the arrangement and send servers and applications, instead of depending on framework chairmen in a DevOps domain. An engineer may compose an Infrastructure as-code procedure to the arrangement and send another application for quality confirmation or trial organization before tasks take over for live sending underway.
 
-![](https://miro.medium.com/max/1024/1*kfH952dhVkjGFFioEX6-DQ.jpeg)
+<kbd>![](https://miro.medium.com/max/1024/1*kfH952dhVkjGFFioEX6-DQ.jpeg)
 
 With the Infrastructure as code, it can experience a similar rendition control, robotized testing, and different strides of a persistent joining and consistent conveyance (CI/CD) pipeline that designers use for application code. An association may decide to join the Infrastructure as code with compartments, which dynamic the application from the foundation at the working framework level. Since the OS and equipment framework is provisioned consequently and the application is epitomized on it, these advances demonstrate correlative for differing sending targets, for example, test, organizing and creation.
 
@@ -59,7 +59,7 @@ eBook
 
   
 
-[![](rest/documentConversion/latest/conversion/thumbnail/469106907/1)](/download/attachments/451822353/ebook%20-%20Enterprise%20Cloud%20Strategy%20Infrastructure%20As%20A%20Service.pdf?version=1&modificationDate=1586257964930&api=v2)
+[<kbd>![](rest/documentConversion/latest/conversion/thumbnail/469106907/1)](/download/attachments/451822353/ebook%20-%20Enterprise%20Cloud%20Strategy%20Infrastructure%20As%20A%20Service.pdf?version=1&modificationDate=1586257964930&api=v2)
 
   
 
@@ -104,7 +104,7 @@ Reviewed / Approved By
 
 jQuery(document).ready(function() { jQuery("#paAcknowledgeToggle").click(function() { var current = jQuery(".ackTable").attr("class"); var currentsplit = new Array(); currentsplit = current.split(" "); for(i=0; i<currentsplit.length; i++) { if(currentsplit\[i\] == "visible") { jQuery(".ackTable").addClass("invisible"); jQuery(".ackTable").removeClass("visible"); jQuery("#paAcknowledgeToggle").attr("value","Show Acknowledgers"); } if(currentsplit\[i\] == "invisible") { jQuery(".ackTable").addClass("visible"); jQuery(".ackTable").removeClass("invisible"); jQuery("#paAcknowledgeToggle").attr("value","Hide Acknowledgers"); } } }); }); .patable { border: solid; background: #ffffff; font-size:8pt; } p.patable { padding-left:75px; padding-right:0.5em; margin:2px; border:none; } p.patablehr { font-size:10pt; background: #dddddd; font-weight:bold; padding-left:64px; padding-top:4px; padding-bottom:4px; margin:2px; vertical-align:middle; } p.patableac { padding-left:85px; } p.patitle { font-size:12pt; background: #cccccc; font-weight:bold; padding-left:64px; padding-top:4px; padding-bottom:4px; margin:2px; vertical-align:middle; } .visible { display: block; } .invisible { display: none; } div#statusnote{ font-style: italic; text-align: right; font-size: x-small; } div#pageapproval{ overflow: auto; border-width: 1px; } #paAcknowledgeToggle { font-size: 11px; }
 
- ![](download/resources/net.customware.confluence.plugin.pageapproval:pageapproval/img/pagenotapproved.png) Not approved 
+ <kbd>![](download/resources/net.customware.confluence.plugin.pageapproval:pageapproval/img/pagenotapproved.png) Not approved 
 
 User
 
@@ -114,7 +114,7 @@ Role
 
 Alexis van der Biest
 
-![](download/resources/net.customware.confluence.plugin.pageapproval:pageapproval/img/forbidden.gif)
+<kbd>![](download/resources/net.customware.confluence.plugin.pageapproval:pageapproval/img/forbidden.gif)
 
 Kelvin Loke
 
@@ -396,7 +396,7 @@ Pending Judd, in order to set ETA
 
 Technology Stack
 
-![](attachments/451818195/451820492.png)
+<kbd>![](attachments/451818195/451820492.png)
 
 Wanted State
 
@@ -635,7 +635,7 @@ References
 Attachments:
 ------------
 
-![](images/icons/bullet_blue.gif) [ebook - Enterprise Cloud Strategy Infrastructure As A Service.pdf](attachments/451822353/469106907.pdf) (application/pdf)  
+<kbd>![](images/icons/bullet_blue.gif) [ebook - Enterprise Cloud Strategy Infrastructure As A Service.pdf](attachments/451822353/469106907.pdf) (application/pdf)  
 
 
 

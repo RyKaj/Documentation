@@ -4,7 +4,7 @@
 
 # DevOps : Delivering Continuous Value
 
-<img src="./attachments/463520995.png" alt="">
+<img src="./attachments/463520995.png" alt=""></kbd>
  
 
 ## Continous
@@ -17,7 +17,7 @@ Continous integration, the build (CI) process creates packages which are used fo
 
 Automated and continuously provisioning of the underlying infrastructure in a release pipeline is one of the most important activities of DevOps. Immutable infrastructure, create the infrastructure for the application over and over again from the same file(s), only the configuration differs. All cloud providers (private and public) have or should have API’s which make it possible to provision the infrastructure in an automated way. Terraform, Cloud Formation and Azure Resource manager are common template languages to describe infrastructures.
 
-![](https://labs.sogeti.com/wp-content/uploads/2019/10/epm-blog-3-1024x230.png)
+<kbd>![](https://labs.sogeti.com/wp-content/uploads/2019/10/epm-blog-3-1024x230.png)
 
   
 

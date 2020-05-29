@@ -22,7 +22,7 @@ Used as a platform for automating deployment, scaling, and management of contain
 
 ## How it works
 
-![Deployment evolution](https://d33wubrfki0l68.cloudfront.net/26a177ede4d7b032362289c6fccd448fc4a91174/eb693/images/docs/container_evolution.svg)
+<kbd>![Deployment evolution](https://d33wubrfki0l68.cloudfront.net/26a177ede4d7b032362289c6fccd448fc4a91174/eb693/images/docs/container_evolution.svg)
 
 It's no secret that the popularity of running [containerized applications](https://www.redhat.com/en/topics/containers/whats-a-linux-container) has exploded over the past several years. Being able to iterate and release an application by provisioning its dependencies through code is a big win. [According to Gartner](https://www.gartner.com/smarterwithgartner/6-best-practices-for-creating-a-container-platform-strategy/), “More than 75% of global organizations will be running containerized applications in production” by 2022.
 
@@ -36,8 +36,8 @@ If a worker node goes down, Kubernetes starts new pods on a functioning worker n
 
   
 
-![](https://lh4.googleusercontent.com/hCfk3E8n1pRBMugPOvTunPYk4od_jN-BCgrkTCENDvpTM3DxgLibvCORmmaKuqZYqqvfWdWckToIU8484oiiKySqTrs9OIwHjGpRxvU-Dbmh39OPwI89npvq3Tz2Q8pwAWSpcrK5)
-![](https://miro.medium.com/max/800/0*HuSzmzk6Nmeu1Bhz)
+<kbd>![](https://lh4.googleusercontent.com/hCfk3E8n1pRBMugPOvTunPYk4od_jN-BCgrkTCENDvpTM3DxgLibvCORmmaKuqZYqqvfWdWckToIU8484oiiKySqTrs9OIwHjGpRxvU-Dbmh39OPwI89npvq3Tz2Q8pwAWSpcrK5)
+<kbd>![](https://miro.medium.com/max/800/0*HuSzmzk6Nmeu1Bhz)
 
 A container orchestrator is essentially an administrator in charge of operating a fleet of containerized applications. If a container needs to be restarted or acquire more resources, the orchestrator takes care of it for you.
 
@@ -47,13 +47,13 @@ That's a fairly broad outline of how most container orchestrators work. Let's ta
 
 In the old days, software deployment was hard, time-consuming, and error-prone. To install an application, you need to purchase a number of physical machines and pay for CPU and memory than you might actually need. A few years later, virtualization was dominant. This saved you some costs as one powerful bare-metal server can host multiple machines. Thus, CPU and memory could be shared. In modern days, machines can be split into even smaller parts than virtual servers: **containers**. Containers became so popular only a few years ago. So, what exactly is a Linux container? And where does Docker fit?
 
-![applications inside virtual machines-1](https://www.magalix.com/hs-fs/hubfs/applications%20inside%20virtual%20machines-1.png?width=600&name=applications%20inside%20virtual%20machines-1.png)
+<kbd>![applications inside virtual machines-1](https://www.magalix.com/hs-fs/hubfs/applications%20inside%20virtual%20machines-1.png?width=600&name=applications%20inside%20virtual%20machines-1.png)
 
 A container provides a type of virtualization just like virtual machines. However, while a hypervisor provides a hardware isolation level, containers offer _process_ isolation level. To understand this difference, let’s return to our example.
 
 Instead of creating a virtual machine for Apache and another for MySQL, you decide to use containers. Now, your stack looks like below illustration.
 
-![applications inside docker containers](https://www.magalix.com/hs-fs/hubfs/applications%20inside%20docker%20containers-1.png?width=600&name=applications%20inside%20docker%20containers-1.png)
+<kbd>![applications inside docker containers](https://www.magalix.com/hs-fs/hubfs/applications%20inside%20docker%20containers-1.png?width=600&name=applications%20inside%20docker%20containers-1.png)
 
 A container is nothing but a set of processes on the operating system. A container works in complete isolation from other processes/containers through Linux kernel features, such as [cgroups](https://en.wikipedia.org/wiki/Cgroups), [chroot](https://en.wikipedia.org/wiki/Chroot), [UnionFS](https://en.wikipedia.org/wiki/UnionFS), and [namespaces](https://en.wikipedia.org/wiki/Linux_namespaces),.
 
@@ -82,7 +82,7 @@ All the above encourages IT professionals to do one thing: create as many contai
 
 You use containers to make the best use of the hardware at hand. However, with so many containers dispersed on your nodes without being managed, your infrastructure may look as shown in below illustration.
 
-![multiple applications inside containers](https://www.magalix.com/hs-fs/hubfs/multiple%20applications%20inside%20containers-1.png?width=600&name=multiple%20applications%20inside%20containers-1.png)
+<kbd>![multiple applications inside containers](https://www.magalix.com/hs-fs/hubfs/multiple%20applications%20inside%20containers-1.png?width=600&name=multiple%20applications%20inside%20containers-1.png)
 
 You need a container orchestrator!
 
@@ -92,7 +92,7 @@ Kubernetes is a Greek word that [stands for helmsman](https://en.wikipedia.org/w
 
 Let’s now have an overview of the landscape of Kubernetes as a system.
 
-![kubernetes ecosystem](https://www.magalix.com/hs-fs/hubfs/kubernetes%20ecosystem.png?width=1200&name=kubernetes%20ecosystem.png)
+<kbd>![kubernetes ecosystem](https://www.magalix.com/hs-fs/hubfs/kubernetes%20ecosystem.png?width=1200&name=kubernetes%20ecosystem.png)
 
 Kubernetes Core Features
 
@@ -163,7 +163,7 @@ Kubernetes introduces a lot of vocabulary to describe how your application is or
 
 A Kubernetes pod is a group of containers, and is the smallest unit that Kubernetes administers. Pods have a single IP address that is applied to every container within the pod. Containers in a pod share the same resources such as memory and storage. This allows the individual Linux containers inside a pod to be treated collectively as a single application, as if all the containerized processes were running together on the same host in more traditional workloads. It’s quite common to have a pod with only a single container, when the application or service is a single process that needs to run. But when things get more complicated, and multiple processes need to work together using the same shared data volumes for correct operation, multi-container pods ease deployment configuration compared to setting up shared resources between containers on your own.
 
-![](https://miro.medium.com/max/798/1*98KmDvC1pnqdGJnvWuRqlQ.png)
+<kbd>![](https://miro.medium.com/max/798/1*98KmDvC1pnqdGJnvWuRqlQ.png)
 
 For example, if you were working on an image-processing service that created GIFs, one pod might have several containers working together to resize images. The primary container might be running the non-blocking microservice application taking in requests, and then one or more auxiliary (side-car) containers running batched background processes or cleaning up data artifacts in the storage volume as part of managing overall application performance.
 
@@ -173,7 +173,7 @@ Kubernetes deployments define the scale at which you want to run your applicatio
 
 A deployment in Kubernetes consists of a ReplicaSet with its Pod template. Consider that we have a ReplicaSet “A” with V1 of our app. And we want to deploy V2. We can update the ReplicaSet to use the new version of our container, but this will cause all V1 Pods to be killed immediately at the time we are provisioning the new V2 Pods. If we don’t want to disrupt our service like that, we create a deployment.
 
-![](https://miro.medium.com/max/746/1*c8D_xBb70Z0JUdB075RZug.png)
+<kbd>![](https://miro.medium.com/max/746/1*c8D_xBb70Z0JUdB075RZug.png)
 
 The deployment will create a new ReplicaSet B of the V2 template with only 1 instance. And once this instance got created, it will scale down ReplicaSet A by 1 instance, and will keep doing that scaling up B and scaling down A, until B is fully populated and healthy and A reaches 0 instances. This is called rolling update deployment and helps keeping the old version of the service running while the new version is being provisioned.
 
@@ -183,7 +183,7 @@ The lifetime of an individual pod cannot be relied upon; everything from their I
 
 A service is an abstraction over the pods, and essentially, the only interface the various application consumers interact with. As pods are replaced, their internal names and IPs might change. A service exposes a single machine name or IP address mapped to pods whose underlying names and numbers are unreliable. A service ensures that, to the outside network, everything appears to be unchanged.
 
-![](https://miro.medium.com/max/699/1*u_-dHjAyW45Uy4HuA4Hg7g.png)
+<kbd>![](https://miro.medium.com/max/699/1*u_-dHjAyW45Uy4HuA4Hg7g.png)
 
 A service provides a permanent IP and DNS name for a group of Pods. So if your web application exposes port 80 on 2 Pods. You should create a service named “WebServer” for example with port 80, this service will have its own IP inside the cluster that will not change by changing the Pods inside, and will have a DNS name that will be accessible inside the cluster network and will forward traffic (TCP, http or any protocol) to the underlying Pods.
 
@@ -203,7 +203,7 @@ This is the main entry point for administrators and users to manage the various 
 
 A cluster is all of the above components put together as a single unit. Consists of nodes (real machines or VMs). One or more of these nodes are master(s) which control the others.
 
-![](https://miro.medium.com/max/944/1*djM3-pzA_FgaAccAjfBiVg.png)
+<kbd>![](https://miro.medium.com/max/944/1*djM3-pzA_FgaAccAjfBiVg.png)
 
 Each node has an app called **kubelet** that communicates to the cluster master node, take commands and controls the containers running inside the node. Each node also uses **docker** to run the containers.
 
@@ -227,7 +227,7 @@ The worker node(s) host the pods that are the components of the application. The
 
 Here’s a diagram of a Kubernetes cluster with all the components tied together.
 
-![](https://miro.medium.com/max/699/1*qqaBGr3hgS7mGAIDbxGbYg.png)
+<kbd>![](https://miro.medium.com/max/699/1*qqaBGr3hgS7mGAIDbxGbYg.png)
 
 Master components provide the cluster’s control plane. Master components make global decisions about the cluster (for example, scheduling), and that they detect and answer cluster events (for example, beginning a replacement pod when a deployment’s _replicas_ field is unsatisfied).
 
@@ -299,7 +299,7 @@ A node may be overloaded with so many busy pods consuming most of its CPU and me
 
 Sometimes, the user needs to make this decision on behalf of Kubernetes. Let’s say that you’ve recently purchased a couple of machines equipped with SSD disks, and you want to use them explicitly for the MongoDB part of the application. To do this, you select the nodes through the node labels in the pod definition. When a node does not match the provided label, it is not chosen for deploying the Pod.
 
-![Scheduler](https://www-magalix-com.cdn.ampproject.org/i/s/www.magalix.com/hs-fs/hubfs/Scheduler.png?width=720&name=Scheduler.png)
+<kbd>![Scheduler](https://www-magalix-com.cdn.ampproject.org/i/s/www.magalix.com/hs-fs/hubfs/Scheduler.png?width=720&name=Scheduler.png)
 
 As demonstrated in the above graph, the predicate decision resolves to either True (yes, deploy the pod on that node) or False (no, don’t deploy on that one).
 
@@ -359,7 +359,7 @@ Kubernetes is a highly modular, open-source project. Several components were lef
 
 To appreciate the simplicity of this design, let’s see how we can manually create a number of containers (using Docker, for example) that will be distributed on a number of physical hosts, and how they can communicate without the Kubernetes design. First, you’ll need to use NAT to ensure that no port collision happens when more than one container tries to use the same port. Let’s say two Apache containers, both are running on port 80. None of those containers can receive traffic by exposing port 80 on the host; as a port collision will occur. This is only possible through NAT. Using NAT means that the container will not communicate through its own IP address or port. Rather, its IP will be hidden behind the NAT IP, and a unique port on the NAT interface (for example, 8080) will forward traffic to port 80 on the container. The second container will use the same NAT IP but with a different port and so on. The following graph depicts how Kubernetes implements its networking model versus the traditional way.
 
-![8 PNG-1](https://www.magalix.com/hs-fs/hubfs/8%20PNG-1.png?width=645&name=8%20PNG-1.png)
+<kbd>![8 PNG-1](https://www.magalix.com/hs-fs/hubfs/8%20PNG-1.png?width=645&name=8%20PNG-1.png)
 
 So, as you can see Kubernetes eliminates the need for NAT or link containers.
 
@@ -443,11 +443,11 @@ In the microservices architecture, each module should live in its own space and 
 
 Suppose that you have an [Nginx](https://www.nginx.com/) web server running - see below illustration. We need to analyze Nginx logs in real-time. The logs we need to parse are obtained from [GET requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) to the web server. The developers created a log watcher application that will do this job, and they built a container for it. In typical conditions, you’d have a pod for Nginx and another for the log watcher. However, we need to eliminate any network latency so that the watcher can analyze logs the moment they are available. A solution for this is to place both containers on the same pod
 
-![containers in separate kubernetes pods-1](https://www.magalix.com/hs-fs/hubfs/containers%20in%20separate%20kubernetes%20pods-1.jpg?width=631&name=containers%20in%20separate%20kubernetes%20pods-1.jpg)
+<kbd>![containers in separate kubernetes pods-1](https://www.magalix.com/hs-fs/hubfs/containers%20in%20separate%20kubernetes%20pods-1.jpg?width=631&name=containers%20in%20separate%20kubernetes%20pods-1.jpg)
 
 Having both containers on the same pod allows them to communicate through the loopback interface as if they were two processes running on the same host. They also share the same storage volume.
 
-![two containers in the same kubernetes pod-1](https://www.magalix.com/hs-fs/hubfs/two%20containers%20in%20the%20same%20kubernetes%20pod-1.jpg?width=467&name=two%20containers%20in%20the%20same%20kubernetes%20pod-1.jpg)
+<kbd>![two containers in the same kubernetes pod-1](https://www.magalix.com/hs-fs/hubfs/two%20containers%20in%20the%20same%20kubernetes%20pod-1.jpg?width=467&name=two%20containers%20in%20the%20same%20kubernetes%20pod-1.jpg)
 
 Our First Pod
 =============
@@ -724,7 +724,7 @@ If you’re interested in trying Kubernetes out, you can install [Minikube](http
 
 **Benefits does Kubernetes offer**
 
-![](https://miro.medium.com/max/1355/1*UccIelFIJ5Ivqzdqk_w4fA.png)
+<kbd>![](https://miro.medium.com/max/1355/1*UccIelFIJ5Ivqzdqk_w4fA.png)
 
 Out of the box, K8S provides several key features that allow us to run immutable infrastructure. Containers are often killed, replaced, and self-heal automatically, and therefore the new container gets access to those support **volumes, secrets, configurations,** etc.that make it function.
 
@@ -752,7 +752,7 @@ Overview of Kubernetes
 
 Kubernetes is based on years of Google’s experience of running workloads at a huge scale in production. As per Kubernetes website, “Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.”
 
-![](https://miro.medium.com/max/491/0*WEEOL5y5Q-Vd09U-.png)
+<kbd>![](https://miro.medium.com/max/491/0*WEEOL5y5Q-Vd09U-.png)
 
 It groups containers that make up an application into logical units for easy management and discovery. Kubernetes builds upon [15 years of experience of running production workloads at Google](http://queue.acm.org/detail.cfm?id=2898444), combined with best-of-breed ideas and practices from the community.
 
@@ -809,7 +809,7 @@ In a Docker Swarm, a node joining a cluster creates an overlay network of servic
 Benefits & drawbacks of Kubernetes
 ----------------------------------
 
-![](https://miro.medium.com/max/1024/0*Ep7gU9yH1Mi2xUQd.png)
+<kbd>![](https://miro.medium.com/max/1024/0*Ep7gU9yH1Mi2xUQd.png)
 
 ### Benefits of Kubernetes
 
@@ -881,13 +881,13 @@ The following are some of the related examples:
     
     Following diagram represents the same:
     
-    ![Sidecar container (logging) pattern](https://vitalflux.com/wp-content/uploads/2017/12/Screen-Shot-2017-12-09-at-10.10.50-AM.png)
+    <kbd>![Sidecar container (logging) pattern](https://vitalflux.com/wp-content/uploads/2017/12/Screen-Shot-2017-12-09-at-10.10.50-AM.png)
     
     Figure 1. Sidecar container (logging)  _{image credit: [design patterns](https://www.usenix.org/system/files/conference/hotcloud16/hotcloud16_burns.pdf)}_
     
 
 *   Another example could be to use have web server deployed with a sidecar container that synchronizes file system with git repository; Notice the reusability of git synchronizer container. Application container is simply connecting to a Redis server on localhost. Following diagram represents the same  
-    ![Sidecar container (git synchronizer)](https://vitalflux.com/wp-content/uploads/2017/12/Screen-Shot-2017-12-09-at-10.11.23-AM.png)
+    <kbd>![Sidecar container (git synchronizer)](https://vitalflux.com/wp-content/uploads/2017/12/Screen-Shot-2017-12-09-at-10.11.23-AM.png)
     
     Figure 2. Sidecar container (git synchronizer) {_image credit: Kubernetes}  
     _
@@ -903,13 +903,13 @@ Ambassador pattern is another form of **single-node, multiple containers applic
 The following are some of the examples:
 
 *   Ambassador container acting as a proxy to Memcached servers; Following diagram represents the same:  
-    ![Ambassador (memcached) container](https://vitalflux.com/wp-content/uploads/2017/12/Screen-Shot-2017-12-09-at-10.10.56-AM.png)  
+    <kbd>![Ambassador (memcached) container](https://vitalflux.com/wp-content/uploads/2017/12/Screen-Shot-2017-12-09-at-10.10.56-AM.png)  
     Figure 3. Ambassador (memcached) container  
       
     
 *   Ambassador container acting as a proxy to redis cluster of servers; Ambassador container becomes responsible for splitting reads and writes and sending them on to the appropriate servers.Following diagram represents the same:
 
-![Ambassador (redis) container](https://vitalflux.com/wp-content/uploads/2017/12/Screen-Shot-2017-12-09-at-10.11.15-AM.png)
+<kbd>![Ambassador (redis) container](https://vitalflux.com/wp-content/uploads/2017/12/Screen-Shot-2017-12-09-at-10.11.15-AM.png)
 
 Figure 4. Ambassador (redis) container {_image credit: [Kubernetes](http://blog.kubernetes.io/2015/06/the-distributed-system-toolkit-patterns.html)_}
 
@@ -919,7 +919,7 @@ Adapter pattern is yet another form of **single-node, multiple containers appli
 
 A concrete example of the adapter pattern is adapters that ensure all containers in a system have the same monitoring interface. The following diagram represents usage of adapter container for monitoring:
 
-![Adaptor (monitoring) container](https://vitalflux.com/wp-content/uploads/2017/12/Screen-Shot-2017-12-09-at-11.14.42-AM.png)
+<kbd>![Adaptor (monitoring) container](https://vitalflux.com/wp-content/uploads/2017/12/Screen-Shot-2017-12-09-at-11.14.42-AM.png)
 
 Figure 5. Adaptor (monitoring) container
 
@@ -969,7 +969,7 @@ Resource Dependencies
 
   
 
-![Kubernetes Patterns - Capacity](https://www.magalix.com/hs-fs/hubfs/Kubernetes%20Patterns%20-%20Capacity.jpg?width=720&name=Kubernetes%20Patterns%20-%20Capacity.jpg)
+<kbd>![Kubernetes Patterns - Capacity](https://www.magalix.com/hs-fs/hubfs/Kubernetes%20Patterns%20-%20Capacity.jpg?width=720&name=Kubernetes%20Patterns%20-%20Capacity.jpg)
 
 So far we discussed the different runtime dependencies that affect which node will the Pod get scheduled (if at all) and the various prerequisites that must be availed for the Pod to function correctly. However, you must also take into consideration that capacity requirement of the containers.
 
@@ -1006,7 +1006,7 @@ Most of the Pod definitions examples ignore the requests and limits parameters. 
 
 We can summarize how the Kubelet deals with Pod priority as follows:
 
-![taple](https://www.magalix.com/hs-fs/hubfs/taple.png?width=732&name=taple.png)
+<kbd>![taple](https://www.magalix.com/hs-fs/hubfs/taple.png?width=732&name=taple.png)
 
 Pod Priority and Preemption
 
@@ -1040,7 +1040,7 @@ This implementation is important because sometimes we may need to perform some a
 
 In the application process management pattern, we ensure that our containerized application is aware of its environment and correctly responds to the different signals that the platform (Kubernetes) sends to it.
 
-![25 png-1](https://www.magalix.com/hs-fs/hubfs/25%20png-1.png?width=720&name=25%20png-1.png)
+<kbd>![25 png-1](https://www.magalix.com/hs-fs/hubfs/25%20png-1.png?width=720&name=25%20png-1.png)
 
 How Kubernetes Terminates Pods
 
@@ -1085,7 +1085,7 @@ postStart script uses the following methods for running the checks:
 *   **exec:** Used in the preceding example, the exec method executes one or more arbitrary commands against the container. The exit status specifies whether or not the check has passed.
 *   **httpGet:** Opens an HTTP connection to a local port on the container. You can optionally supply a path. For example, if we can modify the preceding example to check whether or not port 8080 is open (let’s say a hypothetical REST service) and the /status endpoint path returns a valid success response:
 
-![29](https://www.magalix.com/hs-fs/hubfs/29.jpg?width=720&name=29.jpg)
+<kbd>![29](https://www.magalix.com/hs-fs/hubfs/29.jpg?width=720&name=29.jpg)
 
 Why not use an init container instead?
 
@@ -1113,7 +1113,7 @@ However, unlike the postStart hook, if Kubernetes detects a non-zero exit status
 
   
 
-![28](https://www.magalix.com/hs-fs/hubfs/28.jpg?width=720&name=28.jpg)
+<kbd>![28](https://www.magalix.com/hs-fs/hubfs/28.jpg?width=720&name=28.jpg)
 
   
 
@@ -1612,7 +1612,7 @@ This cloud-native stack offers compelling capabilities for building the most sec
 
 **CI / CD Pipleline**
 
-![](https://lcom.static.linuxfound.org/sites/lcom/files/part_1_diagram_1.png)
+<kbd>![](https://lcom.static.linuxfound.org/sites/lcom/files/part_1_diagram_1.png)
 
 The completed application will show the power and ease with which Kubernetes manages both apps and infrastructure, creating a sandbox where you can build, deploy, and spin up many instances under load.
 
@@ -1642,7 +1642,7 @@ After installation, [create a Docker group](https://docs.docker.com/engine/insta
 
   
 
-![](attachments/471992252/471992249.png)
+<kbd>![](attachments/471992252/471992249.png)
 
 **Foundational Patterns**
 
@@ -1825,13 +1825,13 @@ An _Operator_ is a Controller that uses a CustomResourceDefinitions to encapsu
 
 Kubernetes is the new application portability layer and the common denominator among everybody on the cloud. If you are a software developer or architect, the odds are that Kubernetes will become part of your life in one form or another. Learning about the Kubernetes patterns described here will change the way you think about this platform. I believe that Kubernetes and the concepts originating from it will become as fundamental as object-oriented programming concepts.
 
-![](attachments/471992252/471992250.png)
+<kbd>![](attachments/471992252/471992250.png)
 
   
 
 eBook
 
-*   [![](rest/documentConversion/latest/conversion/thumbnail/471992251/1)](/download/attachments/471992252/eBook%20-%20OReilly%20Kubernetes%20Patterns%20Reusable%20Elements%20for%20Designing%20Cloud-Native%20Application.pdf?version=1&modificationDate=1589287907980&api=v2)
+*   [<kbd>![](rest/documentConversion/latest/conversion/thumbnail/471992251/1)](/download/attachments/471992252/eBook%20-%20OReilly%20Kubernetes%20Patterns%20Reusable%20Elements%20for%20Designing%20Cloud-Native%20Application.pdf?version=1&modificationDate=1589287907980&api=v2)
 
   
 
@@ -1884,7 +1884,7 @@ References
 Attachments:
 ------------
 
-![](images/icons/bullet_blue.gif) [OReilly - Kubernetes Up and Running.pdf](attachments/451820631/451826810.pdf) (application/pdf)  
+<kbd>![](images/icons/bullet_blue.gif) [OReilly - Kubernetes Up and Running.pdf](attachments/451820631/451826810.pdf) (application/pdf)  
 
 
 

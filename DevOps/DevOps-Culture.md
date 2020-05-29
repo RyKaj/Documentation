@@ -3,10 +3,10 @@
 
 # DevOps :  Culture
 
-![](https://miro.medium.com/max/700/0*_-Zy4-1gSw2KWvXL.jpg)
-![](https://miro.medium.com/max/1138/1*OXVb_Awnzc6fV7i1cM2YZw.png)   
-![](https://miro.medium.com/max/638/1*jh2lsMGJzSCZcMeezYBPbg.jpeg) 
-![](https://miro.medium.com/max/650/1*C1kTZozQPw2usV1YrshkRg.png)
+<kbd>![](https://miro.medium.com/max/700/0*_-Zy4-1gSw2KWvXL.jpg)
+<kbd>![](https://miro.medium.com/max/1138/1*OXVb_Awnzc6fV7i1cM2YZw.png)   
+<kbd>![](https://miro.medium.com/max/638/1*jh2lsMGJzSCZcMeezYBPbg.jpeg) 
+<kbd>![](https://miro.medium.com/max/650/1*C1kTZozQPw2usV1YrshkRg.png)
 
  
 
@@ -20,13 +20,13 @@ Improve collaboration between all stakeholders from planning through delivery an
 *   Shorten lead time between fixes
 *   Improve mean time to recovery
 
-![](https://miro.medium.com/max/700/0*AaDgibL0vgllaaWx.png)
+<kbd>![](https://miro.medium.com/max/700/0*AaDgibL0vgllaaWx.png)
 
 ## Where Are You on the DevOps Continuum
 
 The DevOps continuum is a helpful way to look at the different aspects of DevOps. The bottom horizontal axis represents what people perceive DevOps to fundamentally be focused on. Some people adamantly feel that DevOps should focus on culture more than tools, while on the other people tend to value tools over culture.
 
-![](https://miro.medium.com/max/700/0*9paOOR3iO3P3xZhQ)
+<kbd>![](https://miro.medium.com/max/700/0*9paOOR3iO3P3xZhQ)
 
 The vertical axis depicts the three levels of the DevOps delivery chain: continuous integration, continuous delivery and continuous deployment. The DevOps community refers to organizations in the top right of the DevOps continuum as pink unicorns because there are currently so few of them that you don’t see them in the wild very often. Popular examples of these unicorns are companies like Netflix, Etsy, Amazon, Pinterest, Flicker, IMVU and Google. In a recent poll participants indicated where their organizations fit on the DevOps continuum:
 
@@ -91,7 +91,7 @@ In line with these three steps, the DevOps maturity block verifies maturity in b
 
 **DevOps Maturity by Infrastructure –** Determines DevOps maturity by ability to ease infrastructure using capabilities around automation, streamlining and enabling self-service to provision environments, among other tasks.
 
-![DevOps Maturity model involves five transformation stages](https://www.veritis.com/wp-content/uploads/2019/10/devops-maturity-model-involves-five-transformation-stages.jpg)
+<kbd>![DevOps Maturity model involves five transformation stages](https://www.veritis.com/wp-content/uploads/2019/10/devops-maturity-model-involves-five-transformation-stages.jpg)
 
 ### Stage-1: Initial
 
@@ -280,7 +280,7 @@ There are several phases to DevOps maturity; here are a few of the key phases yo
 
 Continuous integration is the practice of quickly integrating newly developed code with the main body of code that is to be released. Continuous integration saves a lot of time when the team is ready to release the code.
 
-![](https://miro.medium.com/max/700/0*X4lG2bqBrxA6eDfP.png)
+<kbd>![](https://miro.medium.com/max/700/0*X4lG2bqBrxA6eDfP.png)
 
 DevOps didn’t come up with this term. Continuous integration is an agile engineering practice originating from the Extreme Programming methodology. The terms been around for a while, but DevOps has adopted this term because automation is required to successfully execute continuous integration. Continuous integration is often the first step down the path toward DevOps maturity.
 
@@ -308,7 +308,7 @@ In a Continuous Deployment process, every validated build is automatically relea
 
 Continuous Deployment is the golden goose of DevOps, but it is best applied after your DevOps team has nailed down its processes. For continuous deployment to work well, organizations need to have a rigorous and reliable automated testing environment. If you are not there yet, start with Continuous Delivery to have that extra safety step and transition gradually.
 
- ![continuous-delivery-vs-continous-deployment](https://devtipscurator.files.wordpress.com/2017/02/continuous-delivery-vs-continous-deployment.png?w=736)    ![](https://miro.medium.com/max/700/0*NU_81jBIf1JTVNjT.jpg) 
+ <kbd>![continuous-delivery-vs-continous-deployment](https://devtipscurator.files.wordpress.com/2017/02/continuous-delivery-vs-continous-deployment.png?w=736)    <kbd>![](https://miro.medium.com/max/700/0*NU_81jBIf1JTVNjT.jpg) 
 
 Teams that utilize continuous delivery don’t deploy untested code; instead, newly created code runs through automated testing before it gets pushed out to production. The code release typically only goes to a small percentage of users and there’s an automated feedback loop that monitors quality and usage before the code is propagated further.
 
@@ -323,7 +323,7 @@ As a DevOps team matures, they often find that their environment fills with a gr
 
 Savvy teams seek ways to avoid these kinds of failures. As a team learns, it progresses through various states of DevOps maturity. Sometimes those tools to avoid failure will be technical in nature, but just as often they’ll be changes to process or lines of communication. A team can have the best tech in the world, but if they have bad processes, they’re still going to fail as often as they succeed.
 
-<img src="./attachments/463532394.png" alt="">
+<img src="./attachments/463532394.png" alt=""></kbd>
 
 
 **Release management** is the process of how a team coordinates the actual release of code to customers. Good code tends to pass through a variety of steps so that stakeholders throughout the business can verify its validity. Beyond simply designing and writing the code, code needs to go through testing, user acceptance, and compliance phases. These steps ensure that the code does what it says it does, that customers are happy with what it does, and that it doesn’t expose the company to risk.
@@ -418,7 +418,7 @@ DevOps focuses heavily on establishing a collaborative culture and improving eff
 
 DevOps culture is characterized by increased collaboration, decreasing silos, shared responsibility, autonomous teams, improving quality, valuing feedback and increasing automation. Many of the DevOps values are agile values as DevOps is an extension of agile.
 
-![](https://miro.medium.com/max/700/0*8GkUQVW686iIccQb.jpg)
+<kbd>![](https://miro.medium.com/max/700/0*8GkUQVW686iIccQb.jpg)
 
 Agile methods are a more holistic way of delivering software. Agile development teams measure progress in terms of working software. Product owners, developers, testers and UX people work closely together with the same goals.
 
