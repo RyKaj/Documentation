@@ -30,13 +30,9 @@ example, the `Order Service`{.highlighter-rouge} stores information
 about orders and the `Customer Service`{.highlighter-rouge} stores
 information about customers.
 
-![](https://microservices.io/i/customersandorders.png)
-
-.confluence-content-image-border height="150"}
+<kbd>![](https://microservices.io/i/customersandorders.png) </kbd>
 
 
-
- {.panel style="border-width: 1px;"}
  {.panelHeader style="border-bottom-width: 1px;"}
 Problem
 -------

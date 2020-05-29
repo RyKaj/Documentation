@@ -101,10 +101,10 @@ Big Data, NoSQL, unstructured, semi-structured data integration coupled
 with SDLC best practices on how to use it. Perfect timing, I'd say. So
 here we are ...
 
-![](https://www.talend.com/wp-content/uploads/280px-Relational_Model_svg-1.png)
-![](https://www.talend.com/wp-content/uploads/the-data-vault-2.jpg)
-![](https://www.talend.com/wp-content/uploads/dim1-1.jpg)
-![](https://www.talend.com/wp-content/uploads/320px-Network_Model_svg-1.png)
+<kbd>![](https://www.talend.com/wp-content/uploads/280px-Relational_Model_svg-1.png)
+<kbd>![](https://www.talend.com/wp-content/uploads/the-data-vault-2.jpg)
+<kbd>![](https://www.talend.com/wp-content/uploads/dim1-1.jpg)
+<kbd>![](https://www.talend.com/wp-content/uploads/320px-Network_Model_svg-1.png)
 
 A Data Model Summary
 --------------------
@@ -191,7 +191,7 @@ Let us consider then a database design best practice: The design and
 release process of a data model. I believe that when crafting a data
 model one should follow a prescribed process similar to this:
 
-![](https://www.talend.com/wp-content/uploads/DDLC_DBdesignflow-3.png)
+<kbd>![](https://www.talend.com/wp-content/uploads/DDLC_DBdesignflow-3.png)
 
 Self-explanatory to most perhaps, yet let me emphasize the importance of
 adopting this process. While schema changes are inevitable, getting a
@@ -969,7 +969,7 @@ never interacts with any other standalone instance. Each instance of the
 app has only one tenant, and therefore needs only one database. The
 tenant has the database all to itself.
 
-![Design of standalone app with exactly one single-tenant
+<kbd>![Design of standalone app with exactly one single-tenant
 database.](https://docs.microsoft.com/en-us/azure/sql-database/media/saas-tenancy-app-design-patterns/saas-standalone-app-single-tenant-database-11.png)
 
 Each app instance is installed in a separate Azure resource group. The
@@ -1010,7 +1010,7 @@ adding more resources per node. Or the app is scaled  *out* horizontally
 by adding more nodes. The scaling is based on workload, and is
 independent of the number or scale of the individual databases.
 
-![Design of multi-tenant app with
+<kbd>![Design of multi-tenant app with
 database-per-tenant.](https://docs.microsoft.com/en-us/azure/sql-database/media/saas-tenancy-app-design-patterns/saas-multi-tenant-app-database-per-tenant-13.png)
  
 
@@ -1038,7 +1038,7 @@ than requiring each database to be large enough to accommodate the usage
 peaks that it experiences. Even though pooled databases share access to
 resources they can still achieve a high degree of performance isolation.
 
-![Design of multi-tenant app with database-per-tenant, using elastic
+<kbd>![Design of multi-tenant app with database-per-tenant, using elastic
 pool.](https://docs.microsoft.com/en-us/azure/sql-database/media/saas-tenancy-app-design-patterns/saas-multi-tenant-app-database-per-tenant-pool-15.png)
  
 
@@ -1159,7 +1159,7 @@ databases or shards, where all the data for any one tenant is contained
 in one shard. Combined with a multi-tenant database pattern, a sharded
 model allows almost limitless scale.
 
-![Design of multi-tenant app with sharded multi-tenant
+<kbd>![Design of multi-tenant app with sharded multi-tenant
 databases.](https://docs.microsoft.com/en-us/azure/sql-database/media/saas-tenancy-app-design-patterns/saas-multi-tenant-app-sharded-multi-tenant-databases-17.png)
 
 #### Manage shards
@@ -1268,7 +1268,7 @@ AntiPattern
 
 ### Common Lookup Tables
 
-![843-Fig1.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig1.jpg)
+<kbd>![843-Fig1.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig1.jpg)
 
 Figure 1
 
@@ -1299,10 +1299,10 @@ small tables (in the example, these are tables that represent distinct
 types of entities such as 'status of orders', 'priority of financial
 assets', 'location codes', 'type of warehouses' etc.).
 
-![843-Fig2.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig2.jpg)
-![843-Fig3.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig3.jpg)
-![843-Fig4.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig4.jpg)
-![843-Fig5.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig5.jpg)
+<kbd>![843-Fig2.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig2.jpg)
+<kbd>![843-Fig3.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig3.jpg)
+<kbd>![843-Fig4.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig4.jpg)
+<kbd>![843-Fig5.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig5.jpg)
 
 Figures 2-5
 
@@ -1396,7 +1396,7 @@ So then, should you ever avoid using a check constraint? Well, let's
 consider the cases where a referencing table (a table with a foreign
 key) can be used to restrain the column with a specific set of values.
 
-![843-Fig6.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig6.jpg)
+<kbd>![843-Fig6.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig6.jpg)
 
 Figure 6
 
@@ -1441,7 +1441,7 @@ entity and a third one for the actual value of that property.
 Consider the following example of a table that records data about
 employees:
 
-![843-Fig7.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig7.jpg)
+<kbd>![843-Fig7.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig7.jpg)
 
 Fig 7
 
@@ -1449,7 +1449,7 @@ Now, the EAV approach shuffles up the data, in order to  represent the
 attributes as values in one column and the corresponding values of those
 attributes in another column:
 
-![843-Fig8.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig8.jpg)
+<kbd>![843-Fig8.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig8.jpg)
 
 Fig 8
 
@@ -1595,7 +1595,7 @@ Consider a table that represents the sales figures of some salesmen that
 work for a company. Let's assume that the following design is adopted so
 as to make it easier to retrieve the data in order to display it:
 
-![843-Fig9.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig9.jpg)
+<kbd>![843-Fig9.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig9.jpg)
 
 Figure 9
 
@@ -1626,7 +1626,7 @@ Form](http://www.simple-talk.com/sql/learn-sql-server/facts-and-fallacies-about-
 The ideal way to design this table would be something along the lines
 of:
 
-![843-Fig10.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig10.jpg)
+<kbd>![843-Fig10.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig10.jpg)
 
 Fig 10
 
@@ -1715,7 +1715,7 @@ As usual, you will have to test against the underlying tables,  and consider su
 The other variation of this approach is to split the attributes across tables, i.e. using data values as part of the table name itself. This is commonly done by having multiple tables that are similarly structured.
 Consider the following set of tables:
 
-![843-Fig12.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig12.jpg)
+<kbd>![843-Fig12.jpg](https://www.red-gate.com/simple-talk/wp-content/uploads/imported/843-Fig12.jpg)
 Figure 11
 
 Here, the individual values of the attribute 'month' are assigned to each table. This design shares similar shortcomings such as the duplication of constraints and the difficulty in expressing simple queries.  To be useful, the tables will have to be UNION-ed to form a single table with an additional column representing the month. It would have been easier to start with a  single base table.

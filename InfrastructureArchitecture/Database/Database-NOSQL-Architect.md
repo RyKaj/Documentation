@@ -53,7 +53,7 @@ capacity in terms of CPU, memory and disk storage. Within each PN, there
 will be a variable number of virtual node (VN) running according to the
 available hardware capacity of the PN.
 
-![](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwogI5pkEEI/AAAAAAAAAXE/xhrfSf8dmI4/s320/p1.png)
+<kbd>![](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwogI5pkEEI/AAAAAAAAAXE/xhrfSf8dmI4/s320/p1.png) </kbd>
 
 Data Partitioning (Consistent Hashing)
 --------------------------------------
@@ -69,7 +69,7 @@ the ownership of existing keys has changed dramatically, which requires
 full data redistribution. Most large scale store use a \"consistent
 hashing\" technique to minimize the amount of ownership changes.
 
-![](http://1.bp.blogspot.com/_j6mB7TMmJJY/SwohQZ9HTAI/AAAAAAAAAXM/X9CAGfpnL2o/s320/p1.png)
+<kbd>![](http://1.bp.blogspot.com/_j6mB7TMmJJY/SwohQZ9HTAI/AAAAAAAAAXM/X9CAGfpnL2o/s320/p1.png) </kbd>
 
 In the consistent hashing scheme, the key space is finite and lie on the
 circumference of a ring. The virtual node id is also allocated from the
@@ -88,7 +88,7 @@ need to replicate the data partitions.
 Replication not only improves the overall reliability of data, it also
 helps performance by spreading the workload across multiple replicas.
 
-![](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwohcYWqCDI/AAAAAAAAAXU/oH0pDuht4vo/s320/P2.png)
+<kbd>![](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwohcYWqCDI/AAAAAAAAAXU/oH0pDuht4vo/s320/P2.png) </kbd>
 
 While read-only request can be dispatched to any replicas, update
 request is more challenging because we need to carefully co-ordinate the
@@ -112,7 +112,7 @@ When a new node joins the network
 4.  The membership change is asynchronously propagate to the other
     nodes.
 
-![](http://1.bp.blogspot.com/_j6mB7TMmJJY/Sw1b9Sv0fmI/AAAAAAAAAXc/4-YNzhA3LCQ/s320/p1.png)
+<kbd>![](http://1.bp.blogspot.com/_j6mB7TMmJJY/Sw1b9Sv0fmI/AAAAAAAAAXc/4-YNzhA3LCQ/s320/p1.png) </kbd>
 
 Notice that other nodes may not have their membership view updated yet
 so they may still forward the request to the old nodes. But since these
@@ -132,7 +132,7 @@ When an existing node leaves the network (e.g. crash)
 2.  The neighbor will update the membership changes and copy data
     asynchronously
 
-![](http://2.bp.blogspot.com/_j6mB7TMmJJY/Sw1jGP6y5tI/AAAAAAAAAXk/rM9k-jNcsKQ/s320/P2.png)
+<kbd>![](http://2.bp.blogspot.com/_j6mB7TMmJJY/Sw1jGP6y5tI/AAAAAAAAAXk/rM9k-jNcsKQ/s320/P2.png) </kbd>
 
 We haven\'t talked about how the virtual nodes is mapped into the
 physical nodes. Many schemes are possible with the main goal that
@@ -293,7 +293,7 @@ For \"strict consistency\", the important condition is to make sure the
 read set and the write set overlap. ie: W + R \> N
 
 \
-[![](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwOHybHlzHI/AAAAAAAAATE/-NaXjP_S2H8/s400/P7.png)](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwOHybHlzHI/AAAAAAAAATE/-NaXjP_S2H8/s1600/P7.png)
+[<kbd>![](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwOHybHlzHI/AAAAAAAAATE/-NaXjP_S2H8/s400/P7.png)](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwOHybHlzHI/AAAAAAAAATE/-NaXjP_S2H8/s1600/P7.png) </kbd>
 
 \
 As you can see, the quorum based 2PC can be considered as a general 2PC
@@ -328,7 +328,7 @@ vector clock.
     advance its clock Vj\[j\] and then merge its clock with the clock Vm
     attached in the message. ie: Vj\[k\] = max(Vj\[k\], Vm\[k\])
 
-![](http://2.bp.blogspot.com/_j6mB7TMmJJY/SwoSGODJQuI/AAAAAAAAAWs/OefcWLxdsmI/s320/p1.png)
+<kbd>![](http://2.bp.blogspot.com/_j6mB7TMmJJY/SwoSGODJQuI/AAAAAAAAAWs/OefcWLxdsmI/s320/p1.png) </kbd>
 
 A partial order relationship can be defined such that Vi \> Vj iff for
 all k, Vi\[k\] \>= Vj\[k\]. We can use these partial ordering to derive
@@ -376,18 +376,18 @@ means the client is responsible to resolve the conflict of all these
 versions because when the client sends the update later, its vector
 clock will precede all these versions.
 
-![](http://2.bp.blogspot.com/_j6mB7TMmJJY/SwmXpttEVKI/AAAAAAAAAVc/BuDsgnTJoZM/s400/p1.png)
+<kbd>![](http://2.bp.blogspot.com/_j6mB7TMmJJY/SwmXpttEVKI/AAAAAAAAAVc/BuDsgnTJoZM/s400/p1.png) </kbd>
 
 At update, the client will send its vector clock and the replica will
 check whether the client state precedes any of its existing version, if
 so, it will throw away the client\'s update.
 
-![](http://2.bp.blogspot.com/_j6mB7TMmJJY/SwmX6waHqPI/AAAAAAAAAVk/48TsSr21pUU/s400/P2.png)
+<kbd>![](http://2.bp.blogspot.com/_j6mB7TMmJJY/SwmX6waHqPI/AAAAAAAAAVk/48TsSr21pUU/s400/P2.png) </kbd>
 
 Replicas also gossip among each other in the background and try to merge
 their version tree together.
 
-![](http://2.bp.blogspot.com/_j6mB7TMmJJY/SwmYWE4O5sI/AAAAAAAAAV0/2QDGlh-JAGA/s320/P3.png)
+<kbd>![](http://2.bp.blogspot.com/_j6mB7TMmJJY/SwmYWE4O5sI/AAAAAAAAAV0/2QDGlh-JAGA/s320/P3.png) </kbd>
 
 Gossip (Operation Transfer Model)
 ---------------------------------
@@ -415,7 +415,7 @@ vector clock which reflect the client\'s view of the world. The replica
 will check if it has a view of the state that is later than the
 client\'s view.
 
-![](http://3.bp.blogspot.com/_j6mB7TMmJJY/SwmlOzM4YuI/AAAAAAAAAV8/vXWT2gsQvNc/s400/p1.png)
+<kbd>![](http://3.bp.blogspot.com/_j6mB7TMmJJY/SwmlOzM4YuI/AAAAAAAAAV8/vXWT2gsQvNc/s400/p1.png) </kbd>
 
 When an update operation is received, the replica will buffer the update
 operation until it can be applied to the local state. Every submitted
@@ -428,7 +428,7 @@ replica has received all the other updates that this one depends on.
 This condition is reflected in the vector clock Vi when it is larger
 than V-client
 
-![](http://3.bp.blogspot.com/_j6mB7TMmJJY/Swmll8oYbqI/AAAAAAAAAWE/F_oI7WwWep0/s400/P2.png)
+<kbd>![](http://3.bp.blogspot.com/_j6mB7TMmJJY/Swmll8oYbqI/AAAAAAAAAWE/F_oI7WwWep0/s400/P2.png) </kbd>
 
 On the background, different replicas exchange their log for the queued
 updates and update each other\'s vector clock. After the log exchange,
@@ -439,7 +439,7 @@ ready for applying at the same time, the replica will sort these
 operation in causal order (by using the Vector clock comparison) and
 apply them in the right order.
 
-![](http://4.bp.blogspot.com/_j6mB7TMmJJY/Swml33Xp04I/AAAAAAAAAWM/yCHvTCgTzF8/s400/P3.png)
+<kbd>![](http://4.bp.blogspot.com/_j6mB7TMmJJY/Swml33Xp04I/AAAAAAAAAWM/yCHvTCgTzF8/s400/P3.png) </kbd>
 
 The concurrent update problem at different replica can also happen.
 Which means there can be multiple valid sequences of operation. In order
@@ -472,7 +472,7 @@ and then forward the map output to the reduce function, where the
 aggregation logic will be executed.
 
 \
-[![](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwoeUzwoKrI/AAAAAAAAAW0/ch01mbMkRuk/s320/p1.png)](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwoeUzwoKrI/AAAAAAAAAW0/ch01mbMkRuk/s1600/p1.png)
+[<kbd>![](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwoeUzwoKrI/AAAAAAAAAW0/ch01mbMkRuk/s320/p1.png)](http://4.bp.blogspot.com/_j6mB7TMmJJY/SwoeUzwoKrI/AAAAAAAAAW0/ch01mbMkRuk/s1600/p1.png) </kbd>
 
 Handling Deletes 
 ----------------
@@ -506,14 +506,14 @@ update will cause a private copy being made which in turn cause the
 index also need to be modified and causing the a private copy of the
 index as well, all the way up to the root pointer.
 
-![](http://1.bp.blogspot.com/_j6mB7TMmJJY/SwjQAV_JShI/AAAAAAAAAU8/ndAucGpmwzI/s400/p1.png)
+<kbd>![](http://1.bp.blogspot.com/_j6mB7TMmJJY/SwjQAV_JShI/AAAAAAAAAU8/ndAucGpmwzI/s400/p1.png) </kbd>
 
 Notice that the update happens in an append-only mode where the modified
 data is appended to the file and the old data becomes garbage. Periodic
 garbage collection is done to compact the data. Here is how the model is
 implemented in memory and disks
 
-![](http://2.bp.blogspot.com/_j6mB7TMmJJY/SwjQd22AlMI/AAAAAAAAAVE/bUDkgpnPu5Q/s400/P2.png)
+<kbd>![](http://2.bp.blogspot.com/_j6mB7TMmJJY/SwjQd22AlMI/AAAAAAAAAVE/bUDkgpnPu5Q/s400/P2.png) </kbd>
 
 In Google BigTable model, the data is broken down into multiple
 generations and the memory is use to hold the newest generation. Any
@@ -521,7 +521,7 @@ query will search the mem data as well as all the data sets on disks and
 merge all the return results. Fast detection of whether a generation
 contains a key can be done by checking a bloom filter.
 
-![](http://3.bp.blogspot.com/_j6mB7TMmJJY/SwnJ4-X4GjI/AAAAAAAAAWk/Wy8cW8f8dwM/s400/p1.png)
+<kbd>![](http://3.bp.blogspot.com/_j6mB7TMmJJY/SwnJ4-X4GjI/AAAAAAAAAWk/Wy8cW8f8dwM/s400/p1.png) </kbd>
 
 When update happens, both the mem data and the commit log will be
 written so that if the machine crashes before the mem data flush to
@@ -536,8 +536,8 @@ limitations by using the following design patterns.
 
 ### Query Command Segregation Pattern
 
-[![](https://3.bp.blogspot.com/-rOTILpreL1o/V1_X0cpsuDI/AAAAAAAANTw/U7P0N151mhQIwQ5UrV4ZClLgg5T94DibQCLcB/s400/segregate.png)
-[![](https://3.bp.blogspot.com/-rOTILpreL1o/V1_X0cpsuDI/AAAAAAAANTw/U7P0N151mhQIwQ5UrV4ZClLgg5T94DibQCLcB/s1600/segregate.png)
+[<kbd>![](https://3.bp.blogspot.com/-rOTILpreL1o/V1_X0cpsuDI/AAAAAAAANTw/U7P0N151mhQIwQ5UrV4ZClLgg5T94DibQCLcB/s400/segregate.png) </kbd>
+[<kbd>![](https://3.bp.blogspot.com/-rOTILpreL1o/V1_X0cpsuDI/AAAAAAAANTw/U7P0N151mhQIwQ5UrV4ZClLgg5T94DibQCLcB/s1600/segregate.png </kbd>
 
 Segregate responsibility to different nodes in the replica set. The
 primary node may have priority 1 and may keep only indexes required for
@@ -582,7 +582,7 @@ If you have a tree pattern of data model where the same object type is a
 child of an object, you can use the materialized path pattern for more
 efficient search/queries. A sample is given below.
 
-![](https://1.bp.blogspot.com/-xiU2cUyIsSU/V1_cVnm-_0I/AAAAAAAANUI/qnliOY0DnH4WQigYgekIGcxl9lKFXh9OwCLcB/s400/tree.png)
+<kbd>![](https://1.bp.blogspot.com/-xiU2cUyIsSU/V1_cVnm-_0I/AAAAAAAANUI/qnliOY0DnH4WQigYgekIGcxl9lKFXh9OwCLcB/s400/tree.png) </kbd> 
 
 Resiliency Design Patterns
 --------------------------
@@ -633,7 +633,7 @@ resilience pattern is to ensure that only qualified use cases will use
 it. With that, we recommend the following guidelines when qualifying new
 NoSQL use cases.
 
-![NoSQL qualifying guidelines](https://tech.ebayinc.com/assets/Uploads/Blog/2017/02/_resampled/ScaleWidthWzc1MF0/NoSQL-qualifying-guidelines.1.png)
+<kbd>![NoSQL qualifying guidelines](https://tech.ebayinc.com/assets/Uploads/Blog/2017/02/_resampled/ScaleWidthWzc1MF0/NoSQL-qualifying-guidelines.1.png) </kbd>
 
 ### NoSQL resiliency design pattern approach
 
@@ -663,7 +663,7 @@ web-centric e-commerce businesses like eBay, this blog will use two of
 the top document-centric NoSQL databases (MongoDB and Couchbase) to
 illustrate our proposed resilience design pattern.
 
-![DB comparison](https://tech.ebayinc.com/assets/Uploads/Blog/2017/02/_resampled/ScaleWidthWzc1MF0/DB-comparison.2.png)
+<kbd>![DB comparison](https://tech.ebayinc.com/assets/Uploads/Blog/2017/02/_resampled/ScaleWidthWzc1MF0/DB-comparison.2.png) </kbd>
 
 Although a tutorial on MongoDB and Couchbase is beyond the scope of this
 blog, the high-level comparison between them in Table 1 helps illustrate
@@ -753,25 +753,19 @@ deployments:
 The following diagram illustrates the MongoDB "standard minimal
 deployment" pattern.
 
-[![Mongo
-deploy](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/Mongo-deploy.2.png)
-https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-deploy.2.png)
+[<kbd>![Mongo deploy](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/Mongo-deploy.2.png)https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-deploy.2.png) </kbd>
 
 During primary node failover, one of the available secondary nodes in
 either data center will be elected as the new primary node, as shown in
 the following diagram.
 
-[![Mongo before
-failover](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/Mongo-before-failover.3.png)
-(https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-before-failover.3.png)
+[<kbd>![Mongo before failover](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/Mongo-before-failover.3.png)(https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-before-failover.3.png) </kbd>
 
 During site or data center failure, one of the available secondary nodes
 in other data centers will be elected as the new primary node, as shown
 in the following diagram.
 
-[![Mongo after
-failover](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/Mongo-after-failover.4.png)
-(https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-after-failover.4.png)
+[<kbd>![Mongo after failover](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/Mongo-after-failover.4.png) (https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-after-failover.4.png) </kbd>
 
 ### Couchbase standard minimal deployment
 
@@ -798,16 +792,14 @@ deployment" pattern where each data center/cluster has two copies of the
 same document (for example, P1 being the primary copy and R1 the
 eventually consistent replica copy).
 
-![Couchbase
-deploy](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/Couchbase-deploy.5.png){height="250"}
+<kbd>![Couchbase deploy](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/Couchbase-deploy.5.png) </kbd>
 
 During automatic node failover, the Couchbase client SDK in applications
 will detect node failure and receive an updated failover cluster map
 with a topology containing the new location of replica documents that
 have been promoted to primary. This is shown in following diagram.
 
-![Couchbase
-failover](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/Couchbase-failover.6.png){height="250"}
+<kbd>![Couchbase failover](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/Couchbase-failover.6.png) </kbd>
 
 Although Couchbase supports bidirectional Cross Data Center Replication
 (XDCR) between geographically dispersed clusters, its current
@@ -816,8 +808,7 @@ this limitation, Couchbase will support a new feature called
 Multi-Cluster Awareness (MCA) in a future release (tentatively v4.x) to
 provide this capability, as shown in following diagram.
 
-![Couchbase
-MCA](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/Couchbase.MCA_.7.png){height="250"}
+<kbd>![Couchbase MCA](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/Couchbase.MCA_.7.png) </kbd>
 
 ### High-level MongoDB and Couchbase resilience capability comparison
 
@@ -864,32 +855,24 @@ nodes. The following operations illustrate how data loss can happen:
     secondary node, and two documents are replicated at the third
     secondary node.
 
-[![Mongo Non-Synchronous Writes
-A](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.a.8.png)
-https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.a.8.png)
+[<kbd>![Mongo Non-Synchronous Writes A](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.a.8.png)https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.a.8.png) </kbd>
 
 -   The primary node fails before all five documents reach both of the
     two secondary nodes
 
-[![Mongo Non-Synchronous Writes
-B](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.b.9.png)
-(https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.b.9.png)
+[<kbd>![Mongo Non-Synchronous Writes B](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.b.9.png)(https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.b.9.png) </kbd>
 
 -   Quorum voting re-elects the second secondary node as the new primary
     node because it receives the third document, that is, more recently
     than the third secondary node
 
-[![Mongo Non-Synchronous Writes
-C](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.c.10.png)
-(https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.c.10.png)
+[<kbd>![Mongo Non-Synchronous Writes C](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.c.10.png)(https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.c.10.png) </kbd>
 
 -   The original primary node steps down to be a secondary and rolls
     back its fourth and fifth documents, since they didn't reach other
     two secondary nodes
 
-[![Mongo Non-Synchronous Writes
-D](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.d.11.png)
-(https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.d.11.png)
+[<kbd>![Mongo Non-Synchronous Writes D](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.d.11.png)(https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.d.11.png) </kbd>
 
 -   In effect, the application loses the fourth and fifth documents even
     though it receives confirmation from the original primary node. The
@@ -923,8 +906,7 @@ associated with waiting for cross-data center majority nodes
 confirmation, since it may not suitable for applications that require
 short latency.
 
-![MongoDB Write Durability
-Pattern](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/MongoDB-Write-Durability-Pattern.12.png){height="250"}
+<kbd>![MongoDB Write Durability Pattern](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/MongoDB-Write-Durability-Pattern.12.png) </kbd>
 
 ### MongoDB read intensive pattern
 
@@ -939,9 +921,7 @@ that even though the current MongoDB replica set can scale up to 50
 nodes, only 7 nodes can vote during primary node failover. The following
 diagram illustrates this capability.
 
-![MongoDB Read Intensive
-Pattern](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/MongoDB-Read-Intensive-Pattern.13.png){width="555"
-height="250"}
+<kbd>![MongoDB Read Intensive Pattern](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/MongoDB-Read-Intensive-Pattern.13.png) </kbd>
 
 ### MongoDB extreme high write pattern
 
@@ -978,8 +958,7 @@ should be used with caution:
 
 The following diagram illustrates this capability.
 
-![MongoDB Extreme High Write
-Pattern](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/MongoDB-Extreme-High-Write-Pattern.14.png){height="250"}
+<kbd>![MongoDB Extreme High Write Pattern](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/MongoDB-Extreme-High-Write-Pattern.14.png) </kbd>
 
 ### Couchbase resilience design pattern examples
 
@@ -1026,33 +1005,24 @@ The following operations illustrate how both functions work.
 1.  Assume that the Couchbase topology contains four nodes per data
     center/cluster with each storing two copies of the same document
     replicated through XDCR between clusters.
-    ![Couchbase Local Cluster Write Durability Pattern
-    A](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.1.15.png){width="318"
-    height="250"}
+    <kbd>![Couchbase Local Cluster Write Durability Pattern A](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.1.15.png) </kbd>
 2.  The application in Data Center 1 writes documentP1 to nodeN1.
-    ![Couchbase Local Cluster Write Durability Pattern
-    B](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.2.16.png){height="250"}
+    <kbd>![Couchbase Local Cluster Write Durability Pattern B](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.2.16.png) </kbd>
 3.  BeforeP1 is replicated to the replica node in the local cluster or
     to the remote data center/cluster, nodeN1 fails, and as a result the
     application suffers data loss.
-    ![Couchbase Local Cluster Write Durability Pattern
-    C](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.3.17.png){height="250"}
+    <kbd>![Couchbase Local Cluster Write Durability Pattern C](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.3.17.png) </kbd>
 4.  BeforeP1 reaches the remote data center/cluster, even thoughP1 has
     been replicated successfully in memory to the local cluster replica
     nodeN4, if bothN1 andN4 nodes fail, the application still suffers
     data loss.
-    ![Couchbase Local Cluster Write Durability Pattern
-    D](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.4.18.png){width="318"
-    height="250"}
+    <kbd>![Couchbase Local Cluster Write Durability Pattern D](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.4.18.png) </kbd>
 5.  Using the ReplicateTo function can circumvent the failure described
-    in  [step
-    3](https://tech.ebayinc.com/engineering/practical-nosql-resilience-design-pattern-for-the-enterprise/#step3)
+    in  [step 3](https://tech.ebayinc.com/engineering/practical-nosql-resilience-design-pattern-for-the-enterprise/#step3)
     , and using the PersistTo function can circumvent the failure
-    described in  [step
-    4](https://tech.ebayinc.com/engineering/practical-nosql-resilience-design-pattern-for-the-enterprise/#step4)
+    described in  [step 4](https://tech.ebayinc.com/engineering/practical-nosql-resilience-design-pattern-for-the-enterprise/#step4)
     , as shown in the following figure.
-    ![Couchbase Local Cluster Write Durability Pattern
-    E](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.5.19.png){height="250"}
+    <kbd>![Couchbase Local Cluster Write Durability Pattern E](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.5.19.png) </kbd>
 6.  Lastly, for multi-data center/cluster durability, use the design
     pattern described in " [Couchbase multi-cluster write durability
     pattern](https://tech.ebayinc.com/Cbmcwdpattern).
@@ -1062,8 +1032,7 @@ The following operations illustrate how both functions work.
 With its Multi-Cluster Awareness and Timestamp-based Conflict Resolution
 features, Couchbase supports multi-cluster durability as shown below.
 
-![Couchbase Multi Cluster Write Durability Pattern
-A](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/Couchbase-Multi-Cluster-Write-Durability-Pattern.1.20.png){height="250"}
+<kbd>![Couchbase Multi Cluster Write Durability Pattern A](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/Couchbase-Multi-Cluster-Write-Durability-Pattern.1.20.png) </kbd>
 
 In the absence of write-ahead logging or quorum write, and even though
 Couchbase provides sufficient support for local and multi-cluster
@@ -1074,11 +1043,8 @@ unlikely failure scenarios are shown in the following two diagrams. We
 feel that the odds are next to zero if one follows this proposed
 Couchbase durability design pattern.
 
-![Couchbase Multi Cluster Write Durability Pattern
-B](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Multi-Cluster-Write-Durability-Pattern.2.21.png){height="250"}
-![Couchbase Multi Cluster Write Durability Pattern
-C](https://tech.ebayinc.com/assets/Uploads/Blog/2017/02/Couchbase-Multi-Cluster-Write-Durability-Pattern.2b.21b.png){width="97"
-height="250"}
+<kbd>![Couchbase Multi Cluster Write Durability Pattern B](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Multi-Cluster-Write-Durability-Pattern.2.21.png) </kbd>
+<kbd>![Couchbase Multi Cluster Write Durability Pattern C](https://tech.ebayinc.com/assets/Uploads/Blog/2017/02/Couchbase-Multi-Cluster-Write-Durability-Pattern.2b.21b.png) </kbd>
 
 ### Couchbase read/write intensive scalability pattern
 
@@ -1091,7 +1057,7 @@ cluster-sizing calculation exercise can become complicated. This is
 especially true if it involves  [Multi-Dimensional
 Scaling](https://www.couchbase.com/multi-dimensional-scalability-overview).
 
-![](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/Couchbase-ReadWrite-Intensive-Scalability-Pattern.22.png){height="250"}
+<kbd>![](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/Couchbase-ReadWrite-Intensive-Scalability-Pattern.22.png) </kbd>
 
 ### Other NoSQL design pattern examples
 
@@ -1120,8 +1086,7 @@ design pattern. One caveat associated with this pattern is that it
 requires a middle-tier data access layer to help direct traffic, an
 effort that must not be underestimated.
 
-![NoSQL DB Agnostic Application Sharding
-Pattern](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/NoSQL-DB-Agnostic-Application-Sharding-Pattern.23.png){height="250"}
+<kbd>![NoSQL DB Agnostic Application Sharding Pattern](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/_resampled/ScaleWidthWzc1MF0/NoSQL-DB-Agnostic-Application-Sharding-Pattern.23.png) </kbd>
 
 #### Future work and direction
 
