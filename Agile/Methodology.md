@@ -64,8 +64,8 @@ helping others do it.*
 
 *That is, while there is value in the items on the right, we value the items on the left more.*
 
-![The Agile mindset](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fstevedenning%2Ffiles%2F2016%2F06%2FWhat-is-Ageil-by-Ahmed-Sidky-r1-e1525717850723.jpg)
-![](https://miro.medium.com/max/762/0*9Y9PqVi1GXK7uICp) 
+<kbd>![The Agile mindset](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fstevedenning%2Ffiles%2F2016%2F06%2FWhat-is-Ageil-by-Ahmed-Sidky-r1-e1525717850723.jpg)
+<kbd>![](https://miro.medium.com/max/762/0*9Y9PqVi1GXK7uICp) 
 
 Human Resource Manifesto
 ------------------------
@@ -127,7 +127,7 @@ to harness employee's different strengths and talents.
 12. At regular intervals, the team reflects on how to become more
     effective, then tunes and adjusts its behavior accordingly.
 
-![](https://d1zx8a944ras19.cloudfront.net/wp-content/uploads/2018/08/12-agile-principles.png)
+<kbd>![](https://d1zx8a944ras19.cloudfront.net/wp-content/uploads/2018/08/12-agile-principles.png)
 
 
 
@@ -237,7 +237,7 @@ The two different kinds of mindsets exert a powerful influence on the
 behavior of their respective organizations and can be seen as having
 the  *de facto* force of organizational laws, as shown here.
 
-![The Agile mindset vs the bureaucratic mindset](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fstevedenning%2Ffiles%2F2019%2F08%2Fmindset-table.jpg)
+<kbd>![The Agile mindset vs the bureaucratic mindset](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fstevedenning%2Ffiles%2F2019%2F08%2Fmindset-table.jpg)
 
 It's not that those with a  *bureaucratic mindset* don't care about the
 customer: it's just that they generally focus more on making money for
@@ -462,7 +462,7 @@ Traditional Management \<=\> Agile Leadership
 Subway Map to Agile Practices
 -----------------------------
 
-<img src="./attachments/451817512.jpg" alt="" style="max-width:100%;">
+<kbd><img src="./attachments/451817512.jpg" alt="" style="max-width:100%;">
 
 References
 

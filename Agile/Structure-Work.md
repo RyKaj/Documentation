@@ -5,8 +5,8 @@
 
 Agile : Themes, Initiatives, Epics, Feature, and Stories 
 ========================================================
-![](https://wac-cdn.atlassian.com/dam/jcr:c79bf6d8-3101-48c3-bf2b-506b5bc53ccc/Themes.png?cdnVersion=520)
-![Image result for agile themes](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw-tRdXoalTyRnRK2waoUiw9H33fYgCrSLEuWZkXmwpyzssM-VKw)
+<kbd>![](https://wac-cdn.atlassian.com/dam/jcr:c79bf6d8-3101-48c3-bf2b-506b5bc53ccc/Themes.png?cdnVersion=520)
+<kbd>![Image result for agile themes](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw-tRdXoalTyRnRK2waoUiw9H33fYgCrSLEuWZkXmwpyzssM-VKw)
 
 
 Theme

@@ -7,7 +7,7 @@ Agile : Enterprises Decision
 
 In traditional enterprises, it takes time for someone to make a decision. A request from the team-level is carried up to the management level. There important information is missing and misery takes its course. Companies cannot always afford to make a decision with high quality information which involves all the stakeholders. The market is changing too fast, companies can not wait anymore.
 
-<img src="./attachments/463530567.jpg" alt="">
+<kbd><img src="./attachments/463530567.jpg" alt=""> </kbd>
 
 Agile Enterprises are empowering people and teams. This empowerment is based on the idea that decisions should be made by the people nearest to the information required for the decision. By transforming an organization into an Agile Enterprise, managers have to manage their teams so that they can make their own decisions to speed up the enterprise. But this has side effects. Company processes and policies have to be fundamentally changed. Changing policies can have legal implications (who has the authority to sign for what) and can have a security impact (the use of a new tool, a framework or uploading some data into the cloud).
 
@@ -22,7 +22,7 @@ frequency
 
 Inspired by the Eisenhower Box, the decision matrix is agnostic to the kind of decision itself. The matrix works for IT, product, or company designs.
 
-<img src="./attachments/463530564.png" alt="">
+<kbd><img src="./attachments/463530564.png" alt=""> </kbd>
 
 Teams should decide on questions which are common and have low impact. Management or higher ranked experts should decide on common tasks with a high impact and on one-time tasks with a low impact. The leadership is responsible for one-time decisions with a high impact.
 
@@ -35,7 +35,7 @@ In a decision process, data is pushed more and more into the foreground. It's th
 
 Decisions on all levels are driven by data analytics and agile pilots. Before the launch of a larger program, a pilot is started to gather the initial data. With the information from the pilot, a large program gets adjusted before the start. That reduces the risk and breaks a large program into iterations.
 
-<img src="./attachments/463530565.png" alt="">
+<kbd><img src="./attachments/463530565.png" alt=""> </kbd>
 
 To accelerate enterprises, a data-driven product culture needs to be established from the teams to the leadership. On that basis, the decision matrix is leveraged. Fewer decisions will be taken on the leadership level and the management level, because of three agile components:
 
@@ -43,7 +43,7 @@ To accelerate enterprises, a data-driven product culture needs to be established
 -   Delivering in small batches
 -   Delivering in iterations
 
-<img src="./attachments/463530566.png" alt="">
+<kbd><img src="./attachments/463530566.png" alt=""> </kbd>
 
 There are fewer decisions at the leadership and management level. Tasks are broken down into smaller batches, delivered in short iterations and data is used for risk reduction.
 

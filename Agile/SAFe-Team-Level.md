@@ -10,7 +10,7 @@ Information Technology : SAFe Team Level
 
 
 
-![](https://lm2jj13uhv2157rey3v60xm8-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/Keystone-TTA-WEB-1.png)
+<kbd>![](https://lm2jj13uhv2157rey3v60xm8-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/Keystone-TTA-WEB-1.png)
 
 The Team Level contains the roles, activities, events, and processes
 which Agile Teams build and deliver value in the context of the Agile

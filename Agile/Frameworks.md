@@ -11,13 +11,13 @@ Agile : Frameworks
 Frameworks
 ==========
 
-![Agile and guiding principle](https://www.visual-paradigm.com/servlet/editor-content/scrum/agile-manifesto-and-agile-principles/sites/7/2018/11/agile-and-guiding-principles.png)
-![](https://miro.medium.com/max/300/0*HKNOJdn5Qv69FpfE)
+<kbd>![Agile and guiding principle](https://www.visual-paradigm.com/servlet/editor-content/scrum/agile-manifesto-and-agile-principles/sites/7/2018/11/agile-and-guiding-principles.png)
+<kbd>![](https://miro.medium.com/max/300/0*HKNOJdn5Qv69FpfE)
 
 Scrum
 -----
 
-<img src="./attachments/463531684.jpg" alt="">
+<kbd><img src="./attachments/463531684.jpg" alt="">
 [T]{style="color: rgb(0,128,0);"}eams commit to ship working software
 through set intervals called sprints. Their goal is to create learning
 loops to quickly gather and integrate customer feedback. Scrum teams
@@ -58,18 +58,18 @@ used by Rugby teams. The original context for this was manufacturing,
 but Sutherland, along with John Scumniotales and Jeff McKenna, adapted
 the model for software development.
 
-![What is Scrum - Scrum vs Kanban - Edureka](https://www.edureka.co/blog/wp-content/uploads/2019/07/What-is-Scrum-Scrum-vs-Kanban-Edureka.png)
+<kbd>![What is Scrum - Scrum vs Kanban - Edureka](https://www.edureka.co/blog/wp-content/uploads/2019/07/What-is-Scrum-Scrum-vs-Kanban-Edureka.png)
 
 The mind map diagram below outlines some of the main concepts of Scrum
 
-![A mind map diagram outlining main concepts of Scrum.](https://uploads.toptal.io/blog/image/127479/toptal-blog-image-1540968131860-1d48a74f270f88870dae913da5843b67.png)
+<kbd>![A mind map diagram outlining main concepts of Scrum.](https://uploads.toptal.io/blog/image/127479/toptal-blog-image-1540968131860-1d48a74f270f88870dae913da5843b67.png)
 ### Scrum Values
 
 Scrum is a simple yet incredibly powerful set of principles and
 practices that help teams deliver products in short cycle, enabling fast
 feedback, continual improvement, and rapid adaption to change.
 
-![Diagram of Scrum values](https://uploads.toptal.io/blog/image/127477/toptal-blog-image-1540968118049-be963fc1fd317c13411d45f76c569b80.png)
+<kbd>![Diagram of Scrum values](https://uploads.toptal.io/blog/image/127477/toptal-blog-image-1540968118049-be963fc1fd317c13411d45f76c569b80.png)
 
 ### Scrum Principles
 
@@ -78,7 +78,7 @@ developing software that applies Agile principles. The Scrum values and
 principles are outlined in the charts below and have significant
 alignment with Lean and Agile values and principles
 
-![Diagram of Scrum principles](https://uploads.toptal.io/blog/image/127501/toptal-blog-image-1540989845766-ec7675a2a970d5a4f1da4c78da08b00b.png)
+<kbd>![Diagram of Scrum principles](https://uploads.toptal.io/blog/image/127501/toptal-blog-image-1540989845766-ec7675a2a970d5a4f1da4c78da08b00b.png)
 
 ### Cadence
 
@@ -92,8 +92,8 @@ and retrospectivemeetings and peppered with daily scrum(standup)
 meetings. These scrum ceremonies are lightweight and run on a continuous
 basis.
 
-![Diagram of the Scrum framework at a glance.](https://uploads.toptal.io/blog/image/127503/toptal-blog-image-1540989875651-a45bb8fe0b7a490aa2f9fe2365e59cf2.png)
-<img src="./attachments/463529391.png" alt="">
+<kbd>![Diagram of the Scrum framework at a glance.](https://uploads.toptal.io/blog/image/127503/toptal-blog-image-1540989875651-a45bb8fe0b7a490aa2f9fe2365e59cf2.png)
+<kbd><img src="./attachments/463529391.png" alt="">
 
 ### Product backlog
 
@@ -150,13 +150,13 @@ what went wrong, and what they could do differently.
 
 ### Scrum Roles
 
-<img src="./attachments/463513501.png" alt="">
-![What is Scrum Team](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-scrum-team/sites/7/2018/10/what-is-scrum-team.png)
-![What is Scrum Team](https://www.visual-paradigm.com/servlet/editor-content/scrum/how-scrum-team-works/sites/7/2018/12/what-is-a-scrum-team.png)
+<kbd><img src="./attachments/463513501.png" alt="">
+<kbd>![What is Scrum Team](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-scrum-team/sites/7/2018/10/what-is-scrum-team.png)
+<kbd>![What is Scrum Team](https://www.visual-paradigm.com/servlet/editor-content/scrum/how-scrum-team-works/sites/7/2018/12/what-is-a-scrum-team.png)
 
 #### Scrum Master (close reference in Waterfall role Project Manager)
 
-![What is Scrum Master](https://www.visual-paradigm.com/servlet/editor-content/scrum/how-to-become-qualified-scrum-master/sites/7/2018/12/what-is-a-scrum-master.png)
+<kbd>![What is Scrum Master](https://www.visual-paradigm.com/servlet/editor-content/scrum/how-to-become-qualified-scrum-master/sites/7/2018/12/what-is-a-scrum-master.png)
 
 Often considered the coach for the team, the Scrum Master helps the team
 do their best possible work. This means organizing meetings, dealing
@@ -212,7 +212,7 @@ As the product owner, you should directly interact with the customers
 and users, the development team, and other key stakeholders, as the
 picture below shows.
 
-![Product Owner Role in Scrum](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-project-owner-role-in-scrum/sites/7/2018/12/product-owner-role-in-scrum.png)
+<kbd>![Product Owner Role in Scrum](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-project-owner-role-in-scrum/sites/7/2018/12/product-owner-role-in-scrum.png)
 
 The Product Owner has the vision of what he or she wants to build and
 conveys that vision to the team. The Product Owner focuses on business
@@ -265,8 +265,8 @@ course.
 
 #### Scrum Teams
 
-![Traditional team vs Agile team](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-self-organizing-team-in-scrum/sites/7/2018/11/traditional-team-vs-agile-teams.png)
-![Diagram of Scrum roles.](https://uploads.toptal.io/blog/image/127502/toptal-blog-image-1540989863224-88f5589dbe6fb7620b59c7c7dd09ed84.png)
+<kbd>![Traditional team vs Agile team](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-self-organizing-team-in-scrum/sites/7/2018/11/traditional-team-vs-agile-teams.png)
+<kbd>![Diagram of Scrum roles.](https://uploads.toptal.io/blog/image/127502/toptal-blog-image-1540989863224-88f5589dbe6fb7620b59c7c7dd09ed84.png)
 
 The Scrum Team is comprised of five to seven members. Everyone on the
 project works together, helps each other, and shares a deep sense of
@@ -310,7 +310,7 @@ it provides the necessary infrastructure, training, and incentive system
 to keep employees motivated at work. Creating a self-organizing team can
 be considered a three-step process
 
-![Building a self-organized team](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-self-organizing-team-in-scrum/sites/7/2018/11/building-a-self-organized-team.png)
+<kbd>![Building a self-organized team](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-self-organizing-team-in-scrum/sites/7/2018/11/building-a-self-organized-team.png)
 
 ### Training
 
@@ -362,7 +362,7 @@ turn an idea into a working product.
 
 The [Scrum](https://www.visual-paradigm.com/scrum/scrum-in-3-minutes/) Guide indicates "The  [Scrum Team](https://www.visual-paradigm.com/scrum/what-is-scrum-team/) consists of a  [Product Owner](https://www.visual-paradigm.com/scrum/what-is-project-owner-role-in-scrum/), the Development Team, and a  [Scrum Master](https://www.visual-paradigm.com/scrum/what-is-scrum-master/). Scrum Teams are self-organizing and cross-functional. In contrast to the component team approach, a cross functional teams are groups consisting of people from different functional areas of the company. -- it should be formed not only with technical specialists (Back-end, Front-end developers, QA engineers, etc.), but also consists of member like Business Analysts, Marketing and UX specialists or anyone else taking an active part in the project.
 
-![Cross Functional Team in Agile](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-cross-functional-team-in-agile/sites/7/2018/12/cross-functional-team-in-agile.png)
+<kbd>![Cross Functional Team in Agile](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-cross-functional-team-in-agile/sites/7/2018/12/cross-functional-team-in-agile.png)
 
 Cross functional teams are one of the key ingredients that help make
 scrum teams successful and productive.  Cross functional teams have more
@@ -384,7 +384,7 @@ expense of knowing other things, ideally, the talent profile should be T
 shaped, in that he / she have depth in one area of expertise, and
 breadth across other areas.
 
-![T-Shaped Professionals](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-cross-functional-team-in-agile/sites/7/2018/12/t-shaped-professionals.png)
+<kbd>![T-Shaped Professionals](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-cross-functional-team-in-agile/sites/7/2018/12/t-shaped-professionals.png)
 
 Dandys Agile Infographic
 ========================
@@ -408,7 +408,7 @@ Finance and [Pia-Maria Thorén](https://www.linkedin.com/in/piamia/) within HR
 
 Here you can download the[Enabling Business Agility Poster](http://bit.ly/2TkHwyS)
 
-[![Enabling Business Agility](https://media.dandypeople.com/2019/03/Ska%CC%88rmavbild-2019-03-05-kl.-21.01.37.png)](http://bit.ly/2TkHwyS)
+[<kbd>![Enabling Business Agility](https://media.dandypeople.com/2019/03/Ska%CC%88rmavbild-2019-03-05-kl.-21.01.37.png)](http://bit.ly/2TkHwyS)
 
 Pia-Maria Thorén - Inspiration Director at Agile People and Bjarte
 Bogsnes - Chairman Beyond Budgeting Roundtable.  [Björn Sandberg](https://www.linkedin.com/in/btjsandberg/) has
@@ -421,17 +421,17 @@ Pia-Maria and Bjarte Bogsnes at Dandy People in Stockholm!
 Beyond Budgeting Principles
 ---------------------------
 
-![Beyond Budgeting principles](https://media.dandypeople.com/2019/03/beyond-bugeting-principles.png)
+<kbd>![Beyond Budgeting principles](https://media.dandypeople.com/2019/03/beyond-bugeting-principles.png)
 
 Separating Business processes to enable Business Agility
 --------------------------------------------------------
 
-Separate conflicting purposes into different processes and then improve each one ![](https://media.dandypeople.com/2019/03/business-agility-separate-processes.png)
+Separate conflicting purposes into different processes and then improve each one <kbd>![](https://media.dandypeople.com/2019/03/business-agility-separate-processes.png)
 
 People Perspective -- Theory X and Y 
 ------------------------------------
 
-![](https://media.dandypeople.com/2019/03/theory-x-y.png)
+<kbd>![](https://media.dandypeople.com/2019/03/theory-x-y.png)
 
 If we have an X view on people we believe they are lazy and don't want
 to do a good job. They need to be managed and controlled to do their
@@ -458,7 +458,7 @@ within software development. My hope is that it can be used by Agile Coaches acr
 organization. The way they explain it is that every Agile Coach should
 master at least one area within the 4 main areas.
 
-**[![agile coaching competence framework](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-17.58.09.png)](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-17.58.09.png)**
+**[<kbd>![agile coaching competence framework](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-17.58.09.png)](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-17.58.09.png)**
 
 **Choosing a Coaching Stance**\
 This 9 grid is based on the orginal paper from 1985, Principles and
@@ -467,7 +467,7 @@ Kiel and Jean A. McLendon. This one has also been modified to better fit
 our way of working today when our stances may vary all the way from
 visionary Agile leaders to hands on experts.
 
-[![choosing a coaching stance](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-17.58.58.png)](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-17.58.58.png)
+[<kbd>![choosing a coaching stance](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-17.58.58.png)](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-17.58.58.png)
 
 **Levels of Agile Coaching**\
 This is a description of how we work at different levels in the
@@ -486,7 +486,7 @@ facilitation of the team ceremonies. This is also orinally a model from
 Lyssa Adkins and Michael Spayd that we have altered too and added the
 strategic level.
 
-[![Levels of Agile Coaching](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-18.00.24.png)](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-18.00.24.png)
+[<kbd>![Levels of Agile Coaching](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-18.00.24.png)](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-18.00.24.png)
 
 **The Agile Coaches Group**\
 The group of Agile Coaches work individually in their roles within
@@ -497,7 +497,7 @@ is always the same; to work strategic and operational with process
 improvements and do coaching, training and mentoring.
 
 
-[![the agile coaching group](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-18.00.17.png)](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-18.00.17.png)
+[<kbd>![the agile coaching group](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-18.00.17.png)](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-18.00.17.png)
 
 **Areas of Agile Coaching**\
 In Agile organisations a leader is responsible only in one area. Either
@@ -511,7 +511,7 @@ just means they can focus more, become better leaders who are less
 stressed, enabling the organizational to be more innovative and people
 friendly.
 
-[![areas of agile coaching](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-17.59.29.png)](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-17.59.29.png)
+[<kbd>![areas of agile coaching](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-17.59.29.png)](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-17.59.29.png)
 
 **Shu-Ha-Ri
 **This is a classic way to visualize the different levels of Lean Agile
@@ -528,7 +528,7 @@ structures.
 ***RI -- Is the rule*** The master who adapts and invent emerging practices for new contexts and situations.
 
 
-1.  [![shu ha ri](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-19.12.13.png)](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-19.12.13.png)
+1.  [<kbd>![shu ha ri](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-19.12.13.png)](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-19.12.13.png)
 
 **Some last coaching advice**
 
@@ -543,7 +543,7 @@ We've teamed up with the talented  *Riina Hallström* and  *Natal Dank* --co-f
 
 Here you can download the [Agile HR in a Nutshell poster](http://bit.ly/2Klxjgs)
 
-[![](https://media.dandypeople.com/2019/01/agile-hr-in-a-nutshell-english.jpg)](http://bit.ly/2Klxjgs)
+[<kbd>![](https://media.dandypeople.com/2019/01/agile-hr-in-a-nutshell-english.jpg)](http://bit.ly/2Klxjgs)
 
 Customer Journey Product Organization
 The Over all Structure of the Customer Journey Product Organization
@@ -556,7 +556,7 @@ Here you can download [Customer Journey Product Organziation](http://bit.ly/2VyN
 
 
 
-[![](https://media.dandypeople.com/2018/11/customer-journey-organization.jpg)](http://bit.ly/2VyNFVA)
+[<kbd>![](https://media.dandypeople.com/2018/11/customer-journey-organization.jpg)](http://bit.ly/2VyNFVA)
 
 At Dandy People we support teams and organizations to become Agile to be
 able to focus on the business strategies and to mobilize the brain power
@@ -592,7 +592,7 @@ about:**
 Lean Teams Connected to the Customer Journey with Missions
 ----------------------------------------------------------
 
-![The Lean Team](https://media.dandypeople.com/2018/11/the-lean-team-on-a-mission.png)
+<kbd>![The Lean Team](https://media.dandypeople.com/2018/11/the-lean-team-on-a-mission.png)
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 The Lean Teams  *(as in Lean UX and Lean Startup)* are connected to the
@@ -621,7 +621,7 @@ people in the teams will not be able to do the changes needed.
 User research, Planning and Delivery across the Organization -- connects as never before 
 ----------------------------------------------------------------------------------------
 
-![planning](https://media.dandypeople.com/2018/11/Ska%CC%88rmavbild-2018-11-02-kl.-20.01.43.png)
+<kbd>![planning](https://media.dandypeople.com/2018/11/Ska%CC%88rmavbild-2018-11-02-kl.-20.01.43.png)
 
 The Customer Journey Product Organization with Lean Teams is a way to
 scale an organization to support customer focus, agile mindset and
@@ -676,12 +676,12 @@ best solutions doing so, then everyone knows why they are doing what and
 for who, and they can all help out to make smart tactical and
 operational decisions.
 
-![User Story Mapping](https://media.dandypeople.com/2018/11/user-story-mapping-infographic-less-text.png)
+<kbd>![User Story Mapping](https://media.dandypeople.com/2018/11/user-story-mapping-infographic-less-text.png)
 
 The different type of teams 
 ---------------------------
 
-![Different type of teams in a customer journey organization](https://media.dandypeople.com/2018/11/customer-journey-org-teams.png)
+<kbd>![Different type of teams in a customer journey organization](https://media.dandypeople.com/2018/11/customer-journey-org-teams.png)
 
 -   **Customer Journey Teams** -- Delivers on Strategies connected to the customer journey, such as Increasing New Customers, LTV or Increased Usage.
 -   **Product Teams** -- Delivers on Strategies connected to specific products & maintain the platform for long term high quality & speed.
@@ -691,7 +691,7 @@ The different type of teams
 Cross-functional competences is needed in the Lean Team 
 -------------------------------------------------------
 
-![cross functional lean teams](https://media.dandypeople.com/2018/11/Ska%CC%88rmavbild-2018-11-02-kl.-20.01.23.png)
+<kbd>![cross functional lean teams](https://media.dandypeople.com/2018/11/Ska%CC%88rmavbild-2018-11-02-kl.-20.01.23.png)
 
 The competences needed in a Lean Team is based on what Mission the team
 has. It will differ from team to team, and from organization to
@@ -767,7 +767,7 @@ support an aligned user experience across teams".*
 Modern Agile and Continuous improvement of the System
 -----------------------------------------------------
 
-![Modern Agile Improvement Flower](https://media.dandypeople.com/2018/11/modern-agile-improvement-flower.png)
+<kbd>![Modern Agile Improvement Flower](https://media.dandypeople.com/2018/11/modern-agile-improvement-flower.png)
 
 The values of Modern Agile works really well with this type of customer
 focused organization and with the way of working in the Lean Teams. Lean
@@ -861,7 +861,7 @@ Activity Based Seating vs Flexible Seating
 
 -   Flow optimized, aligned with Lean & Agile thinking.
 -   If there are Agile Teams, one activity the office is optimized for is Agile Teamwork.
--   ![Activity Based Seating vs Flexible Seating](https://media.dandypeople.com/2018/06/abs-vs-fs2.png) More desks than people to optimize for flow.
+-   <kbd>![Activity Based Seating vs Flexible Seating](https://media.dandypeople.com/2018/06/abs-vs-fs2.png) More desks than people to optimize for flow.
 -   Can be re-arranged quickly for new team members or team collaboration.
 -   The goal is high performance teams.
 
@@ -877,12 +877,12 @@ Activity Based Seating vs Flexible Seating
 The Optimal Seating for an Agile Team 
 -------------------------------------
 
-[![the Team Home Zone ](https://media.dandypeople.com/2018/06/team-home-zone.png)](https://media.dandypeople.com/2018/06/team-home-zone.png)
+[<kbd>![the Team Home Zone ](https://media.dandypeople.com/2018/06/team-home-zone.png)](https://media.dandypeople.com/2018/06/team-home-zone.png)
 
 Shared Learnings 
 ----------------
 
-![](https://media.dandypeople.com/2018/06/always-improve.png)
+<kbd>![](https://media.dandypeople.com/2018/06/always-improve.png)
 
 -   Have more seats than team members to enable collaboration with
     people outside of the team.
@@ -912,7 +912,7 @@ Shared Learnings
 The truth -- numbers from the survey -- 1 Positive and 9 Negative
 -----------------------------------------------------------------
 
-[![](https://media.dandypeople.com/2018/06/result-1-pos-vs-9-neg.png)](https://media.dandypeople.com/2018/06/result-1-pos-vs-9-neg.png) 
+[<kbd>![](https://media.dandypeople.com/2018/06/result-1-pos-vs-9-neg.png)](https://media.dandypeople.com/2018/06/result-1-pos-vs-9-neg.png) 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 What we learned about how Flexible Seating affect our ability to do a good job
@@ -981,7 +981,7 @@ Need Coaching and Training for Agile Leadership?
 ------------------------------------------------
 
 
-![Coaching Agile Leadership](https://media.dandypeople.com/2018/01/coaching-agile-leadership.jpg)
+<kbd>![Coaching Agile Leadership](https://media.dandypeople.com/2018/01/coaching-agile-leadership.jpg)
 
 If you need help to reshape the leadership in your organization to
 support your Agile journey, let us know and we'll happily join forces
@@ -1179,7 +1179,7 @@ URLs
 
 eBooks
 
-[![](rest/documentConversion/latest/conversion/thumbnail/451818055/1)](/download/attachments/451818035/Age-of-Product-Scrum-Guide-Reordered-v103.pdf?version=1&modificationDate=1565615060860&api=v2)
+[<kbd>![](rest/documentConversion/latest/conversion/thumbnail/451818055/1)](/download/attachments/451818035/Age-of-Product-Scrum-Guide-Reordered-v103.pdf?version=1&modificationDate=1565615060860&api=v2)
 
 ## Key Metrics
 
@@ -1386,8 +1386,8 @@ literally translates to "*billboard"*, in Japanese*.* Originating from
 manufacturing, it later made its way into agile software development
 teams.
 
-![What is Kanban - Scrum vs Kanban - Edureka](https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/07/What-is-Kanban-Scrum-vs-Kanban-Edureka.png)
-<img src="./attachments/463529392.png" alt="">
+<kbd>![What is Kanban - Scrum vs Kanban - Edureka](https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/07/What-is-Kanban-Scrum-vs-Kanban-Edureka.png)
+<kbd><img src="./attachments/463529392.png" alt="">
 
 
 ### Cadence
@@ -1883,7 +1883,7 @@ Speculate-Collaborate-Learn Lifecycle.
 The Adaptive Software Development Lifecycle focuses on results, not
 tasks, and the results are identified as application features.
 
-![Adaptive Software Development Lifecycle](https://www.tutorialspoint.com/adaptive_software_development/images/asd_lifecycle.jpg)
+<kbd>![Adaptive Software Development Lifecycle](https://www.tutorialspoint.com/adaptive_software_development/images/asd_lifecycle.jpg)
 
 ### Speculate
 
@@ -1973,7 +1973,7 @@ clearly, and demonstrate control.
 # Lean Software Development - LSD
 
 
-<img src="./attachments/458555851.png" alt="">
+<kbd><img src="./attachments/458555851.png" alt="">
 
 Lean Software Development takes Lean manufacturing and Lean IT
 principles and applies them to software development. It can be
@@ -1981,7 +1981,7 @@ characterized by seven principles: eliminate waste, amplify learning,
 decide as late as possible, deliver as fast as possible, empower the
 team, build integrity in, and see the whole.
 
-![Diagram showing how core concepts and core values relate to each other.](https://uploads.toptal.io/blog/image/127500/toptal-blog-image-1540989805980-264ba79f1dad8d099c859e383206c522.png)
+<kbd>![Diagram showing how core concepts and core values relate to each other.](https://uploads.toptal.io/blog/image/127500/toptal-blog-image-1540989805980-264ba79f1dad8d099c859e383206c522.png)
 
 ### Candence
 
@@ -2010,7 +2010,7 @@ an early adoption stage and mainstream majority in the Technology
 Adoption lifecycle (see below), DevOps becomes the means to achieve
 reliability and quality as we grow.
 
-![Technology Adoption life cycle](https://miro.medium.com/max/760/1*fIay3CkphAzp7ggaCsuJRg.png)
+<kbd>![Technology Adoption life cycle](https://miro.medium.com/max/760/1*fIay3CkphAzp7ggaCsuJRg.png)
 
 Let's look at the product lifecycle in more detail and why these
 practices can help.
@@ -2183,7 +2183,7 @@ osmotic communication preferably by being co-located.
 
 
 
-<img src="./attachments/4463529379.png" alt="">
+<kbd><img src="./attachments/4463529379.png" alt="">
 
  
 # Scrum & Kanban
@@ -2239,7 +2239,7 @@ membe3rs in the loop on the \"Work In Progress\".
 
 
 
-![Scrum vs agile](https://www.smartsheet.com/sites/default/files/matrix-scrum-agile%402x.gif)
+<kbd>![Scrum vs agile](https://www.smartsheet.com/sites/default/files/matrix-scrum-agile%402x.gif)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -2264,7 +2264,7 @@ assigned and removed once completed. In fact, this is just one of many
 ways to conduct and apply Agile methodology in a project, team and
 business management.
 
-![Lean and Agile methodology process.](https://brainhub.eu/blog/wp-content/uploads/2018/04/differences-lean-agile-scrum-agile-lean-process.jpg)
+<kbd>![Lean and Agile methodology process.](https://brainhub.eu/blog/wp-content/uploads/2018/04/differences-lean-agile-scrum-agile-lean-process.jpg)
 
 In general, the objective of Agile methods is to reach the goals
 through **continuous, easy to measure processes**, integrating the
@@ -2338,7 +2338,7 @@ execution of a project. As a result of this thinking, organizations are
 able to significantly reduce the risk associated with product
 development and maximize return on investment.
 
-![Agile methodology versus traditional process.](https://brainhub.eu/blog/wp-content/uploads/2018/04/differences-lean-agile-scrum-agile-results.png)
+<kbd>![Agile methodology versus traditional process.](https://brainhub.eu/blog/wp-content/uploads/2018/04/differences-lean-agile-scrum-agile-results.png)
 
 In fact, Agile came out of the Agile Manifesto, an initiative by
 software developers who were tired of casting and unproductive methods
@@ -2402,7 +2402,7 @@ See what these 8 wastes are:
 Later, the Lean concept was adapted by Eric Ries in his famous
 book, Lean Startup.
 
-![Lean methodology combats 8 wastes.](https://brainhub.eu/blog/wp-content/uploads/2018/04/differences-lean-agile-scrum-lean-wastes.png)
+<kbd>![Lean methodology combats 8 wastes.](https://brainhub.eu/blog/wp-content/uploads/2018/04/differences-lean-agile-scrum-lean-wastes.png)
 
 Scrum -- framework, not methodology 
 ===================================
@@ -2439,7 +2439,7 @@ to their extreme, by some rules and procedures, here are some of them:
 -   **Sprint Retrospective**: Planning the next sprint based on the
     learning acquired in the previous one.
 
-![Scrum framework roles and process.](https://brainhub.eu/blog/wp-content/uploads/2018/04/differences-lean-agile-scrum-scrum-process.jpg)
+<kbd>![Scrum framework roles and process.](https://brainhub.eu/blog/wp-content/uploads/2018/04/differences-lean-agile-scrum-scrum-process.jpg)
 
 As you have seen, Scrum is quite specific and well structured, but the
 important thing is to understand that, regardless of your workflow,

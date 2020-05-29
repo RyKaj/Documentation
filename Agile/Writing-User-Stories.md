@@ -175,7 +175,7 @@ User stories only capture the essential elements of a requirement:
 
 Here is a simple format of user story used by 70% of practitioners:
 
-![](https://cdn.visual-paradigm.com/guide/agile/what-is-user-story/02-user-story-w.png)
+<kbd>![](https://cdn.visual-paradigm.com/guide/agile/what-is-user-story/02-user-story-w.png) </kbd>
 
 **Role** - The user should be an actual human who interacts with the
 system.

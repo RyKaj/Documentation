@@ -6,16 +6,16 @@
 Agile : Roles and Responsibilities 
 ==================================
 
-<img src="./attachments/463513501.png" alt="">
-![What is Scrum Team](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-scrum-team/sites/7/2018/10/what-is-scrum-team.png)
-![What is Scrum Team](https://www.visual-paradigm.com/servlet/editor-content/scrum/how-scrum-team-works/sites/7/2018/12/what-is-a-scrum-team.png)
+<kbd><img src="./attachments/463513501.png" alt="">
+<kbd>![What is Scrum Team](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-scrum-team/sites/7/2018/10/what-is-scrum-team.png)
+<kbd>![What is Scrum Team](https://www.visual-paradigm.com/servlet/editor-content/scrum/how-scrum-team-works/sites/7/2018/12/what-is-a-scrum-team.png)
 
 
 
 Scrum Master (close reference in Waterfall role Project Manager)
 ================================================================
 
-![What is Scrum Master](https://www.visual-paradigm.com/servlet/editor-content/scrum/how-to-become-qualified-scrum-master/sites/7/2018/12/what-is-a-scrum-master.png)
+<kbd>![What is Scrum Master](https://www.visual-paradigm.com/servlet/editor-content/scrum/how-to-become-qualified-scrum-master/sites/7/2018/12/what-is-a-scrum-master.png)
 
 Often considered the coach for the team, the Scrum Master helps the team
 do their best possible work. This means organizing meetings, dealing
@@ -80,7 +80,7 @@ As the product owner, you should directly interact with the customers
 and users, the development team, and other key stakeholders, as the
 picture below shows.
 
-![Product Owner Role in Scrum](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-project-owner-role-in-scrum/sites/7/2018/12/product-owner-role-in-scrum.png)
+<kbd>![Product Owner Role in Scrum](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-project-owner-role-in-scrum/sites/7/2018/12/product-owner-role-in-scrum.png)
 
 The Product Owner has the vision of what he or she wants to build and
 conveys that vision to the team. The Product Owner focuses on business
@@ -138,8 +138,8 @@ course.
 Scrum Teams
 ===========
 
-![Traditional team vs Agile team](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-self-organizing-team-in-scrum/sites/7/2018/11/traditional-team-vs-agile-teams.png)
-![Diagram of Scrum roles.](https://uploads.toptal.io/blog/image/127502/toptal-blog-image-1540989863224-88f5589dbe6fb7620b59c7c7dd09ed84.png)
+<kbd>![Traditional team vs Agile team](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-self-organizing-team-in-scrum/sites/7/2018/11/traditional-team-vs-agile-teams.png)
+<kbd>![Diagram of Scrum roles.](https://uploads.toptal.io/blog/image/127502/toptal-blog-image-1540989863224-88f5589dbe6fb7620b59c7c7dd09ed84.png)
 
 The Scrum Team is comprised of five to seven members. Everyone on the
 project works together, helps each other, and shares a deep sense of
@@ -188,7 +188,7 @@ it provides the necessary infrastructure, training, and incentive system
 to keep employees motivated at work. Creating a self-organizing team can
 be considered a three-step process
 
-![Building a self-organizedteam](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-self-organizing-team-in-scrum/sites/7/2018/11/building-a-self-organized-team.png)
+<kbd>![Building a self-organizedteam](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-self-organizing-team-in-scrum/sites/7/2018/11/building-a-self-organized-team.png)
 
 Training 
 --------
@@ -258,7 +258,7 @@ developers, QA engineers, etc.), but also consists of member like
 Business Analysts, Marketing and UX specialists or anyone else taking an
 active part in the project.
 
-![Cross Functional Team in Agile](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-cross-functional-team-in-agile/sites/7/2018/12/cross-functional-team-in-agile.png)
+<kbd>![Cross Functional Team in Agile](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-cross-functional-team-in-agile/sites/7/2018/12/cross-functional-team-in-agile.png)
 
 Cross functional teams are one of the key ingredients that help make
 scrum teams successful and productive.  Cross functional teams have more
@@ -282,7 +282,7 @@ expense of knowing other things, ideally, the talent profile should be T
 shaped, in that he / she have depth in one area of expertise, and
 breadth across other areas.
 
-![T-Shaped Professionals](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-cross-functional-team-in-agile/sites/7/2018/12/t-shaped-professionals.png)
+<kbd>![T-Shaped Professionals](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-cross-functional-team-in-agile/sites/7/2018/12/t-shaped-professionals.png)
 
 
 Dandys Agile Infographic
@@ -308,7 +308,7 @@ Finance and  [Pia-Maria Thorén](https://www.linkedin.com/in/piamia/) within H
 
 Here you can download the [Enabling Business Agility Poster](http://bit.ly/2TkHwyS)
 
-[![Enabling Business Agility](https://media.dandypeople.com/2019/03/Ska%CC%88rmavbild-2019-03-05-kl.-21.01.37.png)](http://bit.ly/2TkHwyS)
+[<kbd>![Enabling Business Agility](https://media.dandypeople.com/2019/03/Ska%CC%88rmavbild-2019-03-05-kl.-21.01.37.png)](http://bit.ly/2TkHwyS)
 
 Pia-Maria Thorén - Inspiration Director at Agile People and Bjarte
 Bogsnes - Chairman Beyond Budgeting Roundtable.  [Björn
@@ -318,17 +318,17 @@ also contributed with his elegant model for learning organizations.
 **TRAINING:** Don´t miss learning all about how to do this at the 
 [awesome training "Enabling Business Agility"](https://dandypeople.com/training/enabling-business-agility-through-finance-and-hr-1-day-training/) with Pia-Maria and Bjarte Bogsnes at Dandy People in Stockholm!
 
-### Beyond Budgeting Principles ![Beyond Budgeting principles](https://media.dandypeople.com/2019/03/beyond-bugeting-principles.png)
+### Beyond Budgeting Principles <kbd>![Beyond Budgeting principles](https://media.dandypeople.com/2019/03/beyond-bugeting-principles.png)
 
 ### Separating Business processes to enable Business Agility 
 
 Separate conflicting purposes into different processes and then improve
 each one\
-![](https://media.dandypeople.com/2019/03/business-agility-separate-processes.png)
+<kbd>![](https://media.dandypeople.com/2019/03/business-agility-separate-processes.png)
 
 ### People Perspective -- Theory X and Y
 
-![](https://media.dandypeople.com/2019/03/theory-x-y.png)
+<kbd>![](https://media.dandypeople.com/2019/03/theory-x-y.png)
 
 If we have an X view on people we believe they are lazy and don't want
 to do a good job. They need to be managed and controlled to do their
@@ -355,7 +355,7 @@ within software development. My hope is that it can be used by Agile
 Coaches across the organization. The way they explain it is that every
 Agile Coach should master at least one area within the 4 main areas.
 
-[![agile coaching competence framework](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-17.58.09.png)](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-17.58.09.png)
+[<kbd>![agile coaching competence framework](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-17.58.09.png)](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-17.58.09.png)
 
 #### Choosing a Coaching Stance
 
@@ -365,7 +365,7 @@ Kiel and Jean A. McLendon. This one has also been modified to better fit
 our way of working today when our stances may vary all the way from
 visionary Agile leaders to hands on experts.
 
-[![choosing a coaching stance](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-17.58.58.png)](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-17.58.58.png)
+[<kbd>![choosing a coaching stance](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-17.58.58.png)](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-17.58.58.png)
 
 #### Levels of Agile Coaching
 
@@ -385,7 +385,7 @@ facilitation of the team ceremonies. This is also orinally a model from
 Lyssa Adkins and Michael Spayd that we have altered too and added the
 strategic level.
 
-[![Levels of Agile Coaching](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-18.00.24.png)](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-18.00.24.png)
+[<kbd>![Levels of Agile Coaching](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-18.00.24.png)](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-18.00.24.png)
 
 #### The Agile Coaches Group
 
@@ -396,7 +396,7 @@ The group is named differently in different frameworks, but the purpose
 is always the same; to work strategic and operational with process
 improvements and do coaching, training and mentoring.
 
-[![the agile coaching group](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-18.00.17.png)](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-18.00.17.png)
+[<kbd>![the agile coaching group](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-18.00.17.png)](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-18.00.17.png)
 
 #### Areas of Agile Coaching
 
@@ -411,7 +411,7 @@ just means they can focus more, become better leaders who are less
 stressed, enabling the organizational to be more innovative and people
 friendly.
 
-[![areas of agile coaching](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-17.59.29.png)](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-17.59.29.png)
+[<kbd>![areas of agile coaching](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-17.59.29.png)](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-17.59.29.png)
 
 #### Shu-Ha-Ri
 
@@ -428,7 +428,7 @@ structures.
 
 ***RI -- Is the rule*** The master who adapts and invent emerging practices for new contexts and situations. 
 
-1.  [![shu ha ri](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-19.12.13.png)](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-19.12.13.png)
+1.  [<kbd>![shu ha ri](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-19.12.13.png)](https://media.dandypeople.com/2019/02/Ska%CC%88rmavbild-2019-02-03-kl.-19.12.13.png)
 
 **Some last coaching advice**
 
@@ -446,7 +446,7 @@ Agile HR in a Nutshell free infographic resource.
 
 Here you can download the[Agile HR in a Nutshell poster](http://bit.ly/2Klxjgs)
 
-[![](https://media.dandypeople.com/2019/01/agile-hr-in-a-nutshell-english.jpg)](http://bit.ly/2Klxjgs)
+[<kbd>![](https://media.dandypeople.com/2019/01/agile-hr-in-a-nutshell-english.jpg)](http://bit.ly/2Klxjgs)
 
 ### Customer Journey Product Organization
 
@@ -457,7 +457,7 @@ work hoping to give you a goal picture and a common understanding.
 
 Here you can download[Customer Journey Product Organziation](http://bit.ly/2VyNFVA)
 
-[![](https://media.dandypeople.com/2018/11/customer-journey-organization.jpg)](http://bit.ly/2VyNFVA)
+[<kbd>![](https://media.dandypeople.com/2018/11/customer-journey-organization.jpg)](http://bit.ly/2VyNFVA)
 
 At Dandy People we support teams and organizations to become Agile to be
 able to focus on the business strategies and to mobilize the brain power
@@ -489,7 +489,7 @@ about:**
 
 ##### Lean Teams Connected to the Customer Journey with Missions
 
-![The Lean Team](https://media.dandypeople.com/2018/11/the-lean-team-on-a-mission.png)
+<kbd>![The Lean Team](https://media.dandypeople.com/2018/11/the-lean-team-on-a-mission.png)
 
 The Lean Teams  *(as in Lean UX and Lean Startup)* are connected to the
 most important business strategies via the customer journey -- or they
@@ -516,7 +516,7 @@ people in the teams will not be able to do the changes needed.
 
 ### User research, Planning and Delivery across the Organization -- connects as never before 
 
-![planning](https://media.dandypeople.com/2018/11/Ska%CC%88rmavbild-2018-11-02-kl.-20.01.43.png)
+<kbd>![planning](https://media.dandypeople.com/2018/11/Ska%CC%88rmavbild-2018-11-02-kl.-20.01.43.png)
 
 The Customer Journey Product Organization with Lean Teams is a way to
 scale an organization to support customer focus, agile mindset and
@@ -572,11 +572,11 @@ best solutions doing so, then everyone knows why they are doing what and
 for who, and they can all help out to make smart tactical and
 operational decisions.
 
-![User Story Mapping](https://media.dandypeople.com/2018/11/user-story-mapping-infographic-less-text.png)
+<kbd>![User Story Mapping](https://media.dandypeople.com/2018/11/user-story-mapping-infographic-less-text.png)
 
 ##### The different type of teams 
 
-![Different type of teams in a customer journey
+<kbd>![Different type of teams in a customer journey
 organization](https://media.dandypeople.com/2018/11/customer-journey-org-teams.png)
 
 -   **Customer Journey Teams** -- Delivers on Strategies connected to
@@ -593,7 +593,7 @@ organization](https://media.dandypeople.com/2018/11/customer-journey-org-teams.p
 
 ##### Cross-functional competences is needed in the Lean Team 
 
-![cross functional lean teams](https://media.dandypeople.com/2018/11/Ska%CC%88rmavbild-2018-11-02-kl.-20.01.23.png)
+<kbd>![cross functional lean teams](https://media.dandypeople.com/2018/11/Ska%CC%88rmavbild-2018-11-02-kl.-20.01.23.png)
 
 The competences needed in a Lean Team is based on what Mission the team
 has. It will differ from team to team, and from organization to
@@ -666,7 +666,7 @@ support an aligned user experience across teams".*
 
 ##### Modern Agile and Continuous improvement of the System 
 
-![Modern Agile Improvement Flower](https://media.dandypeople.com/2018/11/modern-agile-improvement-flower.png)
+<kbd>![Modern Agile Improvement Flower](https://media.dandypeople.com/2018/11/modern-agile-improvement-flower.png)
 
 The values of Modern Agile works really well with this type of customer
 focused organization and with the way of working in the Lean Teams. Lean
@@ -757,7 +757,7 @@ Seated for Agile
 
 -   Flow optimized, aligned with Lean & Agile thinking.
 -   If there are Agile Teams, one activity the office is optimized for is Agile Teamwork.
--   ![Activity Based Seating vs Flexible Seating](https://media.dandypeople.com/2018/06/abs-vs-fs2.png) More desks than people to optimize for flow.
+-   <kbd>![Activity Based Seating vs Flexible Seating](https://media.dandypeople.com/2018/06/abs-vs-fs2.png) More desks than people to optimize for flow.
 -   Can be re-arranged quickly for new team members or team collaboration.
 -   The goal is high performance teams.
 
@@ -774,11 +774,11 @@ Seated for Agile
 
 #### The Optimal Seating for an Agile Team
 
-[![the Team Home Zone](https://media.dandypeople.com/2018/06/team-home-zone.png)](https://media.dandypeople.com/2018/06/team-home-zone.png)
+[<kbd>![the Team Home Zone](https://media.dandypeople.com/2018/06/team-home-zone.png)](https://media.dandypeople.com/2018/06/team-home-zone.png)
 
 #### Shared Learnings 
 
-![](https://media.dandypeople.com/2018/06/always-improve.png)
+<kbd>![](https://media.dandypeople.com/2018/06/always-improve.png)
 
 -   Have more seats than team members to enable collaboration with
     people outside of the team.
@@ -807,7 +807,7 @@ Seated for Agile
 
 #### The truth -- numbers from the survey -- 1 Positive and 9 Negative 
 
-#### [![](https://media.dandypeople.com/2018/06/result-1-pos-vs-9-neg.png)](https://media.dandypeople.com/2018/06/result-1-pos-vs-9-neg.png) 
+#### [<kbd>![](https://media.dandypeople.com/2018/06/result-1-pos-vs-9-neg.png)](https://media.dandypeople.com/2018/06/result-1-pos-vs-9-neg.png) 
 
 What we learned about how Flexible Seating affect our ability to do a
 good job
@@ -868,7 +868,7 @@ a tiny part of that in this poster, the list could go on forever I know.
 
 ### Need Coaching and Training for Agile Leadership? 
 
-![Coaching Agile Leadership](https://media.dandypeople.com/2018/01/coaching-agile-leadership.jpg)
+<kbd>![Coaching Agile Leadership](https://media.dandypeople.com/2018/01/coaching-agile-leadership.jpg)
 
 If you need help to reshape the leadership in your organization to
 support your Agile journey, let us know and we'll happily join forces

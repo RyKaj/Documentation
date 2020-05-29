@@ -208,7 +208,7 @@ present instead an alternative way to map and design the desired changes
 that make the whole process transparent, incremental, available to
 everyone, and based on continuous experimentation and adaptation.
 
-![Agile Strategy Map](https://www.agile42.com/media/images/Agile_Strategy_Map.original.png)
+<kbd>![Agile Strategy Map](https://www.agile42.com/media/images/Agile_Strategy_Map.original.png)
 
 ### Agile teams deliver in small and frequent increments 
 
@@ -221,7 +221,7 @@ with all technical and functional difficulties very early. Moreover, it
 enables faster feedback loops, which contribute to maintaining focus and
 directing the team towards what matters to customers and stakeholders. 
 
-![Agile vs ](https://www.agile42.com/media/images/agile_vs_largebatch.width-800.png)
+<kbd>![Agile vs ](https://www.agile42.com/media/images/agile_vs_largebatch.width-800.png)
 
 In a nutshell, this means that working with smaller and frequent
 releases significantly helps reduce business and technical risk, by
@@ -386,7 +386,7 @@ are all built into the Agile Strategy Map. This framework has been
 developed through our experiences with clients and the help of many
 coaches who contributed over time to refine and improve its usability.
 
-![The Strategy
+<kbd>![The Strategy
 Cycle](https://www.agile42.com/media/images/wardley-circle.width-800.png)
 
 Agile Strategy Map's origins are rooted in  [Eliyahu Goldratt's
@@ -467,7 +467,7 @@ To sum up, based on Wardley's insights, good strategy tools are:
 -   Movement → suggested changes and where are we going / where have we
     been
 
-![Characteristics of good strategy tools](https://www.agile42.com/media/images/5characteristics.original.png)
+<kbd>![Characteristics of good strategy tools](https://www.agile42.com/media/images/5characteristics.original.png)
 
 Working with the Agile Strategy Map 
 -----------------------------------
@@ -485,7 +485,7 @@ orienting all other elements. Since the Map is also 
 **context-specific**, the Goal will need to fit the context of where the
 organization is and where it intends to go.
 
-![Agile Strategy Map goal](https://www.agile42.com/media/images/Goal.width-800.png)
+<kbd>![Agile Strategy Map goal](https://www.agile42.com/media/images/Goal.width-800.png)
 
 It is also very important for the Goal to be outcome-based, not
 output-based, which means that it must be connected to creating value to
@@ -559,7 +559,7 @@ relevant to the Goal and its specific context. This might seem like a
 hard decision, but if you want to achieve success you need to focus on
 what is most important to you and relevant to your business.
 
-![Confirmed Success Factor](https://www.agile42.com/media/images/CSF.width-800.png)
+<kbd>![Confirmed Success Factor](https://www.agile42.com/media/images/CSF.width-800.png)
 
 The term "Confirmed Success Factor" emphasizes that we have attained
 some knowledge and that this lesson has been retained and consolidated
@@ -618,7 +618,7 @@ they are good. These hypotheses are captured using  **Potential Success
 Factors (PSFs)**. The name is a reminder that they are still to be
 validated.\
 
-![PSF](https://www.agile42.com/media/images/PSF.width-800.png)
+<kbd>![PSF](https://www.agile42.com/media/images/PSF.width-800.png)
 
 A Potential Success Factor is expressed in the following form: 
 
@@ -674,7 +674,7 @@ could go wrong if they aren't fulfilled. This helps prioritizing and
 identifying dependencies. Once all the NCs have been fulfilled, we
 should be able to define one or more experiment(s). 
 
-![Agile Strategy Map Necessary Condition](https://www.agile42.com/media/images/NC.width-800.png)
+<kbd>![Agile Strategy Map Necessary Condition](https://www.agile42.com/media/images/NC.width-800.png)
 
 A Necessary Condition may be expressed in the following form: 
 
@@ -697,7 +697,7 @@ Canvas give different meaning to a NC depending on where it is
 visualized on the Strategy Map. Here is a summary table defining the
 meaning of each specific relationship.
 
-![Table of elements of Agile Strategy Map](https://www.agile42.com/media/images/agile_strategy_map_elements_table.width-800.png)
+<kbd>![Table of elements of Agile Strategy Map](https://www.agile42.com/media/images/agile_strategy_map_elements_table.width-800.png)
 
 ### Tips {#Agile-TransformationRoadmap-Tips}
 
@@ -748,7 +748,7 @@ creating experiments to validate those hypotheses. To get quick feedback
 and make decisions, the recommended duration of the experiments is 4 to
 12 weeks.
 
-![Agile Strategy Map experiment](https://www.agile42.com/media/images/Experiment.width-800.png)
+<kbd>![Agile Strategy Map experiment](https://www.agile42.com/media/images/Experiment.width-800.png)
 
 If we go back to 
 [Cynefin](https://www.agile42.com/en/all-agile/agile-strategy-map/cynefin/) and
@@ -845,7 +845,7 @@ than one experiment as long as they aren't dependent on each other.
 
 ### Evaluate and Validate  
 
-![Agile Strategy Map evaluate and validate](https://www.agile42.com/media/images/visible_strategy_map.width-800.png) 
+<kbd>![Agile Strategy Map evaluate and validate](https://www.agile42.com/media/images/visible_strategy_map.width-800.png) 
 
 ### Collect data at regular intervals  
 
@@ -954,7 +954,7 @@ responsibleness.
 Scrum promotes that you have feature teams, fully autonomous teams that
 have end-to-end responsibility for what they build:
 
-![](https://miro.medium.com/max/869/0*l68PzRj2YTWLWVpQ.png) 
+<kbd>![](https://miro.medium.com/max/869/0*l68PzRj2YTWLWVpQ.png) 
 
 Many companies utilize this; Spotify being the most famous at the moment
 and are currently the poster-boy for Agile, and even in my own
@@ -1074,7 +1074,7 @@ little to no dependencies on others. Ideally teams should be around 5 to
 meetings can be kept efficient, any smaller and there is no real value
 and any larger the team becomes more difficult to manage.
 
-![](https://miro.medium.com/max/581/0*95T-REKjoOgdYlHG.png) 
+<kbd>![](https://miro.medium.com/max/581/0*95T-REKjoOgdYlHG.png) 
 
 Chapters
 --------
@@ -1089,7 +1089,7 @@ developers reporting to a 'lead', back office developers reporting to a
 developers then it might be a little more difficult, but it can still be
 done.
 
-![](https://miro.medium.com/max/790/0*_xbKvvSPFVeB-gyf.png)
+<kbd>![](https://miro.medium.com/max/790/0*_xbKvvSPFVeB-gyf.png)
 
 Guilds 
 ------
@@ -1112,7 +1112,7 @@ areas as:
 -   Services & Architecture
 -   Documentation & Centralized information center (Wiki)
 
-![](https://miro.medium.com/max/963/0*gW3xn-oOIOi1nUx7.png)
+<kbd>![](https://miro.medium.com/max/963/0*gW3xn-oOIOi1nUx7.png)
 
 You can even add badges or logos for your teams to add a bit of 'fun' to it.
 
@@ -1121,18 +1121,18 @@ Below are examples taken from an online gaming/betting website.
 Clans 
 -----
 
-![](https://miro.medium.com/max/844/0*O8ZJ4FEwwdBLeteB.png)
+<kbd>![](https://miro.medium.com/max/844/0*O8ZJ4FEwwdBLeteB.png)
 
 Teams 
 -----
 
-![](https://miro.medium.com/max/825/0*ueiEncNwVdRdQ_ID.png)
+<kbd>![](https://miro.medium.com/max/825/0*ueiEncNwVdRdQ_ID.png)
 
 
 Guilds
 ------
 
-![](https://miro.medium.com/max/705/0*fpwbK5f39CeR-bem.png)
+<kbd>![](https://miro.medium.com/max/705/0*fpwbK5f39CeR-bem.png)
 
 Tribes
 ------
@@ -1147,7 +1147,7 @@ channels, and not have to wait for another team to complete. This may
 require changes in your architecture or process, but in end I think its
 the best way forward.
 
-![](https://miro.medium.com/max/1125/0*g5-E_KN52m-Mr4Nd.png)
+<kbd>![](https://miro.medium.com/max/1125/0*g5-E_KN52m-Mr4Nd.png)
 
 GUILD CON 
 ---------
@@ -1158,7 +1158,7 @@ where each of the guilds presents to the others on what they have been
 working on, share tips and knowledge or even try to recruit people to
 join.
 
-![](https://miro.medium.com/max/721/0*r1bPPwSlvR4RzQM2.png)
+<kbd>![](https://miro.medium.com/max/721/0*r1bPPwSlvR4RzQM2.png)
 
 You could also arrange 'hack days' or team challenges for your guilds,
 to come up with a new concept, idea or prototype to be judged at the end
@@ -1208,7 +1208,7 @@ vision is so important, which I will cover in a separate post.
 Agile Iceberg
 =============
 
-![](https://miro.medium.com/max/1412/1*eVr5ZdXg_FxHJ1ZsmI0Zyg.png)
+<kbd>![](https://miro.medium.com/max/1412/1*eVr5ZdXg_FxHJ1ZsmI0Zyg.png)
 
 The true deepness of the model can only be found beneath the surface of
 what is visible for the observer above the surface.
@@ -1250,7 +1250,7 @@ your work, just do it!
 
 Find the template  [here!](https://docs.google.com/presentation/d/1owLm-nxH-bVql-Q7dLl43-rzmfT9ZFjitNVQgwPEfmY/edit?usp=sharing) You can exchange the terms and text elements and individualize for your context!
 
-![](https://miro.medium.com/max/1500/1*hHePeztI8rpaPRqQBOnxmw.png)
+<kbd>![](https://miro.medium.com/max/1500/1*hHePeztI8rpaPRqQBOnxmw.png)
 
 
 

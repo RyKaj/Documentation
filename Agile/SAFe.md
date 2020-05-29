@@ -8,7 +8,7 @@ Agile : SAFe (Scaled Agile Framework)
 =====================================
 
 
-![](attachments/451819560/463513857.png)
+<kbd>![](attachments/451819560/463513857.png)
 
 
 What is a Scaled Agile Framework?
@@ -27,8 +27,8 @@ organizations in  [scaling
 agile](https://reqtest.com/agile-blog/scaling-agile-reqtest/) and
 lean.
 
-![SAFe](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/SAFe.png)
-![](attachments/463506521/471992239.png)
+<kbd>![SAFe](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/SAFe.png)
+<kbd>![](attachments/463506521/471992239.png)
 
 Scaled Agile Framework addresses the problems encountered when scaling
 agile beyond a single team.  SAFe promotes collaboration, coordination,
@@ -129,7 +129,7 @@ works in this space.
     requirements which is also known as Epics. These business and
     architectural epics are aligned with priorities.
 
-![Epic](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/Epic.png)
+<kbd>![Epic](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/Epic.png)
 
 -   Based on the priorities, these epics are picked up by the Product
     Managers/Delivery Managers. They create a well-defined Roadmap and a
@@ -171,7 +171,7 @@ Alignment, Built-in Quality, Alignment and Transparency
 A few tweaks here and there in a Scrum Framework can lead to incredible
 results in the form of Scaled Scrum.
 
-![Core Value](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/Core-Value.png)
+<kbd>![Core Value](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/Core-Value.png)
 
 SAFe Configuration
 ------------------
@@ -183,8 +183,8 @@ team then work on these stories or software features accordingly. SAFe
 supports the full range of development environments with four
 configurations,
 
-![SAFe Configuration](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/SAFe-Configuration.png)
-![](attachments/463506521/471992241.png)
+<kbd>![SAFe Configuration](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/SAFe-Configuration.png)
+<kbd>![](attachments/463506521/471992241.png)
 
 ### 1. Essential SAFe
 
@@ -241,7 +241,7 @@ The Foundation contains the supporting principles, values, mindset,
 implementation guidance, and leadership roles that are required to
 deliver the value successfully at scale.
 
-![](attachments/463506521/471992242.png) 
+<kbd>![](attachments/463506521/471992242.png) 
 
 Lean-Agile Leaders ------------------
 
@@ -254,7 +254,7 @@ Lean-Agile leaders lead his\\her Organization in building better systems
 through iterative and incremental ways of learning, coaching, developing
 people and processes.
 
-![SAFe Lean-Agile
+<kbd>![SAFe Lean-Agile
 Leaders](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/SAFe-Lean-Agile-Leaders.png) 
 
 SAFe Lean-Agile Leaders are lifelong learners and teachers who help the
@@ -319,7 +319,7 @@ and continued in order to get the desired results.
 Lean-Agile Leaders are lifelong learners and teachers. They understand
 and embrace Lean and Agile principles & practices.
 
-![Lean-Agile mindset](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/Lean-Agile-mindset.png)
+<kbd>![Lean-Agile mindset](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/Lean-Agile-mindset.png)
 
 **Our Lean-Agile mindset is represented in two things:**
 
@@ -400,8 +400,8 @@ helping others do it.*
 *That is, while there is value in the items on the right, we value the
 items on the left more.*
 
-![The Agile mindset](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fstevedenning%2Ffiles%2F2016%2F06%2FWhat-is-Ageil-by-Ahmed-Sidky-r1-e1525717850723.jpg)
-![](https://miro.medium.com/max/762/0*9Y9PqVi1GXK7uICp)
+<kbd>![The Agile mindset](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fstevedenning%2Ffiles%2F2016%2F06%2FWhat-is-Ageil-by-Ahmed-Sidky-r1-e1525717850723.jpg)
+<kbd>![](https://miro.medium.com/max/762/0*9Y9PqVi1GXK7uICp)
 
 #### Human Resource Manifesto
 
@@ -458,7 +458,7 @@ to harness employee's different strengths and talents.
 12. At regular intervals, the team reflects on how to become more
     effective, then tunes and adjusts its behavior accordingly.
 
-![](https://d1zx8a944ras19.cloudfront.net/wp-content/uploads/2018/08/12-agile-principles.png)
+<kbd>![](https://d1zx8a944ras19.cloudfront.net/wp-content/uploads/2018/08/12-agile-principles.png)
 
 Agile Leadership
 ----------------
@@ -557,7 +557,7 @@ The two different kinds of mindsets exert a powerful influence on the
 behavior of their respective organizations and can be seen as having
 the  *de facto* force of organizational laws, as shown here.
 
-![The Agile mindset vs the bureaucratic mindset](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fstevedenning%2Ffiles%2F2019%2F08%2Fmindset-table.jpg)
+<kbd>![The Agile mindset vs the bureaucratic mindset](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fstevedenning%2Ffiles%2F2019%2F08%2Fmindset-table.jpg)
 
 It's not that those with a  *bureaucratic mindset* don't care about the
 customer: it's just that they generally focus more on making money for
@@ -765,7 +765,7 @@ agile leadership:
 
 ### Subway Map to Agile Practices
 
-![](attachments/451817509/451817512.jpg)
+<kbd>![](attachments/451817509/451817512.jpg)
 
 4. SAFe Principles 
 ------------------
@@ -813,7 +813,7 @@ portfolio.
 Lean Portfolio Management
 =========================
 
-![](https://lm2jj13uhv2157rey3v60xm8-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/Keystone-LPM-WEB-1.png)
+<kbd>![](https://lm2jj13uhv2157rey3v60xm8-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/Keystone-LPM-WEB-1.png)
 
 The Lean Portfolio Management (LPM) competency aligns strategy and
 execution by applying Lean and systems thinking approaches to strategy
@@ -852,7 +852,7 @@ and the change patterns are fairly clear, as illustrated in Figure 1.
 Most of these will occur naturally in a SAFe transformation, but change
 is hard, indeed. Caution and awareness are warranted.
 
-![](https://www.scaledagileframework.com/wp-content/uploads/2018/04/Extend-the-Portfolio_F01_WP.png)
+<kbd>![](https://www.scaledagileframework.com/wp-content/uploads/2018/04/Extend-the-Portfolio_F01_WP.png)
 
 There are SAFe portfolios that manage a set of value streams for a
 specific area of the business.  LPM function conducts its work with the
@@ -866,7 +866,7 @@ These collaborations provide the ability to execute existing commitments
 reliably and enable innovation to the enterprise by building on the
 foundation of four other competencies.
 
-![](https://www.guru99.com/images/8-2016/090116_0956_WhatisScale3.png)
+<kbd>![](https://www.guru99.com/images/8-2016/090116_0956_WhatisScale3.png)
 
 Scaled Agile Framework(SAFe): It stands on the foundations of its
 -----------------------------------------------------------------
@@ -927,7 +927,7 @@ The SAFe agile is based on these four values.
 
 ### 3. Lean-Agile Leadership
 
-![](https://lm2jj13uhv2157rey3v60xm8-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/Keystone-LAL-WEB-1.png)
+<kbd>![](https://lm2jj13uhv2157rey3v60xm8-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/Keystone-LAL-WEB-1.png)
 
 The Lean-Agile Leaders are lifelong learners and teachers. It helps
 teams to build better systems through understanding and exhibiting the
@@ -968,7 +968,7 @@ shortest lead time with the highest possible quality to customer
 Below figure explains the Goal, Pillars, and Foundation of \"SAFe House
 of Lean.\"
 
-![](https://lm2jj13uhv2157rey3v60xm8-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/SAFe-House-of-Lean-changes-1.png)
+<kbd>![](https://lm2jj13uhv2157rey3v60xm8-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/SAFe-House-of-Lean-changes-1.png)
 
 #### Agile Manifesto 
 
@@ -982,7 +982,7 @@ There are two different types of SAFe implementation:
 1.  **SAFe 4.0 implementation**
 2.  **SAFe 3.0 implementation**
 
-[![](https://www.guru99.com/images/8-2016/090116_0956_WhatisScale8.png)](https://www.guru99.com/images/8-2016/090116_0956_WhatisScale8.png)
+[<kbd>![](https://www.guru99.com/images/8-2016/090116_0956_WhatisScale8.png)](https://www.guru99.com/images/8-2016/090116_0956_WhatisScale8.png)
 
 -   In SAFe 4.0 implementation we have 4-Levels:  **Portfolio, Value
     Stream, Program, and Team.**
@@ -1065,7 +1065,7 @@ possible. Ideally, this process should be completely divorced from the
 iterative nature of quarterly planning and go its own Kanban way. We
 took SAFe Portfolio Kanban as a basis:
 
-![](https://habrastorage.org/r/w1560/webt/_p/qb/kj/_pqbkjcztxxv5drjbiubf8bkmgk.png)
+<kbd>![](https://habrastorage.org/r/w1560/webt/_p/qb/kj/_pqbkjcztxxv5drjbiubf8bkmgk.png)
 
 We have a separate JIRA project with three issue types: Epics, Business
 Initiatives and Architectural Initiatives; as well as the corresponding
@@ -1073,7 +1073,7 @@ Kanban Board. The algorithm for the Initiative's Business Owner is
 simple: he adds an issue to this project, and it goes to Backlog by
 default, which is the first status of our Kanban flow ---  **Funnel:**
 
-![](https://habrastorage.org/r/w1560/webt/nd/ha/f3/ndhaf3kb3ujmxj29j0qs6xpjzkc.png)
+<kbd>![](https://habrastorage.org/r/w1560/webt/nd/ha/f3/ndhaf3kb3ujmxj29j0qs6xpjzkc.png)
 
 Here the Initiatives not yet ready for Review are stored. The Business
 Owner works on the content of the Initiative until he feels ready for
@@ -1121,7 +1121,7 @@ ecosystem is rather complicated, during Pre-discovery and Discovery we
 create tasks in separate projects in order not to litter the Teams'
 backlogs:
 
-![](https://habrastorage.org/r/w1560/webt/ug/sq/be/ugsqbekca0gmm_r3qy6q4rl1_sc.png)
+<kbd>![](https://habrastorage.org/r/w1560/webt/ug/sq/be/ugsqbekca0gmm_r3qy6q4rl1_sc.png)
 
 Also at the Pre-discovery stage, we involve Architects or, as it's been
 often practiced lately, their trusted people --- "EA Ambassadors". Their
@@ -1140,7 +1140,7 @@ meeting members of the Management Board evaluate the Business Value,
 Time Criticality, Risk Reduction and Opportunity Enablement with the
 help of Fibonacci-aligned planning poker:
 
-![](https://habrastorage.org/r/w1560/webt/oa/uu/tf/oauutfrn4oy4gmj_iex_mzcgrno.png)
+<kbd>![](https://habrastorage.org/r/w1560/webt/oa/uu/tf/oauutfrn4oy4gmj_iex_mzcgrno.png)
 
 
 To be able to track the history of Initiatives, for each of them I add a
@@ -1152,7 +1152,7 @@ receive  **Parked** status and might be considered for the next
 quarters. Delivered initiatives are moved to the  **Done** status.
 As a result, we have the following picture on the Kanban Board:
 
-![](https://habrastorage.org/r/w1560/webt/jj/ww/ov/jjwwovbdgbyuddjwmnv9fzb3gza.png)
+<kbd>![](https://habrastorage.org/r/w1560/webt/jj/ww/ov/jjwwovbdgbyuddjwmnv9fzb3gza.png)
 
 
 Of course, we are not even in the middle of our way yet, but at the
@@ -1233,7 +1233,7 @@ unhurried commitment according to priorities. To perform a commitment, I
 have several separate structures. The first one is a structure
 containing a list of features and stories scheduled for the commitment:
 
-![](https://habrastorage.org/r/w1560/webt/jw/b9/du/jwb9dufutnxjl0cceuedtqdigcc.png)
+<kbd>![](https://habrastorage.org/r/w1560/webt/jw/b9/du/jwb9dufutnxjl0cceuedtqdigcc.png)
 
 
 Unfortunately, this structure on the screenshot contains only tasks that
@@ -1244,12 +1244,12 @@ separate field for each feature and story, change the issues' status
 from Planned to Committed and put them to the desired iteration, thereby
 committing for them:
 
-![](https://habrastorage.org/r/w1560/webt/ux/i5/hs/uxi5hsw4ahbf4vqtvse03x0z2mc.png)
+<kbd>![](https://habrastorage.org/r/w1560/webt/ux/i5/hs/uxi5hsw4ahbf4vqtvse03x0z2mc.png)
 
 As a result, the issue will disappear from this structure and appear in
 a new, which reflects the growing commitment:
 
-![](https://habrastorage.org/r/w1560/webt/6q/qh/af/6qqhaf8c7gsne22kaw78jfaw9xe.png)
+<kbd>![](https://habrastorage.org/r/w1560/webt/6q/qh/af/6qqhaf8c7gsne22kaw78jfaw9xe.png)
 
 As you can see on the screenshot, in this structure the stories fall
 into the folder of the development team to which they belong and are
@@ -1284,7 +1284,7 @@ collective cloning to the Bulk Change menu and has such necessary
 features as links cloning, updating links between newly created clones,
 updating Epic links, adding Summary prefix and automatic labeling:
 
-![](https://habrastorage.org/r/w1560/webt/pp/5u/j7/pp5uj7lre2_7zsogsv7mgp_d2fw.png)
+<kbd>![](https://habrastorage.org/r/w1560/webt/pp/5u/j7/pp5uj7lre2_7zsogsv7mgp_d2fw.png)
 
 
 I add status as a prefix, because at the planning stage the statuses
@@ -1299,7 +1299,7 @@ into the working projects of the teams.
 As a result, I create a structure that reflects the current Commitment
 and consists of final stories, which I then use for monitoring:
 
-![](https://habrastorage.org/r/w1560/webt/9y/xa/ep/9yxaeplzfj05z1sgqydu8w4j4dy.png)
+<kbd>![](https://habrastorage.org/r/w1560/webt/9y/xa/ep/9yxaeplzfj05z1sgqydu8w4j4dy.png)
 
 In general, the advantages of this approach are the following:
 
@@ -1410,7 +1410,7 @@ Demand that makes this flow of value possible.
 Team Level
 ----------
 
-![](https://lm2jj13uhv2157rey3v60xm8-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/Keystone-TTA-WEB-1.png)
+<kbd>![](https://lm2jj13uhv2157rey3v60xm8-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/Keystone-TTA-WEB-1.png)
 
 The Team Level contains the roles, activities, events, and processes
 which Agile Teams build and deliver value in the context of the Agile
@@ -1639,7 +1639,7 @@ improving business results.
 ###### References
 
 -   Scaling Agile with Atlassian and SAFe
--   ![](plugins/servlet/confluence/placeholder/unknown-attachment)
+-   <kbd>![](plugins/servlet/confluence/placeholder/unknown-attachment)
 -   [Linkedin - cheat sheet spcs upgrade from safe 40 50](https://www.linkedin.com/pulse/cheat-sheet-spcs-upgrade-from-safe-40-50-simrat-pal-singh-?articleId=6619528726214467584)
 -   [How to conduct a Distributed Paperless quarterly planning and not  screw it up?](https://m.habr.com/ru/post/453180/)
 -   [https://www.scaledagileframework.com/\#](https://www.scaledagileframework.com/)

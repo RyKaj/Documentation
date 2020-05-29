@@ -16,7 +16,7 @@ Agile Values Puzzle
 2.  ### Objective 
 
 -   [Agile Value Cards](https://docs.google.com/document/d/1j__hNNxdkz4CON9Bgq5JqlkV17W9zyj3PrMQck_KorE/edit)
-    [![](rest/documentConversion/latest/conversion/thumbnail/451826976/1)](/download/attachments/451826901/Agile%20Value%20cards.pdf?version=1&modificationDate=1568912013793&api=v2)
+    [<kbd>![](rest/documentConversion/latest/conversion/thumbnail/451826976/1)](/download/attachments/451826901/Agile%20Value%20cards.pdf?version=1&modificationDate=1568912013793&api=v2)
 -   [Twelve Agile Principles Cards](https://docs.google.com/document/d/16OGdiy8QwFveSdzJyhF8CrFr9gdiHU3Lze613909oXo/edit) 
 -   I like to print them in A4 colored pages so one can put them in a board and they are visible and readable by all attendees.
 -   To let participants learn and discover about agile values and principles in fully interactive and participative mode, without presentations, minimal facilitation, full debate and fun.
@@ -54,7 +54,7 @@ incorrect.
         2.  Explain to the other groups their selection and decision.
         3.  If other groups do not agree or the selection is not aligned to the agile manifesto, facilitate discussion until they agree.
         4.  If the other groups agree with their selection, they can put the cards on a wall with tape. The concept with most value should be on the left.
-        5.  Repeat until 4 different unique pairs of concepts are in the wall totally aligned with the  [agile manifesto values](http://agilemanifesto.org/) page <http://agilemanifesto.org/> . It should look like this: ![No alt text provided for this  image](https://media.licdn.com/dms/image/C5112AQG9bgjmBm0AWQ/article-inline_image-shrink_1500_2232/0?e=1574294400&v=beta&t=xwvdtLsDeqiYkoBS1zBUNMfUA3KkgSWsLC6m5J7RUzA)
+        5.  Repeat until 4 different unique pairs of concepts are in the wall totally aligned with the  [agile manifesto values](http://agilemanifesto.org/) page <http://agilemanifesto.org/> . It should look like this: <kbd>![No alt text provided for this  image](https://media.licdn.com/dms/image/C5112AQG9bgjmBm0AWQ/article-inline_image-shrink_1500_2232/0?e=1574294400&v=beta&t=xwvdtLsDeqiYkoBS1zBUNMfUA3KkgSWsLC6m5J7RUzA)
 4.  **Agile Manifesto**: Explain that what they have built intuitively is the Agile Manifesto and these are the four values "That is, while there is value in the items on the right, we value the items on the left more." who are the signers, history and whatever else you want.
     1.  Dot voting -- Most important / most difficult: You can also ask for dot voting on which value is the most important value and which one is the most difficult and discuss why.
 5.  **Agile Principles**: Provide about 6 to 12  [**agile principle cards**](https://docs.google.com/document/d/16OGdiy8QwFveSdzJyhF8CrFr9gdiHU3Lze613909oXo/edit) to each group and tell them that they are the twelve principles of the agile manifesto.

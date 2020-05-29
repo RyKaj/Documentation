@@ -82,7 +82,7 @@ possible. Ideally, this process should be completely divorced from the
 iterative nature of quarterly planning and go its own Kanban way. We
 took SAFe Portfolio Kanban as a basis:
 
-![](https://habrastorage.org/r/w1560/webt/_p/qb/kj/_pqbkjcztxxv5drjbiubf8bkmgk.png)
+<kbd>![](https://habrastorage.org/r/w1560/webt/_p/qb/kj/_pqbkjcztxxv5drjbiubf8bkmgk.png)
 
 We have a separate JIRA project with three issue types: Epics, Business
 Initiatives and Architectural Initiatives; as well as the corresponding
@@ -90,7 +90,7 @@ Kanban Board. The algorithm for the Initiative's Business Owner is
 simple: he adds an issue to this project, and it goes to Backlog by
 default, which is the first status of our Kanban flow ---  **Funnel:**
 
-![](https://habrastorage.org/r/w1560/webt/nd/ha/f3/ndhaf3kb3ujmxj29j0qs6xpjzkc.png)
+<kbd>![](https://habrastorage.org/r/w1560/webt/nd/ha/f3/ndhaf3kb3ujmxj29j0qs6xpjzkc.png)
 
 Here the Initiatives not yet ready for Review are stored. The Business
 Owner works on the content of the Initiative until he feels ready for
@@ -138,7 +138,7 @@ ecosystem is rather complicated, during Pre-discovery and Discovery we
 create tasks in separate projects in order not to litter the Teams'
 backlogs:
 
-![](https://habrastorage.org/r/w1560/webt/ug/sq/be/ugsqbekca0gmm_r3qy6q4rl1_sc.png)
+<kbd>![](https://habrastorage.org/r/w1560/webt/ug/sq/be/ugsqbekca0gmm_r3qy6q4rl1_sc.png)
 
 
 Also at the Pre-discovery stage, we involve Architects or, as it's been
@@ -158,7 +158,7 @@ meeting members of the Management Board evaluate the Business Value,
 Time Criticality, Risk Reduction and Opportunity Enablement with the
 help of Fibonacci-aligned planning poker:
 
-![](https://habrastorage.org/r/w1560/webt/oa/uu/tf/oauutfrn4oy4gmj_iex_mzcgrno.png)
+<kbd>![](https://habrastorage.org/r/w1560/webt/oa/uu/tf/oauutfrn4oy4gmj_iex_mzcgrno.png)
 
 To be able to track the history of Initiatives, for each of them I add a
 label in JIRA with quarter data: 2018Q4, 2019Q1, etc.
@@ -169,7 +169,7 @@ receive  **Parked** status and might be considered for the next
 quarters. Delivered initiatives are moved to the  **Done** status.
 As a result, we have the following picture on the Kanban Board:
 
-![](https://habrastorage.org/r/w1560/webt/jj/ww/ov/jjwwovbdgbyuddjwmnv9fzb3gza.png)
+<kbd>![](https://habrastorage.org/r/w1560/webt/jj/ww/ov/jjwwovbdgbyuddjwmnv9fzb3gza.png)
 
 Of course, we are not even in the middle of our way yet, but at the
 moment I can already note that thanks to the Portfolio Backlog
@@ -251,7 +251,7 @@ unhurried commitment according to priorities. To perform a commitment, I
 have several separate structures. The first one is a structure
 containing a list of features and stories scheduled for the commitment:
 
-![](https://habrastorage.org/r/w1560/webt/jw/b9/du/jwb9dufutnxjl0cceuedtqdigcc.png)
+<kbd>![](https://habrastorage.org/r/w1560/webt/jw/b9/du/jwb9dufutnxjl0cceuedtqdigcc.png)
 
 
 Unfortunately, this structure on the screenshot contains only tasks that
@@ -262,13 +262,13 @@ separate field for each feature and story, change the issues' status
 from Planned to Committed and put them to the desired iteration, thereby
 committing for them:
 
-![](https://habrastorage.org/r/w1560/webt/ux/i5/hs/uxi5hsw4ahbf4vqtvse03x0z2mc.png)
+<kbd>![](https://habrastorage.org/r/w1560/webt/ux/i5/hs/uxi5hsw4ahbf4vqtvse03x0z2mc.png)
 
 
 As a result, the issue will disappear from this structure and appear in
 a new, which reflects the growing commitment:
 
-![](https://habrastorage.org/r/w1560/webt/6q/qh/af/6qqhaf8c7gsne22kaw78jfaw9xe.png)
+<kbd>![](https://habrastorage.org/r/w1560/webt/6q/qh/af/6qqhaf8c7gsne22kaw78jfaw9xe.png)
 
 
 As you can see on the screenshot, in this structure the stories fall
@@ -304,7 +304,7 @@ collective cloning to the Bulk Change menu and has such necessary
 features as links cloning, updating links between newly created clones,
 updating Epic links, adding Summary prefix and automatic labeling:
 
-![](https://habrastorage.org/r/w1560/webt/pp/5u/j7/pp5uj7lre2_7zsogsv7mgp_d2fw.png)
+<kbd>![](https://habrastorage.org/r/w1560/webt/pp/5u/j7/pp5uj7lre2_7zsogsv7mgp_d2fw.png)
 
 I add status as a prefix, because at the planning stage the statuses
 reflect the planned iteration of completion. As a result I can see right
@@ -318,7 +318,7 @@ into the working projects of the teams.
 As a result, I create a structure that reflects the current Commitment
 and consists of final stories, which I then use for monitoring:
 
-![](https://habrastorage.org/r/w1560/webt/9y/xa/ep/9yxaeplzfj05z1sgqydu8w4j4dy.png)
+<kbd>![](https://habrastorage.org/r/w1560/webt/9y/xa/ep/9yxaeplzfj05z1sgqydu8w4j4dy.png)
 
 In general, the advantages of this approach are the following:
 

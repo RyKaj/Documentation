@@ -106,7 +106,7 @@ market. Anti-patterns to watch out for
 
 ### Story Map 
 
-![](http://burozeven.nl/robbinschuurman/wp-content/uploads/2017/05/StoryMap-300x212.png)
+<kbd>![](http://burozeven.nl/robbinschuurman/wp-content/uploads/2017/05/StoryMap-300x212.png)
 
 The story map is a really nice type of roadmap that I often use in the
 beginning of new projects or products. The story map is an excellent way

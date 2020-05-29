@@ -19,7 +19,7 @@ Teams may find it helpful to establish a sprint goal and use that as the basis b
 Ecocycle Planning
 =================
 
-![](https://miro.medium.com/max/3685/1*VwZ1Krr9FH5KB_Lge4YQ9A.jpeg)
+<kbd>![](https://miro.medium.com/max/3685/1*VwZ1Krr9FH5KB_Lge4YQ9A.jpeg)
 
 The Ecocycle model adds two dimensions:
 

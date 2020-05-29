@@ -48,7 +48,7 @@ CFD is one of the most advanced [analytics for Lean management](https://kanbaniz
 
 Its main purpose is to show you how stable your flow is and help you understand where you need to focus in order to make your process more predictable. It gives you both quantitative and qualitative insight into both past and existing problems and can visualize massive amounts of data.
 
-![ALTTEXT](https://kanbanize.com/wp-content/uploads/website-images/kanban-resources/cumulative-flow-diagram-kanbanize.png)
+<kbd>![ALTTEXT](https://kanbanize.com/wp-content/uploads/website-images/kanban-resources/cumulative-flow-diagram-kanbanize.png)
 
 
 How to read a Cumulative Flow Diagram (CFD) 
@@ -70,7 +70,7 @@ The number of days/weeks/months that have passed is the approximate average cycl
 
 > ***The distance between the lines of a CFD will show you the problems of your workflow.***
 
-<img src="./attachments/451819532.jpg" alt="">
+<kbd><img src="./attachments/451819532.jpg" alt="">
 
 Team Velocity
 -------------
@@ -92,7 +92,7 @@ staying more-less even, except for the \"completed tasks\" ban, which
 shall be continuously getting taller, as the number of tasks done is
 hopefully always growing.
 
-![Cumulative Flow Diagram by Kanban Tool](https://static.kanbantool.com/kanban+landing/kanban-cumulative-flow-diagram/kanban-tool-cumulative-flow-diagram.png)
+<kbd>![Cumulative Flow Diagram by Kanban Tool](https://static.kanbantool.com/kanban+landing/kanban-cumulative-flow-diagram/kanban-tool-cumulative-flow-diagram.png)
 
 ### What to look out for
 

@@ -54,7 +54,7 @@ process, reaching into your memory and pulling out another, and then
 running that job. And each time you switch tasks, that process takes
 time. Numerous other studies show the same thing.
 
-![Context Switching](https://34slpa7u66f159hfp1fhl9aur1-wpengine.netdna-ssl.com/wp-content/uploads/2015/06/Slide093.jpg)
+<kbd>![Context Switching](https://34slpa7u66f159hfp1fhl9aur1-wpengine.netdna-ssl.com/wp-content/uploads/2015/06/Slide093.jpg)
 
 
 
@@ -81,8 +81,8 @@ expect some switching cost. Jerry Weinberg\[4\] showed the escalating
 context switching costs accrued if each task has a 10% penalty, in
 reality the costs are frequently higher.
 
-![](https://res.infoq.com/articles/multitasking-problems/en/resources/2image1.jpg)
-![context switching](http://www.personalkanban.com/pk/wp-content/uploads/2012/09/context-switching_thumb.png)
+<kbd>![](https://res.infoq.com/articles/multitasking-problems/en/resources/2image1.jpg)
+<kbd>![context switching](http://www.personalkanban.com/pk/wp-content/uploads/2012/09/context-switching_thumb.png)
 
 When a person is part of a team, either a traditional loosely connected
 project team or a focused Agile team, there is a compounded cost of
@@ -264,7 +264,7 @@ In this scenario - shown in below. Has of 4 people working on 3 short
 projects. The dynamics are the same for more people and larger projects.
 In this scenario, the people are multitasking on 4 projects.
 
-![](https://res.infoq.com/articles/multitasking-problems/en/resources/image2.jpg)
+<kbd>![](https://res.infoq.com/articles/multitasking-problems/en/resources/image2.jpg)
 
 In this scenario - shown in below. In which the same people form a
 single team and complete the projects sequentially. This scenario makes
@@ -274,14 +274,14 @@ all projects are completed by the same date in both scenarios but that 2
 of the 3 projects finish sooner in this scenario. Imagine the resulting
 financial benefits.
 
-![](https://res.infoq.com/articles/multitasking-problems/en/resources/image3.jpg)
+<kbd>![](https://res.infoq.com/articles/multitasking-problems/en/resources/image3.jpg)
 
 In this scenario - show in below. With the reduction of context
 switching and a modest 10% gain in productivity due to teaming
 synergies, we would expect to see all 3 projects finish even sooner as
 illustrated.
 
-![](https://res.infoq.com/articles/multitasking-problems/en/resources/image4.jpg)
+<kbd>![](https://res.infoq.com/articles/multitasking-problems/en/resources/image4.jpg)
 
 
 

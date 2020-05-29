@@ -9,7 +9,7 @@ Agile : Fails
 Executive Leadership
 ====================
 
-![Revolving hat with eyeglass, etc.](https://scrumorg-website-prod.s3.amazonaws.com/drupal/inline-images/Living_made_easy%3B_revolving_hat_with_eye-glass_etc._Wellcome_L0006016_0.jpg)
+<kbd>![Revolving hat with eyeglass, etc.](https://scrumorg-website-prod.s3.amazonaws.com/drupal/inline-images/Living_made_easy%3B_revolving_hat_with_eye-glass_etc._Wellcome_L0006016_0.jpg) </kbd>
 
 > "Most executives, many scientists, and almost all business school
 > graduates believe that if you analyze data, this will give you new

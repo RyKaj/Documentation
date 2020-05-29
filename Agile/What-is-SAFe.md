@@ -19,8 +19,8 @@ organizations in  [scaling
 agile](https://reqtest.com/agile-blog/scaling-agile-reqtest/) and
 lean.
 
-![SAFe](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/SAFe.png)
-<img src="./attachments/471992239.png" alt="">
+<kbd>![SAFe](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/SAFe.png)
+<kbd><img src="./attachments/471992239.png" alt="">
 
 Scaled Agile Framework addresses the problems encountered when scaling
 agile beyond a single team.  SAFe promotes collaboration, coordination,
@@ -120,7 +120,7 @@ works in this space.
     requirements which is also known as Epics. These business and
     architectural epics are aligned with priorities.
 
-![Epic](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/Epic.png)
+<kbd>![Epic](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/Epic.png)
 
 -   Based on the priorities, these epics are picked up by the Product
     Managers/Delivery Managers. They create a well-defined Roadmap and a
@@ -162,7 +162,7 @@ Alignment, Built-in Quality, Alignment and Transparency
 A few tweaks here and there in a Scrum Framework can lead to incredible
 results in the form of Scaled Scrum.
 
-![Core Value](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/Core-Value.png)
+<kbd>![Core Value](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/Core-Value.png)
 
 SAFe Configuration
 ------------------
@@ -174,8 +174,8 @@ team then work on these stories or software features accordingly. SAFe
 supports the full range of development environments with four
 configurations,
 
-![SAFe Configuration](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/SAFe-Configuration.png)
-<img src="./attachments/471992241.png" alt="">
+<kbd>![SAFe Configuration](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/SAFe-Configuration.png)
+<kbd><img src="./attachments/471992241.png" alt="">
 
 ### 1. Essential SAFe 
 
@@ -232,7 +232,7 @@ The Foundation contains the supporting principles, values, mindset,
 implementation guidance, and leadership roles that are required to
 deliver the value successfully at scale.
 
-<img src="./attachments/471992242.png" alt="">
+<kbd><img src="./attachments/471992242.png" alt="">
 
 Lean-Agile Leaders 
 ------------------
@@ -246,7 +246,7 @@ Lean-Agile leaders lead his\\her Organization in building better systems
 through iterative and incremental ways of learning, coaching, developing
 people and processes.
 
-![SAFe Lean-Agile
+<kbd>![SAFe Lean-Agile
 Leaders](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/SAFe-Lean-Agile-Leaders.png)
 
 SAFe Lean-Agile Leaders are lifelong learners and teachers who help the
@@ -311,7 +311,7 @@ and continued in order to get the desired results.
 Lean-Agile Leaders are lifelong learners and teachers. They understand
 and embrace Lean and Agile principles & practices.
 
-![Lean-Agile mindset](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/Lean-Agile-mindset.png)
+<kbd>![Lean-Agile mindset](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/Lean-Agile-mindset.png)
 
 **Our Lean-Agile mindset is represented in two things:**
 
@@ -393,8 +393,8 @@ helping others do it.*
 *That is, while there is value in the items on the right, we value the
 items on the left more.*
 
-*![The Agile mindset](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fstevedenning%2Ffiles%2F2016%2F06%2FWhat-is-Ageil-by-Ahmed-Sidky-r1-e1525717850723.jpg)
-![](https://miro.medium.com/max/762/0*9Y9PqVi1GXK7uICp)
+*<kbd>![The Agile mindset](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fstevedenning%2Ffiles%2F2016%2F06%2FWhat-is-Ageil-by-Ahmed-Sidky-r1-e1525717850723.jpg)
+<kbd>![](https://miro.medium.com/max/762/0*9Y9PqVi1GXK7uICp)
 *
 
 Human Resource Manifesto
@@ -453,7 +453,7 @@ to harness employee's different strengths and talents.
 12. At regular intervals, the team reflects on how to become more
     effective, then tunes and adjusts its behavior accordingly.
 
-![](https://d1zx8a944ras19.cloudfront.net/wp-content/uploads/2018/08/12-agile-principles.png)
+<kbd>![](https://d1zx8a944ras19.cloudfront.net/wp-content/uploads/2018/08/12-agile-principles.png)
 
 Agile Leadership
 ----------------
@@ -554,7 +554,7 @@ The two different kinds of mindsets exert a powerful influence on the
 behavior of their respective organizations and can be seen as having
 the  *de facto* force of organizational laws, as shown here.
 
-![The Agile mindset vs the bureaucratic
+<kbd>![The Agile mindset vs the bureaucratic
 mindset](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fstevedenning%2Ffiles%2F2019%2F08%2Fmindset-table.jpg)
 
 It's not that those with a  *bureaucratic mindset* don't care about the
@@ -769,7 +769,7 @@ agile leadership:
 
 ### Subway Map to Agile Practices
 
-![](attachments/451817509/451817512.jpg) 
+<kbd>![](attachments/451817509/451817512.jpg) 
 
 References
 

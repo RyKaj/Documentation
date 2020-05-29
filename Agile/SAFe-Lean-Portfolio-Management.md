@@ -5,7 +5,7 @@ Information Technology : SAFe Lean Portfolio Management
 =======================================================
 
 
-![](https://lm2jj13uhv2157rey3v60xm8-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/Keystone-LPM-WEB-1.png)
+<kbd>![](https://lm2jj13uhv2157rey3v60xm8-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/Keystone-LPM-WEB-1.png)
 
 The Lean Portfolio Management (LPM) competency aligns strategy and
 execution by applying Lean and systems thinking approaches to strategy
@@ -44,7 +44,7 @@ and the change patterns are fairly clear, as illustrated in Figure 1.
 Most of these will occur naturally in a SAFe transformation, but change
 is hard, indeed. Caution and awareness are warranted.
 
-![](https://www.scaledagileframework.com/wp-content/uploads/2018/04/Extend-the-Portfolio_F01_WP.png)
+<kbd>![](https://www.scaledagileframework.com/wp-content/uploads/2018/04/Extend-the-Portfolio_F01_WP.png)
 
 There are SAFe portfolios that manage a set of value streams for a
 specific area of the business.  LPM function conducts its work with the
@@ -58,7 +58,7 @@ These collaborations provide the ability to execute existing commitments
 reliably and enable innovation to the enterprise by building on the
 foundation of four other competencies.
 
-![](https://www.guru99.com/images/8-2016/090116_0956_WhatisScale3.png)
+<kbd>![](https://www.guru99.com/images/8-2016/090116_0956_WhatisScale3.png)
 
 
 

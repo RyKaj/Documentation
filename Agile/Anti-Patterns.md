@@ -28,8 +28,8 @@ avenue of suggesting better patterns.
 
 Agile anti-patterns is also referred to as Fake Agile or Dark Scrum .
 
-![](https://www.process.st/wp-content/uploads/2019/09/Agile-BS.png)
-![waterfall agile](https://www.process.st/wp-content/uploads/2019/09/Waterfall-Agile.png)
+<kbd>![](https://www.process.st/wp-content/uploads/2019/09/Agile-BS.png)</kbd>
+<kbd>![waterfall agile](https://www.process.st/wp-content/uploads/2019/09/Waterfall-Agile.png)</kbd>
 
 
 General ( Fake Agile )
@@ -98,7 +98,7 @@ you're not building the right thing to begin with.
 Fake Agile versus True Agile
 ----------------------------
 
-![fake agile timeline](https://www.process.st/wp-content/uploads/2019/08/Fake-Agile-Timeline.png)
+<kbd>![fake agile timeline](https://www.process.st/wp-content/uploads/2019/08/Fake-Agile-Timeline.png)</kbd>
 
 
  ||True Agile|Fake Agile|
@@ -117,7 +117,7 @@ reporting back to business owners and communicating with stakeholders,
 but their roles are fundamentally different to a typical project
 management position.
 
-![scrum team agile](https://www.process.st/wp-content/uploads/2019/08/Scrum-Team-Agile.png)
+<kbd>![scrum team agile](https://www.process.st/wp-content/uploads/2019/08/Scrum-Team-Agile.png)</kbd>
 
 This difference in managerial approach also highlights the difference in
 attitude towards punishment and fear in the workplace environment.
@@ -135,12 +135,12 @@ avoiding accountability rather than focusing on doing their best work.
 The two different mindsets have the de facto force of organizational
 laws
 
-![The Agile mindset vs the bureaucratic mindset](https://thumbor.forbes.com/thumbor/670x349/https://blogs-images.forbes.com/stevedenning/files/2019/08/mindset-table.jpg?width=960)
+<kbd>![The Agile mindset vs the bureaucratic mindset](https://thumbor.forbes.com/thumbor/670x349/https://blogs-images.forbes.com/stevedenning/files/2019/08/mindset-table.jpg?width=960)</kbd>
 
 In pursuit of \"true\" agile 
 ----------------------------
 
-![agile mentality agile philosophy](https://www.process.st/wp-content/uploads/2019/08/Agile-Mentality-Agile-Philosophy.png)
+<kbd>![agile mentality agile philosophy](https://www.process.st/wp-content/uploads/2019/08/Agile-Mentality-Agile-Philosophy.png)</kbd>
 
 Transformation To Agile
 -----------------------
@@ -150,7 +150,7 @@ sharing our insights on how to best organize and execute digital change
 in organizations. These are written by experts who have really done the
 work, to help others on their change journeys.
 
-![Agile Transformation in the Digital Transformation Landscape](https://riverflex.com/wp-content/uploads/2019/03/Screen-Shot-2019-03-14-at-11.43.13.png)
+<kbd>![Agile Transformation in the Digital Transformation Landscape](https://riverflex.com/wp-content/uploads/2019/03/Screen-Shot-2019-03-14-at-11.43.13.png)</kbd>
 
     Figure 1: Typical areas tackled in a digital transformation. Source: Riverflex series – Digital Transformation Done Right, February 2019.
 
@@ -237,7 +237,7 @@ your transformation important? How will individuals contribute to your
 success? What does the happy ending look like? Keep telling the story
 over and over again so it seeps into the consciousness of the business.
 
-![Reasons for adopting agile](https://riverflex.com/wp-content/uploads/2019/03/Screen-Shot-2019-03-19-at-13.00.16.png)
+<kbd>![Reasons for adopting agile](https://riverflex.com/wp-content/uploads/2019/03/Screen-Shot-2019-03-19-at-13.00.16.png)</kbd>
     Figure 2: Reasons for Adopting Agile*. Source: adapted from State of Agile, CollabNet VersionOne, 2018 
     *Respondents were able to select multiple options
 
@@ -612,7 +612,7 @@ Some examples include blaming agile when it's ...
 
 The only cure for this is to  [quit blaming the hammer](https://careersherpa.net/motivation-monday-dont-blame-the-hammer/) for those times you hit your thumb.
 
-![](https://miro.medium.com/max/700/1*inKAr1o954e-h9aNnGt8GQ.png)
+<kbd>![](https://miro.medium.com/max/700/1*inKAr1o954e-h9aNnGt8GQ.png)</kbd>
 
 Retro Is An Actionable Solution That Should Be Observed
 -------------------------------------------------------
@@ -1198,7 +1198,7 @@ down to the individual Product Backlog item, thus improving the trust
 level. If the Product Owner is not yet co-located with the Development
 Team, now would be the right moment to reconsider.) 
 
-![](https://scrumorg-website-prod.s3.amazonaws.com/drupal/inline-images/Sprint-Anti-Patterns-Gold-Plating-Age-of-Product-com.jpg)
+<kbd>![](https://scrumorg-website-prod.s3.amazonaws.com/drupal/inline-images/Sprint-Anti-Patterns-Gold-Plating-Age-of-Product-com.jpg)</kbd>
 
 Scrum Master
 ------------
@@ -1345,7 +1345,7 @@ outcome does not meet the Sprint Goal. 
 **Note**: I would not consider a deviating Sprint length during the
 holiday season at the end of the year to be an anti-pattern.)
 
-![](https://scrumorg-website-prod.s3.amazonaws.com/drupal/inline-images/Sprint-Anti-Patterns-Hardening-Sprint-Age-of-Product-com.jpg.jpg)
+<kbd>![](https://scrumorg-website-prod.s3.amazonaws.com/drupal/inline-images/Sprint-Anti-Patterns-Hardening-Sprint-Age-of-Product-com.jpg.jpg)</kbd>
 
 
 
@@ -1416,7 +1416,7 @@ extending the sprint. They eventually finish the story in 4 days, which
 results in the actual sprint duration of 14 days. The same keeps
 happening in the following sprints too.
 
-![](https://miro.medium.com/max/2040/1*_-gw1ixlZ0yf35O54Hm4zw.jpeg)
+<kbd>![](https://miro.medium.com/max/2040/1*_-gw1ixlZ0yf35O54Hm4zw.jpeg)</kbd>
 
 Schedule slippages are quite a usual thing in software development. To a
 point that they may be considered inherent and unavoidable. When a
@@ -1494,7 +1494,7 @@ story in the next sprint either. So they create "User Story X Part 3"
 and now move "Part 2" to Done. This exercise repeats itself a few more
 times.*
 
-*![](https://miro.medium.com/max/2040/1*-gdzLa7T3-l5Cez1gkNwPQ.jpeg)
+*<kbd>![](https://miro.medium.com/max/2040/1*-gdzLa7T3-l5Cez1gkNwPQ.jpeg)</kbd>
 
 This one I've seen quite a lot, usually with digital task trackers ---
 probably because the operation of copying is so cheap there. Whenever a

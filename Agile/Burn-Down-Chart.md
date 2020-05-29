@@ -49,14 +49,14 @@ pattern of rising columns on a burndown chart may indicate that the
 scope of the work is exceeding the originally agreed sprint backlog,
 which is definitely an anti-pattern in scrum.
 
-![agile burndown chart](http://agilewarrior.files.wordpress.com/2013/06/how-quickly-burn-through-stories.png?w=540)
+<kbd>![agile burndown chart](http://agilewarrior.files.wordpress.com/2013/06/how-quickly-burn-through-stories.png?w=540) </kbd>
 
 The burndown is a chart that shows how quickly you and your team are
 burning through your customer\'s [user stories](http://www.agilenutshell.com/user_stories). It
 shows the total effort against the amount of work we deliver each
 iteration. Something like this:
 
-![agile burndown chart](http://agilewarrior.files.wordpress.com/2013/06/burndown-3-details.png?w=540)
+<kbd>![agile burndown chart](http://agilewarrior.files.wordpress.com/2013/06/burndown-3-details.png?w=540)</kbd>
 
 We can see the total effort on the left, our team velocity on the right.
 But look what else this simple graphs gives us.
@@ -71,7 +71,7 @@ All this from one graph!
 Now what you see above is pretty ideal. A more realistic burndown looks
 something more like this:
 
-![agile burndown chart](http://agilewarrior.files.wordpress.com/2013/06/burndown-4-realistic.png?w=540)
+<kbd>![agile burndown chart](http://agilewarrior.files.wordpress.com/2013/06/burndown-4-realistic.png?w=540)</kbd>
 
 It's never a straight line. The team never moves at exactly one fixed
 velocity. And we discover things along the way (notice how it shows us
@@ -83,7 +83,7 @@ done each iteration also. This let's me look at the chart, and
 immediately get a sense of whether we are a quarter, a third, or ½ way
 done the project.
 
-![agile burndown chart](http://agilewarrior.files.wordpress.com/2013/06/burndown-5-workcomplete.png?w=540)
+<kbd>![agile burndown chart](http://agilewarrior.files.wordpress.com/2013/06/burndown-5-workcomplete.png?w=540) </kbd>
 
 Common Pitfalls
 ---------------

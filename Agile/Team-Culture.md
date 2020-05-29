@@ -21,7 +21,7 @@ The progression is:
 -   norming
 -   performing
 
-![](https://miro.medium.com/max/567/0*SM9EZUSfg2jlwEKS)
+<kbd>![](https://miro.medium.com/max/567/0*SM9EZUSfg2jlwEKS)
 
 
 Forming

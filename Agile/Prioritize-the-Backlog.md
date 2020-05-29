@@ -7,7 +7,7 @@ Agile : Prioritize the Backlog
 ==============================
 
 
-![](https://miro.medium.com/max/1200/0*Rr0UVQNsb6EXVsKp)
+<kbd>![](https://miro.medium.com/max/1200/0*Rr0UVQNsb6EXVsKp)
 
 Agile teams rely on a prioritized backlog to guide their work. The most
 important work is at the top of the list, available for the team to
@@ -70,7 +70,7 @@ need for the carefulness and details plan is required to make sure no
 risk or issue happens, or at least in the list of "Risk Control" Sheet.
 That is not the wrong thing, and risk management is necessary.
 
-![](https://scrumorg-website-prod.s3.amazonaws.com/drupal/inline-images/order%20backlog.png)
+<kbd>![](https://scrumorg-website-prod.s3.amazonaws.com/drupal/inline-images/order%20backlog.png)
 
 But when you are facing uncertainty, the changes happen anytime, can't
 be predictable, but you need to move faster than your competitors, so
@@ -122,7 +122,7 @@ value of the product. Helping team works smarter, not harder:
     that the Scrum Team can have self-organizing to make the right
     decisions, what to do and when is the best time.
 
-![](https://scrumorg-website-prod.s3.amazonaws.com/drupal/inline-images/time%20to%20make%20decision.png)
+<kbd>![](https://scrumorg-website-prod.s3.amazonaws.com/drupal/inline-images/time%20to%20make%20decision.png)
 
 ###### References
 

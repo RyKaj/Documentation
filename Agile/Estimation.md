@@ -158,7 +158,7 @@ Never allow managers to give low sizes or persuade the team to decrease its size
 
 ### Process Flow Chart 
 
-![planning poker steps](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2016/05/planning-poker-steps.jpg)
+<kbd>![planning poker steps](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2016/05/planning-poker-steps.jpg) </kbd>
 
 #### Online Planning Poker
 
@@ -293,8 +293,8 @@ Was the 2-week investment of time and effort really worth it? It took 20 times l
 
 ### Estimation Theory
 
-![Estimation Approaches](https://www.netsolutions.com/insights/wp-content/uploads/2017/07/Table21.jpg)
-![Service Provider](https://www.netsolutions.com/insights/wp-content/uploads/2017/07/Builder-Comparison-3111.jpg)
+<kbd>![Estimation Approaches](https://www.netsolutions.com/insights/wp-content/uploads/2017/07/Table21.jpg) </kbd>
+<kbd>![Service Provider](https://www.netsolutions.com/insights/wp-content/uploads/2017/07/Builder-Comparison-3111.jpg) </kbd>
 
 ### Traditional Waterfall Approach
 
@@ -308,13 +308,13 @@ One problem with this approach, is that the end-design solution may start to cha
 
 Another problem here is lack of contingency. If the cost/time and features are fixed, where is the wiggle-room? Quality will suffer. If the project is running behind schedule and the number of features is set in stone, the quality of code will suffer. This results in more bugs, and a code base that might not be as maintainable in the longer term.
 
-![](https://www.swarmonline.com/wp-content/uploads/2018/01/bottom-up-estimating-300x253.png)
+<kbd>![](https://www.swarmonline.com/wp-content/uploads/2018/01/bottom-up-estimating-300x253.png) </kbd> 
 
-![Waterfall Golden Triangle](https://www.swarmonline.com/wp-content/uploads/2018/01/Waterfall-Golden-Triangle-300x276.png)
+<kbd>![Waterfall Golden Triangle](https://www.swarmonline.com/wp-content/uploads/2018/01/Waterfall-Golden-Triangle-300x276.png) </kbd>
 
 An Agile project will turn this 'Golden Triangle' on its head.
 
-![Agile Golden Triangle](https://www.swarmonline.com/wp-content/uploads/2018/01/Agile-Golden-Triangle-300x276.png)
+<kbd>![Agile Golden Triangle](https://www.swarmonline.com/wp-content/uploads/2018/01/Agile-Golden-Triangle-300x276.png) </kbd>
 
 #### Agile Approach
 
@@ -322,9 +322,9 @@ Agile methodology at its core uses the technique of breaking down the work into 
 
 The cost involved in this methodology is essentially the cost of the dedicated team that comes together to deliver.
 
-![Planning and Design Development](https://www.netsolutions.com/insights/wp-content/uploads/2017/07/211.jpg)
+<kbd>![Planning and Design Development](https://www.netsolutions.com/insights/wp-content/uploads/2017/07/211.jpg) </kbd>
 
-![Product Backlog](https://www.netsolutions.com/insights/wp-content/uploads/2017/07/311.jpg)
+<kbd>![Product Backlog](https://www.netsolutions.com/insights/wp-content/uploads/2017/07/311.jpg) </kbd>
 
 To offset these risks, it's essential that Agile teams:
 
@@ -355,7 +355,7 @@ The discovery team works on the high-level backlog, once validated by the stakeh
 
 The items that are agreed upon to be moved to later releases, are filtered out as 'won't haves' for now.
 
-![Prioritization](https://www.netsolutions.com/insights/wp-content/uploads/2017/07/411.jpg)
+<kbd>![Prioritization](https://www.netsolutions.com/insights/wp-content/uploads/2017/07/411.jpg) </kbd>
 
 ##### 5. MVP backlog 
 
@@ -387,7 +387,7 @@ In an agile project user stories are often estimated using 'effort points' based
 
 Typically the features are estimated by the entire team. Everyone is involved in the process, but it can happen much more rapidly with a 'poker planning session'. This could last an hour or two, rather than days/ weeks as with the traditional approach above. Having everybody involved means that the combined expertise of the whole team can be utilised. The precision decreases with larger features which might mean breaking the feature into smaller stories or tasks.
 
-![top down estimate](https://www.swarmonline.com/wp-content/uploads/2018/01/top-down-estimating-300x253.png)
+<kbd>![top down estimate](https://www.swarmonline.com/wp-content/uploads/2018/01/top-down-estimating-300x253.png) </kbd>
 
 
 
