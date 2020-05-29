@@ -19,11 +19,11 @@ The OS of the container is in the form an image. This is not the full operating 
 
 First, to give you a understanding of what Docker is I need you to remember everything you know about virtualisation or virtual machines. So, let’s recap for a moment a see what virtual machines do. Virtual machines allow you to setup a guest operating system over your current operating system i.e. you can run Ubuntu or Kali Linux machines on your Windows computer without a problem. All you have to do is download the .iso files for the guest OS and then install it in your virtualisation software like VMware, VirtualBox, etc. A pictorial representation of it would look something like this.
 
-<kbd>![](https://miro.medium.com/max/2526/1*U0HvIqjTr1xvfIusdjM_TA.png)
+<kbd>![](https://miro.medium.com/max/2526/1*U0HvIqjTr1xvfIusdjM_TA.png)</kbd>
 
 Now that you have a clear idea of what virtualisation is let’s proceed ahead and see what a Docker is and why do people keep comparing it with virtual machines. First, let me give you a pictorial representation of Docker so that you can understand easily.
 
-<kbd>![](https://miro.medium.com/max/2522/1*QwUgVGQNsNejKbSfkCTFgg.png)
+<kbd>![](https://miro.medium.com/max/2522/1*QwUgVGQNsNejKbSfkCTFgg.png)</kbd>
 
 Now, scroll back and forth and try to spot the differences between Docker and Virtual machines by yourself before I begin with my explanation.
 
@@ -33,13 +33,13 @@ Docker and Virtual Machine setup are similar only till the Host OS, but after th
 
 If the Docker requires only specific set of libraries, toolset and dependencies it will consume way less storage than a standard virtual machine. One more thing as there are less dependencies and libraries required for Docker hence the startup time for a virtual machine is extremely slow when compared to the startup time of Docker. All these benefits and we haven’t even talked about its greatest positive point and that is that Docker enables us to package an entire application and ship it to any Linux machine all over the globe without ever having to worry about integration and not having to spend hours and hours troubleshooting why your software ain’t working the way it should on a certain client’s system across the globe in a completely different timezone.
 
-<kbd>![](https://miro.medium.com/max/898/1*Y-bVQ7z1Ts2gFP7tpQyybg.png)
+<kbd>![](https://miro.medium.com/max/898/1*Y-bVQ7z1Ts2gFP7tpQyybg.png)</kbd>
 
 Now that we have clearly shown why Docker is better than Virtualisation solutions in a lot of way let’s actually see how to work with dockers and understand how this amazing tech works.
 
 Docker has some other really really cool features, such as copy on write, volumes (shared file systems between containers), the docker daemon (manages containers on a machine), version controlled repositories (like Github for containers), and more. To learn more about them and see some practical examples of how to use Docker, this Medium [article](https://medium.freecodecamp.org/a-beginner-friendly-introduction-to-containers-vms-and-docker-79a9e3e119b) is extremely useful.
 
-<kbd>![](https://miro.medium.com/max/602/1*BO8iqCKHjeB6Fw9irS4oBw.png)
+<kbd>![](https://miro.medium.com/max/602/1*BO8iqCKHjeB6Fw9irS4oBw.png)</kbd>
 
   
 

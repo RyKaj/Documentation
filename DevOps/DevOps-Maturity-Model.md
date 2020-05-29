@@ -56,7 +56,7 @@ In line with these three steps, the DevOps maturity block verifies maturity in b
 
 **DevOps Maturity by Infrastructure –** Determines DevOps maturity by ability to ease infrastructure using capabilities around automation, streamlining and enabling self-service to provision environments, among other tasks.
 
-<kbd>![DevOps Maturity model involves five transformation stages](https://www.veritis.com/wp-content/uploads/2019/10/devops-maturity-model-involves-five-transformation-stages.jpg)
+<kbd>![DevOps Maturity model involves five transformation stages](https://www.veritis.com/wp-content/uploads/2019/10/devops-maturity-model-involves-five-transformation-stages.jpg)</kbd>
 
 ### Stage-1: Initial
 
@@ -249,7 +249,7 @@ Continuous Integration
 
 Continuous integration is the practice of quickly integrating newly developed code with the main body of code that is to be released. Continuous integration saves a lot of time when the team is ready to release the code.
 
-<kbd>![](https://miro.medium.com/max/700/0*X4lG2bqBrxA6eDfP.png)
+<kbd>![](https://miro.medium.com/max/700/0*X4lG2bqBrxA6eDfP.png)</kbd>
 
 DevOps didn’t come up with this term. Continuous integration is an agile engineering practice originating from the Extreme Programming methodology. The terms been around for a while, but DevOps has adopted this term because automation is required to successfully execute continuous integration. Continuous integration is often the first step down the path toward DevOps maturity.
 
@@ -281,8 +281,8 @@ Continuous Deployment is the golden goose of DevOps, but it is best applied afte
 
   
 
-<kbd>![continuous-delivery-vs-continous-deployment](https://devtipscurator.files.wordpress.com/2017/02/continuous-delivery-vs-continous-deployment.png?w=736)
-<kbd>![](https://miro.medium.com/max/700/0*NU_81jBIf1JTVNjT.jpg) 
+<kbd>![continuous-delivery-vs-continous-deployment](https://devtipscurator.files.wordpress.com/2017/02/continuous-delivery-vs-continous-deployment.png?w=736)</kbd>
+<kbd>![](https://miro.medium.com/max/700/0*NU_81jBIf1JTVNjT.jpg) </kbd>
 
 Teams that utilize continuous delivery don’t deploy untested code; instead, newly created code runs through automated testing before it gets pushed out to production. The code release typically only goes to a small percentage of users and there’s an automated feedback loop that monitors quality and usage before the code is propagated further.
 

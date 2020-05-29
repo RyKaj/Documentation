@@ -214,7 +214,7 @@ Tooling integration cost is not zero, but it’s negligible when compared to the
 
 Instead, single-purpose, focused tools with a well-de ned API help reduce the blast radius of bad practices. And you can swap them easily when they don’t match your requirements anymore. A flexible toolchain standardizes practices, not tools. It supports certain capabilities, which are easy to locate and expand on, replacing particular components (tools) when required.
 
-<kbd>![Image title](https://dzone.com/storage/temp/4177777-screen-shot-2017-01-30-at-25340-pm.png)  
+<kbd>![Image title](https://dzone.com/storage/temp/4177777-screen-shot-2017-01-30-at-25340-pm.png)  </kbd>
 
 Another gain with individual tools: you can actually expect an answer from the vendor when you ask for a feature since they have a reduced feature set and faster change cycles. A vendor of a one-stop solution has a lot more requests in its backlog. Chances are, if you’re not a major client, your requests will get buried for months or even years.
 
@@ -227,7 +227,7 @@ Unfortunately, our industry is still plagued with the “abstraction everywhere 
 
 The problem is these tools assume they have all the use cases and all the failure scenarios covered. That is untrue for any tool, or any software in fact. We will always need access to information to troubleshoot issues. The more information we have, the more likely we can correlate events and the causes.
 
-<kbd>![Image title](https://dzone.com/storage/temp/4177783-screen-shot-2017-01-30-at-25650-pm.png)
+<kbd>![Image title](https://dzone.com/storage/temp/4177783-screen-shot-2017-01-30-at-25650-pm.png)</kbd>
 
 Think of all the time spent deciphering error messages, trying to guess what went wrong, or waiting for a vendor’s support to get back to you (if you hit the jackpot with a technical issue deep in the tool’s gut, good luck waiting for the support-to-engineering return trip time). That time alone is an order of magnitude higher than any individual tool integration time you’d have spent.
 
@@ -244,7 +244,7 @@ A pipeline stage represents an activity in the delivery chain. It might require:
 
 Thus pipeline stages should not be tightly coupled to environments. Assuming only the first option above leads to pipelines that contemplate only automatable activities, hiding other (often non-technical) activities that are part of delivery as well. In turn, this leads to lack of visibility on (real) bottlenecks and local optimization (technical steps) instead of global (cycle time).
 
-<kbd>![Image title](https://dzone.com/storage/temp/4177787-screen-shot-2017-01-30-at-30135-pm.png)
+<kbd>![Image title](https://dzone.com/storage/temp/4177787-screen-shot-2017-01-30-at-30135-pm.png)</kbd>
 
 Flexing Is for Fitness, Not for Principles
 ------------------------------------------
@@ -262,7 +262,7 @@ A pipeline status should be binary. Red or green. Not orange. Not gray. Not blue
 
 CD equivalent to warnings at compilation time. If the first warnings are ignored by developer A, then developer B and developer C will ignore them, as well. Soon, everyone just assumes having 372 warnings is OK.
 
-<kbd>![Image title](https://dzone.com/storage/temp/4177796-screen-shot-2017-01-30-at-30530-pm.png)
+<kbd>![Image title](https://dzone.com/storage/temp/4177796-screen-shot-2017-01-30-at-30530-pm.png)</kbd>
 
 Having an uncontested pipeline status is a prerequisite to the Continuous Delivery principle of “stopping the line” when a pipeline fails (then either x it quickly or revert the changes that broke it). Interestingly, this is also a prerequisite to getting rid of those nasty compilation warnings (try making the pipeline go red if there are compilation warnings).
 
@@ -273,7 +273,7 @@ Another plague in our industry is the proliferation of terminology. We have enou
 
 One puzzling example we have come across of terminology failures is calling a pipeline trigger from a successful build a “continuous deployment.”
 
-<kbd>![Image title](https://dzone.com/storage/temp/4177799-screen-shot-2017-01-30-at-30640-pm.png)
+<kbd>![Image title](https://dzone.com/storage/temp/4177799-screen-shot-2017-01-30-at-30640-pm.png)</kbd>
 
 Another example are “release definitions” instead of “pipeline definitions” (the image above is a release definition configuration). Legacy terminology leads to legacy behaviors, thinking of releases and work batches instead of pipelines and frequent delivery of small, low-risk changes in production.
 

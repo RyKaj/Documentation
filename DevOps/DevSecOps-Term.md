@@ -7,10 +7,10 @@ Information Technology : DevSecOps Term
 =======================================
 
 
-<kbd>![pic](https://3ovyg21t17l11k49tk1oma21-wpengine.netdna-ssl.com/wp-content/uploads/2016/09/pic.png) 
-<kbd>![](https://miro.medium.com/max/496/0*X8A5EUUH-GNeBtlx.png)
+<kbd>![pic](https://3ovyg21t17l11k49tk1oma21-wpengine.netdna-ssl.com/wp-content/uploads/2016/09/pic.png) </kbd>
+<kbd>![](https://miro.medium.com/max/496/0*X8A5EUUH-GNeBtlx.png)</kbd>
 
-<img src="./attachments/451824839.png" alt=""></kbd>
+<kbd><img src="./attachments/451824839.png" alt=""></kbd>
   
 
 ## What is DevOps
