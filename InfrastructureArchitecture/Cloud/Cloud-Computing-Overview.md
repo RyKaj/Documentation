@@ -31,7 +31,7 @@ billed by consumption."
 Cloud Computing Models Cloud Providers offer services that can be
 grouped into three categories.
 
-![](https://miro.medium.com/max/963/1*F_EB3zGRdsahx01e8nLW4w.png)
+<kbd>![](https://miro.medium.com/max/963/1*F_EB3zGRdsahx01e8nLW4w.png) </kbd>
 
 **Software as a Service (SaaS)**: In this model, a complete application
 is offered to the customer, as a service on demand. A single instance of
@@ -164,8 +164,8 @@ challenges are:
 4 Main Cloud Deployment
 -----------------------
 
-![](https://qph.fs.quoracdn.net/main-qimg-34fbe07d9311be4084f7b7b8a502a307)
-![](https://erpsoftwareblog.com/cloud/wp-content/uploads/4-Primary-Cloud-Deployment-Models-Infographic-Turnkey-Technologies1.png)
+<kbd>![](https://qph.fs.quoracdn.net/main-qimg-34fbe07d9311be4084f7b7b8a502a307) </kbd>
+<kbd>![](https://erpsoftwareblog.com/cloud/wp-content/uploads/4-Primary-Cloud-Deployment-Models-Infographic-Turnkey-Technologies1.png) </kbd>
 
 ### Public Cloud {#CloudComputingOverview-PublicCloud}
 
@@ -208,7 +208,7 @@ That\'s more than enough for a large chunk of businesses. But even
 especially in highly regulated fields like healthcare and
 government---hence the remaining three cloud deployment models.
 
-![](https://www.sam-solutions.com/blog/wp-content/uploads/2017/08/a-cloud-provider@2x.png)
+<kbd>![](https://www.sam-solutions.com/blog/wp-content/uploads/2017/08/a-cloud-provider@2x.png) </kbd>
 
 ### Private Cloud {#CloudComputingOverview-PrivateCloud}
 
@@ -229,7 +229,7 @@ cloud workloads. However, 75% reported using private cloud to some
 extent, hosting some workloads privately and entrusting others to public
 cloud providers. This is what\'s referred to as a hybrid cloud.
 
-![](https://www.sam-solutions.com/blog/wp-content/uploads/2017/08/a-private-cloud@2x.png)
+<kbd>![](https://www.sam-solutions.com/blog/wp-content/uploads/2017/08/a-private-cloud@2x.png) </kbd>
 
 ### Hybird Cloud {#CloudComputingOverview-HybirdCloud}
 
@@ -251,7 +251,7 @@ extent. However, if you have a lot of legacy to support yet still wish
 to benefit from the public cloud for your other workloads, for instance,
 hybrid is often the best-case scenario.
 
-![](https://www.sam-solutions.com/blog/wp-content/uploads/2017/08/hybrid-cloud@2x.png)
+<kbd>![](https://www.sam-solutions.com/blog/wp-content/uploads/2017/08/hybrid-cloud@2x.png) </kbd>
 
 ### Community Cloud {#CloudComputingOverview-CommunityCloud}
 
@@ -279,7 +279,7 @@ each stakeholder. Use cases for community cloud deployments are limited,
 but this model comes with highly advantageous cost savings for those to
 which it applies.
 
-![](https://www.sam-solutions.com/blog/wp-content/uploads/2017/08/community-cloud@2x.png)
+<kbd>![](https://www.sam-solutions.com/blog/wp-content/uploads/2017/08/community-cloud@2x.png) </kbd>
 
 ||Public|Private|Community|Hybird|
 |--- |--- |--- |--- |--- |

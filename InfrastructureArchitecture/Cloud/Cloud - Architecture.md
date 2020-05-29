@@ -20,7 +20,7 @@ IT resources are provided as a service to a group of customers trusting each oth
 
  
   ---------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![Community Cloud](http://www.cloudcomputingpatterns.org/icons/community_cloud_icon.png)      *How can the cloud properties -- on demand self-service, broad network access, pay-per-use, resource pooling, and rapid elasticity -- be provided to exclusively to a group of customers forming a community of trust?*
+  <kbd>![Community Cloud](http://www.cloudcomputingpatterns.org/icons/community_cloud_icon.png) </kbd>      *How can the cloud properties -- on demand self-service, broad network access, pay-per-use, resource pooling, and rapid elasticity -- be provided to exclusively to a group of customers forming a community of trust?*
   ---------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -32,7 +32,7 @@ Whenever companies collaborate, they commonly have to access shared applications
 
 IT resources required by all collaborating partners are offered in a controlled environment accessible only by the community of companies that generally trust each other.
 
-![Community Cloud](http://www.cloudcomputingpatterns.org/sketches/community_cloud_sketch.png) 
+<kbd>![Community Cloud](http://www.cloudcomputingpatterns.org/sketches/community_cloud_sketch.png)  </kbd>
  
 
 #### Continuously Changing Workload
@@ -48,7 +48,7 @@ Many applications experience a long term change in workload.
 
 Continuously Changing Workload is characterized by an ongoing continuous growth or decline of the utilization. Elasticity of clouds enables applications experiencing Continuously Changing Workload to provision or decommission resources with the same rate as the workload changes.
 
-![Unpredictable Workload](http://www.cloudcomputingpatterns.org/sketches/continuously_changing_workload_sketch.png) 
+<kbd>![Unpredictable Workload](http://www.cloudcomputingpatterns.org/sketches/continuously_changing_workload_sketch.png)  </kbd>
  
 
 ### Hybird Cloud
@@ -57,7 +57,7 @@ Different clouds and static data centers are integrated to form a homogeneous ho
 
  
   ---------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![Hybrid Cloud](http://www.cloudcomputingpatterns.org/icons/hybrid_cloud_icon.png)      *How can the cloud properties -- on demand self-service, broad network access, pay-per-use, resource pooling, and rapid elasticity -- be provided across clouds and other environments?*
+  <kbd>![Hybrid Cloud](http://www.cloudcomputingpatterns.org/icons/hybrid_cloud_icon.png)  </kbd>     *How can the cloud properties -- on demand self-service, broad network access, pay-per-use, resource pooling, and rapid elasticity -- be provided across clouds and other environments?*
   ---------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -69,7 +69,7 @@ A company is likely to use a large set of applications to support its business, 
 
 [Private Clouds](http://www.cloudcomputingpatterns.org/private_cloud/), [Public Clouds](http://www.cloudcomputingpatterns.org/public_cloud/), [Community Clouds](http://www.cloudcomputingpatterns.org/community_cloud/), and static data centers are integrated to deployed applications to the hosting environment best suited for their requirements while interconnection of these environments.
 
-![Hybrid Cloud](http://www.cloudcomputingpatterns.org/sketches/hybrid_cloud_sketch.png) 
+<kbd>![Hybrid Cloud](http://www.cloudcomputingpatterns.org/sketches/hybrid_cloud_sketch.png)  </kbd>
  
 
 ### Infrastructure as a Service (IaaS)
@@ -87,7 +87,7 @@ In the scope of [Periodic Workloads](http://www.cloudcomputingpatterns.org/perid
 
 A provider offers physical and virtual hardware, such as servers, storage and networking infrastructure that can be provisioned and decommissioned quickly through a self-service interface.
 
-![Infrastructure as a Service (IaaS)](http://www.cloudcomputingpatterns.org/sketches/infrastructure_as_a_service_sketch.png) 
+<kbd>![Infrastructure as a Service (IaaS)](http://www.cloudcomputingpatterns.org/sketches/infrastructure_as_a_service_sketch.png) </kbd> 
  
 
 ### Platform as a Service (PaaS)
@@ -105,7 +105,7 @@ If many customers require similar hosting environments for their applications, t
 
 A cloud provider offers managed operating systems and middleware. Management operations are handled by the provider, such as the elastic scaling and failure resiliency of hosted applications.
 
-![Platform as a Service (PaaS)](http://www.cloudcomputingpatterns.org/sketches/platform_as_a_service_sketch.png) 
+<kbd>![Platform as a Service (PaaS)](http://www.cloudcomputingpatterns.org/sketches/platform_as_a_service_sketch.png)  </kbd>
  
 
 ### Software as a Service (SaaS)
@@ -114,7 +114,7 @@ Providers share IT resources providing human-usable application software between
 
 
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------
-  ![Software as a Service (SaaS)](http://www.cloudcomputingpatterns.org/icons/software_as_a_service_icon.png)      *How can customers share a provider-supplied software application so that it can be used on-demand with a pay-per-use pricing model?*
+  <kbd>![Software as a Service (SaaS)](http://www.cloudcomputingpatterns.org/icons/software_as_a_service_icon.png)   </kbd>    *How can customers share a provider-supplied software application so that it can be used on-demand with a pay-per-use pricing model?*
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -126,7 +126,7 @@ Small and medium enterprises may not have the manpower and know-how to develop c
 
 A provider offers a complete software application to customers who may use it on-demand via a self-service interface.
 
-![Software as a Service (SaaS)](http://www.cloudcomputingpatterns.org/sketches/software_as_a_service_sketch.png) 
+<kbd>![Software as a Service (SaaS)](http://www.cloudcomputingpatterns.org/sketches/software_as_a_service_sketch.png)  </kbd>
  
 
 ### Once In a Lifetime Workload
@@ -135,7 +135,7 @@ IT resources with an equal utilization over time disturbed by a strong peak occu
 
  
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------
-  ![Once-in-a-lifetime Workload](http://www.cloudcomputingpatterns.org/icons/once_in_a_lifetime_workload_icon.png)      *How can equal utilization with a one-time peak be characterized and how can applications experiencing this workload benefit from cloud computing?*
+  <kbd>![Once-in-a-lifetime Workload](http://www.cloudcomputingpatterns.org/icons/once_in_a_lifetime_workload_icon.png)  </kbd>     *How can equal utilization with a one-time peak be characterized and how can applications experiencing this workload benefit from cloud computing?*
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -148,7 +148,7 @@ Workload](http://www.cloudcomputingpatterns.org/periodic_workload/), the peaks o
 
 The elasticity of a cloud is used to obtain IT resources necessary. The provisioning and decommissioning of IT resources can often be realized as a manual task, because it is performed at a known point in time.
 
-![Once-in-a-lifetime Workload](http://www.cloudcomputingpatterns.org/sketches/once_in_a_lifetime_workload_sketch.png) 
+<kbd>![Once-in-a-lifetime Workload](http://www.cloudcomputingpatterns.org/sketches/once_in_a_lifetime_workload_sketch.png)  </kbd>
  
 
 ### Periodic Workload
@@ -156,7 +156,7 @@ The elasticity of a cloud is used to obtain IT resources necessary. The provisio
 IT resources with a peaking utilization at reoccurring time intervals experience periodic workload.
  
   ------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![Periodic Worload](http://www.cloudcomputingpatterns.org/icons/periodic_workload_icon.png)      *How can a periodically peaking utilization over time be characterized and how can applications experiencing this workload benefit from cloud computing?*
+  <kbd>![Periodic Worload](http://www.cloudcomputingpatterns.org/icons/periodic_workload_icon.png)   </kbd>    *How can a periodically peaking utilization over time be characterized and how can applications experiencing this workload benefit from cloud computing?*
   ------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -168,7 +168,7 @@ In our real lives, periodic tasks and routines are very common. For example, mon
 
 From a customer perspective the cost-saving potential in scope of Periodic Workload is to use a provider with a pay-per-use pricing model allowing the decommissioning of resources during non-peak times.
 
-![Periodic Workload](http://www.cloudcomputingpatterns.org/sketches/periodic_workload_sketch.png) 
+<kbd>![Periodic Workload](http://www.cloudcomputingpatterns.org/sketches/periodic_workload_sketch.png)  </kbd>
  
 
 ### Private Cloud
@@ -177,7 +177,7 @@ IT resources are provided as a service exclusively to one customer in order to m
 
  
   ------------------------------------------------------------------------------------------------------------------------------------------------ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![Private Cloud](http://www.cloudcomputingpatterns.org/icons/private_cloud_icon.png)      *How can the cloud properties -- on demand self-service, broad network access, pay-per-use, resource pooling, and rapid elasticity -- be provided in environments with high privacy, security and trust requirements?*
+  <kbd>![Private Cloud](http://www.cloudcomputingpatterns.org/icons/private_cloud_icon.png)   </kbd>    *How can the cloud properties -- on demand self-service, broad network access, pay-per-use, resource pooling, and rapid elasticity -- be provided in environments with high privacy, security and trust requirements?*
   ------------------------------------------------------------------------------------------------------------------------------------------------ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -189,7 +189,7 @@ Many factors, such as legal limitations, trust, and security regulations, motiva
 
 Cloud computing properties are enabled in a company-internal data center. Alternatively, the Private Cloud may be hosted exclusively in  the data center of an external provider, then referred to as outsourced Private Cloud. Sometimes, [Public Cloud](http://www.cloudcomputingpatterns.org/private_cloud/)  providers also offer means to create an isolated portion of their cloud made accessible to only one customer: a virtual Private Cloud.
 
-![Private Cloud](http://www.cloudcomputingpatterns.org/sketches/private_cloud_sketch.png) 
+<kbd>![Private Cloud](http://www.cloudcomputingpatterns.org/sketches/private_cloud_sketch.png)  </kbd>
  
 
 ### Public Cloud
@@ -198,7 +198,7 @@ IT resources are provided as a service to a very large customer group in order t
 
  
   ---------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![Public Cloud](http://www.cloudcomputingpatterns.org/icons/public_cloud_icon.png)      *How can the cloud properties -- on demand self-service, broad network access, pay-per-use, resource pooling, and rapid elasticity -- be provided to a large customer group?*
+  <kbd>![Public Cloud](http://www.cloudcomputingpatterns.org/icons/public_cloud_icon.png)  </kbd>     *How can the cloud properties -- on demand self-service, broad network access, pay-per-use, resource pooling, and rapid elasticity -- be provided to a large customer group?*
   ---------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -210,7 +210,7 @@ A provider offering IT resources according to [IaaS](http://www.cloudcomputingpa
 
 The hosting environment is shared between many customers possibly reducing the costs for an individual customer. Leveraging economies of scale enables a dynamic use of resources, because workload peaks of some customers occur during times of low workload of other customers.
 
-![Public Cloud](http://www.cloudcomputingpatterns.org/sketches/public_cloud_sketch.png) 
+<kbd>![Public Cloud](http://www.cloudcomputingpatterns.org/sketches/public_cloud_sketch.png)  </kbd>
  
 
 ### Static Workload
@@ -219,7 +219,7 @@ IT resources with an equal utilization over time experience Static Workload.
 
  
   ---------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------
-  ![Static Workload](http://www.cloudcomputingpatterns.org/icons/static_workload_icon.png)      *How can an equal utilization be characterized and how can applications experiencing this workload benefit from cloud computing?*
+  <kbd>![Static Workload](http://www.cloudcomputingpatterns.org/icons/static_workload_icon.png)    </kbd>   *How can an equal utilization be characterized and how can applications experiencing this workload benefit from cloud computing?*
   ---------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -231,7 +231,7 @@ Static Workloads are characterized by a more-or-less flat utilization profile ov
 
 An application experiencing Static Workload is less likely to benefit from an elastic cloud that offers a pay-per-use billing, because the number of required resources is constant.
 
-![Static Workload](http://www.cloudcomputingpatterns.org/sketches/static_workload_sketch.png) 
+<kbd>![Static Workload](http://www.cloudcomputingpatterns.org/sketches/static_workload_sketch.png)  </kbd>
  
 
 ### Unpredictable Workload
@@ -240,7 +240,7 @@ IT resources with a random and unforeseeable utilization over time experience un
 
  
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------------------------------------------------------------------------------------------------------------------------
-  ![Unpredictable Workload](http://www.cloudcomputingpatterns.org/icons/unpredictable_workload_icon.png)      *How can random and unforeseeable utilization be characterized and how can applications experiencing this workload benefit from cloud computing?*
+  <kbd>![Unpredictable Workload](http://www.cloudcomputingpatterns.org/icons/unpredictable_workload_icon.png)  </kbd>     *How can random and unforeseeable utilization be characterized and how can applications experiencing this workload benefit from cloud computing?*
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -252,7 +252,7 @@ Random workloads are a generalization of [Periodic Workloads](http://www.cloudco
 
 Unplanned provisioning and decommissioning of IT resources is required. The necessary provisioning and decommissioning of IT resources is, therefore, automated to align the resource numbers to changing workload.
 
-![Unpredictable Workload](http://www.cloudcomputingpatterns.org/sketches/unpredictable_workload_sketch.png) 
+<kbd>![Unpredictable Workload](http://www.cloudcomputingpatterns.org/sketches/unpredictable_workload_sketch.png)  </kbd>
  
 
 Cloud Offerings
@@ -273,7 +273,7 @@ An application experiences [Periodic Workload](http://www.cloudcomputingpatterns
 
 An Elastic Infrastructure provides preconfigured virtual server images, storage and network connectivity that may be provisioned by customers using a self-service interface. Monitoring information is provided to inform about resource utilization required for traceable billing and automation of management tasks.
 
-![Elastic Infrastructure](http://www.cloudcomputingpatterns.org/sketches/elastic_infrastructure_sketch.png) 
+<kbd>![Elastic Infrastructure](http://www.cloudcomputingpatterns.org/sketches/elastic_infrastructure_sketch.png)  </kbd>
  
 
 #### Elastic Platform
@@ -282,7 +282,7 @@ Middleware for the execution of custom applications, their communication, and da
 
  
   ------------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------------------------------------------------------------------------------------
-  ![Elastic Platform](http://www.cloudcomputingpatterns.org/icons/elastic_platform_icon.png)      *How do Cloud Offerings providing Execution Environments behave and how should they be used in applications?*
+  <kbd>![Elastic Platform](http://www.cloudcomputingpatterns.org/icons/elastic_platform_icon.png)   </kbd>    *How do Cloud Offerings providing Execution Environments behave and how should they be used in applications?*
   ------------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------------------------------------------------------------------------------------
  
 
@@ -294,7 +294,7 @@ One of the fundamental cloud properties is the sharing of resources among a larg
 
 Application components of different customers are hosted on shared middleware provided and maintained by the provider. Customers may deploy custom application components to this middleware using a self-service interface. This unification enables resource sharing and an automation of certain management tasks on the provider side, for example, provisioning of applications, update management.
 
-![Elastic Platform](http://www.cloudcomputingpatterns.org/sketches/elastic_platform_sketch.png) 
+<kbd>![Elastic Platform](http://www.cloudcomputingpatterns.org/sketches/elastic_platform_sketch.png)  </kbd>
  
 
 #### Environment-base Availability
@@ -303,7 +303,7 @@ A cloud provider guarantees the availability of the environment hosting individu
 
  
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![Environment-based Availability](http://www.cloudcomputingpatterns.org/icons/environment_based_availability_icon.png)      *How can providers express availability in an environmental-centric fashion, so that customers may estimate the availability of hosted applications?*
+  <kbd>![Environment-based Availability](http://www.cloudcomputingpatterns.org/icons/environment_based_availability_icon.png) </kbd>      *How can providers express availability in an environmental-centric fashion, so that customers may estimate the availability of hosted applications?*
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -316,7 +316,7 @@ A cloud provider offers an [Elastic Infrastructure](http://www.cloudcomputingpat
 The provider assures availability for the provided environment, thus, for the availability of the [Elastic Platform](http://www.cloudcomputingpatterns.org/elastic_platform/) 
 or the [Elastic Infrastructure](http://www.cloudcomputingpatterns.org/elastic_infrastructure/)  as a whole, for example, the availability for at-least-once provisioned component or virtual server and the availability to provision replacements in case of failures is assured. There is no notion of availability for individual application components or virtual servers deployed in this environment.
 
-![Environment-based Availability](http://www.cloudcomputingpatterns.org/sketches/environment_based_availability_sketch.png) 
+<kbd>![Environment-based Availability](http://www.cloudcomputingpatterns.org/sketches/environment_based_availability_sketch.png)  </kbd>
  
 
 #### Node-based Availability
@@ -325,7 +325,7 @@ A cloud provider guarantees the availability of individual nodes, such as indivi
 
  
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------
-  ![Node-based Availability](http://www.cloudcomputingpatterns.org/icons/node_based_availability_icon.png)      *How can providers express availability in a node-centric fashion, so that customers may estimate the availability of hosted applications?*
+  <kbd>![Node-based Availability](http://www.cloudcomputingpatterns.org/icons/node_based_availability_icon.png)   </kbd>    *How can providers express availability in a node-centric fashion, so that customers may estimate the availability of hosted applications?*
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -337,7 +337,7 @@ A provider offers an [Elastic Infrastructure](http://www.cloudcomputingpatterns.
 
 The provider assures availability for each hosted application component, which is defined to be available if it is reachable and performs its function as advertised, i.e., it provides correct results. This timeframe is often expressed as a percentage. An availability of 99.95%, thus, means that a hosted component will be available during 99.95% of the time it is hosted at the provider.
 
-![Node-based Availability](http://www.cloudcomputingpatterns.org/sketches/node_based_availability_sketch.png) 
+<kbd>![Node-based Availability](http://www.cloudcomputingpatterns.org/sketches/node_based_availability_sketch.png)  </kbd>
  
 
 ### Processing Offerings
@@ -355,7 +355,7 @@ Applications often use similar functions, for example, to access networking inte
 
 Common functionality is summarized in an Execution Environment providing functionality in platform libraries to be used in custom application implementations and in the form of the middleware. The environment, thus, executes custom application components and provides common functionality for data storages, communication etc.
 
-![Execution Environment](http://www.cloudcomputingpatterns.org/sketches/execution_environment_sketch.png) 
+<kbd>![Execution Environment](http://www.cloudcomputingpatterns.org/sketches/execution_environment_sketch.png)  </kbd>
  
 
 #### Hypervisor
@@ -364,7 +364,7 @@ To enable the elasticity of clouds, the time required to provision and decommiss
 
  
   ------------------------------------------------------------------------------------------------------------------------------------------ -----------------------------------------------------------------------------------------------------
-  ![Hypervisor](http://www.cloudcomputingpatterns.org/icons/hypervisor_icon.png)      *How can virtual hardware that has been abstracted from physical hardware be used in applications?*
+  <kbd>![Hypervisor](http://www.cloudcomputingpatterns.org/icons/hypervisor_icon.png)  </kbd>     *How can virtual hardware that has been abstracted from physical hardware be used in applications?*
   ------------------------------------------------------------------------------------------------------------------------------------------ -----------------------------------------------------------------------------------------------------
  
 
@@ -376,7 +376,7 @@ If multiple applications are deployed on a physical server they may have to cons
 
 A Hypervisor abstracts the hardware of a shared physical server into virtualized hardware. On this virtual hardware, different operating systems and middleware are installed to host applications sharing the physical server while being isolated from each other regarding the use of physical hardware, such as central processing units (CPU), memory, disk storage, and networking.
 
-![Hypervisor](http://www.cloudcomputingpatterns.org/sketches/hypervisor_sketch.png) 
+<kbd>![Hypervisor](http://www.cloudcomputingpatterns.org/sketches/hypervisor_sketch.png)  </kbd>
  
 
 #### Map Reduce
@@ -392,7 +392,7 @@ Cloud applications often have to handle very large amounts of data, which have t
 
 A large data set to be processed is split up and mapped to multiple application components handling data processing. Data Processing Components simultaneously execute the query to be performed on the assigned data chunks. Afterwards, the individual results of all Processing Components are consolidated or reduced into one result data set. During this reduction, additional functions, such calculations of sums, average values etc. may be used.
 
-![Map Reduce](http://www.cloudcomputingpatterns.org/sketches/map_reduce_sketch.png) 
+<kbd>![Map Reduce](http://www.cloudcomputingpatterns.org/sketches/map_reduce_sketch.png)  </kbd>
  
 
 ### Storage Offerings
@@ -403,7 +403,7 @@ Centralized storage is integrated into servers as a local hard drive managed by 
 
  
   ------------------------------------------------------------------------------------------------------------------------------------------------ --------------------------------------------------------------------------------------------
-  ![Block Storage](http://www.cloudcomputingpatterns.org/icons/block_storage_icon.png)      *How can central storage be accessed as a local drive by servers and hosted applications?*
+  <kbd>![Block Storage](http://www.cloudcomputingpatterns.org/icons/block_storage_icon.png) </kbd>      *How can central storage be accessed as a local drive by servers and hosted applications?*
   ------------------------------------------------------------------------------------------------------------------------------------------------ --------------------------------------------------------------------------------------------
  
 
@@ -417,8 +417,7 @@ can be managed significantly easier if they do not store any state information l
 
 Centralized storage is accessed by servers as if it was a local hard drive, also referred to as block device.
 
-![Block
-Storage](http://www.cloudcomputingpatterns.org/sketches/block_storage_sketch.png) 
+<kbd>![Block Storage](http://www.cloudcomputingpatterns.org/sketches/block_storage_sketch.png)  </kbd>
  
 
 #### Blob Storage
@@ -427,7 +426,7 @@ Data is provided in form of large files that are made available in a file system
 
  
   ---------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------
-  ![Blob Storage](http://www.cloudcomputingpatterns.org/icons/blob_storage_icon.png)      *How can large files be stored, organized and made available over a network?*
+  <kbd>![Blob Storage](http://www.cloudcomputingpatterns.org/icons/blob_storage_icon.png)  </kbd>     *How can large files be stored, organized and made available over a network?*
   ---------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------
  
 
@@ -439,8 +438,7 @@ Distributed cloud applications often need to handle large data elements, also re
 
 Data elements are organized in a folder hierarchy similar to a local file system. Each data element is given a unique identifier comprised of its location in the folder hierarchy and a file name. This unique identifier is passed to the storage offerings to retrieve a file over a network.
 
-![Blob
-Storage](http://www.cloudcomputingpatterns.org/sketches/blob_storage_sketch.png) 
+<kbd>![Blob Storage](http://www.cloudcomputingpatterns.org/sketches/blob_storage_sketch.png)  </kbd>
  
 
 #### Eventual Consistency
@@ -449,7 +447,7 @@ If data is stored at different locations (replicas) to improve response time and
 
  
   -------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![Eventual Consistency](http://www.cloudcomputingpatterns.org/icons/eventual_consistency_icon.png)      *How can data be distributed among replicas with focus on increased availability and performance, while being resilient towards connectivity problems?*
+  <kbd>![Eventual Consistency](http://www.cloudcomputingpatterns.org/icons/eventual_consistency_icon.png)  </kbd>     *How can data be distributed among replicas with focus on increased availability and performance, while being resilient towards connectivity problems?*
   -------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -461,7 +459,7 @@ Using multiple replicas of data is vital to ensure resiliency of a storage offer
 
 The consistency of data is relaxed. This reduces the number of replicas that have to be accessed during read and write operations. Data alterations are eventually transferred to all replicas by propagating them asynchronously over the connection network.
 
-![Eventual Consistency](http://www.cloudcomputingpatterns.org/sketches/eventual_consistency_sketch.png) 
+<kbd>![Eventual Consistency](http://www.cloudcomputingpatterns.org/sketches/eventual_consistency_sketch.png)  </kbd>
  
 
 #### Key-Value Storage
@@ -470,7 +468,7 @@ Semi-structured or unstructured data is stored with limited querying support but
 
  
   -------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------
-  ![Key-Value Storage](http://www.cloudcomputingpatterns.org/icons/key_value_storage_icon.png)      *How can key-value elements be stored to support scale out and an adjustable data structure?*
+  <kbd>![Key-Value Storage](http://www.cloudcomputingpatterns.org/icons/key_value_storage_icon.png)   </kbd>    *How can key-value elements be stored to support scale out and an adjustable data structure?*
   -------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------
  
 
@@ -482,7 +480,7 @@ To ensure availability and performance, a data storage offering shall be distrib
 
 Pairs of identifiers (key) and associated data (value) are stored. No database schema or only a very limited one are supported to enforce a data structure. The expressiveness of queries is reduced significantly in favor of scalability and configurability: semi-structured on unstructured data can be scaled out among many IT resources without the need to access many of them for the evaluation of expressive queries.
 
-![Key-Value Storage](http://www.cloudcomputingpatterns.org/sketches/key_value_storage_sketch.png) 
+<kbd>![Key-Value Storage](http://www.cloudcomputingpatterns.org/sketches/key_value_storage_sketch.png)  </kbd>
  
 
 #### Relational Database
@@ -491,7 +489,7 @@ Data is structured according to a schema that is enforced during data manipulati
 
  
   ------------------------------------------------------------------------------------------------------------------------------------------------------------ --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![Relational Database](http://www.cloudcomputingpatterns.org/icons/relational_database_icon.png)      *How can data elements be stored so that relations between them can be expressed and expressive queries are enabled to retrieve required information effectively?*
+  <kbd>![Relational Database](http://www.cloudcomputingpatterns.org/icons/relational_database_icon.png)  </kbd>     *How can data elements be stored so that relations between them can be expressed and expressive queries are enabled to retrieve required information effectively?*
   ------------------------------------------------------------------------------------------------------------------------------------------------------------ --------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -503,7 +501,7 @@ Handled data is often comprised of large numbers of similar data elements. These
 
 Data elements are stored in tables where each column represents an attribute of a data element. Table columns may have dependencies in the way that entries in one table column must also be present in a corresponding column of a different table. These dependencies are enforced during data manipulations.
 
-![Relational Database](http://www.cloudcomputingpatterns.org/sketches/relational_database_sketch.png) 
+<kbd>![Relational Database](http://www.cloudcomputingpatterns.org/sketches/relational_database_sketch.png)  </kbd>
  
 
 #### Strict Consistency
@@ -512,7 +510,7 @@ Data is stored at different locations (replicas) to improve response time and to
 
  
   ---------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------
-  ![Strict Consistency](http://www.cloudcomputingpatterns.org/icons/strict_consistency_icon.png)      *How can data be distributed among replicas to increase availability, while ensuring data consistency at all times?*
+  <kbd>![Strict Consistency](http://www.cloudcomputingpatterns.org/icons/strict_consistency_icon.png)   </kbd>    *How can data be distributed among replicas to increase availability, while ensuring data consistency at all times?*
   ---------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------
  
 
@@ -524,7 +522,7 @@ To ensure failure tolerance, a storage offering duplicates data among multiple r
 
 Data is duplicated among several replicas to increase availability. A subset of data replicas is accessed by read and write operations. The ratio of the number of replicas accessed during read (r) and write (w) operations guarantees consistency: n \< r + w
 
-![Strict Consistency](http://www.cloudcomputingpatterns.org/sketches/strict_consistency_sketch.png) 
+<kbd>![Strict Consistency](http://www.cloudcomputingpatterns.org/sketches/strict_consistency_sketch.png)  </kbd>
  
 
 ### Communication Offerings
@@ -536,7 +534,7 @@ recover from, messages are retransmitted to assure they are delivered at least o
 
  
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -------------------------------------------------------------------------------------------------------------------
-  ![At-least-once Delivery](http://www.cloudcomputingpatterns.org/icons/at_least_once_delivery_icon.png)      *How can communication partners or a Message-oriented Middleware ensure that messages are received successfully?*
+  <kbd>![At-least-once Delivery](http://www.cloudcomputingpatterns.org/icons/at_least_once_delivery_icon.png) </kbd>      *How can communication partners or a Message-oriented Middleware ensure that messages are received successfully?*
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -------------------------------------------------------------------------------------------------------------------
  
 
@@ -548,7 +546,7 @@ Sometimes, message duplicity can be coped with by the application using a [Messa
 
 For each message retrieved by a receiver an acknowledgement is sent back to the message sender. In case this acknowledgement is not received after a certain time frame, the message is resend.
 
-![At-least-once Delivery](http://www.cloudcomputingpatterns.org/sketches/at_least_once_delivery_sketch.png) 
+<kbd>![At-least-once Delivery](http://www.cloudcomputingpatterns.org/sketches/at_least_once_delivery_sketch.png)  </kbd>
  
 
 #### Exactly-once Delivery
@@ -557,7 +555,7 @@ For many critical systems duplicate messages are inacceptable. The messaging sys
 
  
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------
-  ![Exactly-once Delivery](http://www.cloudcomputingpatterns.org/icons/exactly_once_delivery_icon.png)      *How can it be assured that a message is delivered only exactly once to a receiver?*
+  <kbd>![Exactly-once Delivery](http://www.cloudcomputingpatterns.org/icons/exactly_once_delivery_icon.png) </kbd>      *How can it be assured that a message is delivered only exactly once to a receiver?*
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------
  
 
@@ -569,7 +567,7 @@ Message duplicity is a very critical design issue for [Distributed Applications]
 
 Upon creation, each message is associated with a unique message identifier. This identifier is used to filter message duplicates during their traversal from sender to receiver.
 
-![Exactly-once Delivery](http://www.cloudcomputingpatterns.org/sketches/exactly_once_delivery_sketch.png) 
+<kbd>![Exactly-once Delivery](http://www.cloudcomputingpatterns.org/sketches/exactly_once_delivery_sketch.png)  </kbd>
  
 
 #### Message-oriented Middleware
@@ -578,7 +576,7 @@ Asynchronous message-based communication is provided while hiding complexity res
 
  
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------
-  ![Message-oriented Middleware](http://www.cloudcomputingpatterns.org/icons/message_oriented_middleware_icon.png)      *How can communication partners exchange information asynchronously with a communication partner?*
+  <kbd>![Message-oriented Middleware](http://www.cloudcomputingpatterns.org/icons/message_oriented_middleware_icon.png)   </kbd>    *How can communication partners exchange information asynchronously with a communication partner?*
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------
  
 
@@ -591,7 +589,7 @@ Application](http://www.cloudcomputingpatterns.org/distributed_application/)  ar
 
 Communication partners exchange information asynchronously using messages. The message-oriented middleware handles the complexity of addressing, availability of communication partners and message format transformation.
 
-![Message-oriented Middleware](http://www.cloudcomputingpatterns.org/sketches/message_oriented_middleware_sketch.png) 
+<kbd>![Message-oriented Middleware](http://www.cloudcomputingpatterns.org/sketches/message_oriented_middleware_sketch.png)  </kbd>
  
 
 #### Timeout-based Delivery
@@ -600,7 +598,7 @@ Clients acknowledge message receptions to ensure that messages are received prop
 
  
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------ ------------------------------------------------------------------------------------------------------------------------------------
-  ![Timeout-based Delivery](http://www.cloudcomputingpatterns.org/icons/timeout_based_delivery_icon.png)      *How can it be ensured that messages are only deleted from a message queue if they have been received successfully at least once?*
+  <kbd>![Timeout-based Delivery](http://www.cloudcomputingpatterns.org/icons/timeout_based_delivery_icon.png)    </kbd>   *How can it be ensured that messages are only deleted from a message queue if they have been received successfully at least once?*
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------ ------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -612,7 +610,7 @@ In addition to ensuring that messages are not lost while they are traversing a [
 
 To assure that a message is properly received, it is not deleted immediately after it has been read by a client, but is only marked as being invisible. In this state a message may not be read by another client. After a client has successfully read a message, it sends an acknowledgement to the message queue upon which reception the message is deleted.
 
-![Timeout-based Delivery](http://www.cloudcomputingpatterns.org/sketches/timeout_based_delivery_sketch.png) 
+<kbd>![Timeout-based Delivery](http://www.cloudcomputingpatterns.org/sketches/timeout_based_delivery_sketch.png)  </kbd>
  
 
 #### Transaction-based Delivery
@@ -621,7 +619,7 @@ Clients retrieve messages under a transactional context to ensure that messages 
 
  
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------
-  ![Transaction-based Delivery](http://www.cloudcomputingpatterns.org/icons/transaction_based_delivery_icon.png)      *How can it be ensured that messages are only deleted from a message queue if they have been received successfully?*
+  <kbd>![Transaction-based Delivery](http://www.cloudcomputingpatterns.org/icons/transaction_based_delivery_icon.png) </kbd>      *How can it be ensured that messages are only deleted from a message queue if they have been received successfully?*
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------
  
 
@@ -635,7 +633,7 @@ can control traversing messages, it may be necessary to assure that messages are
 The [Message-oriented Middleware](http://www.cloudcomputingpatterns.org/message_oriented_middleware/) 
 and the client reading a message from a queue participate in a transaction. All operations involved in the reception of a message are, therefore, performed under one transactional context guaranteeing ACID behavior.
 
-![Transaction-based Delivery](http://www.cloudcomputingpatterns.org/sketches/transaction_based_delivery_sketch.png) 
+<kbd>![Transaction-based Delivery](http://www.cloudcomputingpatterns.org/sketches/transaction_based_delivery_sketch.png)  </kbd>
  
 
 #### Virtual Networking
@@ -644,7 +642,7 @@ Networking resources are virtualized to empower customers to configure networks,
 
  
   ---------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------
-  ![Virtual Networking](http://www.cloudcomputingpatterns.org/icons/virtual_networking_icon.png)      *How can network connectivity between IT resources hosted in a cloud be configured dynamically and on-demand?*
+  <kbd>![Virtual Networking](http://www.cloudcomputingpatterns.org/icons/virtual_networking_icon.png)   </kbd>    *How can network connectivity between IT resources hosted in a cloud be configured dynamically and on-demand?*
   ---------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------
  
 
@@ -657,7 +655,7 @@ Infrastructures](http://www.cloudcomputingpatterns.org/elastic_infrastructure/) 
 
 Physical networking resources, such as networking interface cards, switches, routers etc. are abstracted to virtualized ones. These Virtual Networking resources may share the same physical networking resources. Configuration is handled by customers through self-service interfaces.
 
-![Virtual Networking](http://www.cloudcomputingpatterns.org/sketches/virtual_networking_sketch.png) 
+<kbd>![Virtual Networking](http://www.cloudcomputingpatterns.org/sketches/virtual_networking_sketch.png)  </kbd>
  
 
 Application Architectures
@@ -669,7 +667,7 @@ An application component is made available in an environment from where it canno
 
  
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------
-  ![Application Component Proxy](http://www.cloudcomputingpatterns.org/icons/application_component_proxy_icon.png)      *How can an application component be accessed if direct access to its hosting environment is restricted?*
+  <kbd>![Application Component Proxy](http://www.cloudcomputingpatterns.org/icons/application_component_proxy_icon.png) </kbd>      *How can an application component be accessed if direct access to its hosting environment is restricted?*
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------
  
 
@@ -681,7 +679,7 @@ Application components of a [Distributed Application](http://www.cloudcomputingp
 
 The interface of a restricted application component is duplicated to form a proxy component. Synchronous and asynchronous communication with this proxy component is initiated and maintained from the restricted environment that may access the unrestricted environment directly.
 
-![Application Component Proxy](http://www.cloudcomputingpatterns.org/sketches/application_component_proxy_sketch.png) 
+<kbd>![Application Component Proxy](http://www.cloudcomputingpatterns.org/sketches/application_component_proxy_sketch.png)  </kbd>
  
 
 ### Batch Processing Component
@@ -690,7 +688,7 @@ Requests are delayed until environmental conditions make their processing feasib
 
  
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------
-  ![Batch Processing Component](http://www.cloudcomputingpatterns.org/icons/batch_processing_component_icon.png)      *How can asynchronous processing requests be delayed to be handled when conditions for their processing are optimal?*
+  <kbd>![Batch Processing Component](http://www.cloudcomputingpatterns.org/icons/batch_processing_component_icon.png)  </kbd>     *How can asynchronous processing requests be delayed to be handled when conditions for their processing are optimal?*
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------
  
 
@@ -702,7 +700,7 @@ Requests are delayed until environmental conditions make their processing feasib
 
 Asynchronous processing requests are accepted at all times, but stored them until conditions are optimal for their processing. Based on the number of stored requests, environmental conditions, and custom rules, components are instantiated to handle the requests. Requests are only processed under non-optimal conditions if they cannot be delayed any longer.
 
-![Batch Processing Component](http://www.cloudcomputingpatterns.org/sketches/batch_processing_component_sketch.png) 
+<kbd>![Batch Processing Component](http://www.cloudcomputingpatterns.org/sketches/batch_processing_component_sketch.png)  </kbd>
  
 
 ### Data Abstractor
@@ -711,7 +709,7 @@ The data provided to users or other application components is abstracted to inhe
 
  
   ---------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![Data Abstractor](http://www.cloudcomputingpatterns.org/icons/data_abstractor_icon.png)      *How can eventually consistent data be presented, so that possible inconsistencies are hidden from other application components and application users?*
+  <kbd>![Data Abstractor](http://www.cloudcomputingpatterns.org/icons/data_abstractor_icon.png)  </kbd>     *How can eventually consistent data be presented, so that possible inconsistencies are hidden from other application components and application users?*
   ---------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -723,7 +721,7 @@ If a [Distributed Application](http://www.cloudcomputingpatterns.org/distributed
 
 The style of data representation is adjusted to allow retrieved data to be eventually consistent. The data representation always reflects that the consistent state is unknown by approximating values or abstracting them into more general ones, such as progress bars, traffic lights, or change tendencies (increase / decrease).
 
-![Data Abstractor](http://www.cloudcomputingpatterns.org/sketches/data_abstractor_sketch.png) 
+<kbd>![Data Abstractor](http://www.cloudcomputingpatterns.org/sketches/data_abstractor_sketch.png)  </kbd>
  
 
 ### Data Access Component
@@ -732,7 +730,7 @@ Functionality to store and access data elements is provided by special component
 
  
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![Data Access Component](http://www.cloudcomputingpatterns.org/icons/data_access_component_icon.png)      *How can the complexity of data storage due to access protocols and data consistency be hidden and isolated while ensuring data structure configurability?*
+  <kbd>![Data Access Component](http://www.cloudcomputingpatterns.org/icons/data_access_component_icon.png) </kbd>      *How can the complexity of data storage due to access protocols and data consistency be hidden and isolated while ensuring data structure configurability?*
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -744,7 +742,7 @@ Handling the complexity of accessing data, i.e., handling of authorization, quer
 
 Access to different data sources is integrated by a Data Access Component. This component coordinates all data manipulation. In case a storage offering shall be replaced or the interface of a storage offering changes, the Data Access Component is the only component that has to be adjusted.
 
-![Data Access Component](http://www.cloudcomputingpatterns.org/sketches/data_access_component_sketch.png) 
+<kbd>![Data Access Component](http://www.cloudcomputingpatterns.org/sketches/data_access_component_sketch.png)  </kbd>
  
 
 ### Dedicated Component
@@ -753,7 +751,7 @@ Components providing critical functionality shall be provided exclusively to ten
 
  
   ------------------------------------------------------------------------------------------------------------------------------------------------------------ -------------------------------------------------------------------------------------------------------
-  ![Dedicated Component](http://www.cloudcomputingpatterns.org/icons/dedicated_component_icon.png)      *How can application components that cannot be shared be integrated into a multi-tenant application?*
+  <kbd>![Dedicated Component](http://www.cloudcomputingpatterns.org/icons/dedicated_component_icon.png) </kbd>      *How can application components that cannot be shared be integrated into a multi-tenant application?*
   ------------------------------------------------------------------------------------------------------------------------------------------------------------ -------------------------------------------------------------------------------------------------------
  
 
@@ -765,7 +763,7 @@ A [Distributed Application](http://www.cloudcomputingpatterns.org/distributed_ap
 
 Dedicated application components are provided exclusively for each tenant using the application.
 
-![Dedicated Component](http://www.cloudcomputingpatterns.org/sketches/dedicated_component_sketch.png) 
+<kbd>![Dedicated Component](http://www.cloudcomputingpatterns.org/sketches/dedicated_component_sketch.png)  </kbd>
  
 
 ### Distributed Application
@@ -774,7 +772,7 @@ A cloud application divides provided functionality among multiple application co
 
  
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------
-  ![Distributed Application](http://www.cloudcomputingpatterns.org/icons/distributed_application_icon.png)      *How can application functionality be decomposed to be handled by separate application components?*
+  <kbd>![Distributed Application](http://www.cloudcomputingpatterns.org/icons/distributed_application_icon.png)   </kbd>    *How can application functionality be decomposed to be handled by separate application components?*
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------
  
 
@@ -787,17 +785,16 @@ Applications have to respect the distribution and the scaling-out support of clo
 
 The functionality of the application is divided into multiple independent components that provide a certain function. This componentization of application functionality introduces a logical decomposition of the application. These logical components are subsumed to multiple tiers to denote that they shall be deployed together physically, i.e., on one server (cluster).
 
-![Distributed Application](http://www.cloudcomputingpatterns.org/sketches/distributed_application_sketch_1.png) 
+<kbd>![Distributed Application](http://www.cloudcomputingpatterns.org/sketches/distributed_application_sketch_1.png)  </kbd> 
  
 
 Layer-based decomposition divides the application into separate logical layers. Components are restricted to access components of the same layer or one layer below.
 
-![Distributed Application](http://www.cloudcomputingpatterns.org/sketches/distributed_application_sketch_2.png) 
- 
+<kbd>![Distributed Application](http://www.cloudcomputingpatterns.org/sketches/distributed_application_sketch_2.png)  </kbd>
 
 Process-based decomposition focuses on the business processes supported by the application. These processes are comprised out of activities that are executed in a specific order. Functionality is divided into components with respect to the supported business activity.
 
-![Distributed Application](http://www.cloudcomputingpatterns.org/sketches/distributed_application_sketch_3.png) 
+<kbd>![Distributed Application](http://www.cloudcomputingpatterns.org/sketches/distributed_application_sketch_3.png)  </kbd>
  
 
 Pipes-and-filters-based decomposition focues on for data-centric processing of an application. Each filter provides a certain function that is performed on input data and produces output data after processing. Multiple filters are interconnected with pipes, i.e, through messaging.
@@ -808,7 +805,7 @@ Application functions detect duplicate messages and inconsistent data or are des
 
  
   -------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------
-  ![Idempotent Processor](http://www.cloudcomputingpatterns.org/icons/idempotent_processor_icon.png)      *How can an application component cope with message duplicates or data inconsistencies that could lead to duplicate function execution?*
+  <kbd>![Idempotent Processor](http://www.cloudcomputingpatterns.org/icons/idempotent_processor_icon.png)  </kbd>     *How can an application component cope with message duplicates or data inconsistencies that could lead to duplicate function execution?*
   -------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -821,7 +818,7 @@ Offerings](http://www.cloudcomputingpatterns.org/cloud_offerings/#storage_offeri
 
 The Idempotent Processor ensures that duplicate messages and inconsistent data do not affect application functionality either through inconsistency detection identifying message duplicates and data inconsistencies or through idempotent semantics of application functions enabling them to be erroneously executed multiple times with the same outcome.
 
-![Idempotent Processor](http://www.cloudcomputingpatterns.org/sketches/idempotent_processor_sketch.png) 
+<kbd>![Idempotent Processor](http://www.cloudcomputingpatterns.org/sketches/idempotent_processor_sketch.png)  </kbd>
  
 
 ### Integration Provider
@@ -830,7 +827,7 @@ Integration functionality such as messaging and shared data is hosted by a separ
 
  
   -------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![Integration Provider](http://www.cloudcomputingpatterns.org/icons/integration_provider_icon.png)      *How can application components that reside in different environments, possibly belonging to different companies, be integrated through a third-party provider?*
+  <kbd>![Integration Provider](http://www.cloudcomputingpatterns.org/icons/integration_provider_icon.png)  </kbd>     *How can application components that reside in different environments, possibly belonging to different companies, be integrated through a third-party provider?*
   -------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -842,7 +839,7 @@ When companies collaborate or one company has to integrate applications of diffe
 
 The Distributed Applications or their components communicate using integration components offered by a third party provider.
 
-![Integration Provider](http://www.cloudcomputingpatterns.org/sketches/integration_provider_sketch.png) 
+<kbd>![Integration Provider](http://www.cloudcomputingpatterns.org/sketches/integration_provider_sketch.png)  </kbd>
  
 
 ### Loose Coupling
@@ -851,7 +848,7 @@ A communication intermediary separates application functionality from concerns o
 
  
   -------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------
-  ![Loose Coupling](http://www.cloudcomputingpatterns.org/icons/loose_coupling_icon.png)      *How can dependencies between Distributed Applications and between individual components of these applications be reduced?*
+  <kbd>![Loose Coupling](http://www.cloudcomputingpatterns.org/icons/loose_coupling_icon.png)   </kbd>    *How can dependencies between Distributed Applications and between individual components of these applications be reduced?*
   -------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------
  
 
@@ -863,7 +860,7 @@ Information exchange between applications and their individual components as wel
 
 Communicating components and multiple integrated applications are decoupled from each other by interacting through a broker. This broker encapsulates the assumptions that communication partners would otherwise have to make about one other and, thus, ensures separation of concerns.
 
-![Loose Coupling](http://www.cloudcomputingpatterns.org/sketches/loose_coupling_sketch.png) 
+<kbd>![Loose Coupling](http://www.cloudcomputingpatterns.org/sketches/loose_coupling_sketch.png)  </kbd>
  
 
 ### Message Mover
@@ -872,7 +869,7 @@ Messages are moved automatically between different cloud providers to provide un
 
  
   ------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------------------------------------------------------------------------------------------------
-  ![Message Mover](http://www.cloudcomputingpatterns.org/icons/message_mover_icon.png)      *How can message queues of different providers be integrated without an impact on the application components using them?*
+  <kbd>![Message Mover](http://www.cloudcomputingpatterns.org/icons/message_mover_icon.png)  </kbd>    *How can message queues of different providers be integrated without an impact on the application components using them?*
   ------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------------------------------------------------------------------------------------------------
  
 
@@ -884,7 +881,7 @@ The application components comprising a [Distributed Application](http://www.clo
 
 A Message Mover is used to integrate message queues hosted in different environments by receiving messages from one queue and transferring it to a queue in other environments.
 
-![Message Mover](http://www.cloudcomputingpatterns.org/sketches/message_mover_sketch.png) 
+<kbd>![Message Mover](http://www.cloudcomputingpatterns.org/sketches/message_mover_sketch.png)  </kbd>
  
 
 ### Multi-Component Image
@@ -893,7 +890,7 @@ Virtual servers host multiple application components that may not be active at a
 
  
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------
-  ![Multi-Component Image](http://www.cloudcomputingpatterns.org/icons/multi_component_image_icon.png)      *How can a virtual server provide the functionality of multiple application components to be used flexibly in applications?*
+  <kbd>![Multi-Component Image](http://www.cloudcomputingpatterns.org/icons/multi_component_image_icon.png) </kbd>      *How can a virtual server provide the functionality of multiple application components to be used flexibly in applications?*
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -905,7 +902,7 @@ A [Distributed Application](http://www.cloudcomputingpatterns.org/distributed_ap
 
 Multiple application components (possibly including middleware) are hosted on a single virtual server to ensure that running virtual servers may be used for different purposes without making provisioning or decommissioning operations necessary.
 
-![Multi-Component Image](http://www.cloudcomputingpatterns.org/sketches/multi_component_image_sketch.png) 
+<kbd>![Multi-Component Image](http://www.cloudcomputingpatterns.org/sketches/multi_component_image_sketch.png)  </kbd>
  
 
 ### Processing Component
@@ -914,7 +911,7 @@ Possibly long running processing functionality is handled by separate components
 
  
   -------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![Processing Component](http://www.cloudcomputingpatterns.org/icons/processing_component_icon.png)      *How can processing be scaled out elastically among distributed resources while being configurable regarding the supported functions to meet different customers' requirements?*
+  <kbd>![Processing Component](http://www.cloudcomputingpatterns.org/icons/processing_component_icon.png)   </kbd>    *How can processing be scaled out elastically among distributed resources while being configurable regarding the supported functions to meet different customers' requirements?*
   -------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -926,7 +923,7 @@ The processing functionality offered by an application shall be handled by diffe
 
 Processing functionality is split into separate function blocks and assigned to independent Processing Components. Each processing component is scaled out independently and is implemented in a stateless fashion as described in the [Stateless Component](http://www.cloudcomputingpatterns.org/stateless_component/)  pattern. Scaling is handled by an [Elastic Queue](http://www.cloudcomputingpatterns.org/elastic_queue/). Data required for processing is provided with requests or by [Storage Offerings](http://www.cloudcomputingpatterns.org/cloud_offerings/#storage_offerings).
 
-![Processing Component](http://www.cloudcomputingpatterns.org/sketches/processing_component_sketch.png) 
+<kbd>![Processing Component](http://www.cloudcomputingpatterns.org/sketches/processing_component_sketch.png)  </kbd>
  
 
 ### Restricted Data Access Component
@@ -935,7 +932,7 @@ Data provided to clients from different environments is adjusted based on access
 
  
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------
-  ![Restricted Data Access Component](http://www.cloudcomputingpatterns.org/icons/restricted_data_access_component_icon.png)      *How can an application component alter provided data based on access restrictions imposed on different environments?*
+  <kbd>![Restricted Data Access Component](http://www.cloudcomputingpatterns.org/icons/restricted_data_access_component_icon.png)  </kbd>      *How can an application component alter provided data based on access restrictions imposed on different environments?*
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------
  
 
@@ -947,7 +944,7 @@ A [Distributed Application](http://www.cloudcomputingpatterns.org/distributed_ap
 
 Data storage restrictions and access privileges are defined for each data element. Access to these data elements is provided by separate Restricted Data Access Components that interpret the information associated with data elements. It adjusts data accordingly through deletion or obfuscation during every access.
 
-![Restricted Data Access Component](http://www.cloudcomputingpatterns.org/sketches/restricted_data_access_component_sketch.png) 
+<kbd>![Restricted Data Access Component](http://www.cloudcomputingpatterns.org/sketches/restricted_data_access_component_sketch.png)  </kbd>
  
 
 ### Shared Component
@@ -956,7 +953,7 @@ A component is accessed by multiple tenants to leverage economies of scale.
 
  
   ------------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------------------------------------------------------------------------------------
-  ![Shared Component](http://www.cloudcomputingpatterns.org/icons/shared_component_icon.png)      *How can an application component be shared between multiple tenants enabling some individual configuration?*
+  <kbd>![Shared Component](http://www.cloudcomputingpatterns.org/icons/shared_component_icon.png)  </kbd>     *How can an application component be shared between multiple tenants enabling some individual configuration?*
   ------------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------------------------------------------------------------------------------------
  
 
@@ -968,7 +965,7 @@ A [Distributed Application](http://www.cloudcomputingpatterns.org/distributed_ap
 
 A Shared Component provides functionality that is equal for all tenants accessing the component. All tenants can be treated as a uniform user group to which a common user experience and service level is guaranteed.
 
-![Shared Component](http://www.cloudcomputingpatterns.org/sketches/shared_component_sketch.png) 
+<kbd>![Shared Component](http://www.cloudcomputingpatterns.org/sketches/shared_component_sketch.png)  </kbd>
  
 
 ### Stateful Component
@@ -976,7 +973,7 @@ A Shared Component provides functionality that is equal for all tenants accessin
 Multiple instances of a scaled-out application component synchronize their internal state to provide a unified behavior.
  
   ---------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------
-  ![Stateful Component](http://www.cloudcomputingpatterns.org/icons/stateful_component_icon.png)      *How can applications components that are scaled-out maintain a synchronized internal state?*
+  <kbd>![Stateful Component](http://www.cloudcomputingpatterns.org/icons/stateful_component_icon.png)    </kbd>   *How can applications components that are scaled-out maintain a synchronized internal state?*
   ---------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------
  
 
@@ -988,7 +985,7 @@ To benefit from a distributed cloud runtime environment, components of a [Distri
 
 The internal state maintained by application component instances is replicated among all instances. Only small portions of shared information are used, for example, a configuration file stored centrally or configurations send by clients with every request.
 
-![Stateful Component](http://www.cloudcomputingpatterns.org/sketches/stateful_component_sketch.png) 
+<kbd>![Stateful Component](http://www.cloudcomputingpatterns.org/sketches/stateful_component_sketch.png)  </kbd>
  
 
 ### Stateless Component
@@ -997,7 +994,7 @@ State is handled external of application components to ease their scaling-out an
 
  
   ------------------------------------------------------------------------------------------------------------------------------------------------------------ -------------------------------------------------------------------------------
-  ![Stateless Component](http://www.cloudcomputingpatterns.org/icons/stateless_component_icon.png)      *How can elasticity and robustness of an application component be increased?*
+  <kbd>![Stateless Component](http://www.cloudcomputingpatterns.org/icons/stateless_component_icon.png)   </kbd>    *How can elasticity and robustness of an application component be increased?*
   ------------------------------------------------------------------------------------------------------------------------------------------------------------ -------------------------------------------------------------------------------
  
 
@@ -1009,7 +1006,7 @@ The components of a [Distributed Application](http://www.cloudcomputingpatterns.
 
 Application components are implemented in a fashion that they do not have an internal state. Instead, their state and configuration is stored externally in [Storage Offerings](http://www.cloudcomputingpatterns.org/cloud_offerings/#storage_offerings) or provided to the component with each request.
 
-![Stateless Component](http://www.cloudcomputingpatterns.org/sketches/stateless_component_sketch.png) 
+<kbd>![Stateless Component](http://www.cloudcomputingpatterns.org/sketches/stateless_component_sketch.png)  </kbd>
  
 
 ### Tenant-isolated Component
@@ -1018,7 +1015,7 @@ A component shared between tenants avoids influences between tenants regarding a
 
  
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![Tenant-isolated Component](http://www.cloudcomputingpatterns.org/icons/tenant_isolated_component_icon.png)      *How can an application component be shared between multiple tenants enabling individual configuration and tenant-isolation regarding performance, data volume, and access privileges?*
+  <kbd>![Tenant-isolated Component](http://www.cloudcomputingpatterns.org/icons/tenant_isolated_component_icon.png)  </kbd>     *How can an application component be shared between multiple tenants enabling individual configuration and tenant-isolation regarding performance, data volume, and access privileges?*
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -1030,7 +1027,7 @@ A [Distributed Application](http://www.cloudcomputingpatterns.org/distributed_ap
 
 Components on all layers of the application stack are specifically developed to be used by different tenants. Especially, they ensure isolation between tenants by controlling tenant access, processing performance used, and separation of stored data.
 
-![Tenant-isolated Component](http://www.cloudcomputingpatterns.org/sketches/tenant_isolated_component_sketch.png) 
+<kbd>![Tenant-isolated Component](http://www.cloudcomputingpatterns.org/sketches/tenant_isolated_component_sketch.png)  </kbd>
  
 
 ### Transaction-based Processor
@@ -1039,7 +1036,7 @@ Components receive messages or read data and process the obtained information un
 
  
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![Transaction-based Processor](http://www.cloudcomputingpatterns.org/icons/transaction_based_processor_icon.png)      *How can an application component ensure that all messages it receives are processed successfully and altered data is persisted successfully after processing?*
+  <kbd>![Transaction-based Processor](http://www.cloudcomputingpatterns.org/icons/transaction_based_processor_icon.png)  </kbd>    *How can an application component ensure that all messages it receives are processed successfully and altered data is persisted successfully after processing?*
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -1057,7 +1054,7 @@ processing of that received message.
 
 Transaction-based Delivery subsumes reading the message from a queue and deleting it from a queue in one transaction. The Transaction-based Processor extends the transactional context to the processing of the message in the receiver. Analogous, if interacting with a storage offering, the Transaction-based Processor reads, processes and writes data in one transactional context.
 
-![Transaction-based Processor](http://www.cloudcomputingpatterns.org/sketches/transaction_based_processor_sketch.png) 
+<kbd>![Transaction-based Processor](http://www.cloudcomputingpatterns.org/sketches/transaction_based_processor_sketch.png)  </kbd>
  
 
 ### Timeout-based Message Processor
@@ -1066,7 +1063,7 @@ Clients acknowledge message receptions and processing to ensure that all message
 
  
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ----------------------------------------------------------------------------------------------------------------------------------------
-  ![Timeout-based Message Processor](http://www.cloudcomputingpatterns.org/icons/timeout_based_message_processor_icon.png)      *How can an application process messages while guaranteeing that all messages handled by the application are processed at-least-once?*
+  <kbd>![Timeout-based Message Processor](http://www.cloudcomputingpatterns.org/icons/timeout_based_message_processor_icon.png)   </kbd>    *How can an application process messages while guaranteeing that all messages handled by the application are processed at-least-once?*
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ----------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -1078,7 +1075,7 @@ A [Message-oriented Middleware](http://www.cloudcomputingpatterns.org/message_or
 
 Instead of sending an acknowledgement right after receiving a message, a timeout-based message processor sends this acknowledgement after it has successfully processed the message.
 
-![Timeout-based Message Processor](http://www.cloudcomputingpatterns.org/sketches/timeout_based_message_processor_sketch.png) 
+<kbd>![Timeout-based Message Processor](http://www.cloudcomputingpatterns.org/sketches/timeout_based_message_processor_sketch.png)  </kbd>
  
 
 ### User Interface Component
@@ -1087,7 +1084,7 @@ Interactive synchronous access to applications is provided to humans, while appl
 
  
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------
-  ![User Interface Component](http://www.cloudcomputingpatterns.org/icons/user_interface_component_icon.png)      *How can User Interface Components be accessed interactively by humans while being configurable and decoupled from the remaining application?*
+  <kbd>![User Interface Component](http://www.cloudcomputingpatterns.org/icons/user_interface_component_icon.png)   </kbd>    *How can User Interface Components be accessed interactively by humans while being configurable and decoupled from the remaining application?*
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -1099,7 +1096,7 @@ User Interface Component instances part of a [Distributed Application](http://ww
 
 The User Interface Component serves as a bridge between the synchronous access of the human user and the asynchronous communication used with other application components. State information held externally, as described by the [Stateless Component](http://www.cloudcomputingpatterns.org/stateless_component/) pattern. It is, therefore, attached to requests, may be held in a part of the user interface that is deployed on the user's access device, or may be obtained from external storage. Instances of User Interface Components are scaled based on the number of synchronous requests to is as described by the [Elastic Load Balancer](http://www.cloudcomputingpatterns.org/elastic_load_balancer/) pattern.
 
-![User Interface Component](http://www.cloudcomputingpatterns.org/sketches/user_interface_component_sketch.png) 
+<kbd>![User Interface Component](http://www.cloudcomputingpatterns.org/sketches/user_interface_component_sketch.png)  </kbd>
  
 
 Application Management
@@ -1111,7 +1108,7 @@ The number of synchronous accesses to an elastically scaled-out application is u
 
  
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------
-  ![Elastic Load Balancer](http://www.cloudcomputingpatterns.org/icons/elastic_load_balancer_icon.png)      *How can the number of required application component instances be determined based on monitored synchronous accesses?*
+  <kbd>![Elastic Load Balancer](http://www.cloudcomputingpatterns.org/icons/elastic_load_balancer_icon.png)  </kbd>     *How can the number of required application component instances be determined based on monitored synchronous accesses?*
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------
  
 
@@ -1123,7 +1120,7 @@ Application components of a [Distributed Application](http://www.cloudcomputingp
 
 Based on the number of synchronous requests handled by a load balancer and possibly other utilization information, the required number of required component instances is determined.
 
-![Elastic Load Balancer](http://www.cloudcomputingpatterns.org/sketches/elastic_load_balancer_sketch.png) 
+<kbd>![Elastic Load Balancer](http://www.cloudcomputingpatterns.org/sketches/elastic_load_balancer_sketch.png)  </kbd>
  
 
 ### Elastic Queue
@@ -1132,7 +1129,7 @@ The number of asynchronous accesses via messaging to an elastically scaled-out a
 
  
   ------------------------------------------------------------------------------------------------------------------------------------------------ ------------------------------------------------------------------------------------------------------------------------
-  ![Elastic Queue](http://www.cloudcomputingpatterns.org/icons/elastic_queue_icon.png)      *How can the number of required application component instances be adjusted based on monitored asynchronous accesses?*
+  <kbd>![Elastic Queue](http://www.cloudcomputingpatterns.org/icons/elastic_queue_icon.png) </kbd>      *How can the number of required application component instances be adjusted based on monitored asynchronous accesses?*
   ------------------------------------------------------------------------------------------------------------------------------------------------ ------------------------------------------------------------------------------------------------------------------------
  
 
@@ -1144,7 +1141,7 @@ A [Distributed Application](http://www.cloudcomputingpatterns.org/distributed_ap
 
 Queues that are used to distribute asynchronous requests among multiple application components instances are monitored. Based on the number of enqueued messages the Elastic Queue adjusts the number of application component instances handling these requests.
 
-![Elastic Queue](http://www.cloudcomputingpatterns.org/sketches/elastic_queue_sketch.png) 
+<kbd>![Elastic Queue](http://www.cloudcomputingpatterns.org/sketches/elastic_queue_sketch.png)  </kbd>
  
 
 ### Elasticity Manager
@@ -1153,7 +1150,7 @@ The utilization of IT resources on which an elastically scaled-out application i
 
  
   ---------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------
-  ![Elasticity Manager](http://www.cloudcomputingpatterns.org/icons/elasticity_manager_icon.png)      *How can the number of required application component instances be determined based on the utilization of hosting IT resources?*
+  <kbd>![Elasticity Manager](http://www.cloudcomputingpatterns.org/icons/elasticity_manager_icon.png)   </kbd>    *How can the number of required application component instances be determined based on the utilization of hosting IT resources?*
   ---------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -1165,7 +1162,7 @@ Application components of a [Distributed Application](http://www.cloudcomputingp
 
 The utilization of cloud resources on which application component instances are deployed is monitored. This could be, for example, the CPU load of a virtual server. This information is used to determine the number of required instances.
 
-![Elasticity Manager](http://www.cloudcomputingpatterns.org/sketches/elasticity_manager_sketch.png) 
+<kbd>![Elasticity Manager](http://www.cloudcomputingpatterns.org/sketches/elasticity_manager_sketch.png)  </kbd>
  
 
 ### Elasticity Management Process
@@ -1174,7 +1171,7 @@ Application component instances are added automatically to an application to cop
 
  
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![Elasticity Management Process](http://www.cloudcomputingpatterns.org/icons/elasticity_management_process_icon.png)      *How can the number of resources to which application components are scaled-out be adjusted efficiently to the currently experienced workload and anticipated future workload?*
+  <kbd>![Elasticity Management Process](http://www.cloudcomputingpatterns.org/icons/elasticity_management_process_icon.png) </kbd>      *How can the number of resources to which application components are scaled-out be adjusted efficiently to the currently experienced workload and anticipated future workload?*
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -1186,7 +1183,7 @@ A [Distributed Application](http://www.cloudcomputingpatterns.org/distributed_ap
 
 An Elasticity Management Process analyzes the utilization of application component instances in intervals, when a system manager requests it, or if certain conditions are observed by the monitoring component. Based on this information, the current workload of the application is computed and reflected by adjusting used resources.
 
-![Elasticity Management Process](http://www.cloudcomputingpatterns.org/sketches/elasticity_management_process_sketch.png) 
+<kbd>![Elasticity Management Process](http://www.cloudcomputingpatterns.org/sketches/elasticity_management_process_sketch.png)  </kbd>
  
 
 ### Feature Flag Management Process
@@ -1195,7 +1192,7 @@ If the cloud cannot provide required resources in time, the features provided by
 
  
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![Feature Flag Management Process](http://www.cloudcomputingpatterns.org/icons/feature_flag_management_process_icon.png)      *How can the performance of an application degrade gracefully, if the experienced workload increases but additional cloud resources are unavailable or take too long to provision?*
+  <kbd>![Feature Flag Management Process](http://www.cloudcomputingpatterns.org/icons/feature_flag_management_process_icon.png)  </kbd>     *How can the performance of an application degrade gracefully, if the experienced workload increases but additional cloud resources are unavailable or take too long to provision?*
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -1207,7 +1204,7 @@ While the elasticity of clouds generally allows a tight alignment of resource nu
 
 Less important application functionality provided by application component instances is disabled or replaced with a less demanding implementation, if the cloud provider cannot fulfill current workload demands. When resources can eventually be provisioned again, the application components return to normal operation.
 
-![Feature Flag Management Process](http://www.cloudcomputingpatterns.org/sketches/feature_flag_management_process_sketch.png) 
+<kbd>![Feature Flag Management Process](http://www.cloudcomputingpatterns.org/sketches/feature_flag_management_process_sketch.png)  </kbd>
  
 
 ### Managed Configuration
@@ -1216,7 +1213,7 @@ Scaled-out application components should use a centrally stored configuration to
 
  
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------
-  ![Managed Configuration](http://www.cloudcomputingpatterns.org/icons/managed_configuration_icon.png)      *How can the configuration of scaled out application component instances be controlled in a coordinated fashion?*
+  <kbd>![Managed Configuration](http://www.cloudcomputingpatterns.org/icons/managed_configuration_icon.png)   </kbd>    *How can the configuration of scaled out application component instances be controlled in a coordinated fashion?*
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------
  
 
@@ -1228,7 +1225,7 @@ Application components of a [Distributed Application](http://www.cloudcomputingp
 
 Configurations are stored in a central [Storage Offering](http://www.cloudcomputingpatterns.org/cloud_offerings/#storage_offerings), commonly, a [Relational Database](http://www.cloudcomputingpatterns.org/relational_database/), [Key-Value Storage](http://www.cloudcomputingpatterns.org/key_value_storage/), or [Blob Storage](http://www.cloudcomputingpatterns.org/blob_storage/) from where it is accessed by all running component instances either by accessing the storage periodically or by sending messages to the components.
 
-![Managed Configuration](http://www.cloudcomputingpatterns.org/sketches/managed_configuration_sketch.png) 
+<kbd>![Managed Configuration](http://www.cloudcomputingpatterns.org/sketches/managed_configuration_sketch.png)  </kbd>
  
 
 ### Provider Adapter
@@ -1237,7 +1234,7 @@ Provider interfaces are encapsulated and mapped to unified interfaces used in ap
 
  
   ------------------------------------------------------------------------------------------------------------------------------------------------------ -----------------------------------------------------------------------------------------------------
-  ![Provider Adapter](http://www.cloudcomputingpatterns.org/icons/provider_adapter_icon.png)      *How can the dependencies of an application component on a provider-specific interface be managed?*
+  <kbd>![Provider Adapter](http://www.cloudcomputingpatterns.org/icons/provider_adapter_icon.png)  </kbd>     *How can the dependencies of an application component on a provider-specific interface be managed?*
   ------------------------------------------------------------------------------------------------------------------------------------------------------ -----------------------------------------------------------------------------------------------------
  
 
@@ -1249,10 +1246,10 @@ Cloud providers offer many interfaces that can be used in application components
 
 The Provider Adapter encapsulates all provider-specific implementations required for authentication, data formatting etc. in an abstract interface. The Provider Adapter , thus, ensures separation of concerns between application components accessing provider functionality and application components providing application functionality. It may also offer synchronous provider-interfaces to be accessed asynchronously via messages and vice versa.
 
-![Provider Adapter](http://www.cloudcomputingpatterns.org/sketches/provider_adapter_sketch_1.png) 
+<kbd>![Provider Adapter](http://www.cloudcomputingpatterns.org/sketches/provider_adapter_sketch_1.png)  </kbd>
  
 
-![Provider Adapter](http://www.cloudcomputingpatterns.org/sketches/provider_adapter_sketch_2.png) 
+<kbd>![Provider Adapter](http://www.cloudcomputingpatterns.org/sketches/provider_adapter_sketch_2.png)  </kbd>
  
 
 ### Resiliency Management Process
@@ -1261,7 +1258,7 @@ Application components are checked for failures and replaced automatically witho
 
  
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------
-  ![Resiliency Management Process](http://www.cloudcomputingpatterns.org/icons/resiliency_management_process_icon.png)      *How can the overall availability of an application be ensured automatically even if individual application component instances fail?*
+  <kbd>![Resiliency Management Process](http://www.cloudcomputingpatterns.org/icons/resiliency_management_process_icon.png)   </kbd>    *How can the overall availability of an application be ensured automatically even if individual application component instances fail?*
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -1274,7 +1271,7 @@ A
 
 This process is triggered by the monitoring functionality or by the[Watchdog](http://www.cloudcomputingpatterns.org/watchdog/) if it detects a component failure. Additionally, the Resiliency Management Process periodically verifies application component health. If a failure is detected, the faulty application component instance is decommissioned and replaced by a newly provisioned instance.
 
-![Resiliency Management Process](http://www.cloudcomputingpatterns.org/sketches/resiliency_management_process_sketch.png) 
+<kbd>![Resiliency Management Process](http://www.cloudcomputingpatterns.org/sketches/resiliency_management_process_sketch.png)  </kbd>
  
 
 ### Standby Pooling Process
@@ -1283,7 +1280,7 @@ Application component instances should be kept on standby to increase provisioni
 
  
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------
-  ![Standby Pooling Process](http://www.cloudcomputingpatterns.org/icons/standby_pooling_process_icon.png)      *How can defined provisioning times for application component instances be ensured while utilizing pay-per-use resources in an optimal fashion?*
+  <kbd>![Standby Pooling Process](http://www.cloudcomputingpatterns.org/icons/standby_pooling_process_icon.png)   </kbd>    *How can defined provisioning times for application component instances be ensured while utilizing pay-per-use resources in an optimal fashion?*
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -1295,10 +1292,10 @@ Even though application component instances may be provisioned and decommissione
 
 Instead of decommissioning application component instances instantly when they are unused, they are assigned to a standby list They are decommissioned only when the time-slot they have been paid for has been utilized and they are still not needed. The standby list may always contain a certain number of component instances to ensure timely provisioning.
 
-![Standby Pooling Process](http://www.cloudcomputingpatterns.org/sketches/standby_pooling_process_sketch_1.png) 
+<kbd>![Standby Pooling Process](http://www.cloudcomputingpatterns.org/sketches/standby_pooling_process_sketch_1.png)  </kbd>
  
 
-![Standby Pooling Process](http://www.cloudcomputingpatterns.org/sketches/standby_pooling_process_sketch_2.png) 
+<kbd>![Standby Pooling Process](http://www.cloudcomputingpatterns.org/sketches/standby_pooling_process_sketch_2.png)  </kbd>
  
 
 ### Update Transition Process
@@ -1307,7 +1304,7 @@ When a new application component version, middleware versions etc. become availa
 
  
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ --------------------------------------------------------------------------------------
-  ![Update Transition Process](http://www.cloudcomputingpatterns.org/icons/update_transition_process_icon.png)      *How can application components of a Distributed Application be updated seamlessly?*
+  <kbd>![Update Transition Process](http://www.cloudcomputingpatterns.org/icons/update_transition_process_icon.png)   </kbd>    *How can application components of a Distributed Application be updated seamlessly?*
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ --------------------------------------------------------------------------------------
  
 
@@ -1319,7 +1316,7 @@ During the runtime of a [Distributed Application](http://www.cloudcomputingpatte
 
 The new component version is created. Additional application component instances of the new version are provisioned. These components are executed simultaneously with the application components of the old version. If necessary, load balancing is then switched to the component instances of the new version. If the application components access a queue, this step is unnecessary. Finally, the old application component instances are decommissioned.
 
-![Update Transition Process](http://www.cloudcomputingpatterns.org/sketches/update_transition_process_sketch.png) 
+<kbd>![Update Transition Process](http://www.cloudcomputingpatterns.org/sketches/update_transition_process_sketch.png)  </kbd>
  
 
 ### Watchdog
@@ -1328,7 +1325,7 @@ Applications cope with failures automatically by monitoring and replacing applic
 
  
   -------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------
-  ![Watchdog](http://www.cloudcomputingpatterns.org/icons/watchdog_icon.png)      *How can applications automatically detect failing application components and handle their replacement?*
+  <kbd>![Watchdog](http://www.cloudcomputingpatterns.org/icons/watchdog_icon.png)  </kbd>     *How can applications automatically detect failing application components and handle their replacement?*
   -------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------
  
 
@@ -1340,7 +1337,7 @@ If a [Distributed Application](http://www.cloudcomputingpatterns.org/distributed
 
 Individual application components rely on external state information by implementing the [Stateless Component](http://www.cloudcomputingpatterns.org/stateless_component/) pattern. Components are scaled out and multiple instances of them are deployed to redundant resources. The component instances are monitored by a separate Watchdog component and replaced in case of failures.
 
-![Watchdog](http://www.cloudcomputingpatterns.org/sketches/watchdog_sketch.png) 
+<kbd>![Watchdog](http://www.cloudcomputingpatterns.org/sketches/watchdog_sketch.png)  </kbd>
  
 
 Cloud Applications
@@ -1352,7 +1349,7 @@ Applications component instances and data handled by them are globally distribut
 
  
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------------------------------------------------------------------
-  ![Content Distribution Network](http://www.cloudcomputingpatterns.org/icons/content_distribution_network_icon.png)      *How can timely access to an application be ensured for a globally distributed user group?*
+  <kbd>![Content Distribution Network](http://www.cloudcomputingpatterns.org/icons/content_distribution_network_icon.png) </kbd>      *How can timely access to an application be ensured for a globally distributed user group?*
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------------------------------------------------------------------
  
 
@@ -1364,7 +1361,7 @@ If the application provides multimedia content to users, for example, streamed v
 
 Content replicas are established in different physical locations of one or multiple clouds. During this distribution of replicas, the topology of distribution networks is considered to ensure locality for all users. Replicas are updated from a central location.
 
-![Content Distribution Network](http://www.cloudcomputingpatterns.org/sketches/content_distribution_network_sketch.png) 
+<kbd>![Content Distribution Network](http://www.cloudcomputingpatterns.org/sketches/content_distribution_network_sketch.png)  </kbd>
  
 
 ### Hybrid Application Functions
@@ -1373,7 +1370,7 @@ Some application functionality provided by user interfaces, processing, and data
 
  
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -------------------------------------------------------------------------------------------------------------------------------------------------
-  ![Hybrid Application Functions](http://www.cloudcomputingpatterns.org/icons/hybrid_application_functions_icon.png)      *How can arbitrary functionality of an application be distributed among static data centers and elastic clouds best matching its requirements?*
+  <kbd>![Hybrid Application Functions](http://www.cloudcomputingpatterns.org/icons/hybrid_application_functions_icon.png) </kbd>      *How can arbitrary functionality of an application be distributed among static data centers and elastic clouds best matching its requirements?*
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -1385,7 +1382,7 @@ Application components comprising a [Distributed Application](http://www.cloudco
 
 Application components are grouped regarding similar requirements and are deployed into best fitting environments. Interdependencies between the components are reduced by exchanging data using asynchronous messaging to ensure [Loose Coupling](http://www.cloudcomputingpatterns.org/loose_coupling/). Depending on the accessed function, a load balancer redirects user accesses to the different environments seamlessly.
 
-![Hybrid Application Functions](http://www.cloudcomputingpatterns.org/sketches/hybrid_application_functions_sketch.png) 
+<kbd>![Hybrid Application Functions](http://www.cloudcomputingpatterns.org/sketches/hybrid_application_functions_sketch.png)  </kbd>
  
 
 ### Hybrid Backend
@@ -1394,7 +1391,7 @@ Backend functionality comprised of data intensive processing and data storage is
 
  
   -------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![Hybrid Backend](http://www.cloudcomputingpatterns.org/icons/hybrid_backend_icon.png)      *How can Processing Components that experience varying workload and need access to large amounts of data be hosted in an elastic environment while the remainder of the application is hosted in a static environment?*
+  <kbd>![Hybrid Backend](http://www.cloudcomputingpatterns.org/icons/hybrid_backend_icon.png)  </kbd>     *How can Processing Components that experience varying workload and need access to large amounts of data be hosted in an elastic environment while the remainder of the application is hosted in a static environment?*
   -------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -1406,7 +1403,7 @@ A [Distributed Application](http://www.cloudcomputingpatterns.org/distributed_ap
 
 The Processing Components experiencing varying workloads are hosted in an elastic cloud together with the data accessed during their operation. Processing Components in the elastic cloud are triggered from the static environment through asynchronous messages exchanged via message queues provided by a [Message-oriented Middleware](http://www.cloudcomputingpatterns.org/message_oriented_middleware/). A [Data Access Component](http://www.cloudcomputingpatterns.org/data_access_component/) in the static environment ensures that data required by elastic Processing Components is stored in Storage Offerings The location where this data is stored may then be passed to the elastic Processing Components during their enactment via messages. Data that is not required by the backend functionality may still be stored in [Stateful Components](http://www.cloudcomputingpatterns.org/stateful_component/) hosted in the static data center.
 
-![Hybrid Backend](http://www.cloudcomputingpatterns.org/sketches/hybrid_backend_sketch.png) 
+<kbd>![Hybrid Backend](http://www.cloudcomputingpatterns.org/sketches/hybrid_backend_sketch.png)  </kbd>
  
 
 ### Hybrid Backup
@@ -1415,7 +1412,7 @@ Data is periodically extracted from an application to be archived in an elastic 
 
  
   ------------------------------------------------------------------------------------------------------------------------------------------------ ------------------------------------------------------------------------------------------------------------------------------
-  ![Hybrid Backup](http://www.cloudcomputingpatterns.org/icons/hybrid_backup_icon.png)      *How can data be archived in a remote environment while the remainder of the application is hosted in a static environment?*
+  <kbd>![Hybrid Backup](http://www.cloudcomputingpatterns.org/icons/hybrid_backup_icon.png) </kbd>     *How can data be archived in a remote environment while the remainder of the application is hosted in a static environment?*
   ------------------------------------------------------------------------------------------------------------------------------------------------ ------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -1427,7 +1424,7 @@ Many applications are used by small and medium businesses which do not have the 
 
 A [Distributed Application](http://www.cloudcomputingpatterns.org/distributed_application/) is hosted in a local static environment of the company. Data handled by [Stateful Components](http://www.cloudcomputingpatterns.org/stateful_component/) is periodically extracted and replicated to a cloud storage offering.
 
-![Hybrid Backup](http://www.cloudcomputingpatterns.org/sketches/hybrid_backup_sketch.png) 
+<kbd>![Hybrid Backup](http://www.cloudcomputingpatterns.org/sketches/hybrid_backup_sketch.png)  </kbd>
  
 
 ### Hybrid Data
@@ -1436,7 +1433,7 @@ Data of varying size is hosted in an elastic cloud while the remainder of an app
 
  
   -------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![Hybrid Data](http://www.cloudcomputingpatterns.org/icons/hybrid_data_icon.png)      *How can a data handling functionality that experiences varying workload be hosted in an elastic cloud while the rest of the application is located in a static data center?*
+  <kbd>![Hybrid Data](http://www.cloudcomputingpatterns.org/icons/hybrid_data_icon.png)   </kbd>    *How can a data handling functionality that experiences varying workload be hosted in an elastic cloud while the rest of the application is located in a static data center?*
   -------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -1448,7 +1445,7 @@ A [Distributed Application](http://www.cloudcomputingpatterns.org/distributed_ap
 
 Data whose varying size makes it unsuitable for hosting in a static environment is handled by Storage Offerings in an elastic cloud. At this location data is either accessed by [Data Access Components](http://www.cloudcomputingpatterns.org/data_access_component/) that are hosted in the static environment or by Data Access Components hosted in the elastic environment.
 
-![Hybrid Data](http://www.cloudcomputingpatterns.org/sketches/hybrid_data_sketch.png) 
+<kbd>![Hybrid Data](http://www.cloudcomputingpatterns.org/sketches/hybrid_data_sketch.png)  </kbd>
  
 
 ### Hybrid Development Environment
@@ -1457,7 +1454,7 @@ A production runtime environment is replicated and mocked in an elastic environm
 
  
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------
-  ![Hybrid Development Environment](http://www.cloudcomputingpatterns.org/icons/hybrid_development_environment_icon.png)      *How can an application use different computing environments during its development, test, and production stages?*
+  <kbd>![Hybrid Development Environment](http://www.cloudcomputingpatterns.org/icons/hybrid_development_environment_icon.png) </kbd>      *How can an application use different computing environments during its development, test, and production stages?*
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------
  
 
@@ -1469,7 +1466,7 @@ Applications have different requirements on the runtime environment during their
 
 The production environment of the application is simulated in the development and test environment through the use of equivalent addressing, similar mocking data, and equivalent functionality provided by the environment. Migration of developed applications is ensured through transformation of application components or compatibility of runtimes. Some testing resources are provided exclusively in the development environment to verify the application behavior under different circumstances.
 
-![Hybrid Development Environment](http://www.cloudcomputingpatterns.org/sketches/hybrid_development_environment_sketch.png) 
+<kbd>![Hybrid Development Environment](http://www.cloudcomputingpatterns.org/sketches/hybrid_development_environment_sketch.png)  </kbd>
  
 
 ### Hybrid Multimedia Web Application
@@ -1479,7 +1476,7 @@ Multimedia files that cannot be cached efficiently are provided from a large dis
 
  
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------
-  ![Hybrid\_Multimedia\_Web\_Application](http://www.cloudcomputingpatterns.org/icons/hybrid_multimedia_web_application_icon.png)      *How can non-cacheable content be integrated efficiently in a website that is accessed by a large globally distributed user group?*
+  <kbd>![Hybrid\_Multimedia\_Web\_Application](http://www.cloudcomputingpatterns.org/icons/hybrid_multimedia_web_application_icon.png)  </kbd>     *How can non-cacheable content be integrated efficiently in a website that is accessed by a large globally distributed user group?*
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -1491,8 +1488,7 @@ A [Distributed Application](http://www.cloudcomputingpatterns.org/distributed_ap
 
 Static website content is hosted in a static environment from where it is accessed by users. The streaming content is provided by an elastic cloud environment where it is accessed from the application's [User Interface Component](http://www.cloudcomputingpatterns.org/user_interface_component/). The static content is provided to users' client software and in this static content, the multimedia content is referenced. Retrieval of this streaming content is often handled directly by the users' browser software.
 
-![Hybrid\_Multimedia\_Web\_Application](http://www.cloudcomputingpatterns.org/sketches/hybrid_multimedia_web_application_sketch.png) 
- 
+<kbd>![Hybrid\_Multimedia\_Web\_Application](http://www.cloudcomputingpatterns.org/sketches/hybrid_multimedia_web_application_sketch.png)  </kbd>
 
 ### Hybrid Processing
 
@@ -1500,7 +1496,7 @@ Processing functionality that experiences varying workload is hosted in an elast
 
  
   -------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![Hybrid Processing](http://www.cloudcomputingpatterns.org/icons/hybrid_processing_icon.png)      *How can Processing Components that experiences varying workload be hosted in an elastic cloud while the remainder of an application is hosted in a static data center?*
+  <kbd>![Hybrid Processing](http://www.cloudcomputingpatterns.org/icons/hybrid_processing_icon.png)  </kbd>     *How can Processing Components that experiences varying workload be hosted in an elastic cloud while the remainder of an application is hosted in a static data center?*
   -------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -1512,7 +1508,7 @@ A [Distributed Application](http://www.cloudcomputingpatterns.org/distributed_ap
 
 The [Processing Components](http://www.cloudcomputingpatterns.org/processing_component/) experiencing varying workloads are provisioned in an elastic cloud. [Loose Coupling](http://www.cloudcomputingpatterns.org/loose_coupling/) is ensured by exchanging information between the hosting environments asynchronously via messages.
 
-![Hybrid Processing](http://www.cloudcomputingpatterns.org/sketches/hybrid_processing_sketch.png) 
+<kbd>![Hybrid Processing](http://www.cloudcomputingpatterns.org/sketches/hybrid_processing_sketch.png)  </kbd>
  
 
 ### Hybrid User Interface
@@ -1521,7 +1517,7 @@ Varying workload from a user group interacting asynchronously with an applicatio
 
  
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![Hybrid User Interface](http://www.cloudcomputingpatterns.org/icons/hybrid_user_interface_icon.png)      *How can a user interface for asynchronous interaction be hosted in a cloud while being integrated with an application otherwise hosted in a static data center?*
+  <kbd>![Hybrid User Interface](http://www.cloudcomputingpatterns.org/icons/hybrid_user_interface_icon.png)  </kbd>     *How can a user interface for asynchronous interaction be hosted in a cloud while being integrated with an application otherwise hosted in a static data center?*
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -1533,7 +1529,7 @@ An application serves user groups with different workload behavior. One user gro
 
 The [User Interface Component](http://www.cloudcomputingpatterns.org/user_interface_component/) serving users generating varying workload is hosted in an elastic cloud environment. Other application components that are hosted in a static environment. The user interface deployed in the elastic cloud is integrated with the remainder of the application in a decoupled fashion using messaging to ensure [Loose Coupling](http://www.cloudcomputingpatterns.org/loose_coupling/).
 
-![Hybrid User Interface](http://www.cloudcomputingpatterns.org/sketches/hybrid_user_interface_sketch.png) 
+<kbd>![Hybrid User Interface](http://www.cloudcomputingpatterns.org/sketches/hybrid_user_interface_sketch.png)  </kbd>
  
 
 ### Three-Tier Cloud Application
@@ -1542,7 +1538,7 @@ The presentation, business logic, and data handling is realized as separate tier
 
 
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ----------------------------------------------------------------------------------------------------------------------------------
-  ![Three-Tier Cloud Application](http://www.cloudcomputingpatterns.org/icons/three_tier_cloud_application_icon.png)      *How can presentation logic, business logic, and data handling be decomposed into separate tiers that are scaled independently?*
+  <kbd>![Three-Tier Cloud Application](http://www.cloudcomputingpatterns.org/icons/three_tier_cloud_application_icon.png)  </kbd>    *How can presentation logic, business logic, and data handling be decomposed into separate tiers that are scaled independently?*
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ----------------------------------------------------------------------------------------------------------------------------------
  
 
@@ -1555,14 +1551,14 @@ aligning the elastic scaling of these two components by summarizing their implem
 
 The application is decomposed into three tiers, where each tier is elastically scaled independently. The presentation tier is comprised of a load balancer and an application component that implements the [Stateless Component](http://www.cloudcomputingpatterns.org/stateless_component/) pattern and [User Interface Component](http://www.cloudcomputingpatterns.org/user_interface_component/) pattern. The business logic tier is comprised of an application component implementing the [Stateless Component](http://www.cloudcomputingpatterns.org/stateless_component/) pattern in addition to the [Processing Component](http://www.cloudcomputingpatterns.org/processing_component/) pattern.
 
-![Three-Tier Cloud Application](http://www.cloudcomputingpatterns.org/sketches/three_tier_cloud_application_sketch.png)
+<kbd>![Three-Tier Cloud Application](http://www.cloudcomputingpatterns.org/sketches/three_tier_cloud_application_sketch.png) </kbd>
 
 ### Two-Tier Cloud Application
 
 Presentation and business logic is bundled to one stateless tier that is easy to scale. This tier is separated from the data tier that is harder to scale and often handled by a provider-supplied storage offering.
 
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------
-  ![Two-Tier Cloud Application](http://www.cloudcomputingpatterns.org/icons/two_tier_cloud_application_icon.png)  *How can application functionality be separated from data handling to scale them independently?*
+  <kbd>![Two-Tier Cloud Application](http://www.cloudcomputingpatterns.org/icons/two_tier_cloud_application_icon.png)  </kbd> *How can application functionality be separated from data handling to scale them independently?*
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------
 
 
@@ -1574,7 +1570,7 @@ A [Distributed Application](http://www.cloudcomputingpatterns.org/distributed_ap
 
 Application functionality is decomposed into data handling functionality, provided by one or several [Storage Offerings](http://www.cloudcomputingpatterns.org/cloud_offerings/#storage_offerings), and application components handling presentation and business logic. This separation enables the two tiers to elastically scale independently with their workloads.
 
-![Two-Tier Cloud Application](http://www.cloudcomputingpatterns.org/sketches/two_tier_cloud_application_sketch.png)
+<kbd>![Two-Tier Cloud Application](http://www.cloudcomputingpatterns.org/sketches/two_tier_cloud_application_sketch.png) </kbd>
 
 References
 
