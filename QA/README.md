@@ -7,6 +7,5 @@
     - [Severity vs. Priority](Severity-vs.-Priority.md)
     - [Test Automation Standards](Test-Automation-Standards.md)
     - [Test Case Review Checklist](Test-Case-Review-Checklist.md)
-    - [Testing Process](Testing-Process_416094385.md)
     - [Testing Techniques](Testing-Techniques.md)
 
