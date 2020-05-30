@@ -18,7 +18,7 @@ hand in hand with agile development practices, continuous delivery and
 DevOps culture. Having an effective software testing approach allows
 teams to move fast and with confidence.
 
-<img src="./attachments/Test-Automation-Strategies.png" alt="">
+<kbd><img src="./attachments/Test-Automation-Strategies.png" alt=""></kbd>
 
 ## Importance of Test Automation
 
@@ -42,7 +42,7 @@ time with manual, repetitive work instead of delivering working
 software. Automating everything — from build to tests, deployment and
 infrastructure — is your only way forward.
 
-![](https://martinfowler.com/articles/practical-test-pyramid/buildPipeline.png)
+<kbd>](https://martinfowler.com/articles/practical-test-pyramid/buildPipeline.png)</kbd>
 
 Figure 1: Use build pipelines to automatically and reliably get your
 software into production
@@ -76,7 +76,7 @@ The figure shows the initial time & efforts it takes in learning the
 best practices of test automation. But we can see how it saves the
 overall effort and time spent.
 
-![TestAutomationStrategiesGraph](https://www.simform.com/wp-content/uploads/2019/11/TestAutomationStrategiesGraph.png)
+<kbd>TestAutomationStrategiesGraph](https://www.simform.com/wp-content/uploads/2019/11/TestAutomationStrategiesGraph.png)</kbd>
 
 ## Test Pyramid
 
@@ -100,8 +100,8 @@ angular, ember.js and others it becomes apparent that *UI tests* don't
 have to be on the highest level of your pyramid - you're perfectly able
 to unit test your UI in all of these frameworks.
 
-![](https://miro.medium.com/max/1092/0*q2maW8NjQFPvzZPL)
-<img src="./attachments/446666626.png" alt="">
+<kbd>](https://miro.medium.com/max/1092/0*q2maW8NjQFPvzZPL)</kbd>
+<kbd><img src="./attachments/446666626.png" alt=""></kbd>
 
 **Legends**
 
@@ -147,17 +147,17 @@ executes in production-like setup, and so on. As mitigation we can:
 
 ## Eye of Providence
 
-![Automated Testing Pyramid with Eye](https://watirmelon.files.wordpress.com/2018/02/automated-testing-pyramid-with-eye.jpg?w=840)
+<kbd>Automated Testing Pyramid with Eye](https://watirmelon.files.wordpress.com/2018/02/automated-testing-pyramid-with-eye.jpg?w=840)</kbd>
 
 ## Testing Cloud
 
-![Ideal Automated Testing Pyramid.jpg](https://watirmelon.files.wordpress.com/2018/02/ideal-automated-testing-pyramid.jpg?w=840)
+<kbd>Ideal Automated Testing Pyramid.jpg](https://watirmelon.files.wordpress.com/2018/02/ideal-automated-testing-pyramid.jpg?w=840)</kbd>
 
 ## Anti Pattern
 
 ### Ice-cream Cone
 
-![Software Testing Icecream Cone Antipattern](https://watirmelon.files.wordpress.com/2018/02/software-testing-icecream-cone-antipattern.jpg?w=840)
+<kbd>Software Testing Icecream Cone Antipattern](https://watirmelon.files.wordpress.com/2018/02/software-testing-icecream-cone-antipattern.jpg?w=840)</kbd>
 
 References
 

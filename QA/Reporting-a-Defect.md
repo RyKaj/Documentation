@@ -48,8 +48,7 @@ Finally, create and include all required (useful) attachments:
 
 Record your steps.
 
-  - [Create the recording on the steps you took to reproduce your
-    defect](http://hotjar.com/)
+  - [Create the recording on the steps you took to reproduce your defect](http://hotjar.com/)
       - [Hotjar](http://hotjar.com/)
       - [Gadwin](https://www.gadwin.com/printscreen/)
       - [Snapfiles](https://www.snapfiles.com/get/alphascreenshot.md)
