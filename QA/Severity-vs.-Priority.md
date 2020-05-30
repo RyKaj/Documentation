@@ -56,7 +56,7 @@ class*
   - **Isolate the defect:** Isolating the defect can help to find out
 	its severity of the impact.
 
-<kbd>](https://www.guru99.com/images/5-2015/050115_0552_PriorityVsS1.gif)</kbd>
+<kbd>![](https://www.guru99.com/images/5-2015/050115_0552_PriorityVsS1.gif)</kbd>
 
 ## Priority vs Severity: Key Difference
 
@@ -130,7 +130,7 @@ class*
 
 Example of Defect Severity and Priority
 
-<kbd>](https://www.guru99.com/images/5-2015/050115_0552_PriorityVsS2.png)</kbd>
+<kbd>![](https://www.guru99.com/images/5-2015/050115_0552_PriorityVsS2.png)</kbd>
 
 Let see an example of low severity and high priority and vice versa
 
@@ -154,7 +154,7 @@ defects resolved based on defect parameters like severity and priority.
 
 ### How to determine Defect Triage
 
-<kbd>](https://www.guru99.com/images/5-2015/050115_0552_PriorityVsS3.png)</kbd>
+<kbd>![](https://www.guru99.com/images/5-2015/050115_0552_PriorityVsS3.png)</kbd>
 
 Most systems use priority as the main criteria to assess the defect.
 However, a good triage process considers the severity as well.

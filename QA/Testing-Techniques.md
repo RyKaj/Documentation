@@ -19,7 +19,7 @@ is done.  In-house members of the software company who are not part of
 the project team do the alpha testing. These alpha testers are usually
 developers and quality assurance team members from other project teams.
 
-<kbd>Alpha Testing](https://reqtest.com/wp-content/uploads/2019/07/Alpha-Testing-Basics-big.png)</kbd>
+<kbd>![Alpha Testing](https://reqtest.com/wp-content/uploads/2019/07/Alpha-Testing-Basics-big.png)</kbd>
 
 ### Two phases of alpha testing:
 
@@ -65,7 +65,7 @@ helps to ensure there is a lesser number of faults and bugs in the
 software. Beta testing helps to increase end-user satisfaction from the
 software.
 
-<kbd>what is beta testing](https://reqtest.com/wp-content/uploads/2019/07/Beta-Testing-Tutorial-big.jpg)</kbd>
+<kbd>![what is beta testing](https://reqtest.com/wp-content/uploads/2019/07/Beta-Testing-Tutorial-big.jpg)</kbd>
 
 During pre-release, the software is already extensively tested by the QA
 team and verified by the [Quality Analyst](https://reqtest.com/testing-blog/qa-analyst/). The testing in a
@@ -201,7 +201,7 @@ Various parameters checked in black box testing are:
   - Performance issues
   - Abrupt application failure, unable to start or finish
 
-<kbd>](https://reqtest.com/wp-content/uploads/2019/08/black-box-testing-big.png)</kbd>
+<kbd>![](https://reqtest.com/wp-content/uploads/2019/08/black-box-testing-big.png)</kbd>
 
 ### Boundary Value Analysis
 
@@ -303,7 +303,7 @@ to perform exploratory testing on the new payment option. The tester
 from his previous experience of what could possibly go wrong in the
 payment option, test the new e-wallet option thoroughly.
 
-<kbd>](https://reqtest.com/wp-content/uploads/2019/06/Exploratory-Testing-big.png)</kbd>
+<kbd>![](https://reqtest.com/wp-content/uploads/2019/06/Exploratory-Testing-big.png)</kbd>
 
 The tester records his testing session through a [screen capture tool](https://reqtest.com/features/capture-screenshot-tool/). He reports
 a bug with a video screen capture of the bug to the developer. The
@@ -501,7 +501,7 @@ significant role in application success as it is released to the market.
 A GUI testing team always pays close attention to each detail in visual
 dynamics to ensure end-user satisfaction and ease.
 
-<kbd>GUI testing](https://reqtest.com/wp-content/uploads/2019/05/UI-testing-big.png)</kbd>
+<kbd>![GUI testing](https://reqtest.com/wp-content/uploads/2019/05/UI-testing-big.png)</kbd>
 
 It tests the various aspects of the user interface, such as:
 
@@ -778,7 +778,7 @@ best way to do this, is to draw a flowgraph that brings out these paths.
 
 Consider the example below:
 
-<kbd>Sample Journey Flowchart](https://reqtest.com/wp-content/uploads/2017/02/Sample-Journey1.png)</kbd>
+<kbd>![Sample Journey Flowchart](https://reqtest.com/wp-content/uploads/2017/02/Sample-Journey1.png)</kbd>
 
 Obviously, transferring funds from your bank account isn’t this simple.
 Sure, for some of us it can feel like it, but that’s because we don’t
@@ -840,7 +840,7 @@ is an approach to get feedback from a sample of users from outside the
 company. This testing helps to get the application get tested in a real
 environment.
 
-<kbd>Alpha vs beta testing](https://reqtest.com/wp-content/uploads/2019/08/Alpha-vs-beta-big.png)</kbd>
+<kbd>![Alpha vs beta testing](https://reqtest.com/wp-content/uploads/2019/08/Alpha-vs-beta-big.png)</kbd>
 
 
 | Alpha Testing                                                                                                                            | Beta Testing                                                                                              |
@@ -904,7 +904,7 @@ real users, it provides insights on performance, error rate and task
 success. Usability testing helps the developers and designers to develop
 a solution that supports workflow and tasks.
 
-<kbd>usability testing big](https://reqtest.com/wp-content/uploads/2019/05/usability-testing-big.png)</kbd>
+<kbd>![usability testing big](https://reqtest.com/wp-content/uploads/2019/05/usability-testing-big.png)</kbd>
 
 ### When to do Usability Testing?
 

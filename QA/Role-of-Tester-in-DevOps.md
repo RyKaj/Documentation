@@ -23,7 +23,7 @@ vital role. Each team following their own designed methodology that best
 suit with their skill and process. But goals are common. That is quality
 products in a very short time.
 
-<kbd>](https://miro.medium.com/max/3483/1*BZUIwLExSu3slCz5mu_ETw.png)</kbd>
+<kbd>![](https://miro.medium.com/max/3483/1*BZUIwLExSu3slCz5mu_ETw.png)</kbd>
 
 Testers and developers both play important roles in DevOps.
 
