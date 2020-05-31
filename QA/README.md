@@ -8,4 +8,5 @@
     - [Test Automation Standards](Test-Automation-Standards.md)
     - [Test Case Review Checklist](Test-Case-Review-Checklist.md)
     - [Testing Techniques](Testing-Techniques.md)
+	- [Types of Software Testing](Types-of-Software-Testing.md)
 
