@@ -15,37 +15,110 @@ Manager
 
 [As a manager, you are no longer able to tell the members of your team (often called a squad) what to do and how to do it. You were also told that the product manager is responsible for prioritizing activities and that improving operational processes falls under the oversight of the scrum master.]
 
-|Transitioning to the Role of Agile Manager||
-|--- |--- |
-|Former Role - Traditional Manager|New Role - Agile Manager|
-|A generalist manager responsible for the following activities: 1) Managing the members of their team - Business knowledge and/or technical expertise. 2) Process or Project Management| A manager specialized in one (1) of the following areas of activity: 1) People / talent management. 2) Product or business line management. 3. Project or process management|
-||With unchanging responsibilities…1) Communicating the business's vision and keeping everything aligned with the company's values. 2) Removing obstacles that impair the team. 3) Defining the team’s business objectives|
-|| With changing responsibilities that need to be delegated to the team… 1) Choosing tools and methods. 2) Hiring, integration (and firing). 3) Performance reviews (individual and team). 4) Skills development. 5)Budget management|
-||And with new responsibilities to integrate…1) mplementing and supporting self-organization. 2) Coaching and mentoring in your new area of expertise. 3) Supporting the team’s continual development. 4) Creating a work environment that is conducive to motivation and performance. 5) Being a facilitator (not a supervisor)
-
+<table>
+	<colgroup>
+		<col />
+		<col />
+	</colgroup>
+	<tbody>
+		<tr>
+			<th colspan="2">Transitioning to the Role of Agile Manager</th>
+		</tr>
+		<tr>
+			<th>Former Role - Traditional Manager</th>
+			<th>New Role - Agile Manager</th>
+		</tr>
+		<tr>
+			<td>
+				<p>A generalist manager responsible for the following activities:</p>
+				<ul>
+					<li>Managing the members of their team - Business knowledge and/or technical expertise</li>
+					<li>Process or Project Management</li>
+				</ul>
+			</td>
+			<td>
+				<p>A manager specialized in one (1) of the following areas of activity:</p>
+				<ul>
+					<li>People / talent management</li>
+					<li>Product or business line management</li>
+					<li>Project or process management</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<br />
+			</td>
+			<td>
+				<p>
+					<strong>With unchanging responsibilities…</strong>
+				</p>
+				<ul>
+					<li>Communicating the business’s vision and keeping everything aligned with the company’s values</li>
+					<li>Removing obstacles that impair the team</li>
+					<li>Defining the team’s business objectives</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<br />
+			</td>
+			<td>
+				<p>
+					<strong>With changing responsibilities that need to be delegated to the team…</strong>
+				</p>
+				<ul>
+					<li>Choosing tools and methods</li>
+					<li>Hiring, integration (and firing)</li>
+					<li>Performance reviews (individual and team)</li>
+					<li>Skills development</li>
+					<li>Budget management</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<br />
+			</td>
+			<td>
+				<p>
+					<strong>And with new responsibilities to integrate…</strong>
+				</p>
+				<ul>
+					<li>Implementing and supporting self-organization</li>
+					<li>Coaching and mentoring in your new area of expertise</li>
+					<li>Supporting the team’s continual development</li>
+					<li>Creating a work environment that is conducive to motivation and performance</li>
+					<li>Being a facilitator (not a supervisor)</li>
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
 
 Different Roles of a Manager in a Traditional Business
 ------------------------------------------------------
 
 1.  **Managing the members of their team**. One of the main
-    responsibilities of a manager consists of selecting, hiring,
-    evaluating, promoting, supporting and developing the members of
-    their team.
+	responsibilities of a manager consists of selecting, hiring,
+	evaluating, promoting, supporting and developing the members of
+	their team.
 2.  **Business knowledge and/or technical expertise**. Many managers are
-    contributors who, over the course of their career, have developed
-    technical expertise or important business knowledge for the
-    organization. Having demonstrated their expertise and contribution
-    to the organization, they spend a significant amount of time using
-    their skills (technical or business) to resolve problems encountered
-    by their team.
+	contributors who, over the course of their career, have developed
+	technical expertise or important business knowledge for the
+	organization. Having demonstrated their expertise and contribution
+	to the organization, they spend a significant amount of time using
+	their skills (technical or business) to resolve problems encountered
+	by their team.
 3.  **Process or project management**. In addition to their other
-    responsibilities, managers generally spend a significant amount of
-    time managing their team members' projects. In a traditional
-    context, they are often responsible for determining which team
-    member is assigned to which activity and are therefore responsible
-    for monitoring the progress of the various aspects of the project.
-    Depending on their expertise, they might also design the business
-    processes used by their team members.
+	responsibilities, managers generally spend a significant amount of
+	time managing their team members' projects. In a traditional
+	context, they are often responsible for determining which team
+	member is assigned to which activity and are therefore responsible
+	for monitoring the progress of the various aspects of the project.
+	Depending on their expertise, they might also design the business
+	processes used by their team members.
 
 New Roles of a Manager in an Agile Business
 -------------------------------------------
@@ -144,22 +217,22 @@ change. However, regardless of the position of manager (people, product,
 or project), some responsibilities remain unchanged.
 
 -   **Communicating the business's vision and keeping everything aligned
-    with the company's values.** In their new role, the agile manager
-    continues to ensure that the self-organized team's work aligns with
-    the vision and values of the company. The other managers working
-    alongside the agile manager ensure that the team continues to
-    function within these parameters.
+	with the company's values.** In their new role, the agile manager
+	continues to ensure that the self-organized team's work aligns with
+	the vision and values of the company. The other managers working
+	alongside the agile manager ensure that the team continues to
+	function within these parameters.
 -   **Removing obstacles that impair the team.** As agile managers are
-    there to support self-organizing teams, they still bear the
-    responsibility of removing obstacles that may prevent the team from
-    completing their goals.
+	there to support self-organizing teams, they still bear the
+	responsibility of removing obstacles that may prevent the team from
+	completing their goals.
 -   **Defining the team's business objectives.** We have already
-    established that the difference between a self-organizing team and a
-    self-managed team is that an external manager defines the objectives
-    of the latter. In this sense, managers supporting self-organized
-    teams must continue to define the people objectives (skills
-    development), product objectives (content, schedules and budget),
-    and the (agile) process objectives.
+	established that the difference between a self-organizing team and a
+	self-managed team is that an external manager defines the objectives
+	of the latter. In this sense, managers supporting self-organized
+	teams must continue to define the people objectives (skills
+	development), product objectives (content, schedules and budget),
+	and the (agile) process objectives.
 
 Responsibilities Must or Should Specifically Be Transferred to the Self-Organizing Team
 ---------------------------------------------------------------------------------------
@@ -172,29 +245,29 @@ help determine the appropriate level of delegation for each area of
 responsibility.
 
 -   **Choosing tools and methods.** Choosing tools and methods is often
-    one of the first elements transferred to the self-organizing team.
-    As long as objectives are clearly defined, the team is left to
-    establish the best methods of achieving their objectives and
-    providing the tools necessary to do so.
+	one of the first elements transferred to the self-organizing team.
+	As long as objectives are clearly defined, the team is left to
+	establish the best methods of achieving their objectives and
+	providing the tools necessary to do so.
 -   **Hiring, integration (and firing).** Many of the activities linked
-    to people management can be transferred to the self-organized team.
-    With training and the necessary support, team members are usually
-    able to take over the tasks linked to the formation of their team.
+	to people management can be transferred to the self-organized team.
+	With training and the necessary support, team members are usually
+	able to take over the tasks linked to the formation of their team.
 -   **Performance reviews (individual and team).** Given that agile
-    managers are no longer involved in their team's daily activities,
-    individual performance reviews can now become the team's
-    responsibility. By implementing agile performance review methods,
-    the team can develop the mechanisms needed to improve its
-    performance.
+	managers are no longer involved in their team's daily activities,
+	individual performance reviews can now become the team's
+	responsibility. By implementing agile performance review methods,
+	the team can develop the mechanisms needed to improve its
+	performance.
 -   **Skills development.** Like performance management, skills
-    development is transferred to the team members. They are in the best
-    position to determine the skills that are lacking within the team
-    and those that need to be improved to reach greater levels of
-    performance and efficiency.
+	development is transferred to the team members. They are in the best
+	position to determine the skills that are lacking within the team
+	and those that need to be improved to reach greater levels of
+	performance and efficiency.
 -   **Budget management.** In a self-organized team with a pre-defined
-    sandbox, management of the operating budget can be delegated to the
-    team. However, setting the operating budget is normally the
-    responsibility of the product owner.
+	sandbox, management of the operating budget can be delegated to the
+	team. However, setting the operating budget is normally the
+	responsibility of the product owner.
 
 New Skills for Agile Manager
 ----------------------------
@@ -204,52 +277,105 @@ managers, and project managers who support self-organizing teams take
 charge of or contribute to these key skills:
 
 -   **Implementing and supporting self-organization.** Very few
-    employees have experienced being part of a self-organized team in a
-    professional context. Consequently, acquiring the necessary skills
-    to support the team in the effective implementation of
-    self-organization is a specific skill. In this sense, agile managers
-    have the opportunity to develop an expertise that is in demand in
-    organizations taking the plunge towards agility in all their
-    operations.
+	employees have experienced being part of a self-organized team in a
+	professional context. Consequently, acquiring the necessary skills
+	to support the team in the effective implementation of
+	self-organization is a specific skill. In this sense, agile managers
+	have the opportunity to develop an expertise that is in demand in
+	organizations taking the plunge towards agility in all their
+	operations.
 -   **Coaching and mentoring in their area of expertise
-    (specialization).** Managers of self-organizing teams must develop
-    coaching skills to evolve from manager-expert to manager-coach (or 
-    [servant
-    leader](https://en.wikipedia.org/wiki/Servant_leadership)).
-    It is unrealistic to think that the members of a self-organizing
-    team have, from the moment the team is formed, the knowledge and
-    skills necessary to be autonomous and effective. Consequently,
-    traditional managers that have developed certain skills throughout
-    the course of their careers (people management, product management,
-    or project management) become coaches and mentors for the
-    self-organizing team. They transmit their knowledge and share their
-    expertise to help squads become autonomous and efficient.
+	(specialization).** Managers of self-organizing teams must develop
+	coaching skills to evolve from manager-expert to manager-coach (or 
+	[servant
+	leader](https://en.wikipedia.org/wiki/Servant_leadership)).
+	It is unrealistic to think that the members of a self-organizing
+	team have, from the moment the team is formed, the knowledge and
+	skills necessary to be autonomous and effective. Consequently,
+	traditional managers that have developed certain skills throughout
+	the course of their careers (people management, product management,
+	or project management) become coaches and mentors for the
+	self-organizing team. They transmit their knowledge and share their
+	expertise to help squads become autonomous and efficient.
 -   **Supporting the team's continual development.** Yes, project
-    managers/scrum masters directly support teams through their
-    continued improvement, yet, agile managers can also have a positive
-    impact on self-organizing teams. Beyond iteration retrospectives,
-    agile managers contribute to the company's improved operations by
-    supporting the integration of continuous improvement in all areas of
-    activity.
+	managers/scrum masters directly support teams through their
+	continued improvement, yet, agile managers can also have a positive
+	impact on self-organizing teams. Beyond iteration retrospectives,
+	agile managers contribute to the company's improved operations by
+	supporting the integration of continuous improvement in all areas of
+	activity.
 -   **Creating a work environment that is conducive to motivation and
-    performance.** Work environments significantly influence the
-    performance of team members. Agile managers therefore must create an
-    agile culture that fosters motivation and performance within their
-    self-organized team.
+	performance.** Work environments significantly influence the
+	performance of team members. Agile managers therefore must create an
+	agile culture that fosters motivation and performance within their
+	self-organized team.
 -   **Being a facilitator (not a supervisor).** Making suggestions about
-    how to overcome obstacles without imposing decisions. Supporting the
-    squad when it faces obstacles and needs help.
+	how to overcome obstacles without imposing decisions. Supporting the
+	squad when it faces obstacles and needs help.
 
- |New Skills Agile Manager Needs to Incorporate||
-|--- |--- |
-|Agile Manager do this|Not this|
-|Are there to help their team and promote collaboration|Manager and control their team|
-|Listen and use powerful questions|Tell their team what to do and/pr how to do it|
-|Act as a coach and mentor|Act as an expert|
-|Facilitate their team and treat its members as competent, autonomous adults|Put themselves at the centre of the team's success|
-|Trust their team and treat its members as competent, autonomous adults|Control their team and treat its members as (Incompetent, dependent) "children"|
-|See their roles as a complement to the role of the team members|See their roles as more important than the role of the team members|
-
+<table>
+	<colgroup>
+		<col />
+		<col />
+	</colgroup>
+	<tbody>
+		<tr>
+			<th colspan="2">New Skills Agile Manager Needs to Incorporate</th>
+		</tr>
+		<tr>
+			<th>Agile Manager do this</th>
+			<th>Not this</th>
+		</tr>
+		<tr>
+			<td>
+				Are there to help their team and promote collaboration
+			</td>
+			<td>
+				Manager and control their team
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Listen and use powerful questions
+			</td>
+			<td>
+				Tell their team what to do and/pr how to do it
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Act as a coach and mentor
+			</td>
+			<td>
+				Act as an expert
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Facilitate their team and treat its members as competent, autonomous adults
+			</td>
+			<td>
+				Put themselves at the centre of the team's success
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Trust their team and treat its members as competent, autonomous adults
+			</td>
+			<td>
+				Control their team and treat its members as (Incompetent, dependent) &quot;children&quot;
+			</td>
+		</tr>
+		<tr>
+			<td>
+				See their roles as a complement to the role of the team members
+			</td>
+			<td>
+				See their roles as more important than the role of the team members
+			</td>
+		</tr>
+	</tbody>
+</table>
 
 Why Care about Agile
 --------------------
@@ -361,35 +487,35 @@ Key Takeaways
 =============
 
 -   There are things that technology managers need to start doing as
-    agile leaders like creating space for co-location and letting teams
-    self-organize. They need to let teams think for themselves.
+	agile leaders like creating space for co-location and letting teams
+	self-organize. They need to let teams think for themselves.
 -   Managers need to adopt their style to the maturity of the agile
-    team. Asking the right questions is important.
+	team. Asking the right questions is important.
 -   Company policies and performance measures for managers can cause
-    behaviors that conflict with agile. Managers also need to let teams
-    think for themselves. Managers need to create an ecosystem where
-    teams can thrive.
+	behaviors that conflict with agile. Managers also need to let teams
+	think for themselves. Managers need to create an ecosystem where
+	teams can thrive.
 -   There are some dates that need to be met and managers should support
-    teams to meet those dates by adjusting scope or team size.
+	teams to meet those dates by adjusting scope or team size.
 -   The agile leader mindset is critical. Managers need to focus on
-    changing the organization to create an environment so that teams can
-    thrive and become productive.
+	changing the organization to create an environment so that teams can
+	thrive and become productive.
 -   Big bang agile transformation approaches are more difficult than a
-    slower, staged, team by team transition. Rolling out two or three
-    teams per quarter helps build success and momentum.
+	slower, staged, team by team transition. Rolling out two or three
+	teams per quarter helps build success and momentum.
 -   Scrum provides a mirror of the organization and all the current
-    problems become visible.
+	problems become visible.
 -   It can take six months to ramp-up a new team and get them to steady
-    state.
+	state.
 -   Individual performance goals need to be revised in agile to foster
-    more of a team focus; incentives need to be aligned with helping
-    team mates vs. individual performance and heroics.
+	more of a team focus; incentives need to be aligned with helping
+	team mates vs. individual performance and heroics.
 -   Training for technology managers is critical if they are to succeed
-    as agile leaders. Leaders need to understand the "why" behind agile
-    ways of working. Agile Coaches should push for immersion training
-    for leaders.
+	as agile leaders. Leaders need to understand the "why" behind agile
+	ways of working. Agile Coaches should push for immersion training
+	for leaders.
 -   Agile teams need to have a strong, transparent relationship with the
-    business to create trust.
+	business to create trust.
 
 
 

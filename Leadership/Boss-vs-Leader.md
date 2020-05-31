@@ -6,16 +6,11 @@
 
 ## Videos
 
-  - [Lean Management - Boss vs
-    Leader](https://www.youtube.com/watch?v=j_F7ghGTxGY)
-  - [Boss vs Leader: Who is
-    better](https://www.youtube.com/watch?v=wddzwzumOAE)
-  - [Bosses vs. Leaders - Which are you? | Jack
-    Canfield](https://www.youtube.com/watch?v=9cKzvLXITCI)
-  - [The differences between a boss and a
-    leader](https://www.youtube.com/watch?v=GZiVvgi--e4)
-  - [Why good leaders make you feel safe | Simon
-    Sinek](https://www.youtube.com/watch?v=lmyZMtPVodo)
+  - [Lean Management - Boss vs Leader](https://www.youtube.com/watch?v=j_F7ghGTxGY)
+  - [Boss vs Leader: Who is better](https://www.youtube.com/watch?v=wddzwzumOAE)
+  - [Bosses vs. Leaders - Which are you? | Jack Canfield](https://www.youtube.com/watch?v=9cKzvLXITCI)
+  - [The differences between a boss and a leader](https://www.youtube.com/watch?v=GZiVvgi--e4)
+  - [Why good leaders make you feel safe | Simon Sinek](https://www.youtube.com/watch?v=lmyZMtPVodo)
 
 ## Comparision Table
 
@@ -26,7 +21,7 @@
 		<col style="width: 55%" />
 	</colgroup>
 	<thead>
-		<tr class="header">
+		<tr>
 			<th>Boss / Manager</th>
 			<th>Leader</th>
 			<th>
@@ -121,17 +116,6 @@
 			<td>builds system and processes</td>
 			<td>builds relationships</td>
 			<td>Leaders focus on people – all the stakeholders they need to influence in order to realize their vision. They know who their stakeholders are and spend most of their time with them. They build loyalty and trust by consistently delivering on their promise. Managers focus on the structures necessary to set and achieve goals. They focus on the analytical and ensure systems are in place to attain desired outcomes. They work with individuals and their goals and objectives.</td>
-		</tr>
-		<tr class="odd">
-			<td>
-				<br />
-			</td>
-			<td>
-				<br />
-			</td>
-			<td>
-				<br />
-			</td>
 		</tr>
 	</tbody>
 </table>
@@ -239,13 +223,13 @@ between pushing them hard and pushing them away.
 References
 
   - [Forbes - 9 differences between being a leader and a
-    manager](https://www-forbes-com.cdn.ampproject.org/c/s/www.forbes.com/sites/williamarruda/2016/11/15/9-differences-between-being-a-leader-and-a-manager/amp/)
+	manager](https://www-forbes-com.cdn.ampproject.org/c/s/www.forbes.com/sites/williamarruda/2016/11/15/9-differences-between-being-a-leader-and-a-manager/amp/)
   - [Small biz trends - the difference between a boss and a
-    leader](https://smallbiztrends.com/2018/05/the-difference-between-a-boss-and-a-leader.md)
+	leader](https://smallbiztrends.com/2018/05/the-difference-between-a-boss-and-a-leader.md)
   - [Volaris Group  - the difference between a boss and a
-    leader](https://www.volarisgroup.com/blog/article/the-difference-between-a-boss-and-a-leader)
+	leader](https://www.volarisgroup.com/blog/article/the-difference-between-a-boss-and-a-leader)
   - [Harvard Business Review - are your employees scared of
-    you](https://hbr.org/2019/07/are-your-employees-scared-of-you)
+	you](https://hbr.org/2019/07/are-your-employees-scared-of-you)
   - [Harvard Business Review - great leaders understand why small
-    gestures
-    matter](https://hbr.org/2020/01/great-leaders-understand-why-small-gestures-matter)
+	gestures
+	matter](https://hbr.org/2020/01/great-leaders-understand-why-small-gestures-matter)

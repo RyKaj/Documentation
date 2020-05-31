@@ -104,77 +104,498 @@ deployed in a way that protects them from malicious attacks, restricts
 access to only approved users, and protects sensitive data.
 
 ### Catalog of Patterns
-|Category|Pattern|Summary|
-|--- |--- |--- |
-|Availability|Geodes|Deploy backend services into a set of geographical nodes, each of which can service any client request in any region.|
-|Availability|Health Endpoint Monitoring Pattern|Implement functional checks in an application that external tools can access through exposed endpoints at regular intervals.|
-|Availability|Queue-Based Load Leveling Pattern|Use a queue that acts as a buffer between a task and a service that it invokes, to smooth intermittent heavy loads.|
-|Availability|Throttling Pattern|Control the consumption of resources by an instance of an application, an individual tenant, or an entire service.|
-|Data Management|Cache-Aside Pattern|Load data on demand into a cache from a data store|
-|Data Management|Command and Query Responsibility Segregation (CQRS) Pattern|Segregate operations that read data from operations that update data by using separate interfaces.|
-|Data Management|Event Sourcing Pattern|Use an append-only store to record the full series of events that describe actions taken on data in a domain|
-|Data Management|Index Table Pattern|Create indexes over the fields in data stores that are frequently referenced by queries.|
-|Data Management|Materialized View Pattern|Generate prepopulated views over the data in one or more data stores when the data isn't ideally formatted for required query operations.|
-|Data Management|Sharding Pattern|Divide a data store into a set of horizontal partitions or shards.|
-|Data Management|Static Content Hosting Pattern|Deploy static content to a cloud-based storage service that can deliver them directly to the client.|
-|Data Management|Valet Key Pattern|Use a token or key that provides clients with restricted direct access to a specific resource or service.|
-|Design and Implementation|Ambassador Pattern|Create helper services that send network requests on behalf of a consumer service or application.|
-|Design and Implementation|Anti-Corruption Layer Pattern|Implement a façade or adapter layer between a modern application and a legacy system.|
-|Design and Implementation|Backends for Frontends Pattern|Create separate backend services to be consumed by specific frontend applications or interfaces.|
-|Design and Implementation|Command and Query Responsibility Segregation (CQRS) Pattern|Segregate operations that read data from operations that update data by using separate interfaces|
-|Design and Implementation|Compute Resource Consolidation Pattern|Consolidate multiple tasks or operations into a single computational unit|
-|Design and Implementation|External Configuration Store Pattern|Move configuration information out of the application deployment package to a centralized location.|
-|Design and Implementation|Gateway Aggregation Pattern|Use a gateway to aggregate multiple individual requests into a single request.|
-|Design and Implementation|Gateway Offloading Pattern|Offload shared or specialized service functionality to a gateway proxy|
-|Design and Implementation|Gateway Routing Pattern|Route requests to multiple services using a single endpoint.|
-|Design and Implementation|Leader Election Pattern|Coordinate the actions performed by a collection of collaborating task instances in a distributed application by electing one instance as the leader that assumes responsibility for managing the other instances.|
-|Design and Implementation|Pipes and Filters Pattern|Break down a task that performs complex processing into a series of separate elements that can be reused.|
-|Design and Implementation|Sidecar Pattern|Deploy components of an application into a separate process or container to provide isolation and encapsulation.|
-|Design and Implementation|Static Content Hosting Pattern|Deploy static content to a cloud-based storage service that can deliver them directly to the client.|
-|Design and Implementation|Strangler Pattern|Incrementally migrate a legacy system by gradually replacing specific pieces of functionality with new applications and services.|
-|Management and Monitoring|Ambassador Pattern|Create helper services that send network requests on behalf of a consumer service or application.|
-|Management and Monitoring|Anti-Corruption Layer Pattern|Implement a façade or adapter layer between a modern application and a legacy system.|
-|Management and Monitoring|External Configuration Store Pattern|Move configuration information out of the application deployment package to a centralized location.|
-|Management and Monitoring|Gateway Aggregation Pattern|Use a gateway to aggregate multiple individual requests into a single request.|
-|Management and Monitoring|Gateway Offloading Pattern|Offload shared or specialized service functionality to a gateway proxy.|
-|Management and Monitoring|Gateway Routing Pattern|Route requests to multiple services using a single endpoint.|
-|Management and Monitoring|Health Endpoint Monitoring Pattern|Implement functional checks in an application that external tools can access through exposed endpoints at regular intervals.|
-|Management and Monitoring|Sidecar Pattern|Deploy components of an application into a separate process or container to provide isolation and encapsulation.|
-|Management and Monitoring|Strangler Pattern|Incrementally migrate a legacy system by gradually replacing specific pieces of functionality with new applications and services.|
-|Messaging|Asynchronous Request-Reply Pattern|Decouple backend processing from a frontend host, where backend processing needs to be asynchronous, but the frontend still needs a clear response.|
-|Messaging|Claim-Check Pattern|Split a large message into a claim check and a payload to avoid overwhelming a message bus.|
-|Messaging|Choreography Pattern|Have each component of the system participate in the decision-making process about the workflow of a business transaction, instead of relying on a central point of control.|
-|Messaging|Competing Consumers Pattern|Enable multiple concurrent consumers to process messages received on the same messaging channel.|
-|Messaging|Pipes and Filters Pattern|Break down a task that performs complex processing into a series of separate elements that can be reused.|
-|Messaging|Priority Queue Pattern|Prioritize requests sent to services so that requests with a higher priority are received and processed more quickly than those with a lower priority.|
-|Messaging|Publisher-Subscriber Pattern|Enable an application to announce events to multiple interested consumers asynchronously, without coupling the senders to the receivers.|
-|Messaging|Queue-Based Load Leveling Pattern|Use a queue that acts as a buffer between a task and a service that it invokes in order to smooth intermittent heavy loads.|
-|Messaging|Scheduler Agent Supervisor Pattern|Coordinate a set of actions across a distributed set of services and other remote resources.|
-|Messaging|Sequential Convoy Pattern|Process a set of related messages in a defined order, without blocking processing of other groups of messages.|
-|Performance and Scalability|Cache-Aside Pattern|Load data on demand into a cache from a data store|
-|Performance and Scalability|Choreography Pattern|Have each component of the system participate in the decision-making process about the workflow of a business transaction, instead of relying on a central point of control.|
-|Performance and Scalability|Command and Query Responsibility Segregation (CQRS) Pattern|Segregate operations that read data from operations that update data by using separate interfaces.|
-|Performance and Scalability|Event Sourcing Pattern|Use an append-only store to record the full series of events that describe actions taken on data in a domain.|
-|Performance and Scalability|Geodes|Deploy backend services into a set of geographical nodes, each of which can service any client request in any region.|
-|Performance and Scalability|Index Table Pattern|Create indexes over the fields in data stores that are frequently referenced by queries.|
-|Performance and Scalability|Materialized View Pattern|Generate prepopulated views over the data in one or more data stores when the data isn't ideally formatted for required query operations.|
-|Performance and Scalability|Priority Queue Pattern|Prioritize requests sent to services so that requests with a higher priority are received and processed more quickly than those with a lower priority.|
-|Performance and Scalability|Queue-Based Load Leveling Pattern|Use a queue that acts as a buffer between a task and a service that it invokes in order to smooth intermittent heavy loads.|
-|Performance and Scalability|Sharding Pattern|Divide a data store into a set of horizontal partitions or shards.|
-|Performance and Scalability|Static Content Hosting Pattern|Deploy static content to a cloud-based storage service that can deliver them directly to the client.|
-|Performance and Scalability|Throttling Pattern|Control the consumption of resources used by an instance of an application, an individual tenant, or an entire service.|
-|Resiliency|Bulkhead Pattern|Isolate elements of an application into pools so that if one fails, the others will continue to function.|
-|Resiliency|Circuit Breaker Pattern|Handle faults that might take a variable amount of time to fix when connecting to a remote service or resource.|
-|Resiliency|Compensating Transaction Pattern|Undo the work performed by a series of steps, which together define an eventually consistent operation.|
-|Resiliency|Health Endpoint Monitoring Pattern|Implement functional checks in an application that external tools can access through exposed endpoints at regular intervals.|
-|Resiliency|Leader Election Pattern|Coordinate the actions performed by a collection of collaborating task instances in a distributed application by electing one instance as the leader that assumes responsibility for managing the other instances.|
-|Resiliency|Queue-Based Load Leveling Pattern|Use a queue that acts as a buffer between a task and a service that it invokes in order to smooth intermittent heavy loads.|
-|Resiliency|Retry Pattern|Enable an application to handle anticipated, temporary failures when it tries to connect to a service or network resource by transparently retrying an operation that's previously failed.|
-|Resiliency|Scheduler Agent Supervisor Pattern|Coordinate a set of actions across a distributed set of services and other remote resources.|
-|Security|Federated Identity Pattern|Delegate authentication to an external identity provider.|
-|Security|Gatekeeper Pattern|Protect applications and services by using a dedicated host instance that acts as a broker between clients and the application or service, validates and sanitizes requests, and passes requests and data between them.|
-|Security|Valet Key Pattern|Use a token or key that provides clients with restricted direct access to a specific resource or service.|
-
+<table>
+	<colgroup>
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<tbody>
+		<tr>
+			<th>Category</th>
+			<th>Pattern</th>
+			<th>Summary</th>
+		</tr>
+		<tr>
+			<td>Availability</td>
+			<td>
+				<a href="Geodes_463533357.html">Geodes</a>
+			</td>
+			<td>Deploy backend services into a set of geographical nodes, each of which can service any client request in any region.</td>
+		</tr>
+		<tr>
+			<td>Availability</td>
+			<td>
+				<a href="Health-Endpoint-Monitoring-Pattern_463533359.html">Health Endpoint Monitoring Pattern</a>
+			</td>
+			<td>Implement functional checks in an application that external tools can access through exposed endpoints at regular intervals.</td>
+		</tr>
+		<tr>
+			<td>Availability</td>
+			<td>
+				<a href="Queue-Based-Load-Leveling-Pattern_463533393.html">Queue-Based Load Leveling Pattern</a>
+			</td>
+			<td>Use a queue that acts as a buffer between a task and a service that it invokes, to smooth intermittent heavy loads.</td>
+		</tr>
+		<tr>
+			<td>Availability</td>
+			<td>
+				<a href="Throttling-Pattern_463533412.html">Throttling Pattern</a>
+			</td>
+			<td>Control the consumption of resources by an instance of an application, an individual tenant, or an entire service.</td>
+		</tr>
+		<tr>
+			<td>Data Management</td>
+			<td>
+				<a href="Cache-Aside-Pattern_463533304.html">Cache-Aside Pattern</a>
+			</td>
+			<td>Load data on demand into a cache from a data store</td>
+		</tr>
+		<tr>
+			<td>Data Management</td>
+			<td>
+				<a href="463533319.html">Command and Query Responsibility Segregation (CQRS) Pattern</a>
+			</td>
+			<td>Segregate operations that read data from operations that update data by using separate interfaces.</td>
+		</tr>
+		<tr>
+			<td>Data Management</td>
+			<td>
+				<a href="Event-Sourcing-Pattern_463533332.html">Event Sourcing Pattern</a>
+			</td>
+			<td>Use an append-only store to record the full series of events that describe actions taken on data in a domain</td>
+		</tr>
+		<tr>
+			<td>Data Management</td>
+			<td>
+				<a href="Index-Table-Pattern_463533366.html">Index Table Pattern</a>
+			</td>
+			<td>Create indexes over the fields in data stores that are frequently referenced by queries.</td>
+		</tr>
+		<tr>
+			<td>Data Management</td>
+			<td>
+				<a href="Materialized-View-Pattern_463533369.html">Materialized View Pattern</a>
+			</td>
+			<td>Generate prepopulated views over the data in one or more data stores when the data isn't ideally formatted for required query operations.</td>
+		</tr>
+		<tr>
+			<td>Data Management</td>
+			<td>
+				<a href="Sharding-Pattern_463533404.html">Sharding Pattern</a>
+			</td>
+			<td>Divide a data store into a set of horizontal partitions or shards.</td>
+		</tr>
+		<tr>
+			<td>Data Management</td>
+			<td>
+				<a href="Static-Content-Hosting-Pattern_463533407.html">Static Content Hosting Pattern</a>
+			</td>
+			<td>Deploy static content to a cloud-based storage service that can deliver them directly to the client.</td>
+		</tr>
+		<tr>
+			<td>Data Management</td>
+			<td>
+				<a href="Valet-Key-Pattern_463533414.html">Valet Key Pattern</a>
+			</td>
+			<td>Use a token or key that provides clients with restricted direct access to a specific resource or service.</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Design and Implementation</p>
+			</td>
+			<td>
+				<a href="Ambassador-Pattern_463533289.html">Ambassador Pattern</a>
+			</td>
+			<td>Create helper services that send network requests on behalf of a consumer service or application.</td>
+		</tr>
+		<tr>
+			<td>Design and Implementation</td>
+			<td>
+				<a href="Anti-Corruption-Layer-Pattern_463533416.html">Anti-Corruption Layer Pattern</a>
+			</td>
+			<td>Implement a façade or adapter layer between a modern application and a legacy system.</td>
+		</tr>
+		<tr>
+			<td>Design and Implementation</td>
+			<td>
+				<a href="Backends-for-Frontends-Pattern_463533297.html">Backends for Frontends Pattern</a>
+			</td>
+			<td>Create separate backend services to be consumed by specific frontend applications or interfaces.</td>
+		</tr>
+		<tr>
+			<td>Design and Implementation</td>
+			<td>
+				<a href="463533319.html">Command and Query Responsibility Segregation (CQRS) Pattern</a>
+			</td>
+			<td>Segregate operations that read data from operations that update data by using separate interfaces</td>
+		</tr>
+		<tr>
+			<tdDesign and Implementation</td>
+			<td
+				<a href="Compute-Resource-Consolidation-Pattern_463533330.html">Compute Resource Consolidation Pattern</a>
+			</td>
+			<tdConsolidate multiple tasks or operations into a single computational unit</td>
+		</tr>
+		<tr>
+			<tdDesign and Implementation</td>
+			<td
+				<a href="External-Configuration-Store-Pattern_463533334.html">External Configuration Store Pattern</a>
+			</td>
+			<tdMove configuration information out of the application deployment package to a centralized location.</td>
+		</tr>
+		<tr>
+			<tdDesign and Implementation</td>
+			<td
+				<a href="Gateway-Aggregation-Pattern_463533350.html">Gateway Aggregation Pattern</a>
+			</td>
+			<tdUse a gateway to aggregate multiple individual requests into a single request.</td>
+		</tr>
+		<tr>
+			<tdDesign and Implementation</td>
+			<td
+				<a href="Gateway-Offloading-Pattern_463533352.html">Gateway Offloading Pattern</a>
+			</td>
+			<tdOffload shared or specialized service functionality to a gateway proxy</td>
+		</tr>
+		<tr>
+			<tdDesign and Implementation</td>
+			<td
+				<a href="Gateway-Routing-Pattern_463533354.html">Gateway Routing Pattern</a>
+			</td>
+			<tdRoute requests to multiple services using a single endpoint.</td>
+		</tr>
+		<tr>
+			<tdDesign and Implementation</td>
+			<td
+				<a href="Leader-Election-Pattern_463533367.html">Leader Election Pattern</a>
+			</td>
+			<tdCoordinate the actions performed by a collection of collaborating task instances in a distributed application by electing one instance as the leader that assumes responsibility for managing the other instances.</td>
+		</tr>
+		<tr>
+			<tdDesign and Implementation</td>
+			<td
+				<a href="Pipes-and-Filters-Pattern_463533386.html">Pipes and Filters Pattern</a>
+			</td>
+			<tdBreak down a task that performs complex processing into a series of separate elements that can be reused.</td>
+		</tr>
+		<tr>
+			<tdDesign and Implementation</td>
+			<td
+				<a href="Sidecar-Pattern_463533406.html">Sidecar Pattern</a>
+			</td>
+			<tdDeploy components of an application into a separate process or container to provide isolation and encapsulation.</td>
+		</tr>
+		<tr>
+			<tdDesign and Implementation</td>
+			<td
+				<a href="Static-Content-Hosting-Pattern_463533407.html">Static Content Hosting Pattern</a>
+			</td>
+			<tdDeploy static content to a cloud-based storage service that can deliver them directly to the client.</td>
+		</tr>
+		<tr>
+			<tdDesign and Implementation</td>
+			<td
+				<a href="Strangler-Pattern_463533409.html">Strangler Pattern</a>
+			</td>
+			<tdIncrementally migrate a legacy system by gradually replacing specific pieces of functionality with new applications and services.</td>
+		</tr>
+		<tr>
+			<tdManagement and Monitoring</td>
+			<td
+				<a href="Ambassador-Pattern_463533289.html">Ambassador Pattern</a>
+			</td>
+			<tdCreate helper services that send network requests on behalf of a consumer service or application.</td>
+		</tr>
+		<tr>
+			<tdManagement and Monitoring</td>
+			<td
+				<a href="Anti-Corruption-Layer-Pattern_463533416.html">Anti-Corruption Layer Pattern</a>
+			</td>
+			<tdImplement a façade or adapter layer between a modern application and a legacy system.</td>
+		</tr>
+		<tr>
+			<tdManagement and Monitoring</td>
+			<td
+				<a href="External-Configuration-Store-Pattern_463533334.html">External Configuration Store Pattern</a>
+			</td>
+			<tdMove configuration information out of the application deployment package to a centralized location.</td>
+		</tr>
+		<tr>
+			<tdManagement and Monitoring</td>
+			<td
+				<a href="Gateway-Aggregation-Pattern_463533350.html">Gateway Aggregation Pattern</a>
+			</td>
+			<tdUse a gateway to aggregate multiple individual requests into a single request.</td>
+		</tr>
+		<tr>
+			<tdManagement and Monitoring</td>
+			<td
+				<a href="Gateway-Offloading-Pattern_463533352.html">Gateway Offloading Pattern</a>
+			</td>
+			<tdOffload shared or specialized service functionality to a gateway proxy.</td>
+		</tr>
+		<tr>
+			<tdManagement and Monitoring</td>
+			<td
+				<a href="Gateway-Routing-Pattern_463533354.html">Gateway Routing Pattern</a>
+			</td>
+			<tdRoute requests to multiple services using a single endpoint.</td>
+		</tr>
+		<tr>
+			<tdManagement and Monitoring</td>
+			<td
+				<a href="Health-Endpoint-Monitoring-Pattern_463533359.html">Health Endpoint Monitoring Pattern</a>
+			</td>
+			<tdImplement functional checks in an application that external tools can access through exposed endpoints at regular intervals.</td>
+		</tr>
+		<tr>
+			<tdManagement and Monitoring</td>
+			<td
+				<a href="Sidecar-Pattern_463533406.html">Sidecar Pattern</a>
+			</td>
+			<tdDeploy components of an application into a separate process or container to provide isolation and encapsulation.</td>
+		</tr>
+		<tr>
+			<tdManagement and Monitoring</td>
+			<td
+				<a href="Strangler-Pattern_463533409.html">Strangler Pattern</a>
+			</td>
+			<tdIncrementally migrate a legacy system by gradually replacing specific pieces of functionality with new applications and services.</td>
+		</tr>
+		<tr>
+			<tdMessaging</td>
+			<td
+				<a href="Asynchronous-Request-Reply-Pattern_463533293.html">Asynchronous Request-Reply Pattern</a>
+			</td>
+			<tdDecouple backend processing from a frontend host, where backend processing needs to be asynchronous, but the frontend still needs a clear response.</td>
+		</tr>
+		<tr>
+			<tdMessaging</td>
+			<td
+				<a href="Claim-Check-Pattern_463533314.html">Claim-Check Pattern</a>
+			</td>
+			<tdSplit a large message into a claim check and a payload to avoid overwhelming a message bus.</td>
+		</tr>
+		<tr>
+			<tdMessaging</td>
+			<td
+				<a href="Choreography-Pattern_463533308.html">Choreography Pattern</a>
+			</td>
+			<tdHave each component of the system participate in the decision-making process about the workflow of a business transaction, instead of relying on a central point of control.</td>
+		</tr>
+		<tr>
+			<tdMessaging</td>
+			<td
+				<a href="Competing-Consumers-Pattern_463533328.html">Competing Consumers Pattern</a>
+			</td>
+			<tdEnable multiple concurrent consumers to process messages received on the same messaging channel.</td>
+		</tr>
+		<tr>
+			<tdMessaging</td>
+			<td
+				<a href="Pipes-and-Filters-Pattern_463533386.html">Pipes and Filters Pattern</a>
+			</td>
+			<tdBreak down a task that performs complex processing into a series of separate elements that can be reused.</td>
+		</tr>
+		<tr>
+			<tdMessaging</td>
+			<td
+				<a href="Priority-Queue-Pattern_463533389.html">Priority Queue Pattern</a>
+			</td>
+			<tdPrioritize requests sent to services so that requests with a higher priority are received and processed more quickly than those with a lower priority.</td>
+		</tr>
+		<tr>
+			<tdMessaging</td>
+			<td
+				<a href="Publisher-Subscriber-Pattern_463533391.html">Publisher-Subscriber Pattern</a>
+			</td>
+			<tdEnable an application to announce events to multiple interested consumers asynchronously, without coupling the senders to the receivers.</td>
+		</tr>
+		<tr>
+			<tdMessaging</td>
+			<td
+				<a href="Queue-Based-Load-Leveling-Pattern_463533393.html">Queue-Based Load Leveling Pattern</a>
+			</td>
+			<tdUse a queue that acts as a buffer between a task and a service that it invokes in order to smooth intermittent heavy loads.</td>
+		</tr>
+		<tr>
+			<tdMessaging</td>
+			<td
+				<a href="Scheduler-Agent-Supervisor-Pattern_463533397.html">Scheduler Agent Supervisor Pattern</a>
+			</td>
+			<tdCoordinate a set of actions across a distributed set of services and other remote resources.</td>
+		</tr>
+		<tr>
+			<tdMessaging</td>
+			<td
+				<a href="Sequential-Convoy-Pattern_463533400.html">Sequential Convoy Pattern</a>
+			</td>
+			<tdProcess a set of related messages in a defined order, without blocking processing of other groups of messages.</td>
+		</tr>
+		<tr>
+			<tdPerformance and Scalability</td>
+			<td
+				<a href="Cache-Aside-Pattern_463533304.html">Cache-Aside Pattern</a>
+			</td>
+			<tdLoad data on demand into a cache from a data store</td>
+		</tr>
+		<tr>
+			<tdPerformance and Scalability</td>
+			<td
+				<a href="Choreography-Pattern_463533308.html">Choreography Pattern</a>
+			</td>
+			<tdHave each component of the system participate in the decision-making process about the workflow of a business transaction, instead of relying on a central point of control.</td>
+		</tr>
+		<tr>
+			<tdPerformance and Scalability</td>
+			<td
+				<a href="463533319.html">Command and Query Responsibility Segregation (CQRS) Pattern</a>
+			</td>
+			<tdSegregate operations that read data from operations that update data by using separate interfaces.</td>
+		</tr>
+		<tr>
+			<tdPerformance and Scalability</td>
+			<td
+				<a href="Event-Sourcing-Pattern_463533332.html">Event Sourcing Pattern</a>
+			</td>
+			<tdUse an append-only store to record the full series of events that describe actions taken on data in a domain.</td>
+		</tr>
+		<tr>
+			<tdPerformance and Scalability</td>
+			<td
+				<a href="Geodes_463533357.html">Geodes</a>
+			</td>
+			<tdDeploy backend services into a set of geographical nodes, each of which can service any client request in any region.</td>
+		</tr>
+		<tr>
+			<tdPerformance and Scalability</td>
+			<td
+				<a href="Index-Table-Pattern_463533366.html">Index Table Pattern</a>
+			</td>
+			<tdCreate indexes over the fields in data stores that are frequently referenced by queries.</td>
+		</tr>
+		<tr>
+			<tdPerformance and Scalability</td>
+			<td
+				<a href="Materialized-View-Pattern_463533369.html">Materialized View Pattern</a>
+			</td>
+			<tdGenerate prepopulated views over the data in one or more data stores when the data isn't ideally formatted for required query operations.</td>
+		</tr>
+		<tr>
+			<tdPerformance and Scalability</td>
+			<td
+				<a href="Priority-Queue-Pattern_463533389.html">Priority Queue Pattern</a>
+			</td>
+			<tdPrioritize requests sent to services so that requests with a higher priority are received and processed more quickly than those with a lower priority.</td>
+		</tr>
+		<tr>
+			<tdPerformance and Scalability</td>
+			<td
+				<a href="Queue-Based-Load-Leveling-Pattern_463533393.html">Queue-Based Load Leveling Pattern</a>
+			</td>
+			<tdUse a queue that acts as a buffer between a task and a service that it invokes in order to smooth intermittent heavy loads.</td>
+		</tr>
+		<tr>
+			<tdPerformance and Scalability</td>
+			<td
+				<a href="Sharding-Pattern_463533404.html">Sharding Pattern</a>
+			</td>
+			<tdDivide a data store into a set of horizontal partitions or shards.</td>
+		</tr>
+		<tr>
+			<tdPerformance and Scalability</td>
+			<td
+				<a href="Static-Content-Hosting-Pattern_463533407.html">Static Content Hosting Pattern</a>
+			</td>
+			<tdDeploy static content to a cloud-based storage service that can deliver them directly to the client.</td>
+		</tr>
+		<tr>
+			<tdPerformance and Scalability</td>
+			<td
+				<a href="Throttling-Pattern_463533412.html">Throttling Pattern</a>
+			</td>
+			<tdControl the consumption of resources used by an instance of an application, an individual tenant, or an entire service.</td>
+		</tr>
+		<tr>
+			<tdResiliency</td>
+			<td
+				<a href="Bulkhead-Pattern_463533301.html">Bulkhead Pattern</a>
+			</td>
+			<tdIsolate elements of an application into pools so that if one fails, the others will continue to function.</td>
+		</tr>
+		<tr>
+			<tdResiliency</td>
+			<td
+				<a href="Circuit-Breaker-Pattern_463533311.html">Circuit Breaker Pattern</a>
+			</td>
+			<tdHandle faults that might take a variable amount of time to fix when connecting to a remote service or resource.</td>
+		</tr>
+		<tr>
+			<tdResiliency</td>
+			<td
+				<a href="Compensating-Transaction-Pattern_463533321.html">Compensating Transaction Pattern</a>
+			</td>
+			<tdUndo the work performed by a series of steps, which together define an eventually consistent operation.</td>
+		</tr>
+		<tr>
+			<tdResiliency</td>
+			<td
+				<a href="Health-Endpoint-Monitoring-Pattern_463533359.html">Health Endpoint Monitoring Pattern</a>
+			</td>
+			<tdImplement functional checks in an application that external tools can access through exposed endpoints at regular intervals.</td>
+		</tr>
+		<tr>
+			<tdResiliency</td>
+			<td
+				<a href="Leader-Election-Pattern_463533367.html">Leader Election Pattern</a>
+			</td>
+			<tdCoordinate the actions performed by a collection of collaborating task instances in a distributed application by electing one instance as the leader that assumes responsibility for managing the other instances.</td>
+		</tr>
+		<tr>
+			<tdResiliency</td>
+			<td
+				<a href="Queue-Based-Load-Leveling-Pattern_463533393.html">Queue-Based Load Leveling Pattern</a>
+			</td>
+			<tdUse a queue that acts as a buffer between a task and a service that it invokes in order to smooth intermittent heavy loads.</td>
+		</tr>
+		<tr>
+			<tdResiliency</td>
+			<td
+				<a href="Retry-Pattern_463533395.html">Retry Pattern</a>
+			</td>
+			<tdEnable an application to handle anticipated, temporary failures when it tries to connect to a service or network resource by transparently retrying an operation that's previously failed.</td>
+		</tr>
+		<tr>
+			<tdResiliency</td>
+			<td
+				<a href="Scheduler-Agent-Supervisor-Pattern_463533397.html">Scheduler Agent Supervisor Pattern</a>
+			</td>
+			<tdCoordinate a set of actions across a distributed set of services and other remote resources.</td>
+		</tr>
+		<tr>
+			<tdSecurity</td>
+			<td
+				<a href="Federated-Identity-Pattern_463533336.html">Federated Identity Pattern</a>
+			</td>
+			<tdDelegate authentication to an external identity provider.</td>
+		</tr>
+		<tr>
+			<tdSecurity</td>
+			<td
+				<a href="Gatekeeper-Pattern_463533347.html">Gatekeeper Pattern</a>
+			</td>
+			<tdProtect applications and services by using a dedicated host instance that acts as a broker between clients and the application or service, validates and sanitizes requests, and passes requests and data between them.</td>
+		</tr>
+		<tr>
+			<tdSecurity</td>
+			<td
+				<a href="Valet-Key-Pattern_463533414.html">Valet Key Pattern</a>
+			</td>
+			<tdUse a token or key that provides clients with restricted direct access to a specific resource or service.</td>
+		</tr>
+	</tbody>
+</table>
 
 Design Patterns
 ---------------
@@ -244,39 +665,39 @@ configured for communication.
 #### Issues and Considerations
 
 -   The proxy adds some latency overhead. Consider whether a client
-    library, invoked directly by the application, is a better approach.
+	library, invoked directly by the application, is a better approach.
 -   Consider the possible impact of including generalized features in
-    the proxy. For example, the ambassador could handle retries, but
-    that might not be safe unless all operations are idempotent.
+	the proxy. For example, the ambassador could handle retries, but
+	that might not be safe unless all operations are idempotent.
 -   Consider a mechanism to allow the client to pass some context to the
-    proxy, as well as back to the client. For example, include HTTP
-    request headers to opt out of retry or specify the maximum number of
-    times to retry.
+	proxy, as well as back to the client. For example, include HTTP
+	request headers to opt out of retry or specify the maximum number of
+	times to retry.
 -   Consider how you will package and deploy the proxy.
 -   Consider whether to use a single shared instance for all clients or
-    an instance for each client.
+	an instance for each client.
 
 #### When to use this Pattern
 
 Use this pattern when you:
 
 -   Need to build a common set of client connectivity features for
-    multiple languages or frameworks.
+	multiple languages or frameworks.
 -   Need to offload cross-cutting client connectivity concerns to
-    infrastructure developers or other more specialized teams.
+	infrastructure developers or other more specialized teams.
 -   Need to support cloud or cluster connectivity requirements in a
-    legacy application or an application that is difficult to modify.
+	legacy application or an application that is difficult to modify.
 
 This pattern may not be suitable:
 
 -   When network request latency is critical. A proxy will introduce
-    some overhead, although minimal, and in some cases this may affect
-    the application.
+	some overhead, although minimal, and in some cases this may affect
+	the application.
 -   When client connectivity features are consumed by a single language.
-    In that case, a better option might be a client library that is
-    distributed to the development teams as a package.
+	In that case, a better option might be a client library that is
+	distributed to the development teams as a package.
 -   When connectivity features cannot be generalized and require deeper
-    integration with the client application.
+	integration with the client application.
 
 ### Anti-Corruption Layer Pattern
 
@@ -344,39 +765,39 @@ configured for communication.
 #### Issues and Considerations
 
 -   The proxy adds some latency overhead. Consider whether a client
-    library, invoked directly by the application, is a better approach.
+	library, invoked directly by the application, is a better approach.
 -   Consider the possible impact of including generalized features in
-    the proxy. For example, the ambassador could handle retries, but
-    that might not be safe unless all operations are idempotent.
+	the proxy. For example, the ambassador could handle retries, but
+	that might not be safe unless all operations are idempotent.
 -   Consider a mechanism to allow the client to pass some context to the
-    proxy, as well as back to the client. For example, include HTTP
-    request headers to opt out of retry or specify the maximum number of
-    times to retry.
+	proxy, as well as back to the client. For example, include HTTP
+	request headers to opt out of retry or specify the maximum number of
+	times to retry.
 -   Consider how you will package and deploy the proxy.
 -   Consider whether to use a single shared instance for all clients or
-    an instance for each client.
+	an instance for each client.
 
 #### When to use this Pattern
 
 Use this pattern when you:
 
 -   Need to build a common set of client connectivity features for
-    multiple languages or frameworks.
+	multiple languages or frameworks.
 -   Need to offload cross-cutting client connectivity concerns to
-    infrastructure developers or other more specialized teams.
+	infrastructure developers or other more specialized teams.
 -   Need to support cloud or cluster connectivity requirements in a
-    legacy application or an application that is difficult to modify.
+	legacy application or an application that is difficult to modify.
 
 This pattern may not be suitable:
 
 -   When network request latency is critical. A proxy will introduce
-    some overhead, although minimal, and in some cases this may affect
-    the application.
+	some overhead, although minimal, and in some cases this may affect
+	the application.
 -   When client connectivity features are consumed by a single language.
-    In that case, a better option might be a client library that is
-    distributed to the development teams as a package.
+	In that case, a better option might be a client library that is
+	distributed to the development teams as a package.
 -   When connectivity features cannot be generalized and require deeper
-    integration with the client application.
+	integration with the client application.
 
 ### Asynchronous Request-Reply Pattern
 
@@ -445,30 +866,30 @@ extra libraries and services that are required can sometimes add too
 much extra complexity.
 
 -   The client application makes a synchronous call to the API,
-    triggering a long-running operation on the backend.
+	triggering a long-running operation on the backend.
 
 -   The API responds synchronously as quickly as possible. It returns an
-    HTTP 202 (Accepted) status code, acknowledging that the request has
-    been received for processing.
+	HTTP 202 (Accepted) status code, acknowledging that the request has
+	been received for processing.
 
-    *Note: The API should validate both the request and the action to be
-    performed before starting the long running process. If the request
-    is invalid, reply immediately with an error code such as HTTP 400
-    (Bad Request).*
+	*Note: The API should validate both the request and the action to be
+	performed before starting the long running process. If the request
+	is invalid, reply immediately with an error code such as HTTP 400
+	(Bad Request).*
 
 -   The response holds a location reference pointing to an endpoint that
-    the client can poll to check for the result of the long running
-    operation.
+	the client can poll to check for the result of the long running
+	operation.
 
 -   The API offloads processing to another component, such as a message
-    queue.
+	queue.
 
 -   While the work is still pending, the status endpoint returns
-    HTTP 202. Once the work is complete, the status endpoint can either
-    return a resource that indicates completion, or redirect to another
-    resource URL. For example, if the asynchronous operation creates a
-    new resource, the status endpoint would redirect to the URL for that
-    resource.
+	HTTP 202. Once the work is complete, the status endpoint can either
+	return a resource that indicates completion, or redirect to another
+	resource URL. For example, if the asynchronous operation creates a
+	new resource, the status endpoint would redirect to the URL for that
+	resource.
 
 The following diagram shows a typical flow:
 
@@ -476,94 +897,119 @@ The following diagram shows a typical flow:
 
 
 1.  The client sends a request and receives an HTTP 202 (Accepted)
-    response.
+	response.
 2.  The client sends an HTTP GET request to the status endpoint. The
-    work is still pending, so this call also returns HTTP 202.
+	work is still pending, so this call also returns HTTP 202.
 3.  At some point, the work is complete and the status endpoint returns
-    302 (Found) redirecting to the resource.
+	302 (Found) redirecting to the resource.
 4.  The client fetches the resource at the specified URL.
 
 #### Issues and Considerations
 
 -   There are a number of possible ways to implement this pattern over
-    HTTP and not all upstream services have the same semantics. For
-    example, most services won\'t return an HTTP 202 response back from
-    a GET method when a remote process hasn\'t finished. Following pure
-    REST semantics, they should return HTTP 404 (Not Found). This
-    response makes sense when you consider the result of the call isn\'t
-    present yet.
+	HTTP and not all upstream services have the same semantics. For
+	example, most services won\'t return an HTTP 202 response back from
+	a GET method when a remote process hasn\'t finished. Following pure
+	REST semantics, they should return HTTP 404 (Not Found). This
+	response makes sense when you consider the result of the call isn\'t
+	present yet.
 
 -   An HTTP 202 response should indicate the location and frequency that
-    the client should poll for the response. It should have the
-    following additional headers:
+	the client should poll for the response. It should have the
+	following additional headers:
 
-    |Header|Description|Notes|
-    |--- |--- |--- |
-    |Location|A URL the client should poll for a response status.|This URL could be a SAS token with the Valet Key Pattern being appropriate if this location needs access control. The valet key pattern is also valid when response polling needs offloading to another backend|
-    |Retry-After|An estimate of when processing will complete|This header is designed to prevent polling clients from overwhelming the back-end with retries.|
+<table>
+	<colgroup>
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<thead>
+		<tr>
+			<th>Header</th>
+			<th>Description</th>
+			<th>Notes</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Location</td>
+			<td>A URL the client should poll for a response status.</td>
+			<td>
+				This URL could be a SAS token with the 
+				<a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/valet-key" style="text-decoration: none;" class="external-link" rel="nofollow">Valet Key Pattern</a> being appropriate if this location needs access control. The valet key pattern is also valid when response polling needs offloading to another backend
+			</td>
+		</tr>
+		<tr>
+			<td>Retry-After</td>
+			<td>An estimate of when processing will complete</td>
+			<td>This header is designed to prevent polling clients from overwhelming the back-end with retries.</td>
+		</tr>
+	</tbody>
+</table>
 
 -   You may need to use a processing proxy or facade to manipulate the
-    response headers or payload depending on the underlying services
-    used.
+	response headers or payload depending on the underlying services
+	used.
 
 -   If the status endpoint redirects on completion, either  [HTTP 302](https://tools.ietf.org/html/rfc7231#section-6.4.3) or 
-    [HTTP 303](https://tools.ietf.org/html/rfc7231#section-6.4.4) are
-    appropriate return codes, depending on the exact semantics you
-    support.
+	[HTTP 303](https://tools.ietf.org/html/rfc7231#section-6.4.4) are
+	appropriate return codes, depending on the exact semantics you
+	support.
 
 -   Upon successful processing, the resource specified by the Location
-    header should return an appropriate HTTP response code such as 200
-    (OK), 201 (Created), or 204 (No Content).
+	header should return an appropriate HTTP response code such as 200
+	(OK), 201 (Created), or 204 (No Content).
 
 -   If an error occurs during processing, persist the error at the
-    resource URL described in the Location header and ideally return an
-    appropriate response code to the client from that resource (4xx
-    code).
+	resource URL described in the Location header and ideally return an
+	appropriate response code to the client from that resource (4xx
+	code).
 
 -   Not all solutions will implement this pattern in the same way and
-    some services will include additional or alternate headers. For
-    example, Azure Resource Manager uses a modified variant of this
-    pattern. For more information, see  [Azure Resource Manager Async Operations](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-async-operations).
+	some services will include additional or alternate headers. For
+	example, Azure Resource Manager uses a modified variant of this
+	pattern. For more information, see  [Azure Resource Manager Async Operations](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-async-operations).
 
 -   Legacy clients might not support this pattern. In that case, you
-    might need to place a facade over the asynchronous API to hide the
-    asynchronous processing from the original client. For example, Azure
-    Logic Apps supports this pattern natively can be used as an
-    integration layer between an asynchronous API and a client that
-    makes synchronous calls. See  [Perform long-running tasks with the webhook action pattern](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-create-api-app#perform-long-running-tasks-with-the-webhook-action-pattern).
+	might need to place a facade over the asynchronous API to hide the
+	asynchronous processing from the original client. For example, Azure
+	Logic Apps supports this pattern natively can be used as an
+	integration layer between an asynchronous API and a client that
+	makes synchronous calls. See  [Perform long-running tasks with the webhook action pattern](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-create-api-app#perform-long-running-tasks-with-the-webhook-action-pattern).
 
 -   In some scenarios, you might want to provide a way for clients to
-    cancel a long-running request. In that case, the backend service
-    must support some form of cancellation instruction.
+	cancel a long-running request. In that case, the backend service
+	must support some form of cancellation instruction.
 
 #### When to use this Pattern
 
 Use this pattern for:
 
 -   Client-side code, such as browser applications, where it\'s
-    difficult to provide call-back endpoints, or the use of long-running
-    connections adds too much additional complexity.
+	difficult to provide call-back endpoints, or the use of long-running
+	connections adds too much additional complexity.
 
 -   Service calls where only the HTTP protocol is available and the
-    return service can\'t fire callbacks because of firewall
-    restrictions on the client-side.
+	return service can\'t fire callbacks because of firewall
+	restrictions on the client-side.
 
 -   Service calls that need to be integrated with legacy architectures
-    that don\'t support modern callback technologies such as WebSockets
-    or webhooks.
+	that don\'t support modern callback technologies such as WebSockets
+	or webhooks.
 
 This pattern might not be suitable when:
 
 -   You can use a service built for asynchronous notifications instead,
-    such as Azure Event Grid.
+	such as Azure Event Grid.
 -   Responses must stream in real time to the client.
 -   The client needs to collect many results, and received latency of
-    those results is important. Consider a service bus pattern instead.
+	those results is important. Consider a service bus pattern instead.
 -   You can use server-side persistent network connections such as
-    WebSockets or SignalR. These services can be used to notify the
-    caller of the result.
+	WebSockets or SignalR. These services can be used to notify the
+	caller of the result.
 -   The network design allows you to open up ports to receive
-    asynchronous callbacks or webhooks.
+	asynchronous callbacks or webhooks.
 
 ### Backends for Frontends Pattern
 
@@ -630,31 +1076,31 @@ For more information, see  [Pattern: Backends For Frontends](https://samnewman.
 
 -   onsider how many backends to deploy.
 -   If different interfaces (such as mobile clients) will make the same
-    requests, consider whether it is necessary to implement a backend
-    for each interface, or if a single backend will suffice.
+	requests, consider whether it is necessary to implement a backend
+	for each interface, or if a single backend will suffice.
 -   Code duplication across services is highly likely when implementing
-    this pattern.
+	this pattern.
 -   Frontend-focused backend services should only contain
-    client-specific logic and behavior. General business logic and other
-    global features should be managed elsewhere in your application.
+	client-specific logic and behavior. General business logic and other
+	global features should be managed elsewhere in your application.
 -   Think about how this pattern might be reflected in the
-    responsibilities of a development team.
+	responsibilities of a development team.
 -   Consider how long it will take to implement this pattern. Will the
-    effort of building the new backends incur technical debt, while you
-    continue to support the existing generic backend?
+	effort of building the new backends incur technical debt, while you
+	continue to support the existing generic backend?
 
 #### When to use this Pattern
 
 Use this pattern when:
 
 -   A shared or general purpose backend service must be maintained with
-    significant development overhead.
+	significant development overhead.
 -   You want to optimize the backend for the requirements of specific
-    client interfaces.
+	client interfaces.
 -   Customizations are made to a general-purpose backend to accommodate
-    multiple interfaces.
+	multiple interfaces.
 -   An alternative language is better suited for the backend of a
-    different user interface.
+	different user interface.
 
 This pattern may not be suitable:
 
@@ -710,14 +1156,14 @@ allowing the consumer to continue using the other services.
 The benefits of this pattern include:
 
 -   Isolates consumers and services from cascading failures. An issue
-    affecting a consumer or service can be isolated within its own
-    bulkhead, preventing the entire solution from failing.
+	affecting a consumer or service can be isolated within its own
+	bulkhead, preventing the entire solution from failing.
 -   Allows you to preserve some functionality in the event of a service
-    failure. Other services and features of the application will
-    continue to work.
+	failure. Other services and features of the application will
+	continue to work.
 -   Allows you to deploy services that offer a different quality of
-    service for consuming applications. A high-priority consumer pool
-    can be configured to use high-priority services.
+	service for consuming applications. A high-priority consumer pool
+	can be configured to use high-priority services.
 
 The following diagram shows bulkheads structured around connection pools
 that call individual services. If Service A fails or causes some other
@@ -740,29 +1186,29 @@ making calls.
 #### Issues and Considerations
 
 -   Define partitions around the business and technical requirements of
-    the application.
+	the application.
 -   When partitioning services or consumers into bulkheads, consider the
-    level of isolation offered by the technology as well as the overhead
-    in terms of cost, performance and manageability.
+	level of isolation offered by the technology as well as the overhead
+	in terms of cost, performance and manageability.
 -   Consider combining bulkheads with retry, circuit breaker, and
-    throttling patterns to provide more sophisticated fault handling.
+	throttling patterns to provide more sophisticated fault handling.
 -   When partitioning consumers into bulkheads, consider using
-    processes, thread pools, and semaphores. Projects like 
-    [resilience4j](https://github.com/resilience4j/resilience4j) and 
-    [Polly](https://github.com/App-vNext/Polly) offer a
-    framework for creating consumer bulkheads.
+	processes, thread pools, and semaphores. Projects like 
+	[resilience4j](https://github.com/resilience4j/resilience4j) and 
+	[Polly](https://github.com/App-vNext/Polly) offer a
+	framework for creating consumer bulkheads.
 -   When partitioning services into bulkheads, consider deploying them
-    into separate virtual machines, containers, or processes. Containers
-    offer a good balance of resource isolation with fairly low overhead.
+	into separate virtual machines, containers, or processes. Containers
+	offer a good balance of resource isolation with fairly low overhead.
 -   Services that communicate using asynchronous messages can be
-    isolated through different sets of queues. Each queue can have a
-    dedicated set of instances processing messages on the queue, or a
-    single group of instances using an algorithm to dequeue and dispatch
-    processing.
+	isolated through different sets of queues. Each queue can have a
+	dedicated set of instances processing messages on the queue, or a
+	single group of instances using an algorithm to dequeue and dispatch
+	processing.
 -   Determine the level of granularity for the bulkheads. For example,
-    if you want to distribute tenants across partitions, you could place
-    each tenant into a separate partition, or put several tenants into
-    one partition.
+	if you want to distribute tenants across partitions, you could place
+	each tenant into a separate partition, or put several tenants into
+	one partition.
 -   Monitor each partition's performance and SLA.
 
 #### When to use this Pattern
@@ -770,15 +1216,15 @@ making calls.
 #### Use this pattern to:
 
 -   Isolate resources used to consume a set of backend services,
-    especially if the application can provide some level of
-    functionality even when one of the services is not responding.
+	especially if the application can provide some level of
+	functionality even when one of the services is not responding.
 -   Isolate critical consumers from standard consumers.
 -   Protect the application from cascading failures.
 
 This pattern may not be suitable when:
 
 -   Less efficient use of resources may not be acceptable in the
-    project.
+	project.
 -   The added complexity is not necessary
 
 ### Cache-Aside Pattern
@@ -882,19 +1328,19 @@ caching mechanism.
 Use this pattern when:
 
 -   A cache doesn\'t provide native read-through and write-through
-    operations.
+	operations.
 -   Resource demand is unpredictable. This pattern enables applications
-    to load data on demand. It makes no assumptions about which data an
-    application will require in advance.
+	to load data on demand. It makes no assumptions about which data an
+	application will require in advance.
 
 This pattern might not be suitable:
 
 -   When the cached data set is static. If the data will fit into the
-    available cache space, prime the cache with the data on startup and
-    apply a policy that prevents the data from expiring.
+	available cache space, prime the cache with the data on startup and
+	apply a policy that prevents the data from expiring.
 -   For caching session state information in a web application hosted in
-    a web farm. In this environment, you should avoid introducing
-    dependencies based on client-server affinity.
+	a web farm. In this environment, you should avoid introducing
+	dependencies based on client-server affinity.
 
 ### Choreography Pattern
 
@@ -1093,36 +1539,36 @@ The proxy can be implemented as a state machine with the following
 states that mimic the functionality of an electrical circuit breaker:
 
 -   **Closed**: The request from the application is routed to the
-    operation. The proxy maintains a count of the number of recent
-    failures, and if the call to the operation is unsuccessful the proxy
-    increments this count. If the number of recent failures exceeds a
-    specified threshold within a given time period, the proxy is placed
-    into the  **Open** state. At this point the proxy starts a timeout
-    timer, and when this timer expires the proxy is placed into the 
-    **Half-Open** state.
+	operation. The proxy maintains a count of the number of recent
+	failures, and if the call to the operation is unsuccessful the proxy
+	increments this count. If the number of recent failures exceeds a
+	specified threshold within a given time period, the proxy is placed
+	into the  **Open** state. At this point the proxy starts a timeout
+	timer, and when this timer expires the proxy is placed into the 
+	**Half-Open** state.
 
-    > The purpose of the timeout timer is to give the system time to fix
-    > the problem that caused the failure before allowing the
-    > application to try to perform the operation again.
+	> The purpose of the timeout timer is to give the system time to fix
+	> the problem that caused the failure before allowing the
+	> application to try to perform the operation again.
 
 -   **Open**: The request from the application fails immediately and an
-    exception is returned to the application.
+	exception is returned to the application.
 
 -   **Half-Open**: A limited number of requests from the application are
-    allowed to pass through and invoke the operation. If these requests
-    are successful, it\'s assumed that the fault that was previously
-    causing the failure has been fixed and the circuit breaker switches
-    to the  **Closed** state (the failure counter is reset). If any
-    request fails, the circuit breaker assumes that the fault is still
-    present so it reverts back to the  **Open** state and restarts the
-    timeout timer to give the system a further period of time to recover
-    from the failure.
+	allowed to pass through and invoke the operation. If these requests
+	are successful, it\'s assumed that the fault that was previously
+	causing the failure has been fixed and the circuit breaker switches
+	to the  **Closed** state (the failure counter is reset). If any
+	request fails, the circuit breaker assumes that the fault is still
+	present so it reverts back to the  **Open** state and restarts the
+	timeout timer to give the system a further period of time to recover
+	from the failure.
 
-    > The **Half-Open**state is useful to prevent a recovering service
-    > from suddenly being flooded with requests. As a service recovers,
-    > it might be able to support a limited volume of requests until the
-    > recovery is complete, but while recovery is in progress a flood of
-    > work can cause the service to time out or fail again.
+	> The **Half-Open**state is useful to prevent a recovering service
+	> from suddenly being flooded with requests. As a service recovers,
+	> it might be able to support a limited volume of requests until the
+	> recovery is complete, but while recovery is in progress a flood of
+	> work can cause the service to time out or fail again.
 
 <kbd><img src="./attachments/463533310.png" alt=""> </kbd>
 
@@ -1260,15 +1706,15 @@ up a significant number of threads before they all fail.
 Use this pattern:
 
 -   To prevent an application from trying to invoke a remote service or
-    access a shared resource if this operation is highly likely to fail.
+	access a shared resource if this operation is highly likely to fail.
 
 This pattern isn\'t recommended:
 
 -   For handling access to local private resources in an application,
-    such as in-memory data structure. In this environment, using a
-    circuit breaker would add overhead to your system.
+	such as in-memory data structure. In this environment, using a
+	circuit breaker would add overhead to your system.
 -   As a substitute for handling exceptions in the business logic of
-    your applications.
+	your applications.
 
 ### Claim-Check Pattern
 
@@ -1319,20 +1765,20 @@ Consider the following points when deciding how to implement this
 pattern:
 
 -   Consider deleting the message data after consuming it, if you don\'t
-    need to archive the messages. Although blob storage is relatively
-    cheap, it costs some money in the long run, especially if there is a
-    lot of data. Deleting the message can be done synchronously by the
-    application that receives and processes the message, or
-    asynchronously by a separate dedicated process. The asynchronous
-    approach removes old data with no impact on the throughput and
-    message processing performance of the receiving application.
+	need to archive the messages. Although blob storage is relatively
+	cheap, it costs some money in the long run, especially if there is a
+	lot of data. Deleting the message can be done synchronously by the
+	application that receives and processes the message, or
+	asynchronously by a separate dedicated process. The asynchronous
+	approach removes old data with no impact on the throughput and
+	message processing performance of the receiving application.
 
 -   Storing and retrieving the message causes some additional overhead
-    and latency. You may want to implement logic in the sending
-    application to use this pattern only when the message size exceeds
-    the data limit of the message bus. The pattern would be skipped for
-    smaller messages. This approach would result in a conditional
-    claim-check pattern.
+	and latency. You may want to implement logic in the sending
+	application to use this pattern only when the message size exceeds
+	the data limit of the message bus. The pattern would be skipped for
+	smaller messages. This approach would result in a conditional
+	claim-check pattern.
 
 #### When to use this Pattern
 
@@ -1376,20 +1822,20 @@ performance and scale requirements.
 <kbd><img src="./attachments/463533316.png" alt=""> </kbd>
 
 -   There is often a mismatch between the read and write representations
-    of the data, such as additional columns or properties that must be
-    updated correctly even though they aren\'t required as part of an
-    operation.
+	of the data, such as additional columns or properties that must be
+	updated correctly even though they aren\'t required as part of an
+	operation.
 
 -   Data contention can occur when operations are performed in parallel
-    on the same set of data.
+	on the same set of data.
 
 -   The traditional approach can have a negative effect on performance
-    due to load on the data store and data access layer, and the
-    complexity of queries required to retrieve information.
+	due to load on the data store and data access layer, and the
+	complexity of queries required to retrieve information.
 
 -   Managing security and permissions can become complex, because each
-    entity is subject to both read and write operations, which might
-    expose data in the wrong context.
+	entity is subject to both read and write operations, which might
+	expose data in the wrong context.
 
 #### Solution
 
@@ -1397,11 +1843,11 @@ CQRS separates reads and writes into different models, using 
 **commands** to update data, and  **queries** to read data.
 
 -   Commands should be task based, rather than data centric. (\"Book
-    hotel room\", not \"set ReservationStatus to Reserved\").
+	hotel room\", not \"set ReservationStatus to Reserved\").
 -   Commands may be placed on a queue for asynchronous processing,
-    rather than being processed synchronously.
+	rather than being processed synchronously.
 -   Queries never modify the database. A query returns a DTO that does
-    not encapsulate any domain knowledge.
+	not encapsulate any domain knowledge.
 
 The models can then be isolated, as shown in the following diagram,
 although that\'s not an absolute requirement.
@@ -1454,82 +1900,82 @@ design.
 Benefits of CQRS include:
 
 -   **Independent scaling**. CQRS allows the read and write workloads to
-    scale independently, and may result in fewer lock contentions.
+	scale independently, and may result in fewer lock contentions.
 -   **Optimized data schemas**. The read side can use a schema that is
-    optimized for queries, while the write side uses a schema that is
-    optimized for updates.
+	optimized for queries, while the write side uses a schema that is
+	optimized for updates.
 -   **Security**. It\'s easier to ensure that only the right domain
-    entities are performing writes on the data.
+	entities are performing writes on the data.
 -   **Separation of concerns**. Segregating the read and write sides can
-    result in models that are more maintainable and flexible. Most of
-    the complex business logic goes into the write model. The read model
-    can be relatively simple.
+	result in models that are more maintainable and flexible. Most of
+	the complex business logic goes into the write model. The read model
+	can be relatively simple.
 -   **Simpler queries**. By storing a materialized view in the read
-    database, the application can avoid complex joins when querying.
+	database, the application can avoid complex joins when querying.
 
 #### Issues and Considerations
 
 Some challenges of implementing this pattern include:
 
 -   **Complexity**. The basic idea of CQRS is simple. But it can lead to
-    a more complex application design, especially if they include the
-    Event Sourcing pattern.
+	a more complex application design, especially if they include the
+	Event Sourcing pattern.
 
 -   **Messaging**. Although CQRS does not require messaging, it\'s
-    common to use messaging to process commands and publish update
-    events. In that case, the application must handle message failures
-    or duplicate messages.
+	common to use messaging to process commands and publish update
+	events. In that case, the application must handle message failures
+	or duplicate messages.
 
 -   **Eventual consistency**. If you separate the read and write
-    databases, the read data may be stale. The read model store must be
-    updated to reflect changes to the write model store, and it can be
-    difficult to detect when a user has issued a request based on stale
-    read data.
+	databases, the read data may be stale. The read model store must be
+	updated to reflect changes to the write model store, and it can be
+	difficult to detect when a user has issued a request based on stale
+	read data.
 
 #### When to use this Pattern
 
 Consider CQRS for the following scenarios:
 
 -   Collaborative domains where many users access the same data in
-    parallel. CQRS allows you to define commands with enough granularity
-    to minimize merge conflicts at the domain level, and conflicts that
-    do arise can be merged by the command.
+	parallel. CQRS allows you to define commands with enough granularity
+	to minimize merge conflicts at the domain level, and conflicts that
+	do arise can be merged by the command.
 
 -   Task-based user interfaces where users are guided through a complex
-    process as a series of steps or with complex domain models. The
-    write model has a full command-processing stack with business logic,
-    input validation, and business validation. The write model may treat
-    a set of associated objects as a single unit for data changes (an
-    aggregate, in DDD terminology) and ensure that these objects are
-    always in a consistent state. The read model has no business logic
-    or validation stack, and just returns a DTO for use in a view model.
-    The read model is eventually consistent with the write model.
+	process as a series of steps or with complex domain models. The
+	write model has a full command-processing stack with business logic,
+	input validation, and business validation. The write model may treat
+	a set of associated objects as a single unit for data changes (an
+	aggregate, in DDD terminology) and ensure that these objects are
+	always in a consistent state. The read model has no business logic
+	or validation stack, and just returns a DTO for use in a view model.
+	The read model is eventually consistent with the write model.
 
 -   Scenarios where performance of data reads must be fine tuned
-    separately from performance of data writes, especially when the
-    number of reads is much greater than the number of writes. In this
-    scenario, you can scale out the read model, but run the write model
-    on just a few instances. A small number of write model instances
-    also helps to minimize the occurrence of merge conflicts.
+	separately from performance of data writes, especially when the
+	number of reads is much greater than the number of writes. In this
+	scenario, you can scale out the read model, but run the write model
+	on just a few instances. A small number of write model instances
+	also helps to minimize the occurrence of merge conflicts.
 
 -   Scenarios where one team of developers can focus on the complex
-    domain model that is part of the write model, and another team can
-    focus on the read model and the user interfaces.
+	domain model that is part of the write model, and another team can
+	focus on the read model and the user interfaces.
 
 -   Scenarios where the system is expected to evolve over time and might
-    contain multiple versions of the model, or where business rules
-    change regularly.
+	contain multiple versions of the model, or where business rules
+	change regularly.
 
 -   Integration with other systems, especially in combination with event
-    sourcing, where the temporal failure of one subsystem shouldn\'t
-    affect the availability of the others.
+	sourcing, where the temporal failure of one subsystem shouldn\'t
+	affect the availability of the others.
 
 This pattern isn\'t recommended when:
 
 -   The domain or the business rules are simple.
 
 -   A simple CRUD-style user interface and data access operations are
-    sufficient.
+	sufficient.
 
 Consider applying CQRS to limited sections of your system where it will
 be most valuable.
@@ -1732,38 +2178,38 @@ using a message queue to distribute work to instances of a service.
 This solution has the following benefits:
 
 -   It provides a load-leveled system that can handle wide variations in
-    the volume of requests sent by application instances. The queue acts
-    as a buffer between the application instances and the consumer
-    service instances. This can help to minimize the impact on
-    availability and responsiveness for both the application and the
-    service instances, as described by the  [Queue-based Load Leveling
-    pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/queue-based-load-leveling).
-    Handling a message that requires some long-running processing
-    doesn\'t prevent other messages from being handled concurrently by
-    other instances of the consumer service.
+	the volume of requests sent by application instances. The queue acts
+	as a buffer between the application instances and the consumer
+	service instances. This can help to minimize the impact on
+	availability and responsiveness for both the application and the
+	service instances, as described by the  [Queue-based Load Leveling
+	pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/queue-based-load-leveling).
+	Handling a message that requires some long-running processing
+	doesn\'t prevent other messages from being handled concurrently by
+	other instances of the consumer service.
 
 -   It improves reliability. If a producer communicates directly with a
-    consumer instead of using this pattern, but doesn\'t monitor the
-    consumer, there\'s a high probability that messages could be lost or
-    fail to be processed if the consumer fails. In this pattern,
-    messages aren\'t sent to a specific service instance. A failed
-    service instance won\'t block a producer, and messages can be
-    processed by any working service instance.
+	consumer instead of using this pattern, but doesn\'t monitor the
+	consumer, there\'s a high probability that messages could be lost or
+	fail to be processed if the consumer fails. In this pattern,
+	messages aren\'t sent to a specific service instance. A failed
+	service instance won\'t block a producer, and messages can be
+	processed by any working service instance.
 
 -   It doesn\'t require complex coordination between the consumers, or
-    between the producer and the consumer instances. The message queue
-    ensures that each message is delivered at least once.
+	between the producer and the consumer instances. The message queue
+	ensures that each message is delivered at least once.
 
 -   It\'s scalable. The system can dynamically increase or decrease the
-    number of instances of the consumer service as the volume of
-    messages fluctuates.
+	number of instances of the consumer service as the volume of
+	messages fluctuates.
 
 -   It can improve resiliency if the message queue provides
-    transactional read operations. If a consumer service instance reads
-    and processes the message as part of a transactional operation, and
-    the consumer service instance fails, this pattern can ensure that
-    the message will be returned to the queue to be picked up and
-    handled by another instance of the consumer service.
+	transactional read operations. If a consumer service instance reads
+	and processes the message as part of a transactional operation, and
+	the consumer service instance fails, this pattern can ensure that
+	the message will be returned to the queue to be picked up and
+	handled by another instance of the consumer service.
 
 #### Issues and Considerations
 
@@ -1771,78 +2217,78 @@ Consider the following points when deciding how to implement this
 pattern:
 
 -   **Message ordering**. The order in which consumer service instances
-    receive messages isn\'t guaranteed, and doesn\'t necessarily reflect
-    the order in which the messages were created. Design the system to
-    ensure that message processing is idempotent because this will help
-    to eliminate any dependency on the order in which messages are
-    handled. For more information, see  [Idempotency
-    Patterns](https://blog.jonathanoliver.com/idempotency-patterns/) on
-    Jonathon Oliver's blog.
+	receive messages isn\'t guaranteed, and doesn\'t necessarily reflect
+	the order in which the messages were created. Design the system to
+	ensure that message processing is idempotent because this will help
+	to eliminate any dependency on the order in which messages are
+	handled. For more information, see  [Idempotency
+	Patterns](https://blog.jonathanoliver.com/idempotency-patterns/) on
+	Jonathon Oliver's blog.
 
-    > Microsoft Azure Service Bus Queues can implement guaranteed
-    > first-in-first-out ordering of messages by using message sessions.
-    > For more information, see [Messaging Patterns Using
-    > Sessions](https://msdn.microsoft.com/magazine/jj863132.aspx).
+	> Microsoft Azure Service Bus Queues can implement guaranteed
+	> first-in-first-out ordering of messages by using message sessions.
+	> For more information, see [Messaging Patterns Using
+	> Sessions](https://msdn.microsoft.com/magazine/jj863132.aspx).
 
 -   **Designing services for resiliency**. If the system is designed to
-    detect and restart failed service instances, it might be necessary
-    to implement the processing performed by the service instances as
-    idempotent operations to minimize the effects of a single message
-    being retrieved and processed more than once.
+	detect and restart failed service instances, it might be necessary
+	to implement the processing performed by the service instances as
+	idempotent operations to minimize the effects of a single message
+	being retrieved and processed more than once.
 
 -   **Detecting poison messages**. A malformed message, or a task that
-    requires access to resources that aren\'t available, can cause a
-    service instance to fail. The system should prevent such messages
-    being returned to the queue, and instead capture and store the
-    details of these messages elsewhere so that they can be analyzed if
-    necessary.
+	requires access to resources that aren\'t available, can cause a
+	service instance to fail. The system should prevent such messages
+	being returned to the queue, and instead capture and store the
+	details of these messages elsewhere so that they can be analyzed if
+	necessary.
 
 -   **Handling results**. The service instance handling a message is
-    fully decoupled from the application logic that generates the
-    message, and they might not be able to communicate directly. If the
-    service instance generates results that must be passed back to the
-    application logic, this information must be stored in a location
-    that\'s accessible to both. In order to prevent the application
-    logic from retrieving incomplete data the system must indicate when
-    processing is complete.
+	fully decoupled from the application logic that generates the
+	message, and they might not be able to communicate directly. If the
+	service instance generates results that must be passed back to the
+	application logic, this information must be stored in a location
+	that\'s accessible to both. In order to prevent the application
+	logic from retrieving incomplete data the system must indicate when
+	processing is complete.
 
-    > If you\'re using Azure, a worker process can pass results back to
-    > the application logic by using a dedicated message reply queue.
-    > The application logic must be able to correlate these results with
-    > the original message. This scenario is described in more detail in
-    > the [Asynchronous Messaging
-    > Primer](https://msdn.microsoft.com/library/dn589781.aspx).
+	> If you\'re using Azure, a worker process can pass results back to
+	> the application logic by using a dedicated message reply queue.
+	> The application logic must be able to correlate these results with
+	> the original message. This scenario is described in more detail in
+	> the [Asynchronous Messaging
+	> Primer](https://msdn.microsoft.com/library/dn589781.aspx).
 
 -   **Scaling the messaging system**. In a large-scale solution, a
-    single message queue could be overwhelmed by the number of messages
-    and become a bottleneck in the system. In this situation, consider
-    partitioning the messaging system to send messages from specific
-    producers to a particular queue, or use load balancing to distribute
-    messages across multiple message queues.
+	single message queue could be overwhelmed by the number of messages
+	and become a bottleneck in the system. In this situation, consider
+	partitioning the messaging system to send messages from specific
+	producers to a particular queue, or use load balancing to distribute
+	messages across multiple message queues.
 
 -   **Ensuring reliability of the messaging system**. A reliable
-    messaging system is needed to guarantee that after the application
-    enqueues a message it won\'t be lost. This is essential for ensuring
-    that all messages are delivered at least once.
+	messaging system is needed to guarantee that after the application
+	enqueues a message it won\'t be lost. This is essential for ensuring
+	that all messages are delivered at least once.
 
 #### When to use this Pattern
 
 Use this pattern when:
 
 -   The workload for an application is divided into tasks that can run
-    asynchronously.
+	asynchronously.
 -   Tasks are independent and can run in parallel.
 -   The volume of work is highly variable, requiring a scalable
-    solution.
+	solution.
 -   The solution must provide high availability, and must be resilient
-    if the processing for a task fails.
+	if the processing for a task fails.
 
 This pattern might not be useful when:
 
 -   It\'s not easy to separate the application workload into discrete
-    tasks, or there\'s a high degree of dependence between tasks.
+	tasks, or there\'s a high degree of dependence between tasks.
 -   Tasks must be performed synchronously, and the application logic
-    must wait for a task to complete before continuing.
+	must wait for a task to complete before continuing.
 -   Tasks must be performed in a specific sequence.
 
 > Some messaging systems support sessions that enable a producer to
@@ -1914,7 +2360,7 @@ which operations shouldn\'t be grouped together, consider the following
 two tasks:
 
 -   Task 1 polls for infrequent, time-insensitive messages sent to a
-    queue.
+	queue.
 -   Task 2 handles high-volume bursts of network traffic.
 
 The second task requires elasticity that can involve starting and
@@ -2046,15 +2492,15 @@ lock the data.
 The CRUD approach has some limitations:
 
 -   CRUD systems perform update operations directly against a data
-    store, which can slow down performance and responsiveness, and limit
-    scalability, due to the processing overhead it requires.
+	store, which can slow down performance and responsiveness, and limit
+	scalability, due to the processing overhead it requires.
 
 -   In a collaborative domain with many concurrent users, data update
-    conflicts are more likely because the update operations take place
-    on a single item of data.
+	conflicts are more likely because the update operations take place
+	on a single item of data.
 
 -   Unless there\'s an additional auditing mechanism that records the
-    details of each operation in a separate log, history is lost.
+	details of each operation in a separate log, history is lost.
 
 > For a deeper understanding of the limits of the CRUD approach, see 
 > [CRUD, Only When You Can Afford
@@ -2106,52 +2552,52 @@ events to create projections of the current state of specific entities.
 The Event Sourcing pattern provides the following advantages:
 
 -   Events are immutable and can be stored using an append-only
-    operation. The user interface, workflow, or process that initiated
-    an event can continue, and tasks that handle the events can run in
-    the background. This, combined with the fact that there\'s no
-    contention during the processing of transactions, can vastly improve
-    performance and scalability for applications, especially for the
-    presentation level or user interface.
+	operation. The user interface, workflow, or process that initiated
+	an event can continue, and tasks that handle the events can run in
+	the background. This, combined with the fact that there\'s no
+	contention during the processing of transactions, can vastly improve
+	performance and scalability for applications, especially for the
+	presentation level or user interface.
 
 -   Events are simple objects that describe some action that occurred,
-    together with any associated data required to describe the action
-    represented by the event. Events don\'t directly update a data
-    store. They\'re simply recorded for handling at the appropriate
-    time. This can simplify implementation and management.
+	together with any associated data required to describe the action
+	represented by the event. Events don\'t directly update a data
+	store. They\'re simply recorded for handling at the appropriate
+	time. This can simplify implementation and management.
 
 -   Events typically have meaning for a domain expert, whereas 
-    [object-relational impedance
-    mismatch](https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch) can
-    make complex database tables hard to understand. Tables are
-    artificial constructs that represent the current state of the
-    system, not the events that occurred.
+	[object-relational impedance
+	mismatch](https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch) can
+	make complex database tables hard to understand. Tables are
+	artificial constructs that represent the current state of the
+	system, not the events that occurred.
 
 -   Event sourcing can help prevent concurrent updates from causing
-    conflicts because it avoids the requirement to directly update
-    objects in the data store. However, the domain model must still be
-    designed to protect itself from requests that might result in an
-    inconsistent state.
+	conflicts because it avoids the requirement to directly update
+	objects in the data store. However, the domain model must still be
+	designed to protect itself from requests that might result in an
+	inconsistent state.
 
 -   The append-only storage of events provides an audit trail that can
-    be used to monitor actions taken against a data store, regenerate
-    the current state as materialized views or projections by replaying
-    the events at any time, and assist in testing and debugging the
-    system. In addition, the requirement to use compensating events to
-    cancel changes provides a history of changes that were reversed,
-    which wouldn\'t be the case if the model simply stored the current
-    state. The list of events can also be used to analyze application
-    performance and detect user behavior trends, or to obtain other
-    useful business information.
+	be used to monitor actions taken against a data store, regenerate
+	the current state as materialized views or projections by replaying
+	the events at any time, and assist in testing and debugging the
+	system. In addition, the requirement to use compensating events to
+	cancel changes provides a history of changes that were reversed,
+	which wouldn\'t be the case if the model simply stored the current
+	state. The list of events can also be used to analyze application
+	performance and detect user behavior trends, or to obtain other
+	useful business information.
 
 -   The event store raises events, and tasks perform operations in
-    response to those events. This decoupling of the tasks from the
-    events provides flexibility and extensibility. Tasks know about the
-    type of event and the event data, but not about the operation that
-    triggered the event. In addition, multiple tasks can handle each
-    event. This enables easy integration with other services and systems
-    that only listen for new events raised by the event store. However,
-    the event sourcing events tend to be very low level, and it might be
-    necessary to generate specific integration events instead.
+	response to those events. This decoupling of the tasks from the
+	events provides flexibility and extensibility. Tasks know about the
+	type of event and the event data, but not about the operation that
+	triggered the event. In addition, multiple tasks can handle each
+	event. This enables easy integration with other services and systems
+	that only listen for new events raised by the event store. However,
+	the event sourcing events tend to be very low level, and it might be
+	necessary to generate specific integration events instead.
 
 > Event sourcing is commonly combined with the CQRS pattern by
 > performing the data management tasks in response to the events, and by
@@ -2231,55 +2677,55 @@ usual implementation decision.
 Use this pattern in the following scenarios:
 
 -   When you want to capture intent, purpose, or reason in the data. For
-    example, changes to a customer entity can be captured as a series of
-    specific event types such as  *Moved home*,  *Closed account*, or 
-    *Deceased*.
+	example, changes to a customer entity can be captured as a series of
+	specific event types such as  *Moved home*,  *Closed account*, or 
+	*Deceased*.
 
 -   When it\'s vital to minimize or completely avoid the occurrence of
-    conflicting updates to data.
+	conflicting updates to data.
 
 -   When you want to record events that occur, and be able to replay
-    them to restore the state of a system, roll back changes, or keep a
-    history and audit log. For example, when a task involves multiple
-    steps you might need to execute actions to revert updates and then
-    replay some steps to bring the data back into a consistent state.
+	them to restore the state of a system, roll back changes, or keep a
+	history and audit log. For example, when a task involves multiple
+	steps you might need to execute actions to revert updates and then
+	replay some steps to bring the data back into a consistent state.
 
 -   When using events is a natural feature of the operation of the
-    application, and requires little additional development or
-    implementation effort.
+	application, and requires little additional development or
+	implementation effort.
 
 -   When you need to decouple the process of inputting or updating data
-    from the tasks required to apply these actions. This might be to
-    improve UI performance, or to distribute events to other listeners
-    that take action when the events occur. For example, integrating a
-    payroll system with an expense submission website so that events
-    raised by the event store in response to data updates made in the
-    website are consumed by both the website and the payroll system.
+	from the tasks required to apply these actions. This might be to
+	improve UI performance, or to distribute events to other listeners
+	that take action when the events occur. For example, integrating a
+	payroll system with an expense submission website so that events
+	raised by the event store in response to data updates made in the
+	website are consumed by both the website and the payroll system.
 
 -   When you want flexibility to be able to change the format of
-    materialized models and entity data if requirements change,
-    or---when used in conjunction with CQRS---you need to adapt a read
-    model or the views that expose the data.
+	materialized models and entity data if requirements change,
+	or---when used in conjunction with CQRS---you need to adapt a read
+	model or the views that expose the data.
 
 -   When used in conjunction with CQRS, and eventual consistency is
-    acceptable while a read model is updated, or the performance impact
-    of rehydrating entities and data from an event stream is acceptable.
+	acceptable while a read model is updated, or the performance impact
+	of rehydrating entities and data from an event stream is acceptable.
 
 This pattern might not be useful in the following situations:
 
 -   Small or simple domains, systems that have little or no business
-    logic, or nondomain systems that naturally work well with
-    traditional CRUD data management mechanisms.
+	logic, or nondomain systems that naturally work well with
+	traditional CRUD data management mechanisms.
 
 -   Systems where consistency and real-time updates to the views of the
-    data are required.
+	data are required.
 
 -   Systems where audit trails, history, and capabilities to roll back
-    and replay actions are not required.
+	and replay actions are not required.
 
 -   Systems where there\'s only a very low occurrence of conflicting
-    updates to the underlying data. For example, systems that
-    predominantly add data rather than updating it.
+	updates to the underlying data. For example, systems that
+	predominantly add data rather than updating it.
 
 ### External Configuration Store Pattern
 
@@ -2417,20 +2863,20 @@ picked up (and acted on).
 This pattern is useful for:
 
 -   Configuration settings that are shared between multiple applications
-    and application instances, or where a standard configuration must be
-    enforced across multiple applications and application instances.
+	and application instances, or where a standard configuration must be
+	enforced across multiple applications and application instances.
 
 -   A standard configuration system that doesn\'t support all of the
-    required configuration settings, such as storing images or complex
-    data types.
+	required configuration settings, such as storing images or complex
+	data types.
 
 -   As a complementary store for some of the settings for applications,
-    perhaps allowing applications to override some or all of the
-    centrally-stored settings.
+	perhaps allowing applications to override some or all of the
+	centrally-stored settings.
 
 -   As a way to simplify administration of multiple applications, and
-    optionally for monitoring use of configuration settings by logging
-    some or all types of access to the configuration store.
+	optionally for monitoring use of configuration settings by logging
+	some or all types of access to the configuration store.
 
 ### Federated Identity Pattern
 
@@ -2448,15 +2894,15 @@ with. These users might be required to use specific (and different)
 credentials for each one. This can:
 
 -   **Cause a disjointed user experience**. Users often forget sign-in
-    credentials when they have many different ones.
+	credentials when they have many different ones.
 
 -   **Expose security vulnerabilities**. When a user leaves the company
-    the account must immediately be deprovisioned. It\'s easy to
-    overlook this in large organizations.
+	the account must immediately be deprovisioned. It\'s easy to
+	overlook this in large organizations.
 
 -   **Complicate user management**. Administrators must manage
-    credentials for all of the users, and perform additional tasks such
-    as providing password reminders.
+	credentials for all of the users, and perform additional tasks such
+	as providing password reminders.
 
 Users typically prefer to use the same credentials for all these
 applications.
@@ -2530,86 +2976,86 @@ Consider the following when designing applications that implement
 federated authentication:
 
 -   Authentication can be a single point of failure. If you deploy your
-    application to multiple datacenters, consider deploying your
-    identity management mechanism to the same datacenters to maintain
-    application reliability and availability.
+	application to multiple datacenters, consider deploying your
+	identity management mechanism to the same datacenters to maintain
+	application reliability and availability.
 
 -   Authentication tools make it possible to configure access control
-    based on role claims contained in the authentication token. This is
-    often referred to as role-based access control (RBAC), and it can
-    allow a more granular level of control over access to features and
-    resources.
+	based on role claims contained in the authentication token. This is
+	often referred to as role-based access control (RBAC), and it can
+	allow a more granular level of control over access to features and
+	resources.
 
 -   Unlike a corporate directory, claims-based authentication using
-    social identity providers doesn\'t usually provide information about
-    the authenticated user other than an email address, and perhaps a
-    name. Some social identity providers, such as a Microsoft account,
-    provide only a unique identifier. The application usually needs to
-    maintain some information on registered users, and be able to match
-    this information to the identifier contained in the claims in the
-    token. Typically this is done through registration when the user
-    first accesses the application, and information is then injected
-    into the token as additional claims after each authentication.
+	social identity providers doesn\'t usually provide information about
+	the authenticated user other than an email address, and perhaps a
+	name. Some social identity providers, such as a Microsoft account,
+	provide only a unique identifier. The application usually needs to
+	maintain some information on registered users, and be able to match
+	this information to the identifier contained in the claims in the
+	token. Typically this is done through registration when the user
+	first accesses the application, and information is then injected
+	into the token as additional claims after each authentication.
 
 -   If there\'s more than one identity provider configured for the STS,
-    it must detect which identity provider the user should be redirected
-    to for authentication. This process is called home realm discovery.
-    The STS might be able to do this automatically based on an email
-    address or user name that the user provides, a subdomain of the
-    application that the user is accessing, the user's IP address scope,
-    or on the contents of a cookie stored in the user's browser. For
-    example, if the user entered an email address in the Microsoft
-    domain, such as <user@live.com>, the STS will redirect the user to
-    the Microsoft account sign-in page. On later visits, the STS could
-    use a cookie to indicate that the last sign in was with a Microsoft
-    account. If automatic discovery can\'t determine the home realm, the
-    STS will display a home realm discovery page that lists the trusted
-    identity providers, and the user must select the one they want to
-    use.
+	it must detect which identity provider the user should be redirected
+	to for authentication. This process is called home realm discovery.
+	The STS might be able to do this automatically based on an email
+	address or user name that the user provides, a subdomain of the
+	application that the user is accessing, the user's IP address scope,
+	or on the contents of a cookie stored in the user's browser. For
+	example, if the user entered an email address in the Microsoft
+	domain, such as <user@live.com>, the STS will redirect the user to
+	the Microsoft account sign-in page. On later visits, the STS could
+	use a cookie to indicate that the last sign in was with a Microsoft
+	account. If automatic discovery can\'t determine the home realm, the
+	STS will display a home realm discovery page that lists the trusted
+	identity providers, and the user must select the one they want to
+	use.
 
 #### When to use this Pattern
 
 This pattern is useful for scenarios such as:
 
 -   **Single sign-on in the enterprise**. In this scenario you need to
-    authenticate employees for corporate applications that are hosted in
-    the cloud outside the corporate security boundary, without requiring
-    them to sign in every time they visit an application. The user
-    experience is the same as when using on-premises applications where
-    they\'re authenticated when signing in to a corporate network, and
-    from then on have access to all relevant applications without
-    needing to sign in again.
+	authenticate employees for corporate applications that are hosted in
+	the cloud outside the corporate security boundary, without requiring
+	them to sign in every time they visit an application. The user
+	experience is the same as when using on-premises applications where
+	they\'re authenticated when signing in to a corporate network, and
+	from then on have access to all relevant applications without
+	needing to sign in again.
 
 -   **Federated identity with multiple partners**. In this scenario you
-    need to authenticate both corporate employees and business partners
-    who don\'t have accounts in the corporate directory. This is common
-    in business-to-business applications, applications that integrate
-    with third-party services, and where companies with different IT
-    systems have merged or shared resources.
+	need to authenticate both corporate employees and business partners
+	who don\'t have accounts in the corporate directory. This is common
+	in business-to-business applications, applications that integrate
+	with third-party services, and where companies with different IT
+	systems have merged or shared resources.
 
 -   **Federated identity in SaaS applications**. In this scenario
-    independent software vendors provide a ready-to-use service for
-    multiple clients or tenants. Each tenant authenticates using a
-    suitable identity provider. For example, business users will use
-    their corporate credentials, while consumers and clients of the
-    tenant will use their social identity credentials.
+	independent software vendors provide a ready-to-use service for
+	multiple clients or tenants. Each tenant authenticates using a
+	suitable identity provider. For example, business users will use
+	their corporate credentials, while consumers and clients of the
+	tenant will use their social identity credentials.
 
 This pattern might not be useful in the following situations:
 
 -   All users of the application can be authenticated by one identity
-    provider, and there\'s no requirement to authenticate using any
-    other identity provider. This is typical in business applications
-    that use a corporate directory (accessible within the application)
-    for authentication, by using a VPN, or (in a cloud-hosted scenario)
-    through a virtual network connection between the on-premises
-    directory and the application.
+	provider, and there\'s no requirement to authenticate using any
+	other identity provider. This is typical in business applications
+	that use a corporate directory (accessible within the application)
+	for authentication, by using a VPN, or (in a cloud-hosted scenario)
+	through a virtual network connection between the on-premises
+	directory and the application.
 
 -   The application was originally built using a different
-    authentication mechanism, perhaps with custom user stores, or
-    doesn\'t have the capability to handle the negotiation standards
-    used by claims-based technologies. Retrofitting claims-based
-    authentication and access control into existing applications can be
-    complex, and probably not cost effective.
+	authentication mechanism, perhaps with custom user stores, or
+	doesn\'t have the capability to handle the negotiation standards
+	used by claims-based technologies. Retrofitting claims-based
+	authentication and access control into existing applications can be
+	complex, and probably not cost effective.
 
 ### Gatekeeper Pattern
 
@@ -2653,16 +3099,16 @@ be used as a more comprehensive façade to protect all of the functions
 of the application. The important factors are:
 
 -   **Controlled validation**. The gatekeeper validates all requests,
-    and rejects those that don\'t meet validation requirements.
+	and rejects those that don\'t meet validation requirements.
 -   **Limited risk and exposure**. The gatekeeper doesn\'t have access
-    to the credentials or keys used by the trusted host to access
-    storage and services. If the gatekeeper is compromised, the attacker
-    doesn\'t get access to these credentials or keys.
+	to the credentials or keys used by the trusted host to access
+	storage and services. If the gatekeeper is compromised, the attacker
+	doesn\'t get access to these credentials or keys.
 -   **Appropriate security**. The gatekeeper runs in a limited privilege
-    mode, while the rest of the application runs in the full trust mode
-    required to access storage and services. If the gatekeeper is
-    compromised, it can\'t directly access the application services or
-    data.
+	mode, while the rest of the application runs in the full trust mode
+	required to access storage and services. If the gatekeeper is
+	compromised, it can\'t directly access the application services or
+	data.
 
 This pattern acts like a firewall in a typical network topography. It
 allows the gatekeeper to examine requests and make a decision about
@@ -2677,39 +3123,39 @@ Consider the following points when deciding how to implement this
 pattern:
 
 -   Ensure that the trusted hosts the gatekeeper passes requests to
-    expose only internal or protected endpoints, and connect only to the
-    gatekeeper. The trusted hosts shouldn\'t expose any external
-    endpoints or interfaces.
+	expose only internal or protected endpoints, and connect only to the
+	gatekeeper. The trusted hosts shouldn\'t expose any external
+	endpoints or interfaces.
 -   The gatekeeper must run in a limited privilege mode. Typically this
-    means running the gatekeeper and the trusted host in separate hosted
-    services or virtual machines.
+	means running the gatekeeper and the trusted host in separate hosted
+	services or virtual machines.
 -   The gatekeeper shouldn\'t perform any processing related to the
-    application or services, or access any data. Its function is purely
-    to validate and sanitize requests. The trusted hosts might need to
-    perform additional validation of requests, but the core validation
-    should be performed by the gatekeeper.
+	application or services, or access any data. Its function is purely
+	to validate and sanitize requests. The trusted hosts might need to
+	perform additional validation of requests, but the core validation
+	should be performed by the gatekeeper.
 -   Use a secure communication channel (HTTPS, SSL, or TLS) between the
-    gatekeeper and the trusted hosts or tasks where this is possible.
-    However, some hosting environments don\'t support HTTPS on internal
-    endpoints.
+	gatekeeper and the trusted hosts or tasks where this is possible.
+	However, some hosting environments don\'t support HTTPS on internal
+	endpoints.
 -   Adding the extra layer to the application to implement the
-    gatekeeper pattern is likely to have some impact on performance due
-    to the additional processing and network communication it requires.
+	gatekeeper pattern is likely to have some impact on performance due
+	to the additional processing and network communication it requires.
 -   The gatekeeper instance could be a single point of failure. To
-    minimize the impact of a failure, consider deploying additional
-    instances and using an autoscaling mechanism to ensure capacity to
-    maintain availability.
+	minimize the impact of a failure, consider deploying additional
+	instances and using an autoscaling mechanism to ensure capacity to
+	maintain availability.
 
 #### When to use this Pattern
 
 This pattern is useful for:
 
 -   Applications that handle sensitive information, expose services that
-    must have a high degree of protection from malicious attacks, or
-    perform mission-critical operations that shouldn\'t be disrupted.
+	must have a high degree of protection from malicious attacks, or
+	perform mission-critical operations that shouldn\'t be disrupted.
 -   Distributed applications where it\'s necessary to perform request
-    validation separately from the main tasks, or to centralize this
-    validation to simplify maintenance and administration.
+	validation separately from the main tasks, or to centralize this
+	validation to simplify maintenance and administration.
 
 ### Gateway Aggregation Pattern
 
@@ -2773,75 +3219,75 @@ and receives only a single response from the gateway.
 #### Using an API gateway has the following benefits
 
 -   Insulates the clients from how the application is partitioned into
-    microservices
+	microservices
 -   Insulates the clients from the problem of determining the locations
-    of service instances
+	of service instances
 -   Provides the optimal API for each client
 -   Reduces the number of requests/roundtrips. For example, the API
-    gateway enables clients to retrieve data from multiple services with
-    a single round-trip. Fewer requests also means less overhead and
-    improves the user experience. An API gateway is essential for mobile
-    applications.
+	gateway enables clients to retrieve data from multiple services with
+	a single round-trip. Fewer requests also means less overhead and
+	improves the user experience. An API gateway is essential for mobile
+	applications.
 -   Simplifies the client by moving logic for calling multiple services
-    from the client to API gateway
+	from the client to API gateway
 -   Translates from a "standard" public web-friendly API protocol to
-    whatever protocols are used internally
+	whatever protocols are used internally
 
 #### Issues and Considerations
 
 -   The gateway should not introduce service coupling across the backend
-    services.
+	services.
 -   The gateway should be located near the backend services to reduce
-    latency as much as possible.
+	latency as much as possible.
 -   The gateway service may introduce a single point of failure. Ensure
-    the gateway is properly designed to meet your application\'s
-    availability requirements.
+	the gateway is properly designed to meet your application\'s
+	availability requirements.
 -   The gateway may introduce a bottleneck. Ensure the gateway has
-    adequate performance to handle load and can be scaled to meet your
-    anticipated growth.
+	adequate performance to handle load and can be scaled to meet your
+	anticipated growth.
 -   Perform load testing against the gateway to ensure you don\'t
-    introduce cascading failures for services.
+	introduce cascading failures for services.
 -   Implement a resilient design, using techniques such as 
-    [bulkheads](https://docs.microsoft.com/en-us/azure/architecture/patterns/bulkhead), 
-    [circuit breaking](https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker), 
-    [retry](https://docs.microsoft.com/en-us/azure/architecture/patterns/retry),
-    and timeouts.
+	[bulkheads](https://docs.microsoft.com/en-us/azure/architecture/patterns/bulkhead), 
+	[circuit breaking](https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker), 
+	[retry](https://docs.microsoft.com/en-us/azure/architecture/patterns/retry),
+	and timeouts.
 -   If one or more service calls takes too long, it may be acceptable to
-    timeout and return a partial set of data. Consider how your
-    application will handle this scenario.
+	timeout and return a partial set of data. Consider how your
+	application will handle this scenario.
 -   Use asynchronous I/O to ensure that a delay at the backend doesn\'t
-    cause performance issues in the application.
+	cause performance issues in the application.
 -   Implement distributed tracing using correlation IDs to track each
-    individual call.
+	individual call.
 -   Monitor request metrics and response sizes.
 -   Consider returning cached data as a failover strategy to handle
-    failures.
+	failures.
 -   Instead of building aggregation into the gateway, consider placing
-    an aggregation service behind the gateway. Request aggregation will
-    likely have different resource requirements than other services in
-    the gateway and may impact the gateway\'s routing and offloading
-    functionality.
+	an aggregation service behind the gateway. Request aggregation will
+	likely have different resource requirements than other services in
+	the gateway and may impact the gateway\'s routing and offloading
+	functionality.
 -   How implement the API gateway? An event-driven/reactive approach is
-    best if it must scale to scale to handle high loads. On the JVM,
-    NIO-based libraries such as Netty, Spring Reactor, etc. make sense.
-    NodeJS is another option.
+	best if it must scale to scale to handle high loads. On the JVM,
+	NIO-based libraries such as Netty, Spring Reactor, etc. make sense.
+	NodeJS is another option.
 
 #### When to use this Pattern
 
 Use this pattern when:
 
 -   A client needs to communicate with multiple backend services to
-    perform an operation.
+	perform an operation.
 -   The client may use networks with significant latency, such as
-    cellular networks.
+	cellular networks.
 
 This pattern may not be suitable when:
 
 -   You want to reduce the number of calls between a client and a single
-    service across multiple operations. In that scenario, it may be
-    better to add a batch operation to the service.
+	service across multiple operations. In that scenario, it may be
+	better to add a batch operation to the service.
 -   The client or application is located near the backend services and
-    latency is not a significant factor.
+	latency is not a significant factor.
 
 ### Gateway Offloading Pattern
 
@@ -2892,35 +3338,35 @@ any HTTP server upstream of the API gateway.
 Benefits of this pattern include:
 
 -   Simplify the development of services by removing the need to
-    distribute and maintain supporting resources, such as web server
-    certificates and configuration for secure websites. Simpler
-    configuration results in easier management and scalability and makes
-    service upgrades simpler.
+	distribute and maintain supporting resources, such as web server
+	certificates and configuration for secure websites. Simpler
+	configuration results in easier management and scalability and makes
+	service upgrades simpler.
 
 -   Allow dedicated teams to implement features that require specialized
-    expertise, such as security. This allows your core team to focus on
-    the application functionality, leaving these specialized but
-    cross-cutting concerns to the relevant experts.
+	expertise, such as security. This allows your core team to focus on
+	the application functionality, leaving these specialized but
+	cross-cutting concerns to the relevant experts.
 
 -   Provide some consistency for request and response logging and
-    monitoring. Even if a service is not correctly instrumented, the
-    gateway can be configured to ensure a minimum level of monitoring
-    and logging.
+	monitoring. Even if a service is not correctly instrumented, the
+	gateway can be configured to ensure a minimum level of monitoring
+	and logging.
 
 #### Issues and Considerations
 
 -   Ensure the API gateway is highly available and resilient to failure.
-    Avoid single points of failure by running multiple instances of your
-    API gateway.
+	Avoid single points of failure by running multiple instances of your
+	API gateway.
 -   Ensure the gateway is designed for the capacity and scaling
-    requirements of your application and endpoints. Make sure the
-    gateway does not become a bottleneck for the application and is
-    sufficiently scalable.
+	requirements of your application and endpoints. Make sure the
+	gateway does not become a bottleneck for the application and is
+	sufficiently scalable.
 -   Only offload features that are used by the entire application, such
-    as security or data transfer.
+	as security or data transfer.
 -   Business logic should never be offloaded to the API gateway.
 -   If you need to track transactions, consider generating correlation
-    IDs for logging purposes.
+	IDs for logging purposes.
 
 #### When to use this Pattern
 
@@ -2928,13 +3374,13 @@ Benefits of this pattern include:
 Use this pattern when:
 
 -   An application deployment has a shared concern such as SSL
-    certificates or encryption.
+	certificates or encryption.
 -   A feature that is common across application deployments that may
-    have different resource requirements, such as memory resources,
-    storage capacity or network connections.
+	have different resource requirements, such as memory resources,
+	storage capacity or network connections.
 -   You wish to move the responsibility for issues such as network
-    security, throttling, or other network boundary concerns to a more
-    specialized team.
+	security, throttling, or other network boundary concerns to a more
+	specialized team.
 
 This pattern may not be suitable if it introduces coupling across
 services.
@@ -2992,27 +3438,27 @@ affecting clients.
 #### Issues and Considerations
 
 -   The gateway service may introduce a single point of failure. Ensure
-    it is properly designed to meet your availability requirements.
-    Consider resiliency and fault tolerance capabilities when
-    implementing.
+	it is properly designed to meet your availability requirements.
+	Consider resiliency and fault tolerance capabilities when
+	implementing.
 -   The gateway service may introduce a bottleneck. Ensure the gateway
-    has adequate performance to handle load and can easily scale in line
-    with your growth expectations.
+	has adequate performance to handle load and can easily scale in line
+	with your growth expectations.
 -   Perform load testing against the gateway to ensure you don\'t
-    introduce cascading failures for services.
+	introduce cascading failures for services.
 -   Gateway routing is level 7. It can be based on IP, port, header, or
-    URL.
+	URL.
 
 #### When to use this Pattern
 
 Use this pattern when:
 
 -   A client needs to consume multiple services that can be accessed
-    behind a gateway.
+	behind a gateway.
 -   You wish to simplify client applications by using a single endpoint.
 -   You need to route requests from externally addressable endpoints to
-    internal virtual endpoints, such as exposing ports on a VM to
-    cluster virtual IP addresses.
+	internal virtual endpoints, such as exposing ports on a VM to
+	cluster virtual IP addresses.
 
 This pattern may not be suitable when you have a simple application that
 uses only one or two services.
@@ -3039,11 +3485,11 @@ compute tier for that data, relying on scale-up for growth.
 The classic approach may present a number of challenges:
 
 -   Network latency issues for users coming from the other side of the
-    globe to connect to the hosting endpoint
+	globe to connect to the hosting endpoint
 -   Traffic management for demand bursts that can overwhelm the services
-    in a single region
+	in a single region
 -   Cost-prohibitive complexity of deploying copies of app
-    infrastructure into multiple regions for a 24x7 service
+	infrastructure into multiple regions for a 24x7 service
 
 Modern cloud infrastructure has evolved to enable geographic load
 balancing of front-end services, while allowing for geographic
@@ -3073,17 +3519,17 @@ a production platform.
 Geodes have the following characteristics:
 
 -   Consist of a collection of disparate types of resources, often
-    defined in a template.
+	defined in a template.
 -   Have no dependencies outside of the geode footprint and are
-    self-contained. No geode is dependent on another to operate, and if
-    one dies, the others continue to operate.
+	self-contained. No geode is dependent on another to operate, and if
+	one dies, the others continue to operate.
 -   Are loosely coupled via an edge network and replication backplane.
-    For example, you can use  [Azure Traffic Manager](https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-overview) or 
-    [Azure Front Door](https://docs.microsoft.com/en-us/azure/frontdoor/front-door-overview) for
-    fronting the geodes, while Azure Cosmos DB can act as the
-    replication backplane. Geodes are not the same as clusters because
-    they share a replication backplane, so the platform takes care of
-    quorum issues.
+	For example, you can use  [Azure Traffic Manager](https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-overview) or 
+	[Azure Front Door](https://docs.microsoft.com/en-us/azure/frontdoor/front-door-overview) for
+	fronting the geodes, while Azure Cosmos DB can act as the
+	replication backplane. Geodes are not the same as clusters because
+	they share a replication backplane, so the platform takes care of
+	quorum issues.
 
 The geode pattern occurs in big data architectures that use commodity
 hardware to process data colocated on the same machine, and MapReduce to
@@ -3109,68 +3555,68 @@ or latency constraints on location.
 Use the following techniques and technologies to implement this pattern:
 
 -   Modern DevOps practices and tools to produce and rapidly deploy
-    identical geodes across a large number of regions or instances.
+	identical geodes across a large number of regions or instances.
 -   Autoscaling to scale out compute and database throughput instances
-    within a geode. Each geode individually scales out, within the
-    common backplane constraints.
+	within a geode. Each geode individually scales out, within the
+	common backplane constraints.
 -   A front-end service like Azure Front Door that does dynamic content
-    acceleration, split TCP, and Anycast routing.
+	acceleration, split TCP, and Anycast routing.
 -   A replicating data store like Azure Cosmos DB to control data
-    consistency.
+	consistency.
 -   Serverless technologies where possible, to reduce always-on
-    deployment cost, especially when load is frequently rebalanced
-    around the globe. This strategy allows for many geodes to be
-    deployed with minimal additional investment. Serverless and
-    consumption-based billing technologies reduce waste and cost from
-    duplicate geo-distributed deployments.
+	deployment cost, especially when load is frequently rebalanced
+	around the globe. This strategy allows for many geodes to be
+	deployed with minimal additional investment. Serverless and
+	consumption-based billing technologies reduce waste and cost from
+	duplicate geo-distributed deployments.
 
 Consider the following points when deciding how to implement this pattern:
 
 -   Choose whether to process data locally in each region, or to
-    distribute aggregations in a single geode and replicate the result
-    across the globe. The  [Azure Cosmos DB change feed
-    processor](https://docs.microsoft.com/en-us/azure/cosmos-db/change-feed-processor) offers
-    this granular control using its  *lease container* concept, and the 
-    *leasecollectionprefix* in the corresponding  [Azure Functions
-    binding](https://docs.microsoft.com/en-us/azure/cosmos-db/change-feed-functions).
-    Each approach has distinct advantages and drawbacks.
+	distribute aggregations in a single geode and replicate the result
+	across the globe. The  [Azure Cosmos DB change feed
+	processor](https://docs.microsoft.com/en-us/azure/cosmos-db/change-feed-processor) offers
+	this granular control using its  *lease container* concept, and the 
+	*leasecollectionprefix* in the corresponding  [Azure Functions
+	binding](https://docs.microsoft.com/en-us/azure/cosmos-db/change-feed-functions).
+	Each approach has distinct advantages and drawbacks.
 -   Geodes can work in tandem, using the Azure Cosmos DB change feed and
-    a real-time communication platform like SignalR. Geodes can
-    communicate with remote users via other geodes in a mesh pattern,
-    without knowing or caring where the remote user is located.
+	a real-time communication platform like SignalR. Geodes can
+	communicate with remote users via other geodes in a mesh pattern,
+	without knowing or caring where the remote user is located.
 -   This design pattern implicitly decouples everything, resulting in an
-    ultra-highly distributed and decoupled architecture. Decoupling is a
-    good thing, but consider how to track different components of the
-    same request as they might execute asynchronously on different
-    instances. Get a good monitoring strategy in place.
+	ultra-highly distributed and decoupled architecture. Decoupling is a
+	good thing, but consider how to track different components of the
+	same request as they might execute asynchronously on different
+	instances. Get a good monitoring strategy in place.
 
 #### When to use this Pattern
 
 Use this pattern:
 
 -   To implement a high-scale platform that has users distributed over a
-    wide area.
+	wide area.
 -   For any service that requires extreme availability and resilience
-    characteristics, because services based on the geode pattern can
-    survive the loss of multiple service regions at the same time.
+	characteristics, because services based on the geode pattern can
+	survive the loss of multiple service regions at the same time.
 
 This pattern might not be suitable for
 
 -   Architectures that have constraints so that all geodes can\'t be
-    equal for data storage. For example, there may be data residency
-    requirements, an application that needs to maintain temporary state
-    for a particular session, or a heavy weighting of requests towards a
-    single region. In this case, consider using deployment stamps in
-    combination with a global routing plane that is aware of where a
-    user's data sits.
+	equal for data storage. For example, there may be data residency
+	requirements, an application that needs to maintain temporary state
+	for a particular session, or a heavy weighting of requests towards a
+	single region. In this case, consider using deployment stamps in
+	combination with a global routing plane that is aware of where a
+	user's data sits.
 -   Situations where there\'s no geographical distribution required.
-    Instead, consider availability zones and paired regions for
-    clustering.
+	Instead, consider availability zones and paired regions for
+	clustering.
 -   Situations where a legacy platform needs to be retrofitted. This
-    pattern works for cloud-native development only, and can be
-    difficult to retrofit.
+	pattern works for cloud-native development only, and can be
+	difficult to retrofit.
 -   Simple architectures and requirements, where geo-redundancy and
-    geo-distribution aren\'t required or advantageous.
+	geo-distribution aren\'t required or advantageous.
 
 ### Health Endpoint Monitoring Pattern
 
@@ -3207,9 +3653,9 @@ return an indication of its status.
 A health monitoring check typically combines two factors:
 
 -   The checks (if any) performed by the application or service in
-    response to the request to the health verification endpoint.
+	response to the request to the health verification endpoint.
 -   Analysis of the results by the tool or framework that performs the
-    health verification check.
+	health verification check.
 
 The response code indicates the status of the application and,
 optionally, any components or services it uses. The latency or response
@@ -3222,9 +3668,9 @@ Other checks that might be carried out by the health monitoring code in
 the application include:
 
 -   Checking cloud storage or a database for availability and response
-    time.
+	time.
 -   Checking other resources or services located in the application, or
-    located elsewhere but used by the application.
+	located elsewhere but used by the application.
 
 Services and tools are available that monitor web applications by
 submitting a request to a configurable set of endpoints, and evaluating
@@ -3235,27 +3681,27 @@ functional tests on the system.
 Typical checks that can be performed by the monitoring tools include:
 
 -   Validating the response code. For example, an HTTP response of 200
-    (OK) indicates that the application responded without error. The
-    monitoring system might also check for other response codes to give
-    more comprehensive results.
+	(OK) indicates that the application responded without error. The
+	monitoring system might also check for other response codes to give
+	more comprehensive results.
 -   Checking the content of the response to detect errors, even when a
-    200 (OK) status code is returned. This can detect errors that affect
-    only a section of the returned web page or service response. For
-    example, checking the title of a page or looking for a specific
-    phrase that indicates the correct page was returned.
+	200 (OK) status code is returned. This can detect errors that affect
+	only a section of the returned web page or service response. For
+	example, checking the title of a page or looking for a specific
+	phrase that indicates the correct page was returned.
 -   Measuring the response time, which indicates a combination of the
-    network latency and the time that the application took to execute
-    the request. An increasing value can indicate an emerging problem
-    with the application or network.
+	network latency and the time that the application took to execute
+	the request. An increasing value can indicate an emerging problem
+	with the application or network.
 -   Checking resources or services located outside the application, such
-    as a content delivery network used by the application to deliver
-    content from global caches.
+	as a content delivery network used by the application to deliver
+	content from global caches.
 -   Checking for expiration of SSL certificates.
 -   Measuring the response time of a DNS lookup for the URL of the
-    application to measure DNS latency and DNS failures.
+	application to measure DNS latency and DNS failures.
 -   Validating the URL returned by the DNS lookup to ensure correct
-    entries. This can help to avoid malicious request redirection
-    through a successful attack on the DNS server.
+	entries. This can help to avoid malicious request redirection
+	through a successful attack on the DNS server.
 
 It\'s also useful, where possible, to run these checks from different
 on-premises or hosted locations to measure and compare response times.
@@ -3338,56 +3784,56 @@ restarting the application. Consider using one or more of the following
 techniques:
 
 -   Secure the endpoint by requiring authentication. You can do this by
-    using an authentication security key in the request header or by
-    passing credentials with the request, provided that the monitoring
-    service or tool supports authentication.
+	using an authentication security key in the request header or by
+	passing credentials with the request, provided that the monitoring
+	service or tool supports authentication.
 
-    -   Use an obscure or hidden endpoint. For example, expose the
-        endpoint on a different IP address to that used by the default
-        application URL, configure the endpoint on a nonstandard HTTP
-        port, and/or use a complex path to the test page. You can
-        usually specify additional endpoint addresses and ports in the
-        application configuration, and add entries for these endpoints
-        to the DNS server if required to avoid having to specify the IP
-        address directly.
+	-   Use an obscure or hidden endpoint. For example, expose the
+		endpoint on a different IP address to that used by the default
+		application URL, configure the endpoint on a nonstandard HTTP
+		port, and/or use a complex path to the test page. You can
+		usually specify additional endpoint addresses and ports in the
+		application configuration, and add entries for these endpoints
+		to the DNS server if required to avoid having to specify the IP
+		address directly.
 
-    -   Expose a method on an endpoint that accepts a parameter such as
-        a key value or an operation mode value. Depending on the value
-        supplied for this parameter, when a request is received the code
-        can perform a specific test or set of tests, or return a 404
-        (Not Found) error if the parameter value isn\'t recognized. The
-        recognized parameter values could be set in the application
-        configuration.
+	-   Expose a method on an endpoint that accepts a parameter such as
+		a key value or an operation mode value. Depending on the value
+		supplied for this parameter, when a request is received the code
+		can perform a specific test or set of tests, or return a 404
+		(Not Found) error if the parameter value isn\'t recognized. The
+		recognized parameter values could be set in the application
+		configuration.
 
-        > DoS attacks are likely to have less impact on a separate
-        > endpoint that performs basic functional tests without
-        > compromising the operation of the application. Ideally, avoid
-        > using a test that might expose sensitive information. If you
-        > must return information that might be useful to an attacker,
-        > consider how you\'ll protect the endpoint and the data from
-        > unauthorized access. In this case just relying on obscurity
-        > isn\'t enough. You should also consider using an HTTPS
-        > connection and encrypting any sensitive data, although this
-        > will increase the load on the server.
+		> DoS attacks are likely to have less impact on a separate
+		> endpoint that performs basic functional tests without
+		> compromising the operation of the application. Ideally, avoid
+		> using a test that might expose sensitive information. If you
+		> must return information that might be useful to an attacker,
+		> consider how you\'ll protect the endpoint and the data from
+		> unauthorized access. In this case just relying on obscurity
+		> isn\'t enough. You should also consider using an HTTPS
+		> connection and encrypting any sensitive data, although this
+		> will increase the load on the server.
 
 -   How to access an endpoint that\'s secured using authentication. Not
-    all tools and frameworks can be configured to include credentials
-    with the health verification request. For example, Microsoft Azure
-    built-in health verification features can\'t provide authentication
-    credentials. Some third-party alternatives are 
-    [Pingdom](https://www.pingdom.com/), 
-    [Panopta](https://www.panopta.com/), 
-    [NewRelic](https://newrelic.com/), and 
-    [Statuscake](https://www.statuscake.com/).
+	all tools and frameworks can be configured to include credentials
+	with the health verification request. For example, Microsoft Azure
+	built-in health verification features can\'t provide authentication
+	credentials. Some third-party alternatives are 
+	[Pingdom](https://www.pingdom.com/), 
+	[Panopta](https://www.panopta.com/), 
+	[NewRelic](https://newrelic.com/), and 
+	[Statuscake](https://www.statuscake.com/).
 
 -   How to ensure that the monitoring agent is performing correctly. One
-    approach is to expose an endpoint that simply returns a value from
-    the application configuration or a random value that can be used to
-    test the agent.
+	approach is to expose an endpoint that simply returns a value from
+	the application configuration or a random value that can be used to
+	test the agent.
 
-    > Also ensure that the monitoring system performs checks on itself,
-    > such as a self-test and built-in test, to avoid it issuing false
-    > positive results.
+	> Also ensure that the monitoring system performs checks on itself,
+	> such as a self-test and built-in test, to avoid it issuing false
+	> positive results.
 
 #### When to use this Pattern
 
@@ -3395,16 +3841,16 @@ This pattern is useful for:
 
 -   Monitoring websites and web applications to verify availability.
 -   Monitoring websites and web applications to check for correct
-    operation.
+	operation.
 -   Monitoring middle-tier or shared services to detect and isolate a
-    failure that could disrupt other applications.
+	failure that could disrupt other applications.
 -   Complementing existing instrumentation in the application, such as
-    performance counters and error handlers. Health verification
-    checking doesn\'t replace the requirement for logging and auditing
-    in the application. Instrumentation can provide valuable information
-    for an existing framework that monitors counters and error logs to
-    detect failures or other issues. However, it can\'t provide
-    information if the application is unavailable.
+	performance counters and error handlers. Health verification
+	checking doesn\'t replace the requirement for logging and auditing
+	in the application. Instrumentation can provide valuable information
+	for an existing framework that monitors counters and error logs to
+	detect failures or other issues. However, it can\'t provide
+	information if the application is unavailable.
 
 ### Index Table Pattern
 
@@ -3534,37 +3980,37 @@ Consider the following points when deciding how to implement this
 pattern:
 
 -   The overhead of maintaining secondary indexes can be significant.
-    You must analyze and understand the queries that your application
-    uses. Only create index tables when they\'re likely to be used
-    regularly. Don\'t create speculative index tables to support queries
-    that an application doesn\'t perform, or performs only occasionally.
+	You must analyze and understand the queries that your application
+	uses. Only create index tables when they\'re likely to be used
+	regularly. Don\'t create speculative index tables to support queries
+	that an application doesn\'t perform, or performs only occasionally.
 
 -   Duplicating data in an index table can add significant overhead in
-    storage costs and the effort required to maintain multiple copies of
-    data.
+	storage costs and the effort required to maintain multiple copies of
+	data.
 
 -   Implementing an index table as a normalized structure that
-    references the original data requires an application to perform two
-    lookup operations to find data. The first operation searches the
-    index table to retrieve the primary key, and the second uses the
-    primary key to fetch the data.
+	references the original data requires an application to perform two
+	lookup operations to find data. The first operation searches the
+	index table to retrieve the primary key, and the second uses the
+	primary key to fetch the data.
 
 -   If a system incorporates a number of index tables over very large
-    data sets, it can be difficult to maintain consistency between index
-    tables and the original data. It might be possible to design the
-    application around the eventual consistency model. For example, to
-    insert, update, or delete data, an application could post a message
-    to a queue and let a separate task perform the operation and
-    maintain the index tables that reference this data asynchronously.
-    For more information about implementing eventual consistency, see
-    the  [Data Consistency
-    Primer](https://msdn.microsoft.com/library/dn589800.aspx).
+	data sets, it can be difficult to maintain consistency between index
+	tables and the original data. It might be possible to design the
+	application around the eventual consistency model. For example, to
+	insert, update, or delete data, an application could post a message
+	to a queue and let a separate task perform the operation and
+	maintain the index tables that reference this data asynchronously.
+	For more information about implementing eventual consistency, see
+	the  [Data Consistency
+	Primer](https://msdn.microsoft.com/library/dn589800.aspx).
 
-    > Microsoft Azure storage tables support transactional updates for
-    > changes made to data held in the same partition (referred to as
-    > entity group transactions). If you can store the data for a fact
-    > table and one or more index tables in the same partition, you can
-    > use this feature to help ensure consistency.
+	> Microsoft Azure storage tables support transactional updates for
+	> changes made to data held in the same partition (referred to as
+	> entity group transactions). If you can store the data for a fact
+	> table and one or more index tables in the same partition, you can
+	> use this feature to help ensure consistency.
 
 -   Index tables might themselves be partitioned or sharded.
 
@@ -3577,20 +4023,20 @@ frequently needs to retrieve data by using a key other than the primary
 This pattern might not be useful when:
 
 -   Data is volatile. An index table can become out of date very
-    quickly, making it ineffective or making the overhead of maintaining
-    the index table greater than any savings made by using it.
+	quickly, making it ineffective or making the overhead of maintaining
+	the index table greater than any savings made by using it.
 -   A field selected as the secondary key for an index table is
-    nondiscriminating and can only have a small set of values (for
-    example, gender).
+	nondiscriminating and can only have a small set of values (for
+	example, gender).
 -   The balance of the data values for a field selected as the secondary
-    key for an index table are highly skewed. For example, if 90% of the
-    records contain the same value in a field, then creating and
-    maintaining an index table to look up data based on this field might
-    create more overhead than scanning sequentially through the data.
-    However, if queries very frequently target values that lie in the
-    remaining 10%, this index can be useful. You should understand the
-    queries that your application is performing, and how frequently
-    they\'re performed.
+	key for an index table are highly skewed. For example, if 90% of the
+	records contain the same value in a field, then creating and
+	maintaining an index table to look up data based on this field might
+	create more overhead than scanning sequentially through the data.
+	However, if queries very frequently target values that lie in the
+	remaining 10%, this index can be useful. You should understand the
+	queries that your application is performing, and how frequently
+	they\'re performed.
 
 ### Leader Election Pattern
 
@@ -3620,14 +4066,14 @@ performing.
 For example:
 
 -   In a cloud-based system that implements horizontal scaling, multiple
-    instances of the same task could be running at the same time with
-    each instance serving a different user. If these instances write to
-    a shared resource, it\'s necessary to coordinate their actions to
-    prevent each instance from overwriting the changes made by the
-    others.
+	instances of the same task could be running at the same time with
+	each instance serving a different user. If these instances write to
+	a shared resource, it\'s necessary to coordinate their actions to
+	prevent each instance from overwriting the changes made by the
+	others.
 -   If the tasks are performing individual elements of a complex
-    calculation in parallel, the results need to be aggregated when they
-    all complete.
+	calculation in parallel, the results need to be aggregated when they
+	all complete.
 
 The task instances are all peers, so there isn\'t a natural leader that
 can act as the coordinator or aggregator.
@@ -3653,18 +4099,18 @@ There are several strategies for electing a leader among a set of tasks
 in a distributed environment, including:
 
 -   Selecting the task instance with the lowest-ranked instance or
-    process ID.
+	process ID.
 -   Racing to acquire a shared, distributed mutex. The first task
-    instance that acquires the mutex is the leader. However, the system
-    must ensure that, if the leader terminates or becomes disconnected
-    from the rest of the system, the mutex is released to allow another
-    task instance to become the leader.
+	instance that acquires the mutex is the leader. However, the system
+	must ensure that, if the leader terminates or becomes disconnected
+	from the rest of the system, the mutex is released to allow another
+	task instance to become the leader.
 -   Implementing one of the common leader election algorithms such as
-    the  [Bully Algorithm](https://www.cs.colostate.edu/~cs551/CourseNotes/Synchronization/BullyExample.html) or
-    the  [Ring Algorithm](https://www.cs.colostate.edu/~cs551/CourseNotes/Synchronization/RingElectExample.html).
-    These algorithms assume that each candidate in the election has a
-    unique ID, and that it can communicate with the other candidates
-    reliably.
+	the  [Bully Algorithm](https://www.cs.colostate.edu/~cs551/CourseNotes/Synchronization/BullyExample.html) or
+	the  [Ring Algorithm](https://www.cs.colostate.edu/~cs551/CourseNotes/Synchronization/RingElectExample.html).
+	These algorithms assume that each candidate in the election has a
+	unique ID, and that it can communicate with the other candidates
+	reliably.
 
 #### Issues and Considerations
 
@@ -3672,28 +4118,28 @@ Consider the following points when deciding how to implement this
 pattern:
 
 -   The process of electing a leader should be resilient to transient
-    and persistent failures.
+	and persistent failures.
 -   It must be possible to detect when the leader has failed or has
-    become otherwise unavailable (such as due to a communications
-    failure). How quickly detection is needed is system dependent. Some
-    systems might be able to function for a short time without a leader,
-    during which a transient fault might be fixed. In other cases, it
-    might be necessary to detect leader failure immediately and trigger
-    a new election.
+	become otherwise unavailable (such as due to a communications
+	failure). How quickly detection is needed is system dependent. Some
+	systems might be able to function for a short time without a leader,
+	during which a transient fault might be fixed. In other cases, it
+	might be necessary to detect leader failure immediately and trigger
+	a new election.
 -   In a system that implements horizontal autoscaling, the leader could
-    be terminated if the system scales back and shuts down some of the
-    computing resources.
+	be terminated if the system scales back and shuts down some of the
+	computing resources.
 -   Using a shared, distributed mutex introduces a dependency on the
-    external service that provides the mutex. The service constitutes a
-    single point of failure. If it becomes unavailable for any reason,
-    the system won\'t be able to elect a leader.
+	external service that provides the mutex. The service constitutes a
+	single point of failure. If it becomes unavailable for any reason,
+	the system won\'t be able to elect a leader.
 -   Using a single dedicated process as the leader is a straightforward
-    approach. However, if the process fails there could be a significant
-    delay while it\'s restarted. The resulting latency can affect the
-    performance and response times of other processes if they\'re
-    waiting for the leader to coordinate an operation.
+	approach. However, if the process fails there could be a significant
+	delay while it\'s restarted. The resulting latency can affect the
+	performance and response times of other processes if they\'re
+	waiting for the leader to coordinate an operation.
 -   Implementing one of the leader election algorithms manually provides
-    the greatest flexibility for tuning and optimizing the code.
+	the greatest flexibility for tuning and optimizing the code.
 
 #### When to use this Pattern
 
@@ -3710,18 +4156,18 @@ leader.
 This pattern might not be useful if:
 
 -   There\'s a natural leader or dedicated process that can always act
-    as the leader. For example, it might be possible to implement a
-    singleton process that coordinates the task instances. If this
-    process fails or becomes unhealthy, the system can shut it down and
-    restart it.
+	as the leader. For example, it might be possible to implement a
+	singleton process that coordinates the task instances. If this
+	process fails or becomes unhealthy, the system can shut it down and
+	restart it.
 -   The coordination between tasks can be achieved using a more
-    lightweight method. For example, if several task instances simply
-    need coordinated access to a shared resource, a better solution is
-    to use optimistic or pessimistic locking to control access.
+	lightweight method. For example, if several task instances simply
+	need coordinated access to a shared resource, a better solution is
+	to use optimistic or pessimistic locking to control access.
 -   A third-party solution is more appropriate. For example, the
-    Microsoft Azure HDInsight service (based on Apache Hadoop) uses the
-    services provided by Apache Zookeeper to coordinate the map and
-    reduce tasks that collect and summarize data.
+	Microsoft Azure HDInsight service (based on Apache Hadoop) uses the
+	services provided by Apache Zookeeper to coordinate the map and
+	reduce tasks that collect and summarize data.
 
 ### Materialized View Pattern
 
@@ -3830,37 +4276,37 @@ Apache Hadoop.
 This pattern is useful when:
 
 -   Creating materialized views over data that\'s difficult to query
-    directly, or where queries must be very complex to extract data
-    that\'s stored in a normalized, semi-structured, or unstructured
-    way.
+	directly, or where queries must be very complex to extract data
+	that\'s stored in a normalized, semi-structured, or unstructured
+	way.
 -   Creating temporary views that can dramatically improve query
-    performance, or can act directly as source views or data transfer
-    objects for the UI, for reporting, or for display.
+	performance, or can act directly as source views or data transfer
+	objects for the UI, for reporting, or for display.
 -   Supporting occasionally connected or disconnected scenarios where
-    connection to the data store isn\'t always available. The view can
-    be cached locally in this case.
+	connection to the data store isn\'t always available. The view can
+	be cached locally in this case.
 -   Simplifying queries and exposing data for experimentation in a way
-    that doesn\'t require knowledge of the source data format. For
-    example, by joining different tables in one or more databases, or
-    one or more domains in NoSQL stores, and then formatting the data to
-    fit its eventual use.
+	that doesn\'t require knowledge of the source data format. For
+	example, by joining different tables in one or more databases, or
+	one or more domains in NoSQL stores, and then formatting the data to
+	fit its eventual use.
 -   Providing access to specific subsets of the source data that, for
-    security or privacy reasons, shouldn\'t be generally accessible,
-    open to modification, or fully exposed to users.
+	security or privacy reasons, shouldn\'t be generally accessible,
+	open to modification, or fully exposed to users.
 -   Bridging different data stores, to take advantage of their
-    individual capabilities. For example, using a cloud store that\'s
-    efficient for writing as the reference data store, and a relational
-    database that offers good query and read performance to hold the
-    materialized views.
+	individual capabilities. For example, using a cloud store that\'s
+	efficient for writing as the reference data store, and a relational
+	database that offers good query and read performance to hold the
+	materialized views.
 
 This pattern isn\'t useful in the following situations:
 
 -   The source data is simple and easy to query.
 -   The source data changes very quickly, or can be accessed without
-    using a view. In these cases, you should avoid the processing
-    overhead of creating views.
+	using a view. In these cases, you should avoid the processing
+	overhead of creating views.
 -   Consistency is a high priority. The views might not always be fully
-    consistent with the original data.
+	consistent with the original data.
 
 ### Pipes and Filters Pattern
 
@@ -3964,80 +4410,80 @@ You should consider the following points when deciding how to implement
 this pattern:
 
 -   **Complexity**. The increased flexibility that this pattern provides
-    can also introduce complexity, especially if the filters in a
-    pipeline are distributed across different servers.
+	can also introduce complexity, especially if the filters in a
+	pipeline are distributed across different servers.
 
 -   **Reliability**. Use an infrastructure that ensures that data
-    flowing between filters in a pipeline won\'t be lost.
+	flowing between filters in a pipeline won\'t be lost.
 
 -   **Idempotency**. If a filter in a pipeline fails after receiving a
-    message and the work is rescheduled to another instance of the
-    filter, part of the work might have already been completed. If this
-    work updates some aspect of the global state (such as information
-    stored in a database), the same update could be repeated. A similar
-    issue might occur if a filter fails after posting its results to the
-    next filter in the pipeline, but before indicating that it\'s
-    completed its work successfully. In these cases, the same work could
-    be repeated by another instance of the filter, causing the same
-    results to be posted twice. This could result in subsequent filters
-    in the pipeline processing the same data twice. Therefore filters in
-    a pipeline should be designed to be idempotent. For more
-    information, see  [Idempotency
-    Patterns](https://blog.jonathanoliver.com/idempotency-patterns/) on
-    Jonathan Oliver's blog.
+	message and the work is rescheduled to another instance of the
+	filter, part of the work might have already been completed. If this
+	work updates some aspect of the global state (such as information
+	stored in a database), the same update could be repeated. A similar
+	issue might occur if a filter fails after posting its results to the
+	next filter in the pipeline, but before indicating that it\'s
+	completed its work successfully. In these cases, the same work could
+	be repeated by another instance of the filter, causing the same
+	results to be posted twice. This could result in subsequent filters
+	in the pipeline processing the same data twice. Therefore filters in
+	a pipeline should be designed to be idempotent. For more
+	information, see  [Idempotency
+	Patterns](https://blog.jonathanoliver.com/idempotency-patterns/) on
+	Jonathan Oliver's blog.
 
 -   **Repeated messages**. If a filter in a pipeline fails after posting
-    a message to the next stage of the pipeline, another instance of the
-    filter might be run, and it\'ll post a copy of the same message to
-    the pipeline. This could cause two instances of the same message to
-    be passed to the next filter. To avoid this, the pipeline should
-    detect and eliminate duplicate messages.
+	a message to the next stage of the pipeline, another instance of the
+	filter might be run, and it\'ll post a copy of the same message to
+	the pipeline. This could cause two instances of the same message to
+	be passed to the next filter. To avoid this, the pipeline should
+	detect and eliminate duplicate messages.
 
-    > If you\'re implementing the pipeline by using message queues (such
-    > as Microsoft Azure Service Bus queues), the message queuing
-    > infrastructure might provide automatic duplicate message detection
-    > and removal.
+	> If you\'re implementing the pipeline by using message queues (such
+	> as Microsoft Azure Service Bus queues), the message queuing
+	> infrastructure might provide automatic duplicate message detection
+	> and removal.
 
 -   **Context and state**. In a pipeline, each filter essentially runs
-    in isolation and shouldn\'t make any assumptions about how it was
-    invoked. This means that each filter should be provided with
-    sufficient context to perform its work. This context could include a
-    large amount of state information.
+	in isolation and shouldn\'t make any assumptions about how it was
+	invoked. This means that each filter should be provided with
+	sufficient context to perform its work. This context could include a
+	large amount of state information.
 
 #### When to use this Pattern
 
 Use this pattern when:
 
 -   The processing required by an application can easily be broken down
-    into a set of independent steps.
+	into a set of independent steps.
 
 -   The processing steps performed by an application have different
-    scalability requirements.
+	scalability requirements.
 
-    > It\'s possible to group filters that should scale together in the
-    > same process. For more information, see the 
-    > [Compute Resource Consolidation pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/compute-resource-consolidation).
+	> It\'s possible to group filters that should scale together in the
+	> same process. For more information, see the 
+	> [Compute Resource Consolidation pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/compute-resource-consolidation).
 
 -   Flexibility is required to allow reordering of the processing steps
-    performed by an application, or the capability to add and remove
-    steps.
+	performed by an application, or the capability to add and remove
+	steps.
 
 -   The system can benefit from distributing the processing for steps
-    across different servers.
+	across different servers.
 
 -   A reliable solution is required that minimizes the effects of
-    failure in a step while data is being processed.
+	failure in a step while data is being processed.
 
 This pattern might not be useful when:
 
 -   The processing steps performed by an application aren\'t
-    independent, or they have to be performed together as part of the
-    same transaction.
+	independent, or they have to be performed together as part of the
+	same transaction.
 
 -   The amount of context or state information required by a step makes
-    this approach inefficient. It might be possible to persist state
-    information to a database instead, but don\'t use this strategy if
-    the additional load on the database causes excessive contention.
+	this approach inefficient. It might be possible to persist state
+	information to a database instead, but don\'t use this strategy if
+	the additional load on the database causes excessive contention.
 
 ### Priority Queue Pattern
 
@@ -4105,23 +4551,23 @@ the resources that they have available).
 Using a priority queuing mechanism can provide the following advantages:
 
 -   It allows applications to meet business requirements that require
-    prioritization of availability or performance, such as offering
-    different levels of service to specific groups of customers.
+	prioritization of availability or performance, such as offering
+	different levels of service to specific groups of customers.
 -   It can help to minimize operational costs. In the single queue
-    approach, you can scale back the number of consumers if necessary.
-    High priority messages will still be processed first (although
-    possibly more slowly), and lower priority messages might be delayed
-    for longer. If you\'ve implemented the multiple message queue
-    approach with separate pools of consumers for each queue, you can
-    reduce the pool of consumers for lower priority queues, or even
-    suspend processing for some very low priority queues by stopping all
-    the consumers that listen for messages on those queues.
+	approach, you can scale back the number of consumers if necessary.
+	High priority messages will still be processed first (although
+	possibly more slowly), and lower priority messages might be delayed
+	for longer. If you\'ve implemented the multiple message queue
+	approach with separate pools of consumers for each queue, you can
+	reduce the pool of consumers for lower priority queues, or even
+	suspend processing for some very low priority queues by stopping all
+	the consumers that listen for messages on those queues.
 -   The multiple message queue approach can help maximize application
-    performance and scalability by partitioning messages based on
-    processing requirements. For example, vital tasks can be prioritized
-    to be handled by receivers that run immediately while less important
-    background tasks can be handled by receivers that are scheduled to
-    run at less busy periods.
+	performance and scalability by partitioning messages based on
+	processing requirements. For example, vital tasks can be prioritized
+	to be handled by receivers that run immediately while less important
+	background tasks can be handled by receivers that are scheduled to
+	run at less busy periods.
 
 #### Issues and Considerations
 
@@ -4211,23 +4657,23 @@ Introduce an asynchronous messaging subsystem that includes the
 following:
 
 -   An input messaging channel used by the sender. The sender packages
-    events into messages, using a known message format, and sends these
-    messages via the input channel. The sender in this pattern is also
-    called the  *publisher*.
+	events into messages, using a known message format, and sends these
+	messages via the input channel. The sender in this pattern is also
+	called the  *publisher*.
 
-     Note
+	 Note
 
-    A  *message* is a packet of data. An  *event* is a message that
-    notifies other components about a change or an action that has taken
-    place.
+	A  *message* is a packet of data. An  *event* is a message that
+	notifies other components about a change or an action that has taken
+	place.
 
 -   One output messaging channel per consumer. The consumers are known
-    as  *subscribers*.
+	as  *subscribers*.
 
 -   A mechanism for copying each message from the input channel to the
-    output channels for all subscribers interested in that message. This
-    operation is typically handled by an intermediary such as a message
-    broker or event bus.
+	output channels for all subscribers interested in that message. This
+	operation is typically handled by an intermediary such as a message
+	broker or event bus.
 
 The following diagram shows the logical components of this pattern:
 
@@ -4236,38 +4682,38 @@ The following diagram shows the logical components of this pattern:
 Pub/sub messaging has the following benefits:
 
 -   It decouples subsystems that still need to communicate. Subsystems
-    can be managed independently, and messages can be properly managed
-    even if one or more receivers are offline.
+	can be managed independently, and messages can be properly managed
+	even if one or more receivers are offline.
 
 -   It increases scalability and improves responsiveness of the sender.
-    The sender can quickly send a single message to the input channel,
-    then return to its core processing responsibilities. The messaging
-    infrastructure is responsible for ensuring messages are delivered to
-    interested subscribers.
+	The sender can quickly send a single message to the input channel,
+	then return to its core processing responsibilities. The messaging
+	infrastructure is responsible for ensuring messages are delivered to
+	interested subscribers.
 
 -   It improves reliability. Asynchronous messaging helps applications
-    continue to run smoothly under increased loads and handle
-    intermittent failures more effectively.
+	continue to run smoothly under increased loads and handle
+	intermittent failures more effectively.
 
 -   It allows for deferred or scheduled processing. Subscribers can wait
-    to pick up messages until off-peak hours, or messages can be routed
-    or processed according to a specific schedule.
+	to pick up messages until off-peak hours, or messages can be routed
+	or processed according to a specific schedule.
 
 -   It enables simpler integration between systems using different
-    platforms, programming languages, or communication protocols, as
-    well as between on-premises systems and applications running in the
-    cloud.
+	platforms, programming languages, or communication protocols, as
+	well as between on-premises systems and applications running in the
+	cloud.
 
 -   It facilitates asynchronous workflows across an enterprise.
 
 -   It improves testability. Channels can be monitored and messages can
-    be inspected or logged as part of an overall integration test
-    strategy.
+	be inspected or logged as part of an overall integration test
+	strategy.
 
 -   It provides separation of concerns for your applications. Each
-    application can focus on its core capabilities, while the messaging
-    infrastructure handles everything required to reliably route
-    messages to multiple consumers.
+	application can focus on its core capabilities, while the messaging
+	infrastructure handles everything required to reliably route
+	messages to multiple consumers.
 
 #### Issues and Considerations
 
@@ -4275,106 +4721,106 @@ Consider the following points when deciding how to implement this
 pattern:
 
 -   **Existing technologies.** It is strongly recommended to use
-    available messaging products and services that support a
-    publish-subscribe model, rather than building your own. In Azure,
-    consider using  [Service Bus](https://docs.microsoft.com/en-us/azure/service-bus-messaging/) or 
-    [Event Grid](https://docs.microsoft.com/en-us/azure/event-grid/).
-    Other technologies that can be used for pub/sub messaging include
-    Redis, RabbitMQ, and Apache Kafka.
+	available messaging products and services that support a
+	publish-subscribe model, rather than building your own. In Azure,
+	consider using  [Service Bus](https://docs.microsoft.com/en-us/azure/service-bus-messaging/) or 
+	[Event Grid](https://docs.microsoft.com/en-us/azure/event-grid/).
+	Other technologies that can be used for pub/sub messaging include
+	Redis, RabbitMQ, and Apache Kafka.
 
 -   **Subscription handling.** The messaging infrastructure must provide
-    mechanisms that consumers can use to subscribe to or unsubscribe
-    from available channels.
+	mechanisms that consumers can use to subscribe to or unsubscribe
+	from available channels.
 
 -   **Security.** Connecting to any message channel must be restricted
-    by security policy to prevent eavesdropping by unauthorized users or
-    applications.
+	by security policy to prevent eavesdropping by unauthorized users or
+	applications.
 
 -   **Subsets of messages.** Subscribers are usually only interested in
-    subset of the messages distributed by a publisher. Messaging
-    services often allow subscribers to narrow the set of messages
-    received by:
+	subset of the messages distributed by a publisher. Messaging
+	services often allow subscribers to narrow the set of messages
+	received by:
 
-    -   **Topics.** Each topic has a dedicated output channel, and each
-        consumer can subscribe to all relevant topics.
-    -   **Content filtering.** Messages are inspected and distributed
-        based on the content of each message. Each subscriber can
-        specify the content it is interested in.
+	-   **Topics.** Each topic has a dedicated output channel, and each
+		consumer can subscribe to all relevant topics.
+	-   **Content filtering.** Messages are inspected and distributed
+		based on the content of each message. Each subscriber can
+		specify the content it is interested in.
 
 -   **Wildcard subscribers.** Consider allowing subscribers to subscribe
-    to multiple topics via wildcards.
+	to multiple topics via wildcards.
 
 -   **Bi-directional communication.** The channels in a
-    publish-subscribe system are treated as unidirectional. If a
-    specific subscriber needs to send acknowledgment or communicate
-    status back to the publisher, consider using the  [Request/Reply
-    Pattern](http://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReply.html).
-    This pattern uses one channel to send a message to the subscriber,
-    and a separate reply channel for communicating back to the
-    publisher.
+	publish-subscribe system are treated as unidirectional. If a
+	specific subscriber needs to send acknowledgment or communicate
+	status back to the publisher, consider using the  [Request/Reply
+	Pattern](http://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReply.html).
+	This pattern uses one channel to send a message to the subscriber,
+	and a separate reply channel for communicating back to the
+	publisher.
 
 -   **Message ordering.** The order in which consumer instances receive
-    messages isn\'t guaranteed, and doesn\'t necessarily reflect the
-    order in which the messages were created. Design the system to
-    ensure that message processing is idempotent to help eliminate any
-    dependency on the order of message handling.
+	messages isn\'t guaranteed, and doesn\'t necessarily reflect the
+	order in which the messages were created. Design the system to
+	ensure that message processing is idempotent to help eliminate any
+	dependency on the order of message handling.
 
 -   **Message priority.** Some solutions may require that messages are
-    processed in a specific order. The  [Priority Queue
-    pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/priority-queue) provides
-    a mechanism for ensuring specific messages are delivered before
-    others.
+	processed in a specific order. The  [Priority Queue
+	pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/priority-queue) provides
+	a mechanism for ensuring specific messages are delivered before
+	others.
 
 -   **Poison messages.** A malformed message, or a task that requires
-    access to resources that aren\'t available, can cause a service
-    instance to fail. The system should prevent such messages being
-    returned to the queue. Instead, capture and store the details of
-    these messages elsewhere so that they can be analyzed if necessary.
+	access to resources that aren\'t available, can cause a service
+	instance to fail. The system should prevent such messages being
+	returned to the queue. Instead, capture and store the details of
+	these messages elsewhere so that they can be analyzed if necessary.
 
 -   **Repeated messages.** The same message might be sent more than
-    once. For example, the sender might fail after posting a message.
-    Then a new instance of the sender might start up and repeat the
-    message. The messaging infrastructure should implement duplicate
-    message detection and removal (also known as de-duping) based on
-    message IDs in order to provide at-most-once delivery of messages.
+	once. For example, the sender might fail after posting a message.
+	Then a new instance of the sender might start up and repeat the
+	message. The messaging infrastructure should implement duplicate
+	message detection and removal (also known as de-duping) based on
+	message IDs in order to provide at-most-once delivery of messages.
 
 -   **Message expiration.** A message might have a limited lifetime. If
-    it isn\'t processed within this period, it might no longer be
-    relevant and should be discarded. A sender can specify an expiration
-    time as part of the data in the message. A receiver can examine this
-    information before deciding whether to perform the business logic
-    associated with the message.
+	it isn\'t processed within this period, it might no longer be
+	relevant and should be discarded. A sender can specify an expiration
+	time as part of the data in the message. A receiver can examine this
+	information before deciding whether to perform the business logic
+	associated with the message.
 
 -   **Message scheduling.** A message might be temporarily embargoed and
-    should not be processed until a specific date and time. The message
-    should not be available to a receiver until this time.
+	should not be processed until a specific date and time. The message
+	should not be available to a receiver until this time.
 
 #### When to use this Pattern
 
 Use this pattern when:
 
 -   An application needs to broadcast information to a significant
-    number of consumers.
+	number of consumers.
 
 -   An application needs to communicate with one or more
-    independently-developed applications or services, which may use
-    different platforms, programming languages, and communication
-    protocols.
+	independently-developed applications or services, which may use
+	different platforms, programming languages, and communication
+	protocols.
 
 -   An application can send information to consumers without requiring
-    real-time responses from the consumers.
+	real-time responses from the consumers.
 
 -   The systems being integrated are designed to support an eventual
-    consistency model for their data.
+	consistency model for their data.
 
 -   An application needs to communicate information to multiple
-    consumers, which may have different availability requirements or
-    uptime schedules than the sender.
+	consumers, which may have different availability requirements or
+	uptime schedules than the sender.
 
 This pattern might not be useful when:
 
 -   An application has only a few consumers who need significantly
-    different information from the producing application.
+	different information from the producing application.
 
 -   An application requires near real-time interaction with consumers.
 
@@ -4428,22 +4874,22 @@ service isn\'t available at the time it posts a message to the queue.
 This pattern provides the following benefits:
 
 -   It can help to maximize availability because delays arising in
-    services won\'t have an immediate and direct impact on the
-    application, which can continue to post messages to the queue even
-    when the service isn\'t available or isn\'t currently processing
-    messages.
+	services won\'t have an immediate and direct impact on the
+	application, which can continue to post messages to the queue even
+	when the service isn\'t available or isn\'t currently processing
+	messages.
 
 -   It can help to maximize scalability because both the number of
-    queues and the number of services can be varied to meet demand.
+	queues and the number of services can be varied to meet demand.
 
 -   It can help to control costs because the number of service instances
-    deployed only have to be adequate to meet average load rather than
-    the peak load.
+	deployed only have to be adequate to meet average load rather than
+	the peak load.
 
-    > Some services implement throttling when demand reaches a threshold
-    > beyond which the system could fail. Throttling can reduce the
-    > functionality available. You can implement load leveling with
-    > these services to ensure that this threshold isn\'t reached.
+	> Some services implement throttling when demand reaches a threshold
+	> beyond which the system could fail. Throttling can reduce the
+	> functionality available. You can implement load leveling with
+	> these services to ensure that this threshold isn\'t reached.
 
 #### Issues and Considerations
 
@@ -4451,19 +4897,19 @@ Consider the following points when deciding how to implement this
 pattern:
 
 -   It\'s necessary to implement application logic that controls the
-    rate at which services handle messages to avoid overwhelming the
-    target resource. Avoid passing spikes in demand to the next stage of
-    the system. Test the system under load to ensure that it provides
-    the required leveling, and adjust the number of queues and the
-    number of service instances that handle messages to achieve this.
+	rate at which services handle messages to avoid overwhelming the
+	target resource. Avoid passing spikes in demand to the next stage of
+	the system. Test the system under load to ensure that it provides
+	the required leveling, and adjust the number of queues and the
+	number of service instances that handle messages to achieve this.
 -   Message queues are a one-way communication mechanism. If a task
-    expects a reply from a service, it might be necessary to implement a
-    mechanism that the service can use to send a response. For more
-    information, see the  [Asynchronous Messaging Primer](https://msdn.microsoft.com/library/dn589781.aspx).
+	expects a reply from a service, it might be necessary to implement a
+	mechanism that the service can use to send a response. For more
+	information, see the  [Asynchronous Messaging Primer](https://msdn.microsoft.com/library/dn589781.aspx).
 -   Be careful if you apply autoscaling to services that are listening
-    for requests on the queue. This can result in increased contention
-    for any resources that these services share and diminish the
-    effectiveness of using the queue to level the load.
+	for requests on the queue. This can result in increased contention
+	for any resources that these services share and diminish the
+	effectiveness of using the queue to level the load.
 
 #### When to use this Pattern
 
@@ -4509,23 +4955,23 @@ remote service, it can handle the failure using the following
 strategies:
 
 -   **Cancel**. If the fault indicates that the failure isn\'t transient
-    or is unlikely to be successful if repeated, the application should
-    cancel the operation and report an exception. For example, an
-    authentication failure caused by providing invalid credentials is
-    not likely to succeed no matter how many times it\'s attempted.
+	or is unlikely to be successful if repeated, the application should
+	cancel the operation and report an exception. For example, an
+	authentication failure caused by providing invalid credentials is
+	not likely to succeed no matter how many times it\'s attempted.
 
 -   **Retry**. If the specific fault reported is unusual or rare, it
-    might have been caused by unusual circumstances such as a network
-    packet becoming corrupted while it was being transmitted. In this
-    case, the application could retry the failing request again
-    immediately because the same failure is unlikely to be repeated and
-    the request will probably be successful.
+	might have been caused by unusual circumstances such as a network
+	packet becoming corrupted while it was being transmitted. In this
+	case, the application could retry the failing request again
+	immediately because the same failure is unlikely to be repeated and
+	the request will probably be successful.
 
 -   **Retry after delay**. If the fault is caused by one of the more
-    commonplace connectivity or busy failures, the network or service
-    might need a short period while the connectivity issues are
-    corrected or the backlog of work is cleared. The application should
-    wait for a suitable time before retrying the request.
+	commonplace connectivity or busy failures, the network or service
+	might need a short period while the connectivity issues are
+	corrected or the backlog of work is cleared. The application should
+	wait for a suitable time before retrying the request.
 
 For the more common transient failures, the period between retries
 should be chosen to spread requests from multiple instances of the
@@ -4652,15 +5098,15 @@ that has previously failed could succeed on a subsequent attempt.
 This pattern might not be useful:
 
 -   When a fault is likely to be long lasting, because this can affect
-    the responsiveness of an application. The application might be
-    wasting time and resources trying to repeat a request that\'s likely
-    to fail.
+	the responsiveness of an application. The application might be
+	wasting time and resources trying to repeat a request that\'s likely
+	to fail.
 -   For handling failures that aren\'t due to transient faults, such as
-    internal exceptions caused by errors in the business logic of an
-    application.
+	internal exceptions caused by errors in the business logic of an
+	application.
 -   As an alternative to addressing scalability issues in a system. If
-    an application experiences frequent busy faults, it\'s often a sign
-    that the service or resource being accessed should be scaled up.
+	an application experiences frequent busy faults, it\'s often a sign
+	that the service or resource being accessed should be scaled up.
 
 ### Scheduler Agent Supervisor Pattern
 
@@ -4701,46 +5147,46 @@ These actors orchestrate the steps to be performed as part of the
 overall task.
 
 -   The  **Scheduler** arranges for the steps that make up the task to
-    be executed and orchestrates their operation. These steps can be
-    combined into a pipeline or workflow. The Scheduler is responsible
-    for ensuring that the steps in this workflow are performed in the
-    right order. As each step is performed, the Scheduler records the
-    state of the workflow, such as \"step not yet started,\" \"step
-    running,\" or \"step completed." The state information should also
-    include an upper limit of the time allowed for the step to finish,
-    called the complete-by time. If a step requires access to a remote
-    service or resource, the Scheduler invokes the appropriate Agent,
-    passing it the details of the work to be performed. The Scheduler
-    typically communicates with an Agent using asynchronous
-    request/response messaging. This can be implemented using queues,
-    although other distributed messaging technologies could be used
-    instead.
+	be executed and orchestrates their operation. These steps can be
+	combined into a pipeline or workflow. The Scheduler is responsible
+	for ensuring that the steps in this workflow are performed in the
+	right order. As each step is performed, the Scheduler records the
+	state of the workflow, such as \"step not yet started,\" \"step
+	running,\" or \"step completed." The state information should also
+	include an upper limit of the time allowed for the step to finish,
+	called the complete-by time. If a step requires access to a remote
+	service or resource, the Scheduler invokes the appropriate Agent,
+	passing it the details of the work to be performed. The Scheduler
+	typically communicates with an Agent using asynchronous
+	request/response messaging. This can be implemented using queues,
+	although other distributed messaging technologies could be used
+	instead.
 
-    > The Scheduler performs a similar function to the Process Manager
-    > in the  [Process Manager pattern](https://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html).
-    > The actual workflow is typically defined and implemented by a
-    > workflow engine that\'s controlled by the Scheduler. This approach
-    > decouples the business logic in the workflow from the Scheduler.
+	> The Scheduler performs a similar function to the Process Manager
+	> in the  [Process Manager pattern](https://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html).
+	> The actual workflow is typically defined and implemented by a
+	> workflow engine that\'s controlled by the Scheduler. This approach
+	> decouples the business logic in the workflow from the Scheduler.
 
 -   The  **Agent** contains logic that encapsulates a call to a remote
-    service, or access to a remote resource referenced by a step in a
-    task. Each Agent typically wraps calls to a single service or
-    resource, implementing the appropriate error handling and retry
-    logic (subject to a timeout constraint, described later). If the
-    steps in the workflow being run by the Scheduler use several
-    services and resources across different steps, each step might
-    reference a different Agent (this is an implementation detail of the
-    pattern).
+	service, or access to a remote resource referenced by a step in a
+	task. Each Agent typically wraps calls to a single service or
+	resource, implementing the appropriate error handling and retry
+	logic (subject to a timeout constraint, described later). If the
+	steps in the workflow being run by the Scheduler use several
+	services and resources across different steps, each step might
+	reference a different Agent (this is an implementation detail of the
+	pattern).
 
 -   The  **Supervisor** monitors the status of the steps in the task
-    being performed by the Scheduler. It runs periodically (the
-    frequency will be system-specific), and examines the status of steps
-    maintained by the Scheduler. If it detects any that have timed out
-    or failed, it arranges for the appropriate Agent to recover the step
-    or execute the appropriate remedial action (this might involve
-    modifying the status of a step). Note that the recovery or remedial
-    actions are implemented by the Scheduler and Agents. The Supervisor
-    should simply request that these actions be performed.
+	being performed by the Scheduler. It runs periodically (the
+	frequency will be system-specific), and examines the status of steps
+	maintained by the Scheduler. If it detects any that have timed out
+	or failed, it arranges for the appropriate Agent to recover the step
+	or execute the appropriate remedial action (this might involve
+	modifying the status of a step). Note that the recovery or remedial
+	actions are implemented by the Scheduler and Agents. The Supervisor
+	should simply request that these actions be performed.
 
 The Scheduler, Agent, and Supervisor are logical components and their
 physical implementation depends on the technology being used. For
@@ -4855,20 +5301,20 @@ You should consider the following points when deciding how to implement
 this pattern:
 
 -   This pattern can be difficult to implement and requires thorough
-    testing of each possible failure mode of the system.
+	testing of each possible failure mode of the system.
 
 -   The recovery/retry logic implemented by the Scheduler is complex and
-    dependent on state information held in the state store. It might
-    also be necessary to record the information required to implement a
-    compensating transaction in a durable data store.
+	dependent on state information held in the state store. It might
+	also be necessary to record the information required to implement a
+	compensating transaction in a durable data store.
 
 -   How often the Supervisor runs will be important. It should run often
-    enough to prevent any failed steps from blocking an application for
-    an extended period, but it shouldn\'t run so often that it becomes
-    an overhead.
+	enough to prevent any failed steps from blocking an application for
+	an extended period, but it shouldn\'t run so often that it becomes
+	an overhead.
 
 -   The steps performed by an Agent could be run more than once. The
-    logic that implements these steps should be idempotent.
+	logic that implements these steps should be idempotent.
 
 #### When to use this Pattern
 
@@ -4918,46 +5364,46 @@ These actors orchestrate the steps to be performed as part of the
 overall task.
 
 -   The  **Scheduler** arranges for the steps that make up the task to
-    be executed and orchestrates their operation. These steps can be
-    combined into a pipeline or workflow. The Scheduler is responsible
-    for ensuring that the steps in this workflow are performed in the
-    right order. As each step is performed, the Scheduler records the
-    state of the workflow, such as \"step not yet started,\" \"step
-    running,\" or \"step completed." The state information should also
-    include an upper limit of the time allowed for the step to finish,
-    called the complete-by time. If a step requires access to a remote
-    service or resource, the Scheduler invokes the appropriate Agent,
-    passing it the details of the work to be performed. The Scheduler
-    typically communicates with an Agent using asynchronous
-    request/response messaging. This can be implemented using queues,
-    although other distributed messaging technologies could be used
-    instead.
+	be executed and orchestrates their operation. These steps can be
+	combined into a pipeline or workflow. The Scheduler is responsible
+	for ensuring that the steps in this workflow are performed in the
+	right order. As each step is performed, the Scheduler records the
+	state of the workflow, such as \"step not yet started,\" \"step
+	running,\" or \"step completed." The state information should also
+	include an upper limit of the time allowed for the step to finish,
+	called the complete-by time. If a step requires access to a remote
+	service or resource, the Scheduler invokes the appropriate Agent,
+	passing it the details of the work to be performed. The Scheduler
+	typically communicates with an Agent using asynchronous
+	request/response messaging. This can be implemented using queues,
+	although other distributed messaging technologies could be used
+	instead.
 
-    > The Scheduler performs a similar function to the Process Manager
-    > in the  [Process Manager pattern](https://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html).
-    > The actual workflow is typically defined and implemented by a
-    > workflow engine that\'s controlled by the Scheduler. This approach
-    > decouples the business logic in the workflow from the Scheduler.
+	> The Scheduler performs a similar function to the Process Manager
+	> in the  [Process Manager pattern](https://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html).
+	> The actual workflow is typically defined and implemented by a
+	> workflow engine that\'s controlled by the Scheduler. This approach
+	> decouples the business logic in the workflow from the Scheduler.
 
 -   The  **Agent** contains logic that encapsulates a call to a remote
-    service, or access to a remote resource referenced by a step in a
-    task. Each Agent typically wraps calls to a single service or
-    resource, implementing the appropriate error handling and retry
-    logic (subject to a timeout constraint, described later). If the
-    steps in the workflow being run by the Scheduler use several
-    services and resources across different steps, each step might
-    reference a different Agent (this is an implementation detail of the
-    pattern).
+	service, or access to a remote resource referenced by a step in a
+	task. Each Agent typically wraps calls to a single service or
+	resource, implementing the appropriate error handling and retry
+	logic (subject to a timeout constraint, described later). If the
+	steps in the workflow being run by the Scheduler use several
+	services and resources across different steps, each step might
+	reference a different Agent (this is an implementation detail of the
+	pattern).
 
 -   The  **Supervisor** monitors the status of the steps in the task
-    being performed by the Scheduler. It runs periodically (the
-    frequency will be system-specific), and examines the status of steps
-    maintained by the Scheduler. If it detects any that have timed out
-    or failed, it arranges for the appropriate Agent to recover the step
-    or execute the appropriate remedial action (this might involve
-    modifying the status of a step). Note that the recovery or remedial
-    actions are implemented by the Scheduler and Agents. The Supervisor
-    should simply request that these actions be performed.
+	being performed by the Scheduler. It runs periodically (the
+	frequency will be system-specific), and examines the status of steps
+	maintained by the Scheduler. If it detects any that have timed out
+	or failed, it arranges for the appropriate Agent to recover the step
+	or execute the appropriate remedial action (this might involve
+	modifying the status of a step). Note that the recovery or remedial
+	actions are implemented by the Scheduler and Agents. The Supervisor
+	should simply request that these actions be performed.
 
 The Scheduler, Agent, and Supervisor are logical components and their
 physical implementation depends on the technology being used. For
@@ -5069,20 +5515,20 @@ You should consider the following points when deciding how to implement
 this pattern:
 
 -   This pattern can be difficult to implement and requires thorough
-    testing of each possible failure mode of the system.
+	testing of each possible failure mode of the system.
 
 -   The recovery/retry logic implemented by the Scheduler is complex and
-    dependent on state information held in the state store. It might
-    also be necessary to record the information required to implement a
-    compensating transaction in a durable data store.
+	dependent on state information held in the state store. It might
+	also be necessary to record the information required to implement a
+	compensating transaction in a durable data store.
 
 -   How often the Supervisor runs will be important. It should run often
-    enough to prevent any failed steps from blocking an application for
-    an extended period, but it shouldn\'t run so often that it becomes
-    an overhead.
+	enough to prevent any failed steps from blocking an application for
+	an extended period, but it shouldn\'t run so often that it becomes
+	an overhead.
 
 -   The steps performed by an Agent could be run more than once. The
-    logic that implements these steps should be idempotent.
+	logic that implements these steps should be idempotent.
 
 #### When to use this Pattern
 
@@ -5150,35 +5596,35 @@ A data store hosted by a single server might be subject to the following
 limitations:
 
 -   **Storage space**. A data store for a large-scale cloud application
-    is expected to contain a huge volume of data that could increase
-    significantly over time. A server typically provides only a finite
-    amount of disk storage, but you can replace existing disks with
-    larger ones, or add further disks to a machine as data volumes grow.
-    However, the system will eventually reach a limit where it isn\'t
-    possible to easily increase the storage capacity on a given server.
+	is expected to contain a huge volume of data that could increase
+	significantly over time. A server typically provides only a finite
+	amount of disk storage, but you can replace existing disks with
+	larger ones, or add further disks to a machine as data volumes grow.
+	However, the system will eventually reach a limit where it isn\'t
+	possible to easily increase the storage capacity on a given server.
 
 -   **Computing resources**. A cloud application is required to support
-    a large number of concurrent users, each of which run queries that
-    retrieve information from the data store. A single server hosting
-    the data store might not be able to provide the necessary computing
-    power to support this load, resulting in extended response times for
-    users and frequent failures as applications attempting to store and
-    retrieve data time out. It might be possible to add memory or
-    upgrade processors, but the system will reach a limit when it isn\'t
-    possible to increase the compute resources any further.
+	a large number of concurrent users, each of which run queries that
+	retrieve information from the data store. A single server hosting
+	the data store might not be able to provide the necessary computing
+	power to support this load, resulting in extended response times for
+	users and frequent failures as applications attempting to store and
+	retrieve data time out. It might be possible to add memory or
+	upgrade processors, but the system will reach a limit when it isn\'t
+	possible to increase the compute resources any further.
 
 -   **Network bandwidth**. Ultimately, the performance of a data store
-    running on a single server is governed by the rate the server can
-    receive requests and send replies. It\'s possible that the volume of
-    network traffic might exceed the capacity of the network used to
-    connect to the server, resulting in failed requests.
+	running on a single server is governed by the rate the server can
+	receive requests and send replies. It\'s possible that the volume of
+	network traffic might exceed the capacity of the network used to
+	connect to the server, resulting in failed requests.
 
 -   **Geography**. It might be necessary to store data generated by
-    specific users in the same region as those users for legal,
-    compliance, or performance reasons, or to reduce latency of data
-    access. If the users are dispersed across different countries or
-    regions, it might not be possible to store the entire data for the
-    application in a single data store.
+	specific users in the same region as those users for legal,
+	compliance, or performance reasons, or to reduce latency of data
+	access. If the users are dispersed across different countries or
+	regions, it might not be possible to store the entire data for the
+	application in a single data store.
 
 Scaling vertically by adding more disk capacity, processing power,
 memory, and network connections can postpone the effects of some of
@@ -5198,16 +5644,16 @@ node.
 This pattern has the following benefits:
 
 -   You can scale the system out by adding further shards running on
-    additional storage nodes.
+	additional storage nodes.
 
 -   A system can use off-the-shelf hardware rather than specialized and
-    expensive computers for each storage node.
+	expensive computers for each storage node.
 
 -   You can reduce contention and improve performance by balancing the
-    workload across shards.
+	workload across shards.
 
 -   In the cloud, shards can be located physically close to the users
-    that\'ll access the data.
+	that\'ll access the data.
 
 When dividing a data store up into shards, decide which data should be
 placed in each shard. A shard typically contains items that fall within
@@ -5331,27 +5777,27 @@ previous figure shows this for tenants 55 and 56.
 The three sharding strategies have the following advantages and considerations:
 
 -   **Lookup**. This offers more control over the way that shards are
-    configured and used. Using virtual shards reduces the impact when
-    rebalancing data because new physical partitions can be added to
-    even out the workload. The mapping between a virtual shard and the
-    physical partitions that implement the shard can be modified without
-    affecting application code that uses a shard key to store and
-    retrieve data. Looking up shard locations can impose an additional
-    overhead.
+	configured and used. Using virtual shards reduces the impact when
+	rebalancing data because new physical partitions can be added to
+	even out the workload. The mapping between a virtual shard and the
+	physical partitions that implement the shard can be modified without
+	affecting application code that uses a shard key to store and
+	retrieve data. Looking up shard locations can impose an additional
+	overhead.
 -   **Range**. This is easy to implement and works well with range
-    queries because they can often fetch multiple data items from a
-    single shard in a single operation. This strategy offers easier data
-    management. For example, if users in the same region are in the same
-    shard, updates can be scheduled in each time zone based on the local
-    load and demand pattern. However, this strategy doesn\'t provide
-    optimal balancing between shards. Rebalancing shards is difficult
-    and might not resolve the problem of uneven load if the majority of
-    activity is for adjacent shard keys.
+	queries because they can often fetch multiple data items from a
+	single shard in a single operation. This strategy offers easier data
+	management. For example, if users in the same region are in the same
+	shard, updates can be scheduled in each time zone based on the local
+	load and demand pattern. However, this strategy doesn\'t provide
+	optimal balancing between shards. Rebalancing shards is difficult
+	and might not resolve the problem of uneven load if the majority of
+	activity is for adjacent shard keys.
 -   **Hash**. This strategy offers a better chance of more even data and
-    load distribution. Request routing can be accomplished directly by
-    using the hash function. There\'s no need to maintain a map. Note
-    that computing the hash might impose an additional overhead. Also,
-    rebalancing shards is difficult.
+	load distribution. Request routing can be accomplished directly by
+	using the hash function. There\'s no need to maintain a map. Note
+	that computing the hash might impose an additional overhead. Also,
+	rebalancing shards is difficult.
 
 Most common sharding systems implement one of the approaches described
 above, but you should also consider the business requirements of your
@@ -5359,21 +5805,21 @@ applications and their patterns of data usage. For example, in a
 multi-tenant application:
 
 -   You can shard data based on workload. You could segregate the data
-    for highly volatile tenants in separate shards. The speed of data
-    access for other tenants might be improved as a result.
+	for highly volatile tenants in separate shards. The speed of data
+	access for other tenants might be improved as a result.
 
 -   You can shard data based on the location of tenants. You can take
-    the data for tenants in a specific geographic region offline for
-    backup and maintenance during off-peak hours in that region, while
-    the data for tenants in other regions remains online and accessible
-    during their business hours.
+	the data for tenants in a specific geographic region offline for
+	backup and maintenance during off-peak hours in that region, while
+	the data for tenants in other regions remains online and accessible
+	during their business hours.
 
 -   High-value tenants could be assigned their own private, high
-    performing, lightly loaded shards, whereas lower-value tenants might
-    be expected to share more densely-packed, busy shards.
+	performing, lightly loaded shards, whereas lower-value tenants might
+	be expected to share more densely-packed, busy shards.
 
 -   The data for tenants that need a high degree of data isolation and
-    privacy can be stored on a completely separate server.
+	privacy can be stored on a completely separate server.
 
 Scaling and data movement operations 
 ------------------------------------
@@ -5412,123 +5858,123 @@ Consider the following points when deciding how to implement this
 pattern:
 
 -   Sharding is complementary to other forms of partitioning, such as
-    vertical partitioning and functional partitioning. For example, a
-    single shard can contain entities that have been partitioned
-    vertically, and a functional partition can be implemented as
-    multiple shards. For more information about partitioning, see the 
-    [Data Partitioning
-    Guidance](https://msdn.microsoft.com/library/dn589795.aspx).
+	vertical partitioning and functional partitioning. For example, a
+	single shard can contain entities that have been partitioned
+	vertically, and a functional partition can be implemented as
+	multiple shards. For more information about partitioning, see the 
+	[Data Partitioning
+	Guidance](https://msdn.microsoft.com/library/dn589795.aspx).
 
 -   Keep shards balanced so they all handle a similar volume of I/O. As
-    data is inserted and deleted, it\'s necessary to periodically
-    rebalance the shards to guarantee an even distribution and to reduce
-    the chance of hotspots. Rebalancing can be an expensive operation.
-    To reduce the necessity of rebalancing, plan for growth by ensuring
-    that each shard contains sufficient free space to handle the
-    expected volume of changes. You should also develop strategies and
-    scripts you can use to quickly rebalance shards if this becomes
-    necessary.
+	data is inserted and deleted, it\'s necessary to periodically
+	rebalance the shards to guarantee an even distribution and to reduce
+	the chance of hotspots. Rebalancing can be an expensive operation.
+	To reduce the necessity of rebalancing, plan for growth by ensuring
+	that each shard contains sufficient free space to handle the
+	expected volume of changes. You should also develop strategies and
+	scripts you can use to quickly rebalance shards if this becomes
+	necessary.
 
 -   Use stable data for the shard key. If the shard key changes, the
-    corresponding data item might have to move between shards,
-    increasing the amount of work performed by update operations. For
-    this reason, avoid basing the shard key on potentially volatile
-    information. Instead, look for attributes that are invariant or that
-    naturally form a key.
+	corresponding data item might have to move between shards,
+	increasing the amount of work performed by update operations. For
+	this reason, avoid basing the shard key on potentially volatile
+	information. Instead, look for attributes that are invariant or that
+	naturally form a key.
 
 -   Ensure that shard keys are unique. For example, avoid using
-    autoincrementing fields as the shard key. Is some systems,
-    autoincremented fields can\'t be coordinated across shards, possibly
-    resulting in items in different shards having the same shard key.
+	autoincrementing fields as the shard key. Is some systems,
+	autoincremented fields can\'t be coordinated across shards, possibly
+	resulting in items in different shards having the same shard key.
 
-    > Autoincremented values in other fields that are not shard keys can
-    > also cause problems. For example, if you use autoincremented
-    > fields to generate unique IDs, then two different items located in
-    > different shards might be assigned the same ID.
+	> Autoincremented values in other fields that are not shard keys can
+	> also cause problems. For example, if you use autoincremented
+	> fields to generate unique IDs, then two different items located in
+	> different shards might be assigned the same ID.
 
 -   It might not be possible to design a shard key that matches the
-    requirements of every possible query against the data. Shard the
-    data to support the most frequently performed queries, and if
-    necessary create secondary index tables to support queries that
-    retrieve data using criteria based on attributes that aren\'t part
-    of the shard key. For more information, see the  [Index Table
-    pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/index-table).
+	requirements of every possible query against the data. Shard the
+	data to support the most frequently performed queries, and if
+	necessary create secondary index tables to support queries that
+	retrieve data using criteria based on attributes that aren\'t part
+	of the shard key. For more information, see the  [Index Table
+	pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/index-table).
 
 -   Queries that access only a single shard are more efficient than
-    those that retrieve data from multiple shards, so avoid implementing
-    a sharding system that results in applications performing large
-    numbers of queries that join data held in different shards. Remember
-    that a single shard can contain the data for multiple types of
-    entities. Consider denormalizing your data to keep related entities
-    that are commonly queried together (such as the details of customers
-    and the orders that they have placed) in the same shard to reduce
-    the number of separate reads that an application performs.
+	those that retrieve data from multiple shards, so avoid implementing
+	a sharding system that results in applications performing large
+	numbers of queries that join data held in different shards. Remember
+	that a single shard can contain the data for multiple types of
+	entities. Consider denormalizing your data to keep related entities
+	that are commonly queried together (such as the details of customers
+	and the orders that they have placed) in the same shard to reduce
+	the number of separate reads that an application performs.
 
-    > If an entity in one shard references an entity stored in another
-    > shard, include the shard key for the second entity as part of the
-    > schema for the first entity. This can help to improve the
-    > performance of queries that reference related data across shards.
+	> If an entity in one shard references an entity stored in another
+	> shard, include the shard key for the second entity as part of the
+	> schema for the first entity. This can help to improve the
+	> performance of queries that reference related data across shards.
 
 -   If an application must perform queries that retrieve data from
-    multiple shards, it might be possible to fetch this data by using
-    parallel tasks. Examples include fan-out queries, where data from
-    multiple shards is retrieved in parallel and then aggregated into a
-    single result. However, this approach inevitably adds some
-    complexity to the data access logic of a solution.
+	multiple shards, it might be possible to fetch this data by using
+	parallel tasks. Examples include fan-out queries, where data from
+	multiple shards is retrieved in parallel and then aggregated into a
+	single result. However, this approach inevitably adds some
+	complexity to the data access logic of a solution.
 
 -   For many applications, creating a larger number of small shards can
-    be more efficient than having a small number of large shards because
-    they can offer increased opportunities for load balancing. This can
-    also be useful if you anticipate the need to migrate shards from one
-    physical location to another. Moving a small shard is quicker than
-    moving a large one.
+	be more efficient than having a small number of large shards because
+	they can offer increased opportunities for load balancing. This can
+	also be useful if you anticipate the need to migrate shards from one
+	physical location to another. Moving a small shard is quicker than
+	moving a large one.
 
 -   Make sure the resources available to each shard storage node are
-    sufficient to handle the scalability requirements in terms of data
-    size and throughput. For more information, see the section
-    "Designing Partitions for Scalability" in the  [Data Partitioning
-    Guidance](https://msdn.microsoft.com/library/dn589795.aspx).
+	sufficient to handle the scalability requirements in terms of data
+	size and throughput. For more information, see the section
+	"Designing Partitions for Scalability" in the  [Data Partitioning
+	Guidance](https://msdn.microsoft.com/library/dn589795.aspx).
 
 -   Consider replicating reference data to all shards. If an operation
-    that retrieves data from a shard also references static or
-    slow-moving data as part of the same query, add this data to the
-    shard. The application can then fetch all of the data for the query
-    easily, without having to make an additional round trip to a
-    separate data store.
+	that retrieves data from a shard also references static or
+	slow-moving data as part of the same query, add this data to the
+	shard. The application can then fetch all of the data for the query
+	easily, without having to make an additional round trip to a
+	separate data store.
 
-    > If reference data held in multiple shards changes, the system must
-    > synchronize these changes across all shards. The system can
-    > experience a degree of inconsistency while this synchronization
-    > occurs. If you do this, you should design your applications to be
-    > able to handle it.
+	> If reference data held in multiple shards changes, the system must
+	> synchronize these changes across all shards. The system can
+	> experience a degree of inconsistency while this synchronization
+	> occurs. If you do this, you should design your applications to be
+	> able to handle it.
 
 -   It can be difficult to maintain referential integrity and
-    consistency between shards, so you should minimize operations that
-    affect data in multiple shards. If an application must modify data
-    across shards, evaluate whether complete data consistency is
-    actually required. Instead, a common approach in the cloud is to
-    implement eventual consistency. The data in each partition is
-    updated separately, and the application logic must take
-    responsibility for ensuring that the updates all complete
-    successfully, as well as handling the inconsistencies that can arise
-    from querying data while an eventually consistent operation is
-    running. For more information about implementing eventual
-    consistency, see the  [Data Consistency
-    Primer](https://msdn.microsoft.com/library/dn589800.aspx).
+	consistency between shards, so you should minimize operations that
+	affect data in multiple shards. If an application must modify data
+	across shards, evaluate whether complete data consistency is
+	actually required. Instead, a common approach in the cloud is to
+	implement eventual consistency. The data in each partition is
+	updated separately, and the application logic must take
+	responsibility for ensuring that the updates all complete
+	successfully, as well as handling the inconsistencies that can arise
+	from querying data while an eventually consistent operation is
+	running. For more information about implementing eventual
+	consistency, see the  [Data Consistency
+	Primer](https://msdn.microsoft.com/library/dn589800.aspx).
 
 -   Configuring and managing a large number of shards can be a
-    challenge. Tasks such as monitoring, backing up, checking for
-    consistency, and logging or auditing must be accomplished on
-    multiple shards and servers, possibly held in multiple locations.
-    These tasks are likely to be implemented using scripts or other
-    automation solutions, but that might not completely eliminate the
-    additional administrative requirements.
+	challenge. Tasks such as monitoring, backing up, checking for
+	consistency, and logging or auditing must be accomplished on
+	multiple shards and servers, possibly held in multiple locations.
+	These tasks are likely to be implemented using scripts or other
+	automation solutions, but that might not completely eliminate the
+	additional administrative requirements.
 
 -   Shards can be geolocated so that the data that they contain is close
-    to the instances of an application that use it. This approach can
-    considerably improve performance, but requires additional
-    consideration for tasks that must access multiple shards in
-    different locations.
+	to the instances of an application that use it. This approach can
+	considerably improve performance, but requires additional
+	consideration for tasks that must access multiple shards in
+	different locations.
 
 #### When to use this Pattern
 
@@ -5607,20 +6053,20 @@ alongside it.
 Advantages of using a sidecar pattern include:
 
 -   A sidecar is independent from its primary application in terms of
-    runtime environment and programming language, so you don\'t need to
-    develop one sidecar per language.
+	runtime environment and programming language, so you don\'t need to
+	develop one sidecar per language.
 
 -   The sidecar can access the same resources as the primary
-    application. For example, a sidecar can monitor system resources
-    used by both the sidecar and the primary application.
+	application. For example, a sidecar can monitor system resources
+	used by both the sidecar and the primary application.
 
 -   Because of its proximity to the primary application, there's no
-    significant latency when communicating between them.
+	significant latency when communicating between them.
 
 -   Even for applications that don't provide an extensibility mechanism,
-    you can use a sidecar to extend functionality by attaching it as its
-    own process in the same host or sub-container as the primary
-    application.
+	you can use a sidecar to extend functionality by attaching it as its
+	own process in the same host or sub-container as the primary
+	application.
 
 The sidecar pattern is often used with containers and referred to as a
 sidecar container or sidekick container.
@@ -5628,51 +6074,51 @@ sidecar container or sidekick container.
 #### Issues and Considerations
 
 -   Consider the deployment and packaging format you will use to deploy
-    services, processes, or containers. Containers are particularly well
-    suited to the sidecar pattern.
+	services, processes, or containers. Containers are particularly well
+	suited to the sidecar pattern.
 -   When designing a sidecar service, carefully decide on the
-    interprocess communication mechanism. Try to use language- or
-    framework-agnostic technologies unless performance requirements make
-    that impractical.
+	interprocess communication mechanism. Try to use language- or
+	framework-agnostic technologies unless performance requirements make
+	that impractical.
 -   Before putting functionality into a sidecar, consider whether it
-    would work better as a separate service or a more traditional
-    daemon.
+	would work better as a separate service or a more traditional
+	daemon.
 -   Also consider whether the functionality could be implemented as a
-    library or using a traditional extension mechanism.
-    Language-specific libraries may have a deeper level of integration
-    and less network overhead.
+	library or using a traditional extension mechanism.
+	Language-specific libraries may have a deeper level of integration
+	and less network overhead.
 
 #### When to use this Pattern
 
 Use this pattern when:
 
 -   Your primary application uses a heterogeneous set of languages and
-    frameworks. A component located in a sidecar service can be consumed
-    by applications written in different languages using different
-    frameworks.
+	frameworks. A component located in a sidecar service can be consumed
+	by applications written in different languages using different
+	frameworks.
 -   A component is owned by a remote team or a different organization.
 -   A component or feature must be co-located on the same host as the
-    application
+	application
 -   You need a service that shares the overall lifecycle of your main
-    application, but can be independently updated.
+	application, but can be independently updated.
 -   You need fine-grained control over resource limits for a particular
-    resource or component. For example, you may want to restrict the
-    amount of memory a specific component uses. You can deploy the
-    component as a sidecar and manage memory usage independently of the
-    main application.
+	resource or component. For example, you may want to restrict the
+	amount of memory a specific component uses. You can deploy the
+	component as a sidecar and manage memory usage independently of the
+	main application.
 
 This pattern may not be suitable:
 
 -   When interprocess communication needs to be optimized. Communication
-    between a parent application and sidecar services includes some
-    overhead, notably latency in the calls. This may not be an
-    acceptable trade-off for chatty interfaces.
+	between a parent application and sidecar services includes some
+	overhead, notably latency in the calls. This may not be an
+	acceptable trade-off for chatty interfaces.
 -   For small applications where the resource cost of deploying a
-    sidecar service for each instance is not worth the advantage of
-    isolation.
+	sidecar service for each instance is not worth the advantage of
+	isolation.
 -   When the service needs to scale differently than or independently
-    from the main applications. If so, it may be better to deploy the
-    feature as a separate service.
+	from the main applications. If so, it may be better to deploy the
+	feature as a separate service.
 
 ### Static Content Hosting Pattern
 
@@ -5713,74 +6159,74 @@ Consider the following points when deciding how to implement this
 pattern:
 
 -   The hosted storage service must expose an HTTP endpoint that users
-    can access to download the static resources. Some storage services
-    also support HTTPS, so it\'s possible to host resources in storage
-    services that require SSL.
+	can access to download the static resources. Some storage services
+	also support HTTPS, so it\'s possible to host resources in storage
+	services that require SSL.
 
 -   For maximum performance and availability, consider using a content
-    delivery network (CDN) to cache the contents of the storage
-    container in multiple datacenters around the world. However, you\'ll
-    likely have to pay for using the CDN.
+	delivery network (CDN) to cache the contents of the storage
+	container in multiple datacenters around the world. However, you\'ll
+	likely have to pay for using the CDN.
 
 -   Storage accounts are often geo-replicated by default to provide
-    resiliency against events that might affect a datacenter. This means
-    that the IP address might change, but the URL will remain the same.
+	resiliency against events that might affect a datacenter. This means
+	that the IP address might change, but the URL will remain the same.
 
 -   When some content is located in a storage account and other content
-    is in a hosted compute instance, it becomes more challenging to
-    deploy and update the application. You might have to perform
-    separate deployments, and version the application and content to
-    manage it more easily---especially when the static content includes
-    script files or UI components. However, if only static resources
-    have to be updated, they can simply be uploaded to the storage
-    account without needing to redeploy the application package.
+	is in a hosted compute instance, it becomes more challenging to
+	deploy and update the application. You might have to perform
+	separate deployments, and version the application and content to
+	manage it more easily---especially when the static content includes
+	script files or UI components. However, if only static resources
+	have to be updated, they can simply be uploaded to the storage
+	account without needing to redeploy the application package.
 
 -   Storage services might not support the use of custom domain names.
-    In this case it\'s necessary to specify the full URL of the
-    resources in links because they\'ll be in a different domain from
-    the dynamically-generated content containing the links.
+	In this case it\'s necessary to specify the full URL of the
+	resources in links because they\'ll be in a different domain from
+	the dynamically-generated content containing the links.
 
 -   The storage containers must be configured for public read access,
-    but it\'s vital to ensure that they aren\'t configured for public
-    write access to prevent users being able to upload content.
+	but it\'s vital to ensure that they aren\'t configured for public
+	write access to prevent users being able to upload content.
 
 -   Consider using a valet key or token to control access to resources
-    that shouldn\'t be available anonymously. See the 
-    [Valet Key pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/valet-key) for
-    more information.
+	that shouldn\'t be available anonymously. See the 
+	[Valet Key pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/valet-key) for
+	more information.
 
 #### When to use this Pattern
 
 This pattern is useful for:
 
 -   Minimizing the hosting cost for websites and applications that
-    contain some static resources.
+	contain some static resources.
 
 -   Minimizing the hosting cost for websites that consist of only static
-    content and resources. Depending on the capabilities of the hosting
-    provider\'s storage system, it might be possible to entirely host a
-    fully static website in a storage account.
+	content and resources. Depending on the capabilities of the hosting
+	provider\'s storage system, it might be possible to entirely host a
+	fully static website in a storage account.
 
 -   Exposing static resources and content for applications running in
-    other hosting environments or on-premises servers.
+	other hosting environments or on-premises servers.
 
 -   Locating content in more than one geographical area using a content
-    delivery network that caches the contents of the storage account in
-    multiple datacenters around the world.
+	delivery network that caches the contents of the storage account in
+	multiple datacenters around the world.
 
 -   Monitoring costs and bandwidth usage. Using a separate storage
-    account for some or all of the static content allows the costs to be
-    more easily separated from hosting and runtime costs.
+	account for some or all of the static content allows the costs to be
+	more easily separated from hosting and runtime costs.
 
 This pattern might not be useful in the following situations:
 
 -   The application needs to perform some processing on the static
-    content before delivering it to the client. For example, it might be
-    necessary to add a timestamp to a document.
+	content before delivering it to the client. For example, it might be
+	necessary to add a timestamp to a document.
 
 -   The volume of static content is very small. The overhead of
-    retrieving this content from separate storage can outweigh the cost
-    benefit of separating it out from the compute resource.
+	retrieving this content from separate storage can outweigh the cost
+	benefit of separating it out from the compute resource.
 
 ### Strangler Pattern
 
@@ -5830,15 +6276,15 @@ Once this process is complete, the legacy system can safely be retired.
 #### Issues and Considerations
 
 -   Consider how to handle services and data stores that are potentially
-    used by both new and legacy systems. Make sure both can access these
-    resources side-by-side.
+	used by both new and legacy systems. Make sure both can access these
+	resources side-by-side.
 -   Structure new applications and services in a way that they can
-    easily be intercepted and replaced in future strangler migrations.
+	easily be intercepted and replaced in future strangler migrations.
 -   At some point, when the migration is complete, the strangler façade
-    will either go away or evolve into an adaptor for legacy clients.
+	will either go away or evolve into an adaptor for legacy clients.
 -   Make sure the façade keeps up with the migration.
 -   Make sure the façade doesn\'t become a single point of failure or a
-    performance bottleneck.
+	performance bottleneck.
 
 #### When to use this Pattern
 
@@ -5894,32 +6340,32 @@ Guidance](https://msdn.microsoft.com/library/dn589775.aspx).
 The system could implement several throttling strategies, including:
 
 -   Rejecting requests from an individual user who\'s already accessed
-    system APIs more than n times per second over a given period of
-    time. This requires the system to meter the use of resources for
-    each tenant or user running an application. For more information,
-    see the  [Service Metering
-    Guidance](https://msdn.microsoft.com/library/dn589796.aspx).
+	system APIs more than n times per second over a given period of
+	time. This requires the system to meter the use of resources for
+	each tenant or user running an application. For more information,
+	see the  [Service Metering
+	Guidance](https://msdn.microsoft.com/library/dn589796.aspx).
 
 -   Disabling or degrading the functionality of selected nonessential
-    services so that essential services can run unimpeded with
-    sufficient resources. For example, if the application is streaming
-    video output, it could switch to a lower resolution.
+	services so that essential services can run unimpeded with
+	sufficient resources. For example, if the application is streaming
+	video output, it could switch to a lower resolution.
 
 -   Using load leveling to smooth the volume of activity (this approach
-    is covered in more detail by the  [Queue-based Load Leveling
-    pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/queue-based-load-leveling)).
-    In a multi-tenant environment, this approach will reduce the
-    performance for every tenant. If the system must support a mix of
-    tenants with different SLAs, the work for high-value tenants might
-    be performed immediately. Requests for other tenants can be held
-    back, and handled when the backlog has eased. The  [Priority Queue
-    pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/priority-queue) could
-    be used to help implement this approach.
+	is covered in more detail by the  [Queue-based Load Leveling
+	pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/queue-based-load-leveling)).
+	In a multi-tenant environment, this approach will reduce the
+	performance for every tenant. If the system must support a mix of
+	tenants with different SLAs, the work for high-value tenants might
+	be performed immediately. Requests for other tenants can be held
+	back, and handled when the backlog has eased. The  [Priority Queue
+	pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/priority-queue) could
+	be used to help implement this approach.
 
 -   Deferring operations being performed on behalf of lower priority
-    applications or tenants. These operations can be suspended or
-    limited, with an exception generated to inform the tenant that the
-    system is busy and that the operation should be retried later.
+	applications or tenants. These operations can be suspended or
+	limited, with an exception generated to inform the tenant that the
+	system is busy and that the operation should be retried later.
 
 The figure shows an area graph for resource use (a combination of
 memory, CPU, bandwidth, and other factors) against time for applications
@@ -5976,35 +6422,35 @@ You should consider the following points when deciding how to implement
 this pattern:
 
 -   Throttling an application, and the strategy to use, is an
-    architectural decision that impacts the entire design of a system.
-    Throttling should be considered early in the application design
-    process because it isn\'t easy to add once a system has been
-    implemented.
+	architectural decision that impacts the entire design of a system.
+	Throttling should be considered early in the application design
+	process because it isn\'t easy to add once a system has been
+	implemented.
 
 -   Throttling must be performed quickly. The system must be capable of
-    detecting an increase in activity and react accordingly. The system
-    must also be able to revert to its original state quickly after the
-    load has eased. This requires that the appropriate performance data
-    is continually captured and monitored.
+	detecting an increase in activity and react accordingly. The system
+	must also be able to revert to its original state quickly after the
+	load has eased. This requires that the appropriate performance data
+	is continually captured and monitored.
 
 -   If a service needs to temporarily deny a user request, it should
-    return a specific error code so the client application understands
-    that the reason for the refusal to perform an operation is due to
-    throttling. The client application can wait for a period before
-    retrying the request.
+	return a specific error code so the client application understands
+	that the reason for the refusal to perform an operation is due to
+	throttling. The client application can wait for a period before
+	retrying the request.
 
 -   Throttling can be used as a temporary measure while a system
-    autoscales. In some cases it\'s better to simply throttle, rather
-    than to scale, if a burst in activity is sudden and isn\'t expected
-    to be long lived because scaling can add considerably to running
-    costs.
+	autoscales. In some cases it\'s better to simply throttle, rather
+	than to scale, if a burst in activity is sudden and isn\'t expected
+	to be long lived because scaling can add considerably to running
+	costs.
 
 -   If throttling is being used as a temporary measure while a system
-    autoscales, and if resource demands grow very quickly, the system
-    might not be able to continue functioning---even when operating in a
-    throttled mode. If this isn\'t acceptable, consider maintaining
-    larger capacity reserves and configuring more aggressive
-    autoscaling.
+	autoscales, and if resource demands grow very quickly, the system
+	might not be able to continue functioning---even when operating in a
+	throttled mode. If this isn\'t acceptable, consider maintaining
+	larger capacity reserves and configuring more aggressive
+	autoscaling.
 
 #### When to use this Pattern
 
@@ -6167,93 +6613,93 @@ should be enforced for clients accessing the data store directly.
 Other issues to be aware of when implementing this pattern are:
 
 -   If the client doesn\'t, or can\'t, notify the server of completion
-    of the operation, and the only limit is the expiration period of the
-    key, the application won\'t be able to perform auditing operations
-    such as counting the number of uploads or downloads, or preventing
-    multiple uploads or downloads.
+	of the operation, and the only limit is the expiration period of the
+	key, the application won\'t be able to perform auditing operations
+	such as counting the number of uploads or downloads, or preventing
+	multiple uploads or downloads.
 
 -   The flexibility of key policies that can be generated might be
-    limited. For example, some mechanisms only allow the use of a timed
-    expiration period. Others aren\'t able to specify a sufficient
-    granularity of read/write permissions.
+	limited. For example, some mechanisms only allow the use of a timed
+	expiration period. Others aren\'t able to specify a sufficient
+	granularity of read/write permissions.
 
 -   If the start time for the key or token validity period is specified,
-    ensure that it\'s a little earlier than the current server time to
-    allow for client clocks that might be slightly out of
-    synchronization. The default, if not specified, is usually the
-    current server time.
+	ensure that it\'s a little earlier than the current server time to
+	allow for client clocks that might be slightly out of
+	synchronization. The default, if not specified, is usually the
+	current server time.
 
 -   The URL containing the key will be recorded in server log files.
-    While the key will typically have expired before the log files are
-    used for analysis, ensure that you limit access to them. If log data
-    is transmitted to a monitoring system or stored in another location,
-    consider implementing a delay to prevent leakage of keys until after
-    their validity period has expired.
+	While the key will typically have expired before the log files are
+	used for analysis, ensure that you limit access to them. If log data
+	is transmitted to a monitoring system or stored in another location,
+	consider implementing a delay to prevent leakage of keys until after
+	their validity period has expired.
 
 -   If the client code runs in a web browser, the browser might need to
-    support cross-origin resource sharing (CORS) to enable code that
-    executes within the web browser to access data in a different domain
-    from the one that served the page. Some older browsers and some data
-    stores don\'t support CORS, and code that runs in these browsers
-    might not be able to use a valet key to provide access to data in a
-    different domain, such as a cloud storage account.
+	support cross-origin resource sharing (CORS) to enable code that
+	executes within the web browser to access data in a different domain
+	from the one that served the page. Some older browsers and some data
+	stores don\'t support CORS, and code that runs in these browsers
+	might not be able to use a valet key to provide access to data in a
+	different domain, such as a cloud storage account.
 
 #### When to use this Pattern
 
 This pattern is useful for the following situations:
 
 -   To minimize resource loading and maximize performance and
-    scalability. Using a valet key doesn\'t require the resource to be
-    locked, no remote server call is required, there\'s no limit on the
-    number of valet keys that can be issued, and it avoids a single
-    point of failure resulting from performing the data transfer through
-    the application code. Creating a valet key is typically a simple
-    cryptographic operation of signing a string with a key.
+	scalability. Using a valet key doesn\'t require the resource to be
+	locked, no remote server call is required, there\'s no limit on the
+	number of valet keys that can be issued, and it avoids a single
+	point of failure resulting from performing the data transfer through
+	the application code. Creating a valet key is typically a simple
+	cryptographic operation of signing a string with a key.
 
 -   To minimize operational cost. Enabling direct access to stores and
-    queues is resource and cost efficient, can result in fewer network
-    round trips, and might allow for a reduction in the number of
-    compute resources required.
+	queues is resource and cost efficient, can result in fewer network
+	round trips, and might allow for a reduction in the number of
+	compute resources required.
 
 -   When clients regularly upload or download data, particularly where
-    there\'s a large volume or when each operation involves large files.
+	there\'s a large volume or when each operation involves large files.
 
 -   When the application has limited compute resources available, either
-    due to hosting limitations or cost considerations. In this scenario,
-    the pattern is even more helpful if there are many concurrent data
-    uploads or downloads because it relieves the application from
-    handling the data transfer.
+	due to hosting limitations or cost considerations. In this scenario,
+	the pattern is even more helpful if there are many concurrent data
+	uploads or downloads because it relieves the application from
+	handling the data transfer.
 
 -   When the data is stored in a remote data store or a different
-    datacenter. If the application was required to act as a gatekeeper,
-    there might be a charge for the additional bandwidth of transferring
-    the data between datacenters, or across public or private networks
-    between the client and the application, and then between the
-    application and the data store.
+	datacenter. If the application was required to act as a gatekeeper,
+	there might be a charge for the additional bandwidth of transferring
+	the data between datacenters, or across public or private networks
+	between the client and the application, and then between the
+	application and the data store.
 
 This pattern might not be useful in the following situations:
 
 -   If the application must perform some task on the data before it\'s
-    stored or before it\'s sent to the client. For example, if the
-    application needs to perform validation, log access success, or
-    execute a transformation on the data. However, some data stores and
-    clients are able to negotiate and carry out simple transformations
-    such as compression and decompression (for example, a web browser
-    can usually handle GZip formats).
+	stored or before it\'s sent to the client. For example, if the
+	application needs to perform validation, log access success, or
+	execute a transformation on the data. However, some data stores and
+	clients are able to negotiate and carry out simple transformations
+	such as compression and decompression (for example, a web browser
+	can usually handle GZip formats).
 
 -   If the design of an existing application makes it difficult to
-    incorporate the pattern. Using this pattern typically requires a
-    different architectural approach for delivering and receiving data.
+	incorporate the pattern. Using this pattern typically requires a
+	different architectural approach for delivering and receiving data.
 
 -   If it\'s necessary to maintain audit trails or control the number of
-    times a data transfer operation is executed, and the valet key
-    mechanism in use doesn\'t support notifications that the server can
-    use to manage these operations.
+	times a data transfer operation is executed, and the valet key
+	mechanism in use doesn\'t support notifications that the server can
+	use to manage these operations.
 
 -   If it\'s necessary to limit the size of the data, especially during
-    upload operations. The only solution to this is for the application
-    to check the data size after the operation is complete, or check the
-    size of uploads after a specified period or on a scheduled basis.
+	upload operations. The only solution to this is for the application
+	to check the data size after the operation is complete, or check the
+	size of uploads after a specified period or on a scheduled basis.
 
 References
 

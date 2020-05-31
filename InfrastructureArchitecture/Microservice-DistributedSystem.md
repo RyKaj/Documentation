@@ -67,57 +67,57 @@ application.
 
  
 -   **Application Scaling:**As the successful Web Scale companies enjoy
-    exponential growth, their softwares also need to support high
-    horizontal scalability. Sometimes, only a part of the software which
-    is e.g. CPU intensive or I/O intensive needs to be scaled and
-    handled separately (implemented with polyglot programming).
-    Monolithic software works as a single unit and developed in a single
-    programming language using a single Tech Stack. To achieve
-    horizontal scaling, the whole application needs to be scaled.
-    Correspondingly as the Monolithic software only supports one
-    programming language, it is not possible to implement one single
-    module of it in other programming language or in other Tech Stack.
+	exponential growth, their softwares also need to support high
+	horizontal scalability. Sometimes, only a part of the software which
+	is e.g. CPU intensive or I/O intensive needs to be scaled and
+	handled separately (implemented with polyglot programming).
+	Monolithic software works as a single unit and developed in a single
+	programming language using a single Tech Stack. To achieve
+	horizontal scaling, the whole application needs to be scaled.
+	Correspondingly as the Monolithic software only supports one
+	programming language, it is not possible to implement one single
+	module of it in other programming language or in other Tech Stack.
 -   **Development Velocity:**To shorten time to market, every company
-    nowadays wants to have fast feature development. In a large, complex
-    and often multi-million line Monolithic Application, adding new
-    feature is very slow because such a Monolithic Application gives
-    huge Cognitive Load to the Developer. Modules of giant Monolithic
-    applications are tightly coupled and provide an additional challenge
-    to add new features. As a result, adding new features in a
-    Monolithic application is often slow and very expensive.
+	nowadays wants to have fast feature development. In a large, complex
+	and often multi-million line Monolithic Application, adding new
+	feature is very slow because such a Monolithic Application gives
+	huge Cognitive Load to the Developer. Modules of giant Monolithic
+	applications are tightly coupled and provide an additional challenge
+	to add new features. As a result, adding new features in a
+	Monolithic application is often slow and very expensive.
 -   **Development Scaling:**Companies often want to parallelize the
-    development by hiring more developers to have a competitive
-    advantage or to catch the low hanging fruits. Developers cannot work
-    autonomously on a giant, Monolithic, tightly coupled code base and
-    often needs extra synchronization, guard not to bump into each
-    other's work. Adding more developers does not produce more feature
-    and sometimes delivers even fewer features. Similarly due to the
-    high Cognitive Load to understand the whole Monolithic code base,
-    new hires or fresh graduates often take a long time to write first
-    lines of productive code. In 2008, I had an interview in a Telecom
-    company in Berlin where the Technical Manager told me with a proud
-    smile that they have multi-million lines of C++ code base and new
-    developers can only write productive codes after 3--6 months.
+	development by hiring more developers to have a competitive
+	advantage or to catch the low hanging fruits. Developers cannot work
+	autonomously on a giant, Monolithic, tightly coupled code base and
+	often needs extra synchronization, guard not to bump into each
+	other's work. Adding more developers does not produce more feature
+	and sometimes delivers even fewer features. Similarly due to the
+	high Cognitive Load to understand the whole Monolithic code base,
+	new hires or fresh graduates often take a long time to write first
+	lines of productive code. In 2008, I had an interview in a Telecom
+	company in Berlin where the Technical Manager told me with a proud
+	smile that they have multi-million lines of C++ code base and new
+	developers can only write productive codes after 3--6 months.
 -   **Release Cycle:**Release Cycle of large Monolithic applications is
-    often too large and usually 6 months to 2/3 years plus another few
-    months to several years delay due to its size. In modern days, large
-    release cycle often put the company under competitive disadvantages
-    as within this large release gap, a new company can come and take
-    away its market.
+	often too large and usually 6 months to 2/3 years plus another few
+	months to several years delay due to its size. In modern days, large
+	release cycle often put the company under competitive disadvantages
+	as within this large release gap, a new company can come and take
+	away its market.
 -   **Modularization**: In Monolithic Architecture, the boundary between
-    Modules are often internal Interfaces. As soon as the application
-    grows in size, the boundary between modules starts to fall apart. As
-    a result, often the Modules in Monolithic Architecture are tightly
-    coupled instead of the double dictum "Loosely coupled, highly
-    cohesive".*If we compare the Software development with society, then
-    Monolithic Modularization is like moralistic, religious rules which
-    as we know cannot ensure law and order in the society*.
+	Modules are often internal Interfaces. As soon as the application
+	grows in size, the boundary between modules starts to fall apart. As
+	a result, often the Modules in Monolithic Architecture are tightly
+	coupled instead of the double dictum "Loosely coupled, highly
+	cohesive".*If we compare the Software development with society, then
+	Monolithic Modularization is like moralistic, religious rules which
+	as we know cannot ensure law and order in the society*.
 -   **Modernization:**Existing successful applications needed to be
-    modernized due to many factors (e.g. taking advantage of modern
-    Hardware, Browser, Network Bandwidth, Tech Stack or Attract good
-    developers). Modernization of Monolithic application is often
-    expensive and time-consuming as it needs a Big Bang modernization of
-    the whole application without disrupting the Service.
+	modernized due to many factors (e.g. taking advantage of modern
+	Hardware, Browser, Network Bandwidth, Tech Stack or Attract good
+	developers). Modernization of Monolithic application is often
+	expensive and time-consuming as it needs a Big Bang modernization of
+	the whole application without disrupting the Service.
 
 
 
@@ -144,10 +144,10 @@ Forces
 -   The application must be easy to understand and modify
 -   You want to practice continuous deployment of the application
 -   You must run multiple instances of the application on multiple
-    machines in order to satisfy scalability and availability
-    requirements
+	machines in order to satisfy scalability and availability
+	requirements
 -   You want to take advantage of emerging technologies (frameworks,
-    programming languages, etc)
+	programming languages, etc)
 
 
 
@@ -202,82 +202,82 @@ Resulting Context
 This solution has a number of benefits:
 
 -   Simple to develop - the goal of current development tools and IDEs
-    is to support the development of monolithic applications
+	is to support the development of monolithic applications
 -   Simple to deploy - you simply need to deploy the WAR file (or
-    directory hierarchy) on the appropriate runtime
+	directory hierarchy) on the appropriate runtime
 -   Simple to scale - you can scale the application by running multiple
-    copies of the application behind a load balancer
+	copies of the application behind a load balancer
 
 However, once the application becomes large and the team grows in size,
 this approach has a number of drawbacks that become increasingly
 significant:
 
 -   The large monolithic code base intimidates developers, especially
-    ones who are new to the team. The application can be difficult to
-    understand and modify. As a result, development typically slows
-    down. Also, because there are not hard module boundaries, modularity
-    breaks down over time. Moreover, because it can be difficult to
-    understand how to correctly implement a change the quality of the
-    code declines over time. It's a downwards spiral.
+	ones who are new to the team. The application can be difficult to
+	understand and modify. As a result, development typically slows
+	down. Also, because there are not hard module boundaries, modularity
+	breaks down over time. Moreover, because it can be difficult to
+	understand how to correctly implement a change the quality of the
+	code declines over time. It's a downwards spiral.
 
 -   Overloaded IDE - the larger the code base the slower the IDE and the
-    less productive developers are.
+	less productive developers are.
 
 -   Overloaded web container - the larger the application the longer it
-    takes to start up. This had have a huge impact on developer
-    productivity because of time wasted waiting for the container to
-    start. It also impacts deployment too.
+	takes to start up. This had have a huge impact on developer
+	productivity because of time wasted waiting for the container to
+	start. It also impacts deployment too.
 
 -   Continuous deployment is difficult - a large monolithic application
-    is also an obstacle to frequent deployments. In order to update one
-    component you have to redeploy the entire application. This will
-    interrupt background tasks (e.g. Quartz jobs in a Java application),
-    regardless of whether they are impacted by the change, and possibly
-    cause problems. There is also the chance that components that
-    haven't been updated will fail to start correctly. As a result, the
-    risk associated with redeployment increases, which discourages
-    frequent updates. This is especially a problem for user interface
-    developers, since they usually need to iterative rapidly and
-    redeploy frequently.
+	is also an obstacle to frequent deployments. In order to update one
+	component you have to redeploy the entire application. This will
+	interrupt background tasks (e.g. Quartz jobs in a Java application),
+	regardless of whether they are impacted by the change, and possibly
+	cause problems. There is also the chance that components that
+	haven't been updated will fail to start correctly. As a result, the
+	risk associated with redeployment increases, which discourages
+	frequent updates. This is especially a problem for user interface
+	developers, since they usually need to iterative rapidly and
+	redeploy frequently.
 
 -   Scaling the application can be difficult - a monolithic architecture
-    is that it can only scale in one dimension. On the one hand, it can
-    scale with an increasing transaction volume by running more copies
-    of the application. Some clouds can even adjust the number of
-    instances dynamically based on load. But on the other hand, this
-    architecture can't scale with an increasing data volume. Each copy
-    of application instance will access all of the data, which makes
-    caching less effective and increases memory consumption and I/O
-    traffic. Also, different application components have different
-    resource requirements - one might be CPU intensive while another
-    might memory intensive. With a monolithic architecture we cannot
-    scale each component independently
+	is that it can only scale in one dimension. On the one hand, it can
+	scale with an increasing transaction volume by running more copies
+	of the application. Some clouds can even adjust the number of
+	instances dynamically based on load. But on the other hand, this
+	architecture can't scale with an increasing data volume. Each copy
+	of application instance will access all of the data, which makes
+	caching less effective and increases memory consumption and I/O
+	traffic. Also, different application components have different
+	resource requirements - one might be CPU intensive while another
+	might memory intensive. With a monolithic architecture we cannot
+	scale each component independently
 
 -   Obstacle to scaling development - A monolithic application is also
-    an obstacle to scaling development. Once the application gets to a
-    certain size its useful to divide up the engineering organization
-    into teams that focus on specific functional areas. For example, we
-    might want to have the UI team, accounting team, inventory team,
-    etc. The trouble with a monolithic application is that it prevents
-    the teams from working independently. The teams must coordinate
-    their development efforts and redeployments. It is much more
-    difficult for a team to make a change and update production.
+	an obstacle to scaling development. Once the application gets to a
+	certain size its useful to divide up the engineering organization
+	into teams that focus on specific functional areas. For example, we
+	might want to have the UI team, accounting team, inventory team,
+	etc. The trouble with a monolithic application is that it prevents
+	the teams from working independently. The teams must coordinate
+	their development efforts and redeployments. It is much more
+	difficult for a team to make a change and update production.
 
 -   Requires a long-term commitment to a technology stack - a monolithic
-    architecture forces you to be married to the technology stack (and
-    in some cases, to a particular version of that technology) you chose
-    at the start of development . With a monolithic application, can be
-    difficult to incrementally adopt a newer technology. For example,
-    let's imagine that you chose the JVM. You have some language choices
-    since as well as Java you can use other JVM languages that
-    inter-operate nicely with Java such as Groovy and Scala. But
-    components written in non-JVM languages do not have a place within
-    your monolithic architecture. Also, if your application uses a
-    platform framework that subsequently becomes obsolete then it can be
-    challenging to incrementally migrate the application to a newer and
-    better framework. It's possible that in order to adopt a newer
-    platform framework you have to rewrite the entire application, which
-    is a risky undertaking.
+	architecture forces you to be married to the technology stack (and
+	in some cases, to a particular version of that technology) you chose
+	at the start of development . With a monolithic application, can be
+	difficult to incrementally adopt a newer technology. For example,
+	let's imagine that you chose the JVM. You have some language choices
+	since as well as Java you can use other JVM languages that
+	inter-operate nicely with Java such as Groovy and Scala. But
+	components written in non-JVM languages do not have a place within
+	your monolithic architecture. Also, if your application uses a
+	platform framework that subsequently becomes obsolete then it can be
+	challenging to incrementally migrate the application to a newer and
+	better framework. It's possible that in order to adopt a newer
+	platform framework you have to rewrite the entire application, which
+	is a risky undertaking.
 
 \
 
@@ -302,8 +302,8 @@ References
 -   <https://patterns.arcitura.com/microservice-patterns>
 -   <https://microservices.io/patterns/>
 -   [Towards Data Science - microservice architecture a brief overview
-    and why you should use it in your next
-    project](https://towardsdatascience.com/microservice-architecture-a-brief-overview-and-why-you-should-use-it-in-your-next-project-a17b6e19adfd)
+	and why you should use it in your next
+	project](https://towardsdatascience.com/microservice-architecture-a-brief-overview-and-why-you-should-use-it-in-your-next-project-a17b6e19adfd)
 
 
 
@@ -349,12 +349,12 @@ There is no consensus for the definition of a microservice. But, each
 can run by its own and tends to have the following characteristics:
 
 -   **Small**: The code that implements the service should be short. Sam
-    Newman from O'Reilly states that they should be small enough and no
-    smaller. Each should fulfill one business need.
+	Newman from O'Reilly states that they should be small enough and no
+	smaller. Each should fulfill one business need.
 -   **Loosely-coupled**: Developers can update and deploy each service
-    independently without affecting others.
+	independently without affecting others.
 -   **In a bounded context**: Each service models real-world domains.
-    These models are not shared with other bounded context
+	These models are not shared with other bounded context
 
 In the case of a taxi-hailing app, a microservice can be built for each
 business need as shown below. A microservice may be enough for each
@@ -400,25 +400,25 @@ product of a few trends. These trends work to help developers
 collaborate and deploy code:
 
 1.  **Domain-driven design**: This is the importance of representing the
-    real world in code, harmonizing business logic with development.
-    Splitting up an application into microservices will help each team
-    follow patterns relevant to their domain.
+	real world in code, harmonizing business logic with development.
+	Splitting up an application into microservices will help each team
+	follow patterns relevant to their domain.
 2.  **Continuous delivery**: This is about improving the efficiency of
-    getting code changes to production. As microservices are
-    loosely-coupled, developers can deploy them independently.
+	getting code changes to production. As microservices are
+	loosely-coupled, developers can deploy them independently.
 3.  **Virtualization**: This is about provisioning servers for each
-    service at will. Splitting up an application into parts allows one
-    to provide more computing power to services with more traffic. This
-    would save costs over upgrading servers for an entire monolithic
-    application.
+	service at will. Splitting up an application into parts allows one
+	to provide more computing power to services with more traffic. This
+	would save costs over upgrading servers for an entire monolithic
+	application.
 4.  **Hexagonal architecture**: This is keeping the input/output at the
-    edge of the design of a service. Such a design allows developers to
-    switch out different handlers without changing core code.
-    Microservices are easy to replace due to their simplicity and size.
+	edge of the design of a service. Such a design allows developers to
+	switch out different handlers without changing core code.
+	Microservices are easy to replace due to their simplicity and size.
 5.  **Development through small teams**: This is the idea that small and
-    independent teams should be responsible for the entire life-cycles
-    of their applications. Large tech firms like Google and Amazon
-    popularized this style of development.
+	independent teams should be responsible for the entire life-cycles
+	of their applications. Large tech firms like Google and Amazon
+	popularized this style of development.
 
 
 
@@ -432,16 +432,16 @@ Along with the benefits conferred from following the above trends, here
 are others that microservices bring:
 
 1.  **Technology heterogeneity**: Monolithic apps confine technologies
-    that developers can use (eg. database, language). Services allow for
-    different technologies, leading to greater optimizations. Developers
-    can also use past knowledge of technologies that are not currently
-    used by the app.
+	that developers can use (eg. database, language). Services allow for
+	different technologies, leading to greater optimizations. Developers
+	can also use past knowledge of technologies that are not currently
+	used by the app.
 2.  **Resilience**: It is easier to isolate a problem in a service when
-    it fails. As the services don't share many resources, it is likely
-    that the rest of the system can continue to function.
+	it fails. As the services don't share many resources, it is likely
+	that the rest of the system can continue to function.
 3.  **Composability**: Developers can reuse and reconfigure
-    microservices in different ways. They may expand or take out
-    features without affecting other services too much.
+	microservices in different ways. They may expand or take out
+	features without affecting other services too much.
 
 Application Scaling:  {#Microservices&DistributedSystem-ApplicationScaling:}
 ---------------------
@@ -528,82 +528,82 @@ suffered to move from Monolith to Microservice Architecture. Here are
 some disadvantages of Microservice Architecture:
 
 -   **Design Complexity**: Monolithic Architecture often gives "One size
-    fits for all" solution for Business applications. For example, if a
-    Web application is a few thousand lines of Code or several millions
-    of lines of Code, Monolithic Architecture gives the same solution
-    (Enterprise Java or Ruby on Rails or PHP). But in Microservice
-    Architecture, there are many solutions possible depending on the
-    applications and use cases. So, if the wrong solution is taken for
-    wrong application size/type (e.g. put a kid\'s clothes on a
-    full-grown man or vice versa), then Microservice Architecture is
-    bound to fail. Also, designing Microservices is challenging as there
-    are far more moving parts compared to Monoliths. Usually, a badly
-    designed Microservice is worse than a Monolith.
+	fits for all" solution for Business applications. For example, if a
+	Web application is a few thousand lines of Code or several millions
+	of lines of Code, Monolithic Architecture gives the same solution
+	(Enterprise Java or Ruby on Rails or PHP). But in Microservice
+	Architecture, there are many solutions possible depending on the
+	applications and use cases. So, if the wrong solution is taken for
+	wrong application size/type (e.g. put a kid\'s clothes on a
+	full-grown man or vice versa), then Microservice Architecture is
+	bound to fail. Also, designing Microservices is challenging as there
+	are far more moving parts compared to Monoliths. Usually, a badly
+	designed Microservice is worse than a Monolith.
 -   **Distributed Systems Complexity: **Microservices are often
-    distributed system and we know that Distributed Systems are complex
-    and has a unique set of challenges compared to single Machine
-    systems. A detailed discussion of Distributed systems is out of the
-    scope of this article but interested readers can read "[**The
-    Fallacies of Distributed
-    Systems**](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing)".
-    In short, the following problems can arise in Distributed
-    Microservices: ***Overall System latency is higher, Network failure
-    or Individual Node failure can bring the whole system down,
-    Operational complexities are higher***.
+	distributed system and we know that Distributed Systems are complex
+	and has a unique set of challenges compared to single Machine
+	systems. A detailed discussion of Distributed systems is out of the
+	scope of this article but interested readers can read "[**The
+	Fallacies of Distributed
+	Systems**](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing)".
+	In short, the following problems can arise in Distributed
+	Microservices: ***Overall System latency is higher, Network failure
+	or Individual Node failure can bring the whole system down,
+	Operational complexities are higher***.
 -   **Operational Complexity**: Once the complex Monolithic application
-    is decomposed into many Microservices, the complexity often moves
-    from source code to operations. Simple operations like Logging,
-    Monitoring became more complex because instead of one Systems, many
-    more Systems need to be handled. Often, the existing
-    Logging/Monitoring tool does not fit with Microservices and new
-    Logging, Monitoring tools are needed. Tracing is also very important
-    in Microservices to measure the performance/latency of individual
-    Microservices for a Service Request. The complete System test is
-    likewise quite complex in Microservices compared to Monolithic
-    Applications. Likewise, new Infrastructures are needed for Service
-    Discovery, Resiliency. As renowned Computer Scientist and
-    Microservice Guru [***Martin
-    Fowler***](https://martinfowler.com/) have pointed
-    out, the initial Development Velocity of Microservice Architecture
-    is lower compared to Monolithic Architecture due to the Operational
-    Complexities.
+	is decomposed into many Microservices, the complexity often moves
+	from source code to operations. Simple operations like Logging,
+	Monitoring became more complex because instead of one Systems, many
+	more Systems need to be handled. Often, the existing
+	Logging/Monitoring tool does not fit with Microservices and new
+	Logging, Monitoring tools are needed. Tracing is also very important
+	in Microservices to measure the performance/latency of individual
+	Microservices for a Service Request. The complete System test is
+	likewise quite complex in Microservices compared to Monolithic
+	Applications. Likewise, new Infrastructures are needed for Service
+	Discovery, Resiliency. As renowned Computer Scientist and
+	Microservice Guru [***Martin
+	Fowler***](https://martinfowler.com/) have pointed
+	out, the initial Development Velocity of Microservice Architecture
+	is lower compared to Monolithic Architecture due to the Operational
+	Complexities.
 
 ![](https://miro.medium.com/max/937/1*MrDMARKuvUCZliIvT5XtGg.png){height="250"}
 
 -   **Security:** Security in Software Systems is often the Elephant in
-    the Room what everybody can see but nobody wants to talk about.
-    Securing one Software Application is hard, securing hundreds of
-    Microservices which are often Distributed Systems is quite a
-    challenge.
+	the Room what everybody can see but nobody wants to talk about.
+	Securing one Software Application is hard, securing hundreds of
+	Microservices which are often Distributed Systems is quite a
+	challenge.
 -   **Data Sharing and Data Consistency: **Ideally, every Microservice
-    should have its own Data Store. The downside is that the
-    Microservices need to share data between themselves to fulfill the
-    Business goal. Data consistency is another challenge because the
-    classical [**Two Phase
-    Locking**](https://en.wikipedia.org/wiki/Two-phase_locking) to
-    support consistency in the distributed databases is not recommended
-    for two reasons: It does not Scale and many Modern Data Store does
-    not support it. Most of the modern [**NoSQL
-    Databases**](https://en.wikipedia.org/wiki/NoSQL) only
-    offers [**Eventual
-    Consistency**](https://en.wikipedia.org/wiki/Eventual_consistency) which
-    needs careful design.
+	should have its own Data Store. The downside is that the
+	Microservices need to share data between themselves to fulfill the
+	Business goal. Data consistency is another challenge because the
+	classical [**Two Phase
+	Locking**](https://en.wikipedia.org/wiki/Two-phase_locking) to
+	support consistency in the distributed databases is not recommended
+	for two reasons: It does not Scale and many Modern Data Store does
+	not support it. Most of the modern [**NoSQL
+	Databases**](https://en.wikipedia.org/wiki/NoSQL) only
+	offers [**Eventual
+	Consistency**](https://en.wikipedia.org/wiki/Eventual_consistency) which
+	needs careful design.
 -   **Communication Complexities:** As already discussed, Microservices
-    achieves strict modularity and development autonomy via
-    process/network boundaries. The downside is that the services can
-    only communicate via the physical network which eventually leads to
-    higher network latency. There are many ways Microservices can
-    communicate with each other: **Synchronous
-    Communication** using [**REST**](https://en.wikipedia.org/wiki/Representational_state_transfer), [**gRPC **](https://en.wikipedia.org/wiki/GRPC)or **Asynchronous
-    Communication** using [**Message
-    Queue**](https://en.wikipedia.org/wiki/Message_queue), [**Message
-    Broker**](https://en.wikipedia.org/wiki/Message_broker) where
-    each of them has Pros and Cons. Synchronous communication is easier
-    to implement but can lead to the so-called D**istributed Monolith**.
-    Asynchronous Communication via Messaging gives more flexibility with
-    the price of higher implementational complexity. Choosing the right
-    Communication mechanism depending on the application is also
-    challenging in Microservice Architecture.
+	achieves strict modularity and development autonomy via
+	process/network boundaries. The downside is that the services can
+	only communicate via the physical network which eventually leads to
+	higher network latency. There are many ways Microservices can
+	communicate with each other: **Synchronous
+	Communication** using [**REST**](https://en.wikipedia.org/wiki/Representational_state_transfer), [**gRPC **](https://en.wikipedia.org/wiki/GRPC)or **Asynchronous
+	Communication** using [**Message
+	Queue**](https://en.wikipedia.org/wiki/Message_queue), [**Message
+	Broker**](https://en.wikipedia.org/wiki/Message_broker) where
+	each of them has Pros and Cons. Synchronous communication is easier
+	to implement but can lead to the so-called D**istributed Monolith**.
+	Asynchronous Communication via Messaging gives more flexibility with
+	the price of higher implementational complexity. Choosing the right
+	Communication mechanism depending on the application is also
+	challenging in Microservice Architecture.
 
 
 
@@ -624,12 +624,12 @@ considerations:
 **On the availability and resilience of a distributed system**:
 
 -   How will you handle new problems arising from networked services,
-    such as latency and durability of data?
+	such as latency and durability of data?
 -   What sort of stops and checks (eg. timeouts and circuit-breakers)
-    will you need when a microservice goes down?
+	will you need when a microservice goes down?
 -   As opposed to a few measures (eg. CPU and memory usage) used to
-    monitor a server supporting one monolithic app, how will you monitor
-    50--100 processes at the same time and gauge the health of the app?
+	monitor a server supporting one monolithic app, how will you monitor
+	50--100 processes at the same time and gauge the health of the app?
 
 \
 
@@ -672,17 +672,17 @@ application.
 -   Each service represents a single responsibility.
 -   Every service is independent of the others.
 -   Each service needs its own JVM (or equivalent) so instances are
-    isolated.
+	isolated.
 -   Data is private to the service that owns it.
 -   Services do not share data and need to implement queries that need
-    to retrieve data owned by multiple services.
+	to retrieve data owned by multiple services.
 -   Well defined mechanism to implement service-to-service communication
-    and scheme to deal with partial failure.
+	and scheme to deal with partial failure.
 -   Requests that span multiple services and require careful
-    coordination between the teams.
+	coordination between the teams.
 -   Testing to cover the interactions between services.
 -   Deploying and managing a system comprised of many different
-    services.
+	services.
 
 
 
@@ -701,15 +701,52 @@ considering.
 In the table below, we take a look at the benefits versus challenges of
 microservice style applications.
 
- |Benefits|Challenges|
-|--- |--- |
-|Enables the continuous delivery and deployment of large, complex applications.|There is an additional complexity of creating a distributed system.|
-|Improved maintainability: Each service is relatively small so it’s easier to understand and change.|Implementing requests that span multiple services is more difficult. Maintaining data consistency between service(s) is a challenge.|
-|Better Testability: services are smaller and faster to test.|Testing the interactions between services is more difficult.|
-|Better deployability: services can be deployed independently.|Increased operational and deployment complexity of deploying and managing a system comprised of many different services.|
-|Each team can develop, test, deploy and scale their services independently of all of the other teams.|Implementing requests that span multiple services requires careful coordination between the teams.|
-|Improved fault isolation.|Inter-service communication and dealing with partial failure implementation is challenging.|
-|Eliminates long-term commitment to a technology stack.|Overhead of multiple JVM runtimes (or equivalent) and increase in memory consumption needs to be taken care of.|
+<table class="confluenceTable">
+	<colgroup>
+		<col/>
+		<col/>
+	</colgroup>
+	<tbody>
+		<tr>
+			<th >
+				<strong>Benefits</strong>
+			</th>
+			<th >
+				<strong>Challenges</strong>
+			</th>
+		</tr>
+		<tr>
+			<td >Enables the continuous delivery and deployment of large, complex applications.</td>
+			<td >There is an additional complexity of creating a distributed system.</td>
+		</tr>
+		<tr>
+			<td >Improved maintainability: Each service is relatively small so it’s easier to understand and change.</td>
+			<td >Implementing requests that span multiple services is more difficult.
+				<p style="margin-left: 0.0px;">Maintaining data consistency between service(s) is a challenge.</p>
+			</td>
+		</tr>
+		<tr>
+			<td >Better Testability: services are smaller and faster to test.</td>
+			<td >Testing the interactions between services is more difficult.</td>
+		</tr>
+		<tr>
+			<td >Better deployability: services can be deployed independently.</td>
+			<td >Increased operational and deployment complexity of deploying and managing a system comprised of many different services.</td>
+		</tr>
+		<tr>
+			<td >Each team can develop, test, deploy and scale their services independently of all of the other teams.</td>
+			<td >Implementing requests that span multiple services requires careful coordination between the teams.</td>
+		</tr>
+		<tr>
+			<td >Improved fault isolation.</td>
+			<td >Inter-service communication and dealing with partial failure implementation is challenging.</td>
+		</tr>
+		<tr>
+			<td >Eliminates long-term commitment to a technology stack.</td>
+			<td >Overhead of multiple JVM runtimes (or equivalent) and increase in memory consumption needs to be taken care of.</td>
+		</tr>
+	</tbody>
+</table>
 
 
 
@@ -724,15 +761,15 @@ Consider an scenario where you are developing an enterprise application
 that must support the following characteristics:
 
 -   Support for different variety of clients that includes desktop
-    browsers, mobile browsers and native mobile applications.
+	browsers, mobile browsers and native mobile applications.
 -   Expose an API for third parties to consume.
 -   Integration with other applications via web services or a message
-    broker.
+	broker.
 -   Run multiple instances of the application on multiple machines to
-    fulfill scalability and availability NFR requirements.
+	fulfill scalability and availability NFR requirements.
 -   Adopt emerging technology stack.
 -   Planning to go for continuous deployment pipeline setup for the
-    application.
+	application.
 
 From the requirements above, you can very well say the application is
 100% fit for a microservices architecture.
@@ -747,30 +784,30 @@ Let's look at some of the typical scenarios where you can consider going
 for microservice style of architecture:
 
 1.  Monolithic application migration due to improvements needed in
-    scalability, manageability, agility or speed of delivery.
+	scalability, manageability, agility or speed of delivery.
 2.  Re-platform a legacy application by transforming functions/modules
-    to microservices.
+	to microservices.
 3.  Rewriting legacy application to modern languages, technology stack
-    to meet the demands of modern business.
+	to meet the demands of modern business.
 4.  Individual cross-cutting services that are independent in nature.
-    For example: encryption services, authentication services, etc.
+	For example: encryption services, authentication services, etc.
 5.  Independent business applications or services reused across multiple
-    channels. For example, payment services, login services, flight
-    search services, customer profile services, notification services,
-    etc.
+	channels. For example, payment services, login services, flight
+	search services, customer profile services, notification services,
+	etc.
 6.  Commonly used enterprise applications. For example, time tracking
-    application.
+	application.
 7.  Scenarios where a service provider makes computing resources and
-    infrastructure management available to the customer as needed. For
-    example, forecasting services, price calculation services,
-    prediction services, etc.
+	infrastructure management available to the customer as needed. For
+	example, forecasting services, price calculation services,
+	prediction services, etc.
 8.  Back-end services for responsive client-side web application where
-    data could be coming from multiple channels or different data
-    sources.
+	data could be coming from multiple channels or different data
+	sources.
 9.  Highly agile applications or applications demanding speed of
-    delivery or time to market or innovation pilots, etc.
+	delivery or time to market or innovation pilots, etc.
 10. Applications that got polyglot, multi-language, cloud application
-    development.
+	development.
 
 
 
@@ -806,9 +843,9 @@ Another challenge is implementing queries that need to retrieve data
 owned by multiple services.
 
 -   The [API
-    Composition](https://microservices.io/patterns/data/api-composition.html) and [Command
-    Query Responsibility Segregation
-    (CQRS)](https://microservices.io/patterns/data/cqrs.html) patterns.
+	Composition](https://microservices.io/patterns/data/api-composition.html) and [Command
+	Query Responsibility Segregation
+	(CQRS)](https://microservices.io/patterns/data/cqrs.html) patterns.
 
 
 
@@ -828,18 +865,18 @@ microservices. This is very much an art, but there are a number of
 strategies that can help:
 
 -   [Decompose by business
-    capability](https://microservices.io/patterns/decomposition/decompose-by-business-capability.html) and
-    define services corresponding to business capabilities.
+	capability](https://microservices.io/patterns/decomposition/decompose-by-business-capability.html) and
+	define services corresponding to business capabilities.
 -   [Decompose by domain-driven design
-    subdomain](https://microservices.io/patterns/decomposition/decompose-by-subdomain.html).
+	subdomain](https://microservices.io/patterns/decomposition/decompose-by-subdomain.html).
 -   Decompose by verb or use case and define services that are
-    responsible for particular actions. e.g.
-    a `Shipping Service`{.highlighter-rouge} that's responsible for
-    shipping complete orders.
+	responsible for particular actions. e.g.
+	a `Shipping Service`{.highlighter-rouge} that's responsible for
+	shipping complete orders.
 -   Decompose by by nouns or resources by defining a service that is
-    responsible for all operations on entities/resources of a given
-    type. e.g. an `Account Service`{.highlighter-rouge} that is
-    responsible for managing user accounts.
+	responsible for all operations on entities/resources of a given
+	type. e.g. an `Account Service`{.highlighter-rouge} that is
+	responsible for managing user accounts.
 
 Ideally, each service should have only a small set of responsibilities.
 (Uncle) Bob Martin talks about designing classes using the [Single
@@ -890,8 +927,8 @@ The microservice architecture does this in two ways:
 
 1.  Simplifies testing and enables components to deployed independently
 2.  Structures the engineering organization as a collection of small
-    (6-10 members), autonomous teams, each of which is responsible for
-    one or more services
+	(6-10 members), autonomous teams, each of which is responsible for
+	one or more services
 
 These benefits are not automatically guaranteed. Instead, they can only
 be achieved by the careful functional decomposition of the application
@@ -940,19 +977,19 @@ Forces
  
 -   The architecture must be stable
 -   Services must be cohesive. A service should implement a small set of
-    strongly related functions.
+	strongly related functions.
 -   Services must conform to the Common Closure Principle - things that
-    change together should be packaged together - to ensure that each
-    change affect only one service
+	change together should be packaged together - to ensure that each
+	change affect only one service
 -   Services must be loosely coupled - each service as an API that
-    encapsulates its implementation. The implementation can be changed
-    without affecting clients
+	encapsulates its implementation. The implementation can be changed
+	without affecting clients
 -   A service should be testable
 -   Each service be small enough to be developed by a "two pizza" team,
-    i.e. a team of 6-10 people
+	i.e. a team of 6-10 people
 -   Each team that owns one or more services must be autonomous. A team
-    must be able to develop and deploy their services with minimal
-    collaboration with other teams.
+	must be able to develop and deploy their services with minimal
+	collaboration with other teams.
 
 
 
@@ -1012,9 +1049,9 @@ Resulting Context
 This pattern has the following benefits:
 
 -   Stable architecture since the business capabilities are relatively
-    stable
+	stable
 -   Development teams are cross-functional, autonomous, and organized
-    around delivering business value rather than technical features
+	around delivering business value rather than technical features
 -   Services are cohesive and loosely coupled
 
 
@@ -1028,18 +1065,18 @@ This pattern has the following benefits:
 There are the following issues to address:
 
 -   **How to identify business capabilities?** Identifying business
-    capabilities and hence services requires an understanding of the
-    business. An organization's business capabilities are identified by
-    analyzing the organization's purpose, structure, business processes,
-    and areas of expertise. Bounded contexts are best identified using
-    an iterative process. Good starting points for identifying business
-    capabilities are:
+	capabilities and hence services requires an understanding of the
+	business. An organization's business capabilities are identified by
+	analyzing the organization's purpose, structure, business processes,
+	and areas of expertise. Bounded contexts are best identified using
+	an iterative process. Good starting points for identifying business
+	capabilities are:
 
-    -   organization structure - different groups within an organization
-        might correspond to business capabilities or business capability
-        groups.
-    -   high-level domain model - business capabilities often correspond
-        to domain objects
+	-   organization structure - different groups within an organization
+		might correspond to business capabilities or business capability
+		groups.
+	-   high-level domain model - business capabilities often correspond
+		to domain objects
 
 
 
@@ -1078,8 +1115,8 @@ The microservice architecture does this in two ways:
 
 1.  Simplifies testing and enables components to deployed independently
 2.  Structures the engineering organization as a collection of small
-    (6-10 members), autonomous teams, each of which is responsible for
-    one or more services
+	(6-10 members), autonomous teams, each of which is responsible for
+	one or more services
 
 These benefits are not automatically guaranteed. Instead, they can only
 be achieved by the careful functional decomposition of the application
@@ -1128,19 +1165,19 @@ Forces
  
 -   The architecture must be stable
 -   Services must be cohesive. A service should implement a small set of
-    strongly related functions.
+	strongly related functions.
 -   Services must conform to the Common Closure Principle - things that
-    change together should be packaged together - to ensure that each
-    change affect only one service
+	change together should be packaged together - to ensure that each
+	change affect only one service
 -   Services must be loosely coupled - each service as an API that
-    encapsulates its implementation. The implementation can be changed
-    without affecting clients
+	encapsulates its implementation. The implementation can be changed
+	without affecting clients
 -   A service should be testable
 -   Each service be small enough to be developed by a "two pizza" team,
-    i.e. a team of 6-10 people
+	i.e. a team of 6-10 people
 -   Each team that owns one or more services must be autonomous. A team
-    must be able to develop and deploy their services with minimal
-    collaboration with other teams.
+	must be able to develop and deploy their services with minimal
+	collaboration with other teams.
 
 
 
@@ -1159,11 +1196,11 @@ corresponds to a different part of the business.
 Subdomains can be classified as follows:
 
 -   Core - key differentiator for the business and the most valuable
-    part of the application
+	part of the application
 -   Supporting - related to what the business does but not a
-    differentiator. These can be implemented in-house or outsourced.
+	differentiator. These can be implemented in-house or outsourced.
 -   Generic - not specific to the business and are ideally implemented
-    using off the shelf software
+	using off the shelf software
 
 
 
@@ -1202,7 +1239,7 @@ This pattern has the following benefits:
 
 -   Stable architecture since the subdomains are relatively stable
 -   Development teams are cross-functional, autonomous, and organized
-    around delivering business value rather than technical features
+	around delivering business value rather than technical features
 -   Services are cohesive and loosely coupled
 
 
@@ -1216,14 +1253,14 @@ This pattern has the following benefits:
 There are the following issues to address:
 
 -   **How to identify the subdomains?** Identifying subdomains and hence
-    services requires an understanding of the business. Like business
-    capabilities, subdomains are identified by analyzing the business
-    and its organizational structure and identifying the different areas
-    of expertise. Subdomains are best identified using an iterative
-    process. Good starting points for identifying subdomains are:
+	services requires an understanding of the business. Like business
+	capabilities, subdomains are identified by analyzing the business
+	and its organizational structure and identifying the different areas
+	of expertise. Subdomains are best identified using an iterative
+	process. Good starting points for identifying subdomains are:
 
 -   organization structure - different groups within an organization
-    might correspond to subdomains
+	might correspond to subdomains
 
 -   high-level domain model - subdomains often have a key domain object
 
@@ -1289,33 +1326,33 @@ Forces
 
  
 -   Services must be loosely coupled so that they can be developed,
-    deployed and scaled independently
+	deployed and scaled independently
 
 -   Some business transactions must enforce invariants that span
-    multiple services. For example,
-    the `Place Order`{.highlighter-rouge} use case must verify that a
-    new Order will not exceed the customer's credit limit. Other
-    business transactions, must update data owned by multiple services.
+	multiple services. For example,
+	the `Place Order`{.highlighter-rouge} use case must verify that a
+	new Order will not exceed the customer's credit limit. Other
+	business transactions, must update data owned by multiple services.
 
 -   Some business transactions need to query data that is owned by
-    multiple services. For example,
-    the `View Available Credit`{.highlighter-rouge} use must query the
-    Customer to find the `creditLimit`{.highlighter-rouge} and Orders to
-    calculate the total amount of the open orders.
+	multiple services. For example,
+	the `View Available Credit`{.highlighter-rouge} use must query the
+	Customer to find the `creditLimit`{.highlighter-rouge} and Orders to
+	calculate the total amount of the open orders.
 
 -   Some queries must join data that is owned by multiple services. For
-    example, finding customers in a particular region and their recent
-    orders requires a join between customers and orders.
+	example, finding customers in a particular region and their recent
+	orders requires a join between customers and orders.
 
 -   Databases must sometimes be replicated and sharded in order to
-    scale. See the [Scale
-    Cube](https://microservices.io/articles/scalecube.html).
+	scale. See the [Scale
+	Cube](https://microservices.io/articles/scalecube.html).
 
 -   Different services have different data storage requirements. For
-    some services, a relational database is the best choice. Other
-    services might need a NoSQL database such as MongoDB, which is good
-    at storing complex, unstructured data, or Neo4J, which is designed
-    to efficiently store and query graph data.
+	some services, a relational database is the best choice. Other
+	services might need a NoSQL database such as MongoDB, which is good
+	at storing complex, unstructured data, or Neo4J, which is designed
+	to efficiently store and query graph data.
 
 
 
@@ -1345,11 +1382,11 @@ service. For example, if you are using a relational database then the
 options are:
 
 -   Private-tables-per-service -- each service owns a set of tables that
-    must only be accessed by that service
+	must only be accessed by that service
 -   Schema-per-service -- each service has a database schema that's
-    private to that service
+	private to that service
 -   Database-server-per-service -- each service has it's own database
-    server.
+	server.
 
 Private-tables-per-service and schema-per-service have the lowest
 overhead. Using a schema per service is appealing since it makes
@@ -1390,22 +1427,22 @@ Resulting Context
 Using a database per service has the following benefits:
 
 -   Helps ensure that the services are loosely coupled. Changes to one
-    service's database does not impact any other services.
+	service's database does not impact any other services.
 
 -   Each service can use the type of database that is best suited to its
-    needs. For example, a service that does text searches could use
-    ElasticSearch. A service that manipulates a social graph could use
-    Neo4j.
+	needs. For example, a service that does text searches could use
+	ElasticSearch. A service that manipulates a social graph could use
+	Neo4j.
 
 Using a database per service has the following drawbacks:
 
 -   Implementing business transactions that span multiple services is
-    not straightforward. Distributed transactions are best avoided
-    because of the CAP theorem. Moreover, many modern (NoSQL) databases
-    don't support them.
+	not straightforward. Distributed transactions are best avoided
+	because of the CAP theorem. Moreover, many modern (NoSQL) databases
+	don't support them.
 
 -   Implementing queries that join data that is now in multiple
-    databases is challenging.
+	databases is challenging.
 
 -   Complexity of managing multiple SQL and NoSQL databases
 
@@ -1413,28 +1450,28 @@ There are various patterns/solutions for implementing transactions and
 queries that span services:
 
 -   Implementing transactions that span services - use the [Saga
-    pattern](https://microservices.io/patterns/data/saga.html).
+	pattern](https://microservices.io/patterns/data/saga.html).
 
 -   Implementing queries that span services:
 
-    -   [API
-        Composition](https://microservices.io/patterns/data/api-composition.html) -
-        the application performs the join rather than the database. For
-        example, a service (or the API gateway) could retrieve a
-        customer and their orders by first retrieving the customer from
-        the customer service and then querying the order service to
-        return the customer's most recent orders.
+	-   [API
+		Composition](https://microservices.io/patterns/data/api-composition.html) -
+		the application performs the join rather than the database. For
+		example, a service (or the API gateway) could retrieve a
+		customer and their orders by first retrieving the customer from
+		the customer service and then querying the order service to
+		return the customer's most recent orders.
 
-    -   [Command Query Responsibility Segregation
-        (CQRS)](https://microservices.io/patterns/data/cqrs.html) -
-        maintain one or more materialized views that contain data from
-        multiple services. The views are kept by services that subscribe
-        to events that each services publishes when it updates its data.
-        For example, the online store could implement a query that finds
-        customers in a particular region and their recent orders by
-        maintaining a view that joins customers and orders. The view is
-        updated by a service that subscribes to customer and order
-        events.
+	-   [Command Query Responsibility Segregation
+		(CQRS)](https://microservices.io/patterns/data/cqrs.html) -
+		maintain one or more materialized views that contain data from
+		multiple services. The views are kept by services that subscribe
+		to events that each services publishes when it updates its data.
+		For example, the online store could implement a query that finds
+		customers in a particular region and their recent orders by
+		maintaining a view that joins customers and orders. The view is
+		updated by a service that subscribes to customer and order
+		events.
 
 
 
@@ -1490,33 +1527,33 @@ Forces
 
  
 -   Services must be loosely coupled so that they can be developed,
-    deployed and scaled independently
+	deployed and scaled independently
 
 -   Some business transactions must enforce invariants that span
-    multiple services. For example,
-    the `Place Order`{.highlighter-rouge} use case must verify that a
-    new Order will not exceed the customer's credit limit. Other
-    business transactions, must update data owned by multiple services.
+	multiple services. For example,
+	the `Place Order`{.highlighter-rouge} use case must verify that a
+	new Order will not exceed the customer's credit limit. Other
+	business transactions, must update data owned by multiple services.
 
 -   Some business transactions need to query data that is owned by
-    multiple services. For example,
-    the `View Available Credit`{.highlighter-rouge} use must query the
-    Customer to find the `creditLimit`{.highlighter-rouge} and Orders to
-    calculate the total amount of the open orders.
+	multiple services. For example,
+	the `View Available Credit`{.highlighter-rouge} use must query the
+	Customer to find the `creditLimit`{.highlighter-rouge} and Orders to
+	calculate the total amount of the open orders.
 
 -   Some queries must join data that is owned by multiple services. For
-    example, finding customers in a particular region and their recent
-    orders requires a join between customers and orders.
+	example, finding customers in a particular region and their recent
+	orders requires a join between customers and orders.
 
 -   Databases must sometimes be replicated and sharded in order to
-    scale. See the [Scale
-    Cube](https://microservices.io/articles/scalecube.html).
+	scale. See the [Scale
+	Cube](https://microservices.io/articles/scalecube.html).
 
 -   Different services have different data storage requirements. For
-    some services, a relational database is the best choice. Other
-    services might need a NoSQL database such as MongoDB, which is good
-    at storing complex, unstructured data, or Neo4J, which is designed
-    to efficiently store and query graph data.
+	some services, a relational database is the best choice. Other
+	services might need a NoSQL database such as MongoDB, which is good
+	at storing complex, unstructured data, or Neo4J, which is designed
+	to efficiently store and query graph data.
 
 
 
@@ -1553,25 +1590,25 @@ Examples
 The benefits of this pattern are:
 
 -   A developer uses familiar and straightforward ACID transactions to
-    enforce data consistency
+	enforce data consistency
 -   A single database is simpler to operate
 
 The drawbacks of this pattern are:
 
 -   Development time coupling - a developer working on, for example,
-    the `OrderService`{.highlighter-rouge} will need to coordinate
-    schema changes with the developers of other services that access the
-    same tables. This coupling and additional coordination will slow
-    down development.
+	the `OrderService`{.highlighter-rouge} will need to coordinate
+	schema changes with the developers of other services that access the
+	same tables. This coupling and additional coordination will slow
+	down development.
 
 -   Runtime coupling - because all services access the same database
-    they can potentially interfere with one another. For example, if
-    long running `CustomerService`{.highlighter-rouge} transaction holds
-    a lock on the `ORDER`{.highlighter-rouge} table then
-    the `OrderService`{.highlighter-rouge} will be blocked.
+	they can potentially interfere with one another. For example, if
+	long running `CustomerService`{.highlighter-rouge} transaction holds
+	a lock on the `ORDER`{.highlighter-rouge} table then
+	the `OrderService`{.highlighter-rouge} will be blocked.
 
 -   Single database might not satisfy the data storage and access
-    requirements of all services.
+	requirements of all services.
 
 
 
@@ -1659,9 +1696,9 @@ Examples
 There are two ways of coordination sagas:
 
 -   Choreography - each local transaction publishes domain events that
-    trigger local transactions in other services
+	trigger local transactions in other services
 -   Orchestration - an orchestrator (object) tells the participants what
-    local transactions to execute
+	local transactions to execute
 
 Example: Choreography-based saga {#Microservices&DistributedSystem-Example:Choreography-basedsaga}
 --------------------------------
@@ -1674,14 +1711,14 @@ An e-commerce application that uses this approach would create an order
 using a choreography-based saga that consists of the following steps:
 
 1.  The `Order Service`{.highlighter-rouge} creates an Order in
-    a *pending* state and publishes
-    an `OrderCreated`{.highlighter-rouge} event
+	a *pending* state and publishes
+	an `OrderCreated`{.highlighter-rouge} event
 2.  The `Customer Service`{.highlighter-rouge} receives the event
-    attempts to reserve credit for that Order. It publishes either
-    a `Credit Reserved`{.highlighter-rouge} event or
-    a `CreditLimitExceeded`{.highlighter-rouge} event.
+	attempts to reserve credit for that Order. It publishes either
+	a `Credit Reserved`{.highlighter-rouge} event or
+	a `CreditLimitExceeded`{.highlighter-rouge} event.
 3.  The `Order Service`{.highlighter-rouge} receives the event and
-    changes the state of the order to either *approved* or *cancelled*
+	changes the state of the order to either *approved* or *cancelled*
 
 Example: Orchestration-based saga {#Microservices&DistributedSystem-Example:Orchestration-basedsaga}
 ---------------------------------
@@ -1694,19 +1731,19 @@ An e-commerce application that uses this approach would create an order
 using an orchestration-based saga that consists of the following steps:
 
 1.  The `Order Service`{.highlighter-rouge} creates an Order in
-    a *pending* state and creates
-    a `CreateOrderSaga`{.highlighter-rouge}
+	a *pending* state and creates
+	a `CreateOrderSaga`{.highlighter-rouge}
 2.  The `CreateOrderSaga`{.highlighter-rouge} sends
-    a `ReserveCredit`{.highlighter-rouge} command to
-    the `Customer Service`{.highlighter-rouge}
+	a `ReserveCredit`{.highlighter-rouge} command to
+	the `Customer Service`{.highlighter-rouge}
 3.  The `Customer Service`{.highlighter-rouge} attempts to reserve
-    credit for that Order and sends back a reply
+	credit for that Order and sends back a reply
 4.  The `CreateOrderSaga`{.highlighter-rouge} receives the reply and
-    sends either
-    an `ApproveOrder`{.highlighter-rouge} or `RejectOrder`{.highlighter-rouge} command
-    to the `Order Service`{.highlighter-rouge}
+	sends either
+	an `ApproveOrder`{.highlighter-rouge} or `RejectOrder`{.highlighter-rouge} command
+	to the `Order Service`{.highlighter-rouge}
 5.  The `Order Service`{.highlighter-rouge} changes the state of the
-    order to either *approved* or *cancelled*
+	order to either *approved* or *cancelled*
 
 
 
@@ -1720,21 +1757,21 @@ Resulting Context
 This pattern has the following benefits:
 
 -   It enables an application to maintain data consistency across
-    multiple services without using distributed transactions
+	multiple services without using distributed transactions
 
 This solution has the following drawbacks:
 
 -   The programming model is more complex. For example, a developer must
-    design compensating transactions that explicitly undo changes made
-    earlier in a saga.
+	design compensating transactions that explicitly undo changes made
+	earlier in a saga.
 
 There are also the following issues to address:
 
 -   In order to be reliable, a service must atomically update its
-    database *and* publish a message/event. It cannot use the
-    traditional mechanism of a distributed transaction that spans the
-    database and the message broker. Instead, it must use one of the
-    patterns listed below.
+	database *and* publish a message/event. It cannot use the
+	traditional mechanism of a distributed transaction that spans the
+	database and the message broker. Instead, it must use one of the
+	patterns listed below.
 
 
 
@@ -1745,17 +1782,17 @@ There are also the following issues to address:
 
  
 -   The [Database per Service
-    pattern](https://microservices.io/patterns/data/database-per-service.html) creates
-    the need for this pattern
+	pattern](https://microservices.io/patterns/data/database-per-service.html) creates
+	the need for this pattern
 -   The following patterns are ways to *atomically* update
-    state *and* publish messages/events:
-    -   [Event
-        sourcing](https://microservices.io/patterns/data/event-sourcing.html)
-    -   [Transactional
-        Outbox](https://microservices.io/patterns/data/transactional-outbox.html)
+	state *and* publish messages/events:
+	-   [Event
+		sourcing](https://microservices.io/patterns/data/event-sourcing.html)
+	-   [Transactional
+		Outbox](https://microservices.io/patterns/data/transactional-outbox.html)
 -   A choreography-based saga can publish events
-    using [Aggregates](https://microservices.io/patterns/data/aggregate.html) and [Domain
-    Events](https://microservices.io/patterns/data/domain-event.html)
+	using [Aggregates](https://microservices.io/patterns/data/aggregate.html) and [Domain
+	Events](https://microservices.io/patterns/data/domain-event.html)
 
 
 
@@ -1829,12 +1866,12 @@ Examples
 
  
 -   My book's FTGO example application has
-    the [`Order History Service`{.highlighter-rouge}](https://github.com/microservices-patterns/ftgo-application#chapter-7-implementing-queries-in-a-microservice-architecture),
-    which implements this pattern.
+	the [`Order History Service`{.highlighter-rouge}](https://github.com/microservices-patterns/ftgo-application#chapter-7-implementing-queries-in-a-microservice-architecture),
+	which implements this pattern.
 
 -   There are [several Eventuate-based example
-    applications](http://eventuate.io/exampleapps.html) that
-    illustrate how to use this pattern.
+	applications](http://eventuate.io/exampleapps.html) that
+	illustrate how to use this pattern.
 
 
 
@@ -1848,7 +1885,7 @@ Resulting Context
 This pattern has the following benefits:
 
 -   Supports multiple denormalized views that are scalable and
-    performant
+	performant
 -   Improved separation of concerns = simpler command and query models
 -   Necessary in an event sourced architecture
 
@@ -1867,16 +1904,16 @@ This pattern has the following drawbacks:
 
  
 -   The [Database per Service
-    pattern](https://microservices.io/patterns/data/database-per-service.html) creates
-    the need for this pattern
+	pattern](https://microservices.io/patterns/data/database-per-service.html) creates
+	the need for this pattern
 -   The [API Composition
-    pattern](https://microservices.io/patterns/data/api-composition.html) is
-    an alternative solution
+	pattern](https://microservices.io/patterns/data/api-composition.html) is
+	an alternative solution
 -   The [Domain
-    event](https://microservices.io/patterns/data/domain-event.html) pattern
-    generates the events
+	event](https://microservices.io/patterns/data/domain-event.html) pattern
+	generates the events
 -   CQRS is often used with [Event
-    sourcing](https://microservices.io/patterns/data/event-sourcing.html)
+	sourcing](https://microservices.io/patterns/data/event-sourcing.html)
 
 
 
@@ -1989,19 +2026,19 @@ Using an API gateway has the following benefits {#Microservices&DistributedSyste
 -----------------------------------------------
 
 -   Insulates the clients from how the application is partitioned into
-    microservices
+	microservices
 -   Insulates the clients from the problem of determining the locations
-    of service instances
+	of service instances
 -   Provides the optimal API for each client
 -   Reduces the number of requests/roundtrips. For example, the API
-    gateway enables clients to retrieve data from multiple services with
-    a single round-trip. Fewer requests also means less overhead and
-    improves the user experience. An API gateway is essential for mobile
-    applications.
+	gateway enables clients to retrieve data from multiple services with
+	a single round-trip. Fewer requests also means less overhead and
+	improves the user experience. An API gateway is essential for mobile
+	applications.
 -   Simplifies the client by moving logic for calling multiple services
-    from the client to API gateway
+	from the client to API gateway
 -   Translates from a "standard" public web-friendly API protocol to
-    whatever protocols are used internally
+	whatever protocols are used internally
 
 
 
@@ -2013,40 +2050,40 @@ Issues and Considerations
 
  
 -   The gateway should not introduce service coupling across the backend
-    services.
+	services.
 -   The gateway should be located near the backend services to reduce
-    latency as much as possible.
+	latency as much as possible.
 -   The gateway service may introduce a single point of failure. Ensure
-    the gateway is properly designed to meet your application\'s
-    availability requirements.
+	the gateway is properly designed to meet your application\'s
+	availability requirements.
 -   The gateway may introduce a bottleneck. Ensure the gateway has
-    adequate performance to handle load and can be scaled to meet your
-    anticipated growth.
+	adequate performance to handle load and can be scaled to meet your
+	anticipated growth.
 -   Perform load testing against the gateway to ensure you don\'t
-    introduce cascading failures for services.
+	introduce cascading failures for services.
 -   Implement a resilient design, using techniques such
-    as [bulkheads](https://docs.microsoft.com/en-us/azure/architecture/patterns/bulkhead), [circuit
-    breaking](https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker), [retry](https://docs.microsoft.com/en-us/azure/architecture/patterns/retry),
-    and timeouts.
+	as [bulkheads](https://docs.microsoft.com/en-us/azure/architecture/patterns/bulkhead), [circuit
+	breaking](https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker), [retry](https://docs.microsoft.com/en-us/azure/architecture/patterns/retry),
+	and timeouts.
 -   If one or more service calls takes too long, it may be acceptable to
-    timeout and return a partial set of data. Consider how your
-    application will handle this scenario.
+	timeout and return a partial set of data. Consider how your
+	application will handle this scenario.
 -   Use asynchronous I/O to ensure that a delay at the backend doesn\'t
-    cause performance issues in the application.
+	cause performance issues in the application.
 -   Implement distributed tracing using correlation IDs to track each
-    individual call.
+	individual call.
 -   Monitor request metrics and response sizes.
 -   Consider returning cached data as a failover strategy to handle
-    failures.
+	failures.
 -   Instead of building aggregation into the gateway, consider placing
-    an aggregation service behind the gateway. Request aggregation will
-    likely have different resource requirements than other services in
-    the gateway and may impact the gateway\'s routing and offloading
-    functionality.
+	an aggregation service behind the gateway. Request aggregation will
+	likely have different resource requirements than other services in
+	the gateway and may impact the gateway\'s routing and offloading
+	functionality.
 -   How implement the API gateway? An event-driven/reactive approach is
-    best if it must scale to scale to handle high loads. On the JVM,
-    NIO-based libraries such as Netty, Spring Reactor, etc. make sense.
-    NodeJS is another option.
+	best if it must scale to scale to handle high loads. On the JVM,
+	NIO-based libraries such as Netty, Spring Reactor, etc. make sense.
+	NodeJS is another option.
 
 
 
@@ -2060,17 +2097,17 @@ When to use this Pattern
 Use this pattern when:
 
 -   A client needs to communicate with multiple backend services to
-    perform an operation.
+	perform an operation.
 -   The client may use networks with significant latency, such as
-    cellular networks.
+	cellular networks.
 
 This pattern may not be suitable when:
 
 -   You want to reduce the number of calls between a client and a single
-    service across multiple operations. In that scenario, it may be
-    better to add a batch operation to the service.
+	service across multiple operations. In that scenario, it may be
+	better to add a batch operation to the service.
 -   The client or application is located near the backend services and
-    latency is not a significant factor.
+	latency is not a significant factor.
 
 
 
@@ -2142,14 +2179,14 @@ Forces
 
  
 -   Each instance of a service exposes a remote API such as HTTP/REST,
-    or Thrift etc. at a particular location (host and port)
+	or Thrift etc. at a particular location (host and port)
 -   The number of services instances and their locations changes
-    dynamically.
+	dynamically.
 -   Virtual machines and containers are usually assigned dynamic IP
-    addresses.
+	addresses.
 -   The number of services instances might vary dynamically. For
-    example, an EC2 Autoscaling Group adjusts the number of instances
-    based on load.
+	example, an EC2 Autoscaling Group adjusts the number of instances
+	based on load.
 
 
 
@@ -2273,17 +2310,17 @@ Resulting Context
 Client-side discovery has the following benefits:
 
 -   Fewer moving parts and network hops compared to [Server-side
-    Discovery](https://microservices.io/patterns/server-side-discovery.html)
+	Discovery](https://microservices.io/patterns/server-side-discovery.html)
 
 Client-side discovery also has the following drawbacks:
 
 -   This pattern couples the client to the [Service
-    Registry](https://microservices.io/patterns/service-registry.html)
+	Registry](https://microservices.io/patterns/service-registry.html)
 -   You need to implement client-side service discovery logic for each
-    programming language/framework used by your application, e.g
-    Java/Scala, JavaScript/NodeJS. For example, [Netflix
-    Prana](https://github.com/Netflix/Prana) provides an
-    HTTP proxy-based approach to service discovery for non-JVM clients.
+	programming language/framework used by your application, e.g
+	Java/Scala, JavaScript/NodeJS. For example, [Netflix
+	Prana](https://github.com/Netflix/Prana) provides an
+	HTTP proxy-based approach to service discovery for non-JVM clients.
 
 
 
@@ -2347,14 +2384,14 @@ Forces
 
  
 -   Each instance of a service exposes a remote API such as HTTP/REST,
-    or Thrift etc. at a particular location (host and port)
+	or Thrift etc. at a particular location (host and port)
 -   The number of services instances and their locations changes
-    dynamically.
+	dynamically.
 -   Virtual machines and containers are usually assigned dynamic IP
-    addresses.
+	addresses.
 -   The number of services instances might vary dynamically. For
-    example, an EC2 Autoscaling Group adjusts the number of instances
-    based on load.
+	example, an EC2 Autoscaling Group adjusts the number of instances
+	based on load.
 
 
 
@@ -2415,21 +2452,21 @@ to a service instance running somewhere in the cluster.
 Server-side service discovery has a number of benefits:
 
 -   Compared to [client-side
-    discovery](https://microservices.io/patterns/client-side-discovery.html),
-    the client code is simpler since it does not have to deal with
-    discovery. Instead, a client simply makes a request to the router
+	discovery](https://microservices.io/patterns/client-side-discovery.html),
+	the client code is simpler since it does not have to deal with
+	discovery. Instead, a client simply makes a request to the router
 -   Some cloud environments provide this functionality, e.g. AWS Elastic
-    Load Balancer
+	Load Balancer
 
 It also has the following drawbacks:
 
 -   Unless it's part of the cloud environment, the router must is
-    another system component that must be installed and configured. It
-    will also need to be replicated for availability and capacity.
+	another system component that must be installed and configured. It
+	will also need to be replicated for availability and capacity.
 -   The router must support the necessary communication protocols (e.g
-    HTTP, gRPC, Thrift, etc) unless it is TCP-based router
+	HTTP, gRPC, Thrift, etc) unless it is TCP-based router
 -   More network hops are required than when using [Client Side
-    Discovery](https://microservices.io/patterns/client-side-discovery.html)
+	Discovery](https://microservices.io/patterns/client-side-discovery.html)
 
 
 
@@ -2486,14 +2523,14 @@ Forces
 
  
 -   Services are written using a variety of languages, frameworks, and
-    framework versions
+	framework versions
 -   Each service consists of multiple service instances for throughput
-    and availability
+	and availability
 -   Service must be independently deployable and scalable
 -   Service instances need to be isolated from one another
 -   You need to be able to quickly build and deploy a service
 -   You need to be able to constrain the resources (CPU and memory)
-    consumed by a service
+	consumed by a service
 -   You need to monitor the behavior of each service instance
 -   You want deployment to reliable
 -   You must deploy the application as cost-effectively as possible
@@ -2533,18 +2570,18 @@ The benefits of this approach include:
 
 -   Services instances are isolated from one another
 -   There is no possibility of conflicting resource requirements or
-    dependency versions
+	dependency versions
 -   A service instance can only consume at most the resources of a
-    single host
+	single host
 -   Its straightforward to monitor, manage, and redeploy each service
-    instance
+	instance
 
 The drawbacks of this approach include:
 
 -   Potentially less efficient resource utilization compared
-    to [Multiple Services per
-    Host](https://microservices.io/patterns/deployment/multiple-services-per-host.html) because
-    there are more hosts
+	to [Multiple Services per
+	Host](https://microservices.io/patterns/deployment/multiple-services-per-host.html) because
+	there are more hosts
 
 
 
@@ -2597,14 +2634,14 @@ Forces
 
  
 -   Services are written using a variety of languages, frameworks, and
-    framework versions
+	framework versions
 -   Each service consists of multiple service instances for throughput
-    and availability
+	and availability
 -   Service must be independently deployable and scalable
 -   Service instances need to be isolated from one another
 -   You need to be able to quickly build and deploy a service
 -   You need to be able to constrain the resources (CPU and memory)
-    consumed by a service
+	consumed by a service
 -   You need to monitor the behavior of each service instance
 -   You want deployment to reliable
 -   You must deploy the application as cost-effectively as possible
@@ -2625,9 +2662,9 @@ There are various ways of deploying a service instance on a shared host
 including:
 
 -   Deploy each service instance as a JVM process. For example, a Tomcat
-    or Jetty instances per service instance.
+	or Jetty instances per service instance.
 -   Deploy multiple service instances in the same JVM. For example, as
-    web applications or OSGI bundles.
+	web applications or OSGI bundles.
 
 
 
@@ -2652,8 +2689,8 @@ Resulting Context
 The benefits of this pattern include:
 
 -   More efficient resource utilization than the [Service Instance per
-    host
-    pattern](https://microservices.io/patterns/deployment/single-service-per-host.html)
+	host
+	pattern](https://microservices.io/patterns/deployment/single-service-per-host.html)
 
 The drawbacks of this approach include:
 
@@ -2661,8 +2698,8 @@ The drawbacks of this approach include:
 -   Risk of conflicting dependency versions
 -   Difficult to limit the resources consumed by a service instance
 -   If multiple services instances are deployed in the same process then
-    its difficult to monitor the resource consumption of each service
-    instance. Its also impossible to isolate each instance
+	its difficult to monitor the resource consumption of each service
+	instance. Its also impossible to isolate each instance
 
 
 
@@ -2698,17 +2735,17 @@ significant amount of time putting in place the mechanisms to handle
 cross-cutting concerns. Examples of cross-cutting concern include:
 
 -   Externalized configuration - includes credentials, and network
-    locations of external services such as databases and message brokers
+	locations of external services such as databases and message brokers
 -   Logging - configuring of a logging framework such as log4j or
-    logback
+	logback
 -   Health checks - a url that a monitoring service can "ping" to
-    determine the health of the application
+	determine the health of the application
 -   Metrics - measurements that provide insight into what the
-    application is doing and how it is performing
+	application is doing and how it is performing
 -   [Distributed
-    tracing](https://microservices.io/patterns/observability/distributed-tracing.html) -
-    instrument services with code that assigns each external request an
-    unique identifier that is passed between services.
+	tracing](https://microservices.io/patterns/observability/distributed-tracing.html) -
+	instrument services with code that assigns each external request an
+	unique identifier that is passed between services.
 
 As well as these generic cross-cutting concerns, there are also
 cross-cutting concerns that are specific to the technologies that an
@@ -2744,10 +2781,10 @@ Forces
  
 -   Creating a new microservice should be fast and easy
 -   When creating a microservice you must handle cross-cutting concerns
-    such as externalized configuration, logging, health checks, metrics,
-    service registration and discovery, circuit breakers. There are also
-    cross-cutting concerns that are specific to the technologies that
-    the microservices uses.
+	such as externalized configuration, logging, health checks, metrics,
+	service registration and discovery, circuit breakers. There are also
+	cross-cutting concerns that are specific to the technologies that
+	the microservices uses.
 
 
 
@@ -2862,14 +2899,14 @@ Forces
 
  
 -   A service must be provided with configuration data that tells it how
-    to connect to the external/3rd party services. For example, the
-    database network location and credentials
+	to connect to the external/3rd party services. For example, the
+	database network location and credentials
 -   A service must run in multiple environments - dev, test, qa,
-    staging, production - without modification and/or recompilation
+	staging, production - without modification and/or recompilation
 -   Different environments have different instances of the external/3rd
-    party services, e.g. QA database vs. production database, test
-    credit card processing account vs. production credit card processing
-    account
+	party services, e.g. QA database vs. production database, test
+	credit card processing account vs. production credit card processing
+	account
 
 
 
@@ -2943,12 +2980,12 @@ discovery](https://microservices.io/patterns/client-side-discovery.html).
 This pattern has the following benefits:
 
 -   The application runs in multiple environments without modification
-    and/or recompilation
+	and/or recompilation
 
 There are the following issues with this pattern:
 
 -   How to ensure that when an application is deployed the supplied
-    configuration matches what is expected?
+	configuration matches what is expected?
 
 
 
@@ -3006,7 +3043,7 @@ Forces
 
  
 -   End to end testing (i.e. tests that launch multiple services) is
-    difficult, slow, brittle, and expensive.
+	difficult, slow, brittle, and expensive.
 
 
 
@@ -3045,7 +3082,7 @@ Examples
 This pattern has the following benefits:
 
 -   Testing a service in isolation is easier, faster, more reliable and
-    cheap
+	cheap
 
 This pattern has the following drawbacks:
 
@@ -3054,7 +3091,7 @@ This pattern has the following drawbacks:
 This pattern has the following issues:
 
 -   How to ensure that the test doubles always correctly emulate the
-    behavior of the invoked services?
+	behavior of the invoked services?
 
 
 
@@ -3105,7 +3142,7 @@ Forces
 
  
 -   End to end testing (i.e. tests that launch multiple services) is
-    difficult, slow, brittle, and expensive.
+	difficult, slow, brittle, and expensive.
 
 
 
@@ -3144,7 +3181,7 @@ an open source project that supports this style of testing.
 This pattern has the following benefits:
 
 -   Testing a service in isolation is easier, faster, more reliable and
-    cheap
+	cheap
 
 This pattern has the following drawbacks:
 
@@ -3153,7 +3190,7 @@ This pattern has the following drawbacks:
 This pattern has the following issues:
 
 -   How to ensure that the consumer provided tests match what the
-    consumer actually requires?
+	consumer actually requires?
 
 
 
@@ -3269,36 +3306,36 @@ The proxy can be implemented as a state machine with the following
 states that mimic the functionality of an electrical circuit breaker:
 
 -   **Closed**: The request from the application is routed to the
-    operation. The proxy maintains a count of the number of recent
-    failures, and if the call to the operation is unsuccessful the proxy
-    increments this count. If the number of recent failures exceeds a
-    specified threshold within a given time period, the proxy is placed
-    into the **Open** state. At this point the proxy starts a timeout
-    timer, and when this timer expires the proxy is placed into
-    the **Half-Open** state.
+	operation. The proxy maintains a count of the number of recent
+	failures, and if the call to the operation is unsuccessful the proxy
+	increments this count. If the number of recent failures exceeds a
+	specified threshold within a given time period, the proxy is placed
+	into the **Open** state. At this point the proxy starts a timeout
+	timer, and when this timer expires the proxy is placed into
+	the **Half-Open** state.
 
-    > The purpose of the timeout timer is to give the system time to fix
-    > the problem that caused the failure before allowing the
-    > application to try to perform the operation again.
+	> The purpose of the timeout timer is to give the system time to fix
+	> the problem that caused the failure before allowing the
+	> application to try to perform the operation again.
 
 -   **Open**: The request from the application fails immediately and an
-    exception is returned to the application.
+	exception is returned to the application.
 
 -   **Half-Open**: A limited number of requests from the application are
-    allowed to pass through and invoke the operation. If these requests
-    are successful, it\'s assumed that the fault that was previously
-    causing the failure has been fixed and the circuit breaker switches
-    to the **Closed** state (the failure counter is reset). If any
-    request fails, the circuit breaker assumes that the fault is still
-    present so it reverts back to the **Open** state and restarts the
-    timeout timer to give the system a further period of time to recover
-    from the failure.
+	allowed to pass through and invoke the operation. If these requests
+	are successful, it\'s assumed that the fault that was previously
+	causing the failure has been fixed and the circuit breaker switches
+	to the **Closed** state (the failure counter is reset). If any
+	request fails, the circuit breaker assumes that the fault is still
+	present so it reverts back to the **Open** state and restarts the
+	timeout timer to give the system a further period of time to recover
+	from the failure.
 
-    > The**Half-Open**state is useful to prevent a recovering service
-    > from suddenly being flooded with requests. As a service recovers,
-    > it might be able to support a limited volume of requests until the
-    > recovery is complete, but while recovery is in progress a flood of
-    > work can cause the service to time out or fail again.
+	> The**Half-Open**state is useful to prevent a recovering service
+	> from suddenly being flooded with requests. As a service recovers,
+	> it might be able to support a limited volume of requests until the
+	> recovery is complete, but while recovery is in progress a flood of
+	> work can cause the service to time out or fail again.
 
 ![](attachments/463533311/463533310.png)
 .confluence-thumbnail .confluence-content-image-border height="150"}
@@ -3451,15 +3488,15 @@ When to use this Pattern
 Use this pattern:
 
 -   To prevent an application from trying to invoke a remote service or
-    access a shared resource if this operation is highly likely to fail.
+	access a shared resource if this operation is highly likely to fail.
 
 This pattern isn\'t recommended:
 
 -   For handling access to local private resources in an application,
-    such as in-memory data structure. In this environment, using a
-    circuit breaker would add overhead to your system.
+	such as in-memory data structure. In this environment, using a
+	circuit breaker would add overhead to your system.
 -   As a substitute for handling exceptions in the business logic of
-    your applications.
+	your applications.
 
 
 
@@ -3520,7 +3557,7 @@ Forces
 
  
 -   Services often need to verify that a user is authorized to perform
-    an operation
+	an operation
 
 
 
@@ -3639,7 +3676,7 @@ Examples
 
  
 -   [AWS Cloud
-    Watch](https://aws.amazon.com/cloudwatch/)
+	Watch](https://aws.amazon.com/cloudwatch/)
 
 
 
@@ -3727,14 +3764,14 @@ Examples
 
  
 -   Instrumentation libraries:
-    -   Coda Hale/Yammer [Java Metrics
-        Library](http://metrics.dropwizard.io/3.1.0/)
-    -   [Prometheus client
-        libraries](https://prometheus.io/docs/instrumenting/clientlibs/)
+	-   Coda Hale/Yammer [Java Metrics
+		Library](http://metrics.dropwizard.io/3.1.0/)
+	-   [Prometheus client
+		libraries](https://prometheus.io/docs/instrumenting/clientlibs/)
 -   Metrics aggregation services
-    -   [Prometheus](https://prometheus.io/docs/introduction/overview/)
-    -   [AWS Cloud
-        Watch](https://aws.amazon.com/cloudwatch/)
+	-   [Prometheus](https://prometheus.io/docs/introduction/overview/)
+	-   [AWS Cloud
+		Watch](https://aws.amazon.com/cloudwatch/)
 
 
 
@@ -3751,7 +3788,7 @@ This pattern has the following benefits:
 This pattern has the following drawbacks:
 
 -   Metrics code is intertwined with business logic making it more
-    complicated
+	complicated
 
 This pattern has the following issues:
 
@@ -3803,7 +3840,7 @@ Forces
 
  
 -   It is useful to know what actions a user has recently performed:
-    customer support, compliance, security, etc.
+	customer support, compliance, security, etc.
 
 
 
@@ -3843,7 +3880,7 @@ This pattern has the following benefits:
 This pattern has the following drawbacks:
 
 -   The auditing code is intertwined with the business logic, which
-    makes the business logic more complicated
+	makes the business logic more complicated
 
 
 
@@ -3855,8 +3892,8 @@ Examples
 
  
 -   [Event
-    Sourcing](https://microservices.io/patterns/data/event-sourcing.html) is
-    a reliable way to implement auditing
+	Sourcing](https://microservices.io/patterns/data/event-sourcing.html) is
+	a reliable way to implement auditing
 
 
 
@@ -3907,7 +3944,7 @@ Forces
 
  
 -   External monitoring only tells you the overall response time and
-    number of invocations - no insight into the individual operations
+	number of invocations - no insight into the individual operations
 -   Any solution should have minimal runtime overhead
 -   Log entries for a request are scattered across numerous logs
 
@@ -3924,12 +3961,12 @@ Instrument services with code that
 
 -   Assigns each external request a unique external request id
 -   Passes the external request id to all services that are involved in
-    handling the request
+	handling the request
 -   Includes the external request id in all [log
-    messages](https://microservices.io/patterns/observability/application-logging.html)
+	messages](https://microservices.io/patterns/observability/application-logging.html)
 -   Records information (e.g. start time, end time) about the requests
-    and operations performed when handling a external request in a
-    centralized service
+	and operations performed when handling a external request in a
+	centralized service
 
 This instrumentation might be part of the functionality provided by
 a [Microservice Chassis
@@ -3947,16 +3984,16 @@ Resulting Context
 This pattern has the following benefits:
 
 -   It provides useful insight into the behavior of the system including
-    the sources of latency
+	the sources of latency
 -   It enables developers to see how an individual request is handled by
-    searching across [aggregated
-    logs](https://microservices.io/patterns/observability/application-logging.html) for
-    its external request id
+	searching across [aggregated
+	logs](https://microservices.io/patterns/observability/application-logging.html) for
+	its external request id
 
 This pattern has the following issues:
 
 -   Aggregating and storing traces can require significant
-    infrastructure
+	infrastructure
 
 
 
@@ -3967,8 +4004,8 @@ This pattern has the following issues:
 
  
 -   [Log
-    aggregation](https://microservices.io/patterns/observability/application-logging.html) -
-    the external request id is included in each log message
+	aggregation](https://microservices.io/patterns/observability/application-logging.html) -
+	the external request id is included in each log message
 
 
 
@@ -4020,7 +4057,7 @@ Forces
 
  
 -   Exceptions must be de-duplicated, recorded, investigated by
-    developers and the underlying issue resolved
+	developers and the underlying issue resolved
 -   Any solution should have minimal runtime overhead
 
 
@@ -4061,9 +4098,9 @@ This pattern has the following drawbacks:
 
  
 -   [Log
-    aggregation](https://microservices.io/patterns/observability/application-logging.html) -
-    exceptions should be logged as well as reported to a tracking
-    service
+	aggregation](https://microservices.io/patterns/observability/application-logging.html) -
+	exceptions should be logged as well as reported to a tracking
+	service
 
 
 
@@ -4114,7 +4151,7 @@ Forces
 
  
 -   External monitoring only tells you the overall response time and
-    number of invocations - no insight into the individual operations
+	number of invocations - no insight into the individual operations
 -   Any solution should have minimal runtime overhead
 -   Log entries for a request are scattered across numerous logs
 
@@ -4131,12 +4168,12 @@ Instrument services with code that
 
 -   Assigns each external request a unique external request id
 -   Passes the external request id to all services that are involved in
-    handling the request
+	handling the request
 -   Includes the external request id in all [log
-    messages](https://microservices.io/patterns/observability/application-logging.html)
+	messages](https://microservices.io/patterns/observability/application-logging.html)
 -   Records information (e.g. start time, end time) about the requests
-    and operations performed when handling a external request in a
-    centralized service
+	and operations performed when handling a external request in a
+	centralized service
 
 This instrumentation might be part of the functionality provided by
 a [Microservice Chassis
@@ -4154,16 +4191,16 @@ Resulting Context
 This pattern has the following benefits:
 
 -   It provides useful insight into the behavior of the system including
-    the sources of latency
+	the sources of latency
 -   It enables developers to see how an individual request is handled by
-    searching across [aggregated
-    logs](https://microservices.io/patterns/observability/application-logging.html) for
-    its external request id
+	searching across [aggregated
+	logs](https://microservices.io/patterns/observability/application-logging.html) for
+	its external request id
 
 This pattern has the following issues:
 
 -   Aggregating and storing traces can require significant
-    infrastructure
+	infrastructure
 
 
 
@@ -4174,8 +4211,8 @@ This pattern has the following issues:
 
  
 -   [Log
-    aggregation](https://microservices.io/patterns/observability/application-logging.html) -
-    the external request id is included in each log message
+	aggregation](https://microservices.io/patterns/observability/application-logging.html) -
+	the external request id is included in each log message
 
 
 
@@ -4227,7 +4264,7 @@ Forces
 
  
 -   Exceptions must be de-duplicated, recorded, investigated by
-    developers and the underlying issue resolved
+	developers and the underlying issue resolved
 -   Any solution should have minimal runtime overhead
 
 
@@ -4268,9 +4305,9 @@ This pattern has the following drawbacks:
 
  
 -   [Log
-    aggregation](https://microservices.io/patterns/observability/application-logging.html) -
-    exceptions should be logged as well as reported to a tracking
-    service
+	aggregation](https://microservices.io/patterns/observability/application-logging.html) -
+	exceptions should be logged as well as reported to a tracking
+	service
 
 
 
@@ -4338,9 +4375,9 @@ return an indication of its status.
 A health monitoring check typically combines two factors:
 
 -   The checks (if any) performed by the application or service in
-    response to the request to the health verification endpoint.
+	response to the request to the health verification endpoint.
 -   Analysis of the results by the tool or framework that performs the
-    health verification check.
+	health verification check.
 
 The response code indicates the status of the application and,
 optionally, any components or services it uses. The latency or response
@@ -4354,9 +4391,9 @@ Other checks that might be carried out by the health monitoring code in
 the application include:
 
 -   Checking cloud storage or a database for availability and response
-    time.
+	time.
 -   Checking other resources or services located in the application, or
-    located elsewhere but used by the application.
+	located elsewhere but used by the application.
 
 Services and tools are available that monitor web applications by
 submitting a request to a configurable set of endpoints, and evaluating
@@ -4367,27 +4404,27 @@ functional tests on the system.
 Typical checks that can be performed by the monitoring tools include:
 
 -   Validating the response code. For example, an HTTP response of 200
-    (OK) indicates that the application responded without error. The
-    monitoring system might also check for other response codes to give
-    more comprehensive results.
+	(OK) indicates that the application responded without error. The
+	monitoring system might also check for other response codes to give
+	more comprehensive results.
 -   Checking the content of the response to detect errors, even when a
-    200 (OK) status code is returned. This can detect errors that affect
-    only a section of the returned web page or service response. For
-    example, checking the title of a page or looking for a specific
-    phrase that indicates the correct page was returned.
+	200 (OK) status code is returned. This can detect errors that affect
+	only a section of the returned web page or service response. For
+	example, checking the title of a page or looking for a specific
+	phrase that indicates the correct page was returned.
 -   Measuring the response time, which indicates a combination of the
-    network latency and the time that the application took to execute
-    the request. An increasing value can indicate an emerging problem
-    with the application or network.
+	network latency and the time that the application took to execute
+	the request. An increasing value can indicate an emerging problem
+	with the application or network.
 -   Checking resources or services located outside the application, such
-    as a content delivery network used by the application to deliver
-    content from global caches.
+	as a content delivery network used by the application to deliver
+	content from global caches.
 -   Checking for expiration of SSL certificates.
 -   Measuring the response time of a DNS lookup for the URL of the
-    application to measure DNS latency and DNS failures.
+	application to measure DNS latency and DNS failures.
 -   Validating the URL returned by the DNS lookup to ensure correct
-    entries. This can help to avoid malicious request redirection
-    through a successful attack on the DNS server.
+	entries. This can help to avoid malicious request redirection
+	through a successful attack on the DNS server.
 
 It\'s also useful, where possible, to run these checks from different
 on-premises or hosted locations to measure and compare response times.
@@ -4477,54 +4514,54 @@ restarting the application. Consider using one or more of the following
 techniques:
 
 -   Secure the endpoint by requiring authentication. You can do this by
-    using an authentication security key in the request header or by
-    passing credentials with the request, provided that the monitoring
-    service or tool supports authentication.
+	using an authentication security key in the request header or by
+	passing credentials with the request, provided that the monitoring
+	service or tool supports authentication.
 
-    -   Use an obscure or hidden endpoint. For example, expose the
-        endpoint on a different IP address to that used by the default
-        application URL, configure the endpoint on a nonstandard HTTP
-        port, and/or use a complex path to the test page. You can
-        usually specify additional endpoint addresses and ports in the
-        application configuration, and add entries for these endpoints
-        to the DNS server if required to avoid having to specify the IP
-        address directly.
+	-   Use an obscure or hidden endpoint. For example, expose the
+		endpoint on a different IP address to that used by the default
+		application URL, configure the endpoint on a nonstandard HTTP
+		port, and/or use a complex path to the test page. You can
+		usually specify additional endpoint addresses and ports in the
+		application configuration, and add entries for these endpoints
+		to the DNS server if required to avoid having to specify the IP
+		address directly.
 
-    -   Expose a method on an endpoint that accepts a parameter such as
-        a key value or an operation mode value. Depending on the value
-        supplied for this parameter, when a request is received the code
-        can perform a specific test or set of tests, or return a 404
-        (Not Found) error if the parameter value isn\'t recognized. The
-        recognized parameter values could be set in the application
-        configuration.
+	-   Expose a method on an endpoint that accepts a parameter such as
+		a key value or an operation mode value. Depending on the value
+		supplied for this parameter, when a request is received the code
+		can perform a specific test or set of tests, or return a 404
+		(Not Found) error if the parameter value isn\'t recognized. The
+		recognized parameter values could be set in the application
+		configuration.
 
-        > DoS attacks are likely to have less impact on a separate
-        > endpoint that performs basic functional tests without
-        > compromising the operation of the application. Ideally, avoid
-        > using a test that might expose sensitive information. If you
-        > must return information that might be useful to an attacker,
-        > consider how you\'ll protect the endpoint and the data from
-        > unauthorized access. In this case just relying on obscurity
-        > isn\'t enough. You should also consider using an HTTPS
-        > connection and encrypting any sensitive data, although this
-        > will increase the load on the server.
+		> DoS attacks are likely to have less impact on a separate
+		> endpoint that performs basic functional tests without
+		> compromising the operation of the application. Ideally, avoid
+		> using a test that might expose sensitive information. If you
+		> must return information that might be useful to an attacker,
+		> consider how you\'ll protect the endpoint and the data from
+		> unauthorized access. In this case just relying on obscurity
+		> isn\'t enough. You should also consider using an HTTPS
+		> connection and encrypting any sensitive data, although this
+		> will increase the load on the server.
 
 -   How to access an endpoint that\'s secured using authentication. Not
-    all tools and frameworks can be configured to include credentials
-    with the health verification request. For example, Microsoft Azure
-    built-in health verification features can\'t provide authentication
-    credentials. Some third-party alternatives
-    are [Pingdom](https://www.pingdom.com/), [Panopta](https://www.panopta.com/), [NewRelic](https://newrelic.com/),
-    and [Statuscake](https://www.statuscake.com/).
+	all tools and frameworks can be configured to include credentials
+	with the health verification request. For example, Microsoft Azure
+	built-in health verification features can\'t provide authentication
+	credentials. Some third-party alternatives
+	are [Pingdom](https://www.pingdom.com/), [Panopta](https://www.panopta.com/), [NewRelic](https://newrelic.com/),
+	and [Statuscake](https://www.statuscake.com/).
 
 -   How to ensure that the monitoring agent is performing correctly. One
-    approach is to expose an endpoint that simply returns a value from
-    the application configuration or a random value that can be used to
-    test the agent.
+	approach is to expose an endpoint that simply returns a value from
+	the application configuration or a random value that can be used to
+	test the agent.
 
-    > Also ensure that the monitoring system performs checks on itself,
-    > such as a self-test and built-in test, to avoid it issuing false
-    > positive results.
+	> Also ensure that the monitoring system performs checks on itself,
+	> such as a self-test and built-in test, to avoid it issuing false
+	> positive results.
 
 
 
@@ -4539,16 +4576,16 @@ This pattern is useful for:
 
 -   Monitoring websites and web applications to verify availability.
 -   Monitoring websites and web applications to check for correct
-    operation.
+	operation.
 -   Monitoring middle-tier or shared services to detect and isolate a
-    failure that could disrupt other applications.
+	failure that could disrupt other applications.
 -   Complementing existing instrumentation in the application, such as
-    performance counters and error handlers. Health verification
-    checking doesn\'t replace the requirement for logging and auditing
-    in the application. Instrumentation can provide valuable information
-    for an existing framework that monitors counters and error logs to
-    detect failures or other issues. However, it can\'t provide
-    information if the application is unavailable.
+	performance counters and error handlers. Health verification
+	checking doesn\'t replace the requirement for logging and auditing
+	in the application. Instrumentation can provide valuable information
+	for an existing framework that monitors counters and error logs to
+	detect failures or other issues. However, it can\'t provide
+	information if the application is unavailable.
 
 
 
@@ -4596,7 +4633,7 @@ Forces
 
  
 -   It useful to see when deployments and other changes occur since
-    issues usually occur immediately after a change
+	issues usually occur immediately after a change
 
 
 
@@ -4949,13 +4986,13 @@ Software**](http://dddcommunity.org/book/evans_2003/)"
 in 2004. The book outlined three Core Concepts:
 
 -   The software development team should work in close co-operation with
-    the Business department or Domain Experts.
+	the Business department or Domain Experts.
 -   The Architects/Developers and Domain Experts should first make the
-    Strategic Design: Finding the Bounded Context and related Core
-    Domain and Ubiquitous Language, Subdomains, Context Maps.
+	Strategic Design: Finding the Bounded Context and related Core
+	Domain and Ubiquitous Language, Subdomains, Context Maps.
 -   The Architects/Developers should then make the Tactical Design to
-    decompose the Core Domain into fine-grained Building blocks: Entity,
-    Value Object, Aggregate, Aggregate Root
+	decompose the Core Domain into fine-grained Building blocks: Entity,
+	Value Object, Aggregate, Aggregate Root
 
 A detail discussion of Domain-Driven Design is out of the scope of this
 post but you should read either the original DDD book [**Domain Driven
@@ -5174,8 +5211,8 @@ References
 
  {#expander-content-1488437266 .expand-content}
 -   [Towards Data Science - microservice architecture a brief overview
-    and why you should use it in your next
-    project](https://towardsdatascience.com/microservice-architecture-a-brief-overview-and-why-you-should-use-it-in-your-next-project-a17b6e19adfd)
+	and why you should use it in your next
+	project](https://towardsdatascience.com/microservice-architecture-a-brief-overview-and-why-you-should-use-it-in-your-next-project-a17b6e19adfd)
 
 
 
@@ -6308,7 +6345,7 @@ microservices is a fit, ask yourself the following questions:
 -   What am I trying to accomplish with microservices?
 -   What are my current and foreseeable pain points?
 -   What are the primary driving architecture characteristics for this
-    application (e.g., performance, scalability, maintainability, etc.)?
+	application (e.g., performance, scalability, maintainability, etc.)?
 
 Answering these questions can help you match up your business needs and
 goals with the advantages and disadvantages of microservices to
@@ -6349,19 +6386,19 @@ Use the following resources to learn more about other architecture
 patterns:
 
 -   [*Software Architecture Fundamentals: Understanding the
-    Basics*](http://shop.oreilly.com/product/110000195.do)
+	Basics*](http://shop.oreilly.com/product/110000195.do)
 
 -   [*Software Architecture Fundamentals: Beyond the
-    Basics*](http://shop.oreilly.com/product/110000195.do)
+	Basics*](http://shop.oreilly.com/product/110000195.do)
 
 -   [*Software Architecture Fundamentals: Service-Based
-    Architecture*](http://shop.oreilly.com/product/0636920042655.do)
+	Architecture*](http://shop.oreilly.com/product/0636920042655.do)
 
 -   [*Software Architecture
-    Patterns*](http://www.oreilly.com/programming/free/software-architecture-patterns.csp))
+	Patterns*](http://www.oreilly.com/programming/free/software-architecture-patterns.csp))
 
 -   [*Microservices vs. Service-Oriented
-    Architecture*](http://www.oreilly.com/programming/free/microservices-vs-service-oriented-architecture.csp)
+	Architecture*](http://www.oreilly.com/programming/free/microservices-vs-service-oriented-architecture.csp)
 
 
 
@@ -6424,15 +6461,15 @@ To illustrate the problem with not versioning a contract I will use an
 example of buying a certain number of shares of Apple common stock
 (AAPL). The schema for this request might look something like this:
 
-    {   
-        "$schema": "http://json-schema.org/draft-04/schema#",
-        "properties": {
-          "acct": {"type": "number"},
-          "cusip": {"type": "string"},
-          "shares": {"type": "number", "minimum": 100}
-       },
-        "required": ["acct", "cusip", "shares"]
-    }
+	{   
+		"$schema": "http://json-schema.org/draft-04/schema#",
+		"properties": {
+		  "acct": {"type": "number"},
+		  "cusip": {"type": "string"},
+		  "shares": {"type": "number", "minimum": 100}
+	   },
+		"required": ["acct", "cusip", "shares"]
+	}
 
 In this case to buy stock you must specify the brokerage account
 (*acct*), the stock you wish to purchase in CUSIP (Committee on Uniform
@@ -6443,26 +6480,26 @@ fields are required.
 The code to make a request to purchase 1000 shares of Apple stock (CUSIP
 037833100) for brokerage account 12345 using REST would look like this:
 
-    POST /trade/buy
-    Accept: application/json
-    { "acct": "12345",
-      "cusip": "037833100",
-      "shares": "1000" }
+	POST /trade/buy
+	Accept: application/json
+	{ "acct": "12345",
+	  "cusip": "037833100",
+	  "shares": "1000" }
 
 Now let\'s say that the service changes its contract to accept a SEDOL
 (Stock Exchange Daily Official List) rather than a CUSIP, which is
 another industry standard way of identifying a particular instrument to
 be traded. Now the contract looks like this:
 
-    {   
-        "$schema": "http://json-schema.org/draft-04/schema#",
-        "properties": {
-          "acct": {"type": "number"},
-          "sedol": {"type": "string"},
-          "shares": {"type": "number", "minimum": 100}
-       },
-        "required": ["acct", "sedol", "shares"]
-    }
+	{   
+		"$schema": "http://json-schema.org/draft-04/schema#",
+		"properties": {
+		  "acct": {"type": "number"},
+		  "sedol": {"type": "string"},
+		  "shares": {"type": "number", "minimum": 100}
+	   },
+		"required": ["acct", "sedol", "shares"]
+	}
 
 This would be considered a breaking change in that the prior client code
 will now fail because it is still using a CUSIP. What you need to do is
@@ -6496,8 +6533,8 @@ When using REST you can use what is called a *vendor mime type* to
 specify the version of the contract you wish to use in the accept header
 of the request:
 
-    POST /trade/buy
-    Accept: application/vnd.svc.trade.v2+json
+	POST /trade/buy
+	Accept: application/vnd.svc.trade.v2+json
 
 By using the vendor mime type (vnd) in the accept header of the URI you
 can specify the version number of the contract, thereby directing the
@@ -6506,10 +6543,10 @@ Correspondingly, the service will need to parse the accept header to
 determine the version number. One example of this would be to use a
 regular expression to find the version as illustrated below:
 
-    def version
-       request.headers
-       ["Accept"][/^application/vnd.svc.trade.v(d)/, 1].to_i
-    end
+	def version
+	   request.headers
+	   ["Accept"][/^application/vnd.svc.trade.v(d)/, 1].to_i
+	end
 
 Unfortunately that is the easy part; the hard part is coding all of the
 cyclomatic complexity into the service to provide conditional processing
@@ -6522,14 +6559,14 @@ Using messaging you will need to supply the version number in the
 property section of the message header. For JMS 2.0 that would look
 something like this:
 
-    String msg = createJSON(
-      "acct","12345",
-      "sedol","2046251",
-      "shares","1000")};
+	String msg = createJSON(
+	  "acct","12345",
+	  "sedol","2046251",
+	  "shares","1000")};
 
-    jmsContext.createProducer()
-    .setProperty("version", 2)
-    .send(queue, msg);
+	jmsContext.createProducer()
+	.setProperty("version", 2)
+	.send(queue, msg);
 
 Each messaging standard will have its own way of setting this header.
 The important thing to remember here is that regardless of the messaging
@@ -6564,17 +6601,17 @@ Figure 8-2. Schema-based contract versioning
 By using schema-based versioning, the schema used in the previous
 example would look like this:
 
-    {   
-        "$schema": "http://json-schema.org/draft-04/schema#",
-        "properties": {
-          "version": {"type": "integer"},
-          "acct": {"type": "number"},
-          "cusip": {"type": "string"},
-          "sedol": {"type": "string"},
-          "shares": {"type": "number", "minimum": 100}
-       },
-        "required": ["version", "acct", "shares"]
-    }
+	{   
+		"$schema": "http://json-schema.org/draft-04/schema#",
+		"properties": {
+		  "version": {"type": "integer"},
+		  "acct": {"type": "number"},
+		  "cusip": {"type": "string"},
+		  "sedol": {"type": "string"},
+		  "shares": {"type": "number", "minimum": 100}
+	   },
+		"required": ["version", "acct", "shares"]
+	}
 
 Notice that the the schema actually contains the version number field
 (*version*) as an integer value. Because you only have one schema now,
@@ -6588,20 +6625,20 @@ the same exact schema can be used by multiple protocols. For example,
 the same schema can be used by REST and JMS 2.0 without any
 modifications to the remote access protocol headers:
 
-    POST /trade/buy
-    Accept: application/json
-    { "version": "2",
-      "acct": "12345",
-      "sedol": "2046251",
-      "shares": "1000" }
+	POST /trade/buy
+	Accept: application/json
+	{ "version": "2",
+	  "acct": "12345",
+	  "sedol": "2046251",
+	  "shares": "1000" }
 
 
-    String msg = createJSON(
-      "version","2",
-      "acct","12345",
-      "sedol","2046251",
-      "shares","1000")};
-    jmsContext.createProducer().send(queue, msg);
+	String msg = createJSON(
+	  "version","2",
+	  "acct","12345",
+	  "sedol","2046251",
+	  "shares","1000")};
+	jmsContext.createProducer().send(queue, msg);
 
 Unfortunately this technique has a lot of disadvantages associated with
 it. First, you must parse the actual payload of the message to extract
@@ -7150,14 +7187,14 @@ References
 
  {#expander-content-592243669 .expand-content}
 -   [OReilly - microservices antipatterns and
-    pitfalls](https://www.oreilly.com/ideas/microservices-antipatterns-and-pitfalls)
+	pitfalls](https://www.oreilly.com/ideas/microservices-antipatterns-and-pitfalls)
 -   [Opcito - microservices anti patterns what you need to understand
-    before adopting
-    microservices](https://www.opcito.com/blogs/microservices-anti-patterns-what-you-need-to-understand-before-adopting-microservices/)
+	before adopting
+	microservices](https://www.opcito.com/blogs/microservices-anti-patterns-what-you-need-to-understand-before-adopting-microservices/)
 -   [Devops - five microservices worst
-    practices](https://devops.com/five-microservices-worst-practices/)
+	practices](https://devops.com/five-microservices-worst-practices/)
 -   [Pluralsight - why micromanagement is
-    bad](https://www.pluralsight.com/blog/business-professional/why-micromanagement-is-bad)
+	bad](https://www.pluralsight.com/blog/business-professional/why-micromanagement-is-bad)
 
 
 
@@ -7181,30 +7218,30 @@ References
 -   <https://patterns.arcitura.com/soa-patterns/basics/whatissoa/overview>
 -   <https://github.com/katopz/best-practices/blob/master/best-practices-for-building-a-microservice-architecture.md>
 -   [Altkom Software - Building microservices on net core Part
-    1](https://altkomsoftware.pl/en/blog/building-microservices-on-net-core-1/)
+	1](https://altkomsoftware.pl/en/blog/building-microservices-on-net-core-1/)
 -   [Altkom Software - Building microservices on net core Part
-    2](https://altkomsoftware.pl/en/blog/microservices-net-core-cqrs-mediatr/)
+	2](https://altkomsoftware.pl/en/blog/microservices-net-core-cqrs-mediatr/)
 -   [Altkom Software - Building microservices on net core Part
-    3](https://altkomsoftware.pl/en/blog/service-discovery-eureka/)
+	3](https://altkomsoftware.pl/en/blog/service-discovery-eureka/)
 -   [Altkom Software - Building microservices on net core Part
-    4](https://altkomsoftware.pl/en/blog/building-api-gateways-with-ocelot/)
+	4](https://altkomsoftware.pl/en/blog/building-api-gateways-with-ocelot/)
 -   [Altkom Software - Building microservices on net core Part
-    5](https://altkomsoftware.pl/en/blog/building-microservices-domain-aggregates/)
+	5](https://altkomsoftware.pl/en/blog/building-microservices-domain-aggregates/)
 -   [Altkom Software - Building microservices on net core Part
-    6](https://altkomsoftware.pl/en/blog/building-microservices-6/)
+	6](https://altkomsoftware.pl/en/blog/building-microservices-6/)
 -   [Medium - Alexander Ma - Introduction to Microservices Part
-    1](https://medium.com/@alexma6614/introduction-to-microservices-pt-1-7656f2615e40)
+	1](https://medium.com/@alexma6614/introduction-to-microservices-pt-1-7656f2615e40)
 -   [Medium - Alexander Ma - Introduction to Microservices Part
-    2](https://medium.com/@alexma6614/rabbitmq-flask-go-tutorial-pt-2-7161feb654c6)
+	2](https://medium.com/@alexma6614/rabbitmq-flask-go-tutorial-pt-2-7161feb654c6)
 -   [Devops - when should you go for microservice
-    architecture](https://devops.com/when-should-you-go-for-microservice-architecture/)
+	architecture](https://devops.com/when-should-you-go-for-microservice-architecture/)
 -   [Towards Data Science - microservice architecture a brief overview
-    and why you should use it in your next
-    project](https://towardsdatascience.com/microservice-architecture-a-brief-overview-and-why-you-should-use-it-in-your-next-project-a17b6e19adfd)
+	and why you should use it in your next
+	project](https://towardsdatascience.com/microservice-architecture-a-brief-overview-and-why-you-should-use-it-in-your-next-project-a17b6e19adfd)
 -   [Cloud Native - the difference between api gateways and service
-    mesh](https://www.cncf.io/blog/2020/03/06/the-difference-between-api-gateways-and-service-mesh/)
+	mesh](https://www.cncf.io/blog/2020/03/06/the-difference-between-api-gateways-and-service-mesh/)
 -   [MS Doc - microservices design
-    patterns](https://docs.microsoft.com/en-us/azure/architecture/microservices/design/patterns)
+	patterns](https://docs.microsoft.com/en-us/azure/architecture/microservices/design/patterns)
 
 
 
@@ -7267,15 +7304,15 @@ stack is especially easy to handle in a containerized environment for 2
 reasons:
 
 1.  There are readymade containers for ElasticSearch and Kibana, along
-    with Helm charts for deploying them to Kubernetes with minimum
-    configurations. So deploying such a stack is not that big hassle.
+	with Helm charts for deploying them to Kubernetes with minimum
+	configurations. So deploying such a stack is not that big hassle.
 2.  Docker default logging mechanism allow all container logs (STDOUT)
-    to be stored/exposed into one directory in the host machine, so with
-    a simple container like FluentD it's easily configured to read all
-    container logs and dump them into ElasticSearch with LogStash
-    format. Which is effectively providing the functionality that we
-    would have searched for in the previous logging frameworks, but this
-    one does it regardless of the service technology.
+	to be stored/exposed into one directory in the host machine, so with
+	a simple container like FluentD it's easily configured to read all
+	container logs and dump them into ElasticSearch with LogStash
+	format. Which is effectively providing the functionality that we
+	would have searched for in the previous logging frameworks, but this
+	one does it regardless of the service technology.
 
 ![](https://miro.medium.com/max/1135/0*6Fdv9a-zWRjmgVHQ.png){height="150"}
 
@@ -7283,9 +7320,9 @@ This approach works anywhere, in any environment, with any technology,
 but with the following drawbacks:
 
 -   It's a bit hard to learn how to query logs in Kibana and how to make
-    an effective dashboard that allow you to visualize the traffic, the
-    errors, and easily diagnose the root cause of a problem. It can be
-    done, but will need time and effort to master it.
+	an effective dashboard that allow you to visualize the traffic, the
+	errors, and easily diagnose the root cause of a problem. It can be
+	done, but will need time and effort to master it.
 -   Logs gets very expensive which I will elaborate later below.
 
 
@@ -7392,26 +7429,26 @@ Then comes possible solutions, which start by minimizing the number of
 logs in production. For example:
 
 -   Only log warning and errors in production, and don't log trace,
-    debug, nor information (assuming we only need to know if there is a
-    problem, but how will we know what happen to lead to the problem?)
+	debug, nor information (assuming we only need to know if there is a
+	problem, but how will we know what happen to lead to the problem?)
 -   Sample the logs, like select a random percentage of requests to be
-    logged (like 5%) and log everything for these requests and ignore
-    the rest. Application Insights supports this sampling mechanism.
-    Which works fine if the problem is catastrophic that is causing all
-    requests to fail. But what if the issue is related to a specific
-    customer or a scenario that didn't have the chance to appear in
-    these random samples?
+	logged (like 5%) and log everything for these requests and ignore
+	the rest. Application Insights supports this sampling mechanism.
+	Which works fine if the problem is catastrophic that is causing all
+	requests to fail. But what if the issue is related to a specific
+	customer or a scenario that didn't have the chance to appear in
+	these random samples?
 -   Take all logs but don't keep them for long (to save space), like
-    delete all none error logs after 30 minutes. This will save space
-    but not processing nor bandwidth. And will also miss important info
-    once passed the time threshold.
+	delete all none error logs after 30 minutes. This will save space
+	but not processing nor bandwidth. And will also miss important info
+	once passed the time threshold.
 -   Other solutions consider only logging errors like first suggestion,
-    but when something wrong happen, flip a configuration switch that
-    will let all services start logging everything and incurring all the
-    cost only in bad situations. But this approach also needs the
-    configuration switch to happen without restarting the services
-    (which add complexity to service configurations) and will also miss
-    important logs.
+	but when something wrong happen, flip a configuration switch that
+	will let all services start logging everything and incurring all the
+	cost only in bad situations. But this approach also needs the
+	configuration switch to happen without restarting the services
+	(which add complexity to service configurations) and will also miss
+	important logs.
 
 And the list of solutions goes on and on with no silver bullet solution
 that takes care of everything.
@@ -7431,14 +7468,14 @@ want these logs to be useful.
 
 -   Log the incoming request details
 -   Log that authorization header (token) have been checked for correct
-    signature
+	signature
 -   Log the MVC Controller/Action that is going to start executing to
-    handle this request
+	handle this request
 -   Log the operation we are about to make on database (with the SQL
-    statement for example)
+	statement for example)
 -   Log the result of the database operation
 -   Log that the action has completed successfully and took how many
-    milliseconds
+	milliseconds
 
 See how many logs we are adding (for example 7 elastic search inserts)
 for 1 DB select statement? Now consider how many more would we need to
@@ -7476,7 +7513,7 @@ References
 
  {#expander-content-909274687 .expand-content}
 -   [Medium - Logging in the microservices
-    world](https://medium.com/microservices-for-net-developers/net-logging-in-the-microservices-world-d08b5f6425f6)
+	world](https://medium.com/microservices-for-net-developers/net-logging-in-the-microservices-world-d08b5f6425f6)
 
 
 

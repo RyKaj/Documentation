@@ -11,9 +11,9 @@ These solutions has a number of characteristics in common
 -   Run on large number of commodity machines
 -   Data are partitioned and replicated among these machines
 -   Relax the data consistency requirement. (because the  [CAP
-    theorem](http://www.julianbrowne.com/article/viewer/brewers-cap-theorem) proves
-    that you cannot get Consistency, Availability and Partitioning at
-    the the same time)
+	theorem](http://www.julianbrowne.com/article/viewer/brewers-cap-theorem) proves
+	that you cannot get Consistency, Availability and Partitioning at
+	the the same time)
 
 The aim of this blog is to extract the underlying technologies that
 these solutions have in common, and get a deeper understanding on the
@@ -36,11 +36,11 @@ More advance form of API allows to execute user defined function in the
 server environment
 
 -   execute(key, operation, parameters) \-- Invoke an operation to the
-    value (given its key) which is a special data structure (e.g. List,
-    Set, Map \.... etc).
+	value (given its key) which is a special data structure (e.g. List,
+	Set, Map \.... etc).
 -   mapreduce(keyList, mapFunc, reduceFunc) \-- Invoke a  [map/reduce
-    function](http://horicky.blogspot.com/2008/11/hadoop-mapreduce-implementation.html) across
-    a key range.
+	function](http://horicky.blogspot.com/2008/11/hadoop-mapreduce-implementation.html) across
+	a key range.
 
 Machines layout
 ---------------
@@ -103,14 +103,14 @@ without impacting the operation of the ring.
 When a new node joins the network
 
 1.  The joining node announce its presence and its id to some well known
-    VNs or just broadcast)
+	VNs or just broadcast)
 2.  All the neighbors (left and right side) will adjust the change of
-    key ownership as well as the change of replica memberships. This is
-    typically done synchronously.
+	key ownership as well as the change of replica memberships. This is
+	typically done synchronously.
 3.  The joining node starts to bulk copy data from its neighbor in
-    parallel asynchronously.
+	parallel asynchronously.
 4.  The membership change is asynchronously propagate to the other
-    nodes.
+	nodes.
 
 <kbd>![](http://1.bp.blogspot.com/_j6mB7TMmJJY/Sw1b9Sv0fmI/AAAAAAAAAXc/4-YNzhA3LCQ/s320/p1.png) </kbd>
 
@@ -128,9 +128,9 @@ serve the request and if not, the client can contact another replica.
 When an existing node leaves the network (e.g. crash)
 
 1.  The crashed node no longer respond to gossip message so its
-    neighbors knows about it.
+	neighbors knows about it.
 2.  The neighbor will update the membership changes and copy data
-    asynchronously
+	asynchronously
 
 <kbd>![](http://2.bp.blogspot.com/_j6mB7TMmJJY/Sw1jGP6y5tI/AAAAAAAAAXk/rM9k-jNcsKQ/s320/P2.png) </kbd>
 
@@ -156,22 +156,22 @@ of the data.
 There is a number of client consistency models
 
 1.  Strict Consistency (one copy serializability): This provides the
-    semantics as if there is only one copy of data. Any update is
-    observed instantaneously.
+	semantics as if there is only one copy of data. Any update is
+	observed instantaneously.
 2.  Read your write consistency: The allows the client to see his own
-    update immediately (and the client can switch server between
-    requests), but not the updates made by other clients
+	update immediately (and the client can switch server between
+	requests), but not the updates made by other clients
 3.  Session consistency: Provide the read-your-write consistency only
-    when the client is issuing the request under the same session scope
-    (which is usually bind to the same server)
+	when the client is issuing the request under the same session scope
+	(which is usually bind to the same server)
 4.  Monotonic Read Consistency: This provide the time monotonicity
-    guarantee that the client will only see more updated version of the
-    data in future requests.
+	guarantee that the client will only see more updated version of the
+	data in future requests.
 5.  Eventual Consistency: This provides the weakness form of guarantee.
-    The client can see an inconsistent view as the update are in
-    progress. This model works when concurrent access of the same data
-    is very unlikely, and the client need to wait for some time if he
-    needs to see his previous update.
+	The client can see an inconsistent view as the update are in
+	progress. This model works when concurrent access of the same data
+	is very unlikely, and the client need to wait for some time if he
+	needs to see his previous update.
 
 \
 Depends on which consistency model to provide, 2 mechanisms need to be
@@ -320,13 +320,13 @@ logical clock which if every replica follows certain rules to update its
 vector clock.
 
 -   Whenever an internal operation happens at replica i, it will advance
-    its clock Vi\[i\]
+	its clock Vi\[i\]
 -   Whenever replica i send a message to replica j, it will first
-    advance its clock Vi\[i\] and attach its vector clock Vi to the
-    message
+	advance its clock Vi\[i\] and attach its vector clock Vi to the
+	message
 -   Whenever replica j receive a message from replica i, it will first
-    advance its clock Vj\[j\] and then merge its clock with the clock Vm
-    attached in the message. ie: Vj\[k\] = max(Vj\[k\], Vm\[k\])
+	advance its clock Vj\[j\] and then merge its clock with the clock Vm
+	attached in the message. ie: Vj\[k\] = max(Vj\[k\], Vm\[k\])
 
 <kbd>![](http://2.bp.blogspot.com/_j6mB7TMmJJY/SwoSGODJQuI/AAAAAAAAAWs/OefcWLxdsmI/s320/p1.png) </kbd>
 
@@ -335,14 +335,14 @@ all k, Vi\[k\] \>= Vj\[k\]. We can use these partial ordering to derive
 causal relationship between updates. The reasoning behind is
 
 -   The effect of an internal operation will be seen immediately at the
-    same node
+	same node
 -   After receiving a message, the receiving node knows the situation of
-    the sending node at the time when the message is send. The situation
-    is not only including what is happening at the sending node, but
-    also all the other nodes that the sending node knows about.
+	the sending node at the time when the message is send. The situation
+	is not only including what is happening at the sending node, but
+	also all the other nodes that the sending node knows about.
 -   In other words, Vi\[i\] reflects the time of the latest internal
-    operation happens at node i. Vi\[k\] = 6 reflects replica i has
-    known the situation of replica k up to its logical clock 6.
+	operation happens at node i. Vi\[k\] = 6 reflects replica i has
+	known the situation of replica k up to its logical clock 6.
 
 Notice that the term \"situation\" is used here in an abstract sense.
 Depends on what information is passed in the message, the situation can
@@ -567,12 +567,12 @@ when we are modeling people. Use this pattern to build relationships.
 1.  Determine if data \"belongs to\" a document --- is there a relation?
 
 2.  Embed when possible, especially if the data is useful and exclusive
-    (\"belongs in\").
+	(\"belongs in\").
 
 3.  Always reference \_id values at minimum.
 
 4.  Denormalize the useful parts of the relationship. Good candidates do
-    not change value often, or ever, and are useful.
+	not change value often, or ever, and are useful.
 
 5.  Be mindful of updates to denormalized data and repair relationships
 
@@ -621,10 +621,10 @@ such as these:
 -   Application persistence error handling
 -   Technology stack and engineering framework
 -   Data center infrastructure (for example, public/private/hybrid
-    cloud) configuration and setup\<
+	cloud) configuration and setup\<
 -   NoSQL database-agnostic and -specific resilience abstraction\<
 -   Operation and management best practice and standard operation
-    procedure (SOP)
+	procedure (SOP)
 
 Since NoSQL databases are not panaceas, ill-suited applications can
 disrupt operations and cause friction between stakeholders within the
@@ -643,20 +643,20 @@ databases. To achieve this objective, we devised the following steps in
 our approach:
 
 1.  Identify a meaningful NoSQL database architectural abstraction based
-    on the  [CAP theorem](https://fenix.tecnico.ulisboa.pt/downloadFile/1126518382178117/10.e-CAP-3.pdf), 
-    [ACID/BASE properties](http://queue.acm.org/detail.cfm?id=1394128),
-    and performance characteristics.
+	on the  [CAP theorem](https://fenix.tecnico.ulisboa.pt/downloadFile/1126518382178117/10.e-CAP-3.pdf), 
+	[ACID/BASE properties](http://queue.acm.org/detail.cfm?id=1394128),
+	and performance characteristics.
 2.  Categorize and define types of different resilience patterns based
-    on workload, performance, and consistency properties that are
-    meaningful to applications.
+	on workload, performance, and consistency properties that are
+	meaningful to applications.
 3.  Define a standardized minimal NoSQL deployment pattern for common
-    small-to-medium, non-mission critical use cases.
+	small-to-medium, non-mission critical use cases.
 4.  Define an enhanced design pattern to support mission-critical use
-    cases that require high availability, consistency, durability,
-    scalability, and performance.
+	cases that require high availability, consistency, durability,
+	scalability, and performance.
 5.  Define other design patterns to support non-conforming use cases,
-    for example, standalone without disaster recovery (DR), and
-    application sharding.
+	for example, standalone without disaster recovery (DR), and
+	application sharding.
 
 Given that JSON has become the de facto standard data format for
 web-centric e-commerce businesses like eBay, this blog will use two of
@@ -670,26 +670,121 @@ blog, the high-level comparison between them in Table 1 helps illustrate
 their differences. It also helps explain how these differences influence
 respective resilience design patterns for each product.
 
- ######  Throughout this blog post, for convenience we designate one Couchbase cluster per data center even though multiple clusters can be set up per data center. However, nodes in the same Couchbase cluster do not span across multiple data centers.
-
-|MongoDB|Couchbase||||
-|--- |--- |--- |--- |--- |
-|Architecture||Master-slave|Peer-to-peer||
-|Replication||Master to slave (or primary to secondary) nodes|Local cluster|Primary to replica nodes|
-|Multiple cluster|Bi- or uni-directional Cross Data Center Replication (XDCR)||||
-|Sharding||Optional|Built-in||
-|Quorum|Read|Yes|No||
-|Write|Yes|||||
+<table>
+	<colgroup>
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<thead>
+		<tr>
+			<th>
+				MongoDB
+			</th>
+			<th colspan="2">
+				Couchbase
+			</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<td colspan="5">
+				* Throughout this blog post, for convenience we designate one Couchbase cluster per data center even though multiple clusters can be set up per data center. However, nodes in the same Couchbase cluster do not span across multiple data centers.
+			</td>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td colspan="2">
+				Name
+			</td>
+			<td>
+				Replica set/sharded cluster
+			</td>
+			<td colspan="2">
+				“Cluster”*
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				Architecture
+			</td>
+			<td>
+				Master-slave
+			</td>
+			<td colspan="2">
+				Peer-to-peer
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" rowspan="2">
+				Replication
+			</td>
+			<td rowspan="2">
+				Master to slave (or primary to secondary) nodes
+			</td>
+			<td>
+				Local cluster
+			</td>
+			<td>
+				Primary to replica nodes
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Multiple cluster
+			</td>
+			<td>
+				Bi- or uni-directional Cross Data Center Replication (XDCR)
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				Sharding
+			</td>
+			<td>
+				Optional
+			</td>
+			<td colspan="2">
+				Built-in
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="2">
+				Quorum
+			</td>
+			<td>
+				Read
+			</td>
+			<td>
+				Yes
+			</td>
+			<td colspan="2" rowspan="2">
+				No
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Write
+			</td>
+			<td>
+				Yes
+			</td>
+		</tr>
+	</tbody>
+</table>
 
 
 From the comparison above, we observe the following characteristics when
 designing a resilience pattern design:
 
 -   NoSQL databases tend to simplify their resilience pattern if they
-    are based on peer-to-peer architecture.
+	are based on peer-to-peer architecture.
 -   NoSQL databases tend to complicate their resilience pattern if they
-    lack quorum read/write, an important capability to support global
-    read and write consistency.
+	lack quorum read/write, an important capability to support global
+	read and write consistency.
 
 Lastly, we found it helpful to organize resilience design patterns into
 different categories, as shown in the Table 2. For brevity, we will
@@ -698,18 +793,87 @@ durability, and application sharding.
 
  ###### Table 2. Categories of Resilience Design Patterns
 
-|Category|Pattern|
-|--- |--- |
-|Workload|General purpose mixed read and write|
-|Performance|High performance read and/or write|
-|Durability|100% durability|
-|High local and/or cross data center durability||
-|High availability (HA)|High availability local read and write|
-|High availability multi-data center read and write||
-|High Read and write consistency|High local data center read and write consistency|
-|High multi-data center read and write consistency||
-|Others|Administration, backup and restore, application sharding|
-
+<table>
+	<colgroup>
+		<col />
+		<col />
+	</colgroup>
+	<thead>
+		<tr>
+			<th>
+				Category
+			</th>
+			<th>
+				Pattern
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				Workload
+			</td>
+			<td>
+				General purpose mixed read and write <!--✔-->
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Performance
+			</td>
+			<td>
+				High performance read and/or write
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="2">
+				Durability
+			</td>
+			<td>
+				100% durability
+			</td>
+		</tr>
+		<tr>
+			<td>
+				High local and/or cross data center durability <!--✔-->
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="2">
+				High availability (HA)
+			</td>
+			<td>
+				High availability local read and write
+			</td>
+		</tr>
+		<tr>
+			<td>
+				High availability multi-data center read and write
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="2">
+				High Read and write consistency
+			</td>
+			<td>
+				High local data center read and write consistency
+			</td>
+		</tr>
+		<tr>
+			<td>
+				High multi-data center read and write consistency
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Others
+			</td>
+			<td>
+				Administration, backup and restore, application sharding <!--… ✔-->
+			</td>
+		</tr>
+	</tbody>
+</table>
 
 
 ### Standard minimal deployment
@@ -732,23 +896,88 @@ heterogeneous NoSQL clusters in the world, we recommend the following
 deployments:
 
 -   Whenever possible, nodes in the same MongoDB replica set will be
-    provisioned in different fault domain to minimize any availability
-    risk associated with node and network failure.
+	provisioned in different fault domain to minimize any availability
+	risk associated with node and network failure.
 -   Standard MongoDB deployment (for example, type 1 in Table 3) always
-    includes third data center with two or more secondary nodes. For
-    applications that do not have traffic in a third data
-    center, light-weight arbiter nodes should be used for cross-data
-    center quorum voting during site or total data center failure.
+	includes third data center with two or more secondary nodes. For
+	applications that do not have traffic in a third data
+	center, light-weight arbiter nodes should be used for cross-data
+	center quorum voting during site or total data center failure.
 -   With few exceptions (for example, type 2 below), a MongoDB replica
-    set can be deployed in only one data center if applications do not
-    require remote DR capability.
+	set can be deployed in only one data center if applications do not
+	require remote DR capability.
 
 ###### Table 3. MongoDB Standard Minimal Deployments
-|Data Center 1|Data Center 2|Data Center 3||||
-|--- |--- |--- |--- |--- |--- |
-|1|Standard deployment with built-in DR capability|Minimum three nodes, which include one primary and two secondary nodes|Minimum two secondary nodes|Minimum two secondary or arbiter nodes.This is to ensure that should any one data center experience total failure, it is not excluded from quorum voting for new primary node.|In selected high traffic or important use cases, additional secondary nodes may be added in each data center. The purpose is to increase application read resilience so that surviving nodes won’t be overwhelmed in case of one or more secondary nodes fail in any data center.|
-|2|Special qualified use case without DR|Three (one primary, two secondary nodes)|||This deployment pattern is for use cases that do not require remote DR since applications can rebuild the entire dataset from an external data source.Furthermore, the lifespan of data can be relatively short-lived and may expire in a matter of minutes, if not seconds. In selected high traffic or important use cases, additional secondary nodes may be added to the replica set to help increase resilience.|
-
+<table>
+	<colgroup>
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+	</colgroup>=
+	<thead>
+		<tr>
+			<th colspan="2" rowspan="2">
+				Deployment Type
+			</th>
+			<th colspan="3">
+				MongoDB Replica Set Nodes Configuration<
+			</th>
+			<th rowspan="2">
+				Description
+			</th>
+		</tr>
+		<tr>
+			<td>
+				Data Center 1
+			</td>
+			<td>
+				Data Center 2
+			</td>
+			<td>
+				Data Center 3
+			</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				1
+			</td>
+			<td></td>
+			<td>
+				Minimum three nodes, which include one primary and two secondary nodes
+			</td>
+			<td>
+				Minimum two secondary nodes
+			</td>
+			<td>
+				Minimum two secondary or arbiter nodes.This is to ensure that should any one data center experience total failure, it is not excluded from quorum voting for new primary node.
+			</td>
+			<td>
+				In selected high traffic or important use cases, additional secondary nodes may be added in each data center. The purpose is to increase application read resilience so that surviving nodes won’t be overwhelmed in case of one or more secondary nodes fail in any data center.
+			</td>
+		</tr>
+		<tr>
+			<td>
+				2
+			</td>
+			<td>
+				Special qualified use case without DR
+			</td>
+			<td>
+				Three (one primary, two secondary nodes)
+			</td>
+			<td></td>
+			<td></td>
+			<td>
+				This deployment pattern is for use cases that do not require remote DR since applications can rebuild the entire dataset from an external data source.Furthermore, the lifespan of data can be relatively short-lived and may expire in a matter of minutes, if not seconds. In selected high traffic or important use cases, additional secondary nodes may be added to the replica set to help increase resilience.
+			</td>
+		</tr>
+	</tbody>
+</table>
 
 The following diagram illustrates the MongoDB "standard minimal
 deployment" pattern.
@@ -781,11 +1010,80 @@ center are sufficient for most Couchbase use cases to start with.
 
 ###### Table 4. Couchbase Standard Minimal DeploymentsTable 4. Couchbase Standard Minimal Deployments
 
-|Data Center 1|Data Center 2|Data Center 3 (Optional)||||
-|--- |--- |--- |--- |--- |--- |
-|1|Standard deployment with built-in DR capability|4+ nodes|4+ nodes|4+ nodes|See description above|
-|2|Special qualified use case without DR|4+ nodes|||Same as MongoDB|
-
+<table>
+	<colgroup>
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<thead>
+		<tr>
+			<th colspan="2">
+				Deployment Type
+			</th>
+			<th colspan="3">
+				Couchbase Replica Set Nodes Configuration
+			</th>
+			<th>
+				Description
+			</th>
+		</tr>
+		<tr>
+			<td>
+				Data Center 1
+			</td>
+			<td>
+				Data Center 2
+			</td>
+			<td>
+				Data Center 3 (Optional)
+			</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				1
+			</td>
+			<td>
+				Standard deployment with built-in DR capability
+			</td>
+			<td>
+				4+ nodes
+			</td>
+			<td>
+				4+ nodes
+			</td>
+			<td>
+				4+ nodes
+			</td>
+			<td>
+				See description above
+			</td>
+		</tr>
+		<tr>
+			<td>
+				2
+			</td>
+			<td>
+				Special qualified use case without DR
+			</td>
+			<td>
+				4+ nodes
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+				Same as MongoDB
+			</td>
+		</tr>
+	</tbody>
+</table>
 
 The following diagram illustrates the Couchbase "standard minimal
 deployment" pattern where each data center/cluster has two copies of the
@@ -820,13 +1118,116 @@ table highlights their differences.
 
 ###### Table 5. Comparison of MongoDB and Couchbase Resilience CapabilitiesTable 5. Comparison of MongoDB and Couchbase Resilience Capabilities
 
-|NoSQL Database|Data center|High Availability|High Consistency|High Durability|DR|
-|--- |--- |--- |--- |--- |--- |
-|* MCA (Multi-Cluster Awareness) and TbCR (Timestamp-based Conflict Resolution) will be available in a future Couchbase v4.x release.||||||
-|MongoDB|Local DC|No for Write <br />Yes for Read|Yes|Yes|No|
-|Multi DC|Yes|||||
-|Couchbase|Local DC|No for Write<br />Yes for Read|Yes|Yes|No|
-|Multi DC|Yes with MCA*|No|Yes with MCA and TbCR*|Yes|||
+<table>
+	<colgroup>
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<thead>
+		<tr>
+			<th>
+				NoSQL Database
+			</th>
+			<th>
+				Data center
+			</th>
+			<th>
+				High Availability
+			</th>
+			<th>
+				High Consistency
+			</th>
+			<th>
+				High Durability
+			</th>
+			<th>
+				DR
+			</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<td colspan="6">
+				* MCA (Multi-Cluster Awareness) and TbCR (
+				<a style="text-decoration: none;" href="https://developer.couchbase.com/documentation/server/4.6/xdcr/xdcr-timestamp-based-conflict-resolution.html" class="external-link" rel="nofollow">Timestamp-based Conflict Resolution</a>) will be available in a future Couchbase v4.x release.
+			</td>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td>
+				MongoDB
+			</td>
+			<td>
+				Local DC
+			</td>
+			<td>
+				No for Write
+				<br />
+				Yes for Read
+			</td>
+			<td>
+				Yes
+			</td>
+			<td>
+				Yes
+			</td>
+			<td>
+				No
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Multi DC
+			</td>
+			<td>
+				Yes
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Couchbase
+			</td>
+			<td>
+				Local DC
+			</td>
+			<td>
+				No for Write
+				<br />Yes for Read
+			</td>
+			<td>
+				Yes
+			</td>
+			<td>
+				Yes
+			</td>
+			<td>
+				No
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Multi DC
+			</td>
+			<td>
+				Yes with MCA*
+			</td>
+			<td>
+				No
+			</td>
+			<td>
+				Yes with MCA and TbCR*
+			</td>
+			<td>
+				Yes
+			</td>
+		</tr>
+	</tbody>
+</table>
 
 
 From the above comparison, we observe one similarity between MongoDB and
@@ -850,39 +1251,39 @@ Let's assume that you have a MongoDB replica set comprised of three
 nodes. The following operations illustrate how data loss can happen:
 
 -   First, the application writes five documents and receives write
-    confirmation from the primary node only.
+	confirmation from the primary node only.
 -   The first three documents are replicated successfully at the second
-    secondary node, and two documents are replicated at the third
-    secondary node.
+	secondary node, and two documents are replicated at the third
+	secondary node.
 
 [<kbd>![Mongo Non-Synchronous Writes A](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.a.8.png)https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.a.8.png) </kbd>
 
 -   The primary node fails before all five documents reach both of the
-    two secondary nodes
+	two secondary nodes
 
 [<kbd>![Mongo Non-Synchronous Writes B](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.b.9.png)(https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.b.9.png) </kbd>
 
 -   Quorum voting re-elects the second secondary node as the new primary
-    node because it receives the third document, that is, more recently
-    than the third secondary node
+	node because it receives the third document, that is, more recently
+	than the third secondary node
 
 [<kbd>![Mongo Non-Synchronous Writes C](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.c.10.png)(https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.c.10.png) </kbd>
 
 -   The original primary node steps down to be a secondary and rolls
-    back its fourth and fifth documents, since they didn't reach other
-    two secondary nodes
+	back its fourth and fifth documents, since they didn't reach other
+	two secondary nodes
 
 [<kbd>![Mongo Non-Synchronous Writes D](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.d.11.png)(https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Mongo-Non-Synchronous-Writes.d.11.png) </kbd>
 
 -   In effect, the application loses the fourth and fifth documents even
-    though it receives confirmation from the original primary node. The
-    issue associated with this type of data loss (non-synchronous write)
-    occurs because that application didn't apply the "quorum write"
-    option to majority nodes in the same replica set.
+	though it receives confirmation from the original primary node. The
+	issue associated with this type of data loss (non-synchronous write)
+	occurs because that application didn't apply the "quorum write"
+	option to majority nodes in the same replica set.
 -   In addition to "quorum write", one should also enable MongoDB's
-    write-ahead logging 
-    [journal](https://docs.mongodb.com/manual/core/journaling/) file
-    to further increase primary node write durability.
+	write-ahead logging 
+	[journal](https://docs.mongodb.com/manual/core/journaling/) file
+	to further increase primary node write durability.
 
 Since non-synchronous write is just one type of issue that can happen to
 applications, it is not sufficient to develop a pattern just to solve
@@ -937,24 +1338,24 @@ capability, this pattern incurs consequent complexity and overhead and
 should be used with caution:
 
 -   An application should start with sharding using an appropriate shard
-    key from the start instead of migrating from a single replica set as
-    afterthought. This is because migrating a single replica set to a
-    sharded cluster is a major undertaking from both development and
-    operations perspectives.
+	key from the start instead of migrating from a single replica set as
+	afterthought. This is because migrating a single replica set to a
+	sharded cluster is a major undertaking from both development and
+	operations perspectives.
 -   We recommend starting with a predefined number of shards capable of
-    handling capacity and traffic in the foreseeable future. This helps
-    eliminate the overhead associated with rebalancing when adding new
-    shards.
+	handling capacity and traffic in the foreseeable future. This helps
+	eliminate the overhead associated with rebalancing when adding new
+	shards.
 -   Note that MongoDB automatic shard balancing may introduce spikes
-    during chunk migration and can potentially impact performance.
+	during chunk migration and can potentially impact performance.
 -   Developers needs to understand behavior and limitation on how 
-    [mongos](https://docs.mongodb.com/manual/core/distributed-queries/),
-    a software router process, on queries that do not include shard key,
-    such as  [scatter gather
-    operations](https://docs.mongodb.com/manual/core/distributed-queries/).
+	[mongos](https://docs.mongodb.com/manual/core/distributed-queries/),
+	a software router process, on queries that do not include shard key,
+	such as  [scatter gather
+	operations](https://docs.mongodb.com/manual/core/distributed-queries/).
 -   Developers should weigh the pros and cons of the overhead associated
-    with running mongos as part of application servers vs. in separate
-    nodes.
+	with running mongos as part of application servers vs. in separate
+	nodes.
 
 The following diagram illustrates this capability.
 
@@ -966,18 +1367,18 @@ Although Couchbase does not support write-ahead logging or quorum write,
 it achieves high durability through following mechanisms:
 
 -   Local cluster durability ---  [ReplicateTo and
-    PersistTo](https://developer.couchbase.com/documentation/server/current/sdk/durability.html) functions
+	PersistTo](https://developer.couchbase.com/documentation/server/current/sdk/durability.html) functions
 -   Multi-cluster durability (to be released in a future v4.x release):
-    -   Multi-Cluster Awareness (MCA) --- Without application logic,
-        this feature allows application developers and DBA to define
-        rules on how applications should behave in the event of complete
-        data center/cluster failover.
-    -   [Timestamp-based Conflict
-        Resolution](https://developer.couchbase.com/documentation/server/4.6/xdcr/xdcr-timestamp-based-conflict-resolution.html) (TbCR) --- Based
-        on a server-synced clock, this feature provides Last-Write-Win
-        (LWW) capability on bidirectional replication update conflict
-        resolution to ensure correct cross-data center/cluster write
-        durability.
+	-   Multi-Cluster Awareness (MCA) --- Without application logic,
+		this feature allows application developers and DBA to define
+		rules on how applications should behave in the event of complete
+		data center/cluster failover.
+	-   [Timestamp-based Conflict
+		Resolution](https://developer.couchbase.com/documentation/server/4.6/xdcr/xdcr-timestamp-based-conflict-resolution.html) (TbCR) --- Based
+		on a server-synced clock, this feature provides Last-Write-Win
+		(LWW) capability on bidirectional replication update conflict
+		resolution to ensure correct cross-data center/cluster write
+		durability.
 
 ### Couchbase local cluster write durability pattern
 
@@ -985,15 +1386,15 @@ For local cluster durability, Couchbase provides the following two
 functions through its client SDK:
 
 -   [ReplicateTo](https://developer.couchbase.com/documentation/server/current/sdk/durability.html) --- This
-    function allows writes on the same document to be successfully
-    replicated in memory for all copies in the local cluster. However,
-    it does not guarantee writes to be persisted on disk, which may
-    result in data loss if both primary and replica nodes fail before
-    that happens.
+	function allows writes on the same document to be successfully
+	replicated in memory for all copies in the local cluster. However,
+	it does not guarantee writes to be persisted on disk, which may
+	result in data loss if both primary and replica nodes fail before
+	that happens.
 -   [PersistTo](https://developer.couchbase.com/documentation/server/current/sdk/durability.html) --- For
-    increased durability, applications can use this function so that
-    writes will not only be successfully replicated in memory but also
-    persisted on disk in the local cluster.
+	increased durability, applications can use this function so that
+	writes will not only be successfully replicated in memory but also
+	persisted on disk in the local cluster.
 
 Note that even with the second PersistTo function, the current Couchbase
 version still does not guarantee writes to be successfully replicated to
@@ -1003,29 +1404,29 @@ pattern](https://tech.ebayinc.com/engineering/practical-nosql-resilience-design-
 The following operations illustrate how both functions work.
 
 1.  Assume that the Couchbase topology contains four nodes per data
-    center/cluster with each storing two copies of the same document
-    replicated through XDCR between clusters.
-    <kbd>![Couchbase Local Cluster Write Durability Pattern A](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.1.15.png) </kbd>
+	center/cluster with each storing two copies of the same document
+	replicated through XDCR between clusters.
+	<kbd>![Couchbase Local Cluster Write Durability Pattern A](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.1.15.png) </kbd>
 2.  The application in Data Center 1 writes documentP1 to nodeN1.
-    <kbd>![Couchbase Local Cluster Write Durability Pattern B](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.2.16.png) </kbd>
+	<kbd>![Couchbase Local Cluster Write Durability Pattern B](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.2.16.png) </kbd>
 3.  BeforeP1 is replicated to the replica node in the local cluster or
-    to the remote data center/cluster, nodeN1 fails, and as a result the
-    application suffers data loss.
-    <kbd>![Couchbase Local Cluster Write Durability Pattern C](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.3.17.png) </kbd>
+	to the remote data center/cluster, nodeN1 fails, and as a result the
+	application suffers data loss.
+	<kbd>![Couchbase Local Cluster Write Durability Pattern C](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.3.17.png) </kbd>
 4.  BeforeP1 reaches the remote data center/cluster, even thoughP1 has
-    been replicated successfully in memory to the local cluster replica
-    nodeN4, if bothN1 andN4 nodes fail, the application still suffers
-    data loss.
-    <kbd>![Couchbase Local Cluster Write Durability Pattern D](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.4.18.png) </kbd>
+	been replicated successfully in memory to the local cluster replica
+	nodeN4, if bothN1 andN4 nodes fail, the application still suffers
+	data loss.
+	<kbd>![Couchbase Local Cluster Write Durability Pattern D](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.4.18.png) </kbd>
 5.  Using the ReplicateTo function can circumvent the failure described
-    in  [step 3](https://tech.ebayinc.com/engineering/practical-nosql-resilience-design-pattern-for-the-enterprise/#step3)
-    , and using the PersistTo function can circumvent the failure
-    described in  [step 4](https://tech.ebayinc.com/engineering/practical-nosql-resilience-design-pattern-for-the-enterprise/#step4)
-    , as shown in the following figure.
-    <kbd>![Couchbase Local Cluster Write Durability Pattern E](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.5.19.png) </kbd>
+	in  [step 3](https://tech.ebayinc.com/engineering/practical-nosql-resilience-design-pattern-for-the-enterprise/#step3)
+	, and using the PersistTo function can circumvent the failure
+	described in  [step 4](https://tech.ebayinc.com/engineering/practical-nosql-resilience-design-pattern-for-the-enterprise/#step4)
+	, as shown in the following figure.
+	<kbd>![Couchbase Local Cluster Write Durability Pattern E](https://tech.ebayinc.com/assets/Uploads/Blog/2017/01/Couchbase-Local-Cluster-Write-Durability-Pattern.5.19.png) </kbd>
 6.  Lastly, for multi-data center/cluster durability, use the design
-    pattern described in " [Couchbase multi-cluster write durability
-    pattern](https://tech.ebayinc.com/Cbmcwdpattern).
+	pattern described in " [Couchbase multi-cluster write durability
+	pattern](https://tech.ebayinc.com/Cbmcwdpattern).
 
 ### Couchbase multi-cluster write durability pattern
 
@@ -1075,11 +1476,11 @@ database cluster to a small and manageable size through the following
 mechanisms:
 
 -   Applications shard their data using modular, hash, round robin, or
-    any other suitable algorithm.
+	any other suitable algorithm.
 -   The DBA and Operations provide a standard-size NoSQL cluster to host
-    each application-level shard.
+	each application-level shard.
 -   If needed, each application-level shard can further use built-in
-    NoSQL vendor product sharding if it is available.
+	NoSQL vendor product sharding if it is available.
 
 Using MongoDB as an example, the following diagram illustrates this
 design pattern. One caveat associated with this pattern is that it
@@ -1099,14 +1500,14 @@ we would like to suggest the following future work and direction on this
 topic:
 
 -   Provide end-to-end integration of proven NoSQL design patterns with
-    application frameworks and also cloud provisioning and management
-    infrastructure.
+	application frameworks and also cloud provisioning and management
+	infrastructure.
 -   Formalize the above NoSQL design patterns as officially supported
-    products rather than just engineering patterns.
+	products rather than just engineering patterns.
 -   Add other types of resilience patterns, such as high consistency.
 -   Add support for other NoSQL databases, for example, Cassandra.
 -   Collaborate with NoSQL vendors and develop new resilience patterns
-    for new features and capabilities.
+	for new features and capabilities.
 
 References
 

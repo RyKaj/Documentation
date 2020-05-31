@@ -28,47 +28,96 @@ with more than 500 to 1,000 technical practitioners---there can be
 multiple SAFe portfolios, typically one for each line of business, or as
 otherwise structured around the business organization and funding model.
 
-|Roles/Teams|Events|Artifacts|
-|--- |--- |--- |
-|* Enterprise Architect|* Strategic Investment Planning|* Strategic Themes|
-|* Program Portfolio Mgmt|* Kanban Portfolio(Epic) Planning|* Enterprise|
-|* Epic Owners||* Portfolio Backlog|
-|||* Portfolio Kanban|
-|||* Non-Functional Requirements|
-|||* Epic and Enabler|
-|||* Value Stream|
-|||* Budgets(CapEx and OpEx)|
+<table>
+	<colgroup>
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<tbody>
+		<tr>
+			<th>
+				<strong>Roles/Teams</strong>
+			</th>
+			<th>
+				<strong>Events</strong>
+			</th>
+			<th>
+				<strong>Artifacts</strong>
+			</th>
+		</tr>
+		<tr>
+			<td>* Enterprise Architect</td>
+			<td>* Strategic Investment Planning</td>
+			<td>* Strategic Themes</td>
+		</tr>
+		<tr>
+			<td>* Program Portfolio Mgmt</td>
+			<td>* Kanban Portfolio(Epic) Planning</td>
+			<td>* Enterprise</td>
+		</tr>
+		<tr>
+			<td>* Epic Owners</td>
+			<td></td>
+			<td>* Portfolio Backlog</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>* Portfolio Kanban</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>* Non-Functional Requirements</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>* Epic and Enabler</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>* Value Stream</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>* Budgets(CapEx and OpEx)</td>
+		</tr>
+	</tbody>
+</table>
 
 
 
--   Highest level of interest/ concern /involvement/ in SAFe is  **SAFe
-    Portfolio**
+-   Highest level of interest/ concern /involvement/ in SAFe is **SAFe Portfolio**
 -   The portfolio provides the basic blocks for organizing the
-    Lean-Agile Enterprise flow of value via one or more Value Streams.
+	Lean-Agile Enterprise flow of value via one or more Value Streams.
 -   The portfolio helps to develop systems and solutions which are
-    described in strategic themes (links a SAFe portfolio to the
-    changing business strategy of an enterprise).
+	described in strategic themes (links a SAFe portfolio to the
+	changing business strategy of an enterprise).
 -   To meet strategic objectives, portfolio level encapsulates these
-    elements. It provides basic budgeting and other governance
-    mechanisms. This way it assures that the investment in the value
-    streams provides the returns necessary for the enterprise.
+	elements. It provides basic budgeting and other governance
+	mechanisms. This way it assures that the investment in the value
+	streams provides the returns necessary for the enterprise.
 -   A portfolio is connected to business bi-directionally:
-    -   In order to guide the Portfolio to the larger changing business
-        objectives, it provides strategic themes.
-    -   Another direction indicates the constant flow of portfolio
-        values.
+	-   In order to guide the Portfolio to the larger changing business
+		objectives, it provides strategic themes.
+	-   Another direction indicates the constant flow of portfolio
+		values.
 -   Program Portfolio Management acts as stakeholders, and they are
-    accountable to deliver the business results.
+	accountable to deliver the business results.
 -   SAFe Portfolio Level contains people, processes and necessary build
-    systems and solutions that an enterprise needs to meet its strategic
-    objectives.
+	systems and solutions that an enterprise needs to meet its strategic
+	objectives.
 -   Value Streams are the primary objectives in Portfolio, with which
-    funding for the people and other resources required to build the
-    Solutions.
+	funding for the people and other resources required to build the
+	Solutions.
 -   Important key concepts used here are:
-    -   Connection to the Enterprise,
-    -   Program Portfolio Management,
-    -   Managing the Flow of Portfolio Epics.
+	-   Connection to the Enterprise,
+	-   Program Portfolio Management,
+	-   Managing the Flow of Portfolio Epics.
 
 Working with Portfolio Backlog
 ------------------------------
@@ -108,7 +157,7 @@ to the Initiative next. It can:
 
 -   be returned to Funnel for revision,
 -   be abolished without a chance for further life (in this case I use a
-    special  **Out-of-Date** status hidden on the Kanban Board),
+	special  **Out-of-Date** status hidden on the Kanban Board),
 -   be approved and moved to the next stage ---  **Analyzing.**
 
 At this stage we --- Yippee!!! --- can finally engage IT guys: analysts,
@@ -179,20 +228,20 @@ Initiatives in detail and thoroughly prepare for the Review.
 -   The Reviews have become more meticulous in a good way.
 -   Teams have more time for Pre-discovery.
 -   I do not lose old Initiatives --- I can always go back to the
-    Parked, not delivered or forgotten Initiatives and work on them
-    further.
+	Parked, not delivered or forgotten Initiatives and work on them
+	further.
 
 ### Tools used at this stage: {#SAFePortfolioLevel-Toolsusedatthisstage:}
 
 -   Atlassian Jira Software Server
 -   Plugin Colors for Jira --- for highlighting Business and
-    Architectural Initiatives
+	Architectural Initiatives
 -   The ' *Structure --- Project Management at Scale*' plugin --- to
-    visualize the structure made of Initiatives and features belonging
-    to them, and their WSJF prioritization
+	visualize the structure made of Initiatives and features belonging
+	to them, and their WSJF prioritization
 -   Atlassian Confluence --- source of internal documentation
 -   Lucidchart and its plugins for Jira and Confluence --- for diagrams
-    drawing
+	drawing
 
 Preparation for PI Planning
 ---------------------------
@@ -291,7 +340,7 @@ bar to celebrate).
 
 -   Atlassian Jira Software Server
 -   The 'Structure --- Project Management at Scale' plugin -- to monitor
-    the Discovery process and during the execution of the commitment.
+	the Discovery process and during the execution of the commitment.
 
 Cloning issues into the working JIRA ecosystem of the Company
 -------------------------------------------------------------
@@ -323,21 +372,21 @@ and consists of final stories, which I then use for monitoring:
 In general, the advantages of this approach are the following:
 
 -   It is easier for an IT guy to type new features and stories rather
-    than to write them down with a highlighter on a sticky note.
+	than to write them down with a highlighter on a sticky note.
 -   Many things, such as capacity remains and WSJF update depending on
-    the stories estimations, are calculated automatically using custom
-    formulas.
+	the stories estimations, are calculated automatically using custom
+	formulas.
 -   Thanks to cloning, the original Commitment is preserved for history
-    and we can always return to it.
+	and we can always return to it.
 -   It saves us both time and energy at the stage of planning
-    preparation --- paper handling takes energy.
+	preparation --- paper handling takes energy.
 -   Of course, it's great that we no longer need to add issues to JIRA
-    by typing in sticky notes.
+	by typing in sticky notes.
 
 ### Tools used at this stage: 
 
 -   Atlassian Jira Software Server
 -   The '*Bulk Clone Professional for Jira*' Plugin-- for cloning
-    features and stories into working JIRA projects.
+	features and stories into working JIRA projects.
 -   The '*Structure --- Project Management at Scale*' plugin -- for the
-    creation of the final Commitment structure.
+	creation of the final Commitment structure.

@@ -16,7 +16,7 @@ Agile Values Puzzle
 2.  ### Objective 
 
 -   [Agile Value Cards](https://docs.google.com/document/d/1j__hNNxdkz4CON9Bgq5JqlkV17W9zyj3PrMQck_KorE/edit)
-    [<kbd>![](rest/documentConversion/latest/conversion/thumbnail/451826976/1)](/download/attachments/451826901/Agile%20Value%20cards.pdf?version=1&modificationDate=1568912013793&api=v2)
+	[<kbd>![](rest/documentConversion/latest/conversion/thumbnail/451826976/1)](/download/attachments/451826901/Agile%20Value%20cards.pdf?version=1&modificationDate=1568912013793&api=v2)
 -   [Twelve Agile Principles Cards](https://docs.google.com/document/d/16OGdiy8QwFveSdzJyhF8CrFr9gdiHU3Lze613909oXo/edit) 
 -   I like to print them in A4 colored pages so one can put them in a board and they are visible and readable by all attendees.
 -   To let participants learn and discover about agile values and principles in fully interactive and participative mode, without presentations, minimal facilitation, full debate and fun.
@@ -42,27 +42,27 @@ incorrect.
 
 1.  **No Manifesto** **yet**: Do not mention anything about the agile manifesto, values or principles.
 2.  **Groups**: Tell the attendees to split into 2 to 4 groups of about
-    2 to 6 persons. Do not say how, just let them auto organize.
+	2 to 6 persons. Do not say how, just let them auto organize.
 3.  **Agile Values**:
-    1.  Provide a set of the  [**Agile value cards**](https://docs.google.com/document/d/1j__hNNxdkz4CON9Bgq5JqlkV17W9zyj3PrMQck_KorE/) to each group
-    2.  Directions:
-        1.  Four pairs of concepts: Tell the participants to organize the cards into 4 pairs, where each pair should be two concepts that are contradictory on their own but complementary at the same time when they are together.
-        2.  More value: For each pair of concepts, tell the participants to select the concept that they think is more important in a scenario where you could only pick one and just one. Put the most valuable concept on the left.
-        3.  If at any steps a group is confused, do not give answers, tell them to consult to another group. Clarify the directions of the exercise if needed.
-    3.  Values Wall: Tell to each group to
-        1.  Pick one pair and stand up and show the cards to the other groups. They must pick a pair that no other group has picked.
-        2.  Explain to the other groups their selection and decision.
-        3.  If other groups do not agree or the selection is not aligned to the agile manifesto, facilitate discussion until they agree.
-        4.  If the other groups agree with their selection, they can put the cards on a wall with tape. The concept with most value should be on the left.
-        5.  Repeat until 4 different unique pairs of concepts are in the wall totally aligned with the  [agile manifesto values](http://agilemanifesto.org/) page <http://agilemanifesto.org/> . It should look like this: <kbd>![No alt text provided for this  image](https://media.licdn.com/dms/image/C5112AQG9bgjmBm0AWQ/article-inline_image-shrink_1500_2232/0?e=1574294400&v=beta&t=xwvdtLsDeqiYkoBS1zBUNMfUA3KkgSWsLC6m5J7RUzA)
+	1.  Provide a set of the  [**Agile value cards**](https://docs.google.com/document/d/1j__hNNxdkz4CON9Bgq5JqlkV17W9zyj3PrMQck_KorE/) to each group
+	2.  Directions:
+		1.  Four pairs of concepts: Tell the participants to organize the cards into 4 pairs, where each pair should be two concepts that are contradictory on their own but complementary at the same time when they are together.
+		2.  More value: For each pair of concepts, tell the participants to select the concept that they think is more important in a scenario where you could only pick one and just one. Put the most valuable concept on the left.
+		3.  If at any steps a group is confused, do not give answers, tell them to consult to another group. Clarify the directions of the exercise if needed.
+	3.  Values Wall: Tell to each group to
+		1.  Pick one pair and stand up and show the cards to the other groups. They must pick a pair that no other group has picked.
+		2.  Explain to the other groups their selection and decision.
+		3.  If other groups do not agree or the selection is not aligned to the agile manifesto, facilitate discussion until they agree.
+		4.  If the other groups agree with their selection, they can put the cards on a wall with tape. The concept with most value should be on the left.
+		5.  Repeat until 4 different unique pairs of concepts are in the wall totally aligned with the  [agile manifesto values](http://agilemanifesto.org/) page <http://agilemanifesto.org/> . It should look like this: <kbd>![No alt text provided for this  image](https://media.licdn.com/dms/image/C5112AQG9bgjmBm0AWQ/article-inline_image-shrink_1500_2232/0?e=1574294400&v=beta&t=xwvdtLsDeqiYkoBS1zBUNMfUA3KkgSWsLC6m5J7RUzA)
 4.  **Agile Manifesto**: Explain that what they have built intuitively is the Agile Manifesto and these are the four values "That is, while there is value in the items on the right, we value the items on the left more." who are the signers, history and whatever else you want.
-    1.  Dot voting -- Most important / most difficult: You can also ask for dot voting on which value is the most important value and which one is the most difficult and discuss why.
+	1.  Dot voting -- Most important / most difficult: You can also ask for dot voting on which value is the most important value and which one is the most difficult and discuss why.
 5.  **Agile Principles**: Provide about 6 to 12  [**agile principle cards**](https://docs.google.com/document/d/16OGdiy8QwFveSdzJyhF8CrFr9gdiHU3Lze613909oXo/edit) to each group and tell them that they are the twelve principles of the agile manifesto.
-    1.  Principles mapping to values: Tell each group to
-    2.  Discuss all the principles for 4 minutes and decide to which of the values each of them match better.
-    3.  Stand up with one principle, read it to all groups, say to which value they map it and put it in the row aligned to that value (this is totally subjective, there is no official mapping of principles to any value, it is just a memory and discussion game).
-    4.  Ask to other groups if they would like to add anything.
-    5.  Repeat until all the 12 principles are in the wall with the values. It should look something like this:
+	1.  Principles mapping to values: Tell each group to
+	2.  Discuss all the principles for 4 minutes and decide to which of the values each of them match better.
+	3.  Stand up with one principle, read it to all groups, say to which value they map it and put it in the row aligned to that value (this is totally subjective, there is no official mapping of principles to any value, it is just a memory and discussion game).
+	4.  Ask to other groups if they would like to add anything.
+	5.  Repeat until all the 12 principles are in the wall with the values. It should look something like this:
 
 
 
@@ -80,22 +80,22 @@ Ball Point
 
 -   A great game for introducing Scrum to new agile teams.
 -   The point of this game is to pass as many balls as possible through
-    every team member in 2 minutes. The team gets a point for each ball
-    passed through every member of the team provided that the first
-    person to touch that ball is also the last. There are 5 iterations.
-    Before each iteration the team estimates how many they think they
-    will pass. At the end of each iteration the actual number passed is
-    recorded.
+	every team member in 2 minutes. The team gets a point for each ball
+	passed through every member of the team provided that the first
+	person to touch that ball is also the last. There are 5 iterations.
+	Before each iteration the team estimates how many they think they
+	will pass. At the end of each iteration the actual number passed is
+	recorded.
 
 ### Instructions
 
 1.  Provide an overview of the game and the rules.
-    1.  Everyone is part of one big team.
-    2.  Each ball must have air-time.
-    3.  Each ball must be touched at least once by every team member.
-    4.  Balls cannot be passed to your direct neighbour to your immediate left or right.
-    5.  Each ball must return to the same person who introduced it into the system.
-    6.  There are a total of five iterations.
+	1.  Everyone is part of one big team.
+	2.  Each ball must have air-time.
+	3.  Each ball must be touched at least once by every team member.
+	4.  Balls cannot be passed to your direct neighbour to your immediate left or right.
+	5.  Each ball must return to the same person who introduced it into the system.
+	6.  There are a total of five iterations.
 2.  Allow the team two minutes of preparation time to determine how they will organize themselves.
 3.  Get an estimate from the team of how many balls they can pass through the system.
 4.  Run a two-minute iteration.
@@ -134,20 +134,90 @@ Their test:
 
 (A, B, and Y are inputs; b0, b1, b2, and b12 are outputs, produced by a process of matrix algebra.)
 
-|A|B|Y|b0|b1|b2|b12|
-|--- |--- |--- |--- |--- |--- |--- |
-|10|75|8|11.0|5.0|8.0|12.0|
-|20|75|12|||||
-|10|100|10|||||
-|20|100|15||||||
+<table>
+	<colgroup>
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<tbody>
+		<tr>
+			<th>A</th>
+			<th>B</th>
+			<th>Y</th>
+			<th>b0</th>
+			<th>b1</th>
+			<th>b2</th>
+			<th>b12</th>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>75</td>
+			<td>8</td>
+			<td rowspan="4">11.0</td>
+			<td rowspan="4">5.0</td>
+			<td rowspan="4">8.0</td>
+			<td rowspan="4">12.0</td>
+		</tr>
+		<tr>
+			<td>20</td>
+			<td>75</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>100</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>20</td>
+			<td>100</td>
+			<td>15</td>
+		</tr>
+	</tbody>
+</table>
 
 
 This is a textual representation of the graph
 
-|b0|b1|b2|b12|B-1|B-2|B+1|B+2|
-|--- |--- |--- |--- |--- |--- |--- |--- |
-|0|5|8|12|(1,1,RGB)|(10,10,RGB)|(10,1,RGB)|(1,10,RGB)|
-
+<table>
+	<colgroup>
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<tbody>
+		<tr>
+			<th>b0</th>
+			<th>b1</th>
+			<th>b2</th>
+			<th>b12</th>
+			<th>B-1</th>
+			<th>B-2</th>
+			<th>B+1</th>
+			<th>B+2</th>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>5</td>
+			<td>8</td>
+			<td>12</td>
+			<td>(1,1,RGB)</td>
+			<td>(10,10,RGB)</td>
+			<td>(10,1,RGB)</td>
+			<td>(1,10,RGB)</td>
+		</tr>
+	</tbody>
+</table>
 
 
 Their expected graph (described here, though the team drew a picture):
@@ -178,7 +248,7 @@ Execution:
 
 1.  User assigns TU35 to NICA at Monday 11-12:30
 2.  System displays a warning, \"Room size mismatch... Continue or
-    cancel?\"
+	cancel?\"
 3.  User selects \"Continue\"
 
 Expected Results:
@@ -195,30 +265,104 @@ conspiracies. (Tool helps build a network of connections between
 people).
 
 Their test:
-||||
-|--- |--- |--- |
-|Select template criminal|||
-|Create node|||
-|Create node|||
-|Select|link template|?|
-|Create link|||
-|Check|count links|1|
-|Delete node|1||
-|Check|count links|0|
-|Create node|policeman||
-|Set|first name|Tom|
-|Set|last name|Nassau|
-|Create criminal|||
-|Set|last name|Soze|
-|Select link template|arrest||
-|Create link|Nassau to Soze||
-|Check|link exists||
-|Select template|policeman||
-|Create node|||
-|Add role|||
-|Select node|1||
-|Check|has role|policeman|
-|Check|has role|drug dealer|
+<table>
+	<colgroup>
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<tbody>
+		<tr>
+			<td colspan="3">Select template criminal</td>
+		</tr>
+		<tr>
+			<td colspan="3">Create node</td>
+		</tr>
+		<tr>
+			<td colspan="3">Create node</td>
+		</tr>
+		<tr>
+			<td>Select</td>
+			<td>link template</td>
+			<td>?</td>
+		</tr>
+		<tr>
+			<td colspan="3">Create link</td>
+		</tr>
+		<tr>
+			<td>Check</td>
+			<td>count links</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>Delete node</td>
+			<td colspan="2">1</td>
+		</tr>
+		<tr>
+			<td>Check</td>
+			<td>count links</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>Create node</td>
+			<td colspan="2">policeman</td>
+		</tr>
+		<tr>
+			<td>Set</td>
+			<td>first name</td>
+			<td>Tom</td>
+		</tr>
+		<tr>
+			<td>Set</td>
+			<td>last name</td>
+			<td>Nassau</td>
+		</tr>
+		<tr>
+			<td colspan="3">Create criminal</td>
+		</tr>
+		<tr>
+			<td>Set</td>
+			<td>last name</td>
+			<td>Soze</td>
+		</tr>
+		<tr>
+			<td>Select link template</td>
+			<td colspan="2">arrest</td>
+		</tr>
+		<tr>
+			<td>Create link</td>
+			<td colspan="2">Nassau to Soze</td>
+		</tr>
+		<tr>
+			<td>Check</td>
+			<td colspan="2">link exists</td>
+		</tr>
+		<tr>
+			<td>Select template</td>
+			<td colspan="2">policeman</td>
+		</tr>
+		<tr>
+			<td colspan="3">Create node</td>
+		</tr>
+		<tr>
+			<td>Add role</td>
+		</tr>
+		<tr>
+			<td>Select node</td>
+			<td colspan="2">1</td>
+		</tr>
+		<tr>
+			<td>Check</td>
+			<td>has role</td>
+			<td>policeman</td>
+		</tr>
+		<tr>
+			<td>Check</td>
+			<td>has role</td>
+			<td>drug dealer</td>
+		</tr>
+	</tbody>
+</table>
 
 
 1.  #### Group 4 
@@ -228,41 +372,131 @@ Domain -- an expense approval manager
 A GUI mockup:
 
 Manager approval:
-    Purpose:
+	Purpose:
 
-|Type|Date|Description|Amount|Needs Receipt|
-|--- |--- |--- |--- |--- |
-|||American Airlines SEA to MSP|$600.00||
-|||||X|
+<table>
+	<tbody>
+		<tr>
+			<th>Type</th>
+			<th>Date</th>
+			<th>Description</th>
+			<th>Amount</th>
+			<th>Needs Receipt</th>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>American Airlines SEA to MSP</td>
+			<td>$600.00</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>
+				<p align="center">X</p>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
 
-
-                                                          
+														  
 Issues: editing, are you sure?, manager approval, expense group
 
 Test:
 
-|Type|Date|Vendor v|Description|Amount|
-|--- |--- |--- |--- |--- |
-|Air tix|7/16/06|AA|ORD to MSP|763.42|
-
+<table>
+	<tbody>
+		<tr>
+			<th>Type</th>
+			<th>Date</th>
+			<th>Vendor v</th>
+			<th>Description</th>
+			<th>Amount</th>
+		</tr>
+		<tr>
+			<td>Air tix</td>
+			<td>7/16/06</td>
+			<td>AA</td>
+			<td>ORD to MSP</td>
+			<td>763.42</td>
+		</tr>
+	</tbody>
+</table>
 
 
 Purpose: Trip to agile conference\
-    Manager approval:    Pointy-haired boss
+	Manager approval:    Pointy-haired boss
 
 An analysis of states:
 
 New -- Open, can't pay, can't approve, can't close
 Submitted -- Open, can't pay, can approve, can't close
 
-||Is Open|Can Pay|Can Approve|Can Close|
-|--- |--- |--- |--- |--- |
-|New|||||
-|Submitted|||||
-|Approved|||||
-|Paid|||||
-|Closed||||||
-                                     
+<table>
+	<colgroup>
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<tbody>
+		<tr>
+			<th></th>
+			<th>Is Open</th>
+			<th>Can Pay</th>
+			<th>Can Approve</th>
+			<th>Can Close</th>
+		</tr>
+		<tr>
+			<td>New</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Submitted</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Approved</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Paid</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Closed</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+
+									 
 
 
 1.  #### Group 5 {#Agile-Games-Group5}
@@ -271,18 +505,59 @@ A stock trading program
 
 A screen mockup with annotations:
 
- ||||
-|--- |--- |--- |
-|Start Time|[   ] v : [   ] v|9:30-16:00 ET (market start to market end)|
-|End time|[   ] v : [   ] v||
-|Stock Symbol|[    ]|1-4 alpha|
-|# Shares|[    ]|1|
-|Order Size|[    ]|100->1 million (int) (+- 100)|
-||[Buy/Sell]||
-|Price|$ [    ]|(optional) numeric + 2 decimal optional|
-||||
-||[OK]    [Cancel]|||
-
+<table>
+	<colgroup>
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<tbody>
+		<tr>
+			<td>Start Time</td>
+			<td>[   ] v : [   ] v</td>
+			<td>9:30-16:00 ET (market start to market end)</td>
+		</tr>
+		<tr>
+			<td>End time</td>
+			<td>[   ] v : [   ] v</td>
+		</tr>
+		<tr>
+			<td>Stock Symbol</td>
+			<td>[    ]</td>
+			<td>1-4 alpha</td>
+		</tr>
+		<tr>
+			<td># Shares</td>
+			<td>[    ]</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>Order Size</td>
+			<td>[    ]</td>
+			<td>100-&gt;1 million (int) (+- 100)</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>[Buy/Sell]</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Price</td>
+			<td>$ [    ]</td>
+			<td>(optional) numeric + 2 decimal optional</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>[OK]    [Cancel]</td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
 
 Test of algorithm:
 
@@ -307,30 +582,79 @@ Test for story \"Insurer adds provider\":
 Test 1 -- Sunny day
 
 Add table:
-
-||||
-|--- |--- |--- |
-|Johnson, David|name|15ch, 15ch|
-|1200 Nicolette Dr|addr1|40ch|
-|12345|addr2|5d or 5d-4d|
-|123456789|taxid|9 ch num|
-|ALLINA|network id|must exist in db|
-
-
+<table>
+	<colgroup>
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<tbody>
+		<tr>
+			<td>Johnson, David</td>
+			<td>name</td>
+			<td>15ch, 15ch</td>
+		</tr>
+		<tr>
+			<td>1200 Nicolette Dr</td>
+			<td>addr1</td>
+			<td>40ch</td>
+		</tr>
+		<tr>
+			<td>12345</td>
+			<td>addr2</td>
+			<td>5d or 5d-4d</td>
+		</tr>
+		<tr>
+			<td>123456789</td>
+			<td>taxid</td>
+			<td>9 ch num</td>
+		</tr>
+		<tr>
+			<td>ALLINA</td>
+			<td>network id</td>
+			<td>must exist in db</td>
+		</tr>
+	</tbody>
+</table>
 
 Read: (same)
 
 Test 2- Invalid zip code (and more like this...)
 
-||||
-|--- |--- |--- |
-|Johnson, David|name|15ch, 15ch|
-|1200 Nicolette Dr|addr1|40ch|
-|12345|addr2|5d or 5d-4d|
-|123456789|taxid|9 ch num|
-|ALLINA|network id|must exist in db|
-
-
+<table>
+	<colgroup>
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<tbody>
+		<tr>
+			<td>Johnson, David</td>
+			<td>name</td>
+			<td>15ch, 15ch</td>
+		</tr>
+		<tr>
+			<td>1200 Nicolette Dr</td>
+			<td>addr1</td>
+			<td>40ch</td>
+		</tr>
+		<tr>
+			<td>1234</td>
+			<td>addr2</td>
+			<td>5d or 5d-4d</td>
+		</tr>
+		<tr>
+			<td>123456789</td>
+			<td>taxid</td>
+			<td>9 ch num</td>
+		</tr>
+		<tr>
+			<td>ALLINA</td>
+			<td>network id</td>
+			<td>must exist in db</td>
+		</tr>
+	</tbody>
+</table>
 
 Expected error: \"Invalid zip could should be 5 digits\"
 
@@ -341,14 +665,38 @@ Test 1 -- Sunny day
 
 Populate database -- set up claim 1
 
-|||
-|--- |--- |
-|Date of claim|30 days ago|
-|Member name|Doe, Jane|
-|Provider name|Johnson, David|
-|Diagnosis|769|
-|Charge|$500.00|
-|Network id|ALLINA|
+<table>
+	<colgroup>
+		<col />
+		<col />
+	</colgroup>
+	<tbody>
+		<tr>
+			<td>Date of claim</td>
+			<td>30 days ago</td>
+		</tr>
+		<tr>
+			<td>Member name</td>
+			<td>Doe, Jane</td>
+		</tr>
+		<tr>
+			<td>Provider name</td>
+			<td>Johnson, David</td>
+		</tr>
+		<tr>
+			<td>Diagnosis</td>
+			<td>769</td>
+		</tr>
+		<tr>
+			<td>Charge</td>
+			<td>$500.00</td>
+		</tr>
+		<tr>
+			<td>Network id</td>
+			<td>ALLINA</td>
+		</tr>
+	</tbody>
+</table>
 
 
 
@@ -357,8 +705,8 @@ Step 1. Analyst views pending claims \< 60 days (display claim A =\> OK)
 Step 2. Analyst approves pending...
 
 Signal \"ok\" = submit\
-    Claim disappears from list\
-    Message \"approved\"
+	Claim disappears from list\
+	Message \"approved\"
 
 Step 3. Read claim, status \"approved\"
 
@@ -369,45 +717,148 @@ Domain: Shipping company.
 Test: 1. Customer ABC call to know where shipment with order \#33 is.
 The system should answer, \"Last stop was Tampa, FL.\"
 
-|Note|Order # from Customer|Request|Answer from System|
-|--- |--- |--- |--- |
-|Truck left origin|#33|last stop?|Tampa, FL|
-|Not in truck|#34|last stop?|nothing|
-|Truck at destination|#35|last stop?|Daytona, FL|
-|Truck at destination|#35|arrived?|yes|
-|Not in truck|#34|arrived?|no|
-|Not arrived|#34|expected date?|26/7|
-|Arrived|#35|expected date?|25/7|
-|Truck underway|#33|arrived?|no|
+<table>
+	<colgroup>
+		<col />
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<tbody>
+		<tr>
+			<th>Note</th>
+			<th>Order # from Customer</th>
+			<th>Request</th>
+			<th>Answer from System</th>
+		</tr>
+		<tr>
+			<td>Truck left origin</td>
+			<td>#33</td>
+			<td>last stop?</td>
+			<td>Tampa, FL</td>
+		</tr>
+		<tr>
+			<td>Not in truck</td>
+			<td>#34</td>
+			<td>last stop?</td>
+			<td>nothing</td>
+		</tr>
+		<tr>
+			<td>Truck at destination</td>
+			<td>#35</td>
+			<td>last stop?</td>
+			<td>Daytona, FL</td>
+		</tr>
+		<tr>
+			<td>Truck at destination</td>
+			<td>#35</td>
+			<td>arrived?</td>
+			<td>yes</td>
+		</tr>
+		<tr>
+			<td>Not in truck</td>
+			<td>#34</td>
+			<td>arrived?</td>
+			<td>no</td>
+		</tr>
+		<tr>
+			<td>Not arrived</td>
+			<td>#34</td>
+			<td>expected date?</td>
+			<td>26/7</td>
+		</tr>
+		<tr>
+			<td>Arrived</td>
+			<td>#35</td>
+			<td>expected date?</td>
+			<td>25/7</td>
+		</tr>
+		<tr>
+			<td>Truck underway</td>
+			<td>#33</td>
+			<td>arrived?</td>
+			<td>no</td>
+		</tr>
+	</tbody>
+</table>
 
 
 
 Example context:
-|#|Pick up origin|Final drop destination|Expected Date|
-|--- |--- |--- |--- |
-|#33|Tampa, FL|Toronto, ONT|27/7|
-|time 24/7 8 AM||||
-|#34|Vancouver, BC|Toronto, ONT|26/7|
-|time||||
-|#35|Toronto, ONT|Daytona, FL|25/7|
-|time 24/7 17:00|time 25/7 10:00||||
+<table>
+	<tbody>
+		<tr>
+			<th>#</th>
+			<th>Pick up origin</th>
+			<th>Final drop destination</th>
+			<th>Expected Date</th>
+		</tr>
+		<tr>
+			<td>#33</td>
+			<td>Tampa, FL</td>
+			<td>Toronto, ONT</td>
+			<td>27/7</td>
+		</tr>
+		<tr>
+			<td>time 24/7 8 AM</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>#34</td>
+			<td>Vancouver, BC</td>
+			<td>Toronto, ONT</td>
+			<td>26/7</td>
+		</tr>
+		<tr>
+			<td>time</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>#35</td>
+			<td>Toronto, ONT</td>
+			<td>Daytona, FL</td>
+			<td>25/7</td>
+		</tr>
+		<tr>
+			<td>time 24/7 17:00</td>
+			<td>time 25/7 10:00</td>
+		</tr>
+	</tbody>
+</table>
 
 
 Test 2: I want the system to help me minimize empty truck displacement.
 For example, I want to be able to ask if there is an empty truck in
 Ontario on July 27. Arrival within 2 days.
 
-||||
-|--- |--- |--- |
-|Empty truck in?|Shipment order||
-|Ontario/27/07|#33, #34|truck at city|
-|Ontario/25/07||no truck because wrong date|
-|Montreal/QC||no truck because wrong location|
-
+<table>
+	<tbody>
+		<tr>
+			<td>Empty truck in?</td>
+			<td>Shipment order</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Ontario/27/07</td>
+			<td>#33, #34</td>
+			<td>truck at city</td>
+		</tr>
+		<tr>
+			<td>Ontario/25/07</td>
+			<td></td>
+			<td>no truck because wrong date</td>
+		</tr>
+		<tr>
+			<td>Montreal/QC</td>
+			<td></td>
+			<td>no truck because wrong location</td>
+		</tr>
+	</tbody>
+</table>
 
 
 1.  Conclusion 
-    ----------
+	----------
 
 We noticed these things from the experience of writing tests:
 
@@ -499,12 +950,12 @@ What are the goals of the game from a training perspective? We want
 participants to:
 
 1.  Experience how a Kanban system emerges from an existing process, as
-    it does in the real world
+	it does in the real world
 2.  Experience a whole Kanban system, as opposed to focusing only on the
-    Kanban board and related mechanics
+	Kanban board and related mechanics
 3.  Understand that boards are context-dependent: for any given process
-    there are many different board designs that are adequate and useful,
-    but the perfect board doesn\'t necessarily exist
+	there are many different board designs that are adequate and useful,
+	but the perfect board doesn\'t necessarily exist
 4.  Understand the effects of limiting your Work in Progress
 5.  Experience self-organization and adaptation
 6.  Have fun!
@@ -596,14 +1047,14 @@ Make the game a bit more complex by introducing the new Pizza Rucola
 recipe and the concept of customer orders.
 
 1.  Pizza Rucola contains only tomato sauce and seven pieces of rocket
-    salad (green Post-Its). There\'s no ham and no pineapple.
-    Unfortunately rocket salad burns easily and must therefore be added 
-    *after* the pizza has been taken out from the oven.
+	salad (green Post-Its). There\'s no ham and no pineapple.
+	Unfortunately rocket salad burns easily and must therefore be added 
+	*after* the pizza has been taken out from the oven.
 2.  Orders can contain several pizzas of two different kinds, and the
-    team gets points only when the whole order is fulfilled and
-    delivered. Establish a central place where teams can pick up new
-    orders and deliver fulfilled orders. Teams can pull several orders
-    at once, but not so many that it affects other teams.
+	team gets points only when the whole order is fulfilled and
+	delivered. Establish a central place where teams can pick up new
+	orders and deliver fulfilled orders. Teams can pull several orders
+	at once, but not so many that it affects other teams.
 
 When you have presented the extensions to the game and answered any
 questions the teams may have, allow the teams five minutes to discuss
@@ -629,7 +1080,7 @@ whiteboard (including WIP limits) and make it look nice using paper
 materials and pizzas produced during the game.
 
 1.  Conclusion 
-    ----------
+	----------
 
 Having the experience of the Pizza Game in fresh memory and some nice
 Kanban boards on display, it's now really easy to anchor the Kanban
@@ -710,13 +1161,13 @@ production?
 1.  #### Other things worth considering: 
 
 2.  The physical environment: Did the original table arrangement affect
-    the initial workflow? The way the workflow evolved?
+	the initial workflow? The way the workflow evolved?
 
 3.  Group dynamics: How did the different team members participate in
-    design of the workflow?
+	design of the workflow?
 
 4.  Videos 
-    ------
+	------
 
 
 
@@ -727,16 +1178,16 @@ Template
 --------
 
 1.  Material & Equipment 
-    --------------------
+	--------------------
 
 2.  Objective 
-    ---------
+	---------
 
 Giving people an idea about what a Story map is and how it can be used
 to facilitate prioritization, release planning and finding MMF's
 
 1.  Instructions 
-    ------------
+	------------
 
 To describe what a story map is. Then I roughly do it this way (You
 might want to twist the "story" a bit. The one below is just the basic
@@ -812,54 +1263,54 @@ Create a name card (first name only) for each participant
 3.  Choose a Worker at each table; everyone else will be a Customer.
 
 4.  Customers will each time how long it takes the Worker to write down
-    their names.
+	their names.
 
 5.  Begin the exercise: All Customers begin shouting their names at the
-    Worker, who starts writing them down, one per card.
+	Worker, who starts writing them down, one per card.
 
 6.  The exercise ends when all names have been recorded. Note the best
-    and worst times.
+	and worst times.
 
 7.  #### Round One Debrief 
 
 8.  Note the chaos that likely ensued. This closely parallels the way
-    prioritization works at many companies (e.g. the squeakiest wheel
-    gets the grease).
+	prioritization works at many companies (e.g. the squeakiest wheel
+	gets the grease).
 
 9.  Ask a Worker how they felt. They probably were stressed, distracted
-    and frustrated.
+	and frustrated.
 
 10. Write the best and worst completion times somewhere visible. We'll
-    compare these results to those in succeeding rounds.
+	compare these results to those in succeeding rounds.
 
 11. #### Round Two (\"Everyone\'s Happy?\") Instructions 
 
 12. The Worker, Customers and Goal remain the same.
 
 13. The Worker will write each person's name one letter at a time in a
-    round robin fashion. \
-    *Example*: If Anna, Bill and Joey are on the team, the Worker would
-    write "A" on one sheet of paper, then "B" on another, and "J" on the
-    last. Then they would revisit those sheets to write "n," "I" and "o"
-    (the second letters in each name), continuing until all names are
-    complete.
+	round robin fashion. \
+	*Example*: If Anna, Bill and Joey are on the team, the Worker would
+	write "A" on one sheet of paper, then "B" on another, and "J" on the
+	last. Then they would revisit those sheets to write "n," "I" and "o"
+	(the second letters in each name), continuing until all names are
+	complete.
 
 14. #### Round Two Debrief 
 
 15. Note how things were now orderly, but very inefficient, and ask why.
-    Several forms of waste are occurring here, but most notably context
-    and task switching. There is also motion waste (moving from one card
-    to the next), transportation waste (moving the cards themselves),
-    and waiting (the time between actual writing), all of which impact
-    throughput of completed work.
+	Several forms of waste are occurring here, but most notably context
+	and task switching. There is also motion waste (moving from one card
+	to the next), transportation waste (moving the cards themselves),
+	and waiting (the time between actual writing), all of which impact
+	throughput of completed work.
 
 16. Ask Customers how they felt. By servicing all customers at once, we
-    serve none of them well. Compare this round's times to the last.
+	serve none of them well. Compare this round's times to the last.
 
 17. Ask Workers how they felt. This round was likely frustrating in a
-    different way; while the process was orderly, a sense of true
-    closure and productivity was likely missing. A great deal of working
-    was happening, but little work was getting done.
+	different way; while the process was orderly, a sense of true
+	closure and productivity was likely missing. A great deal of working
+	was happening, but little work was getting done.
 
 18. #### Round Three ("Focus") Instructions 
 
@@ -868,21 +1319,21 @@ Create a name card (first name only) for each participant
 20. The Worker chooses the order of Customers to service
 
 21. The Worker writes each Customer's name in its entirety before moving
-    on to the next.
+	on to the next.
 
 22. #### Round Three Debrief
 
 23. Ask Customers how they felt. How was this time different from the
-    previous rounds? Was the capacity clearer? Did you feel a need to
-    fight for the top spot? Compare the results; they should be at least
-    twice as quick as the previous rounds, and possibly several times.
+	previous rounds? Was the capacity clearer? Did you feel a need to
+	fight for the top spot? Compare the results; they should be at least
+	twice as quick as the previous rounds, and possibly several times.
 
 24. Ask Workers how they felt. This approach is by far the best
-    controlled, least stressful and easiest to manage.
+	controlled, least stressful and easiest to manage.
 
 25. Could this work even better? One thing we could do to make this more
-    "agile" is prioritization by value, which could start a conversation
-    about Product Owners, if desired.
+	"agile" is prioritization by value, which could start a conversation
+	about Product Owners, if desired.
 
 26. ### Conclusion 
 
@@ -905,12 +1356,12 @@ Three Little Pigs
 -----------------
 
 1.  Material & Equipment 
-    --------------------
+	--------------------
 
 2.  paper and pen
 
 3.  Objective 
-    ---------
+	---------
 
 Will be comparing the effects of divided attention versus focused
 attention.
@@ -963,8 +1414,8 @@ Hands, Numbers, Song
 1.  ### Material & Equipment 
 
 2.  6-20 people (note - if you have more than this, just split into
-    multiple groups. In theory you can handle as many people as you have
-    space for)
+	multiple groups. In theory you can handle as many people as you have
+	space for)
 
 3.  One facilitator
 
@@ -979,27 +1430,27 @@ Hands, Numbers, Song
 8.  #### Round 1 - Warm-up 
 
 9.  Have each person pair up and then line up in two lines facing each
-    other like this:
-    1.  A1 A2 A3 A4 A5 (A1 faces B1, A2 faces B2, etc)
-    2.  B1 B2 B3 B4 B5
-    3.  If you have an uneven number, you can ask one person to be your
-        time keeper. If you have some sceptics or others who don't want
-        to participate, you can ask them to be observers ;). However,
-        you need at least 3 pairs and more is better.
+	other like this:
+	1.  A1 A2 A3 A4 A5 (A1 faces B1, A2 faces B2, etc)
+	2.  B1 B2 B3 B4 B5
+	3.  If you have an uneven number, you can ask one person to be your
+		time keeper. If you have some sceptics or others who don't want
+		to participate, you can ask them to be observers ;). However,
+		you need at least 3 pairs and more is better.
 
 10. Have each pair practice the Hands activity as below
 
 11. Now switch pairs by having everyone in line A move one spot. A5 will
-    have to move all the way to A1. Your line should now look like this:
-    1.  A5 A1 A2 A3 A4 (A5 is paired with B1, etc)
-    2.  B1 B2 B3 B4 B5
+	have to move all the way to A1. Your line should now look like this:
+	1.  A5 A1 A2 A3 A4 (A5 is paired with B1, etc)
+	2.  B1 B2 B3 B4 B5
 
 12. Have each new pair practice the Numbers activity below
 
 13. Now switch pairs again by having everyone in line A move one spot.
-    You should now look like this:
-    1.  A4 A5 A1 A2 A3
-    2.  B1 B2 B3 B4 B5
+	You should now look like this:
+	1.  A4 A5 A1 A2 A3
+	2.  B1 B2 B3 B4 B5
 
 14. Have each new pair practice the Song activity below
 
@@ -1008,17 +1459,17 @@ Hands, Numbers, Song
 
 
 1.  You as the project manager will tell the teams which activity
-    (project) to work on.
+	(project) to work on.
 2.  You will bark out instructions (\"Shout-Driven Develolpment\") and
-    they are expected to switch tasks on your command. For each activity
-    they need to switch to perform the activity with the pair they
-    practiced that activity with. (This will involve a lot of movement.)
+	they are expected to switch tasks on your command. For each activity
+	they need to switch to perform the activity with the pair they
+	practiced that activity with. (This will involve a lot of movement.)
 3.  When each pair resumes an activity that they have already started
-    they must pick up where they previously left off.
+	they must pick up where they previously left off.
 4.  Your time keeper should record the time when the whole team (all
-    pairs) have finished each activity.
+	pairs) have finished each activity.
 5.  Keep asking the team to task switch every 2-10 seconds (be random!)
-    until all pairs have completed the activities.
+	until all pairs have completed the activities.
 6.  Record the completed time for each activity.
 
 
@@ -1030,15 +1481,15 @@ Hands, Numbers, Song
 
 
 1.  You as the project manager will tell them the priority of the
-    activities (projects). You will ask them to complete Hands first,
-    Numbers second, and Song third. You ask them to complete each
-    activity (project) before starting the next.
+	activities (projects). You will ask them to complete Hands first,
+	Numbers second, and Song third. You ask them to complete each
+	activity (project) before starting the next.
 2.  Your time keeper should record the time when the whole team (all
-    pairs) have finished each activity.
+	pairs) have finished each activity.
 3.  Record the completed time for each activity
 4.  Your results should look similar to the results in the image below.
-    Note: we played this game twice after adding more people - the
-    purple numbers are the results of the second game.
+	Note: we played this game twice after adding more people - the
+	purple numbers are the results of the second game.
 
 
 
@@ -1046,18 +1497,18 @@ Hands, Numbers, Song
 1.  #### Additional Tips and or Alterations
 
 2.  Have the group decide how to rotate partners instead of defining the
-    rotation for them.
+	rotation for them.
 
 3.  Run the sequential round first and then the multitasking round.
 
 4.  Have the group choose their own song instead of Happy Birthday.
 
 5.  For larger groups, ask them to put their hands up when they complete
-    each \'project\'. This will help the time keeper to understand when
-    each project is completed amidst the chaos.
+	each \'project\'. This will help the time keeper to understand when
+	each project is completed amidst the chaos.
 
 6.  Instead of acting as the project manager, act as the product owner
-    who represents three different customers/stakeholders.
+	who represents three different customers/stakeholders.
 
 
 
@@ -1079,9 +1530,9 @@ Coin Game
 1.  ### Material & Equipment 
 
 2.  2 sets of 15 Coins
-    1.  5 x \$0.25
-    2.  5 x \$0.10
-    3.  5 x \$0.05
+	1.  5 x \$0.25
+	2.  5 x \$0.10
+	3.  5 x \$0.05
 
 3.  2 teams of 3+ people. Teams need to be even.
 
@@ -1182,16 +1633,16 @@ Movie
 2.  ### Objective
 
 3.  The one experience I know we share is the session we\'re in, but
-    using a retrospective on the class sets up an awkward \"meta\" and
-    recursive dynamic, as we try to do something and think about doing
-    it at the same time.
+	using a retrospective on the class sets up an awkward \"meta\" and
+	recursive dynamic, as we try to do something and think about doing
+	it at the same time.
 
 4.  A class often shares another experience (or set of experiences): the
-    projects they\'re working on. Everybody may not be on the same
-    project, but even if they are, real projects have real issues, and
-    using real issues for an example almost instantly violates safety
-    and takes away the *magic circle* aspect where it\'s safe to try new
-    behaviors.
+	projects they\'re working on. Everybody may not be on the same
+	project, but even if they are, real projects have real issues, and
+	using real issues for an example almost instantly violates safety
+	and takes away the *magic circle* aspect where it\'s safe to try new
+	behaviors.
 
 5.  ### Instructions 
 
@@ -1283,14 +1734,14 @@ engaged in an agile transformation?
 1.  ### Outcomes 
 
 2.  Participants need some time to figure out how to play the game and
-    how to work with the quadrants on the board.
+	how to work with the quadrants on the board.
 
 3.  An ice breaker to start with and a small warm up round increases
-    effectiveness and actionable outcome of the game.
+	effectiveness and actionable outcome of the game.
 
 4.  Making sure the topics in the discussion round are precisely those
-    that matter most to the organisation and the participants, adds
-    greatly to the usefulness of the session.
+	that matter most to the organisation and the participants, adds
+	greatly to the usefulness of the session.
 
 5.  You need a skilled facilitator.
 
@@ -1298,7 +1749,7 @@ engaged in an agile transformation?
 
 
 1.  Instructions
-    ------------
+	------------
 
 Participants are asked to very rapidly (! ten seconds per card on
 average :) !) divide forty-two cards with 'characteristics' of
@@ -1350,23 +1801,23 @@ Generic Questions to ask after each game
 
 1.  What did you think of the game?
 2.  What are some conclusions you can draw about how you are currently
-    working?
+	working?
 3.  Notice that in the second attempt you completed all three tasks
-    before you completed the first one in the multi-tasking round. What
-    do you think about that?
+	before you completed the first one in the multi-tasking round. What
+	do you think about that?
 4.  For the two rounds, notice your time to market.
 5.  How different was the quality of your product in round one and two?
 6.  What did you notice about your stress level in round one and two?
 7.  What does this game teach us about sustainable pace?
 8.  Describe your discipline level in each round. How much did your team
-    cheat or ignore the manager\'s orders?
+	cheat or ignore the manager\'s orders?
 9.  How does that affect how you will work?
 10. What happens when you task switch?
 11. What are the costs to juggling tasks?
 12. How can we change the way we work to take advantage of this?
 13. What are the barriers to making this happen?
 14. How can you respond to someone who is asking you to switch to
-    another task or to split yourself between two or more projects
+	another task or to split yourself between two or more projects
 15. [JWorks - Agile Leadership Game](https://ordina-jworks.github.io/agile/2018/07/31/Agile-Leadership-Game.html)
 
 

@@ -114,16 +114,16 @@ historically include:
 
 -   **Flat Model** --- *single, two-dimensional array of data elements*
 -   **Hierarchical Model** --- *records containing fields and sets
-    defining a parent/child hierarchy*
+	defining a parent/child hierarchy*
 -   **Network Model** --- *similar to hierarchical model allowing
-    one-to-many relationships using a junction 'link' table mapping*
+	one-to-many relationships using a junction 'link' table mapping*
 -   **Relational Model** --- *collection of predicates over finite set
-    of predicate variables defined with constraints on the possible
-    values and combination of values*
+	of predicate variables defined with constraints on the possible
+	values and combination of values*
 -   **Star Schema Model** --- *normalized fact and dimension tables
-    removing low cardinality attributes for data aggregations*
+	removing low cardinality attributes for data aggregations*
 -   **Data Vault Model** --- *records long term historical data from
-    multiple data sources using hub, satellite, and link tables*
+	multiple data sources using hub, satellite, and link tables*
 
 Database Development Life Cycle - DDLC
 --------------------------------------
@@ -143,15 +143,15 @@ Practices. Of the many Data Models that I have designed, clear precepts
 have emerged which include:
 
 -   **Adaptability** --- *creating schemas that withstand enhancement or
-    correction*
+	correction*
 -   **Expandability** --- *creating schemas that grow beyond
-    expectations*
+	expectations*
 -   **Fundamentality** --- *creating schemas that deliver on features
-    and functionality*
+	and functionality*
 -   **Portability** ---  *creating schemas that can be hosted on
-    disparate systems*
+	disparate systems*
 -   **Exploitation** ---  *creating schemas that maximize
-    a host technology*
+	a host technology*
 -   **Efficient Storage** --- *creating optimized schema disk footprint*
 -   **High Performance** --- *creating optimized schemas that excel*
 
@@ -161,11 +161,11 @@ regardless of these dichotomies, a data model has just three stages of
 life --- cradle to grave:
 
 -   **A Fresh INSTALL** --- *based upon the current version of the
-    schema*
+	schema*
 -   **Apply an UPGRADE** --- *drop/create/alter dB objects upgrading one
-    version to the next*
+	version to the next*
 -   **Data MIIGRATION** ---  *where a disruptive 'upgrade' occurs (like
-    splitting tables or platform)*
+	splitting tables or platform)*
 
 Designing the Data Model can be a labor of love entailing both the
 tedious attention to detail tempered with the creative abstraction of
@@ -174,18 +174,18 @@ and crevices to correct, which often present themselves in various
 ways. For example:
 
 -   **χ Composite Primary Keys** *avoid them, rarely effective or
-    appropriate; there are some exceptions depending upon the data
-    model*
+	appropriate; there are some exceptions depending upon the data
+	model*
 -   **χ Bad Primary Keys** *usually datetime and/or strings (except a
-    GUID or Hash) are inappropriate*
+	GUID or Hash) are inappropriate*
 -   **χ Bad Indexing** *either too few or too many*
 -   **χ Column Datatypes** *when you only need an Integer don't use a
-    Long (or Big Integer), especially on a primary key*
+	Long (or Big Integer), especially on a primary key*
 -   **χ Storage Allocation** *inconsiderate of data size and growth
-    potential*
+	potential*
 -   **χ Circular References** *where a table A has a relationship with
-    table B, table B has a relationship with table C, and table C has a
-    relationship with table A --- this is simply bad design (IMHO)*
+	table B, table B has a relationship with table C, and table C has a
+	relationship with table A --- this is simply bad design (IMHO)*
 
 Let us consider then a database design best practice: The design and
 release process of a data model. I believe that when crafting a data
@@ -257,14 +257,73 @@ These patterns were described in the entry on  [A Sane Approach to
 Primary
 Keys](http://database-programmer.blogspot.com/2008/01/database-skills-sane-approach-to.html).
 
- |Pattern Name|Relative Column Count|Relative Row Count|Type|Notes|
-|--- |--- |--- |--- |--- |
-|Reference|Small|Small|Permanent|Use single-column character primary key.|
-|Small Master|Small|Small|Permanent|Use single-column character primary key.|
-|Large Master|Large|Large|Permanent|Use integer auto-assigned primary key|
-|Transactions|n/a|n/a|Transient|Describes interactions between things, like a customer purchase of an item or a student's enrollment in a class. Use integer auto-assigned primary key|
-|Cross Reference|n/a|n/a|Permanent|Describes relationships between master entries, such as an item's price group or a teacher's department. Use multi-column primary keys.|
-
+<table>
+	<colgroup>
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<thead>
+		<tr>
+			<th>Pattern Name</th>
+			<th>Relative Column Count</th>
+			<th>Relative Row Count</th>
+			<th>Type</th>
+			<th>Notes</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<a href="http://database-programmer.blogspot.com/2008/01/database-skills-sane-approach-to.html#rule1" class="external-link" rel="nofollow">Reference</a>
+			</td>
+			<td>Small</td>
+			<td>Small</td>
+			<td>Permanent</td>
+			<td>Use single-column character primary key.</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="http://database-programmer.blogspot.com/2008/01/database-skills-sane-approach-to.html#rule2" class="external-link" rel="nofollow">Small Master</a>
+			</td>
+			<td>Small</td>
+			<td>Small</td>
+			<td>Permanent</td>
+			<td>Use single-column character primary key.</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="http://database-programmer.blogspot.com/2008/01/database-skills-sane-approach-to.html#rule3" class="external-link" rel="nofollow">Large Master</a>
+			</td>
+			<td>Large</td>
+			<td>Large</td>
+			<td>Permanent</td>
+			<td>Use integer auto-assigned primary key</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="http://database-programmer.blogspot.com/2008/01/database-skills-sane-approach-to.html#rule4" class="external-link" rel="nofollow">Transactions</a>
+			</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>Transient</td>
+			<td>Describes interactions between things, like a customer purchase of an item or a student's enrollment in a class. Use integer auto-assigned primary key</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="http://database-programmer.blogspot.com/2008/01/database-skills-sane-approach-to.html#rule5" class="external-link" rel="nofollow">Cross Reference</a>
+			</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>Permanent</td>
+			<td>
+				Describes relationships between master entries, such as an item's price group or a teacher's department. Use multi-column primary keys.
+			</td>
+		</tr>
+	</tbody>
+</table>
 
 
 ### Expanded Table Types
@@ -310,17 +369,17 @@ CART\_LINES (or ORDERS and ORDER\_LINES if you are more old-fashioned).
 The table CUSTOMERS is also in there as a parent to CARTS. Our three
 tables look something like this:
 
-       
-                        CUSTOMERS
-                            |
-                            |
-                            /|\
-                            CART  Cart is child of customers
-                            |
-                            |
-                            /|\
-                        CART_LINES  Lines is child of Cart
-                    
+	   
+						CUSTOMERS
+							|
+							|
+							/|\
+							CART  Cart is child of customers
+							|
+							|
+							/|\
+						CART_LINES  Lines is child of Cart
+					
 
 There are two foreign keys here. CART has a foreign key to CUSTOMERS,
 and CART\_LINES has a foreign key to CART, but the two foreign keys
@@ -379,20 +438,20 @@ reference table.
 
 The syntax looks something like this:
 
-                        -- Most database servers implement DELETE RESTRICT
-                        -- by default, so this syntax:
-                        Create table CART (
-                            customer integer REFERENCES customers
-                           ,order    integer.....
-                        )
+						-- Most database servers implement DELETE RESTRICT
+						-- by default, so this syntax:
+						Create table CART (
+							customer integer REFERENCES customers
+						   ,order    integer.....
+						)
 
-                        -- ...is the same as this explicit syntax:
-                        Create table CART (
-                            customer integer REFERENCES customers
-                                             ON DELETE RESTRICT 
-                           ,order    integer.....
-                        )
-                    
+						-- ...is the same as this explicit syntax:
+						Create table CART (
+							customer integer REFERENCES customers
+											 ON DELETE RESTRICT 
+						   ,order    integer.....
+						)
+					
 
 #### Deleting An Order and DELETE CASCADE
 
@@ -422,15 +481,15 @@ transaction.
 
 The syntax for DELETE CASCADE looks something like this:
 
-                        -- if the user deletes a row from CART,
-                        -- do them the favor of deleting all of the
-                        -- lines as well
-                        Create table CART_LINES (
-                            order   integer REFERENCES CART
-                                            ON DELETE CASCADE
-                           ,order_line integer....
-                        )
-                    
+						-- if the user deletes a row from CART,
+						-- do them the favor of deleting all of the
+						-- lines as well
+						Create table CART_LINES (
+							order   integer REFERENCES CART
+											ON DELETE CASCADE
+						   ,order_line integer....
+						)
+					
 
 #### Conclusion: Different Tables Types, Different Foreign Key Types
 
@@ -456,13 +515,13 @@ There are five rules that must be followed:
 
 1.  A teacher must be qualified in advance for each course they teach.
 2.  No two classes can be given in the same classroom in the same
-    period.
+	period.
 3.  No teacher can be in two places at once, a teacher can only teach
-    one class in one period.
+	one class in one period.
 4.  No student can be in two places at once, so no student can be in
-    more than one class in the same period.
+	more than one class in the same period.
 5.  A student cannot take the same class again after passing the class
-    once.
+	once.
 
 All five rules can be handled with some smart table design and  *we will
 not need any application code*.
@@ -481,9 +540,9 @@ proper primary and foreign keys.
 When we look at rule one we see that it splits into two requirements:
 
 -   Subrule A: There must exist of a list of what course a teacher is
-    qualified to teach.
+	qualified to teach.
 -   Subrule B: All actual course assignments must match to the list of
-    allowed (or qualified) classes.
+	allowed (or qualified) classes.
 
 When I see these two requirements together I automatically think
 \"validate against a cross reference." I call this the \"Cross
@@ -509,53 +568,53 @@ qualifications must be a cross reference between these two.
 
 Here is a picture of the Cross Reference Validation pattern:
 
-      
-                        CLASSROOM |  PERIOD    | COURSE   | TEACHER  | STUDENT  | ASSIGN_ID
-                        ----------+------------+----------+----------+----------+-----------   
-                          XXX     |   XXXX     |   XX     |  XXX     |   XXX    |   1
-                          XXX     |   XXXX     |   XX     |  XXX     |   XXX    |   2  
-                          XXX     |   XXXX     |   XX     |  XXX     |   XXX    |   3 
-                          XXX     |   XXXX     |   XX     |  XXX     |   XXX    |   4  
-                        ----------+------------+----------+----------+----------+-----------
-                                                    |          |
-                                                    |          |
-                               Use A foreign        |          |
-                               key to make sure     |          |
-                               teacher is qualified |          |
-                               for each course      |          |
-                                                 COURSE     | TEACHER
-                                                 -----------+--------
-                                                   XXX      | XXXX
-                                                   XXX      | XXXX
-                    
+	  
+						CLASSROOM |  PERIOD    | COURSE   | TEACHER  | STUDENT  | ASSIGN_ID
+						----------+------------+----------+----------+----------+-----------   
+						  XXX     |   XXXX     |   XX     |  XXX     |   XXX    |   1
+						  XXX     |   XXXX     |   XX     |  XXX     |   XXX    |   2  
+						  XXX     |   XXXX     |   XX     |  XXX     |   XXX    |   3 
+						  XXX     |   XXXX     |   XX     |  XXX     |   XXX    |   4  
+						----------+------------+----------+----------+----------+-----------
+													|          |
+													|          |
+							   Use A foreign        |          |
+							   key to make sure     |          |
+							   teacher is qualified |          |
+							   for each course      |          |
+												 COURSE     | TEACHER
+												 -----------+--------
+												   XXX      | XXXX
+												   XXX      | XXXX
+					
 
 Here is the SQL to create these tables. I have left out anything not
 directly related to our Cross Reference Validation pattern:
 
-                        -- Create the bottom table: allowed courses by teacher
-                        CREATE TABLE courses_x_teachers (
-                           teacher char(10) 
-                          ,course  char(10)
-                          ,foreign key (teacher) references teachers(teacher)
-                          ,foreign key (courses) references courses(course)
-                          ,primary key (teacher,course)
-                        );
+						-- Create the bottom table: allowed courses by teacher
+						CREATE TABLE courses_x_teachers (
+						   teacher char(10) 
+						  ,course  char(10)
+						  ,foreign key (teacher) references teachers(teacher)
+						  ,foreign key (courses) references courses(course)
+						  ,primary key (teacher,course)
+						);
 
-                        -- Create the main table (assumes we have already created
-                        -- teh TEACHERS table, the CLASSROOMS table and so forth
-                        CREATE TABLE enrollment (
-                           classroom char(5)
-                          ,period    char(5)
-                          ,course    char(10)
-                          ,teacher   char(10)
-                          ,student   int 
-                          -- this is a trx table, so use an integer ID for pk
-                          ,assign_id int IDENTITY
-                          ,primary key (assign_id)
-                          -- The cross reference validation pattern needs a foreign key
-                          ,foreign key                    (teacher,course) 
-                           references courses_x_teachers  (teacher,course)
-                    
+						-- Create the main table (assumes we have already created
+						-- teh TEACHERS table, the CLASSROOMS table and so forth
+						CREATE TABLE enrollment (
+						   classroom char(5)
+						  ,period    char(5)
+						  ,course    char(10)
+						  ,teacher   char(10)
+						  ,student   int 
+						  -- this is a trx table, so use an integer ID for pk
+						  ,assign_id int IDENTITY
+						  ,primary key (assign_id)
+						  -- The cross reference validation pattern needs a foreign key
+						  ,foreign key                    (teacher,course) 
+						   references courses_x_teachers  (teacher,course)
+					
 
 #### Another Comment On Integer Keys
 
@@ -626,12 +685,12 @@ will stand out if we examine user requirements with an aim to
 identifying:
 
 -   Lists of things you are keeping track of. These go into master
-    tables, like courses and teachers.
+	tables, like courses and teachers.
 -   Relationships between those master items, like a list of
-    teacher-course qualifications.
+	teacher-course qualifications.
 -   Restrictions on how things can interact, so that a teacher must be
-    qualified to teach courses means there will be a foreign key somehow
-    into that teacher-course cross reference from some other table.
+	qualified to teach courses means there will be a foreign key somehow
+	into that teacher-course cross reference from some other table.
 
 Next week we will examine Rules 2-4 and find out more about how unique
 constraints and their associated patterns can reduce the amount of code
@@ -790,12 +849,12 @@ computer services shop that provides complete IT services, including
 programming. In their billing system, they have a simple table that
 lists the rates for their various activities.
 
-                        ACTIVITY  | RATE
-                        ----------+-------
-                        ITGENERAL | 100
-                        PROJMGT   | 200
-                        SOFTWARE  | 150
-                    
+						ACTIVITY  | RATE
+						----------+-------
+						ITGENERAL | 100
+						PROJMGT   | 200
+						SOFTWARE  | 150
+					
 
 This is simple enough, but now suppose that you have a particular
 employee that you bill out at \$175.00/hour for software development.
@@ -817,13 +876,13 @@ is called a resolution.
 A resolution pattern has these characteristics:
 
 -   The goal of a resolution is to find a particular value. In our
-    example this is a billing rate.
+	example this is a billing rate.
 -   Resolutions examine multiple possible values and pick the first
-    match according to precedence.
+	match according to precedence.
 -   Precedence usually begins with the most specific and falls back to
-    the most general. In our example the most specific possible rate is
-    defined for a customer-activity-employee, while the most general is
-    the default rate for an activity.
+	the most general. In our example the most specific possible rate is
+	defined for a customer-activity-employee, while the most general is
+	the default rate for an activity.
 
 Resolutions are not always easy to recognize. Mostly this is because
 customers do not tell you \"we have a resolution." Instead they tell
@@ -853,21 +912,21 @@ special rate.
 
 Here are the tables:
 
-                        ACTIVITY | CUSTOMER | RATE
-                        ---------+----------+------
-                        PROJMGT  | PRAXIS   |  225
-                        SOFTWARE | PRAXIS   |  235
+						ACTIVITY | CUSTOMER | RATE
+						---------+----------+------
+						PROJMGT  | PRAXIS   |  225
+						SOFTWARE | PRAXIS   |  235
 
 
-                        ACTIVITY | EMPLOYEE | RATE
-                        ---------+----------+------
-                        PROJMGT  | SRUSSEL  |  225
+						ACTIVITY | EMPLOYEE | RATE
+						---------+----------+------
+						PROJMGT  | SRUSSEL  |  225
 
 
-                        ACTIVITY | EMPLOYEE | CUSTOMER | RATE
-                        ---------+----------+----------+------
-                        PROJMGT  | HIROKO   | PRAXIS   |  250
-                    
+						ACTIVITY | EMPLOYEE | CUSTOMER | RATE
+						---------+----------+----------+------
+						PROJMGT  | HIROKO   | PRAXIS   |  250
+					
 
 #### Resolving In Client Code Will Kill Performance
 
@@ -891,35 +950,35 @@ would need only one trip to the server.
 
 Here is a query that does most of what we need for the resolution:
 
-                      SELECT    ol.activity
-                                , ol.employee
-                                , ol.customer
-                                , aec.rate as aec_rate
-                                , ac.rate  as ac_rate
-                                , ae.rate  as ae_rate
-                                , a.rate
-                      FROM  orderlines ol
-                            LEFT JOIN act_emp_cust_rates aec ON ol.activity = aec.activity AND ol.customer = aec.customer AND ol.employee = aec.employee
-                            LEFT JOIN act_cust_rates ac ON ol.activity = ae.activity AND ol.customer = ae.customer
-                            LEFT JOIN act_emp_rates ae ON ol.activity = aec.activity AND ol.employee = aec.employee
-                            INNER JOIN activities a ON ol.activity = a.activity  
-                      WHERE (....relevant search conditions....)
-                    
+					  SELECT    ol.activity
+								, ol.employee
+								, ol.customer
+								, aec.rate as aec_rate
+								, ac.rate  as ac_rate
+								, ae.rate  as ae_rate
+								, a.rate
+					  FROM  orderlines ol
+							LEFT JOIN act_emp_cust_rates aec ON ol.activity = aec.activity AND ol.customer = aec.customer AND ol.employee = aec.employee
+							LEFT JOIN act_cust_rates ac ON ol.activity = ae.activity AND ol.customer = ae.customer
+							LEFT JOIN act_emp_rates ae ON ol.activity = aec.activity AND ol.employee = aec.employee
+							INNER JOIN activities a ON ol.activity = a.activity  
+					  WHERE (....relevant search conditions....)
+					
 
 The LEFT JOIN tells the server to return all matching rows from the
 orderlines table, even if there is no match in the various override
 tables. The above query will return something like this:
 
-                        ACTIVITY | EMPLOYEE | CUSTOMER | AEC_RATE | AC_RATE | AE_RATE | RATE
-                        ---------+----------+----------+----------+---------+---------+------
-                        PROJMGT  | HIROKO   | PRAXIS   |      250 |  null   |  null   |  200
-                        PROJMGT  | NIRGAL   | PRAXIS   |     null |   225   |  null   |  200
-                        SOFTWARE | SRUSSEL  | PRAXIS   |     null |   235   |  null   |  150
-                        PROJMGT  | SRUSSEL  | GE       |     null |  null   |   225   |  200
-                        PROJMGT  | SRUSSEL  | NASA     |     null |  null   |   225   |  200
-                        SOFTWARE | HIROKO   | PRAXIS   |     null |   235   |  null   |  150
-                        SOFTWARE | HIROKO   | GE       |     null |  null   |  null   |  150
-                    
+						ACTIVITY | EMPLOYEE | CUSTOMER | AEC_RATE | AC_RATE | AE_RATE | RATE
+						---------+----------+----------+----------+---------+---------+------
+						PROJMGT  | HIROKO   | PRAXIS   |      250 |  null   |  null   |  200
+						PROJMGT  | NIRGAL   | PRAXIS   |     null |   225   |  null   |  200
+						SOFTWARE | SRUSSEL  | PRAXIS   |     null |   235   |  null   |  150
+						PROJMGT  | SRUSSEL  | GE       |     null |  null   |   225   |  200
+						PROJMGT  | SRUSSEL  | NASA     |     null |  null   |   225   |  200
+						SOFTWARE | HIROKO   | PRAXIS   |     null |   235   |  null   |  150
+						SOFTWARE | HIROKO   | GE       |     null |  null   |  null   |  150
+					
 
 #### The Final Form of the Query
 
@@ -932,29 +991,29 @@ COALESCE function. A COALESCE allows us to list two or more values, and
 the function returns the first one that is not null. This lets us return
 the actual resolved value from the server:
 
-                        SELECT  ol.activity
-                                ,ol.employee,ol.customer
-                                , COALESCE(aec.rate,ac.rate,ae.rate,a.rate) as rate
-                        FROM    orderlines ol
-                                LEFT JOIN act_emp_cust_rates aec ON ol.activity = aec.activity AND ol.customer = aec.customer AND ol.employee = aec.employee
-                                LEFT JOIN act_cust_rates ac ON ol.activity = ae.activity AND ol.customer = ae.customer
-                                LEFT JOIN act_emp_rates ae ON ol.activity = aec.activity AND ol.employee = aec.employee
-                                INNER JOIN activities a ON ol.activity = a.activity  
-                        WHERE   (....relevant search conditions....)
-                    
+						SELECT  ol.activity
+								,ol.employee,ol.customer
+								, COALESCE(aec.rate,ac.rate,ae.rate,a.rate) as rate
+						FROM    orderlines ol
+								LEFT JOIN act_emp_cust_rates aec ON ol.activity = aec.activity AND ol.customer = aec.customer AND ol.employee = aec.employee
+								LEFT JOIN act_cust_rates ac ON ol.activity = ae.activity AND ol.customer = ae.customer
+								LEFT JOIN act_emp_rates ae ON ol.activity = aec.activity AND ol.employee = aec.employee
+								INNER JOIN activities a ON ol.activity = a.activity  
+						WHERE   (....relevant search conditions....)
+					
 
 \...which gives us the complete answer:
 
-                        ACTIVITY | EMPLOYEE | CUSTOMER | RATE 
-                        ---------+----------+----------+------
-                        PROJMGT  | HIROKO   | PRAXIS   |  250 
-                        PROJMGT  | NIRGAL   | PRAXIS   |  225 
-                        SOFTWARE | SRUSSEL  | PRAXIS   |  235 
-                        PROJMGT  | SRUSSEL  | GE       |  225 
-                        PROJMGT  | SRUSSEL  | NASA     |  225 
-                        SOFTWARE | HIROKO   | PRAXIS   |  235 
-                        SOFTWARE | HIROKO   | GE       |  150 
-                    
+						ACTIVITY | EMPLOYEE | CUSTOMER | RATE 
+						---------+----------+----------+------
+						PROJMGT  | HIROKO   | PRAXIS   |  250 
+						PROJMGT  | NIRGAL   | PRAXIS   |  225 
+						SOFTWARE | SRUSSEL  | PRAXIS   |  235 
+						PROJMGT  | SRUSSEL  | GE       |  225 
+						PROJMGT  | SRUSSEL  | NASA     |  225 
+						SOFTWARE | HIROKO   | PRAXIS   |  235 
+						SOFTWARE | HIROKO   | GE       |  150 
+					
 
 Tenancy Patterns
 ----------------
@@ -1253,15 +1312,63 @@ This is also done in the database-per-tenant model.
 The following table summarizes the differences between the main tenancy
 models.
 
- |Measurement|Standalone app|Database-per-tenant|Sharded multi-tenant|
-|--- |--- |--- |--- |
-|Scale|Medium <br>1-100s|Very high<br>1-100,000s|Unlimited<br>1-1,000,000s|
-|Tenant isolation|Very high|High|Low; except for any single tenant (that is alone in an MT db).|
-|Database cost per tenant|High; is sized for peaks.|Low; pools used.|Lowest, for small tenants in MT DBs.|
-|Performance monitoring and management|Per-tenant only|Aggregate + per-tenant|Aggregate; although is per-tenant only for singles.|
-|Development complexity|Low|Low|Medium; due to sharding.|
-|Operational complexity|Low-High. Individually simple, complex at scale.|Low-Medium. Patterns address complexity at scale.|Low-High. Individual tenant management is complex.|
-
+<table>
+	<thead>
+		<tr>
+			<th>Measurement</th>
+			<th>Standalone app</th>
+			<th>Database-per-tenant</th>
+			<th>Sharded multi-tenant</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Scale</td>
+			<td>
+				Medium
+				<br />1-100s
+			</td>
+			<td>
+				Very high
+				<br />1-100,000s
+			</td>
+			<td>
+				Unlimited
+				<br />1-1,000,000s
+			</td>
+		</tr>
+		<tr>
+			<td>Tenant isolation</td>
+			<td>Very high</td>
+			<td>High</td>
+			<td>Low; except for any single tenant (that is alone in an MT db).</td>
+		</tr>
+		<tr>
+			<td>Database cost per tenant</td>
+			<td>High; is sized for peaks.</td>
+			<td>Low; pools used.</td>
+			<td>Lowest, for small tenants in MT DBs.</td>
+		</tr>
+		<tr>
+			<td>Performance monitoring and management</td>
+			<td>Per-tenant only</td>
+			<td>Aggregate + per-tenant</td>
+			<td>Aggregate; although is per-tenant only for singles.</td>
+		</tr>
+		<tr>
+			<td>Development complexity</td>
+			<td>Low</td>
+			<td>Low</td>
+			<td>Medium; due to sharding.</td>
+		</tr>
+		<tr>
+			<td>Operational complexity</td>
+			<td>Low-High. Individually simple, complex at scale.</td>
+			<td>Low-Medium. Patterns address complexity at scale.</td>
+			<td>Low-High. Individual tenant management is complex.</td>
+		</tr>
+	</tbody>
+</table>
 
 AntiPattern
 -----------
@@ -1277,7 +1384,7 @@ Central](http://www.sqlservercentral.com/) that detailed
 a common practice of creating a single lookup table for various types of
 data usually called as code table or an "allowed value table" (AVT). 
 These tables tend to be massive and have a pile of unrelated data. 
- Appropriately enough, Don called these tables Massively Unified
+ Appropriately enough, Don called these tables Massively Unified
 Code-Key (MUCK) tables  [(Peterson,
 2006)](https://www.red-gate.com/simple-talk/sql/database-administration/five-simple-database-design-errors-you-should-avoid/#peterson) Though
 many others have written about it over the years, this name seems to
@@ -1306,7 +1413,7 @@ assets', 'location codes', 'type of warehouses' etc.).
 
 Figures 2-5
 
- He then decides to combine them all because of the similarity of their
+ He then decides to combine them all because of the similarity of their
 columns. He assumes that he is eliminating redundant tables and
 simplifying the database; he will have fewer tables, he'll save space,
 improve efficiency etc. People also assume that it reduces the
@@ -1316,51 +1423,51 @@ procedure can be written to access any type of data.
 So what is wrong with it?
 
 -   Firstly, you lose the means to ensure accurate data; constraints. By
-    combining different entities into a single table, you have no
-    declarative means to restrain values of a certain category. There is
-    no easy way to enforce simple foreign key constraints without adding
-    the  **categoryid** in all the referencing keys.
+	combining different entities into a single table, you have no
+	declarative means to restrain values of a certain category. There is
+	no easy way to enforce simple foreign key constraints without adding
+	the  **categoryid** in all the referencing keys.
 -   Secondly, you are forced to represent every data type as a string
-    with this type of  generic lookup table. Such intermingling of
-    different types can be a problem, because check constraints cannot
-    be imposed without major code-hacking . In the example we've given,
-    if the discount code is CHAR(3) and  **location\_nbr** is INT(4),
-    what should the data type of the  'code' column be in the Common
-    Lookup table?
+	with this type of  generic lookup table. Such intermingling of
+	different types can be a problem, because check constraints cannot
+	be imposed without major code-hacking . In the example we've given,
+	if the discount code is CHAR(3) and  **location\_nbr** is INT(4),
+	what should the data type of the  'code' column be in the Common
+	Lookup table?
 -   Thirdly, you commit yourself to rigidity and subsequent complexity.
-    You might be tempted to ask, how can such an apparently simple and
-    flexible design be rigid? Well, considering our example of a common
-    lookup table scheme, just imagine that the 'LocationCode' table 
-    includes another column which might be 'region'. What about the
-    consequences of adding a status to the 'DiscountType' table? Just in
-    order to change a single category,  you'll have to consider making
-    way for all the rows in the table regardless of whether the new
-    column is applicable to them or not.  What about complexity? Often
-    the idea of using common lookup tables come from the idea of
-    generalizing entities where by a single table represents a "thing"
-    -- pretty much anything.
-    Contrast this with the fundamental rule that a well-designed table
-    represents a set of facts about entities or relationships of the
-    same kind. The problem with generalizing entities is that a table
-    becomes a pile of unrelated rows: Consequently, you then lose
-    precision of meaning,  followed by confusion and, often, unwanted
-    complexity.  \
-    The main goal of a DBMS is to enforce the rules that govern how the
-    data is represented and   manipulated. Make sure you do not confuse
-    the terms "generalize", "reuse" etc. in the  context of database
-    design to the extent where you have no control over what is being
-    designed.
+	You might be tempted to ask, how can such an apparently simple and
+	flexible design be rigid? Well, considering our example of a common
+	lookup table scheme, just imagine that the 'LocationCode' table 
+	includes another column which might be 'region'. What about the
+	consequences of adding a status to the 'DiscountType' table? Just in
+	order to change a single category,  you'll have to consider making
+	way for all the rows in the table regardless of whether the new
+	column is applicable to them or not.  What about complexity? Often
+	the idea of using common lookup tables come from the idea of
+	generalizing entities where by a single table represents a "thing"
+	-- pretty much anything.
+	Contrast this with the fundamental rule that a well-designed table
+	represents a set of facts about entities or relationships of the
+	same kind. The problem with generalizing entities is that a table
+	becomes a pile of unrelated rows: Consequently, you then lose
+	precision of meaning,  followed by confusion and, often, unwanted
+	complexity.  \
+	The main goal of a DBMS is to enforce the rules that govern how the
+	data is represented and   manipulated. Make sure you do not confuse
+	the terms "generalize", "reuse" etc. in the  context of database
+	design to the extent where you have no control over what is being
+	designed.
 -   Fourthly and finally, you are faced with the physical implementation
-    issues.  While logical design is considered to be totally separate
-    from physical implementation, in commercial DBMS products like SQL
-    Server, physical implementations can be influenced by logical
-    design, and vice-versa. In large enterprises, such common lookup
-    tables can grow to hundreds of thousands of rows and require heavy
-    physical database tuning. Locking and concurrency issues with such
-    large tables will also have to be controlled. The internal
-    representation of a particular set of row in physical storage can be
-    a determining factor in how efficient the values can be accessed and
-    manipulated by SQL queries.
+	issues.  While logical design is considered to be totally separate
+	from physical implementation, in commercial DBMS products like SQL
+	Server, physical implementations can be influenced by logical
+	design, and vice-versa. In large enterprises, such common lookup
+	tables can grow to hundreds of thousands of rows and require heavy
+	physical database tuning. Locking and concurrency issues with such
+	large tables will also have to be controlled. The internal
+	representation of a particular set of row in physical storage can be
+	a determining factor in how efficient the values can be accessed and
+	manipulated by SQL queries.
 
 As a general recommendation, always use separate tables for each logical
 entity, identifying the appropriate columns with correct types,
@@ -1382,9 +1489,9 @@ Check Constraints serve several purposes, but cause trouble to designers
 in two ways:
 
 -   They miss declaring appropriate check constraints when it is
-    necessary.
+	necessary.
 -   They are unaware when to use a column level constraints rather than
-    a table with a foreign key constraint.
+	a table with a foreign key constraint.
 
 Constraints in SQL Server can serve many different purposes, including
 support for domain constraints, column constraints and, to some extent,
@@ -1406,22 +1513,22 @@ table that holds the allowed values for  **ins\_code**. An alternative
 is to have a check constraint on the  **PolicyHolders** table along the
 lines of:
 
-        CHECK ( ins_code IN ( 'IC' , 'FS' , 'MC' , 'PPO' , 'POS' , 'HMO' ) )
-                    
+		CHECK ( ins_code IN ( 'IC' , 'FS' , 'MC' , 'PPO' , 'POS' , 'HMO' ) )
+					
 
 So what is the rule of thumb in choosing the right approach? Old hands
 in database design look for three specific criteria to govern their
 choice  between a check constraint or a separate table that has a
- foreign key constraint.
+ foreign key constraint.
 
 1.  If the list of values changes over a period of time, you must use a
-    separate table with a foreign key constraint rather than a check
-    constraint.
+	separate table with a foreign key constraint rather than a check
+	constraint.
 2.  If the list of values is larger than 15 or 20, you should consider a
-    separate table.
+	separate table.
 3.  If the list of values is shared or reusable, at least used three or
-    more times in the same database, then you have a very strong case to
-    use a separate table.
+	more times in the same database, then you have a very strong case to
+	use a separate table.
 
 Note that database design is a mix of art and science and therefore it
 involves tradeoffs. An experienced designer can make a  trade-off, based
@@ -1473,40 +1580,40 @@ illusion to the user that they are dealing with well-designed data.
 EAV models have a host of problems.
 
 -   Firstly, the massive amount of data is, in itself, essentially
-    unmanageable.
+	unmanageable.
 -   Secondly, there is no possible way to define the necessary
-    constraints --- any potential check constraints will have to include
-    extensive hard-coding for appropriate attribute names. Since a
-    single column holds all possible values, the datatype is usually
-    VARCHAR(n).  
+	constraints --- any potential check constraints will have to include
+	extensive hard-coding for appropriate attribute names. Since a
+	single column holds all possible values, the datatype is usually
+	VARCHAR(n).  
 -   Thirdly, don't even think about having any useful foreign keys.
 -   Finally,  there is the complexity and awkwardness of queries. Some
-    folks consider it a benefit to be able to  jam a variety of data
-    into a single table when necessary --- they call it "scalable". In
-    reality, since EAV mixes up data with metadata, it is lot more
-    difficult to manipulate data even for simple requirements. Consider
-    a simple query to retrieve the employees who are born after 1950. In
-    the traditional model, you'd have:
+	folks consider it a benefit to be able to  jam a variety of data
+	into a single table when necessary --- they call it "scalable". In
+	reality, since EAV mixes up data with metadata, it is lot more
+	difficult to manipulate data even for simple requirements. Consider
+	a simple query to retrieve the employees who are born after 1950. In
+	the traditional model, you'd have:
 
-            SELECT  first_name , last_name
-            FROM    Employees
-            WHERE   date_of_birth > '12/31/1950' ;
-                    
+			SELECT  first_name , last_name
+			FROM    Employees
+			WHERE   date_of_birth > '12/31/1950' ;
+					
 
 In a EAV model, here is one way to write a comparable query :
 
-            SELECT  MAX ( CASE emp_property WHEN 'first_name' THEN value END  ) 'first_name'
-                    , MAX ( CASE emp_property WHEN 'last_name' THEN value END ) 'last_name'
-            FROM    EmployeeValues
-            WHERE   emp_nbr IN ( 
-                    SELECT  emp_nbr
-                    FROM    EmployeeValues
-                    WHERE   emp_property = 'date_of_birth'
-                            AND CAST ( value AS DATETIME ) > '12/31/1950' )
-                            AND emp_property IN ( 'first_name' , 'last_name' )
-                    GROUP BY emp_nbr ;  
-                            )
-                    
+			SELECT  MAX ( CASE emp_property WHEN 'first_name' THEN value END  ) 'first_name'
+					, MAX ( CASE emp_property WHEN 'last_name' THEN value END ) 'last_name'
+			FROM    EmployeeValues
+			WHERE   emp_nbr IN ( 
+					SELECT  emp_nbr
+					FROM    EmployeeValues
+					WHERE   emp_property = 'date_of_birth'
+							AND CAST ( value AS DATETIME ) > '12/31/1950' )
+							AND emp_property IN ( 'first_name' , 'last_name' )
+					GROUP BY emp_nbr ;  
+							)
+					
 
 Listing 1
 
@@ -1606,14 +1713,14 @@ harder for almost everyone using such a scheme.
 Now, what would make such design undesirable?
 
 -   The duplication of constraints is going to cause problems. Any
-    constraints that apply to monthly sales will have to be defined for
-    each individual column.
+	constraints that apply to monthly sales will have to be defined for
+	each individual column.
 -   Without altering the table, you cannot add the sales for a new
-    month. One poor alternative is to have the columns for all possible
-    monthly sales and use NULLs for the months with no sales.
+	month. One poor alternative is to have the columns for all possible
+	monthly sales and use NULLs for the months with no sales.
 -   And finally, there is the difficulty in expressing relatively simple
-    queries, like comparing sales among sales persons or finding the
-    best monthly sales. 
+	queries, like comparing sales among sales persons or finding the
+	best monthly sales. 
 
 By the way, many people consider this to be a violation first normal
 form. This is a misunderstanding since there are no multi-valued columns
@@ -1639,76 +1746,76 @@ a resultset  from the code  in a few different ways:
 
 1\. Use a UNION query:
 
-        SELECT  sales_person , 'jan' AS " month" , jan_sales AS " sales"
-        FROM    salesdata
-        UNION ALL
-        SELECT  sales_person , 'feb' , feb_sales
-        FROM    salesdata
-        UNION ALL
-        SELECT  sales_person , 'mar' , mar_sales
-        FROM    salesdata
-        UNION ALL
-        SELECT  sales_person , 'apr' , apr_sales
-        FROM salesdata ;
-                    
+		SELECT  sales_person , 'jan' AS " month" , jan_sales AS " sales"
+		FROM    salesdata
+		UNION ALL
+		SELECT  sales_person , 'feb' , feb_sales
+		FROM    salesdata
+		UNION ALL
+		SELECT  sales_person , 'mar' , mar_sales
+		FROM    salesdata
+		UNION ALL
+		SELECT  sales_person , 'apr' , apr_sales
+		FROM salesdata ;
+					
 
 2\. Use a JOIN to a derived table with the column names:
 
-        SELECT  sales_person
-                , m AS 'month' 
-                , CASE m WHEN 'jan' THEN jan_sales WHEN'feb'THENfeb_sales WHEN'mar'THENmar_sales WHEN'apr'THENapr_sales END 'sales'
-        FROM    salesdata
-                CROSSJOIN(
-                        SELECT 'jan'
-                        UNION
-                        SELECT 'feb'
-                        UNION
-                        SELECT 'mar'
-                        UNION
-                        SELECT 'apr'
-                        ) months (m);
+		SELECT  sales_person
+				, m AS 'month' 
+				, CASE m WHEN 'jan' THEN jan_sales WHEN'feb'THENfeb_sales WHEN'mar'THENmar_sales WHEN'apr'THENapr_sales END 'sales'
+		FROM    salesdata
+				CROSSJOIN(
+						SELECT 'jan'
+						UNION
+						SELECT 'feb'
+						UNION
+						SELECT 'mar'
+						UNION
+						SELECT 'apr'
+						) months (m);
 
-        SELECT sales_person 
-                , m AS " month" ,
-                CASE m WHEN 'jan' THEN jan_sales WHEN 'feb' THEN feb_sales WHEN 'mar' THEN mar_sales WHEN 'apr' THEN apr_sales ENDA Ssales
-        FROM  salesdata
-            CROSSJOIN(
-                SELECT 'jan'
-                UNION
-                SELECT 'feb' 
-                UNION
-                SELECT 'mar' 
-                UNION
-                SELECT 'apr'
-                ) months (m);
-                    
+		SELECT sales_person 
+				, m AS " month" ,
+				CASE m WHEN 'jan' THEN jan_sales WHEN 'feb' THEN feb_sales WHEN 'mar' THEN mar_sales WHEN 'apr' THEN apr_sales ENDA Ssales
+		FROM  salesdata
+			CROSSJOIN(
+				SELECT 'jan'
+				UNION
+				SELECT 'feb' 
+				UNION
+				SELECT 'mar' 
+				UNION
+				SELECT 'apr'
+				) months (m);
+					
 
 3\. Use UNPIVOT:
 
-        SELECT  sales_person 
-                , 'month' 
-                , sales
-        FROM    (
-                    SELECT  sales_person 
-                            , jan_sales 
-                            , feb_sales 
-                            , mar_sales 
-                            , apr_sales 
-                            , may_sales
-                    FROM    salesdata 
-                ) s 
-                ( 
-                    sales_person 
-                    , jan 
-                    , feb 
-                    , mar 
-                    , apr 
-                    , may 
-                )
-                UNPIVOT
-                ( 
-                    sales FOR 'month' IN ( jan , feb , mar , apr , may ) ) m ;
-                        
+		SELECT  sales_person 
+				, 'month' 
+				, sales
+		FROM    (
+					SELECT  sales_person 
+							, jan_sales 
+							, feb_sales 
+							, mar_sales 
+							, apr_sales 
+							, may_sales
+					FROM    salesdata 
+				) s 
+				( 
+					sales_person 
+					, jan 
+					, feb 
+					, mar 
+					, apr 
+					, may 
+				)
+				UNPIVOT
+				( 
+					sales FOR 'month' IN ( jan , feb , mar , apr , may ) ) m ;
+						
 
 As usual, you will have to test against the underlying tables,  and consider such things as the magnitude of the data and  existing indexes to  make sure which method is the most efficient .
 

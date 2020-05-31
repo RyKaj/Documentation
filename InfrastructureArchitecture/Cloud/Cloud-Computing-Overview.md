@@ -78,44 +78,44 @@ public cloud.
 There are two variations to a private cloud: On-premise & Private Cloud
 
 1.  **On-premise** private clouds, also known as internal clouds are
-    hosted within one's own data center. This model provides a more
-    standardized process and protection, but is limited in aspects of
-    size and scalability. IT departments would also need to incur the
-    capital and operational costs for the physical resources. This is
-    best suited for applications which require complete control and
-    configurability of the infrastructure and security.
+	hosted within one's own data center. This model provides a more
+	standardized process and protection, but is limited in aspects of
+	size and scalability. IT departments would also need to incur the
+	capital and operational costs for the physical resources. This is
+	best suited for applications which require complete control and
+	configurability of the infrastructure and security.
 2.  Externally hosted **Private Cloud**: This type of private cloud is
-    hosted externally with a cloud provider, where the provider
-    facilitates an exclusive cloud environment with full guarantee of
-    privacy. This is best suited for enterprises that don't prefer a
-    public cloud due to sharing of physical resources.
+	hosted externally with a cloud provider, where the provider
+	facilitates an exclusive cloud environment with full guarantee of
+	privacy. This is best suited for enterprises that don't prefer a
+	public cloud due to sharing of physical resources.
 3.  **Hybrid Cloud**: Hybrid Clouds combine both public and private
-    cloud models. With a Hybrid Cloud, service providers can utilize 3rd
-    party Cloud Providers in a full or partial manner thus increasing
-    the flexibility of computing. The Hybrid cloud environment is
-    capable of providing on-demand, externally provisioned scale. The
-    ability to augment a private cloud with the resources of a public
-    cloud can be used to manage any unexpected surges in workload.
+	cloud models. With a Hybrid Cloud, service providers can utilize 3rd
+	party Cloud Providers in a full or partial manner thus increasing
+	the flexibility of computing. The Hybrid cloud environment is
+	capable of providing on-demand, externally provisioned scale. The
+	ability to augment a private cloud with the resources of a public
+	cloud can be used to manage any unexpected surges in workload.
 
 Cloud Computing Benefits Enterprises would need to align their
 applications, so as to exploit the architecture models that Cloud
 Computing offers. Some of the typical benefits are listed below:
 
 1.  **Reduced Cost** --- There are a number of reasons to attribute
-    Cloud technology with lower costs. The billing model is pay as per
-    usage; the infrastructure is not purchased thus lowering
-    maintenance. Initial expense and recurring expenses are much lower
-    than traditional computing.
+	Cloud technology with lower costs. The billing model is pay as per
+	usage; the infrastructure is not purchased thus lowering
+	maintenance. Initial expense and recurring expenses are much lower
+	than traditional computing.
 2.  **Increased Storage** --- With the massive Infrastructure that is
-    offered by Cloud providers today, storage & maintenance of large
-    volumes of data is a reality. Sudden workload spikes are also
-    managed effectively & efficiently, since the cloud can scale
-    dynamically.
+	offered by Cloud providers today, storage & maintenance of large
+	volumes of data is a reality. Sudden workload spikes are also
+	managed effectively & efficiently, since the cloud can scale
+	dynamically.
 3.  **Flexibility** --- This is an extremely important characteristic.
-    With enterprises having to adapt, even more rapidly, to changing
-    business conditions, speed to deliver is critical. Cloud computing
-    stresses on getting applications to market very quickly, by using
-    the most appropriate building blocks necessary for deployment.
+	With enterprises having to adapt, even more rapidly, to changing
+	business conditions, speed to deliver is critical. Cloud computing
+	stresses on getting applications to market very quickly, by using
+	the most appropriate building blocks necessary for deployment.
 
 Cloud Computing Challenges Despite its growing influence, concerns
 regarding cloud computing still remain. In our opinion, the benefits
@@ -123,43 +123,43 @@ outweigh the drawbacks and the model is worth exploring. Some common
 challenges are:
 
 1.  **Data Protection** --- Data Security is a crucial element that
-    warrants scrutiny. Enterprises are reluctant to buy an assurance of
-    business data security from vendors. They fear losing data to
-    competition and the data confidentiality of consumers. In many
-    instances, the actual storage location is not disclosed, adding onto
-    the security concerns of enterprises. In the existing models,
-    firewalls across data centers (owned by enterprises) protect this
-    sensitive information. In the cloud model, Service providers are
-    responsible for maintaining data security and enterprises would have
-    to rely on them.
+	warrants scrutiny. Enterprises are reluctant to buy an assurance of
+	business data security from vendors. They fear losing data to
+	competition and the data confidentiality of consumers. In many
+	instances, the actual storage location is not disclosed, adding onto
+	the security concerns of enterprises. In the existing models,
+	firewalls across data centers (owned by enterprises) protect this
+	sensitive information. In the cloud model, Service providers are
+	responsible for maintaining data security and enterprises would have
+	to rely on them.
 2.  **Data Recovery and Availability** --- All business applications
-    have Service level agreements that are stringently followed.
-    Operational teams play a key role in management of service level
-    agreements and runtime governance of applications. In production
-    environments, operational teams support Appropriate clustering and
-    Fail over Data Replication System monitoring (Transactions
-    monitoring, logs monitoring and others) Maintenance (Runtime
-    Governance) Disaster recovery Capacity and performance management
-    If, any of the above mentioned services is under-served by a cloud
-    provider, the damage & impact could be severe.
+	have Service level agreements that are stringently followed.
+	Operational teams play a key role in management of service level
+	agreements and runtime governance of applications. In production
+	environments, operational teams support Appropriate clustering and
+	Fail over Data Replication System monitoring (Transactions
+	monitoring, logs monitoring and others) Maintenance (Runtime
+	Governance) Disaster recovery Capacity and performance management
+	If, any of the above mentioned services is under-served by a cloud
+	provider, the damage & impact could be severe.
 3.  **Management Capabilities** --- Despite there being multiple cloud
-    providers, the management of platform and infrastructure is still in
-    its infancy. Features like Auto-scaling for example, are a crucial
-    requirement for many enterprises. There is huge potential to improve
-    on the scalability and load balancing features provided today.
+	providers, the management of platform and infrastructure is still in
+	its infancy. Features like Auto-scaling for example, are a crucial
+	requirement for many enterprises. There is huge potential to improve
+	on the scalability and load balancing features provided today.
 4.  **Regulatory and Compliance Restrictions** --- In some of the
-    European countries, Government regulations do not allow customer's
-    personal information and other sensitive information to be
-    physically located outside the state or country. In order to meet
-    such requirements, cloud providers need to setup a data center or a
-    storage site exclusively within the country to comply with
-    regulations. Having such an infrastructure may not always be
-    feasible and is a big challenge for cloud providers. With cloud
-    computing, the action moves to the interface that is, to the
-    interface between service suppliers and multiple groups of service
-    consumers. Cloud services will demand expertise in distributed
-    services, procurement, risk assessment and service negotiation areas
-    that many enterprises are only modestly equipped to handle.
+	European countries, Government regulations do not allow customer's
+	personal information and other sensitive information to be
+	physically located outside the state or country. In order to meet
+	such requirements, cloud providers need to setup a data center or a
+	storage site exclusively within the country to comply with
+	regulations. Having such an infrastructure may not always be
+	feasible and is a big challenge for cloud providers. With cloud
+	computing, the action moves to the interface that is, to the
+	interface between service suppliers and multiple groups of service
+	consumers. Cloud services will demand expertise in distributed
+	services, procurement, risk assessment and service negotiation areas
+	that many enterprises are only modestly equipped to handle.
 
 4 Main Cloud Deployment
 -----------------------
@@ -281,16 +281,79 @@ which it applies.
 
 <kbd>![](https://www.sam-solutions.com/blog/wp-content/uploads/2017/08/community-cloud@2x.png) </kbd>
 
-||Public|Private|Community|Hybird|
-|--- |--- |--- |--- |--- |
-|Easy of setup and use|Easy|Requires IT proficiency|Requires IT proficiency|Requires IT proficiency|
-|Data security and privacy|Low|High|Comparatively high|High|
-|Data Control|Little to none|High|Comparatively high|Comparatively high|
-|Reliability|Vulnerable|High|Comparatively high|High|
-|Scalability and flexibility|High|High|Fixed capacity|High|
-|Cost-effectiveness|The cheapest one|Cost-intensive, the most expensive one|Cost is shared among community members|Cheaper than a private model but more costly than a public one|
-|Demand for in-house hardware|No|Depends|Depends|Depends|
-
+<table>
+	<colgroup>
+		<col />
+		<col />
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<tbody>
+		<tr>
+			<th>
+				<br />
+			</th>
+			<th>Public</th>
+			<th>Private</th>
+			<th>Community</th>
+			<th>Hybird</th>
+		</tr>
+		<tr>
+			<td>Easy of setup and use</td>
+			<td>Easy</td>
+			<td>Requires IT proficiency</td>
+			<td>Requires IT proficiency</td>
+			<td>Requires IT proficiency</td>
+		</tr>
+		<tr>
+			<td>Data security and privacy</td>
+			<td>Low</td>
+			<td>High</td>
+			<td>Comparatively high</td>
+			<td>High</td>
+		</tr>
+		<tr>
+			<td>Data Control</td>
+			<td>Little to none</td>
+			<td>High</td>
+			<td>Comparatively high</td>
+			<td>Comparatively high</td>
+		</tr>
+		<tr>
+			<td>Reliability</td>
+			<td>Vulnerable</td>
+			<td>High</td>
+			<td>Comparatively high</td>
+			<td>High</td>
+		</tr>
+		<tr>
+			<td>Scalability and flexibility</td>
+			<td>High</td>
+			<td>High</td>
+			<td>Fixed capacity</td>
+			<td>High</td>
+		</tr>
+		<tr>
+			<td>Cost-effectiveness</td>
+			<td>The cheapest one</td>
+			<td>
+				Cost-intensive, the most expensive one
+			</td>
+			<td>Cost is shared among community members</td>
+			<td>
+				Cheaper than a private model but more costly than a public one
+			</td>
+		</tr>
+		<tr>
+			<td>Demand for in-house hardware</td>
+			<td>No</td>
+			<td>Depends</td>
+			<td>Depends</td>
+			<td>Depends</td>
+		</tr>
+	</tbody>
+</table>
 
 References
 

@@ -32,67 +32,121 @@ two weeks. This ensures that all teams in the ART create an integrated
 and tested system that stakeholders can evaluate and respond to with
 fast feedback.
 
-|Roles/Teams|Events|Artifacts|
-|--- |--- |--- |
-|* Agile Team|* Sprint Planning|* Team Backlog|
-|* Product Owner|* Backlog Grooming|* Non-Functional Requirements|
-|* Scrum Master|* Daily Stand-Up|* Team PI Objectives|
-||* Execution|* Iterations|
-||* Sprint Demo|* Stories(Working Software)|
-||* Sprint Retrospective|* Sprint Goals|
-||* IP Sprints|* Built-In Quality|
-|||* Spikes|
-|||* Team Kanban|
-
-
+<table>
+	<colgroup>
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<tbody>
+		<tr>
+			<th>
+				<strong>Roles/Teams</strong>
+			</th>
+			<th>
+				<strong>Events</strong>
+			</th>
+			<th>
+				<strong>Artifacts</strong>
+			</th>
+		</tr>
+		<tr>
+			<td>* Agile Team</td>
+			<td>* Sprint Planning</td>
+			<td>* Team Backlog</td>
+		</tr>
+		<tr>
+			<td>* Product Owner</td>
+			<td>* Backlog Grooming</td>
+			<td>* Non-Functional Requirements</td>
+		</tr>
+		<tr>
+			<td>* Scrum Master</td>
+			<td>* Daily Stand-Up</td>
+			<td>* Team PI Objectives</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>* Execution</td>
+			<td>* Iterations</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>* Sprint Demo</td>
+			<td>* Stories(Working Software)</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>* Sprint Retrospective</td>
+			<td>* Sprint Goals</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>* IP Sprints</td>
+			<td>* Built-In Quality</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>* Spikes</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>
+				<p>* Team Kanban</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
 
 -   All SAFe teams are part of one or other Agile Release Train (ART).
 -   SAFe teams are empowered, self-organizing, self-managing,
-    cross-functional teams
+	cross-functional teams
 -   Each team is equally responsible for defining, building and testing
-    stories from their Team Backlog in a fixed-length Iterations
+	stories from their Team Backlog in a fixed-length Iterations
 -   Teams plan and execute two-week time-boxed iterations in accordance
-    with agreed-to Iteration Goals.
+	with agreed-to Iteration Goals.
 -   Teams will use ScrumXP/Team Kanban routine to deliver high-quality
-    systems to produce a System Demo on every two weeks.
+	systems to produce a System Demo on every two weeks.
 -   All different teams in the ART (Agile Release Trains) will create an
-    integrated and tested system. Stakeholders will evaluate and respond
-    with fast feedback
+	integrated and tested system. Stakeholders will evaluate and respond
+	with fast feedback
 -   They apply Built-in Quality practices.
 -   Each ScrumXP team will have 5-9 team members, which includes all the
-    roles necessary to build a quality incremental value in each
-    Iteration.
+	roles necessary to build a quality incremental value in each
+	Iteration.
 -   ScrumXP roles includes:
-    -   Team(Dev+QA)
-    -   Scrum Master
-    -   Product Owner. Etc..
+	-   Team(Dev+QA)
+	-   Scrum Master
+	-   Product Owner. Etc..
 -   SAFe divides the development timeline into a set of iterations
-    within a PI (Program Increment).
+	within a PI (Program Increment).
 -   ~~PI duration is between 8 -12 weeks.~~
 -   The team will use stories to deliver the value. The Product Owner
-    will have content authority over their creation and acceptance of
-    the stories.
+	will have content authority over their creation and acceptance of
+	the stories.
 -   Stories contain Customer\'s requirements.
 -   Team Backlog includes user and enabler stories, which are identified
-    during PI planning. When the Product Management presents the
-    Roadmap, Vision, and Program Backlog.
+	during PI planning. When the Product Management presents the
+	Roadmap, Vision, and Program Backlog.
 -   Identifying, elaborating, prioritizing, scheduling, implementing,
-    testing, and accepting the stories are the primary requirements of
-    management work in team level.
+	testing, and accepting the stories are the primary requirements of
+	management work in team level.
 -   Each iteration provides:
-    -   A valuable increment of new functionality
-    -   Accomplish via constantly repeating pattern
-    -   Plan the iteration
-    -   Commit to some functionality
-    -   Execute the iteration by building and testing Stories
-    -   Demo the new functionality
-    -   Retrospective
-    -   Repeat for the next iteration
+	-   A valuable increment of new functionality
+	-   Accomplish via constantly repeating pattern
+	-   Plan the iteration
+	-   Commit to some functionality
+	-   Execute the iteration by building and testing Stories
+	-   Demo the new functionality
+	-   Retrospective
+	-   Repeat for the next iteration
 -   Teams also support the System Demo at the end of each Iteration.
-    which is the critical integration point for the ART.
+	which is the critical integration point for the ART.
 -   Larger Value Streams will have multiple ARTs.
 -   The Innovation and Planning (IP) Iterations leverage the teams with
-    an opportunity for innovation and exploration.
+	an opportunity for innovation and exploration.
 
 
 

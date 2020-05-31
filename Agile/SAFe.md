@@ -48,9 +48,9 @@ development team. The whole framework is divided into three segments 
 -   Implementing Lean-Agile software and systems in enterprise level
 -   It\'s based on Lean and Agile principles.
 -   It gives detailed guidance for work at the enterprise Portfolio,
-    Value Stream, Program, and Team.
+	Value Stream, Program, and Team.
 -   It\'s designed to meet the needs of all stakeholders within an
-    organization.
+	organization.
 
 SAFe was first developed in the field and was elaborated in  **Dean
 Leffingwell\'**s books and blog. Version 1.0 is the first official
@@ -61,41 +61,41 @@ Stream, Program, and Team levels.
 These five competencies are:
 
 1.  **Lean agile leadership:** Leaders should drive and support
-    organizational change and operational effectiveness. Ultimately, it
-    is the leadership team that has the authority to influence
-    individuals and teams to achieve their potential.
+	organizational change and operational effectiveness. Ultimately, it
+	is the leadership team that has the authority to influence
+	individuals and teams to achieve their potential.
 2.  **Team and technical agility:** Teams must possess certain vital
-    skills and adhere to Lean agile practices to create well-designed
-    solutions quickly. Ensuring the technical agility of teams is
-    especially important as they are the ones who ultimately perform the
-    actual work that will be delivered to your customers.
+	skills and adhere to Lean agile practices to create well-designed
+	solutions quickly. Ensuring the technical agility of teams is
+	especially important as they are the ones who ultimately perform the
+	actual work that will be delivered to your customers.
 3.  **DevOps and release on demand:** The establishment of a continual,
-    ongoing pipeline for deliverables is vital for creating value to
-    meet your customers' needs.
+	ongoing pipeline for deliverables is vital for creating value to
+	meet your customers' needs.
 4.  **Business solutions and Lean systems engineering:** The more
-    organizations facilitate Lean agile practices to drive blueprints,
-    development and deployment, the more innovative they can be.
+	organizations facilitate Lean agile practices to drive blueprints,
+	development and deployment, the more innovative they can be.
 5.  **Lean portfolio management:** A sound organizational strategy that
-    includes financial considerations, portfolio management and
-    compliance-related aspects is essential to SAFe success.
+	includes financial considerations, portfolio management and
+	compliance-related aspects is essential to SAFe success.
 
 ### When to Use Scaled Agile Framework 
 
 -   When a team is interested to implement an agile approach
-    consistently across larger, multi-team programs and portfolios.
+	consistently across larger, multi-team programs and portfolios.
 -   When multiple teams are running their own way of Agile
-    implementation but regularly facing obstacles, delays, and failures.
+	implementation but regularly facing obstacles, delays, and failures.
 -   When teams want to work independently.
 -   When you want to scale Agile across the organization but not sure
-    what new roles may be needed or what existing roles (i.e.,
-    management) need to change and how.
+	what new roles may be needed or what existing roles (i.e.,
+	management) need to change and how.
 -   When you have attempted to scale the Agile across your organization
-    but struggling in alignment to achieve uniform or consistent
-    strategy across business departments from portfolio to program and
-    team levels.
+	but struggling in alignment to achieve uniform or consistent
+	strategy across business departments from portfolio to program and
+	team levels.
 -   When an organization needs to improve its product development lead
-    time and want to know how other companies have succeeded in scaling
-    Agile with SAFe.
+	time and want to know how other companies have succeeded in scaling
+	Agile with SAFe.
 
 ### How different than other Agile practices 
 
@@ -103,7 +103,7 @@ These five competencies are:
 -   Available in a highly approachable and usable form.
 -   It\'s lightweight, practically proven results and specific to level.
 -   It constantly/regularly modifies/maintains most commonly used agile
-    practices.
+	practices.
 -   Offers useful extensions to common agile practices.
 -   Grounds agile practices to an enterprise context.
 -   Offers complete picture of software development.
@@ -123,50 +123,50 @@ us to move ahead and see how Agile Scaled Framework such as Scaled Scrum
 works in this space.
 
 -   All the stakeholders (Internal or External) and management come
-    along together to create a very high-level Portfolio Vision Document
-    which is also called as Portfolio Backlog. Portfolio Backlog is
-    essentially consisting of multiple Business and architectural
-    requirements which is also known as Epics. These business and
-    architectural epics are aligned with priorities.
+	along together to create a very high-level Portfolio Vision Document
+	which is also called as Portfolio Backlog. Portfolio Backlog is
+	essentially consisting of multiple Business and architectural
+	requirements which is also known as Epics. These business and
+	architectural epics are aligned with priorities.
 
 <kbd>![Epic](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/Epic.png)
 
 -   Based on the priorities, these epics are picked up by the Product
-    Managers/Delivery Managers. They create a well-defined Roadmap and a
-    Vision Document. They do this activity by discussing the release
-    plan with the Release Management Team to align the roadmap with the
-    production releases.
+	Managers/Delivery Managers. They create a well-defined Roadmap and a
+	Vision Document. They do this activity by discussing the release
+	plan with the Release Management Team to align the roadmap with the
+	production releases.
 -   Once the Roadmap and Vision Document is created, the Product
-    Manager's next step is to create a backlog of Program Backlog. A
-    Program Backlog consists of Release Items, Functional bits and a
-    pool of Non-Functional Requirements (NFRs).
+	Manager's next step is to create a backlog of Program Backlog. A
+	Program Backlog consists of Release Items, Functional bits and a
+	pool of Non-Functional Requirements (NFRs).
 -   The Release Management Team prepares a release plan to fit in the
-    features in the release cycles.
+	features in the release cycles.
 -   The Release Management Team now works on the feature bits to fulfill
-    the Release Plan and objectives. They also work on preparing the
-    architecture and infrastructure to enable smooth releases.
+	the Release Plan and objectives. They also work on preparing the
+	architecture and infrastructure to enable smooth releases.
 -   From the Program Backlog, we move towards an individual Product
-    Backlog which is also known as Team Backlog. Release/System Team
-    have their own Product Backlog, similarly, all the Scrum Team
-    working on the project will have their individual Product Backlog.
+	Backlog which is also known as Team Backlog. Release/System Team
+	have their own Product Backlog, similarly, all the Scrum Team
+	working on the project will have their individual Product Backlog.
 -   Product Backlog consists of both functional and non-functional
-    stories. These stories are prioritized by the Product Owner who is
-    working on that Scrum Team.
+	stories. These stories are prioritized by the Product Owner who is
+	working on that Scrum Team.
 -   Typically there are 5-10 Scrum Teams that are working in a Scaled
-    Agile Environment. Each of the Scrum Team has a Product Owner, Scrum
-    Master, and a Development Team. The roles and responsibilities of
-    each of the Scrum Team Member in Scaled Scrum are the same as that
-    in the normal Scrum Environment.
+	Agile Environment. Each of the Scrum Team has a Product Owner, Scrum
+	Master, and a Development Team. The roles and responsibilities of
+	each of the Scrum Team Member in Scaled Scrum are the same as that
+	in the normal Scrum Environment.
 -   The Scrum Team performs all the Scrum Ceremonies and works on
-    developing the Increment to be delivered at the end of each sprint.
+	developing the Increment to be delivered at the end of each sprint.
 
 ### Core Values 
 
 Alignment, Built-in Quality, Alignment and Transparency
 
 -   Communication and Collaboration between the Scrum Teams is the key
-    to a successful Scaled Scrum in terms of productivity, quality and
-    time to market.
+	to a successful Scaled Scrum in terms of productivity, quality and
+	time to market.
 
 A few tweaks here and there in a Scrum Framework can lead to incredible
 results in the form of Scaled Scrum.
@@ -189,19 +189,19 @@ configurations,
 ### 1. Essential SAFe
 
 -   The Essential SAFe configuration is the heart of the Framework and
-    is the simplest starting point for implementation.
+	is the simplest starting point for implementation.
 -   It's the basic building block for all other SAFe configurations and
-    describes the most critical elements that are required to realize
-    the majority of the Framework's benefits.
+	describes the most critical elements that are required to realize
+	the majority of the Framework's benefits.
 -   The Team and Program Levels form an organizational structure called
-    the Agile Release Train (ART), where Agile teams, key stakeholders,
-    and other resources are dedicated to an important, ongoing solution
-    mission.
+	the Agile Release Train (ART), where Agile teams, key stakeholders,
+	and other resources are dedicated to an important, ongoing solution
+	mission.
 
 ### 2. Portfolio SAFe
 
 -   The Portfolio SAFe configuration helps to align portfolio execution
-    to the enterprise strategy.
+	to the enterprise strategy.
 -   Organized around the flow of value.
 -   Lean-Agile budgeting empowers decision makers.
 -   Kanban system provides portfolio visibility and WIP limits.
@@ -212,27 +212,27 @@ configurations,
 ### 3. Large Solution SAFe
 
 -   Large Solution SAFe configuration is for developing the largest and
-    most complex solutions that typically require multiple Agile release
-    trains and Suppliers, but do not require portfolio-level
-    considerations.
+	most complex solutions that typically require multiple Agile release
+	trains and Suppliers, but do not require portfolio-level
+	considerations.
 -   This is common for industries like aerospace, defense, automotive
-    etc.
+	etc.
 -   The Solution Train organizational construct of the Large Solution
-    Level helps enterprises that face the biggest challenges---building
-    large-scale, multidisciplinary software, hardware, and complex IT
-    systems.
+	Level helps enterprises that face the biggest challenges---building
+	large-scale, multidisciplinary software, hardware, and complex IT
+	systems.
 -   Building these solutions requires additional roles, artifacts,
-    events, and coordination.
+	events, and coordination.
 
 ### 4. Full SAFe 
 
 -   The Full SAFe configuration is the most comprehensive version of the
-    Framework.
+	Framework.
 -   It supports enterprises that build and maintain large integrated
-    solutions, that require hundreds of people or more, and includes all
-    levels of SAFe: team, program, large solution, and portfolio.
+	solutions, that require hundreds of people or more, and includes all
+	levels of SAFe: team, program, large solution, and portfolio.
 -   In largest enterprises, multiple instances of various SAFe
-    configurations may be required.
+	configurations may be required.
 
 Foundation
 ----------
@@ -269,34 +269,34 @@ Four core values define the belief system for SAFe:
 ### Program Execution 
 
 -   Program execution is the most important core values as it compares
-    to other values without which the execution team cannot deliver any
-    value to the customer.
+	to other values without which the execution team cannot deliver any
+	value to the customer.
 -   Mainly it focuses on working software and great customer experience.
 -   Complex software development is accomplished with the help of
-    inspecting and adept at the end and performs better in every PI.
+	inspecting and adept at the end and performs better in every PI.
 -   Not only the teams but with the help of Agile leaders, the
-    leadership team can also perform customer satisfaction
+	leadership team can also perform customer satisfaction
 
 ### Transparency
 
 -   At every level i.e. team, program, value stream, and portfolio level
-    we have a whiteboard which displays information about project
-    progress at any point of time.
+	we have a whiteboard which displays information about project
+	progress at any point of time.
 -   The team follows agile scrum, hence all the team members trust each
-    other and are free to take decisions which foster innovations.
+	other and are free to take decisions which foster innovations.
 -   Encourages open and honest communication with all stakeholders.
 -   Value productivity, quality, transparency, and openness over
-    internal politics.
+	internal politics.
 
 ### Built-in Quality  
 
 -   Incrementally adopt the Built-in Quality practices for software,
-    hardware, and firmware. Understand, teach, or sponsor technical
-    skills development in support of high-quality code, components,
-    systems, and solutions.
+	hardware, and firmware. Understand, teach, or sponsor technical
+	skills development in support of high-quality code, components,
+	systems, and solutions.
 -   Foster Communities of Practice.
 -   Understand, support, and apply Agile Architecture and Lean User
-    Experience (UX)
+	Experience (UX)
 
 Lean-Agile Mindset 
 ------------------
@@ -433,30 +433,30 @@ to harness employee's different strengths and talents.
 -------------
 
 1.  Our highest priority is to satisfy the customer through early and
-    continuous delivery of valuable software.
+	continuous delivery of valuable software.
 2.  Welcome changing requirements, even late in development. Agile
-    processes harness change for the customer's competitive advantage.
+	processes harness change for the customer's competitive advantage.
 3.  Deliver working software frequently, from a couple of weeks to a
-    couple of months, with a preference to the shorter timescale.
+	couple of months, with a preference to the shorter timescale.
 4.  Business people and developers must work together daily throughout
-    the project.
+	the project.
 5.  Build projects around motivated individuals. Give them the
-    environment and support they need, and trust them to get the job
-    done.
+	environment and support they need, and trust them to get the job
+	done.
 6.  The most efficient and effective method of conveying information to
-    and within a development team is face-to-face conversation.
+	and within a development team is face-to-face conversation.
 7.  Working software is the primary measure of progress.
 8.  Agile processes promote sustainable development. The sponsors,
-    developers, and users should be able to maintain a constant pace
-    indefinitely.
+	developers, and users should be able to maintain a constant pace
+	indefinitely.
 9.  Continuous attention to technical excellence and good design
-    enhances agility.
+	enhances agility.
 10. Simplicity--the art of maximizing the amount of work not done--is
-    essential.
+	essential.
 11. The best architectures, requirements, and designs emerge from
-    self-organizing teams.
+	self-organizing teams.
 12. At regular intervals, the team reflects on how to become more
-    effective, then tunes and adjusts its behavior accordingly.
+	effective, then tunes and adjusts its behavior accordingly.
 
 <kbd>![](https://d1zx8a944ras19.cloudfront.net/wp-content/uploads/2018/08/12-agile-principles.png)
 
@@ -465,11 +465,11 @@ Agile Leadership
 
 1.  When there are leadership and guidance, not command & control.
 2.  When there is alignment across the organization instead of the
-    pursuit of local optimization efforts or personal agendas.
+	pursuit of local optimization efforts or personal agendas.
 3.  When the collaboration of all participants beyond hierarchies is the
-    norm, not an exception.
+	norm, not an exception.
 4.  When we acknowledge that management principles of the 19th century
-    are unsuited to solve complex problems of the 21st century.
+	are unsuited to solve complex problems of the 21st century.
 5.  When managers become servant leaders.
 
 The following paragraphs focus on the main concepts related to agile
@@ -626,35 +626,35 @@ collaboration, and cross-functionality of teams:
 
 -   The definition of mindset: " [The established set of attitudes held by someone](https://en.oxforddictionaries.com/definition/mindset "The Oxford Disctionaries on Mindset")."
 -   The complexity challenge:
-    -   The  [scientific management methodology](https://en.wikipedia.org/wiki/Scientific_management "Wikipedia on Scientific Management") of Frederick Taylor does not apply to "creative work." -   Problem-solving in a complex environment cannot be achieved with "more" planning.
-    -   The future in the complex or chaotic domain cannot be predicted.
-    -   Hence different approaches need to be employed when dealing with creative solutions in unchartered territory, for example,  [Empiricism](https://www.britannica.com/topic/empiricism "The Encyclopedia Britannica on Empiricism") or  [Lean](https://www.lean.org/WhatsLean/).
+	-   The  [scientific management methodology](https://en.wikipedia.org/wiki/Scientific_management "Wikipedia on Scientific Management") of Frederick Taylor does not apply to "creative work." -   Problem-solving in a complex environment cannot be achieved with "more" planning.
+	-   The future in the complex or chaotic domain cannot be predicted.
+	-   Hence different approaches need to be employed when dealing with creative solutions in unchartered territory, for example,  [Empiricism](https://www.britannica.com/topic/empiricism "The Encyclopedia Britannica on Empiricism") or  [Lean](https://www.lean.org/WhatsLean/).
 
 ### Focus on Delivering Value
 
 -   Continuous value delivery to customers; outcome over output.
-    (Manifesto of Agile Software Development: " [Working software is the
-    primary measure of
-    progress](https://agilemanifesto.org/principles.html "Principles behind the Agile Manifesto").")
+	(Manifesto of Agile Software Development: " [Working software is the
+	primary measure of
+	progress](https://agilemanifesto.org/principles.html "Principles behind the Agile Manifesto").")
 -   Continuous learning & applying empiricism:
-    -   Deming:  [PDCA
-        cycle](https://en.wikipedia.org/wiki/PDCA).
-    -   Empiricism: Transparency, inspection, adaptation.
-    -   Iterative, incremental.
-    -   Accepting that failure is more than an option but inevitable.
-    -   Willingness to adapt to change.
+	-   Deming:  [PDCA
+		cycle](https://en.wikipedia.org/wiki/PDCA).
+	-   Empiricism: Transparency, inspection, adaptation.
+	-   Iterative, incremental.
+	-   Accepting that failure is more than an option but inevitable.
+	-   Willingness to adapt to change.
 
 ### Self-Organization
 
 -   Teams can best decide how to accomplish work and achieve the goal.
 -   Teams outperform individuals.
 -   Team building is a crucial success factor: The team wins, the team
-    fails.
+	fails.
 -   [Optimize for flow not
-    utilization](https://www.youtube.com/watch?v=CostXs2p6r0),
-    and move from push to flow.
+	utilization](https://www.youtube.com/watch?v=CostXs2p6r0),
+	and move from push to flow.
 -   The importance of values:  [courage, commitment, focus, openness,
-    respect](https://scrumguides.org/scrum-guide.html#values "The Scrum Guide on Scrum Values").
+	respect](https://scrumguides.org/scrum-guide.html#values "The Scrum Guide on Scrum Values").
 
 ### Fostering collaboration
 
@@ -662,13 +662,13 @@ collaboration, and cross-functionality of teams:
 -   Respect for individuals.
 -   Inclusion and diversity.
 -   [Core
-    Protocols](https://liveingreatness.com/core-protocols/ "Jim and Michele McCarthy: The Core Protocols"):
-    Opt-in, opt-out, law of 2 feet --- creative work requires voluntary
-    participation.
+	Protocols](https://liveingreatness.com/core-protocols/ "Jim and Michele McCarthy: The Core Protocols"):
+	Opt-in, opt-out, law of 2 feet --- creative work requires voluntary
+	participation.
 -   Prime directive: stop protecting the organization by assuming people
-    come to the office to "rip you off."
+	come to the office to "rip you off."
 -   [Give people a voice, provide an opportunity to be
-    heard](https://management30.com/podcast/the-secret-to-creating-high-performing-teams/).
+	heard](https://management30.com/podcast/the-secret-to-creating-high-performing-teams/).
 
 Further reading:  [How to build the perfect
 team](https://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html "What Google Learned From Its Quest to Build the Perfect Team").
@@ -678,20 +678,20 @@ team](https://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-q
 
 -   End-to-end (value) delivery capability of teams.
 -   The autonomous pursuit of customer value balanced with
-    accountability.
+	accountability.
 -   Abandoning functional silos in favor of focusing on delivering
-    value.
+	value.
 -   Avoidance of local optimization.
 -   A cornerstone on the path to achieving business agility.
 
 ### More Articles on Agile Leadership:
 
 -   [What Exactly is the Agile
-    Mindset](https://www.infoq.com/articles/what-agile-mindset)?
+	Mindset](https://www.infoq.com/articles/what-agile-mindset)?
 -   [A Leader's Framework for Decision
-    Making](https://hbr.org/2007/11/a-leaders-framework-for-decision-making).
+	Making](https://hbr.org/2007/11/a-leaders-framework-for-decision-making).
 -   [The New New Product Development
-    Game](https://hbr.org/1986/01/the-new-new-product-development-game "Hirotaka Takeuchi and Ikujiro Nonaka: The New New Product Development Game").
+	Game](https://hbr.org/1986/01/the-new-new-product-development-game "Hirotaka Takeuchi and Ikujiro Nonaka: The New New Product Development Game").
 
 Creating a Learning Organization
 --------------------------------
@@ -702,44 +702,44 @@ organization' in his book ' [The Fifth
 Discipline](https://www.amazon.com/Fifth-Discipline-Practice-Learning-Organization/dp/0385517254/ref=sr_1_fkmr2_1 "Peter Senge: The Fifth Discipline: The Art & Practice of The Learning Organization"):'
 
 -   "[The only sustainable competitive advantage is an organization\'s
-    ability to learn faster than the
-    competition](https://www.goodreads.com/author/quotes/21072.Peter_M_Senge "Peter Senge on the Learning Organization")."
+	ability to learn faster than the
+	competition](https://www.goodreads.com/author/quotes/21072.Peter_M_Senge "Peter Senge on the Learning Organization")."
 -   "People working together at their best. It's a continuous,
-    relentless process."
+	relentless process."
 -   There are two mindsets that can infiltrate an organization: control
-    and learning.
+	and learning.
 
 These are the characteristics of a learning organization according to
 Peter Senge:
 
 -   System thinking: assessing businesses as a system of bounded
-    objects.
+	objects.
 -   Personal mastery: the commitment of an individual to the process of
-    learning.
+	learning.
 -   Mental models: assumptions and generalizations held by individuals
-    and organizations.
+	and organizations.
 -   Shared vision: Creating a collective identity to provide focus and
-    energy for learning.
+	energy for learning.
 -   Team learning: The accumulation of individual learning.
 
 Harvard Business School professor David A. Garvin defines a learning
 organization as follows:
 
 -   "A learning organization is an organization skilled at creating,
-    acquiring, and transferring knowledge, and at modifying its behavior
-    to reflect new knowledge and insights."
+	acquiring, and transferring knowledge, and at modifying its behavior
+	to reflect new knowledge and insights."
 -   New ideas, insights or moments of creativity are necessary to
-    trigger organizational change. They are not sufficient, though to
-    create a learning organization. The changes to the way work are
-    accomplished need to follow suit.
+	trigger organizational change. They are not sufficient, though to
+	create a learning organization. The changes to the way work are
+	accomplished need to follow suit.
 
 
 
 
 -   Sources:  [Building a Learning
-    Organization](https://hbr.org/1993/07/building-a-learning-organization "David A. Garvin: Building a Learning Organization"),
-    and 
-    [Wikipedia](https://en.wikipedia.org/wiki/Learning_organization "Wikipedia on the learning organization").
+	Organization](https://hbr.org/1993/07/building-a-learning-organization "David A. Garvin: Building a Learning Organization"),
+	and 
+	[Wikipedia](https://en.wikipedia.org/wiki/Learning_organization "Wikipedia on the learning organization").
 
 Traditional vs. Agile Leadership Behaviour - A Cheat Sheet
 ----------------------------------------------------------
@@ -751,17 +751,17 @@ agile leadership:
 ### Traditional Management \<=\> Agile Leadership
 
 1.  Predictive, long-term planning \<=\> Provision of vision, strategy,
-    and direction
+	and direction
 2.  Control of work, task assignment \<=\> Fostering self-organization
 3.  Maximize utilization and capacity \<=\> Supporting teams by removing
-    what is impeding them
+	what is impeding them
 4.  The go-to problem fixer for subordinates \<=\> Let those closest to
-    the problem figure out a solution
+	the problem figure out a solution
 5.  Motivating others by extrinsic incentives (bonuses, titles, etc.)
-    \<=\> Motivating others by enabling autonomy, mastery, and purpose
+	\<=\> Motivating others by enabling autonomy, mastery, and purpose
 6.  Information flows up the hierarchy (reports, meetings) \<=\>
-    Management moves to where the information is, for example, by
-    participation in Sprint Reviews.
+	Management moves to where the information is, for example, by
+	participation in Sprint Reviews.
 
 ### Subway Map to Agile Practices
 
@@ -780,7 +780,7 @@ field experience.
 4.  Build incrementally with fast, integrated learning cycles.
 5.  Base milestones on an objective evaluation of working systems
 6.  Visualize and limit WIP, reduce batch sizes, and manage queue
-    lengths
+	lengths
 7.  Apply cadence, synchronize with cross-domain planning
 8.  Unlock the intrinsic motivation of knowledge workers
 9.  Decentralize decision-making
@@ -894,14 +894,14 @@ The SAFe agile is based on these four values.
 
 -   SAFe supports alignment.
 -   Alignment starts at,
-    -   Strategic Themes in Portfolio Backlog and
-    -   Moves down to Vision and Roadmap of Program Backlogs and then
-    -   Moves to the Team Backlogs.
+	-   Strategic Themes in Portfolio Backlog and
+	-   Moves down to Vision and Roadmap of Program Backlogs and then
+	-   Moves to the Team Backlogs.
 
 #### Built-in Quality
 
 -   It ensures that every incremental delivery reflects the quality
-    standards.
+	standards.
 -   Quality is not \"added later\" is built in.
 -   Built-in quality is a prerequisite of Lean and its mandatory
 
@@ -909,21 +909,21 @@ The SAFe agile is based on these four values.
 
 -   Transparency is the enabler for trust.
 -   SAFe helps the enterprise to achieve transparency at all levels-
-    Executives, Portfolio Managers, and other stakeholders.
+	Executives, Portfolio Managers, and other stakeholders.
 -   Everyone can see into the portfolio backlog/Kanban, program
-    backlogs/Kanban, and Team Backlog/Kanban.
+	backlogs/Kanban, and Team Backlog/Kanban.
 -   Each level has a clear understanding of the PI goals.
 -   Train Programs have visibility into the team\'s backlogs, as well
-    other program backlogs
+	other program backlogs
 -   Teams and programs have visibility into business and architecture
-    Epics. They can see what might be headed their way.
+	Epics. They can see what might be headed their way.
 
 #### Program Execution 
 
 -   SAFe places great focus on working systems and resultant business
-    outcomes.
+	outcomes.
 -   SAFe is not useful if teams can\'t execute and continuously deliver
-    value.
+	value.
 
 ### 3. Lean-Agile Leadership
 
@@ -985,13 +985,13 @@ There are two different types of SAFe implementation:
 [<kbd>![](https://www.guru99.com/images/8-2016/090116_0956_WhatisScale8.png)](https://www.guru99.com/images/8-2016/090116_0956_WhatisScale8.png)
 
 -   In SAFe 4.0 implementation we have 4-Levels:  **Portfolio, Value
-    Stream, Program, and Team.**
+	Stream, Program, and Team.**
 -   In SAFe 3.0 implementation we have 3-Levels:  **Portfolio, Program,
-    and Team**
+	and Team**
 -   3-Level SAFe is for smaller implementations with 100 or fewer
-    people. Programs that do not require significant collaboration.
+	people. Programs that do not require significant collaboration.
 -   4-Level SAFe is for solutions that typically require many hundreds
-    of practitioners to develop deploy and maintain software.
+	of practitioners to develop deploy and maintain software.
 
 ### Portfolio Level
 
@@ -1013,46 +1013,96 @@ with more than 500 to 1,000 technical practitioners---there can be
 multiple SAFe portfolios, typically one for each line of business, or as
 otherwise structured around the business organization and funding model.
 
-|Roles/Teams|Events|Artifacts|
-|--- |--- |--- |
-|* Enterprise Architect|* Strategic Investment Planning|* Strategic Themes|
-|* Program Portfolio Mgmt|* Kanban Portfolio(Epic) Planning|* Enterprise|
-|* Epic Owners||* Portfolio Backlog|
-|||* Portfolio Kanban|
-|||* Non-Functional Requirements|
-|||* Epic and Enabler|
-|||* Value Stream|
-|||* Budgets(CapEx and OpEx)|
+<table>
+<colgroup>
+	<col />
+	<col />
+	<col />
+</colgroup>
+<tbody>
+	<tr>
+		<th>
+			<strong>Roles/Teams</strong>
+		</th>
+		<th>
+			<strong>Events</strong>
+		</th>
+		<th>
+			<strong>Artifacts</strong>
+		</th>
+	</tr>
+	<tr>
+		<td>* Enterprise Architect</td>
+		<td>* Strategic Investment Planning</td>
+		<td>* Strategic Themes</td>
+	</tr>
+	<tr>
+		<td>* Program Portfolio Mgmt</td>
+		<td>* Kanban Portfolio(Epic) Planning</td>
+		<td>* Enterprise</td>
+	</tr>
+	<tr>
+		<td>* Epic Owners</td>
+		<td></td>
+		<td>* Portfolio Backlog</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>* Portfolio Kanban</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>* Non-Functional Requirements</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>* Epic and Enabler</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>* Value Stream</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>* Budgets(CapEx and OpEx)</td>
+	</tr>
+</tbody>
+</table>
 
 
 -   Highest level of interest/ concern /involvement/ in SAFe is  **SAFe
-    Portfolio**
+	Portfolio**
 -   The portfolio provides the basic blocks for organizing the
-    Lean-Agile Enterprise flow of value via one or more Value Streams.
+	Lean-Agile Enterprise flow of value via one or more Value Streams.
 -   The portfolio helps to develop systems and solutions which are
-    described in strategic themes (links a SAFe portfolio to the
-    changing business strategy of an enterprise).
+	described in strategic themes (links a SAFe portfolio to the
+	changing business strategy of an enterprise).
 -   To meet strategic objectives, portfolio level encapsulates these
-    elements. It provides basic budgeting and other governance
-    mechanisms. This way it assures that the investment in the value
-    streams provides the returns necessary for the enterprise.
+	elements. It provides basic budgeting and other governance
+	mechanisms. This way it assures that the investment in the value
+	streams provides the returns necessary for the enterprise.
 -   A portfolio is connected to business bi-directionally:
-    -   In order to guide the Portfolio to the larger changing business
-        objectives, it provides strategic themes.
-    -   Another direction indicates the constant flow of portfolio
-        values.
+	-   In order to guide the Portfolio to the larger changing business
+		objectives, it provides strategic themes.
+	-   Another direction indicates the constant flow of portfolio
+		values.
 -   Program Portfolio Management acts as stakeholders, and they are
-    accountable to deliver the business results.
+	accountable to deliver the business results.
 -   SAFe Portfolio Level contains people, processes and necessary build
-    systems and solutions that an enterprise needs to meet its strategic
-    objectives.
+	systems and solutions that an enterprise needs to meet its strategic
+	objectives.
 -   Value Streams are the primary objectives in Portfolio, with which
-    funding for the people and other resources required to build the
-    Solutions.
+	funding for the people and other resources required to build the
+	Solutions.
 -   Important key concepts used here are:
-    -   Connection to the Enterprise,
-    -   Program Portfolio Management,
-    -   Managing the Flow of Portfolio Epics.
+	-   Connection to the Enterprise,
+	-   Program Portfolio Management,
+	-   Managing the Flow of Portfolio Epics.
 
 ### Working with Portfolio Backlog
 
@@ -1091,7 +1141,7 @@ to the Initiative next. It can:
 
 -   be returned to Funnel for revision,
 -   be abolished without a chance for further life (in this case I use a
-    special  **Out-of-Date** status hidden on the Kanban Board),
+	special  **Out-of-Date** status hidden on the Kanban Board),
 -   be approved and moved to the next stage ---  **Analyzing.**
 
 At this stage we --- Yippee!!! --- can finally engage IT guys: analysts,
@@ -1163,20 +1213,20 @@ Initiatives in detail and thoroughly prepare for the Review.
 -   The Reviews have become more meticulous in a good way.
 -   Teams have more time for Pre-discovery.
 -   I do not lose old Initiatives --- I can always go back to the
-    Parked, not delivered or forgotten Initiatives and work on them
-    further.
+	Parked, not delivered or forgotten Initiatives and work on them
+	further.
 
 #### Tools used at this stage: 
 
 -   Atlassian Jira Software Server
 -   Plugin Colors for Jira --- for highlighting Business and
-    Architectural Initiatives
+	Architectural Initiatives
 -   The ' *Structure --- Project Management at Scale*' plugin --- to
-    visualize the structure made of Initiatives and features belonging
-    to them, and their WSJF prioritization
+	visualize the structure made of Initiatives and features belonging
+	to them, and their WSJF prioritization
 -   Atlassian Confluence --- source of internal documentation
 -   Lucidchart and its plugins for Jira and Confluence --- for diagrams
-    drawing
+	drawing
 
 ### Preparation for PI Planning
 
@@ -1271,7 +1321,7 @@ bar to celebrate).
 
 -   Atlassian Jira Software Server
 -   The 'Structure --- Project Management at Scale' plugin -- to monitor
-    the Discovery process and during the execution of the commitment.
+	the Discovery process and during the execution of the commitment.
 
 Cloning issues into the working JIRA ecosystem of the Company
 -------------------------------------------------------------
@@ -1304,24 +1354,24 @@ and consists of final stories, which I then use for monitoring:
 In general, the advantages of this approach are the following:
 
 -   It is easier for an IT guy to type new features and stories rather
-    than to write them down with a highlighter on a sticky note.
+	than to write them down with a highlighter on a sticky note.
 -   Many things, such as capacity remains and WSJF update depending on
-    the stories estimations, are calculated automatically using custom
-    formulas.
+	the stories estimations, are calculated automatically using custom
+	formulas.
 -   Thanks to cloning, the original Commitment is preserved for history
-    and we can always return to it.
+	and we can always return to it.
 -   It saves us both time and energy at the stage of planning
-    preparation --- paper handling takes energy.
+	preparation --- paper handling takes energy.
 -   Of course, it's great that we no longer need to add issues to JIRA
-    by typing in sticky notes.
+	by typing in sticky notes.
 
 #### Tools used at this stage: 
 
 -   Atlassian Jira Software Server
 -   The ' *Bulk Clone Professional for Jira*' Plugin-- for cloning
-    features and stories into working JIRA projects.
+	features and stories into working JIRA projects.
 -   The ' *Structure --- Project Management at Scale*' plugin -- for the
-    creation of the final Commitment structure.
+	creation of the final Commitment structure.
 
 Program Levels
 --------------
@@ -1346,66 +1396,144 @@ level contribute to the enterprise competency of DevOps and Release on
 Demand that makes this flow of value possible.
 
 
-|Roles/Teams|Events|Artifacts|
-|--- |--- |--- |
-|* DevOps|* PI(Program Increment) Planning|* Vision|
-|* System Team|* System Demos|* Roadmap|
-|* Release Management|* Inspect and Adopt Workshop|* Metrics|
-|* Product Management|* Architectural Runway|* Milestones|
-|* UEX Architect|* Release Any Time|* Releases|
-|* Release Train Engineer(RTE)|* Agile Release Train|* Program Epics|
-|* System Architect/Engineer|* Release|* Program Kanban|
-|* Business Owners||* Program Backlog|
-|* Lean-Agile Leaders||* Non-Functional Requirements|
-|* Communities of Practice||* Weighted Shortest Job First (WSJF)|
-|* Shared Services||* Program PI Objectives|
-|* Customer||* Feature|
-|||* Enabler|
-|||* Solution|
-|||* Value Stream Coordination|
+<table>
+<colgroup>
+	<col />
+	<col />
+	<col />
+</colgroup>
+<tbody>
+	<tr>
+		<th>
+			<strong>Roles/Teams</strong>
+		</th>
+		<th>
+			<strong>Events</strong>
+		</th>
+		<th>
+			<strong>Artifacts</strong>
+		</th>
+	</tr>
+	<tr>
+		<td>* DevOps</td>
+		<td>* PI(Program Increment) Planning</td>
+		<td>* Vision</td>
+	</tr>
+	<tr>
+		<td>* System Team</td>
+		<td>* System Demos</td>
+		<td>* Roadmap</td>
+	</tr>
+	<tr>
+		<td>* Release Management</td>
+		<td>* Inspect and Adopt Workshop</td>
+		<td>* Metrics</td>
+	</tr>
+	<tr>
+		<td>* Product Management</td>
+		<td>* Architectural Runway</td>
+		<td>* Milestones</td>
+	</tr>
+	<tr>
+		<td>* UEX Architect</td>
+		<td>* Release Any Time</td>
+		<td>* Releases</td>
+	</tr>
+	<tr>
+		<td>* Release Train Engineer(RTE)</td>
+		<td>* Agile Release Train</td>
+		<td>* Program Epics</td>
+	</tr>
+	<tr>
+		<td>* System Architect/Engineer</td>
+		<td>* Release</td>
+		<td>* Program Kanban</td>
+	</tr>
+	<tr>
+		<td>* Business Owners</td>
+		<td></td>
+		<td>* Program Backlog</td>
+	</tr>
+	<tr>
+		<td>* Lean-Agile Leaders</td>
+		<td></td>
+		<td>* Non-Functional Requirements</td>
+	</tr>
+	<tr>
+		<td>* Communities of Practice</td>
+		<td></td>
+		<td>* Weighted Shortest Job First (WSJF)</td>
+	</tr>
+	<tr>
+		<td>* Shared Services</td>
+		<td></td>
+		<td>* Program PI Objectives</td>
+	</tr>
+	<tr>
+		<td>* Customer</td>
+		<td></td>
+		<td>* Feature</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>* Enabler</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>* Solution</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>* Value Stream Coordination</td>
+	</tr>
+</tbody>
+</table>
 
 
 -   In Program level, Value of SAFe is delivered by long-lived Agile
-    Release Trains (ART). Iteration is for team and train is for the
-    program.
+	Release Trains (ART). Iteration is for team and train is for the
+	program.
 -   Agile Release Trains (ART) is the primary vehicle for value delivery
-    at the program level. It delivers a value stream to the
-    organization.
+	at the program level. It delivers a value stream to the
+	organization.
 -   The Program Increments (PIs) duration is of 8 to 12 weeks.
 -   ART is of 5 - 12 Agile Teams (~50 -- 125+ people) which includes
-    all the roles and infrastructure needed to deliver fully tested,
-    working, system-level software.
+	all the roles and infrastructure needed to deliver fully tested,
+	working, system-level software.
 -   Each PI is a multiple-Iteration time box. During which a
-    significant, valuable increment of the system is developed and
-    delivered.
+	significant, valuable increment of the system is developed and
+	delivered.
 -   In each PI a "demo" and "Inspect and adapt" sessions will
-    happen, and Planning begins for the next PSI.
+	happen, and Planning begins for the next PSI.
 -   At the Program level, SAFe emphasis on the principle of alignment.
-    This is because multiple agile team efforts are integrated to create
-    customer value.
+	This is because multiple agile team efforts are integrated to create
+	customer value.
 -   SAFe artifact hierarchy is  **Epics->features->user stories**.
 -   At a Program level, Product Manager/Program Manager has content
-    authority. He defines and prioritizes the program backlog.
+	authority. He defines and prioritizes the program backlog.
 -   Program backlog is a prioritized list of features.
 -   At the program level, features can be originated, or they can derive
-    from epics defined at the portfolio level.
+	from epics defined at the portfolio level.
 -   Features decompose to user stories and flow into team-level
-    backlogs.
+	backlogs.
 -   Product Manager or the Release Train Engineer role could be handled
-    by the Program Manager/Senior Project Manager
+	by the Program Manager/Senior Project Manager
 -   System Architect role at the program level is to collaborate day to
-    day work with the teams. It ensures that non-functional requirements
-    are met. Also, they work with the enterprise architect at the
-    portfolio level to make sure there is sufficient architectural
-    runway to support upcoming user and business needs.
+	day work with the teams. It ensures that non-functional requirements
+	are met. Also, they work with the enterprise architect at the
+	portfolio level to make sure there is sufficient architectural
+	runway to support upcoming user and business needs.
 -   Interface design, user experience guidelines and design elements for
-    the teams are provided by UX Designers.
+	the teams are provided by UX Designers.
 -   Chief-Scrum Master role is played by 'Release Train Engineer'.
 -   Various team (from marketing, development, quality, operations, and
-    deployment) forms 'Release Management Team'. They will approve
-    routine releases of quality solutions to customers.
+	deployment) forms 'Release Management Team'. They will approve
+	routine releases of quality solutions to customers.
 -   Deployment of software into customer environments and successful
-    delivery is taken care of by DevOps team.
+	delivery is taken care of by DevOps team.
 
 Team Level
 ----------
@@ -1432,67 +1560,122 @@ two weeks. This ensures that all teams in the ART create an integrated
 and tested system that stakeholders can evaluate and respond to with
 fast feedback.
 
-|Roles/Teams|Events|Artifacts|
-|--- |--- |--- |
-|* Agile Team|* Sprint Planning|* Team Backlog|
-|* Product Owner|* Backlog Grooming|* Non-Functional Requirements|
-|* Scrum Master|* Daily Stand-Up|* Team PI Objectives|
-||* Execution|* Iterations|
-||* Sprint Demo|* Stories(Working Software)|
-||* Sprint Retrospective|* Sprint Goals|
-||* IP Sprints|* Built-In Quality|
-|||* Spikes|
-|||* Team Kanban|
-
+<table>
+<colgroup>
+	<col />
+	<col />
+	<col />
+</colgroup>
+<tbody>
+	<tr>
+		<th>
+			<strong>Roles/Teams</strong>
+		</th>
+		<th>
+			<strong>Events</strong>
+		</th>
+		<th>
+			<strong>Artifacts</strong>
+		</th>
+	</tr>
+	<tr>
+		<td>* Agile Team</td>
+		<td>* Sprint Planning</td>
+		<td>* Team Backlog</td>
+	</tr>
+	<tr>
+		<td>* Product Owner</td>
+		<td>* Backlog Grooming</td>
+		<td>* Non-Functional Requirements</td>
+	</tr>
+	<tr>
+		<td>* Scrum Master</td>
+		<td>* Daily Stand-Up</td>
+		<td>* Team PI Objectives</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>* Execution</td>
+		<td>* Iterations</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>* Sprint Demo</td>
+		<td>* Stories(Working Software)</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>* Sprint Retrospective</td>
+		<td>* Sprint Goals</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>* IP Sprints</td>
+		<td>* Built-In Quality</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>* Spikes</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>
+			<p>* Team Kanban</p>
+		</td>
+	</tr>
+</tbody>
+</table>
 
 
 -   All SAFe teams are part of one or other Agile Release Train (ART).
 -   SAFe teams are empowered, self-organizing, self-managing,
-    cross-functional teams
+	cross-functional teams
 -   Each team is equally responsible for defining, building and testing
-    stories from their Team Backlog in a fixed-length Iterations
+	stories from their Team Backlog in a fixed-length Iterations
 -   Teams plan and execute two-week time-boxed iterations in accordance
-    with agreed-to Iteration Goals.
+	with agreed-to Iteration Goals.
 -   Teams will use ScrumXP/Team Kanban routine to deliver high-quality
-    systems to produce a System Demo on every two weeks.
+	systems to produce a System Demo on every two weeks.
 -   All different teams in the ART (Agile Release Trains) will create an
-    integrated and tested system. Stakeholders will evaluate and respond
-    with fast feedback
+	integrated and tested system. Stakeholders will evaluate and respond
+	with fast feedback
 -   They apply Built-in Quality practices.
 -   Each ScrumXP team will have 5-9 team members, which includes all the
-    roles necessary to build a quality incremental value in each
-    Iteration.
+	roles necessary to build a quality incremental value in each
+	Iteration.
 -   ScrumXP roles includes:
-    -   Team(Dev+QA)
-    -   Scrum Master
-    -   Product Owner. Etc..
+	-   Team(Dev+QA)
+	-   Scrum Master
+	-   Product Owner. Etc..
 -   SAFe divides the development timeline into a set of iterations
-    within a PI (Program Increment).
+	within a PI (Program Increment).
 -   ~~PI duration is between 8 -12 weeks.~~
 -   The team will use stories to deliver the value. The Product Owner
-    will have content authority over their creation and acceptance of
-    the stories.
+	will have content authority over their creation and acceptance of
+	the stories.
 -   Stories contain Customer\'s requirements.
 -   Team Backlog includes user and enabler stories, which are identified
-    during PI planning. When the Product Management presents the
-    Roadmap, Vision, and Program Backlog.
+	during PI planning. When the Product Management presents the
+	Roadmap, Vision, and Program Backlog.
 -   Identifying, elaborating, prioritizing, scheduling, implementing,
-    testing, and accepting the stories are the primary requirements of
-    management work in team level.
+	testing, and accepting the stories are the primary requirements of
+	management work in team level.
 -   Each iteration provides:
-    -   A valuable increment of new functionality
-    -   Accomplish via constantly repeating pattern
-    -   Plan the iteration
-    -   Commit to some functionality
-    -   Execute the iteration by building and testing Stories
-    -   Demo the new functionality
-    -   Retrospective
-    -   Repeat for the next iteration
+	-   A valuable increment of new functionality
+	-   Accomplish via constantly repeating pattern
+	-   Plan the iteration
+	-   Commit to some functionality
+	-   Execute the iteration by building and testing Stories
+	-   Demo the new functionality
+	-   Retrospective
+	-   Repeat for the next iteration
 -   Teams also support the System Demo at the end of each Iteration.
-    which is the critical integration point for the ART.
+	which is the critical integration point for the ART.
 -   Larger Value Streams will have multiple ARTs.
 -   The Innovation and Planning (IP) Iterations leverage the teams with
-    an opportunity for innovation and exploration.
+	an opportunity for innovation and exploration.
 
 Value Stream Level
 ------------------
@@ -1514,61 +1697,159 @@ stream mapping can be used to identify and address delays and
 non-value-added activities to accomplish the Lean-Agile goal of the
 shortest sustainable lead time.
 
-|Roles/Teams|Events|Artifacts|
-|--- |--- |--- |
-|* DevOps|* Pre and Post PI(Program Increment) Planning|* Vision|
-|* System Team|* Solution Demos|* Roadmap|
-|* Release Management|* Inspect and Adopt Workshop|* Metrics|
-|* Solution Management|* Agile Release Train|* Milestones|
-|* UEX Architect||* Releases|
-|* Value Stream Engineer(RTE)||*Value Stream Epics|
-|* Solution Architect/Engineer||* Value Stream Kanban|
-|* Shared Services||* Value Stream Backlog|
-|* Customer||* Non-Functional Requirements|
-|* Supplier||* Weighted Shortest Job First (WSJF)|
-|||* Value Stream PI Objectives|
-|||* Capability|
-|||* Enabler|
-|||* Solution Context|
-|||* Value Stream Coordination|
-|||* Economic Framework|
-|||* Solution Intent|
-|||* MBSE|
-|||* Set Based|
-|||* Agile Architecture|
+<table>
+<colgroup>
+	<col />
+	<col />
+	<col />
+</colgroup>
+<tbody>
+	<tr>
+		<th>
+			<strong>Roles/Teams</strong>
+		</th>
+		<th>
+			<strong>Events</strong>
+		</th>
+		<th>
+			<strong>Artifacts</strong>
+		</th>
+	</tr>
+	<tr>
+		<td>* DevOps</td>
+		<td>* Pre and Post PI(Program Increment) Planning</td>
+		<td>* Vision</td>
+	</tr>
+	<tr>
+		<td>* System Team</td>
+		<td>* Solution Demos</td>
+		<td>* Roadmap</td>
+	</tr>
+	<tr>
+		<td>* Release Management</td>
+		<td>* Inspect and Adopt Workshop</td>
+		<td>* Metrics</td>
+	</tr>
+	<tr>
+		<td>* Solution Management</td>
+		<td>* Agile Release Train</td>
+		<td>* Milestones</td>
+	</tr>
+	<tr>
+		<td>* UEX Architect</td>
+		<td></td>
+		<td>* Releases</td>
+	</tr>
+	<tr>
+		<td>* Value Stream Engineer(RTE)</td>
+		<td></td>
+		<td>*Value Stream Epics</td>
+	</tr>
+	<tr>
+		<td>* Solution Architect/Engineer</td>
+		<td></td>
+		<td>* Value Stream Kanban</td>
+	</tr>
+	<tr>
+		<td>* Shared Services</td>
+		<td></td>
+		<td>* Value Stream Backlog</td>
+	</tr>
+	<tr>
+		<td>* Customer</td>
+		<td></td>
+		<td>* Non-Functional Requirements</td>
+	</tr>
+	<tr>
+		<td>* Supplier</td>
+		<td></td>
+		<td>* Weighted Shortest Job First (WSJF)</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>* Value Stream PI Objectives</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>* Capability</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>* Enabler</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>* Solution Context</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>* Value Stream Coordination</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>* Economic Framework</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>* Solution Intent</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>* MBSE</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>* Set Based</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>* Agile Architecture</td>
+	</tr>
+</tbody>
+</table>
 
 
 -   The Value Stream Level is optional in SAFe.
 -   Value Stream Level is new in SAFe 4.0.
 -   The Value Stream Level is intended/designed for Enterprises
-    /builders/organization who are:
+	/builders/organization who are:
 
 1.  1.  1.  Large in size
-        2.  Independent
-        3.  Have complex solutions
-        4.  Their solutions typically require multiple ARTs
-        5.  They have Suppliers contribution.
-        6.  They face the largest systems challenges
-        7.  For cyber-physical systems
-        8.  For software, hardware, electrical and electronics, optics,
-            mechanics, fluidics and more.
+		2.  Independent
+		3.  Have complex solutions
+		4.  Their solutions typically require multiple ARTs
+		5.  They have Suppliers contribution.
+		6.  They face the largest systems challenges
+		7.  For cyber-physical systems
+		8.  For software, hardware, electrical and electronics, optics,
+			mechanics, fluidics and more.
 
 -   Building this kind of systems often takes hundreds, even thousands
-    of practitioners, external and internal suppliers.
+	of practitioners, external and internal suppliers.
 -   If the systems are mission crucial. Failure of the Solution, or even
-    a subsystem, has unacceptable economic and social consequences.
+	a subsystem, has unacceptable economic and social consequences.
 -   If the Enterprises can be built with a few hundred practitioners, it
-    may not need the constructs of this level. In that case, they can
-    use from the \' **collapsed view\'** which is 3-level SAFe.
+	may not need the constructs of this level. In that case, they can
+	use from the \' **collapsed view\'** which is 3-level SAFe.
 -   Building value stream solutions in a Lean-Agile pattern requires
-    additional artifacts, coordination, and constructs. So this level
-    contains an Economic Framework to provide financial boundaries for
-    Value Stream
+	additional artifacts, coordination, and constructs. So this level
+	contains an Economic Framework to provide financial boundaries for
+	Value Stream
 -   It supports cadence and synchronization for multiple ARTs and
-    Suppliers. It includes Pre-and Post-PI Planning meetings and
-    Solution Demo.
+	Suppliers. It includes Pre-and Post-PI Planning meetings and
+	Solution Demo.
 -   It gives additional roles which are: Value Stream Engineer, Solution
-    Architect/Engineering, and Solution Management.
+	Architect/Engineering, and Solution Management.
 
 The Lean-Agile Leadership
 -------------------------

@@ -25,29 +25,126 @@ stream mapping can be used to identify and address delays and
 non-value-added activities to accomplish the Lean-Agile goal of the
 shortest sustainable lead time.
 
- |Roles/Teams|Events|Artifacts|
-|--- |--- |--- |
-|* DevOps|* Pre and Post PI(Program Increment) Planning|* Vision|
-|* System Team|* Solution Demos|* Roadmap|
-|* Release Management|* Inspect and Adopt Workshop|* Metrics|
-|* Solution Management|* Agile Release Train|* Milestones|
-|* UEX Architect||* Releases|
-|* Value Stream Engineer(RTE)||*Value Stream Epics|
-|* Solution Architect/Engineer||* Value Stream Kanban|
-|* Shared Services||* Value Stream Backlog|
-|* Customer||* Non-Functional Requirements|
-|* Supplier||* Weighted Shortest Job First (WSJF)|
-|||* Value Stream PI Objectives|
-|||* Capability|
-|||* Enabler|
-|||* Solution Context|
-|||* Value Stream Coordination|
-|||* Economic Framework|
-|||* Solution Intent|
-|||* MBSE|
-|||* Set Based|
-|||* Agile Architecture|
-
+<table>
+	<colgroup>
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<tbody>
+		<tr>
+			<th>
+				<strong>Roles/Teams</strong>
+			</th>
+			<th>
+				<strong>Events</strong>
+			</th>
+			<th>
+				<strong>Artifacts</strong>
+			</th>
+		</tr>
+		<tr>
+			<td>* DevOps</td>
+			<td>* Pre and Post PI(Program Increment) Planning</td>
+			<td>* Vision</td>
+		</tr>
+		<tr>
+			<td>* System Team</td>
+			<td>* Solution Demos</td>
+			<td>* Roadmap</td>
+		</tr>
+		<tr>
+			<td>* Release Management</td>
+			<td>* Inspect and Adopt Workshop</td>
+			<td>* Metrics</td>
+		</tr>
+		<tr>
+			<td>* Solution Management</td>
+			<td>* Agile Release Train</td>
+			<td>* Milestones</td>
+		</tr>
+		<tr>
+			<td>* UEX Architect</td>
+			<td></td>
+			<td>* Releases</td>
+		</tr>
+		<tr>
+			<td>* Value Stream Engineer(RTE)</td>
+			<td></td>
+			<td>*Value Stream Epics</td>
+		</tr>
+		<tr>
+			<td>* Solution Architect/Engineer</td>
+			<td></td>
+			<td>* Value Stream Kanban</td>
+		</tr>
+		<tr>
+			<td>* Shared Services</td>
+			<td></td>
+			<td>* Value Stream Backlog</td>
+		</tr>
+		<tr>
+			<td>* Customer</td>
+			<td></td>
+			<td>* Non-Functional Requirements</td>
+		</tr>
+		<tr>
+			<td>* Supplier</td>
+			<td></td>
+			<td>* Weighted Shortest Job First (WSJF)</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>* Value Stream PI Objectives</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>* Capability</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>* Enabler</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>* Solution Context</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>* Value Stream Coordination</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>* Economic Framework</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>* Solution Intent</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>* MBSE</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>* Set Based</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>* Agile Architecture</td>
+		</tr>
+	</tbody>
+</table>
 
 
 -   The Value Stream Level is optional in SAFe.

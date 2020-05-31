@@ -57,21 +57,130 @@ After relative sizing of all the product backlog items have been done, ensure th
 Fibonacci Value Representation
 ------------------------------
 
-|Fibonacci Value|Meaning / Definition||
-|--- |--- |--- |
-|0|A zero value indicates that nothing has to be done to finish the story. It's mostly used when a deployment is pending.||
-|0.5|It's not zero, but it's a piece of cake that can be made with almost blind eyes.||
-|1|It's a small story with very low complexity or effort.||
-|2|Doubling up what a 1 means.||
-|3|A little bit more than a 2.||
-|5|This is an interesting card. There are some brainpower and effort involved to achieve this story. Widely used when the story starts to become serious.||
-|8|Much more than a five, but still somehow manageable.||
-|13|This number indicates that the user story is at a sharp edge to become too complex to be treated as just one story. Consider story splitting.||
-|20|This card mostly just express some desperation of the team member. As a team, you should consider story splitting.||
-|40|These cards mostly just express some desperation of the team member. As a team, you should consider story splitting.||
-|100|These cards mostly just express some desperation of the team member. As a team, you should consider story splitting.||
-|?|The question mark card shows up, that a developer has no clue how to estimate the story.||
-
+<table>
+	<colgroup>
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<tbody>
+		<tr>
+			<th>Fibonacci Value</th>
+			<th>Meaning / Definition</th>
+			<th>
+				<br />
+			</th>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>
+				A zero value indicates that nothing has to be done to finish the story. It's mostly used when a deployment is pending.
+			</td>
+			<td>
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>0.5</td>
+			<td>
+				It's not zero, but it's a piece of cake that can be made with almost blind eyes.
+			</td>
+			<td>
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>
+				It's a small story with very low complexity or effort.
+			</td>
+			<td>
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>
+				Doubling up what a 1 means.
+			</td>
+			<td>
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>
+				A little bit more than a 2.
+			</td>
+			<td>
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>
+				This is an interesting card. There are some brainpower and effort involved to achieve this story. Widely used when the story starts to become serious.
+			</td>
+			<td>
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>
+				Much more than a five, but still somehow manageable.
+			</td>
+			<td>
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>13</td>
+			<td>
+				This number indicates that the user story is at a sharp edge to become too complex to be treated as just one story. Consider story splitting.
+			</td>
+			<td>
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>20</td>
+			<td>
+				This card mostly just express some desperation of the team member. As a team, you should consider story splitting.
+			</td>
+			<td>
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>40</td>
+			<td>
+				These cards mostly just express some desperation of the team member. As a team, you should consider story splitting.
+			</td>
+			<td>
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>100</td>
+			<td>
+				These cards mostly just express some desperation of the team member. As a team, you should consider story splitting.
+			</td>
+			<td>
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>?</td>
+			<td>
+				The question mark card shows up, that a developer has no clue how to estimate the story.
+			</td>
+			<td>
+				<br />
+			</td>
+		</tr>
+	</tbody>
+</table>
 
 
 Estimation Technique
@@ -96,14 +205,74 @@ Story point represents the effort required to put that single Story production.
 T-Shirt size to Fibonacci
 -------------------------
 
-|T-Shirt|Fibonacci|Notes|
-|--- |--- |--- |
-|S|1||
-|M|5||
-|L|8||
-|XL|∞|Epic/Story needs to be broken down|
-
-
+<table>
+	<colgroup>
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<tbody>
+		<tr>
+			<th>
+				<p>T-Shirt</p>
+			</th>
+			<th>
+				<p>Fibonacci</p>
+			</th>
+			<th>
+				<p>Notes</p>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<p>S</p>
+			</td>
+			<td>
+				<p>1</p>
+			</td>
+			<td>
+				<p>
+					<br />
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>M</p>
+			</td>
+			<td>
+				<p>5</p>
+			</td>
+			<td>
+				<p>
+					<br />
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>L</p>
+			</td>
+			<td>
+				<p>8</p>
+			</td>
+			<td>
+				<p>
+					<br />
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>XL</p>
+			</td>
+			<td>
+				<p>∞</p>
+			</td>
+			<td>Epic/Story needs to be broken down</td>
+		</tr>
+	</tbody>
+</table>
 
 Planning Poker
 --------------

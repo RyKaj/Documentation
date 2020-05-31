@@ -179,19 +179,19 @@ The responsibilities of this role include:
 -   Establishing an environment where the team can be effective
 -   Addressing team dynamics
 -   Ensuring a good relationship between the team and  [product owner](https://www.agilealliance.org/glossary/product-owner/) as
-    well as others outside the team
+	well as others outside the team
 -   Protecting the team from outside interruptions and distractions
 -   To facilitate daily scrum, sprint planning, sprint demo, and
-    retrospective meeting
+	retrospective meeting
 -   Resolve conflicts by focusing on scrum values of openness, honesty,
-    and respect
+	and respect
 -   Forecast the number of deliverable possible in an iteration based on
-    evidence
+	evidence
 -   Estimate and plan for the whole software development project
 -   Coach the team in agile practices; emphasize on individuals &
-    interactions over process & tools
+	interactions over process & tools
 -   Help the team members in clarifying goals and actions to achieve the
-    goals
+	goals
 -   Shield the team from any distractions and interference
 -   Ensure the correct application of the scrum process
 -   Scrum Master serves his team rather than direct the team
@@ -236,14 +236,14 @@ that a product development team seeks to accomplish.  Key activities to
 accomplish this include:
 
 -   Clearly identify and describe product backlog items in order to
-    build a shared understanding of the problem and solution with the
-    product development team
+	build a shared understanding of the problem and solution with the
+	product development team
 -   Make decisions regarding the priority of product backlog items in
-    order to deliver maximum outcome with minimum output
+	order to deliver maximum outcome with minimum output
 -   Determine whether a product backlog item was satisfactorily
-    delivered
+	delivered
 -   Ensure transparency into the upcoming work of the product
-    development team.
+	development team.
 
 The product owner role was created as part of the Scrum framework in
 order to address challenges that product development teams had with
@@ -287,18 +287,18 @@ Development Team's overall efficiency and effectiveness.
 Development Teams have the following characteristics:
 
 -   They are self-organizing. No one (not even the Scrum Master) tells
-    the Development Team how to turn Product Backlog into Increments of
-    potentially releasable functionality;
+	the Development Team how to turn Product Backlog into Increments of
+	potentially releasable functionality;
 -   Development Teams are cross-functional, with all the skills as a
-    team necessary to create a product Increment;
+	team necessary to create a product Increment;
 -   Scrum recognizes no titles for Development Team members, regardless
-    of the work being performed by the person;
+	of the work being performed by the person;
 -   Scrum recognizes no sub-teams in the Development Team, regardless of
-    domains that need to be addressed like testing, architecture,
-    operations, or business analysis; and,
+	domains that need to be addressed like testing, architecture,
+	operations, or business analysis; and,
 -   Individual Development Team members may have specialized skills and
-    areas of focus, but accountability belongs to the Development Team
-    as a whole.
+	areas of focus, but accountability belongs to the Development Team
+	as a whole.
 
 ### Self-Organizing
 
@@ -579,14 +579,14 @@ about:**
 
 -   Lean Teams Connected to the Customer Journey with Missions
 -   User research, Planning and Delivery across the Organization --
-    connects as never before
+	connects as never before
 -   Slicing for Value with User Story Mapping to create Alignment
 -   The different type of teams
 -   Cross-functional competences is needed in the Lean Team
 -   Modern Agile and Continuous improvement of the System
 -   Choosing what type of Organization you want to have Together
 -   Avanza Leads the way with Lean Teams and Customer Journey
-    Organization
+	Organization
 -   Presentation on the Customer Journey Product Organization
 
 Lean Teams Connected to the Customer Journey with Missions
@@ -758,10 +758,10 @@ support an aligned user experience across teams".*
 **Example of ** **activities ** **for a Design ** **Ops Team**
 
 -   Create and update design framework to align the user experience and
-    make it easier for the teams
+	make it easier for the teams
 -   Visualize data and insights from all teams
 -   Coach and train all teams and leaders in design activities and skill
-    set if needed
+	set if needed
 -   Input and support for Strategic Company Bets or to teams when needed
 
 Modern Agile and Continuous improvement of the System
@@ -885,29 +885,29 @@ Shared Learnings
 <kbd>![](https://media.dandypeople.com/2018/06/always-improve.png)
 
 -   Have more seats than team members to enable collaboration with
-    people outside of the team.
+	people outside of the team.
 -   Get teams their own Home Zones for min. 6 months.
 -   Let the teams decide how they want their Home Zone.
 -   Have few rules, and don't punish everyone if someone can't follow
-    them.
+	them.
 -   If teams can move around, it makes it easy to get team seated next
-    to each other if close collaboration is needed -- and they can
-    easily self organize.
+	to each other if close collaboration is needed -- and they can
+	easily self organize.
 -   The problems you think you will get, are not what will trouble you
-    in the end, so think of it as a starting point, not the end
-    solution, always improve.
+	in the end, so think of it as a starting point, not the end
+	solution, always improve.
 -   Make sure to optimize for the type of activity the organization will
-    have, team zones, quiet rooms, conference call rooms, workshop areas
-    etc.
+	have, team zones, quiet rooms, conference call rooms, workshop areas
+	etc.
 -   It's important that people feel they can influence their situation
-    or they will get demotivated & stressed.
+	or they will get demotivated & stressed.
 -   Invest in really good digital tools for visualization and
-    collaboration if you want the teams to be able to move around.
+	collaboration if you want the teams to be able to move around.
 -   Get both monitors and white boards on wheels if you want the teams
-    to be able to move around as a team.
+	to be able to move around as a team.
 -   Show this to your Manager or the HR department, and ask them to
-    involve people with Agile Mindset in the process to ensure securing
-    delivery.
+	involve people with Agile Mindset in the process to ensure securing
+	delivery.
 
 The truth -- numbers from the survey -- 1 Positive and 9 Negative
 -----------------------------------------------------------------
@@ -1263,7 +1263,7 @@ Time-boxed iterations are often used in Scrum and Extreme Programming.
 Icebox 
 ------
 
- Any user stories that are recorded but not moved to development are
+ Any user stories that are recorded but not moved to development are
 stored in the icebox.\
 The term "icebox" was created by Pivotal Tracker, an Agile project
 management tool. 
@@ -1294,53 +1294,53 @@ Advantages
 ----------
 
 -   **Greater predictability:** Scrum involves more planning, so
-    depending on your personality, you may find this to be an advantage
-    or a disadvantage. As a product manager, I wanted to control the
-    release of various software features to align with specific business
-    goals for each quarter. Scrum also requires work to be completed
-    within the sprint, so you have more visibility into when work will
-    get done. It's possible to do this in kanban, but the greater
-    coordination in scrum meant I could better prep other teams, such as
-    sales and marketing, on upcoming features.
+	depending on your personality, you may find this to be an advantage
+	or a disadvantage. As a product manager, I wanted to control the
+	release of various software features to align with specific business
+	goals for each quarter. Scrum also requires work to be completed
+	within the sprint, so you have more visibility into when work will
+	get done. It's possible to do this in kanban, but the greater
+	coordination in scrum meant I could better prep other teams, such as
+	sales and marketing, on upcoming features.
 -   **Rapid improvement:** Scrum allows for fast iterations and rapid
-    improvement because of its sprint structure. A piece of work is
-    completed, released, and if real-world data suggests changes are
-    required, they can be made in a subsequent sprint.
+	improvement because of its sprint structure. A piece of work is
+	completed, released, and if real-world data suggests changes are
+	required, they can be made in a subsequent sprint.
 -   **Greater collaboration:** Because teams are coordinating on the
-    work throughout the process, team members are routinely
-    communicating and collaborating to get the work done within the time
-    constraints of the sprint.
+	work throughout the process, team members are routinely
+	communicating and collaborating to get the work done within the time
+	constraints of the sprint.
 -   **Self-organizing:** Scrum teams are self-organizing, meaning that
-    they manage themselves and the work they do. There isn't a need for
-    management oversight, allowing for faster decision-making. So scrum
-    works well in a structure where less oversight is desired.
+	they manage themselves and the work they do. There isn't a need for
+	management oversight, allowing for faster decision-making. So scrum
+	works well in a structure where less oversight is desired.
 
 Disadvantages
 -------------
 
 -   **Involves a specific structure:** Scrum has more meetings and
-    specific processes than kanban, so it's not as easily applicable to
-    every business scenario. Its use of specific roles and processes,
-    such as sprint reviews and scrum masters, means a team will have to
-    retool their approach to accommodate scrum. Also, since sprints are
-    clearly defined, adding and removing work during a sprint is not
-    possible.
+	specific processes than kanban, so it's not as easily applicable to
+	every business scenario. Its use of specific roles and processes,
+	such as sprint reviews and scrum masters, means a team will have to
+	retool their approach to accommodate scrum. Also, since sprints are
+	clearly defined, adding and removing work during a sprint is not
+	possible.
 -   **Meeting overkill:** Each sprint is short yet involves many
-    check-in points, so if these meetings are taken too far, it can sap
-    team bandwidth for the work that needs to be completed. For
-    instance, I worked on a scrum team where the daily stand-ups could
-    go for an hour. A stand-up is meant to take no more than 15 minutes.
-    It's a chance for teams to align on work for the day. If it goes too
-    long, team members are taken away from time to actually do the work.
+	check-in points, so if these meetings are taken too far, it can sap
+	team bandwidth for the work that needs to be completed. For
+	instance, I worked on a scrum team where the daily stand-ups could
+	go for an hour. A stand-up is meant to take no more than 15 minutes.
+	It's a chance for teams to align on work for the day. If it goes too
+	long, team members are taken away from time to actually do the work.
 -   **Requires ramp up:** Scrum requires ramp up time. If you've never
-    used its concepts, such as estimating the level of effort required
-    for a piece of work, it will take a few sprints to work through the
-    kinks and become familiar with the process.
+	used its concepts, such as estimating the level of effort required
+	for a piece of work, it will take a few sprints to work through the
+	kinks and become familiar with the process.
 -   **Necessitates proper workload planning:** If work is not properly
-    broken down into small enough components to fit the timeframe of a
-    sprint, it won't get done when anticipated, causing delays in the
-    project. So scrum requires rigor at the sprint planning phase to
-    provide the right balance to the team's workload.
+	broken down into small enough components to fit the timeframe of a
+	sprint, it won't get done when anticipated, causing delays in the
+	project. So scrum requires rigor at the sprint planning phase to
+	provide the right balance to the team's workload.
 
 ## Kanban
 
@@ -1504,48 +1504,48 @@ Advantages
 ----------
 
 -   **Increased throughput:** Because team members are not waiting for
-    work to be assigned, there's no idle time. Kanban provides an
-    optimal way to generate high throughput and efficiency from a team.
+	work to be assigned, there's no idle time. Kanban provides an
+	optimal way to generate high throughput and efficiency from a team.
 -   **Improved communication:** Team members can see status across the
-    group on the board easily. Also, the daily stand-ups ensure frequent
-    team check-ins and a forum for surfacing workflow challenges,
-    allowing the team to collaboratively find solutions.
+	group on the board easily. Also, the daily stand-ups ensure frequent
+	team check-ins and a forum for surfacing workflow challenges,
+	allowing the team to collaboratively find solutions.
 -   **High flexibility:** Kanban is a very flexible framework. You can
-    add and remove work items at any time so long as it's not already in
-    progress. It's also designed to fit into existing company workflows.
-    There are not a lot of rules in the system so it's easy to apply. No
-    formal roles exist, so it can accommodate your existing team
-    structure. As a result, it can be applied to many types of projects.
-    Moreover, once applied, it can be revised and molded as you see fit
-    to make it work in your specific scenario.
+	add and remove work items at any time so long as it's not already in
+	progress. It's also designed to fit into existing company workflows.
+	There are not a lot of rules in the system so it's easy to apply. No
+	formal roles exist, so it can accommodate your existing team
+	structure. As a result, it can be applied to many types of projects.
+	Moreover, once applied, it can be revised and molded as you see fit
+	to make it work in your specific scenario.
 -   **Reduced waste:** Because team members are working efficiently, the
-    process reduces time wasted on activities that do not relate to
-    getting tasks done. This is one of the benefits my software
-    developers enjoyed about kanban.
+	process reduces time wasted on activities that do not relate to
+	getting tasks done. This is one of the benefits my software
+	developers enjoyed about kanban.
 
 Disadvantages 
 -------------
 
 -   **Can break down quickly:** You've got to have a well-defined
-    process, and everyone on the team must know their roles to make
-    kanban work. If you don't have these two components, kanban will
-    fall apart quickly. If a team member is unclear about their role,
-    work may sit unattended, causing a domino effect on other team
-    members.
+	process, and everyone on the team must know their roles to make
+	kanban work. If you don't have these two components, kanban will
+	fall apart quickly. If a team member is unclear about their role,
+	work may sit unattended, causing a domino effect on other team
+	members.
 -   **Necessitates constant work:** Because throughput is high, the team
-    requires a constant flow of work. Otherwise, again, the process
-    starts to break down. So if the project has intervals of uneven
-    work, it can leave team members with nothing to do.
+	requires a constant flow of work. Otherwise, again, the process
+	starts to break down. So if the project has intervals of uneven
+	work, it can leave team members with nothing to do.
 -   **No time constraints:** Kanban has no time parameters, so a task
-    takes as long as necessary to finish. This can create problems for
-    project deadlines. To combat this, your team can estimate a
-    timeframe for each piece of work on a card, and deadlines can be
-    added to each card.
+	takes as long as necessary to finish. This can create problems for
+	project deadlines. To combat this, your team can estimate a
+	timeframe for each piece of work on a card, and deadlines can be
+	added to each card.
 -   **High priority work can be missed:** Because the team grabs their
-    own tasks, they may choose work that is low priority to the
-    business. So work provided to the team must be thoroughly vetted and
-    prioritized correctly to avoid working on tasks that are not
-    important to the business.
+	own tasks, they may choose work that is low priority to the
+	business. So work provided to the team must be thoroughly vetted and
+	prioritized correctly to avoid working on tasks that are not
+	important to the business.
 
 Extreme Programming - XP / Par Programming (PP or Paring)
 
@@ -1660,62 +1660,62 @@ people and it gives them great satisfaction.
 
 Change Philosophy
 -   **Pair-Jelling:** The initial period may take more time when the
-    programmers are adjusting to working together.
+	programmers are adjusting to working together.
 -   **Scheduling:** Programmers find it difficult to find a common time
-    to meet and perform because of their time preferences.
+	to meet and perform because of their time preferences.
 -   **Partner Compatibility:** Most commonly observed because of partner
-    personality clash, habits, different skill level, experience level,
-    programming style, self-esteem, etc.,
+	personality clash, habits, different skill level, experience level,
+	programming style, self-esteem, etc.,
 -   **Personal Space: **Some developers feel they are losing their
-    personal space and also can't concentrate well.
+	personal space and also can't concentrate well.
 -   **Adaptation:** When the team does not buy the concept of
-    pair-programming, it seems like a waste of time.
+	pair-programming, it seems like a waste of time.
 -   **Co-location**: Pair programming requires a lot of communication
-    and expression to code, review, debug and test the work. When teams
-    are distributed and working remotely and there are no right tools to
-    collaborate, it becomes difficult to progress the work.
+	and expression to code, review, debug and test the work. When teams
+	are distributed and working remotely and there are no right tools to
+	collaborate, it becomes difficult to progress the work.
 -   **Role**-P**reference**: Some prefer being a navigator all the time
-    and just want to provide the guidance to the driver and it may
-    frustrate the driver to play that role always.
+	and just want to provide the guidance to the driver and it may
+	frustrate the driver to play that role always.
 -   **Pair-Pressure**: When one of the partners is rushing to complete
-    the task and do a poor job, it results in errors and low quality,
-    which leads to dissatisfaction.
+	the task and do a poor job, it results in errors and low quality,
+	which leads to dissatisfaction.
 -   Management needs to realize the benefits of the Pair programming
-    practice to implement it in the organization. There will be a
-    learning and adaptation phases for the teams and Managers need to
-    support the teams during these phases.
+	practice to implement it in the organization. There will be a
+	learning and adaptation phases for the teams and Managers need to
+	support the teams during these phases.
 -   Pair programming doesn't have to be for an entire team --- the team
-    can decide the right percentage of the practice in a sprint or a
-    day.
+	can decide the right percentage of the practice in a sprint or a
+	day.
 -   Conduct training sessions on the [Pair Programming ](https://solutions.pyramidci.com/services/quality-assurance/rigorous-qa-analysis/)concepts
-    and the ways to benefit from this practice.
+	and the ways to benefit from this practice.
 -   The schedule of the team members play a good role in implementing
-    this so, find a common time for this activity. Acquire the right
-    communication tools for collaboration when the team is distributed.
-    One advantage of the distributed team is that the schedule may
-    become easy.
+	this so, find a common time for this activity. Acquire the right
+	communication tools for collaboration when the team is distributed.
+	One advantage of the distributed team is that the schedule may
+	become easy.
 -   What type of work is qualified for Pair programming?
 -   What are the best times in the day for activity?
 -   Mock/Experiment sessions of Pair programming helps the team to
-    understand the approach and can clarify their doubts for readiness.
+	understand the approach and can clarify their doubts for readiness.
 -   As there will be a lot of conversation between the pair of members,
-    the team needs to be prepared for a certain level of noise.
-    Alternatively, a specific desk/room can be allocated for the pair
-    programming activity to reduce the noise levels.
+	the team needs to be prepared for a certain level of noise.
+	Alternatively, a specific desk/room can be allocated for the pair
+	programming activity to reduce the noise levels.
 -   Both partners should take ownership to finish the work.
 -   Understand that there will be a slight increase in the development
-    costs (20%+) in this approach but there are long term benefits with
-    it.
+	costs (20%+) in this approach but there are long term benefits with
+	it.
 -   Take feedback from the pairs to improve/change the process for
-    better results.
+	better results.
 -   Define the ground rules on how to do pair programming. Some of the
-    aspects to be included in the rules:
-    -   What activities are allowed?
-    -   What activities are not allowed?
-    -   What are the expectations of the pair?
-    -   How long a session can go?
-    -   How to define the goal for the session?
-    -   How to find a partner?
+	aspects to be included in the rules:
+	-   What activities are allowed?
+	-   What activities are not allowed?
+	-   What are the expectations of the pair?
+	-   How long a session can go?
+	-   How to define the goal for the session?
+	-   How to find a partner?
 
 
 ### Release Methodology
@@ -1819,8 +1819,8 @@ Object Model based on the sequence diagrams.
 Outcome
 
 -   Successfully inspected Design Package.( The design package includes
-    a covering memo, or paper, that integrates and describes the design
-    package)
+	a covering memo, or paper, that integrates and describes the design
+	package)
 
 Build By Feature
 ----------------
@@ -1935,7 +1935,7 @@ development cycle to learn the direction of the next. The team learns −
 -   About product changes
 
 -   More fundamental changes in underlying assumptions about how the
-    products are being developed
+	products are being developed
 
 The iterations need to be short, so that the team can learn from small
 rather than large mistakes.
@@ -2219,25 +2219,167 @@ the very similar focus on a highly visible workflow that keeps all team
 membe3rs in the loop on the \"Work In Progress\".
 
 
-|Scrum||Kanban|
-|--- |--- |--- |
-|A Scrum Master, Product Owner and Team Members make up a Scrum Team.|Team Roles|No set roles are defined. Roles are not required to be cross functional.|
-|Columns are labeled to reflect periods in the work flow from beginning through the team’s definition of doneA Scrum board is reset between each sprint|Work Boards|Columns are likewise labeled to show work flow states, but also publish the max number of stories allowed in column at onceA kanban board is persistent|
-|Scrum processes place heavy emphasis on schedule with a prioritized list of story points. This iterative process enables accurate estimations of work flow and effective management of multiple projects.Regular fixed length sprints (ie, 2 weeks)|Scheduling/ Cadence|There are no required time boxes or iterations. While the Kanban method is iterative in nature, the continual improvement is expected to occur in an evolutionary fashion as work is continually completed.Continuous flow|
-|At the end of each sprint|Release methodology|Continuous delivery|
-|VelocityUses Velocity as default metric for planning and process improvementBurndown chart prescribedWIP limited indirectly (per sprint)|Key Metrics|Lead timecycle timeWIPUses Lead time as default metric for planning and process improvementNo particular type of diagram is prescribed|
-|Every member of the scrum team has a fixed job description and responsibilities that come with itPrescribes 3 roles (PO/SM/Team)|Roles & Responsibilities|Kanban does not have set roles and it portrays complete flexibility in terms of individual responsibilities.Doesn’t prescribe any roles|
-|Members are required to commit to a specific amount of workTimeboxed iterations prescribedTeam commits to a specific amount of work for this iterationItems must be broken down so they can be completed within 1 sprint|Teams & Commitment / Timebox|Commitment is an option and not a compulsion for teamsTimeboxed iterations optional. Can have separate cadences for planning, release, and process improvement. Can be event-driven instead of timeboxedCommitment optionalNo particular item size is prescribed|
-|Any obstacles or challenges that arise need to be immediately dealt with.|Addressing Challenges|Hurdles are avoided to ensure smooth flow of work.|
-|Cross-functional teams are necessary for Scrum.|Types of Teams / Cross-functional|In Kanban, specialized teams are encouraged. Cross-functional teams optional. Specialist teams allowed|
-|Teams focus to collaborate and complete the tasks to produce something of greater value.|Objective of the Team|Teams strive to achieve goals and reduce the amount of time taken to complete the entire process.|
-|One cannot add new items to ongoing iterations|Iterations|New items can be continuously added whenever additional capacity is available|
-|One team owns the backlog at a time|Ownership|Kanban boards have no ownership|
-|Estimation prescribed|Estimation|Estimation optional|
-|A sprint backlog is owned by one specific team|Backlog|A kanban board may be shared by multiple teams or individuals|
-|Prescribes a prioritized product backlog|Priority|Prioritization is optional|
-
-
+<table class="wrapped confluenceTable">
+	<colgroup>
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<tbody>
+		<tr>
+			<th>Scrum</th>
+			<th>
+				<br />
+			</th>
+			<th>Kanban</th>
+		</tr>
+		<tr>
+			<td>A Scrum Master, Product Owner and Team Members make up a Scrum Team.</td>
+			<td>Team Roles</td>
+			<td>No set roles are defined. Roles are not required to be cross functional.</td>
+		</tr>
+		<tr>
+			<td>
+				<ul>
+					<li>Columns are labeled to reflect periods in the work flow from beginning through the team’s definition of done</li>
+					<li>A Scrum board is reset between each sprint</li>
+				</ul>
+			</td>
+			<td>Work Boards</td>
+			<td>
+				<ul>
+					<li>Columns are likewise labeled to show work flow states, but also publish the max number of stories allowed in column at once</li>
+					<li>A kanban board is persistent</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Scrum processes place heavy emphasis on schedule with a prioritized list of story points. This iterative process enables accurate estimations of work flow and effective management of multiple projects.</p>
+				<p>Regular fixed length sprints (ie, 2 weeks)
+					<br />
+				</p>
+			</td>
+			<td>Scheduling/ Cadence</td>
+			<td>
+				<p>There are no required time boxes or iterations. While the Kanban method is iterative in nature, the continual improvement is expected to occur in an evolutionary fashion as work is continually completed.</p>
+				<p>Continuous flow
+					<br />
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td>At the end of each sprint</td>
+			<td>Release methodology</td>
+			<td>Continuous delivery</td>
+		</tr>
+		<tr>
+			<td>
+				<ul>
+					<li>Velocity</li>
+					<li>Uses Velocity as default metric for planning and process improvement</li>
+					<li>Burndown chart prescribed</li>
+					<li>WIP limited indirectly (per sprint)</li>
+				</ul>
+			</td>
+			<td>Key Metrics</td>
+			<td>
+				<ul>
+					<li>Lead time</li>
+					<li>cycle time</li>
+					<li>WIP</li>
+					<li>Uses Lead time as default metric for planning and process improvement
+						<br />
+					</li>
+					<li>No particular type of diagram is prescribed</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<ul>
+					<li>Every member of the scrum team has a fixed job description and responsibilities that come with it</li>
+					<li>Prescribes 3 roles (PO/SM/Team)</li>
+				</ul>
+				<p>
+					<br />
+				</p>
+			</td>
+			<td>Roles &amp; Responsibilities</td>
+			<td>
+				<ul>
+					<li>Kanban does not have set roles and it portrays complete flexibility in terms of individual responsibilities.</li>
+					<li>Doesn’t prescribe any roles</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<ul>
+					<li>Members are required to commit to a specific amount of work</li>
+					<li>Timeboxed iterations prescribed</li>
+					<li>Team commits to a specific amount of work for this iteration</li>
+					<li>Items must be broken down so they can be completed within 1 sprint</li>
+				</ul>
+			</td>
+			<td>Teams &amp; Commitment / Timebox
+				<br />
+			</td>
+			<td>
+				<ul>
+					<li>Commitment is an option and not a compulsion for teams</li>
+					<li>Timeboxed iterations optional. Can have separate cadences for planning, release, and process improvement. Can be event-driven instead of timeboxed</li>
+					<li>Commitment optional</li>
+					<li>No particular item size is prescribed</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>Any obstacles or challenges that arise need to be immediately dealt with.</td>
+			<td>Addressing Challenges</td>
+			<td>Hurdles are avoided to ensure smooth flow of work.</td>
+		</tr>
+		<tr>
+			<td>Cross-functional teams are necessary for Scrum.</td>
+			<td>Types of Teams / Cross-functional
+				<br />
+			</td>
+			<td>In Kanban, specialized teams are encouraged. Cross-functional teams optional. Specialist teams allowed
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>Teams focus to collaborate and complete the tasks to produce something of greater value.</td>
+			<td>Objective of the Team</td>
+			<td>Teams strive to achieve goals and reduce the amount of time taken to complete the entire process.</td>
+		</tr>
+		<tr>
+			<td>One cannot add new items to ongoing iterations</td>
+			<td>Iterations</td>
+			<td>New items can be continuously added whenever additional capacity is available</td>
+		</tr>
+		<tr>
+			<td>One team owns the backlog at a time</td>
+			<td>Ownership</td>
+			<td>Kanban boards have no ownership</td>
+		</tr>
+		<tr>
+			<td>Estimation prescribed</td>
+			<td>Estimation</td>
+			<td>Estimation optional</td>
+		</tr>
+		<tr>
+			<td>A sprint backlog is owned by one specific team</td>
+			<td>Backlog</td>
+			<td>A kanban board may be shared by multiple teams or individuals</td>
+		</tr>
+		<tr>
+			<td>Prescribes a prioritized product backlog</td>
+			<td>Priority</td>
+			<td>Prioritization is optional</td>
+		</tr>
+	</tbody>
+</table
 
 <kbd>![Scrum vs agile](https://www.smartsheet.com/sites/default/files/matrix-scrum-agile%402x.gif)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2426,18 +2568,18 @@ In this case, incremental iterations and customer validation are taken
 to their extreme, by some rules and procedures, here are some of them:
 
 -   **Product Owner**: a member of the team that must act as a supporter
-    of clients and do everything to ensure that the project meets their
-    interests.
+	of clients and do everything to ensure that the project meets their
+	interests.
 -   **Scrum Master**: responsible for compliance with Scrum procedures
-    without deviations or shortcuts.
+	without deviations or shortcuts.
 -   **Daily Scrum**: a quick meeting in the morning, before starting
-    work, so that everyone can discuss the challenges of the previous
-    day.
+	work, so that everyone can discuss the challenges of the previous
+	day.
 -   **Sprint Review**: The iterations in Scrum are divided into sprints.
-    In a sprint review, everything that was implemented by the team
-    members in that period is presented to the rest of the group.
+	In a sprint review, everything that was implemented by the team
+	members in that period is presented to the rest of the group.
 -   **Sprint Retrospective**: Planning the next sprint based on the
-    learning acquired in the previous one.
+	learning acquired in the previous one.
 
 <kbd>![Scrum framework roles and process.](https://brainhub.eu/blog/wp-content/uploads/2018/04/differences-lean-agile-scrum-scrum-process.jpg)
 
@@ -2460,37 +2602,37 @@ When the organization reaches a certain level of maturity in Lean and
 Agile adoption, it begins to enjoy the benefits below:
 
 -   **Reducing development and maintenance costs**: By significantly
-    reducing the incidence of bugs, effectively identifying risks and
-    ensuring better assertiveness, it is possible to significantly
-    reduce the cost of a project over its lifetime;
+	reducing the incidence of bugs, effectively identifying risks and
+	ensuring better assertiveness, it is possible to significantly
+	reduce the cost of a project over its lifetime;
 -   **Anticipation of return on investment**: the proposed model is
-    based on the frequent delivery of functional software, ready to be
-    used in production. Combined with reliable prioritization and
-    planning techniques, it is possible to extract value from the
-    software delivered in the first development iterations;
+	based on the frequent delivery of functional software, ready to be
+	used in production. Combined with reliable prioritization and
+	planning techniques, it is possible to extract value from the
+	software delivered in the first development iterations;
 -   **Productivity 2 to 3 times greater compared to traditional
-    approaches**: elimination of waste, reduction of complexity and
-    improvement in the quality of the code allows a considerable
-    increase in the productivity of the development team;
+	approaches**: elimination of waste, reduction of complexity and
+	improvement in the quality of the code allows a considerable
+	increase in the productivity of the development team;
 -   **Total control, visibility, and manageability of the development
-    cycle**: the process provides accurate information about the
-    progress of projects at any time, enhancing management and enabling
-    better decision making;
+	cycle**: the process provides accurate information about the
+	progress of projects at any time, enhancing management and enabling
+	better decision making;
 -   **Greater assertiveness and adherence**: changes are always welcome
-    and your project is constantly adapted to your business needs;
+	and your project is constantly adapted to your business needs;
 -   **Less uncertainty**: short planning and delivery cycles, more
-    assertive estimates, and a build with integrity at all stages of the
-    development process make it possible to increase predictability and
-    decrease uncertainty in software development;
+	assertive estimates, and a build with integrity at all stages of the
+	development process make it possible to increase predictability and
+	decrease uncertainty in software development;
 -   **Better quality of the final product**: the quality management
-    processes that take place from the early stages of product design
-    and through the entire development guarantee a final product with
-    superior quality.
+	processes that take place from the early stages of product design
+	and through the entire development guarantee a final product with
+	superior quality.
 -   **Continuous improvement**: in addition to being a resilient process
-    that adapts to the needs of different types of projects, the
-    proposed process is based on a continuous cycle of improvement,
-    through retrospectives and methods of inspection and adaptation
-    applied throughout the entire lifecycle of the project.
+	that adapts to the needs of different types of projects, the
+	proposed process is based on a continuous cycle of improvement,
+	through retrospectives and methods of inspection and adaptation
+	applied throughout the entire lifecycle of the project.
 
 
 
