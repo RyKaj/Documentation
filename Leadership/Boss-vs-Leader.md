@@ -20,110 +20,120 @@
 ## Comparision Table
 
 <table>
-<colgroup>
-<col style="width: 19%" />
-<col style="width: 24%" />
-<col style="width: 55%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Boss / Manager</th>
-<th>Leader</th>
-<th><br />
-</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>A boss gives answers</td>
-<td>A leader seeks solutions</td>
-<td>Part of being a leader means coaching employees. A leader will help an employee grow by guiding him or her through challenges. This is how employees can develop problem-solving abilities and other skills that add value to a company.</td>
-</tr>
-<tr class="even">
-<td>A boss manages work, direct</td>
-<td>A leader leads people, coaches</td>
-<td>“Management consists of controlling a group or a set of entities to accomplish a goal,” says Vineet Nayar in  <em>Harvard Business Review</em>. “Leadership refers to an individual’s ability to influence, motivate, and enable others to contribute toward organizational success.  <a href="https://hbr.org/2013/08/tests-of-a-leadership-transiti" class="external-link" title="Three Differences Between Managers and Leaders">Influence and inspiration separate leaders from managers, not power and control</a> . "</td>
-</tr>
-<tr class="odd">
-<td>A boss expects big results.</td>
-<td>A leader is generous with praise</td>
-<td>A leader offers <a href="https://www.americanexpress.com/us/small-business/openforum/articles/how-to-be-a-better-leader-not-just-a-better-boss/" class="external-link" title="Boss Vs. Leader: How to Be a Better Leader (and Not Just a Boss)">immediate praise, thanks and constructive criticism</a>  (when appropriate) as it happens,” according to business author and speaker Barry Moltz. Workers are motivated by more than money. Praise and signs of appreciation can help with morale and engagement, while a boss who simply expects good work can miss out on these opportunities.</td>
-</tr>
-<tr class="even">
-<td>A boss counts value</td>
-<td>A leader creates value</td>
-<td>A leader focuses on creating value through leading by example, according to Nayar. A boss focuses on counting value and can even reduce value. “If a diamond cutter is asked to report every 15 minutes how many stones he has cut, by distracting him, his boss is subtracting value,” says Nayar.</td>
-</tr>
-<tr class="odd">
-<td>A boss commands</td>
-<td>A leader listens and speaks</td>
-<td>“Bosses tend to give orders; they need their employees to listen and to obey,” says Elite Daily. “However, leaders always listen to the opinions of their colleagues and regard them as important.” Volaris Group adds that bosses talk more than they listen, while leaders listen more than they talk.</td>
-</tr>
-<tr class="even">
-<td>A boss creates circles of power</td>
-<td>A leader creates circle of influences</td>
-<td>Nayar advises managers to look at how many people outside of their reporting hierarchy come to them for advice. The more people that do, the more likely it is that the manager is perceived as a leader.</td>
-</tr>
-<tr class="odd">
-<td>A boss criticizes</td>
-<td>A leader encourages</td>
-<td>“Constructive criticism is needed every now and then to help someone improve,” says Volaris Group. “But constantly being told what they are doing wrong not only discourages a person, but causes them to disengage.”</td>
-</tr>
-<tr class="even">
-<td>A boss chooses favorites</td>
-<td>A leader establishes equal relationships</td>
-<td>Equal relationships help ensure that personal preferences don’t enter the team dynamic, according to Elite Daily. A boss who chooses favorites causes stress and tension, but a leader tries to treat everyone equally.</td>
-</tr>
-<tr class="odd">
-<td><br />
-</td>
-<td>A leader creates more leaders</td>
-<td>A primary goal for leaders is to create more leaders. By inspiring and motivating their employees, leaders set the framework for workers to grow, improve their skills and assume leadership roles themselves.</td>
-</tr>
-<tr class="even">
-<td>Creates goals</td>
-<td>Create vision</td>
-<td>Leaders paint a picture of what they see as possible and inspire and engage their people in turning that vision into reality. They think beyond what individuals do. They activate people to be part of something bigger. They know that high-functioning teams can accomplish a lot more working together than individuals working autonomously. Managers focus on setting, measuring and achieving goals. They control situations to reach or exceed their objectives.</td>
-</tr>
-<tr class="odd">
-<td>maintains the status quo</td>
-<td>Change agent</td>
-<td>Leaders are proud disrupters. Innovation is their mantra. They embrace change and know that even if things are working, there could be a better way forward. And they understand and accept the fact that changes to the system often create waves. Managers stick with what works, refining systems, structures and processes to make them better.</td>
-</tr>
-<tr class="even">
-<td>manager/boss copy</td>
-<td>leaders are unique</td>
-<td>Leaders are willing to be themselves. They are self-aware and work actively to build their unique and differentiated personal brand. They are comfortable in their own shoes and willing to stand out. They’re authentic and transparent. Managers mimic the competencies and behaviors they learn from others and adopt their leadership style rather than defining it.</td>
-</tr>
-<tr class="odd">
-<td>controls risk</td>
-<td>takes risk</td>
-<td>Leaders are willing to try new things even if they may fail miserably. They know that failure is often a step on the path to success. Managers work to minimize risk. They seek to avoid or control problems rather than embracing them.</td>
-</tr>
-<tr class="even">
-<td>think short-term</td>
-<td>in it for the long haul</td>
-<td>Leaders have intentionality. They do what they say they are going to do and stay motivated toward a big, often very distant goal. They remain motivated without receiving regular rewards. Managers work on shorter-term goals, seeking more regular acknowledgment or accolades.</td>
-</tr>
-<tr class="odd">
-<td>rely on existing, proven skills</td>
-<td>grow personally</td>
-<td>Leaders know if they aren’t learning something new every day, they aren’t standing still, they’re falling behind. They remain  curious and seek to remain relevant in an ever-changing world of work. They seek out people and information that will expand their thinking. Managers often double down on what made them successful, perfecting existing skills and adopting proven behaviors.</td>
-</tr>
-<tr class="even">
-<td>builds system and processes</td>
-<td>builds relationships</td>
-<td>Leaders focus on people – all the stakeholders they need to influence in order to realize their vision. They know who their stakeholders are and spend most of their time with them. They build loyalty and trust by consistently delivering on their promise. Managers focus on the structures necessary to set and achieve goals. They focus on the analytical and ensure systems are in place to attain desired outcomes. They work with individuals and their goals and objectives.</td>
-</tr>
-<tr class="odd">
-<td><br />
-</td>
-<td><br />
-</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+	<colgroup>
+		<col style="width: 19%" />
+		<col style="width: 24%" />
+		<col style="width: 55%" />
+	</colgroup>
+	<thead>
+		<tr class="header">
+			<th>Boss / Manager</th>
+			<th>Leader</th>
+			<th>
+				<br />
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="odd">
+			<td>A boss gives answers</td>
+			<td>A leader seeks solutions</td>
+			<td>Part of being a leader means coaching employees. A leader will help an employee grow by guiding him or her through challenges. This is how employees can develop problem-solving abilities and other skills that add value to a company.</td>
+		</tr>
+		<tr class="even">
+			<td>A boss manages work, direct</td>
+			<td>A leader leads people, coaches</td>
+			<td>“Management consists of controlling a group or a set of entities to accomplish a goal,” says Vineet Nayar in  
+				<em>Harvard Business Review</em>. “Leadership refers to an individual’s ability to influence, motivate, and enable others to contribute toward organizational success.  
+				<a href="https://hbr.org/2013/08/tests-of-a-leadership-transiti" class="external-link" title="Three Differences Between Managers and Leaders">Influence and inspiration separate leaders from managers, not power and control</a> . "
+			</td>
+		</tr>
+		<tr class="odd">
+			<td>A boss expects big results.</td>
+			<td>A leader is generous with praise</td>
+			<td>A leader offers 
+				<a href="https://www.americanexpress.com/us/small-business/openforum/articles/how-to-be-a-better-leader-not-just-a-better-boss/" class="external-link" title="Boss Vs. Leader: How to Be a Better Leader (and Not Just a Boss)">immediate praise, thanks and constructive criticism</a>  (when appropriate) as it happens,” according to business author and speaker Barry Moltz. Workers are motivated by more than money. Praise and signs of appreciation can help with morale and engagement, while a boss who simply expects good work can miss out on these opportunities.
+			</td>
+		</tr>
+		<tr class="even">
+			<td>A boss counts value</td>
+			<td>A leader creates value</td>
+			<td>A leader focuses on creating value through leading by example, according to Nayar. A boss focuses on counting value and can even reduce value. “If a diamond cutter is asked to report every 15 minutes how many stones he has cut, by distracting him, his boss is subtracting value,” says Nayar.</td>
+		</tr>
+		<tr class="odd">
+			<td>A boss commands</td>
+			<td>A leader listens and speaks</td>
+			<td>“Bosses tend to give orders; they need their employees to listen and to obey,” says Elite Daily. “However, leaders always listen to the opinions of their colleagues and regard them as important.” Volaris Group adds that bosses talk more than they listen, while leaders listen more than they talk.</td>
+		</tr>
+		<tr class="even">
+			<td>A boss creates circles of power</td>
+			<td>A leader creates circle of influences</td>
+			<td>Nayar advises managers to look at how many people outside of their reporting hierarchy come to them for advice. The more people that do, the more likely it is that the manager is perceived as a leader.</td>
+		</tr>
+		<tr class="odd">
+			<td>A boss criticizes</td>
+			<td>A leader encourages</td>
+			<td>“Constructive criticism is needed every now and then to help someone improve,” says Volaris Group. “But constantly being told what they are doing wrong not only discourages a person, but causes them to disengage.”</td>
+		</tr>
+		<tr class="even">
+			<td>A boss chooses favorites</td>
+			<td>A leader establishes equal relationships</td>
+			<td>Equal relationships help ensure that personal preferences don’t enter the team dynamic, according to Elite Daily. A boss who chooses favorites causes stress and tension, but a leader tries to treat everyone equally.</td>
+		</tr>
+		<tr class="odd">
+			<td>
+				<br />
+			</td>
+			<td>A leader creates more leaders</td>
+			<td>A primary goal for leaders is to create more leaders. By inspiring and motivating their employees, leaders set the framework for workers to grow, improve their skills and assume leadership roles themselves.</td>
+		</tr>
+		<tr class="even">
+			<td>Creates goals</td>
+			<td>Create vision</td>
+			<td>Leaders paint a picture of what they see as possible and inspire and engage their people in turning that vision into reality. They think beyond what individuals do. They activate people to be part of something bigger. They know that high-functioning teams can accomplish a lot more working together than individuals working autonomously. Managers focus on setting, measuring and achieving goals. They control situations to reach or exceed their objectives.</td>
+		</tr>
+		<tr class="odd">
+			<td>maintains the status quo</td>
+			<td>Change agent</td>
+			<td>Leaders are proud disrupters. Innovation is their mantra. They embrace change and know that even if things are working, there could be a better way forward. And they understand and accept the fact that changes to the system often create waves. Managers stick with what works, refining systems, structures and processes to make them better.</td>
+		</tr>
+		<tr class="even">
+			<td>manager/boss copy</td>
+			<td>leaders are unique</td>
+			<td>Leaders are willing to be themselves. They are self-aware and work actively to build their unique and differentiated personal brand. They are comfortable in their own shoes and willing to stand out. They’re authentic and transparent. Managers mimic the competencies and behaviors they learn from others and adopt their leadership style rather than defining it.</td>
+		</tr>
+		<tr class="odd">
+			<td>controls risk</td>
+			<td>takes risk</td>
+			<td>Leaders are willing to try new things even if they may fail miserably. They know that failure is often a step on the path to success. Managers work to minimize risk. They seek to avoid or control problems rather than embracing them.</td>
+		</tr>
+		<tr class="even">
+			<td>think short-term</td>
+			<td>in it for the long haul</td>
+			<td>Leaders have intentionality. They do what they say they are going to do and stay motivated toward a big, often very distant goal. They remain motivated without receiving regular rewards. Managers work on shorter-term goals, seeking more regular acknowledgment or accolades.</td>
+		</tr>
+		<tr class="odd">
+			<td>rely on existing, proven skills</td>
+			<td>grow personally</td>
+			<td>Leaders know if they aren’t learning something new every day, they aren’t standing still, they’re falling behind. They remain  curious and seek to remain relevant in an ever-changing world of work. They seek out people and information that will expand their thinking. Managers often double down on what made them successful, perfecting existing skills and adopting proven behaviors.</td>
+		</tr>
+		<tr class="even">
+			<td>builds system and processes</td>
+			<td>builds relationships</td>
+			<td>Leaders focus on people – all the stakeholders they need to influence in order to realize their vision. They know who their stakeholders are and spend most of their time with them. They build loyalty and trust by consistently delivering on their promise. Managers focus on the structures necessary to set and achieve goals. They focus on the analytical and ensure systems are in place to attain desired outcomes. They work with individuals and their goals and objectives.</td>
+		</tr>
+		<tr class="odd">
+			<td>
+				<br />
+			</td>
+			<td>
+				<br />
+			</td>
+			<td>
+				<br />
+			</td>
+		</tr>
+	</tbody>
 </table>
 
 
