@@ -1,0 +1,361 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Home | Software Development | Unit Test |</title>
+</head>
+<body>
+
+    <h6 id="home-software-development-unit-test"><a href="https://github.com/RyKaj/Documentation/blob/master/README.md">Home</a> | <a href="https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/README.md">Software Development</a> | <a href="https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/UnitTest/README.md">Unit Test</a> |</h6>
+<hr />
+<h1 id="information-technology-code-coverage">Information Technology : Code Coverage</h1>
+<p>In general, code coverage is a measurement of how much of the production
+code is executed while your automated tests are running. By running a
+suite of tests and looking at code coverage data, you can get a general
+sense of how much of your application is being tested.</p>
+<p>There are many kinds of code coverage — the most common ones are line
+coverage and branch coverage. Most tools focus on line coverage, which
+just tells you if a specific line was covered. Branch is more granular,
+as it tells you if <em>each path through the code</em> is covered.</p>
+<p>Code coverage is an important metric, but remember that increasing it is
+a means to an end. It's great for finding gaps in testing, but it's not
+the only thing to focus on. Be careful not to spend too much effort
+trying to achieve 100% coverage — it may not even be possible or
+feasible, and really the quality of your tests is the important thing.
+That being said, achieving at least 60% coverage for your projects is a
+good starting point, and 80% or more is a good goal to set. Obviously,
+it's up to you to decide what that goal should be.</p>
+<blockquote>
+<p>This type of analysis is  <em><strong>statement coverage</strong></em> . Many such tools also analyze  <em><strong>branch coverage</strong></em> , i.e. given a branching condition in the code, are all the evaluated possibilities reached by a test?</p>
+</blockquote>
+<p>It's also valuable if you have automated tools that not only measure
+code coverage but also keep track how much modified code is being
+covered by tests, because this can provide visibility into whether
+enough tests are being written along with changes in production code.</p>
+<p>See here an example code coverage report:</p>
+<p><kbd><img src="https://blog.parasoft.com/hs-fs/hubfs/Blogs/Two%20Big%20Traps%20of%20Code%20Coverage%20Image%202.png?width=1211&amp;name=Two%20Big%20Traps%20of%20Code%20Coverage%20Image%202.png" alt="" /><kbd></p>
+<p>Another thing to keep in mind is that, when writing new tests, be
+careful of focusing on line coverage alone, as single lines of code can
+result in multiple code paths, so make sure your tests validate these
+code paths. Line coverage is a useful quick indicator, but it isn't the
+only thing to look for.</p>
+<p>The most obvious way to increase coverage is simply to add more tests
+for more code paths, and more use-cases of the method under test. A
+powerful way to increase coverage is to use parameterized tests.</p>
+<p>Ironically,  <strong>none of these tests verified the result</strong> — they simply
+called the functions. Yet that still counts as 100% coverage.</p>
+<p>The idea of code coverage stems from the principle that no code should
+enter production without some sort of test.</p>
+<p>That might seem extreme if all your tests are “up close” white-box unit
+tests. But if you zoom out a tad and write <a href="https://medium.com/@SoftwareReality/unit-tests-vs-component-tests-size-isnt-everything-eaded162c595">component
+tests</a>
+instead, then more code can be covered by a single test. This makes high
+levels of coverage more achievable:</p>
+<p><kbd><img src="https://miro.medium.com/max/4255/1*yH1k3UAyaJ1bDYXkQh1dWA.jpeg" alt="" /></kbd></p>
+<p>In the above diagram, the component test is focused on function <code>a</code>’s
+interface and its output, while the unit tests are likely more focused
+on the inner workings of <code>b</code> and <code>c</code>. They’re more zoomed-in, testing
+lines of code in finer detail.</p>
+<p>Both cases “cover the code with tests”, but in different ways and with
+different emphases. The tests aren’t equal, so one “coverage score”
+doesn’t make sense.</p>
+<p>Another issue is that the project’s code coverage metric can easily be
+increased by writing a
+<a href="https://stackoverflow.com/questions/137399/unit-testing-without-assertions">zero-assertion</a>
+test case like the example at the start of this article.</p>
+<ul>
+<li>An assertion-free test is like a tourist on an open-top bus, riding
+past the code at high speed, more concerned with his thermos of hot
+chocolate than with the sights whizzing past.</li>
+<li>A test that does its job is more like a building inspector, checking
+each tourist attraction meticulously to verify that it isn’t about
+to fall down.</li>
+</ul>
+<p>In other words…</p>
+<blockquote>
+<p>There’s code coverage and then there’s <em><strong>CODE COVERAGE</strong></em></p>
+</blockquote>
+<p>So an overall percentage score is almost certainly misleading.</p>
+<h2 id="why-use-code-coverage">Why Use Code Coverage</h2>
+<p>Here, are some prime reasons for using code coverage:</p>
+<ul>
+<li>It helps you to measure the efficiency of test implementation</li>
+<li>It offers a quantitative measurement.</li>
+<li>It defines the degree to which the source code has been tested.</li>
+</ul>
+<h2 id="code-coverage-methods">Code Coverage Methods</h2>
+<h3 id="statement-coverage">Statement Coverage</h3>
+<p>What is Statement Coverage?</p>
+<p>Statement coverage is a white box test design technique which involves
+execution of all the executable statements in the source code at least
+once. It is used to calculate and measure the number of statements in
+the source code which can be executed given the requirements.</p>
+<p>Statement coverage is used to derive scenario based upon the structure
+of the code under test.</p>
+<p><kbd><img src="https://www.guru99.com/images/jsp/030116_0814_LearnStatem1.png" alt="" /></kbd></p>
+<p>In <a href="https://www.guru99.com/white-box-testing.html">White Box Testing</a>,
+the tester is concentrating on how the software works. In other words,
+the tester will be concentrating on the internal working of source code
+concerning control flow graphs or flow charts.</p>
+<p>Generally in any software, if we look at the source code, there will be
+a wide variety of elements like operators, functions, looping,
+exceptional handlers, etc. Based on the input to the program, some of
+the code statements may not be executed. The goal of Statement coverage
+is to cover all the possible path's, line, and statement in the code.</p>
+<p>Let's understand this with an example, how to calculate statement
+coverage.</p>
+<p>Scenario to calculate Statement Coverage for given source code. Here we
+are taking two different scenarios to check the percentage of statement
+coverage for each scenario.</p>
+<p><strong>Example</strong></p>
+<h5 id="source-code">Source Code **</h5>
+<p>**</p>
+<blockquote>
+<pre><code>Prints (int a, int b) {                       ------------  Printsum is a function 
+    int result = a+ b; 
+    If (result&gt; 0)
+        Print (&quot;Positive&quot;, result)
+    Else
+        Print (&quot;Negative&quot;, result)
+    }
+</code></pre>
+</blockquote>
+<h5 id="scenario-1">Scenario 1</h5>
+<p>If A = 3, B = 9</p>
+<p><kbd><img src="https://www.guru99.com/images/1/102518_1122_CodeCoverag2.png" alt="" /></kbd></p>
+<p>The statements marked in yellow color are those which are executed as
+per the scenario</p>
+<p>Number of executed statements = 5, Total number of statements = 7</p>
+<p>Statement Coverage: 5/7 = 71%</p>
+<p><kbd><img src="https://www.guru99.com/images/jsp/030116_0814_LearnStatem2.png" alt="" /></kbd></p>
+<h5 id="scenario-2">Scenario 2</h5>
+<p>If A = -3, B = -9</p>
+<p><kbd><img src="https://www.guru99.com/images/1/102518_1122_CodeCoverag4.png" alt="" /></kbd></p>
+<p>The statements marked in yellow color are those which are executed as
+per the scenario.</p>
+<p>Number of executed statements = 6</p>
+<p>Total number of statements = 7</p>
+<p><kbd><img src="https://www.guru99.com/images/jsp/030116_0814_LearnStatem6.png" alt="" /></kbd></p>
+<p>Statement Coverage: 6/7 = 85%</p>
+<p><kbd><img src="https://www.guru99.com/images/jsp/030116_0814_LearnStatem3.png" alt="" /></kbd></p>
+<p>But overall if you see, all the statements are being covered by 2
+<sup>nd</sup> scenario's considered. So we can conclude that overall
+statement coverage is 100%.</p>
+<p><kbd><img src="https://www.guru99.com/images/jsp/030116_0814_LearnStatem4.png" alt="" /></kbd></p>
+<h3 id="decision-coverage">Decision Coverage</h3>
+<p>Decision coverage reports the true or false outcomes of each Boolean
+expression. In this coverage, expressions can sometimes get complicated.
+Therefore, it is very hard to achieve 100% coverage.</p>
+<p>That's why there are many different methods of reporting this metric.
+All these methods focus on covering the most important combinations. It
+is very much similar to decision coverage, but it offers better
+sensitivity to control flow.</p>
+<p><kbd><img src="https://www.guru99.com/images/1/102518_1122_CodeCoverag12.jpg" alt="" /></kbd></p>
+<p><strong>Example</strong></p>
+<h5 id="source-code-1">Source Code</h5>
+<blockquote>
+<pre><code>Demo(int a) {
+     If (a&gt; 5)
+        a=a*3
+     Print (a)
+    }
+</code></pre>
+</blockquote>
+<h5 id="scenario-1-1">Scenario 1</h5>
+<p>Value of a is 2</p>
+<p><kbd><img src="https://www.guru99.com/images/1/102518_1122_CodeCoverag8.png" alt="" /></kbd></p>
+<p>The code highlighted in yellow will be executed. Here the &quot;No&quot; outcome
+of the decision If (a&gt;5) is checked.</p>
+<p>Decision Coverage = 50%</p>
+<h5 id="scenario-2-1">Scenario 2</h5>
+<p>Value of a is 6</p>
+<p><kbd><img src="https://www.guru99.com/images/1/102518_1122_CodeCoverag9.png" alt="" /></kbd></p>
+<p>The code highlighted in yellow will be executed. Here the &quot;Yes&quot; outcome of the decision If (a&gt;5) is checked.</p>
+<p>Decision Coverage = 50%</p>
+<table>
+	<thead>
+		<tr>
+			<th>Test Case</th>
+			<th>Value of A</th>
+			<th>Output</th>
+			<th>Decision Coverage</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>2</td>
+			<td>50%</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>6</td>
+			<td>18</td>
+			<td>50%</td>
+		</tr>
+	</tbody>
+</table>
+<h3 id="branch-coverage">Branch Coverage</h3>
+<p>In the branch coverage, every outcome from a code module is tested. For
+example, if the outcomes are binary, you need to test both True and
+False outcomes.</p>
+<p>It helps you to ensure that every possible branch from each decision
+condition is executed at least a single time.</p>
+<p>By using Branch coverage method, you can also measure the fraction of
+independent code segments. It also helps you to find out which is
+sections of code don't have any branches.</p>
+<p>The formula to calculate Branch Coverage:</p>
+<p><kbd><img src="https://www.guru99.com/images/1/102518_1122_CodeCoverag13.jpg" alt="" /></kbd></p>
+<p><strong>Example</strong></p>
+<h5 id="source-code-2">Source Code</h5>
+<blockquote>
+<pre><code>Demo(int a) {
+     If (a&gt; 5)
+        a=a*3
+     Print (a)
+    }
+</code></pre>
+</blockquote>
+<p><kbd><img src="https://www.guru99.com/images/1/102518_1122_CodeCoverag10.png" alt="" /></kbd></p>
+<p>Branch Coverage will consider unconditional branch as well</p>
+<table>
+	<thead>
+		<tr>
+			<th>Test Case</th>
+			<th>Value of A</th>
+			<th>Output</th>
+			<th>Decision Coverage</th>
+			<th>Branch Coverage</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>2</td>
+			<td>50%</td>
+			<td>
+				<strong>33%</strong>
+			</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>6</td>
+			<td>18</td>
+			<td>50%</td>
+			<td>
+				<strong>67%</strong>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<h4 id="advantages-of-branch-coverage">Advantages of Branch coverage:</h4>
+<p>Branch coverage Testing offers the following advantages:</p>
+<ul>
+<li>Allows you to validate-all the branches in the code</li>
+<li>Helps you to ensure that no branched lead to any abnormality of the
+program's operation</li>
+<li>Branch coverage method removes issues which happen because of
+statement coverage testing</li>
+<li>Allows you to find those areas which are not tested by other testing
+methods</li>
+<li>It allows you to find a quantitative measure of code coverage</li>
+<li>Branch coverage ignores branches inside the Boolean expressions</li>
+</ul>
+<h3 id="condition-coverage">Condition Coverage</h3>
+<p>Conditional coverage or expression coverage will reveal how the
+variables or sub expressions in the conditional statement are evaluated.
+In this coverage expressions with logical operands are only considered.</p>
+<p>For example, if an expression has Boolean operations like AND, OR, XOR,
+which indicated total possibilities.</p>
+<p>Conditional coverage offers better sensitivity to the control flow than
+decision coverage. Condition coverage does not give a guarantee about
+full decision coverage</p>
+<p>The formula to calculate Condition Coverage:</p>
+<p><kbd><img src="https://www.guru99.com/images/1/102518_1122_CodeCoverag14.jpg" alt="" /></kbd></p>
+<p><strong>Example</strong></p>
+<p><kbd><img src="https://www.guru99.com/images/1/102518_1122_CodeCoverag11.png" alt="" /></kbd></p>
+<p>For the above expression, we have 4 possible combinations</p>
+<ul>
+<li>TT</li>
+<li>FF</li>
+<li>TF</li>
+<li>FT</li>
+</ul>
+<p>Consider the following input</p>
+<p>X=3</p>
+<p>Y=4</p>
+<p>(x&lt;y)</p>
+<p>TRUE</p>
+<p>Condition Coverage is ¼ = 25%</p>
+<p>A=3</p>
+<p>B=4</p>
+<p>(a&gt;b)</p>
+<p>FALSE</p>
+<h3 id="finite-state-machine-fsm-coverage">Finite State Machine (FSM) Coverage</h3>
+<p>Finite state machine coverage is certainly the most complex type of code
+coverage method. This is because it works on the behavior of the design.
+In this coverage method, you need to look for how many time-specific
+states are visited, transited. It also checks how many sequences are
+included in a finite state machine.</p>
+<h2 id="which-type-of-code-coverage-to-choose">Which Type of Code Coverage to Choose</h2>
+<p>This is certainly the most difficult answer to give. In order to select
+a coverage method, the tester needs to check that the</p>
+<ul>
+<li>code under test has single or multiple undiscovered defects</li>
+<li>cost of the potential penalty</li>
+<li>cost of lost reputation</li>
+<li>cost of lost sale, etc.</li>
+</ul>
+<p>The higher the probability that defects will cause costly production
+failures, the more severe the level of coverage you need to choose.</p>
+<h2 id="code-coverage-vs.functional-coverage">Code Coverage vs. Functional Coverage</h2>
+<table>
+	<thead>
+		<tr>
+			<th>
+				<strong>Code Coverage</strong>
+			</th>
+			<th>
+				<strong>Functional Coverage</strong>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Code coverage tells you how well the source code has been exercised by your test bench.</td>
+			<td>Functional coverage measures how well the functionality of the design has been covered by your test bench.</td>
+		</tr>
+		<tr>
+			<td>Never use a design specification</td>
+			<td>Use design specification</td>
+		</tr>
+		<tr>
+			<td>Done by developers</td>
+			<td>Done by Testers</td>
+		</tr>
+	</tbody>
+</table>
+<h2 id="advantages-of-using-code-coverage">Advantages of Using Code Coverage</h2>
+<ul>
+<li>Helpful to evaluate a quantitative measure of code coverage</li>
+<li>It allows you to create extra test cases to increase coverage</li>
+<li>It allows you to find the areas of a program which is not exercised
+by a set of test cases</li>
+</ul>
+<h2 id="disadvantages-of-using-code-coverage">Disadvantages of Using Code Coverage</h2>
+<ul>
+<li>Even when any specific feature is not implemented in design, code
+coverage still report 100% coverage.</li>
+<li>It is not possible to determine whether we tested all possible
+values of a feature with the help of code coverage</li>
+<li>Code coverage is also not telling how much and how well you have
+covered your logic</li>
+<li>In the case when the specified function hasn't implemented, or a not
+included from the specification, then structure-based techniques
+cannot find that issue.</li>
+</ul>
+
+
+</body>
+</html>

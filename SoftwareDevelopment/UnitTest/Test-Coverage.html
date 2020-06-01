@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Home | Software Development | Unit Test |</title>
+</head>
+<body>
+
+    <h6 id="home-software-development-unit-test"><a href="https://github.com/RyKaj/Documentation/blob/master/README.md">Home</a> | <a href="https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/README.md">Software Development</a> | <a href="https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/UnitTest/README.md">Unit Test</a> |</h6>
+<hr />
+<h1 id="information-technology-test-coverage">Information Technology : Test Coverage</h1>
+<blockquote>
+<p><strong>Side note:</strong> Normally I use the name <em><strong>requirements coverage</strong></em>, as it’s more akin to what the metric actually represents. But for consistency I’ll keep going with <em>test coverage</em> for this article.</p>
+</blockquote>
+<p>A quick reminder:</p>
+<blockquote>
+<p><strong>Test coverage</strong> is about the proportion of a story or feature covered by tests.</p>
+</blockquote>
+<p>Conversations about test coverage tend to center around <a href="https://medium.com/swlh/write-tests-at-three-levels-909561a9544b">acceptance
+tests</a>,
+which follow the requirements more naturally than code-centric,
+developer-owned tests (unit tests, component tests). Use a BDD framework
+such as <a href="http://www.thucydides.info/#/whatisserenity">Serenity</a> (wisely
+renamed from Thucydides) to report on which requirements have acceptance
+tests, and “pow”, you have your test coverage score. Pretty
+straightforward!</p>
+<p>That’s all fine, but there’s much to be gained from viewing your
+developer-owned tests in terms of test coverage as well.</p>
+<p>This approach is <em>infinitely</em> more useful than code coverage (yes, that
+much!) because:</p>
+<ul>
+<li>It encourages developers to focus their tests on the business domain
+and the requirements (stories and scenarios), with the result that…</li>
+<li>Your tests will become more purposeful. And…</li>
+<li>Because you’re writing a test for each scenario, you know when
+you’ve written enough tests — and <em>ipso facto</em> when you’ve written
+enough code overall.</li>
+</ul>
+<p>While you’re measuring test coverage, it’s still useful to run a code
+coverage tool to discover areas of code that aren’t tested at all — even
+though it’s really quite a narrow metric.</p>
+<p>But instead of asking “Why isn’t this code covered by tests?” try asking
+instead:</p>
+<blockquote>
+<p>“Why is this code here at all?”</p>
+</blockquote>
+<p>If the code doesn’t have any tests, that means it likely isn’t covered
+by any particular story… so no-one asked for it… which means it isn’t
+providing business value… which means it can probably even be deleted.</p>
+<p>This is why the <em>code coverage</em> score is still useful. It isn’t the “80%
+covered” score that you’re interested in, it’s the other side — the “20%
+missed”:</p>
+<p><kbd><img src="https://miro.medium.com/max/3382/1*UI9iCUrRPiGos7kEVqxbVA.jpeg" alt="" /></kbd></p>
+<p>Code <strong>un</strong>coverage?</p>
+<p>So the code coverage metric can be used to indicate where there might be
+insufficient test coverage — or code that can potentially be deleted.</p>
+<p>But we just used a code coverage tool to uncover missing test coverage.
+Why not use a test coverage tool instead?</p>
+<p>There are some around, generally built into BDD frameworks such as
+<a href="https://robotframework.org/">Robot Framework</a> and the imaginatively
+named <a href="https://testproject.io/">Test Project</a>.</p>
+<p>But these have the same kind-of unavoidable problem that test coverage
+does—they don’t tell you the quality of your coverage. Taken to
+extremes, your tests could consist of <code>assert 1 == 1</code> and get a 100%
+score.</p>
+<p>And, more pertinently, these test frameworks don’t extend beyond BDD
+into the lower-level, developer-owned tests.</p>
+<p>But that’s actually ok. As you’ve seen,</p>
+<blockquote>
+<p>code/test coverage scores just don’t bring home the bacon.</p>
+</blockquote>
+<p>Really, <strong>test coverage is more of a concept than a measurable score</strong>.
+Yet the effect of not having requirements-based tests in your project
+<em>is</em> measurable, in the number of bugs that’ll surface in production.</p>
+<h6 id="references">References</h6>
+<ul>
+<li><a href="https://codeburst.io/code-coverage-vs-test-coverage-c9afb261e902">Codeburst - code coverage vs test coverage</a></li>
+</ul>
+
+
+</body>
+</html>
