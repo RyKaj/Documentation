@@ -21,7 +21,7 @@ test:
     testing**, and makes developers look at their code from a
     **different perspective**, encouraging them to consider corner cases
     and error conditions in their implementation.
-  - Including unit tests in the **code review process**can reveal how
+  - Including unit tests in the **code review process** can reveal how
     the modified or new code is supposed to work. Plus, reviewers can
     confirm whether the tests are good ones or not.
 
