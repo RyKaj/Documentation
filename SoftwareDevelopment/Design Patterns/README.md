@@ -8,6 +8,7 @@
 -   Design Patterns
 	-   [Anti Patterns](./Design%20Patterns/AntiPatterns.md)
 	-   [Object Oriented](./Design%20Patterns/Object-Oriented-Programming.md)
+	-   [S.O.L.I.D Principles](./Design%20Patterns/SOLID-Principles.md)
 	-   [Behavioral](./Design%20Patterns/Behavioral-Design-Patterns.md)
 		-   [Chain of Responsibility Pattern](./Design%20Patterns/Behavioral/Chain-of-Responsibility-Pattern.md)
 		-   [Command Pattern](./Design%20Patterns/Behavioral/Command-Pattern.md)
