@@ -1,30 +1,14 @@
-<div id="main" class="aui-page-panel">
-
-<div id="main-header">
-
-<div id="breadcrumb-section">
-
-1.  [Information Technology](index.html)
-2.  [3.0 Sofware Development
-    Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
-3.  [Design Patterns](Design-Patterns_451820045.html)
-4.  [1.0 Design Pattern - Programming
-    Language](1.0-Design-Pattern---Programming-Language_451820065.html)
-
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Software Development](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/README.md) | [Design Patterns](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/README.md) |
+------------
 
 
 # Information Technology : Creational Design Patterns
 
-
-
-
-
-![Example of Abstract
-Factory](https://sourcemaking.com/files/v2/content/patterns/Abstract_Factory-preview.png)
+<kbd>![Example of Abstract Factory](https://sourcemaking.com/files/v2/content/patterns/Abstract_Factory-preview.png)
 
 ## Builder
 
-![](https://www.oodesign.com/images/creational/builder-pattern.png)
+<kbd>![](https://www.oodesign.com/images/creational/builder-pattern.png)</kbd>
 
 ### Intent
 
@@ -33,7 +17,7 @@ complex objects step by step. The pattern allows you to produce
 different types and representations of an object using the same
 construction code.
 
-![](attachments/463529996/463530184.png)
+<kbd>![](./attachments/builder/463530184.png)</kbd>
 
 ### Problem
 
@@ -42,7 +26,7 @@ initialization of many fields and nested objects. Such initialization
 code is usually buried inside a monstrous constructor with lots of
 parameters. Or even worse: scattered all over the client code.
 
-![](attachments/463529996/463530188.png)
+<kbd>![](./attachments/builder/463530188.png)</kbd>
 
 For example, let’s think about how to create a `House` object. To build
 a simple house, you need to construct four walls and a floor, install a
@@ -61,11 +45,11 @@ can create a giant constructor right in the base `House` class with all
 possible parameters that control the house object. While this approach
 indeed eliminates the need for subclasses, it creates another problem.
 
-![](attachments/463529996/463530189.png)
+<kbd>![](./attachments/builder/463530189.png)</kbd>
 
 In most cases most of the parameters will be unused, making [the
 constructor calls pretty
-ugly](https://refactoring.guru/smells/long-parameter-list). For
+ugly](https://refactoring.guru/smells/long-parameter-list) . For
 instance, only a fraction of houses have swimming pools, so the
 parameters related to swimming pools will be useless nine times out of
 ten.
@@ -73,10 +57,10 @@ ten.
 ### Solution
 
 The Builder pattern suggests that you extract the object construction
-code out of its own class and move it to separate objects
-called*builders*.
+code out of its own class and move it to separate objects called
+*builders*.
 
-![](attachments/463529996/463530190.png)
+<kbd>![](./attachments/builder/463530190.png)</kbd>
 
 The pattern organizes object construction into a set of steps (
 `buildWalls`, `buildDoor`, etc.). To create an object, you execute a
@@ -96,7 +80,7 @@ Then you can use these builders in the construction process (i.e., an
 ordered set of calls to the building steps) to produce different kinds
 of objects.
 
-![](attachments/463529996/463530185.png)
+<kbd>![](./attachments/builder/463530185.png)</kbd>
 
 For example, imagine a builder that builds everything from wood and
 glass, a second one that builds everything with stone and iron and a
@@ -113,7 +97,7 @@ you use to construct a product into a separate class called *director*.
 The director class defines the order in which to execute the building
 steps, while the builder provides the implementation for those steps.
 
-![](attachments/463529996/463530186.png)
+<kbd>![](./attachments/builder/463530186.png)</kbd>
 
 Having a director class in your program isn’t strictly necessary. You
 can always call the building steps in a specific order directly from the
@@ -127,7 +111,7 @@ get the result from the builder.
 
 ### Structure
 
-![](attachments/463529996/463530191.png)
+<kbd>![](./attachments/builder/463530191.png)</kbd>
 
 ### Pseudocode
 
@@ -135,7 +119,7 @@ This example of the **Builder** pattern illustrates how you can reuse
 the same object construction code when building different types of
 products, such as cars, and create the corresponding manuals for them.
 
-![](attachments/463529996/463530187.png)
+<kbd>![](./attachments/builder/463530187.png)</kbd>
 
 A car is a complex object that can be constructed in a hundred different
 ways. Instead of bloating the `Car` class with a huge constructor, we
@@ -194,8 +178,6 @@ constructor like below:
 
 #### C\#
 
-
-
 ``` 
 public Burger(int size, bool cheese, bool pepperoni, bool lettuce, bool tomato) {
 }
@@ -207,11 +189,10 @@ public Burger(int size, bool cheese, bool pepperoni, bool lettuce, bool tomato) 
 #### Java
 
 
-
 ``` 
 public Hero(Profession profession, String name, HairType hairType, HairColor hairColor, Armor armor, Weapon weapon) {
 }
-            
+                
 ```
 
 
@@ -221,9 +202,9 @@ public Hero(Profession profession, String name, HairType hairType, HairColor hai
 
 
 ``` 
-public function __construct($size, $cheese = true, $pepperoni = true, $tomato = false, $lettuce = true)
-{
+public function __construct($size, $cheese = true, $pepperoni = true, $tomato = false, $lettuce = true) {
 }
+
                 
 ```
 
@@ -240,28 +221,26 @@ constructor anti-pattern.
 
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>You can construct objects step-by-step, defer construction steps or run steps recursively.</td>
-<td>The overall complexity of the code increases since the pattern requires creating multiple new classes.</td>
-</tr>
-<tr class="even">
-<td>You can reuse the same construction code when building various representations of products.</td>
-<td><br />
-</td>
-</tr>
-<tr class="odd">
-<td><em>Single Responsibility Principle</em>. You can isolate complex construction code from the business logic of the product.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+    <thead>
+        <tr class="header">
+            <th>Pros</th>
+            <th>Cons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td>You can construct objects step-by-step, defer construction steps or run steps recursively.</td>
+            <td>The overall complexity of the code increases since the pattern requires creating multiple new classes.</td>
+        </tr>
+        <tr class="even">
+            <td>You can reuse the same construction code when building various representations of products.</td>
+            <td><br /></td>
+        </tr>
+        <tr class="odd">
+            <td><em>Single Responsibility Principle</em>. You can isolate complex construction code from the business logic of the product.</td>
+            <td><br /></td>
+        </tr>
+    </tbody>
 </table>
 
 
@@ -302,7 +281,8 @@ our burger that we want to make
 >         return sb.ToString();
 >     }
 > }
->                 
+> 
+>                     
 > ```
 
 And then we have the builder
@@ -351,7 +331,8 @@ And then we have the builder
 >         return new Burger(this);
 >     }
 > }
->                 
+> 
+>                     
 > ```
 
 And then it can be used as:
@@ -359,13 +340,14 @@ And then it can be used as:
 > 
 > 
 > ``` 
+> And then it can be used as:
 > var burger = new BurgerBuilder(4).AddCheese()
 >                 .AddPepperoni()
 >                 .AddLettuce()
 >                 .AddTomato()
 >                 .Build();
 > Console.WriteLine(burger.GetDescription());
->                 
+>                     
 > ```
 
 
@@ -375,7 +357,7 @@ And then it can be used as:
 
 
 ``` 
-public final class Hero {
+ public final class Hero {
     private final Profession profession;
     private final String name;
     private final HairType hairType;
@@ -408,7 +390,7 @@ public static class Builder {
 
     public Builder(Profession profession, String name) {
         if (profession == null || name == null) {
-            throw new IllegalArgumentException("profession and name can not be null");
+        throw new IllegalArgumentException("profession and name can not be null");
         }
         this.profession = profession;
         this.name = name;
@@ -438,7 +420,12 @@ public static class Builder {
         return new Hero(this);
     }
 }
+                
+```
 
+And then it can be used as:
+
+``` 
 Hero mage = new Hero.Builder(Profession.MAGE, "Riobard").withHairColor(HairColor.BLACK).withWeapon(Weapon.DAGGER).build();
                 
 ```
@@ -450,7 +437,7 @@ Hero mage = new Hero.Builder(Profession.MAGE, "Riobard").withHairColor(HairColor
 
 
 ``` 
-class Burger
+ class Burger
 {
     protected $size;
 
@@ -517,6 +504,7 @@ class BurgerBuilder
         return new Burger($this);
     }
 }
+
                 
 ```
 
@@ -527,7 +515,7 @@ $burger = (new BurgerBuilder(14))
  ->addPepperoni()
  ->addLettuce()
  ->addTomato()
- ->build();                                                             
+ ->build();
                 
 ```
 
@@ -574,6 +562,7 @@ https://sourcemaking.com/design_patterns/builder
 Decouples the creation of a complex object and its representation.
 """
 
+
 # Abstract Building
 class Building(object):
     def __init__(self):
@@ -589,6 +578,7 @@ class Building(object):
     def __repr__(self):
         return 'Floor: {0.floor} | Size: {0.size}'.format(self)
 
+
 # Concrete Buildings
 class House(Building):
     def build_floor(self):
@@ -597,6 +587,7 @@ class House(Building):
     def build_size(self):
         self.size = 'Big'
 
+
 class Flat(Building):
     def build_floor(self):
         self.floor = 'More than One'
@@ -604,14 +595,17 @@ class Flat(Building):
     def build_size(self):
         self.size = 'Small'
 
+
 # In some very complex cases, it might be desirable to pull out the building
 # logic into another function (or a method on another class), rather than being
 # in the base class '__init__'. (This leaves you in the strange situation where
 # a concrete class does not have a useful constructor)
 
+
 class ComplexBuilding(object):
     def __repr__(self):
         return 'Floor: {0.floor} | Size: {0.size}'.format(self)
+
 
 class ComplexHouse(ComplexBuilding):
     def build_floor(self):
@@ -620,11 +614,13 @@ class ComplexHouse(ComplexBuilding):
     def build_size(self):
         self.size = 'Big and fancy'
 
+
 def construct_building(cls):
     building = cls()
     building.build_floor()
     building.build_size()
     return building
+
 
 # Client
 if __name__ == "__main__":
@@ -654,9 +650,10 @@ that; factory pattern is to be used when the creation is a one step
 process while builder pattern is to be used when the creation is a multi
 step process.
 
+
 ## Abstract Factory
 
-![](https://www.oodesign.com/images/creational/abstract-factory-pattern.png)
+<kbd>![](https://www.oodesign.com/images/creational/abstract-factory-pattern.png)</kbd>
 
 ### Intent
 
@@ -664,7 +661,7 @@ step process.
 produce families of related objects without specifying their concrete
 classes.
 
-![](attachments/463529999/463530174.png)
+<kbd>![](./attachments/abstract/463530174.png)</kbd>
 
 ### Problem
 
@@ -677,13 +674,13 @@ consists of classes that represent:
     `Sofa` + `CoffeeTable` are available in these variants: `Modern`,
     `Victorian`, `ArtDeco`.
 
-![](attachments/463529999/463530178.png)
+<kbd>![](./attachments/abstract/463530178.png)</kbd>
 
 You need a way to create individual furniture objects so that they match
 other objects of the same family. Customers get quite mad when they
 receive non-matching furniture.
 
-![](attachments/463529999/463530175.png)
+<kbd>![](./attachments/abstract/463530175.png)</kbd>
 
 Also, you don’t want to change existing code when adding new products or
 families of products to the program. Furniture vendors update their
@@ -699,7 +696,7 @@ products follow those interfaces. For example, all chair variants can
 implement the `Chair` interface; all coffee table variants can implement
 the `CoffeeTable` interface, and so on.
 
-![](attachments/463529999/463530179.png)
+<kbd>![](./attachments/abstract/463530179.png)</kbd>
 
 The next move is to declare the *Abstract Factory*—an interface with a
 list of creation methods for all products that are part of the product
@@ -708,7 +705,7 @@ family (for example, `createChair`, `createSofa` and
 types represented by the interfaces we extracted previously: `Chair`,
 `Sofa`, `CoffeeTable` and so on.
 
-![](attachments/463529999/463530180.png)
+<kbd>![](./attachments/abstract/463530180.png)</kbd>
 
 Now, how about the product variants? For each variant of a product
 family, we create a separate factory class based on the
@@ -721,7 +718,7 @@ respective abstract interfaces. This lets you change the type of a
 factory that you pass to the client code, as well as the product variant
 that the client code receives, without breaking the actual client code.
 
-![](attachments/463529999/463530176.png)
+<kbd>![](./attachments/abstract/463530176.png)</kbd>
 
 Say the client wants a factory to produce a chair. The client doesn’t
 have to be aware of the factory’s class, nor does it matter what kind of
@@ -741,7 +738,7 @@ type depending on the configuration or the environment settings.
 
 ### Structure
 
-![](attachments/463529999/463530181.png)
+<kbd>![](./attachments/abstract/463530181.png)</kbd>
 
 ### Pseudocode
 
@@ -750,7 +747,7 @@ used for creating cross-platform UI elements without coupling the client
 code to concrete UI classes, while keeping all created elements
 consistent with a selected operating system.
 
-![](attachments/463529999/463530177.png)
+<kbd>![](./attachments/abstract/463530177.png)</kbd>
 
 The same UI elements in a cross-platform application are expected to
 behave similarly, but look a little bit different under different
@@ -807,33 +804,30 @@ concrete classes
 
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>You can be sure that the products you’re getting from a factory are compatible with each other.</td>
-<td>The code may become more complicated than it should be, since a lot of new interfaces and classes are introduced along with the pattern.</td>
-</tr>
-<tr class="even">
-<td>You avoid tight coupling between concrete products and client code.</td>
-<td><br />
-</td>
-</tr>
-<tr class="odd">
-<td>S<em>ingle Responsibility Principle</em>. You can extract the product creation code into one place, making the code easier to support.</td>
-<td><br />
-</td>
-</tr>
-<tr class="even">
-<td><em>Open/Closed Principle</em>. You can introduce new variants of products without breaking existing client code.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+    <thead>
+        <tr class="header">
+            <th>Pros</th>
+            <th>Cons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td>You can be sure that the products you’re getting from a factory are compatible with each other.</td>
+            <td>The code may become more complicated than it should be, since a lot of new interfaces and classes are introduced along with the pattern.</td>
+        </tr>
+        <tr class="even">
+            <td>You avoid tight coupling between concrete products and client code.</td>
+            <td><br /></td>
+        </tr>
+        <tr class="odd">
+            <td>S<em>ingle Responsibility Principle</em>. You can extract the product creation code into one place, making the code easier to support.</td>
+            <td><br /></td>
+        </tr>
+        <tr class="even">
+            <td><em>Open/Closed Principle</em>. You can introduce new variants of products without breaking existing client code.</td>
+            <td><br /></td>
+        </tr>
+    </tbody>
 </table>
 
 
@@ -1351,8 +1345,7 @@ if __name__ == "__main__":
 
 ### When to use?
 
-When there are interrelated dependencies with not-that-simple creation
-logic involved
+When there are interrelated dependencies with not-that-simple creation logic involved
 
 ## Simple Factory
 
@@ -1520,9 +1513,11 @@ When creating an object is not just a few assignments and involves some
 logic, it makes sense to put it in a dedicated factory instead of
 repeating the same code everywhere.
 
+
+
 ## Factory Method
 
-![](https://www.oodesign.com/images/creational/factory-method-pattern.gif)
+<kbd>![](https://www.oodesign.com/images/creational/factory-method-pattern.gif)</kbd>
 
 ### Intent
 
@@ -1530,7 +1525,7 @@ repeating the same code everywhere.
 interface for creating objects in a superclass, but allows subclasses to
 alter the type of objects that will be created.
 
-![](attachments/463530001/463530165.png)
+<kbd>![](./attachments/factory/463530165.png)</kbd>
 
 ### Problem
 
@@ -1542,7 +1537,7 @@ After a while, your app becomes pretty popular. Each day you receive
 dozens of requests from sea transportation companies to incorporate sea
 logistics into the app.
 
-![](attachments/463530001/463530167.png)
+<kbd>![](./attachments/factory/463530167.png)</kbd>
 
 Great news, right? But how about the code? At present, most of your code
 is coupled to the `Truck` class. Adding `Ships` into the app would
@@ -1563,7 +1558,7 @@ construction calls (using the `new` operator) with calls to a special
 Objects returned by a factory method are often referred to as
 “products.”
 
-![](attachments/463530001/463530168.png)
+<kbd>![](./attachments/factory/463530168.png)</kbd>
 
 At first glance, this change may look pointless: we just moved the
 constructor call from one part of the program to another. However,
@@ -1575,7 +1570,7 @@ types of products only if these products have a common base class or
 interface. Also, the factory method in the base class should have its
 return type declared as this interface.
 
-![](attachments/463530001/463530169.png)
+<kbd>![](./attachments/factory/463530169.png)</kbd>
 
 For example, both `Truck` and `Ship` classes should implement
 the`Transport` interface, which declares a method called`deliver`. Each
@@ -1584,7 +1579,7 @@ ships deliver cargo by sea. The factory method in the `RoadLogistics`
 class returns truck objects, whereas the factory method in the
 `SeaLogistics` class returns ships.
 
-![](attachments/463530001/463530170.png)
+<kbd>![](./attachments/factory/463530170.png)</kbd>
 
 The code that uses the factory method (often called the *client* code)
 doesn’t see a difference between the actual products returned by various
@@ -1595,7 +1590,7 @@ client.
 
 ### Structure
 
-![](attachments/463530001/463530171.png)
+<kbd>![](./attachments/factory/463530171.png)</kbd>
 
 ### Pseudocode
 
@@ -1603,7 +1598,7 @@ This example illustrates how the **Factory Method** can be used for
 creating cross-platform UI elements without coupling the client code to
 concrete UI classes.
 
-![](attachments/463530001/463530166.png)
+<kbd>![](./attachments/factory/463530166.png)</kbd>
 
 The base dialog class uses different UI elements to render its window.
 Under various operating systems, these elements may look a little bit
@@ -1950,16 +1945,20 @@ Useful when there is some generic processing in a class but the required
 sub-class is dynamically decided at runtime. Or putting it in other
 words, when the client doesn't know what exact sub-class it might need.
 
+
+
+
+
 ## Prototype
 
-![](https://www.oodesign.com/images/creational/prototype-pattern.gif)
+<kbd>![](https://www.oodesign.com/images/creational/prototype-pattern.gif)</kbd>
 
 ### Intent
 
 **Prototype** is a creational design pattern that lets you copy existing
 objects without making your code dependent on their classes.
 
-![](attachments/463530002/463530194.png)
+<kbd>![](./attachments/prototype/463530194.png)</kbd>
 
 ### Problem
 
@@ -1972,7 +1971,7 @@ Nice\! But there’s a catch. Not all objects can be copied that way
 because some of the object’s fields may be private and not visible from
 outside of the object itself.
 
-![](attachments/463530002/463530196.png)
+<kbd>![](./attachments/prototype/463530196.png)</kbd>
 
 There’s one more problem with the direct approach. Since you have to
 know the object’s class to create a duplicate, your code becomes
@@ -1999,7 +1998,7 @@ An object that supports cloning is called a *prototype*. When your
 objects have dozens of fields and hundreds of possible configurations,
 cloning them might serve as an alternative to subclassing.
 
-![](attachments/463530002/463530197.png)
+<kbd>![](./attachments/prototype/463530197.png)</kbd>
 
 Here’s how it works: you create a set of objects, configured in various
 ways. When you need an object like the one you’ve configured, you just
@@ -2009,18 +2008,18 @@ clone a prototype instead of constructing a new object from scratch.
 
 #### Base Implementation
 
-![](attachments/463530002/463530199.png)
+<kbd>![](./attachments/prototype/463530199.png)</kbd>
 
 #### Prototype Registry Implementation
 
-![](attachments/463530002/463530200.png)
+<kbd>![](./attachments/prototype/463530200.png</kbd>
 
 ### Pseudocode
 
 In this example, the **Prototype** pattern lets you produce exact copies
 of geometric objects, without coupling the code to their classes.
 
-![](attachments/463530002/463530195.png)
+<kbd>![](./attachments/prototype/463530195.png)</kbd>
 
 All shape classes follow the same interface, which provides a cloning
 method. A subclass may call the parent’s cloning method before copying
@@ -2050,33 +2049,31 @@ creating an object from scratch and setting it up.
 
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>You can clone objects without coupling to their concrete classes.</td>
-<td>Cloning complex objects that have circular references might be very tricky.</td>
-</tr>
-<tr class="even">
-<td>You can get rid of repeated initialization code in favor of cloning pre-built prototypes.</td>
-<td><br />
-</td>
-</tr>
-<tr class="odd">
-<td>You can produce complex objects more conveniently.</td>
-<td><br />
-</td>
-</tr>
-<tr class="even">
-<td>You get an alternative to inheritance when dealing with configuration presets for complex objects.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+    <thead>
+        <tr class="header">
+            <th>Pros</th>
+            <th>Cons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td>You can clone objects without coupling to their concrete classes.</td>
+            <td>Cloning complex objects that have circular references might be very tricky.</td>
+        </tr>
+        <tr class="even">
+            <td>You can get rid of repeated initialization code in favor of cloning pre-built prototypes.</td>
+            <td><br />
+        </td>
+        </tr>
+        <tr class="odd">
+            <td>You can produce complex objects more conveniently.</td>
+            <td><br /></td>
+        </tr>
+        <tr class="even">
+            <td>You get an alternative to inheritance when dealing with configuration presets for complex objects.</td>
+            <td><br /></td>
+        </tr>
+    </tbody>
 </table>
 
 
@@ -2306,7 +2303,7 @@ the creation would be expensive as compared to cloning.
 
 ## Singleton
 
-![](https://www.oodesign.com/images/creational/singleton-pattern.gif)
+<kbd>![](https://www.oodesign.com/images/creational/singleton-pattern.gif)</kbd>
 
 ### Intent
 
@@ -2314,7 +2311,7 @@ the creation would be expensive as compared to cloning.
 class has only one instance, while providing a global access point to
 this instance.
 
-![](attachments/463530003/463530331.png)
+<kbd>![](./attachments/singleton/463530331.png)</kbd>
 
 ### Problem
 
@@ -2334,7 +2331,7 @@ the *Single Responsibility Principle*:
     constructor since a constructor call **must** always return a new
     object by design.
     
-    ![](attachments/463530003/463530332.png)
+    <kbd>![](./attachments/singleton/463530332.png)</kbd>
 
 2.  **Provide a global access point to that instance**. Remember those
     global variables that you (all right, me) used to store some
@@ -2372,7 +2369,7 @@ same object is always returned.
 
 ### Structure
 
-![](attachments/463530003/463530333.png)
+<kbd>![](./attachments/singleton/463530333.png)</kbd>
 
 ### Pseudocode
 
@@ -2406,31 +2403,30 @@ plus mocking the singleton could be difficult.
 
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>You can be sure that a class has only a single instance.</td>
-<td>Violates the <em>Single Responsibility Principle</em> . The pattern solves two problems at the time.</td>
-</tr>
-<tr class="even">
-<td>You gain a global access point to that instance.</td>
-<td>The Singleton pattern can mask bad design, for instance, when the components of the program know too much about each other.</td>
-</tr>
-<tr class="odd">
-<td>The singleton object is initialized only when it’s requested for the first time.</td>
-<td>The pattern requires special treatment in a multithreaded environment so that multiple threads won’t create a singleton object several times.</td>
-</tr>
-<tr class="even">
-<td><br />
-</td>
-<td>It may be difficult to unit test the client code of the Singleton because many test frameworks rely on inheritance when producing mock objects. Since the constructor of the singleton class is private and overriding static methods is impossible in most languages, you will need to think of a creative way to mock the singleton. Or just don’t write the tests. Or don’t use the Singleton pattern.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr class="header">
+            <th>Pros</th>
+            <th>Cons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td>You can be sure that a class has only a single instance.</td>
+            <td>Violates the <em>Single Responsibility Principle</em> . The pattern solves two problems at the time.</td>
+        </tr>
+        <tr class="even">
+            <td>You gain a global access point to that instance.</td>
+            <td>The Singleton pattern can mask bad design, for instance, when the components of the program know too much about each other.</td>
+        </tr>
+        <tr class="odd">
+            <td>The singleton object is initialized only when it’s requested for the first time.</td>
+            <td>The pattern requires special treatment in a multithreaded environment so that multiple threads won’t create a singleton object several times.</td>
+        </tr>
+        <tr class="even">
+            <td><br /></td>
+            <td>It may be difficult to unit test the client code of the Singleton because many test frameworks rely on inheritance when producing mock objects. Since the constructor of the singleton class is private and overriding static methods is impossible in most languages, you will need to think of a creative way to mock the singleton. Or just don’t write the tests. Or don’t use the Singleton pattern.</td>
+        </tr>
+    </tbody>
 </table>
 
 
@@ -2650,13 +2646,5 @@ if __name__ == '__main__':
 # rm3: Init
                 
 ```
-
-
-
-
-
-
-
-
 
 

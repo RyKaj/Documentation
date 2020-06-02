@@ -1,22 +1,8 @@
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Software Development](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/README.md) | [Design Patterns](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/README.md) |
-
 ------------
-
-<div id="breadcrumb-section">
-
-1.  [Information Technology](index.html)
-2.  [3.0 Sofware Development
-    Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
-3.  [Design Patterns](Design-Patterns_451820045.html)
-4.  [1.0 Design Pattern - Programming
-    Language](1.0-Design-Pattern---Programming-Language_451820065.html)
-
 
 
 # Information Technology : Behavioral Design Patterns
-
-
-
 
 
 ## Chain of Responsibility
@@ -28,7 +14,7 @@ pass requests along a chain of handlers. Upon receiving a request, each
 handler decides either to process the request or to pass it to the next
 handler in the chain.
 
-<kbd>![](attachments/463529897/463529890.png)
+<kbd>![](./Behavioral/Behavioral/Behavioral/attachments/chain/463529890.png)</kbd>
 
 ### Problem
 
@@ -44,25 +30,23 @@ user’s credentials. However, if those credentials aren’t correct and
 authentication fails, there’s no reason to proceed with any other
 checks.
 
-<kbd>![](attachments/463529897/463529891.png)
+<kbd>![](./Behavioral/Behavioral/attachments/chain/463529891.png)</kbd>
 
 During the next few months, you implemented several more of those
 sequential checks.
 
   - One of your colleagues suggested that it’s unsafe to pass raw data
-    straight to the ordering system. So you added an extra validation
-    step to sanitize the data in a request.
-
+	straight to the ordering system. So you added an extra validation
+	step to sanitize the data in a request.
   - Later, somebody noticed that the system is vulnerable to brute force
-    password cracking. To negate this, you promptly added a check that
-    filters repeated failed requests coming from the same IP address.
-
+	password cracking. To negate this, you promptly added a check that
+	filters repeated failed requests coming from the same IP address.
   - Someone else suggested that you could speed up the system by
-    returning cached results on repeated requests containing the same
-    data. Hence, you added another check which lets the request pass
-    through to the system only if there’s no suitable cached response.
+	returning cached results on repeated requests containing the same
+	data. Hence, you added another check which lets the request pass
+	through to the system only if there’s no suitable cached response.
 
-<kbd>![](attachments/463529897/463529892.png)
+<kbd>![](./Behavioral/Behavioral/attachments/chain/463529892.png)</kbd>
 
 ### Solution
 
@@ -88,7 +72,7 @@ Assuming the request contains the right data, all the handlers can
 execute their primary behavior, whether it’s authentication checks or
 caching.
 
-<kbd>![](attachments/463529897/463529893.png)
+<kbd>![](./Behavioral/Behavioral/attachments/chain/463529893.png)</kbd>
 
 However, there’s a slightly different approach (and it’s a bit more
 canonical) in which, upon receiving a request, a handler decides whether
@@ -104,15 +88,15 @@ window. The event is processed by the first element in the chain that’s
 capable of handling it. This example is also noteworthy because it shows
 that a chain can always be extracted from an object tree.
 
-<kbd>![](attachments/463529897/463529894.png)
+<kbd>![](./Behavioral/Behavioral/attachments/chain/463529894.png)</kbd>
 
 ### Structure
 
-<kbd>![](attachments/463529897/463529895.png)
+<kbd>![](./Behavioral/Behavioral/attachments/chain/463529895.png)</kbd>
 
-### Pseudocode
+## Pseudocode
 
-<kbd>![](attachments/463529897/463529896.png)
+<kbd>![](./Behavioral/Behavioral/attachments/chain/463529896.png)</kbd>
 
 ### Real world example
 
@@ -146,28 +130,26 @@ the next processing object in the chain.
 
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>You can control the order of request handling.</td>
-<td>Some requests may end up unhandled.</td>
-</tr>
-<tr class="even">
-<td><em>Single Responsibility Principle</em>. You can decouple classes that invoke operations from classes that perform operations.</td>
-<td><br />
-</td>
-</tr>
-<tr class="odd">
-<td><em>Open/Closed Principle</em>. You can introduce new handlers into the app without breaking the existing client code.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+	<thead>
+		<tr class="header">
+			<th>Pros</th>
+			<th>Cons</th>
+		</tr>
+		</thead>
+	<tbody>
+		<tr class="odd">
+			<td>You can control the order of request handling.</td>
+			<td>Some requests may end up unhandled.</td>
+		</tr>
+		<tr class="even">
+			<td><em>Single Responsibility Principle</em>. You can decouple classes that invoke operations from classes that perform operations.</td>
+			<td><br /></td>
+		</tr>
+		<tr class="odd">
+			<td><em>Open/Closed Principle</em>. You can introduce new handlers into the app without breaking the existing client code.</td>
+			<td><br /></td>
+		</tr>
+	</tbody>
 </table>
 
 
@@ -201,7 +183,7 @@ accounts
 >         {
 >             Console.WriteLine($"Paid {amountTopay:c} using {this.GetType().Name}.");
 >         }
->             else if (this.mSuccessor != null)
+>         else if (this.mSuccessor != null)
 >         {
 >             Console.WriteLine($"Cannot pay using {this.GetType().Name}. Proceeding..");
 >             mSuccessor.Pay(amountTopay);
@@ -240,7 +222,7 @@ accounts
 >         this.mBalance = balance;
 >     }
 > }
->                 
+>                     
 > ```
 
 Now let's prepare the chain using the links defined above (i.e. Bank,
@@ -269,10 +251,14 @@ Paypal, Bitcoin)
 > // Cannot pay using bank. Proceeding ..
 > // Cannot pay using paypal. Proceeding ..:
 > // Paid 259 using Bitcoin!
->                 
+>                     
 > ```
 
+
+
 #### JavaScript
+
+
 
 Translating our account example above. First of all we have a base
 account having the logic for chaining the accounts together and some
@@ -282,7 +268,6 @@ accounts
 > 
 > ``` 
 > class Account {
-> 
 >     setNext(account) {
 >         this.successor = account
 >     }
@@ -326,7 +311,8 @@ accounts
 >         this.balance = balance
 >     }
 > }
->                     
+> 
+>                         
 > ```
 
 Now let's prepare the chain using the links defined above (i.e. Bank,
@@ -357,13 +343,14 @@ Paypal, Bitcoin)
 > // Cannot pay using bank. Proceeding ..
 > // Cannot pay using paypal. Proceeding ..: 
 > // Paid 259 using Bitcoin!
-> 
 >                     
 > ```
 
 
 
 #### PHP
+
+
 
 Translating our account example above. First of all we have a base
 account having the logic for chaining the accounts together and some
@@ -397,7 +384,7 @@ accounts
 >     public function canPay($amount): bool
 >     {
 >         return $this->balance >= $amount;
->         }
+>     }
 > }
 > 
 > class Bank extends Account
@@ -420,8 +407,8 @@ accounts
 >     }
 > }
 > 
->     class Bitcoin extends Account
->     {
+> class Bitcoin extends Account
+> {
 >     protected $balance;
 > 
 >     public function __construct(float $balance)
@@ -429,12 +416,10 @@ accounts
 >         $this->balance = $balance;
 >     }
 > }
-> 
->                 
+>                         
 > ```
 
-Now let's prepare the chain using the links defined above (i.e. Bank,
-Paypal, Bitcoin)
+	Now let's prepare the chain using the links defined above (i.e. Bank, Paypal, Bitcoin)
 
 > 
 > 
@@ -461,125 +446,133 @@ Paypal, Bitcoin)
 > // Cannot pay using bank. Proceeding ..
 > // Cannot pay using paypal. Proceeding ..:
 > // Paid 259 using Bitcoin!
-> 
->                 
+>                         
 > ```
+
+
 
 #### Python
 
-    #!/usr/bin/env python
-    # -*- coding: utf-8 -*-
-    
-    """
-    *What is this pattern about?
-    
-    The Chain of responsibility is an object oriented version of the
-    `if ... elif ... elif ... else ...` idiom, with the
-    benefit that the condition–action blocks can be dynamically rearranged
-    and reconfigured at runtime.
-    
-    This pattern aims to decouple the senders of a request from its
-    receivers by allowing request to move through chained
-    receivers until it is handled.
-    
-    Request receiver in simple form keeps a reference to a single successor.
-    As a variation some receivers may be capable of sending requests out
-    in several directions, forming a `tree of responsibility`.
-    
-    *TL;DR
-    Allow a request to pass down a chain of receivers until it is handled.
-    """
-    
-    import abc
-    
-    class Handler(metaclass=abc.ABCMeta):
-    
-        def __init__(self, successor=None):
-            self.successor = successor
-    
-        def handle(self, request):
-            """
-            Handle request and stop.
-            If can't - call next handler in chain.
-    
-            As an alternative you might even in case of success
-            call the next handler.
-            """
-            res = self.check_range(request)
-            if not res and self.successor:
-                self.successor.handle(request)
-    
-        @abc.abstractmethod
-        def check_range(self, request):
-            """Compare passed value to predefined interval"""
-    
-    class ConcreteHandler0(Handler):
-        """Each handler can be different.
-        Be simple and static...
-        """
-    
-        @staticmethod
-        def check_range(request):
-            if 0 <= request < 10:
-                print("request {} handled in handler 0".format(request))
-                return True
-    
-    class ConcreteHandler1(Handler):
-        """... With it's own internal state"""
-    
-        start, end = 10, 20
-    
-        def check_range(self, request):
-            if self.start <= request < self.end:
-                print("request {} handled in handler 1".format(request))
-                return True
-    
-    class ConcreteHandler2(Handler):
-        """... With helper methods."""
-    
-        def check_range(self, request):
-            start, end = self.get_interval_from_db()
-            if start <= request < end:
-                print("request {} handled in handler 2".format(request))
-                return True
-    
-        @staticmethod
-        def get_interval_from_db():
-            return (20, 30)
-    
-    
-    class FallbackHandler(Handler):
-        @staticmethod
-        def check_range(request):
-            print("end of chain, no handler for {}".format(request))
-            return False
-    
-    def main():
-        """
-        >>> h0 = ConcreteHandler0()
-        >>> h1 = ConcreteHandler1()
-        >>> h2 = ConcreteHandler2(FallbackHandler())
-        >>> h0.successor = h1
-        >>> h1.successor = h2
-    
-        >>> requests = [2, 5, 14, 22, 18, 3, 35, 27, 20]
-        >>> for request in requests:
-        ...     h0.handle(request)
-        request 2 handled in handler 0
-        request 5 handled in handler 0
-        request 14 handled in handler 1
-        request 22 handled in handler 2
-        request 18 handled in handler 1
-        request 3 handled in handler 0
-        end of chain, no handler for 35
-        request 27 handled in handler 2
-        request 20 handled in handler 2
-        """
-    
-    
-    if __name__ == "__main__":
-        import doctest
-        doctest.testmod(optionflags=doctest.ELLIPSIS)
+
+
+> 
+> 
+> ``` 
+> #!/usr/bin/env python
+> # -*- coding: utf-8 -*-
+> 
+> """
+> *What is this pattern about?
+> 
+> The Chain of responsibility is an object oriented version of the
+> `if ... elif ... elif ... else ...` idiom, with the
+> benefit that the condition–action blocks can be dynamically rearranged
+> and reconfigured at runtime.
+> 
+> This pattern aims to decouple the senders of a request from its
+> receivers by allowing request to move through chained
+> receivers until it is handled.
+> 
+> Request receiver in simple form keeps a reference to a single successor.
+> As a variation some receivers may be capable of sending requests out
+> in several directions, forming a `tree of responsibility`.
+> 
+> *TL;DR
+> Allow a request to pass down a chain of receivers until it is handled.
+> """
+> 
+> import abc
+> 
+> class Handler(metaclass=abc.ABCMeta):
+> 
+> def __init__(self, successor=None):
+> self.successor = successor
+> 
+> def handle(self, request):
+> """
+> Handle request and stop.
+> If can't - call next handler in chain.
+> 
+> As an alternative you might even in case of success
+> call the next handler.
+> """
+> res = self.check_range(request)
+> if not res and self.successor:
+> self.successor.handle(request)
+> 
+> @abc.abstractmethod
+> def check_range(self, request):
+> """Compare passed value to predefined interval"""
+> 
+> 
+> class ConcreteHandler0(Handler):
+> """Each handler can be different.
+> Be simple and static...
+> """
+> 
+> @staticmethod
+> def check_range(request):
+> if 0 <= request < 10:
+> print("request {} handled in handler 0".format(request))
+> return True
+> 
+> class ConcreteHandler1(Handler):
+> """... With it's own internal state"""
+> 
+> start, end = 10, 20
+> 
+> def check_range(self, request):
+> if self.start <= request < self.end:
+> print("request {} handled in handler 1".format(request))
+> return True
+> 
+> class ConcreteHandler2(Handler):
+> """... With helper methods."""
+> 
+> def check_range(self, request):
+> start, end = self.get_interval_from_db()
+> if start <= request < end:
+> print("request {} handled in handler 2".format(request))
+> return True
+> 
+> @staticmethod
+> def get_interval_from_db():
+> return (20, 30)
+> 
+> class FallbackHandler(Handler):
+> @staticmethod
+> def check_range(request):
+> print("end of chain, no handler for {}".format(request))
+> return False
+> 
+> def main():
+> """
+> >>> h0 = ConcreteHandler0()
+> >>> h1 = ConcreteHandler1()
+> >>> h2 = ConcreteHandler2(FallbackHandler())
+> >>> h0.successor = h1
+> >>> h1.successor = h2
+> 
+> >>> requests = [2, 5, 14, 22, 18, 3, 35, 27, 20]
+> >>> for request in requests:
+> ...     h0.handle(request)
+> request 2 handled in handler 0
+> request 5 handled in handler 0
+> request 14 handled in handler 1
+> request 22 handled in handler 2
+> request 18 handled in handler 1
+> request 3 handled in handler 0
+> end of chain, no handler for 35
+> request 27 handled in handler 2
+> request 20 handled in handler 2
+> """
+> 
+> if __name__ == "__main__":
+> import doctest
+> doctest.testmod(optionflags=doctest.ELLIPSIS)
+>                     
+> ```
+
 
 ## Command
 
@@ -590,7 +583,7 @@ stand-alone object that contains all information about the request. This
 transformation lets you parameterize methods with different requests,
 delay or queue a request’s execution, and support undoable operations.
 
-<kbd>![](attachments/463529910/463529901.png)
+<kbd>![](./Behavioral/Behavioral/attachments/command/463529901.png)</kbd>
 
 ### Problem
 
@@ -600,7 +593,7 @@ the editor. You created a very neat `Button` class that can be used for
 buttons on the toolbar, as well as for generic buttons in various
 dialogs.
 
-<kbd>![](attachments/463529910/463529902.png)
+<kbd>![](./Behavioral/Behavioral/attachments/command/463529902.png)</kbd>
 
 While all of these buttons look similar, they’re all supposed to do
 different things. Where would you put the code for the various click
@@ -608,7 +601,7 @@ handlers of these buttons? The simplest solution is to create tons of
 subclasses for each place where the button is used. These subclasses
 would contain the code that would have to be executed on a button click.
 
-<kbd>![](attachments/463529910/463529903.png)
+<kbd>![](./Behavioral/Behavioral/attachments/command/463529903.png)</kbd>
 
 Before long, you realize that this approach is deeply flawed. First, you
 have an enormous number of subclasses, and that would be okay if you
@@ -616,7 +609,7 @@ weren’t risking breaking the code in these subclasses each time you
 modify the base `Button` class. Put simply, your GUI code has become
 awkwardly dependent on the volatile code of the business logic.
 
-<kbd>![](attachments/463529910/463529904.png)
+<kbd>![](./Behavioral/Behavioral/attachments/command/463529904.png)</kbd>
 
 And here’s the ugliest part. Some operations, such as copying/pasting
 text, would need to be invoked from multiple places. For example, a user
@@ -647,7 +640,7 @@ In the code it might look like this: a GUI object calls a method of a
 business logic object, passing it some arguments. This process is
 usually described as one object sending another a *request*.
 
-<kbd>![](attachments/463529910/463529905.png)
+<kbd>![](./Behavioral/Behavioral/attachments/command/463529905.png)</kbd>
 
 The Command pattern suggests that GUI objects shouldn’t send these
 requests directly. Instead, you should extract all of the request
@@ -660,7 +653,7 @@ objects. From now on, the GUI object doesn’t need to know what business
 logic object will receive the request and how it’ll be processed. The
 GUI object just triggers the command, which handles all the details.
 
-<kbd>![](attachments/463529910/463529906.png)
+<kbd>![](./Behavioral/Behavioral/attachments/command/463529906.png)</kbd>
 
 The next step is to make your commands implement the same interface.
 Usually it has just a single execution method that takes no parameters.
@@ -676,7 +669,7 @@ have any parameters, how would we pass the request details to the
 receiver? It turns out the command should be either pre-configured with
 this data, or capable of getting it on its own.
 
-<kbd>![](attachments/463529910/463529907.png)
+<kbd>![](./Behavioral/Behavioral/attachments/command/463529907.png)</kbd>
 
 Let’s get back to our text editor. After we apply the Command pattern,
 we no longer need all those button subclasses to implement various click
@@ -700,11 +693,11 @@ fraction of the benefits that the Command pattern can offer\!
 
 ### Structure
 
-<kbd>![](attachments/463529910/463529908.png)
+<kbd>![](./Behavioral/Behavioral/attachments/command/463529908.png)</kbd>
 
 ### Pseudocode
 
-<kbd>![](attachments/463529910/463529909.png)
+<kbd>![](./Behavioral/Behavioral/attachments/command/463529909.png)</kbd>
 
 ### Real world example
 
@@ -733,38 +726,34 @@ and values for the method parameters.
 
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>Single Responsibility Principle</em>. You can decouple classes that invoke operations from classes that perform these operations.</td>
-<td>The code may become more complicated since you’re introducing a whole new layer between senders and receivers.</td>
-</tr>
-<tr class="even">
-<td><em>Open/Closed Principle</em>. You can introduce new commands into the app without breaking existing client code.</td>
-<td><br />
-</td>
-</tr>
-<tr class="odd">
-<td>You can implement undo/redo.</td>
-<td><br />
-</td>
-</tr>
-<tr class="even">
-<td>You can implement deferred execution of operations.</td>
-<td><br />
-</td>
-</tr>
-<tr class="odd">
-<td>You can assemble a set of simple commands into a complex one.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+	<thead>
+	<tr class="header">
+		<th>Pros</th>
+		<th>Cons</th>
+	</tr>
+	</thead>
+	<tbody>
+		<tr class="odd">
+			<td><em>Single Responsibility Principle</em>. You can decouple classes that invoke operations from classes that perform these operations.</td>
+			<td>The code may become more complicated since you’re introducing a whole new layer between senders and receivers.</td>
+		</tr>
+		<tr class="even">
+			<td><em>Open/Closed Principle</em>. You can introduce new commands into the app without breaking existing client code.</td>
+			<td><br /></td>
+		</tr>
+		<tr class="odd">
+			<td>You can implement undo/redo.</td>
+			<td><br /></td>
+		</tr>
+		<tr class="even">
+			<td>You can implement deferred execution of operations.</td>
+			<td><br /></td>
+		</tr>
+		<tr class="odd">
+			<td>You can assemble a set of simple commands into a complex one.</td>
+			<td><br /></td>
+		</tr>
+	</tbody>
 </table>
 
 
@@ -782,17 +771,17 @@ action that could be performed
 // Receiver
 class Bulb
 {
-    public void TurnOn()
-    {
-        Console.WriteLine("Bulb has been lit");
-    }
+	public void TurnOn()
+	{
+		Console.WriteLine("Bulb has been lit");
+	}
 
-    public void TurnOff()
-    {
-        Console.WriteLine("Darkness!");
-    }
+	public void TurnOff()
+	{
+		Console.WriteLine("Darkness!");
+	}
 }
-                
+				
 ```
 
 then we have an interface that each of the commands are going to
@@ -801,62 +790,62 @@ implement and then we have a set of commands
 ``` 
 interface ICommand
 {
-    void Execute();
-    void Undo();
-    void Redo();
+	void Execute();
+	void Undo();
+	void Redo();
 }
 
 // Command
 class TurnOn : ICommand
 {
-    private Bulb mBulb;
+	private Bulb mBulb;
 
-    public TurnOn(Bulb bulb)
-    {
-        mBulb = bulb ?? throw new ArgumentNullException("Bulb", "Bulb cannot be null");
-    }
+	public TurnOn(Bulb bulb)
+	{
+		mBulb = bulb ?? throw new ArgumentNullException("Bulb", "Bulb cannot be null");
+	}
 
-    public void Execute()
-    {
-        mBulb.TurnOn();
-    }
+	public void Execute()
+	{
+		mBulb.TurnOn();
+	}
 
-    public void Undo()
-    {
-        mBulb.TurnOff();
-    }
+	public void Undo()
+	{
+		mBulb.TurnOff();
+	}
 
-    public void Redo()
-    {
-        Execute();
-    }
+	public void Redo()
+	{
+		Execute();
+	}
 }
 
 class TurnOff : ICommand
 {
-    private Bulb mBulb;
+	private Bulb mBulb;
 
-    public TurnOff(Bulb bulb)
-    {
-        mBulb = bulb ?? throw new ArgumentNullException("Bulb", "Bulb cannot be null");
-    }
+	public TurnOff(Bulb bulb)
+	{
+		mBulb = bulb ?? throw new ArgumentNullException("Bulb", "Bulb cannot be null");
+	}
 
-    public void Execute()
-    {
-        mBulb.TurnOff();
-    }
+	public void Execute()
+	{
+		mBulb.TurnOff();
+	}
 
-    public void Undo()
-    {
-        mBulb.TurnOn();
-    }
+	public void Undo()
+	{
+		mBulb.TurnOn();
+	}
 
-    public void Redo()
-    {
-        Execute();
-    }
+	public void Redo()
+	{
+		Execute();
+	}
 }
-                
+				
 ```
 
 Then we have an `Invoker` with whom the client will interact to process
@@ -866,12 +855,12 @@ any commands
 // Invoker
 class RemoteControl
 {
-    public void Submit(ICommand command)
-    {
-        command.Execute();
-    }
+	public void Submit(ICommand command)
+	{
+		command.Execute();
+	}
 }
-                
+				
 ```
 
 Finally let's see how we can use it in our client
@@ -887,7 +876,7 @@ remote.Submit(turnOn); // Bulb has been lit!
 remote.Submit(turnOff); // Darkness!
 
 Console.ReadLine();
-                
+				
 ```
 
 Command pattern can also be used to implement a transaction based
@@ -908,15 +897,15 @@ action that could be performed
 ``` 
 // Receiver
 class Bulb {
-    turnOn() {
-        console.log('Bulb has been lit')
-    }
-    
-    turnOff() {
-        console.log('Darkness!')
-    }
+	turnOn() {
+		console.log('Bulb has been lit')
+	}
+	
+	turnOff() {
+		console.log('Darkness!')
+	}
 }
-                
+				
 ```
 
 then we have an interface that each of the commands are going to
@@ -933,41 +922,41 @@ Command interface :
 
 // Command
 class TurnOnCommand {
-    constructor(bulb) {
-        this.bulb = bulb
-    }
-    
-    execute() {
-        this.bulb.turnOn()
-    }
-    
-    undo() {
-        this.bulb.turnOff()
-    }
-    
-    redo() {
-        this.execute()
-    }
+	constructor(bulb) {
+		this.bulb = bulb
+	}
+	
+	execute() {
+		this.bulb.turnOn()
+	}
+	
+	undo() {
+		this.bulb.turnOff()
+	}
+	
+	redo() {
+		this.execute()
+	}
 }
 
 class TurnOffCommand {
-    constructor(bulb) {
-        this.bulb = bulb
-    }
-    
-    execute() {
-        this.bulb.turnOff()
-    }
-    
-    undo() {
-        this.bulb.turnOn()
-    }
-    
-    redo() {
-        this.execute()
-    }
+	constructor(bulb) {
+		this.bulb = bulb
+	}
+	
+	execute() {
+		this.bulb.turnOff()
+	}
+	
+	undo() {
+		this.bulb.turnOn()
+	}
+	
+	redo() {
+		this.execute()
+	}
 }
-                
+				
 ```
 
 Then we have an `Invoker` with whom the client will interact to process
@@ -976,11 +965,11 @@ any commands
 ``` 
 // Invoker
 class RemoteControl {
-    submit(command) {
-        command.execute()
-    }
+	submit(command) {
+		command.execute()
+	}
 }
-                
+				
 ```
 
 Finally let's see how we can use it in our client
@@ -994,12 +983,14 @@ const turnOff = new TurnOffCommand(bulb)
 const remote = new RemoteControl()
 remote.submit(turnOn) // Bulb has been lit!
 remote.submit(turnOff) // Darkness!
-                
+				
 ```
 
 
 
 #### PHP
+
+
 
 First of all we have the receiver that has the implementation of every
 action that could be performed
@@ -1008,17 +999,17 @@ action that could be performed
 // Receiver
 class Bulb
 {
-    public function turnOn()
-    {
-        echo "Bulb has been lit";
-    }
+	public function turnOn()
+	{
+		echo "Bulb has been lit";
+	}
 
-    public function turnOff()
-    {
-        echo "Darkness!";
-    }
+	public function turnOff()
+	{
+		echo "Darkness!";
+	}
 }
-                
+				
 ```
 
 then we have an interface that each of the commands are going to
@@ -1027,62 +1018,62 @@ implement and then we have a set of commands
 ``` 
 interface Command
 {
-    public function execute();
-    public function undo();
-    public function redo();
+	public function execute();
+	public function undo();
+	public function redo();
 }
 
 // Command
 class TurnOn implements Command
 {
-    protected $bulb;
+	protected $bulb;
 
-    public function __construct(Bulb $bulb)
-    {
-        $this->bulb = $bulb;
-    }
+	public function __construct(Bulb $bulb)
+	{
+		$this->bulb = $bulb;
+	}
 
-    public function execute()
-    {
-        $this->bulb->turnOn();
-    }
+	public function execute()
+	{
+		$this->bulb->turnOn();
+	}
 
-    public function undo()
-    {
-        $this->bulb->turnOff();
-    }
+	public function undo()
+	{
+		$this->bulb->turnOff();
+	}
 
-    public function redo()
-    {
-        $this->execute();
-    }
+	public function redo()
+	{
+		$this->execute();
+	}
 }
 
 class TurnOff implements Command
 {
-    protected $bulb;
+	protected $bulb;
 
-    public function __construct(Bulb $bulb)
-    {
-        $this->bulb = $bulb;
-    }
+	public function __construct(Bulb $bulb)
+	{
+		$this->bulb = $bulb;
+	}
 
-    public function execute()
-    {
-        $this->bulb->turnOff();
-    }
+	public function execute()
+	{
+		$this->bulb->turnOff();
+	}
 
-    public function undo()
-    {
-        $this->bulb->turnOn();
-    }
+	public function undo()
+	{
+		$this->bulb->turnOn();
+	}
 
-    public function redo()
-    {
-        $this->execute();
-    }
+	public function redo()
+	{
+		$this->execute();
+	}
 }
-                
+				
 ```
 
 Then we have an `Invoker` with whom the client will interact to process
@@ -1092,12 +1083,12 @@ any commands
 // Invoker
 class RemoteControl
 {
-    public function submit(Command $command)
-    {
-        $command->execute();
-    }
+	public function submit(Command $command)
+	{
+		$command->execute();
+	}
 }
-                
+				
 ```
 
 Finally let's see how we can use it in our client
@@ -1112,7 +1103,7 @@ $remote = new RemoteControl();
 $remote->submit($turnOn); // Bulb has been lit!
 $remote->submit($turnOff); 
 // Darkness!
-                
+				
 ```
 
 Command pattern can also be used to implement a transaction based
@@ -1140,57 +1131,59 @@ from __future__ import print_function
 import os
 
 class MoveFileCommand(object):
-    def __init__(self, src, dest):
-        self.src = src
-        self.dest = dest
+	def __init__(self, src, dest):
+		self.src = src
+		self.dest = dest
 
-    def execute(self):
-        self.rename(self.src, self.dest)
+	def execute(self):
+		self.rename(self.src, self.dest)
 
-    def undo(self):
-        self.rename(self.dest, self.src)
+	def undo(self):
+		self.rename(self.dest, self.src)
 
-    def rename(self, src, dest):
-        print(u"renaming %s to %s" % (src, dest))
-        os.rename(src, dest)
+	def rename(self, src, dest):
+		print(u"renaming %s to %s" % (src, dest))
+		os.rename(src, dest)
 
 def main():
-    """
-    >>> from os.path import lexists
+	"""
+	>>> from os.path import lexists
 
-    >>> command_stack = [
-    ...     MoveFileCommand('foo.txt', 'bar.txt'),
-    ...     MoveFileCommand('bar.txt', 'baz.txt')
-    ... ]
+	>>> command_stack = [
+	...     MoveFileCommand('foo.txt', 'bar.txt'),
+	...     MoveFileCommand('bar.txt', 'baz.txt')
+	... ]
 
-    # Verify that none of the target files exist
-    >>> assert not lexists("foo.txt")
-    >>> assert not lexists("bar.txt")
-    >>> assert not lexists("baz.txt")
+	# Verify that none of the target files exist
+	>>> assert not lexists("foo.txt")
+	>>> assert not lexists("bar.txt")
+	>>> assert not lexists("baz.txt")
 
-    # Create empty file
-    >>> open("foo.txt", "w").close()
+	# Create empty file
+	>>> open("foo.txt", "w").close()
 
-    # Commands can be executed later on
-    >>> for cmd in command_stack:
-    ...     cmd.execute()
-    renaming foo.txt to bar.txt
-    renaming bar.txt to baz.txt
+	# Commands can be executed later on
+	>>> for cmd in command_stack:
+	...     cmd.execute()
+	renaming foo.txt to bar.txt
+	renaming bar.txt to baz.txt
 
-    # And can also be undone at will
-    >>> for cmd in reversed(command_stack):
-    ...     cmd.undo()
-    renaming baz.txt to bar.txt
-    renaming bar.txt to foo.txt
+	# And can also be undone at will
+	>>> for cmd in reversed(command_stack):
+	...     cmd.undo()
+	renaming baz.txt to bar.txt
+	renaming bar.txt to foo.txt
 
-    >>> os.unlink("foo.txt")
-    """
+	>>> os.unlink("foo.txt")
+	"""
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
-                
+	import doctest
+	doctest.testmod()
+				
 ```
+
+
 
 ## Iterator
 
@@ -1200,14 +1193,14 @@ Iterator is a behavioral design pattern that lets you traverse elements
 of a collection without exposing its underlying representation (list,
 stack, tree, etc.).
 
-<kbd>![](attachments/463529918/463529912.png)
+<kbd>![](./Behavioral/Behavioral/attachments/iterator/463529912.png)</kbd>
 
 ### Problem
 
 Collections are one of the most used data types in programming.
 Nonetheless, a collection is just a container for a group of objects.
 
-<kbd>![](attachments/463529918/463529913.png)
+<kbd>![](./Behavioral/Behavioral/attachments/iterator/463529913.png)</kbd>
 
 Most collections store their elements in simple lists. However, some of
 them are based on stacks, trees, graphs and other complex data
@@ -1226,7 +1219,7 @@ traversal of a tree. Yet the next day you might require breadth-first
 traversal. And the next week, you might need something else, like random
 access to the tree elements.
 
-<kbd>![](attachments/463529918/463529914.png)
+<kbd>![](./Behavioral/Behavioral/attachments/iterator/463529914.png)</kbd>
 
 Adding more and more traversal algorithms to the collection gradually
 blurs its primary responsibility, which is efficient data storage.
@@ -1245,7 +1238,7 @@ specific collection classes.
 The main idea of the Iterator pattern is to extract the traversal
 behavior of a collection into a separate object called an *iterator*.
 
-<kbd>![](attachments/463529918/463529915.png)
+<kbd>![](./Behavioral/Behavioral/attachments/iterator/463529915.png)</kbd>
 
 In addition to implementing the algorithm itself, an iterator object
 encapsulates all of the traversal details, such as the current position
@@ -1266,11 +1259,11 @@ change the collection or the client.
 
 ### Structure
 
-<kbd>![](attachments/463529918/463529916.png)
+<kbd>![](./Behavioral/Behavioral/attachments/iterator/463529916.png)</kbd>
 
 ### Pseudocode
 
-<kbd>![](attachments/463529918/463529917.png)
+<kbd>![](./Behavioral/Behavioral/attachments/iterator/463529917.png)</kbd>
 
 ### Real world Example
 
@@ -1299,32 +1292,30 @@ and thus cannot be decoupled.
 
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>Single Responsibility Principle</em>. You can clean up the client code and the collections by extracting bulky traversal algorithms into separate classes.</td>
-<td>Applying the pattern can be an overkill if your app only works with simple collections.</td>
-</tr>
-<tr class="even">
-<td><em>Open/Closed Principle</em>. You can implement new types of collections and iterators and pass them to existing code without breaking anything.</td>
-<td>Using an iterator may be less efficient than going through elements of some specialized collections directly.</td>
-</tr>
-<tr class="odd">
-<td>You can iterate over the same collection in parallel because each iterator object contains its own iteration state.</td>
-<td><br />
-</td>
-</tr>
-<tr class="even">
-<td>For the same reason, you can delay an iteration and continue it when needed.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+	<thead>
+		<tr class="header">
+			<th>Pros</th>
+			<th>Cons</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="odd">
+			<td><em>Single Responsibility Principle</em>. You can clean up the client code and the collections by extracting bulky traversal algorithms into separate classes.</td>
+			<td>Applying the pattern can be an overkill if your app only works with simple collections.</td>
+		</tr>
+		<tr class="even">
+			<td><em>Open/Closed Principle</em>. You can implement new types of collections and iterators and pass them to existing code without breaking anything.</td>
+			<td>Using an iterator may be less efficient than going through elements of some specialized collections directly.</td>
+		</tr>
+		<tr class="odd">
+			<td>You can iterate over the same collection in parallel because each iterator object contains its own iteration state.</td>
+			<td><br /></td>
+		</tr>
+		<tr class="even">
+			<td>For the same reason, you can delay an iteration and continue it when needed.</td>
+			<td><br /></td>
+		</tr>
+	</tbody>
 </table>
 
 
@@ -1354,7 +1345,7 @@ First of all we have RadioStation
 >         return mFrequency;
 >     }
 > }
->                     
+>
 > ```
 
 Then we have our iterator
@@ -1399,7 +1390,7 @@ Then we have our iterator
 >         }
 >     }
 > }
->                     
+> 
 > ```
 
 And then it can be used as
@@ -1507,19 +1498,19 @@ First of all we have RadioStation
 ``` 
 class RadioStation
 {
-    protected $frequency;
+	protected $frequency;
 
-    public function __construct(float $frequency)
-    {
-        $this->frequency = $frequency;
-    }
+	public function __construct(float $frequency)
+	{
+		$this->frequency = $frequency;
+	}
 
-    public function getFrequency(): float
-    {
-        return $this->frequency;
-    }
+	public function getFrequency(): float
+	{
+		return $this->frequency;
+	}
 }
-                
+				
 ```
 
 Then we have our iterator
@@ -1530,57 +1521,57 @@ use Iterator;
 
 class StationList implements Countable, Iterator
 {
-    /** @var RadioStation[] $stations */
-    protected $stations = [];
+	/** @var RadioStation[] $stations */
+	protected $stations = [];
 
-    /** @var int $counter */
-    protected $counter;
+	/** @var int $counter */
+	protected $counter;
 
-    public function addStation(RadioStation $station)
-    {
-        $this->stations[] = $station;
-    }
+	public function addStation(RadioStation $station)
+	{
+		$this->stations[] = $station;
+	}
 
-    public function removeStation(RadioStation $toRemove)
-    {
-        $toRemoveFrequency = $toRemove->getFrequency();
-        $this->stations = array_filter($this->stations, function (RadioStation $station) use ($toRemoveFrequency) {
-        return $station->getFrequency() !== $toRemoveFrequency;
-        });
-    }
+	public function removeStation(RadioStation $toRemove)
+	{
+		$toRemoveFrequency = $toRemove->getFrequency();
+		$this->stations = array_filter($this->stations, function (RadioStation $station) use ($toRemoveFrequency) {
+		return $station->getFrequency() !== $toRemoveFrequency;
+		});
+	}
 
-    public function count(): int
-    {
-        return count($this->stations);
-    }
+	public function count(): int
+	{
+		return count($this->stations);
+	}
 
-    public function current(): RadioStation
-    {
-        return $this->stations[$this->counter];
-    }
+	public function current(): RadioStation
+	{
+		return $this->stations[$this->counter];
+	}
 
-    public function key()
-    {
-        return $this->counter;
-    }
+	public function key()
+	{
+		return $this->counter;
+	}
 
-    public function next()
-    {
-        $this->counter++;
-    }
+	public function next()
+	{
+		$this->counter++;
+	}
 
-    public function rewind()
-    {
-        $this->counter = 0;
-    }
+	public function rewind()
+	{
+		$this->counter = 0;
+	}
 
-    public function valid(): bool
-    {
-        return isset($this->stations[$this->counter]);
-    }
+	public function valid(): bool
+	{
+		return isset($this->stations[$this->counter]);
+	}
 }
 
-                
+				
 ```
 
 And then it can be used as
@@ -1594,16 +1585,18 @@ $stationList->addStation(new RadioStation(102));
 $stationList->addStation(new RadioStation(103.2));
 
 foreach($stationList as $station) {
-    echo $station->getFrequency() . PHP_EOL;
+	echo $station->getFrequency() . PHP_EOL;
 }
 
 $stationList->removeStation(new RadioStation(89)); // Will remove station 89
-                
+				
 ```
 
 
 
 #### Python
+
+
 
 ``` 
 #!/usr/bin/env python
@@ -1620,38 +1613,439 @@ Traverses a container and accesses the container's elements.
 from __future__ import print_function
 
 def count_to(count):
-    """Counts by word numbers, up to a maximum of five"""
-    numbers = ["one", "two", "three", "four", "five"]
-    for number in numbers[:count]:
-        yield number
+	"""Counts by word numbers, up to a maximum of five"""
+	numbers = ["one", "two", "three", "four", "five"]
+	for number in numbers[:count]:
+		yield number
 
 # Test the generator
 count_to_two = lambda: count_to(2)
 count_to_five = lambda: count_to(5)
 
 def main():
-    """
-    # Counting to two...
-    >>> for number in count_to_two():
-    ...     print(number)
-    one
-    two
+	"""
+	# Counting to two...
+	>>> for number in count_to_two():
+	...     print(number)
+	one
+	two
 
-    # Counting to five...
-    >>> for number in count_to_five():
-    ...     print(number)
-    one
-    two
-    three
-    four
-    five
-    """
+	# Counting to five...
+	>>> for number in count_to_five():
+	...     print(number)
+	one
+	two
+	three
+	four
+	five
+	"""
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
-                
+	import doctest
+	doctest.testmod()
+				
 ```
+
+## Mediator
+
+### Intent
+
+**Mediator** is a behavioral design pattern that lets you reduce chaotic
+dependencies between objects. The pattern restricts direct
+communications between the objects and forces them to collaborate only
+via a mediator object.
+
+<kbd>![](./Behavioral/attachments/mediator/463529920.png)</kbd>
+
+### Problem
+
+Say you have a dialog for creating and editing customer profiles. It
+consists of various form controls such as text fields, checkboxes,
+buttons, etc.
+
+<kbd>![](./Behavioral/attachments/mediator/463529921.png)</kbd>
+
+Some of the formBy having this logic implemented directly inside the
+code of the form elements you make these elements’ classes much harder
+to reuse in other forms of the app. For example, you won’t be able to
+use that checkbox class inside another form, because it’s coupled to the
+dog’s text field. You can use either all the classes involved in
+rendering the profile form, or none at all. elements may interact with
+others. For instance, selecting the “I have a dog” checkbox may reveal a
+hidden text field for entering the dog’s name. Another example is the
+submit button that has to validate values of all fields before saving
+the data.
+
+<kbd>![](./Behavioral/attachments/mediator/463529922.png)</kbd>
+
+### Solution
+
+The Mediator pattern suggests that you should cease all direct
+communication between the components which you want to make independent
+of each other. Instead, these components must collaborate indirectly, by
+calling a special mediator object that redirects the calls to
+appropriate components. As a result, the components depend only on a
+single mediator class instead of being coupled to dozens of their
+colleagues.
+
+In our example with the profile editing form, the dialog class itself
+may act as the mediator. Most likely, the dialog class is already aware
+of all of its sub-elements, so you won’t even need to introduce new
+dependencies into this class.
+
+<kbd>![](./Behavioral/attachments/mediator/463529923.png)</kbd>
+
+The most significant change happens to the actual form elements. Let’s
+consider the submit button. Previously, each time a user clicked the
+button, it had to validate the values of all individual form elements.
+Now its single job is to notify the dialog about the click. Upon
+receiving this notification, the dialog itself performs the validations
+or passes the task to the individual elements. Thus, instead of being
+tied to a dozen form elements, the button is only dependent on the
+dialog class.
+
+You can go further and make the dependency even looser by extracting the
+common interface for all types of dialogs. The interface would declare
+the notification method which all form elements can use to notify the
+dialog about events happening to those elements. Thus, our submit button
+should now be able to work with any dialog that implements that
+interface.
+
+This way, the Mediator pattern lets you encapsulate a complex web of
+relations between various objects inside a single mediator object. The
+fewer dependencies a class has, the easier it becomes to modify, extend
+or reuse that class.
+
+### Structure
+
+<kbd>![](./Behavioral/attachments/mediator/463529924.png)</kbd>
+
+### Pseudocode
+
+<kbd>![](./Behavioral/attachments/mediator/463529925.png)</kbd>
+
+A general example would be when you talk to someone on your mobile
+phone, there is a network provider sitting between you and them and your
+conversation goes through it instead of being directly sent. In this
+case network provider is mediator.
+
+### In plain words
+
+Mediator pattern adds a third party object (called mediator) to control
+the interaction between two objects (called colleagues). It helps reduce
+the coupling between the classes communicating with each other. Because
+now they don't need to have the knowledge of each other's
+implementation.
+
+### Wikipedia says
+
+In software engineering, the mediator pattern defines an object that
+encapsulates how a set of objects interact. This pattern is considered
+to be a behavioral pattern due to the way it can alter the program's
+running behavior.
+
+### Pros and Cons
+
+<table>
+	<thead>
+		<tr class="header">
+			<th>Pros</th>
+			<th>Cons</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="odd">
+			<td><em>Single Responsibility Principle</em>. You can extract the communications between various components into a single place, making it easier to comprehend and maintain.</td>
+			<td>Over time a mediator can evolve into a <a href="https://refactoring.guru/antipatterns/god-object">God Object</a>.</td>
+		</tr>
+		<tr class="even">
+			<td><em>Open/Closed Principle</em>. You can introduce new mediators without having to change the actual components.</td>
+			<td><br /></td>
+		</tr>
+		<tr class="odd">
+			<td>You can reduce coupling between various components of a program.</td>
+			<td><br /></td>
+		</tr>
+		<tr class="even">
+			<td>You can reuse individual components more easily.</td>
+			<td><br /></td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+### Programmatic Example
+
+#### C\#
+
+Here is the simplest example of a chat room (i.e. mediator) with users
+(i.e. colleagues) sending messages to each other.
+
+First of all, we have the mediator i.e. the chat room
+
+> 
+> 
+> ``` 
+> interface IChatRoomMediator
+> {
+>     void ShowMessage(User user, string message);
+> }
+> 
+> //Mediator
+> class ChatRoom : IChatRoomMediator
+> {
+>     public void ShowMessage(User user, string message)
+>     {
+>         Console.WriteLine($"{DateTime.Now.ToString("MMMM dd, H:mm")} [{user.GetName()}]:{message}");
+>     }
+> }
+>
+> ```
+
+Then we have our users i.e. colleagues
+
+> 
+> 
+> ``` 
+> class User
+> {
+>     private string mName;
+>     private IChatRoomMediator mChatRoom;
+> 
+>     public User(string name, IChatRoomMediator chatroom)
+>     {
+>         mChatRoom = chatroom;
+>         mName = name;
+>     }
+> 
+>     public string GetName()
+>     {
+>         return mName;
+>     }
+> 
+>     public void Send(string message)
+>     {
+>         mChatRoom.ShowMessage(this, message);
+>     }
+> }
+>
+> ```
+
+And the usage
+
+> 
+> 
+> ``` 
+> var mediator = new ChatRoom();
+> 
+> var john = new User("John", mediator);
+> var jane = new User("Jane", mediator);
+> 
+> john.Send("Hi there!");
+> jane.Send("Hey!");
+> 
+> //April 14, 20:05[John]:Hi there!
+> //April 14, 20:05[Jane]:Hey!
+>
+> ```
+
+
+
+#### JavaScript
+
+
+
+Here is the simplest example of a chat room (i.e. mediator) with users
+(i.e. colleagues) sending messages to each other.
+
+First of all, we have the mediator i.e. the chat room
+
+``` 
+// Mediator
+class ChatRoom {
+	showMessage(user, message) {
+		const time = new Date()
+		const sender = user.getName()
+
+		console.log(time + '[' + sender + ']:' + message)
+	}
+}
+				
+```
+
+Then we have our users i.e. colleagues
+
+``` 
+class User {
+	constructor(name, chatMediator) {
+		this.name = name
+		this.chatMediator = chatMediator
+	}
+	
+	getName() {
+		return this.name
+	}
+	
+	send(message) {
+		this.chatMediator.showMessage(this, message)
+	}
+}
+				
+```
+
+And the usage
+
+``` 
+const mediator = new ChatRoom()
+
+const john = new User('John Doe', mediator)
+const jane = new User('Jane Doe', mediator)
+
+john.send('Hi there!')
+jane.send('Hey!')
+
+// Output will be
+// Feb 14, 10:58 [John]: Hi there!
+// Feb 14, 10:58 [Jane]: Hey!
+				
+```
+
+
+
+#### PHP
+
+
+
+Here is the simplest example of a chat room (i.e. mediator) with users
+(i.e. colleagues) sending messages to each other.
+
+First of all, we have the mediator i.e. the chat room
+
+``` 
+interface ChatRoomMediator 
+{
+	public function showMessage(User $user, string $message);
+}
+
+// Mediator
+class ChatRoom implements ChatRoomMediator
+{
+	public function showMessage(User $user, string $message)
+	{
+		$time = date('M d, y H:i');
+		$sender = $user->getName();
+		 echo $time . '[' . $sender . ']:' . $message;
+	}
+}
+				
+```
+
+Then we have our users i.e. colleagues
+
+``` 
+class User {
+	protected $name;
+	protected $chatMediator;
+
+	public function __construct(string $name, ChatRoomMediator $chatMediator) {
+		$this->name = $name;
+		$this->chatMediator = $chatMediator;
+	}
+
+	public function getName() {
+		return $this->name;
+	}
+
+	public function send($message) {
+		$this->chatMediator->showMessage($this, $message);
+	}
+}
+				
+```
+
+And the usage
+
+``` 
+$mediator = new ChatRoom();
+
+$john = new User('John Doe', $mediator);
+$jane = new User('Jane Doe', $mediator);
+
+$john->send('Hi there!');
+$jane->send('Hey!');
+
+// Output will be
+// Feb 14, 10:58 [John]: Hi there!
+// Feb 14, 10:58 [Jane]: Hey!
+													
+				
+```
+
+
+
+#### Python
+
+
+
+``` 
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+https://www.djangospin.com/design-patterns-python/mediator/
+
+Objects in a system communicate through a Mediator instead of directly with each other.
+This reduces the dependencies between communicating objects, thereby reducing coupling.
+
+*TL;DR
+Encapsulates how a set of objects interact.
+"""
+
+
+class ChatRoom(object):
+	"""Mediator class"""
+
+	def display_message(self, user, message):
+		print("[{} says]: {}".format(user, message))
+
+
+class User(object):
+	"""A class whose instances want to interact with each other"""
+
+	def __init__(self, name):
+		self.name = name
+		self.chat_room = ChatRoom()
+
+	def say(self, message):
+		self.chat_room.display_message(self, message)
+
+	def __str__(self):
+		return self.name
+
+
+def main():
+	"""
+	>>> molly = User('Molly')
+	>>> mark = User('Mark')
+	>>> ethan = User('Ethan')
+
+	>>> molly.say("Hi Team! Meeting at 3 PM today.")
+	[Molly says]: Hi Team! Meeting at 3 PM today.
+	>>> mark.say("Roger that!")
+	[Mark says]: Roger that!
+	>>> ethan.say("Alright.")
+	[Ethan says]: Alright.
+	"""
+
+
+if __name__ == '__main__':
+	import doctest
+	doctest.testmod()
+				
+```
+
+
 
 ## Memento
 
@@ -1661,7 +2055,7 @@ if __name__ == "__main__":
 restore the previous state of an object without revealing the details of
 its implementation.
 
-<kbd>![](attachments/463529936/463529928.png)
+<kbd>![](./Behavioral/Behavioral/attachments/memento/463529928.png)</kbd>
 
 ### Problem
 
@@ -1677,7 +2071,7 @@ Later, when a user decides to revert an action, the app fetches the
 latest snapshot from the history and uses it to restore the state of all
 objects.
 
-<kbd>![](attachments/463529936/463529929.png)
+<kbd>![](./Behavioral/Behavioral/attachments/memento/463529929.png)</kbd>
 
 Let’s think about those state snapshots. How exactly would you produce
 one? You’d probably need to go over all the fields in an object and copy
@@ -1695,7 +2089,7 @@ classes, or add or remove some of the fields. Sounds easy, but this
 would also require changing the classes responsible for copying the
 state of the affected objects.
 
-<kbd>![](attachments/463529936/463529930.png)
+<kbd>![](./Behavioral/Behavioral/attachments/memento/463529930.png)</kbd>
 
 But there’s more. Let’s consider the actual “snapshots” of the editor’s
 state. What data does it contain? At a bare minimum, it must contain the
@@ -1741,7 +2135,7 @@ fetching the snapshot’s metadata (creation time, the name of the
 performed operation, etc.), but not the original object’s state
 contained in the snapshot.
 
-<kbd>![](attachments/463529936/463529931.png)
+<kbd>![](./Behavioral/Behavioral/attachments/memento/463529931.png)</kbd>
 
 Such a restrictive policy lets you store mementos inside other objects,
 usually called *caretakers*. Since the caretaker works with the memento
@@ -1769,7 +2163,7 @@ The classic implementation of the pattern relies on support for nested
 classes, available in many popular programming languages (such as C++,
 C\#, and Java).
 
-<kbd>![](attachments/463529936/463529932.png)
+<kbd>![](./Behavioral/Behavioral/attachments/memento/463529932.png)</kbd>
 
 #### Implementation based on an intermediate interface
 
@@ -1777,7 +2171,7 @@ There’s an alternative implementation, suitable for programming
 languages that don’t support nested classes (yeah, PHP, I’m talking
 about you).
 
-<kbd>![](attachments/463529936/463529933.png)
+<kbd>![](./Behavioral/Behavioral/attachments/memento/463529933.png)</kbd>
 
 #### Implementation with even stricter encapsulation
 
@@ -1785,11 +2179,11 @@ There’s another implementation which is useful when you don’t want to
 leave even the slightest chance of other classes accessing the state of
 the originator through the memento.
 
-<kbd>![](attachments/463529936/463529934.png)
+<kbd>![](./Behavioral/Behavioral/attachments/memento/463529934.png)</kbd>
 
 ### Pseudocode
 
-<kbd>![](attachments/463529936/463529935.png)
+<kbd>![](./Behavioral/Behavioral/attachments/memento/463529935.png)</kbd>
 
 ### Real world example
 
@@ -1815,27 +2209,26 @@ Usually useful when you need to provide some sort of undo functionality.
 
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>You can produce snapshots of the object’s state without violating its encapsulation.</td>
-<td>The app might consume lots of RAM if clients create mementos too often.</td>
-</tr>
-<tr class="even">
-<td>You can simplify the originator’s code by letting the caretaker maintain the history of the originator’s state.</td>
-<td>Caretakers should track the originator’s lifecycle to be able to destroy obsolete mementos.</td>
-</tr>
-<tr class="odd">
-<td><br />
-</td>
-<td>Most dynamic programming languages, such as PHP, Python and JavaScript, can’t guarantee that the state within the memento stays untouched.</td>
-</tr>
-</tbody>
+	<thead>
+		<tr class="header">
+			<th>Pros</th>
+			<th>Cons</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="odd">
+			<td>You can produce snapshots of the object’s state without violating its encapsulation.</td>
+			<td>The app might consume lots of RAM if clients create mementos too often.</td>
+		</tr>
+		<tr class="even">
+			<td>You can simplify the originator’s code by letting the caretaker maintain the history of the originator’s state.</td>
+			<td>Caretakers should track the originator’s lifecycle to be able to destroy obsolete mementos.</td>
+		</tr>
+		<tr class="odd">
+			<td><br /></td>
+			<td>Most dynamic programming languages, such as PHP, Python and JavaScript, can’t guarantee that the state within the memento stays untouched.</td>
+		</tr>
+	</tbody>
 </table>
 
 
@@ -1950,15 +2343,15 @@ editor state
 
 ``` 
 class EditorMemento {
-    constructor(content) {
-        this._content = content
-    }
-    
-    getContent() {
-        return this._content
-    }
+	constructor(content) {
+		this._content = content
+	}
+	
+	getContent() {
+		return this._content
+	}
 }
-                
+				
 ```
 
 Then we have our editor i.e. originator that is going to use memento
@@ -1966,27 +2359,27 @@ object
 
 ``` 
 class Editor {
-    constructor(){
-        this._content = ''
-    }
-    
-    type(words) {
-        this._content = this._content + ' ' + words
-    }
-    
-    getContent() {
-        return this._content
-    }
-    
-    save() {
-        return new EditorMemento(this._content)
-    }
-    
-    restore(memento) {
-        this._content = memento.getContent()
-    }
+	constructor(){
+		this._content = ''
+	}
+	
+	type(words) {
+		this._content = this._content + ' ' + words
+	}
+	
+	getContent() {
+		return this._content
+	}
+	
+	save() {
+		return new EditorMemento(this._content)
+	}
+	
+	restore(memento) {
+		this._content = memento.getContent()
+	}
 }
-                
+				
 ```
 
 And then it can be used as
@@ -2011,7 +2404,7 @@ console.log(editor.getContent())// This is the first sentence. This is second. A
 editor.restore(saved)
 
 console.log(editor.getContent()) // This is the first sentence. This is second.
-                
+				
 ```
 
 
@@ -2029,19 +2422,19 @@ editor state
 ``` 
 class EditorMemento
 {
-    protected $content;
+	protected $content;
 
-    public function __construct(string $content)
-    {
-        $this->content = $content;
-    }
+	public function __construct(string $content)
+	{
+		$this->content = $content;
+	}
 
-    public function getContent()
-    {
-        return $this->content;
-    }
+	public function getContent()
+	{
+		return $this->content;
+	}
 }
-                
+				
 ```
 
 Then we have our editor i.e. originator that is going to use memento
@@ -2050,29 +2443,29 @@ object
 ``` 
 class Editor
 {
-    protected $content = '';
+	protected $content = '';
 
-    public function type(string $words)
-    {
-        $this->content = $this->content . ' ' . $words;
-    }
+	public function type(string $words)
+	{
+		$this->content = $this->content . ' ' . $words;
+	}
 
-    public function getContent()
-    {
-        return $this->content;
-    }
+	public function getContent()
+	{
+		return $this->content;
+	}
 
-    public function save()
-    {
-        return new EditorMemento($this->content);
-    }
+	public function save()
+	{
+		return new EditorMemento($this->content);
+	}
 
-    public function restore(EditorMemento $memento)
-    {
-        $this->content = $memento->getContent();
-    }
+	public function restore(EditorMemento $memento)
+	{
+		$this->content = $memento->getContent();
+	}
 }
-                
+				
 ```
 
 And then it can be used as
@@ -2097,12 +2490,14 @@ echo $editor->getContent(); // This is the first sentence. This is second. And t
 $editor->restore($saved);
 
 $editor->getContent(); // This is the first sentence. This is second.
-                
+				
 ```
 
 
 
 #### Python
+
+
 
 ``` 
 #!/usr/bin/env python
@@ -2120,132 +2515,132 @@ from copy import deepcopy
 
 
 def memento(obj, deep=False):
-    state = deepcopy(obj.__dict__) if deep else copy(obj.__dict__)
+	state = deepcopy(obj.__dict__) if deep else copy(obj.__dict__)
 
-    def restore():
-        obj.__dict__.clear()
-        obj.__dict__.update(state)
+	def restore():
+		obj.__dict__.clear()
+		obj.__dict__.update(state)
 
-    return restore
+	return restore
 
 
 class Transaction(object):
-    """A transaction guard.
+	"""A transaction guard.
 
-    This is, in fact, just syntactic sugar around a memento closure.
-    """
+	This is, in fact, just syntactic sugar around a memento closure.
+	"""
 
-    deep = False
-    states = []
+	deep = False
+	states = []
 
-    def __init__(self, deep, *targets):
-        self.deep = deep
-        self.targets = targets
-        self.commit()
+	def __init__(self, deep, *targets):
+		self.deep = deep
+		self.targets = targets
+		self.commit()
 
-    def commit(self):
-        self.states = [memento(target, self.deep) for target in self.targets]
+	def commit(self):
+		self.states = [memento(target, self.deep) for target in self.targets]
 
-    def rollback(self):
-        for a_state in self.states:
-            a_state()
+	def rollback(self):
+		for a_state in self.states:
+			a_state()
 
 
 class Transactional(object):
-    """Adds transactional semantics to methods. Methods decorated  with
+	"""Adds transactional semantics to methods. Methods decorated  with
 
-    @Transactional will rollback to entry-state upon exceptions.
-    """
+	@Transactional will rollback to entry-state upon exceptions.
+	"""
 
-    def __init__(self, method):
-        self.method = method
+	def __init__(self, method):
+		self.method = method
 
-    def __get__(self, obj, T):
-        def transaction(*args, **kwargs):
-            state = memento(obj)
-            try:
-                return self.method(obj, *args, **kwargs)
-            except Exception as e:
-                state()
-                raise e
+	def __get__(self, obj, T):
+		def transaction(*args, **kwargs):
+			state = memento(obj)
+			try:
+				return self.method(obj, *args, **kwargs)
+			except Exception as e:
+				state()
+				raise e
 
-        return transaction
+		return transaction
 
 
 class NumObj(object):
-    def __init__(self, value):
-        self.value = value
+	def __init__(self, value):
+		self.value = value
 
-    def __repr__(self):
-        return '<%s: %r>' % (self.__class__.__name__, self.value)
+	def __repr__(self):
+		return '<%s: %r>' % (self.__class__.__name__, self.value)
 
-    def increment(self):
-        self.value += 1
+	def increment(self):
+		self.value += 1
 
-    @Transactional
-    def do_stuff(self):
-        self.value = '1111'  # <- invalid value
-        self.increment()  # <- will fail and rollback
+	@Transactional
+	def do_stuff(self):
+		self.value = '1111'  # <- invalid value
+		self.increment()  # <- will fail and rollback
 
 
 def main():
-    """
-    >>> num_obj = NumObj(-1)
-    >>> print(num_obj)
-    <NumObj: -1>
+	"""
+	>>> num_obj = NumObj(-1)
+	>>> print(num_obj)
+	<NumObj: -1>
 
-    >>> a_transaction = Transaction(True, num_obj)
+	>>> a_transaction = Transaction(True, num_obj)
 
-    >>> try:
-    ...    for i in range(3):
-    ...        num_obj.increment()
-    ...        print(num_obj)
-    ...    a_transaction.commit()
-    ...    print('-- committed')
-    ...    for i in range(3):
-    ...        num_obj.increment()
-    ...        print(num_obj)
-    ...    num_obj.value += 'x'  # will fail
-    ...    print(num_obj)
-    ... except Exception:
-    ...    a_transaction.rollback()
-    ...    print('-- rolled back')
-    <NumObj: 0>
-    <NumObj: 1>
-    <NumObj: 2>
-    -- committed
-    <NumObj: 3>
-    <NumObj: 4>
-    <NumObj: 5>
-    -- rolled back
+	>>> try:
+	...    for i in range(3):
+	...        num_obj.increment()
+	...        print(num_obj)
+	...    a_transaction.commit()
+	...    print('-- committed')
+	...    for i in range(3):
+	...        num_obj.increment()
+	...        print(num_obj)
+	...    num_obj.value += 'x'  # will fail
+	...    print(num_obj)
+	... except Exception:
+	...    a_transaction.rollback()
+	...    print('-- rolled back')
+	<NumObj: 0>
+	<NumObj: 1>
+	<NumObj: 2>
+	-- committed
+	<NumObj: 3>
+	<NumObj: 4>
+	<NumObj: 5>
+	-- rolled back
 
-    >>> print(num_obj)
-    <NumObj: 2>
+	>>> print(num_obj)
+	<NumObj: 2>
 
-    >>> print('-- now doing stuff ...')
-    -- now doing stuff ...
+	>>> print('-- now doing stuff ...')
+	-- now doing stuff ...
 
-    >>> try:
-    ...    num_obj.do_stuff()
-    ... except Exception:
-    ...    print('-> doing stuff failed!')
-    ...    import sys
-    ...    import traceback
-    ...    traceback.print_exc(file=sys.stdout)
-    -> doing stuff failed!
-    Traceback (most recent call last):
-    ...
-    TypeError: ...str...int...
+	>>> try:
+	...    num_obj.do_stuff()
+	... except Exception:
+	...    print('-> doing stuff failed!')
+	...    import sys
+	...    import traceback
+	...    traceback.print_exc(file=sys.stdout)
+	-> doing stuff failed!
+	Traceback (most recent call last):
+	...
+	TypeError: ...str...int...
 
-    >>> print(num_obj)
-    <NumObj: 2>
-    """
+	>>> print(num_obj)
+	<NumObj: 2>
+	"""
 
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod(optionflags=doctest.ELLIPSIS)
-                
+	import doctest
+	doctest.testmod(optionflags=doctest.ELLIPSIS)
+				
 ```
 
 ## Observer
@@ -2256,7 +2651,7 @@ if __name__ == "__main__":
 subscription mechanism to notify multiple objects about any events that
 happen to the object they’re observing.
 
-<kbd>![](attachments/463529939/463530128.png)
+<kbd>![](./Behavioral/Behavioral/attachments/observer/463530128.png)</kbd>
 
 ## Problem
 
@@ -2269,7 +2664,7 @@ The customer could visit the store every day and check product
 availability. But while the product is still en route, most of these
 trips would be pointless.
 
-<kbd>![](attachments/463529939/463530129.png)
+<kbd>![](./Behavioral/Behavioral/attachments/observer/463530129.png)</kbd>
 
 On the other hand, the store could send tons of emails (which might be
 considered spam) to all customers each time a new product becomes
@@ -2296,7 +2691,7 @@ mechanism consists of 1) an array field for storing a list of references
 to subscriber objects and 2) several public methods which allow adding
 subscribers to and removing them from that list.
 
-<kbd>![](attachments/463529939/463530130.png)
+<kbd>![](./Behavioral/Behavioral/attachments/observer/463530130.png)</kbd>
 
 Now, whenever an important event happens to the publisher, it goes over
 its subscribers and calls the specific notification method on their
@@ -2314,7 +2709,7 @@ interface. This interface should declare the notification method along
 with a set of parameters that the publisher can use to pass some
 contextual data along with the notification.
 
-<kbd>![](attachments/463529939/463530131.png)
+<kbd>![](./Behavioral/Behavioral/attachments/observer/463530131.png)</kbd>
 
 If your app has several different types of publishers and you want to
 make your subscribers compatible with all of them, you can go even
@@ -2325,11 +2720,11 @@ coupling to their concrete classes.
 
 ### Structure
 
-<kbd>![](attachments/463529939/463530132.png)
+<kbd>![](./Behavioral/Behavioral/attachments/observer/463530132.png)</kbd>
 
 ### Pseudocode
 
-<kbd>![](attachments/463529939/463530133.png)
+<kbd>![](./Behavioral/Behavioral/attachments/observer/463530133.png)</kbd>
 
 ### Real world example
 
@@ -2355,22 +2750,21 @@ by calling one of their methods.
 
 <table>
 <thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>Open/Closed Principle</em>. You can introduce new subscriber classes without having to change the publisher’s code (and vice versa if there’s a publisher interface).</td>
-<td>Subscribers are notified in random order.</td>
-</tr>
-<tr class="even">
-<td>You can establish relations between objects at runtime.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+	<tr class="header">
+		<th>Pros</th>
+		<th>Cons</th>
+	</tr>
+	</thead>
+	<tbody>
+		<tr class="odd">
+			<td><em>Open/Closed Principle</em>. You can introduce new subscriber classes without having to change the publisher’s code (and vice versa if there’s a publisher interface).</td>
+			<td>Subscribers are notified in random order.</td>
+		</tr>
+		<tr class="even">
+			<td>You can establish relations between objects at runtime.</td>
+			<td><br /></td>
+		</tr>
+	</tbody>
 </table>
 
 
@@ -2689,9 +3083,6 @@ Then it can be used as
 #### Python
 
 
-
-> 
-> 
 > ``` 
 > #!/usr/bin/env python
 > # -*- coding: utf-8 -*-
@@ -2810,7 +3201,7 @@ Then it can be used as
 **Visitor** is a behavioral design pattern that lets you separate
 algorithms from the objects on which they operate.
 
-<kbd>![](attachments/463529941/463530158.png)
+<kbd>![](./Behavioral/Behavioral/attachments/visitor/463530158.png)</kbd>
 
 ### Problem
 
@@ -2822,7 +3213,7 @@ others if there’s a road between the real objects that they represent.
 Under the hood, each node type is represented by its own class, while
 each specific node is an object.
 
-<kbd>![](attachments/463529941/463530160.png)
+<kbd>![](./Behavioral/Behavioral/attachments/visitor/463530160.png)</kbd>
 
 At some point, you got a task to implement exporting the graph into XML
 format. At first, the job seemed pretty straightforward. You planned to
@@ -2837,7 +3228,7 @@ existing node classes. He said that the code was already in production
 and he didn’t want to risk breaking it because of a potential bug in
 your changes.
 
-<kbd>![](attachments/463529941/463530161.png)
+<kbd>![](./Behavioral/Behavioral/attachments/visitor/463530161.png)</kbd>
 
 Besides, he questioned whether it makes sense to have the XML export
 code within the node classes. The primary job of these classes was to
@@ -2890,14 +3281,14 @@ should be executed.
 
 ### Structure
 
-<kbd>![](attachments/463529941/463530162.png)
+<kbd>![](./Behavioral/Behavioral/attachments/visitor/463530162.png)</kbd>
 
 ### Pseudocode
 
 In this example, the **Visitor** pattern adds XML export support to the
 class hierarchy of geometric shapes.
 
-<kbd>![](attachments/463529941/463530159.png)
+<kbd>![](./Behavioral/Behavioral/attachments/visitor/463530159.png)</kbd>
 
 ### Real world example
 
@@ -2928,27 +3319,26 @@ principle.
 
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>Open/Closed Principle</em> . You can introduce a new behavior that can work with objects of different classes without changing these classes.</td>
-<td>You need to update all visitors each time a class gets added to or removed from the element hierarchy.</td>
-</tr>
-<tr class="even">
-<td><em>Single Responsibility Principle</em> . You can move multiple versions of the same behavior into the same class.</td>
-<td>Visitors might lack the necessary access to the private fields and methods of the elements that they’re supposed to work with.</td>
-</tr>
-<tr class="odd">
-<td>A visitor object can accumulate some useful information while working with various objects. This might be handy when you want to traverse some complex object structure, such as an object tree, and apply the visitor to each object of this structure.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+	<thead>
+		<tr class="header">
+			<th>Pros</th>
+			<th>Cons</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="odd">
+			<td><em>Open/Closed Principle</em> . You can introduce a new behavior that can work with objects of different classes without changing these classes.</td>
+			<td>You need to update all visitors each time a class gets added to or removed from the element hierarchy.</td>
+		</tr>
+		<tr class="even">
+			<td><em>Single Responsibility Principle</em> . You can move multiple versions of the same behavior into the same class.</td>
+			<td>Visitors might lack the necessary access to the private fields and methods of the elements that they’re supposed to work with.</td>
+		</tr>
+		<tr class="odd">
+			<td>A visitor object can accumulate some useful information while working with various objects. This might be handy when you want to traverse some complex object structure, such as an object tree, and apply the visitor to each object of this structure.</td>
+			<td><br /></td>
+		</tr>
+	</tbody>
 </table>
 
 
@@ -2979,7 +3369,7 @@ translate this using visitor pattern
 >   void VisitLion(Lion lion);
 >   void VisitDolphin(Dolphin dolphin);
 > }
->             
+>
 > ```
 
 Then we have our implementations for the animals
@@ -3025,7 +3415,7 @@ Then we have our implementations for the animals
 >         operation.VisitDolphin(this);
 >     }
 > }
->                 
+>
 > ```
 
 Let's implement our visitor
@@ -3051,7 +3441,7 @@ Let's implement our visitor
 >         monkey.Shout();
 >     }
 > }
->                 
+>
 > ```
 
 And then it can be used as
@@ -3069,7 +3459,7 @@ And then it can be used as
 > lion.Accept(speak);      // Roaaar!
 > dolphin.Accept(speak);   // Tuut tutt tuutt!
 > 
->                 
+>
 > ```
 
 We could have done this simply by having an inheritance hierarchy for
@@ -3099,7 +3489,7 @@ visitor i.e.
 >         Console.WriteLine("Jumped 20 feet high! on to the tree!");
 >     }
 > }
->                 
+>
 > ```
 
 And for the usage
@@ -3118,7 +3508,6 @@ And for the usage
 > dolphin.Accept(speak);  // Tuut tutt tuutt!
 > dolphin.Accept(jump);   // Walked on water a little and disappeared
 > 
->                 
 > ```
 
 
@@ -3273,7 +3662,7 @@ translate this using visitor pattern
 >                 
 > ```
 
-    Then we have our implementations for the animals
+	Then we have our implementations for the animals
 
 > 
 > 
@@ -3319,7 +3708,7 @@ translate this using visitor pattern
 >                 
 > ```
 
-    Let's implement our visitor
+	Let's implement our visitor
 
 > 
 > 
@@ -3344,7 +3733,7 @@ translate this using visitor pattern
 >                 
 > ```
 
-    And then it can be used as
+	And then it can be used as
 
 > 
 > 
@@ -3391,7 +3780,7 @@ visitor i.e.
 >                 
 > ```
 
-    And for the usage
+	And for the usage
 
 > 
 > 
@@ -3495,6 +3884,7 @@ visitor i.e.
 >                 
 > ```
 
+
 ## Strategy
 
 ### Intent
@@ -3503,7 +3893,7 @@ visitor i.e.
 family of algorithms, put each of them into a separate class, and make
 their objects interchangeable.
 
-<kbd>![](attachments/463529943/463530145.png)
+<kbd>![](./Behavioral/Behavioral/attachments/strategy/463530145.png)</kbd>
 
 ### Problem
 
@@ -3525,7 +3915,7 @@ However, that was only the beginning. Later you planned to add route
 building for cyclists. And even later, another option for building
 routes through all of a city’s tourist attractions.
 
-<kbd>![](attachments/463529943/463530146.png)
+<kbd>![](./Behavioral/Behavioral/attachments/strategy/463530146.png)</kbd>
 
 While from a business perspective the app was a success, the technical
 part caused you many headaches. Each time you added a new routing
@@ -3563,7 +3953,7 @@ This way the context becomes independent of concrete strategies, so you
 can add new algorithms or modify existing ones without changing the code
 of the context or other strategies.
 
-<kbd>![](attachments/463529943/463530147.png)
+<kbd>![](./Behavioral/Behavioral/attachments/strategy/463530147.png)</kbd>
 
 In our navigation app, each routing algorithm can be extracted to its
 own class with a single `buildRoute` method. The method accepts an
@@ -3580,7 +3970,7 @@ another one.
 
 ### Structure
 
-<kbd>![](attachments/463529943/463530148.png)
+<kbd>![](./Behavioral/Behavioral/attachments/strategy/463530148.png)</kbd>
 
 ### Pseudocode
 
@@ -3610,31 +4000,30 @@ algorithm's behavior to be selected at runtime.
 
 
 <table>
-<thead>
-<tr class="header">
-<th>Pro</th>
-<th>Con</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>You can swap algorithms used inside an object at runtime.</td>
-<td>If you only have a couple of algorithms and they rarely change, there’s no real reason to overcomplicate the program with new classes and interfaces that come along with the pattern.</td>
-</tr>
-<tr class="even">
-<td>You can isolate the implementation details of an algorithm from the code that uses it.</td>
-<td>Clients must be aware of the differences between strategies to be able to select a proper one.</td>
-</tr>
-<tr class="odd">
-<td>You can replace inheritance with composition.</td>
-<td>A lot of modern programming languages have functional type support that lets you implement different versions of an algorithm inside a set of anonymous functions. Then you could use these functions exactly as you’d have used the strategy objects, but without bloating your code with extra classes and interfaces.</td>
-</tr>
-<tr class="even">
-<td><em>Open/Closed Principle</em>. You can introduce new strategies without having to change the context.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+	<thead>
+		<tr class="header">
+			<th>Pro</th>
+			<th>Con</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="odd">
+			<td>You can swap algorithms used inside an object at runtime.</td>
+			<td>If you only have a couple of algorithms and they rarely change, there’s no real reason to overcomplicate the program with new classes and interfaces that come along with the pattern.</td>
+		</tr>
+		<tr class="even">
+			<td>You can isolate the implementation details of an algorithm from the code that uses it.</td>
+			<td>Clients must be aware of the differences between strategies to be able to select a proper one.</td>
+		</tr>
+		<tr class="odd">
+			<td>You can replace inheritance with composition.</td>
+			<td>A lot of modern programming languages have functional type support that lets you implement different versions of an algorithm inside a set of anonymous functions. Then you could use these functions exactly as you’d have used the strategy objects, but without bloating your code with extra classes and interfaces.</td>
+		</tr>
+		<tr class="even">
+			<td><em>Open/Closed Principle</em>. You can introduce new strategies without having to change the context.</td>
+			<td><br /></td>
+		</tr>
+	</tbody>
 </table>
 
 
@@ -3913,6 +4302,8 @@ And it can be used as
 >                     
 > ```
 
+
+
 ## State
 
 ### Intent
@@ -3921,14 +4312,13 @@ And it can be used as
 behavior when its internal state changes. It appears as if the object
 changed its class.
 
-<kbd>![](attachments/463529945/463530136.png)
+<kbd>![](./Behavioral/Behavioral/attachments/state/463530136.png)</kbd>
 
 ### Problem
 
-The State pattern is closely related to the concept of a [Finite-State
-Machine](https://en.wikipedia.org/wiki/Finite-state_machine).
+The State pattern is closely related to the concept of a [Finite-State Machine](https://en.wikipedia.org/wiki/Finite-state_machine).
 
-<kbd>![](attachments/463529945/463530138.png)
+<kbd>![](./Behavioral/Behavioral/attachments/state/463530138.png)</kbd>
 
 The main idea is that, at any given moment, there’s a *finite* number of
 *states* which a program can be in. Within any unique state, the program
@@ -3943,11 +4333,10 @@ You can also apply this approach to objects. Imagine that we have a
 a little bit differently in each state:
 
   - In `Draft`, it moves the document to moderation.
-  - In `Moderation`, it makes the document public, but only if the
-    current user is an administrator.
+  - In `Moderation`, it makes the document public, but only if the current user is an administrator.
   - In `Published`, it doesn’t do anything at all.
 
-<kbd>![](attachments/463529945/463530139.png)
+<kbd>![](./Behavioral/Behavioral/attachments/state/463530139.png)</kbd>
 
 State machines are usually implemented with lots of conditional
 operators ( `if` or `switch` ) that select the appropriate behavior
@@ -3980,7 +4369,7 @@ called *context*, stores a reference to one of the state objects that
 represents its current state, and delegates all the state-related work
 to that object.
 
-<kbd>![](attachments/463529945/463530140.png)
+<kbd>![](./Behavioral/Behavioral/attachments/state/463530140.png)</kbd>
 
 To transition the context into another state, replace the active state
 object with another object that represents that new state. This is
@@ -3995,7 +4384,7 @@ state to another, whereas strategies almost never know about each other.
 
 ### Structure
 
-<kbd>![](attachments/463529945/463530141.png)
+<kbd>![](./Behavioral/Behavioral/attachments/state/463530141.png)</kbd>
 
 ### Pseudocode
 
@@ -4003,7 +4392,7 @@ In this example, the **State** pattern lets the same controls of the
 media player behave differently, depending on the current playback
 state.
 
-<kbd>![](attachments/463529945/463530137.png)
+<kbd>![](./Behavioral/Behavioral/attachments/state/463530137.png)</kbd>
 
 The main object of the player is always linked to a state object that
 performs most of the work for the player. Some actions replace the
@@ -4037,28 +4426,26 @@ of methods defined in the pattern's interface.
 
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>Single Responsibility Principle</em> . Organize the code related to particular states into separate classes.</td>
-<td>Applying the pattern can be overkill if a state machine has only a few states or rarely changes.</td>
-</tr>
-<tr class="even">
-<td><em>Open/Closed Principle</em> . Introduce new states without changing existing state classes or the context.</td>
-<td><br />
-</td>
-</tr>
-<tr class="odd">
-<td>Simplify the code of the context by eliminating bulky state machine conditionals.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+	<thead>
+		<tr class="header">
+			<th>Pros</th>
+			<th>Cons</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="odd">
+			<td><em>Single Responsibility Principle</em> . Organize the code related to particular states into separate classes.</td>
+			<td>Applying the pattern can be overkill if a state machine has only a few states or rarely changes.</td>
+		</tr>
+		<tr class="even">
+			<td><em>Open/Closed Principle</em> . Introduce new states without changing existing state classes or the context.</td>
+			<td><br /></td>
+		</tr>
+		<tr class="odd">
+			<td>Simplify the code of the context by eliminating bulky state machine conditionals.</td>
+			<td><br /></td>
+		</tr>
+	</tbody>
 </table>
 
 
@@ -4202,7 +4589,7 @@ Then we have our editor
 >         console.log(this._transform(words))
 >     }
 > }
->                     
+>
 > ```
 
 And then it can be used as
@@ -4230,7 +4617,7 @@ And then it can be used as
 > // THIRD LINE
 > // fourth line
 > // fifth line
->                     
+>
 > ```
 
 
@@ -4276,7 +4663,7 @@ First of all we have our state interface and some state implementations
 >         echo $words;
 >     }
 > }
->                     
+>
 > ```
 
 Then we have our editor
@@ -4303,7 +4690,7 @@ Then we have our editor
 >         $this->state->write($words);
 >     }
 > }
->                     
+>
 > ```
 
 And then it can be used as
@@ -4330,8 +4717,8 @@ And then it can be used as
 > // SECOND LINE
 > // THIRD LINE
 > // fourth line
-> // fifth line                                                                           
->                     
+> // fifth line
+>
 > ```
 
 #### Python
@@ -4436,8 +4823,9 @@ And then it can be used as
 > Scanning... Station is 1250 AM
 > Scanning... Station is 1380 AM
 > """
->                         
+> 
 > ```
+
 
 ## Template Method
 
@@ -4447,7 +4835,7 @@ And then it can be used as
 skeleton of an algorithm in the superclass but lets subclasses override
 specific steps of the algorithm without changing its structure.
 
-<kbd>![](attachments/463529947/463530151.png)
+<kbd>![](./Behavioral/Behavioral/attachments/template/463530151.png)</kbd>
 
 ### Problem
 
@@ -4460,7 +4848,7 @@ The first version of the app could work only with DOC files. In the
 following version, it was able to support CSV files. A month later, you
 “taught” it to extract data from PDF files.
 
-<kbd>![](attachments/463529947/463530153.png)
+<kbd>![](./Behavioral/Behavioral/attachments/template/463530153.png)</kbd>
 
 At some point, you noticed that all three classes have a lot of similar
 code. While the code for dealing with various data formats was entirely
@@ -4490,7 +4878,7 @@ base class for all three parsing algorithms. This class defines a
 template method consisting of a series of calls to various
 document-processing steps.
 
-<kbd>![](attachments/463529947/463530154.png)
+<kbd>![](./Behavioral/Behavioral/attachments/template/463530154.png)</kbd>
 
 At first, we can declare all steps `abstract`, forcing the subclasses to
 provide their own implementations for these methods. In our case,
@@ -4509,7 +4897,7 @@ As you can see, we’ve got two types of steps:
 
   - *abstract steps* must be implemented by every subclass
   - *optional steps* already have some default implementation, but still
-    can be overridden if needed
+	can be overridden if needed
 
 There’s another type of step, called *hooks*. A hook is an optional step
 with an empty body. A template method would work even if a hook isn’t
@@ -4529,7 +4917,7 @@ different from others.
 
 ### Structure
 
-<kbd>![](attachments/463529947/463530155.png)
+<kbd>![](./Behavioral/Behavioral/attachments/template/463530155.png)</kbd>
 
 ### Pseudocode
 
@@ -4537,7 +4925,7 @@ In this example, the **Template Method** pattern provides a “skeleton”
 for various branches of artificial intelligence in a simple strategy
 video game.
 
-<kbd>![](attachments/463529947/463530152.png)
+<kbd>![](./Behavioral/Behavioral/attachments/template/463530152.png)</kbd>
 
 ### Real world example
 
@@ -4569,15 +4957,42 @@ structure.
 
 ### Pros and Cons
 
-
-
-| Pros                                                                                                                                                    | Cons                                                                                                               |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| You can let clients override only certain parts of a large algorithm, making them less affected by changes that happen to other parts of the algorithm. | Some clients may be limited by the provided skeleton of an algorithm.                                              |
-| You can pull the duplicate code into a superclass.                                                                                                      | You might violate the *Liskov Substitution Principle* by suppressing a default step implementation via a subclass. |
-|                                                                                                                                                         | Template methods tend to be harder to maintain the more steps they have.                                           |
-
-
+<table>
+	<colgroup>
+		<col />
+		<col />
+	</colgroup>
+	<tbody>
+		<tr>
+			<th>Pros</th>
+			<th>Cons</th>
+		</tr>
+		<tr>
+			<td>
+				You can let clients override only certain parts of a large algorithm, making them less affected by changes that happen to other parts of the algorithm.
+			</td>
+			<td>
+				Some clients may be limited by the provided skeleton of an algorithm.
+			</td>
+		</tr>
+		<tr>
+			<td>
+				You can pull the duplicate code into a superclass.
+			</td>
+			<td>
+				You might violate the
+				<em>Liskov Substitution Principle</em>
+				by suppressing a default step implementation via a subclass.
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				Template methods tend to be harder to maintain the more steps they have.
+			</td>
+		</tr>
+	</tbody>
+</table>
 
 #### Programmatic Example
 
@@ -4611,7 +5026,7 @@ build algorithm
 >     abstract public void Assemble();
 >     abstract public void Deploy();
 > }
->                         
+>
 > ```
 
 Then we can have our implementations
@@ -4664,7 +5079,7 @@ Then we can have our implementations
 >         Console.WriteLine("Running ios tests");
 >     }
 > }
->                         
+>
 > ```
 
 And then it can be used as
@@ -4689,7 +5104,7 @@ And then it can be used as
 > // Linting the ios code
 > // Assembling the ios build
 > // Deploying ios build to server
->                         
+>
 > ```
 
 
@@ -4718,7 +5133,7 @@ build algorithm
 >     }
 > }
 > 
->                         
+>
 > ```
 
 Then we can have our implementations
@@ -4761,7 +5176,7 @@ Then we can have our implementations
 >         console.log('Deploying ios build to server')
 >     }
 > }
->                         
+>
 > ```
 
 And then it can be used as
@@ -4787,7 +5202,7 @@ And then it can be used as
 > // Assembling the ios build
 > // Deploying ios build to server
 > 
->                         
+>
 > ```
 
 
@@ -4875,6 +5290,6 @@ And then it can be used as
 >     import doctest
 >     doctest.testmod()
 > 
->                         
+>
 > ```
 
