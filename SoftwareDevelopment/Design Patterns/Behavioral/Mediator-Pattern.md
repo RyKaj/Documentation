@@ -14,7 +14,7 @@ dependencies between objects. The pattern restricts direct
 communications between the objects and forces them to collaborate only
 via a mediator object.
 
-<kbd>![](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/attachments/463529920.png)</kbd>
+<kbd>![](./attachments/mediator/463529920.png)</kbd>
 
 ### Problem
 
@@ -22,7 +22,7 @@ Say you have a dialog for creating and editing customer profiles. It
 consists of various form controls such as text fields, checkboxes,
 buttons, etc.
 
-<kbd>![](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/attachments/463529921.png)</kbd>
+<kbd>![](./attachments/mediator/463529921.png)</kbd>
 
 Some of the formBy having this logic implemented directly inside the
 code of the form elements you make these elements’ classes much harder
@@ -35,7 +35,7 @@ hidden text field for entering the dog’s name. Another example is the
 submit button that has to validate values of all fields before saving
 the data.
 
-<kbd>![](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/attachments/463529922.png)</kbd>
+<kbd>![](./attachments/mediator/463529922.png)</kbd>
 
 ### Solution
 
@@ -52,7 +52,7 @@ may act as the mediator. Most likely, the dialog class is already aware
 of all of its sub-elements, so you won’t even need to introduce new
 dependencies into this class.
 
-<kbd>![](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/attachments/463529923.png)</kbd>
+<kbd>![](./attachments/mediator/463529923.png)</kbd>
 
 The most significant change happens to the actual form elements. Let’s
 consider the submit button. Previously, each time a user clicked the
@@ -77,11 +77,11 @@ or reuse that class.
 
 ### Structure
 
-<kbd>![](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/attachments/463529924.png)</kbd>
+<kbd>![](./attachments/mediator/463529924.png)</kbd>
 
 ### Pseudocode
 
-<kbd>![](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/attachments/463529925.png)</kbd>
+<kbd>![](./attachments/mediator/463529925.png)</kbd>
 
 A general example would be when you talk to someone on your mobile
 phone, there is a network provider sitting between you and them and your
