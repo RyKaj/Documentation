@@ -5,7 +5,7 @@
 # Information Technology : Decorator Pattern
 
 
-**Decorator**
+## Decorator
 
 <kbd>![](https://www.oodesign.com/images/structural/decorator-pattern.png)</kbd>
 
