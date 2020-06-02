@@ -3,8 +3,8 @@
 
 # Software Development
 -   [Design Patterns](./UnitTest/1.0-Unit-Tests.md)
-	-   [Anti Patterns](./Design Patterns/AntiPatterns.md)
-	-   [Object Oriented](./Design Patterns/Object-Oriented-Programming.md)
+	-   [Anti Patterns](./Design%20Patterns/AntiPatterns.md)
+	-   [Object Oriented](./Design%20Patterns/Object-Oriented-Programming.md)
 	-   Behavioral
 	-   Creational
 	-   Structural
