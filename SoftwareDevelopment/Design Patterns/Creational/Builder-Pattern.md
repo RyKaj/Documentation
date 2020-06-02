@@ -1,25 +1,12 @@
-<div id="main" class="aui-page-panel">
-
-<div id="main-header">
-
-<div id="breadcrumb-section">
-
-1.  [Information Technology](index.html)
-2.  [3.0 Sofware Development
-    Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
-3.  [Design Patterns](Design-Patterns_451820045.html)
-4.  [1.0 Design Pattern - Programming
-    Language](1.0-Design-Pattern---Programming-Language_451820065.html)
-5.  [Creational Design
-    Patterns](Creational-Design-Patterns_451820114.html)
-
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Software Development](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/README.md) | [Design Patterns](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/README.md) |
+------------
 
 
 # Information Technology : Builder Pattern
 
 ## Builder
 
-![](https://www.oodesign.com/images/creational/builder-pattern.png)
+<kbd>![](https://www.oodesign.com/images/creational/builder-pattern.png)</kbd>
 
 ### Intent
 
@@ -28,7 +15,7 @@ complex objects step by step. The pattern allows you to produce
 different types and representations of an object using the same
 construction code.
 
-![](attachments/463529996/463530184.png)
+<kbd>![](./attachments/builder/463530184.png)</kbd>
 
 ### Problem
 
@@ -37,7 +24,7 @@ initialization of many fields and nested objects. Such initialization
 code is usually buried inside a monstrous constructor with lots of
 parameters. Or even worse: scattered all over the client code.
 
-![](attachments/463529996/463530188.png)
+<kbd>![](./attachments/builder/463530188.png)</kbd>
 
 For example, let’s think about how to create a `House` object. To build
 a simple house, you need to construct four walls and a floor, install a
@@ -56,7 +43,7 @@ can create a giant constructor right in the base `House` class with all
 possible parameters that control the house object. While this approach
 indeed eliminates the need for subclasses, it creates another problem.
 
-![](attachments/463529996/463530189.png)
+<kbd>![](./attachments/builder/463530189.png)</kbd>
 
 In most cases most of the parameters will be unused, making [the
 constructor calls pretty
@@ -71,7 +58,7 @@ The Builder pattern suggests that you extract the object construction
 code out of its own class and move it to separate objects called
 *builders*.
 
-![](attachments/463529996/463530190.png)
+<kbd>![](./attachments/builder/463530190.png)</kbd>
 
 The pattern organizes object construction into a set of steps (
 `buildWalls`, `buildDoor`, etc.). To create an object, you execute a
@@ -91,7 +78,7 @@ Then you can use these builders in the construction process (i.e., an
 ordered set of calls to the building steps) to produce different kinds
 of objects.
 
-![](attachments/463529996/463530185.png)
+<kbd>![](./attachments/builder/463530185.png)</kbd>
 
 For example, imagine a builder that builds everything from wood and
 glass, a second one that builds everything with stone and iron and a
@@ -108,7 +95,7 @@ you use to construct a product into a separate class called *director*.
 The director class defines the order in which to execute the building
 steps, while the builder provides the implementation for those steps.
 
-![](attachments/463529996/463530186.png)
+<kbd>![](./attachments/builder/463530186.png)</kbd>
 
 Having a director class in your program isn’t strictly necessary. You
 can always call the building steps in a specific order directly from the
@@ -122,7 +109,7 @@ get the result from the builder.
 
 ### Structure
 
-![](attachments/463529996/463530191.png)
+<kbd>![](./attachments/builder/463530191.png)</kbd>
 
 ### Pseudocode
 
@@ -130,7 +117,7 @@ This example of the **Builder** pattern illustrates how you can reuse
 the same object construction code when building different types of
 products, such as cars, and create the corresponding manuals for them.
 
-![](attachments/463529996/463530187.png)
+<kbd>![](./attachments/builder/463530187.png)</kbd>
 
 A car is a complex object that can be constructed in a hundred different
 ways. Instead of bloating the `Car` class with a huge constructor, we
@@ -189,8 +176,6 @@ constructor like below:
 
 #### C\#
 
-
-
 ``` 
 public Burger(int size, bool cheese, bool pepperoni, bool lettuce, bool tomato) {
 }
@@ -200,7 +185,6 @@ public Burger(int size, bool cheese, bool pepperoni, bool lettuce, bool tomato) 
 
 
 #### Java
-
 
 
 ``` 
@@ -235,28 +219,26 @@ constructor anti-pattern.
 
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>You can construct objects step-by-step, defer construction steps or run steps recursively.</td>
-<td>The overall complexity of the code increases since the pattern requires creating multiple new classes.</td>
-</tr>
-<tr class="even">
-<td>You can reuse the same construction code when building various representations of products.</td>
-<td><br />
-</td>
-</tr>
-<tr class="odd">
-<td><em>Single Responsibility Principle</em>. You can isolate complex construction code from the business logic of the product.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+    <thead>
+        <tr class="header">
+            <th>Pros</th>
+            <th>Cons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td>You can construct objects step-by-step, defer construction steps or run steps recursively.</td>
+            <td>The overall complexity of the code increases since the pattern requires creating multiple new classes.</td>
+        </tr>
+        <tr class="even">
+            <td>You can reuse the same construction code when building various representations of products.</td>
+            <td><br /></td>
+        </tr>
+        <tr class="odd">
+            <td><em>Single Responsibility Principle</em>. You can isolate complex construction code from the business logic of the product.</td>
+            <td><br /></td>
+        </tr>
+    </tbody>
 </table>
 
 
@@ -665,15 +647,5 @@ constructor telescoping. The key difference from the factory pattern is
 that; factory pattern is to be used when the creation is a one step
 process while builder pattern is to be used when the creation is a multi
 step process.
-
-
-
-
-
-
-
-
-
-
 
 

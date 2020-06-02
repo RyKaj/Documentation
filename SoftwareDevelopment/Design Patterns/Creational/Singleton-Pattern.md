@@ -1,25 +1,12 @@
-<div id="main" class="aui-page-panel">
-
-<div id="main-header">
-
-<div id="breadcrumb-section">
-
-1.  [Information Technology](index.html)
-2.  [3.0 Sofware Development
-    Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
-3.  [Design Patterns](Design-Patterns_451820045.html)
-4.  [1.0 Design Pattern - Programming
-    Language](1.0-Design-Pattern---Programming-Language_451820065.html)
-5.  [Creational Design
-    Patterns](Creational-Design-Patterns_451820114.html)
-
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Software Development](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/README.md) | [Design Patterns](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/README.md) |
+------------
 
 
 # Information Technology : Singleton Pattern
 
 ## Singleton
 
-![](https://www.oodesign.com/images/creational/singleton-pattern.gif)
+<kbd>![](https://www.oodesign.com/images/creational/singleton-pattern.gif)</kbd>
 
 ### Intent
 
@@ -27,7 +14,7 @@
 class has only one instance, while providing a global access point to
 this instance.
 
-![](attachments/463530003/463530331.png)
+<kbd>![](./attachments/singleton/463530331.png)</kbd>
 
 ### Problem
 
@@ -47,7 +34,7 @@ the *Single Responsibility Principle*:
     constructor since a constructor call **must** always return a new
     object by design.
     
-    ![](attachments/463530003/463530332.png)
+    <kbd>![](./attachments/singleton/463530332.png)</kbd>
 
 2.  **Provide a global access point to that instance**. Remember those
     global variables that you (all right, me) used to store some
@@ -85,7 +72,7 @@ same object is always returned.
 
 ### Structure
 
-![](attachments/463530003/463530333.png)
+<kbd>![](./attachments/singleton/463530333.png)</kbd>
 
 ### Pseudocode
 
@@ -119,31 +106,30 @@ plus mocking the singleton could be difficult.
 
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>You can be sure that a class has only a single instance.</td>
-<td>Violates the <em>Single Responsibility Principle</em> . The pattern solves two problems at the time.</td>
-</tr>
-<tr class="even">
-<td>You gain a global access point to that instance.</td>
-<td>The Singleton pattern can mask bad design, for instance, when the components of the program know too much about each other.</td>
-</tr>
-<tr class="odd">
-<td>The singleton object is initialized only when it’s requested for the first time.</td>
-<td>The pattern requires special treatment in a multithreaded environment so that multiple threads won’t create a singleton object several times.</td>
-</tr>
-<tr class="even">
-<td><br />
-</td>
-<td>It may be difficult to unit test the client code of the Singleton because many test frameworks rely on inheritance when producing mock objects. Since the constructor of the singleton class is private and overriding static methods is impossible in most languages, you will need to think of a creative way to mock the singleton. Or just don’t write the tests. Or don’t use the Singleton pattern.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr class="header">
+            <th>Pros</th>
+            <th>Cons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td>You can be sure that a class has only a single instance.</td>
+            <td>Violates the <em>Single Responsibility Principle</em> . The pattern solves two problems at the time.</td>
+        </tr>
+        <tr class="even">
+            <td>You gain a global access point to that instance.</td>
+            <td>The Singleton pattern can mask bad design, for instance, when the components of the program know too much about each other.</td>
+        </tr>
+        <tr class="odd">
+            <td>The singleton object is initialized only when it’s requested for the first time.</td>
+            <td>The pattern requires special treatment in a multithreaded environment so that multiple threads won’t create a singleton object several times.</td>
+        </tr>
+        <tr class="even">
+            <td><br /></td>
+            <td>It may be difficult to unit test the client code of the Singleton because many test frameworks rely on inheritance when producing mock objects. Since the constructor of the singleton class is private and overriding static methods is impossible in most languages, you will need to think of a creative way to mock the singleton. Or just don’t write the tests. Or don’t use the Singleton pattern.</td>
+        </tr>
+    </tbody>
 </table>
 
 
@@ -363,17 +349,5 @@ if __name__ == '__main__':
 # rm3: Init
                 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
 
 

@@ -17,6 +17,12 @@
 		-   [Template Method Pattern](./Design%20Patterns/Behavioral/Template-Method-Pattern.md)
 		-   [Visitor Pattern](./Design%20Patterns/Behavioral/Visitor-Pattern.md)
 	-   Creational
+		-   [Abstract Factory](./Design%20Patterns/Creational/Abstract-Factory-Pattern.md)
+		-   [Builder Pattern](./Design%20Patterns/Creational/Builder-Pattern.md)
+		-   [Factor Method Pattern](./Design%20Patterns/Creational/Factory-Method-Pattern.md)
+		-   [Prototype Pattern](./Design%20Patterns/Creational/Prototype-Pattern.md)
+		-   [Simple Factory Pattern](./Design%20Patterns/Creational/Simple-Factory-Pattern.md)
+		-   [Singleton Pattern](./Design%20Patterns/Creational/Singleton-Pattern.md)	
 	-   Structural
 	
 -   [Unit Test](./UnitTest/1.0-Unit-Tests.md)  

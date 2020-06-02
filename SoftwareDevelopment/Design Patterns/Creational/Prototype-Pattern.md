@@ -1,36 +1,19 @@
-<div id="main" class="aui-page-panel">
-
-<div id="main-header">
-
-<div id="breadcrumb-section">
-
-1.  [Information Technology](index.html)
-2.  [3.0 Sofware Development
-    Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
-3.  [Design Patterns](Design-Patterns_451820045.html)
-4.  [1.0 Design Pattern - Programming
-    Language](1.0-Design-Pattern---Programming-Language_451820065.html)
-5.  [Creational Design
-    Patterns](Creational-Design-Patterns_451820114.html)
-
-
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Software Development](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/README.md) | [Design Patterns](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/README.md) |
+------------
 
 # Information Technology : Prototype Pattern
 
 
-
-
-
 ## Prototype
 
-![](https://www.oodesign.com/images/creational/prototype-pattern.gif)
+<kbd>![](https://www.oodesign.com/images/creational/prototype-pattern.gif)</kbd>
 
 ### Intent
 
 **Prototype** is a creational design pattern that lets you copy existing
 objects without making your code dependent on their classes.
 
-![](attachments/463530002/463530194.png)
+<kbd>![](./attachments/prototype/463530194.png)</kbd>
 
 ### Problem
 
@@ -43,7 +26,7 @@ Nice\! But there’s a catch. Not all objects can be copied that way
 because some of the object’s fields may be private and not visible from
 outside of the object itself.
 
-![](attachments/463530002/463530196.png)
+<kbd>![](./attachments/prototype/463530196.png)</kbd>
 
 There’s one more problem with the direct approach. Since you have to
 know the object’s class to create a duplicate, your code becomes
@@ -70,7 +53,7 @@ An object that supports cloning is called a *prototype*. When your
 objects have dozens of fields and hundreds of possible configurations,
 cloning them might serve as an alternative to subclassing.
 
-![](attachments/463530002/463530197.png)
+<kbd>![](./attachments/prototype/463530197.png)</kbd>
 
 Here’s how it works: you create a set of objects, configured in various
 ways. When you need an object like the one you’ve configured, you just
@@ -80,18 +63,18 @@ clone a prototype instead of constructing a new object from scratch.
 
 #### Base Implementation
 
-![](attachments/463530002/463530199.png)
+<kbd>![](./attachments/prototype/463530199.png)</kbd>
 
 #### Prototype Registry Implementation
 
-![](attachments/463530002/463530200.png)
+<kbd>![](./attachments/prototype/463530200.png</kbd>
 
 ### Pseudocode
 
 In this example, the **Prototype** pattern lets you produce exact copies
 of geometric objects, without coupling the code to their classes.
 
-![](attachments/463530002/463530195.png)
+<kbd>![](./attachments/prototype/463530195.png)</kbd>
 
 All shape classes follow the same interface, which provides a cloning
 method. A subclass may call the parent’s cloning method before copying
@@ -121,33 +104,31 @@ creating an object from scratch and setting it up.
 
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>You can clone objects without coupling to their concrete classes.</td>
-<td>Cloning complex objects that have circular references might be very tricky.</td>
-</tr>
-<tr class="even">
-<td>You can get rid of repeated initialization code in favor of cloning pre-built prototypes.</td>
-<td><br />
-</td>
-</tr>
-<tr class="odd">
-<td>You can produce complex objects more conveniently.</td>
-<td><br />
-</td>
-</tr>
-<tr class="even">
-<td>You get an alternative to inheritance when dealing with configuration presets for complex objects.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+    <thead>
+        <tr class="header">
+            <th>Pros</th>
+            <th>Cons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td>You can clone objects without coupling to their concrete classes.</td>
+            <td>Cloning complex objects that have circular references might be very tricky.</td>
+        </tr>
+        <tr class="even">
+            <td>You can get rid of repeated initialization code in favor of cloning pre-built prototypes.</td>
+            <td><br />
+        </td>
+        </tr>
+        <tr class="odd">
+            <td>You can produce complex objects more conveniently.</td>
+            <td><br /></td>
+        </tr>
+        <tr class="even">
+            <td>You get an alternative to inheritance when dealing with configuration presets for complex objects.</td>
+            <td><br /></td>
+        </tr>
+    </tbody>
 </table>
 
 
@@ -374,13 +355,4 @@ if __name__ == '__main__':
 
 When an object is required that is similar to existing object or when
 the creation would be expensive as compared to cloning.
-
-
-
-
-
-
-
-
-
 

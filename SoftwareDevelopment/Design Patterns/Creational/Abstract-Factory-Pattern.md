@@ -1,29 +1,12 @@
-<div id="main" class="aui-page-panel">
-
-<div id="main-header">
-
-<div id="breadcrumb-section">
-
-1.  [Information Technology](index.html)
-2.  [3.0 Sofware Development
-    Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
-3.  [Design Patterns](Design-Patterns_451820045.html)
-4.  [1.0 Design Pattern - Programming
-    Language](1.0-Design-Pattern---Programming-Language_451820065.html)
-5.  [Creational Design
-    Patterns](Creational-Design-Patterns_451820114.html)
-
-
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Software Development](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/README.md) | [Design Patterns](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/README.md) |
+------------
 
 # Information Technology : Abstract Factory Pattern
 
 
-
-
-
 ## Abstract Factory
 
-![](https://www.oodesign.com/images/creational/abstract-factory-pattern.png)
+<kbd>![](https://www.oodesign.com/images/creational/abstract-factory-pattern.png)</kbd>
 
 ### Intent
 
@@ -31,7 +14,7 @@
 produce families of related objects without specifying their concrete
 classes.
 
-![](attachments/463529999/463530174.png)
+<kbd>![](./attachments/abstract/463530174.png)</kbd>
 
 ### Problem
 
@@ -44,13 +27,13 @@ consists of classes that represent:
     `Sofa` + `CoffeeTable` are available in these variants: `Modern`,
     `Victorian`, `ArtDeco`.
 
-![](attachments/463529999/463530178.png)
+<kbd>![](./attachments/abstract/463530178.png)</kbd>
 
 You need a way to create individual furniture objects so that they match
 other objects of the same family. Customers get quite mad when they
 receive non-matching furniture.
 
-![](attachments/463529999/463530175.png)
+<kbd>![](./attachments/abstract/463530175.png)</kbd>
 
 Also, you don’t want to change existing code when adding new products or
 families of products to the program. Furniture vendors update their
@@ -66,7 +49,7 @@ products follow those interfaces. For example, all chair variants can
 implement the `Chair` interface; all coffee table variants can implement
 the `CoffeeTable` interface, and so on.
 
-![](attachments/463529999/463530179.png)
+<kbd>![](./attachments/abstract/463530179.png)</kbd>
 
 The next move is to declare the *Abstract Factory*—an interface with a
 list of creation methods for all products that are part of the product
@@ -75,7 +58,7 @@ family (for example, `createChair`, `createSofa` and
 types represented by the interfaces we extracted previously: `Chair`,
 `Sofa`, `CoffeeTable` and so on.
 
-![](attachments/463529999/463530180.png)
+<kbd>![](./attachments/abstract/463530180.png)</kbd>
 
 Now, how about the product variants? For each variant of a product
 family, we create a separate factory class based on the
@@ -88,7 +71,7 @@ respective abstract interfaces. This lets you change the type of a
 factory that you pass to the client code, as well as the product variant
 that the client code receives, without breaking the actual client code.
 
-![](attachments/463529999/463530176.png)
+<kbd>![](./attachments/abstract/463530176.png)</kbd>
 
 Say the client wants a factory to produce a chair. The client doesn’t
 have to be aware of the factory’s class, nor does it matter what kind of
@@ -108,7 +91,7 @@ type depending on the configuration or the environment settings.
 
 ### Structure
 
-![](attachments/463529999/463530181.png)
+<kbd>![](./attachments/abstract/463530181.png)</kbd>
 
 ### Pseudocode
 
@@ -117,7 +100,7 @@ used for creating cross-platform UI elements without coupling the client
 code to concrete UI classes, while keeping all created elements
 consistent with a selected operating system.
 
-![](attachments/463529999/463530177.png)
+<kbd>![](./attachments/abstract/463530177.png)</kbd>
 
 The same UI elements in a cross-platform application are expected to
 behave similarly, but look a little bit different under different
@@ -174,33 +157,30 @@ concrete classes
 
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>You can be sure that the products you’re getting from a factory are compatible with each other.</td>
-<td>The code may become more complicated than it should be, since a lot of new interfaces and classes are introduced along with the pattern.</td>
-</tr>
-<tr class="even">
-<td>You avoid tight coupling between concrete products and client code.</td>
-<td><br />
-</td>
-</tr>
-<tr class="odd">
-<td>S<em>ingle Responsibility Principle</em>. You can extract the product creation code into one place, making the code easier to support.</td>
-<td><br />
-</td>
-</tr>
-<tr class="even">
-<td><em>Open/Closed Principle</em>. You can introduce new variants of products without breaking existing client code.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+    <thead>
+        <tr class="header">
+            <th>Pros</th>
+            <th>Cons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td>You can be sure that the products you’re getting from a factory are compatible with each other.</td>
+            <td>The code may become more complicated than it should be, since a lot of new interfaces and classes are introduced along with the pattern.</td>
+        </tr>
+        <tr class="even">
+            <td>You avoid tight coupling between concrete products and client code.</td>
+            <td><br /></td>
+        </tr>
+        <tr class="odd">
+            <td>S<em>ingle Responsibility Principle</em>. You can extract the product creation code into one place, making the code easier to support.</td>
+            <td><br /></td>
+        </tr>
+        <tr class="even">
+            <td><em>Open/Closed Principle</em>. You can introduce new variants of products without breaking existing client code.</td>
+            <td><br /></td>
+        </tr>
+    </tbody>
 </table>
 
 
@@ -718,17 +698,5 @@ if __name__ == "__main__":
 
 ### When to use?
 
-When there are interrelated dependencies with not-that-simple creation
-logic involved
-
-
-
-
-
-
-
-
-
-
-
+When there are interrelated dependencies with not-that-simple creation logic involved
 
