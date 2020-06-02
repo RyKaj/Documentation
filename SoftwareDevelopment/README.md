@@ -6,6 +6,16 @@
 	-   [Anti Patterns](./Design%20Patterns/AntiPatterns.md)
 	-   [Object Oriented](./Design%20Patterns/Object-Oriented-Programming.md)
 	-   Behavioral
+		-   [Chain of Responsibility Pattern](./Design%20Patterns/Behavioral/Chain-of-Responsibility-Pattern.md)
+		-   [Command Pattern](./Design%20Patterns/Behavioral/Command-Pattern.md)
+		-   [Iterator Pattern](./Design%20Patterns/Behavioral/Iterator-Pattern.md)
+		-   [Mediator Pattern](./Design%20Patterns/Behavioral/Mediator-Pattern.md)
+		-   [Memento Pattern](./Design%20Patterns/Behavioral/Memento-Pattern.md)
+		-   [Observer Pattern](./Design%20Patterns/Behavioral/Observer-Pattern.md)
+		-   [State Pattern](./Design%20Patterns/Behavioral/State-Pattern.md)
+		-   [Strategy Pattern](./Design%20Patterns/Behavioral/Strategy-Pattern.md)
+		-   [Template Method Pattern](./Design%20Patterns/Behavioral/Template-Method-Pattern.md)
+		-   [Visitor Pattern](./Design%20Patterns/Behavioral/Visitor-Pattern.md)
 	-   Creational
 	-   Structural
 	
