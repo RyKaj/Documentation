@@ -15,10 +15,6 @@
 
 # Information Technology : AntiPatterns
 
-
-
-
-
 AntiPatterns, like their design pattern counterparts, define an industry
 vocabulary for the common defective processes and implementations within
 organizations. A higher-level vocabulary simplifies communication
@@ -99,7 +95,7 @@ contain the data. Architectures with the Blob have separated process
 from data; in other words, they are procedural-style rather than
 object-oriented architectures.
 
-![](https://sourcemaking.com/files/v2/content/antipatterns/Blob%20-%202-2x.png)
+<kbd>![](https://sourcemaking.com/files/v2/content/antipatterns/Blob%20-%202-2x.png)</kbd>
 
 The Blob can be the result of inappropriate requirements allocation. For
 example, the Blob may be a software module that is given
@@ -204,10 +200,10 @@ as follows:
     We could also identify all operations and attributes related to
     individual items, such as Print\_Item, Delete\_Item, and so on.
     
-    ![](https://sourcemaking.com/files/v2/content/antipatterns/Blob2%20-%203-2x.png)  
+    <kbd>![](https://sourcemaking.com/files/v2/content/antipatterns/Blob2%20-%203-2x.png)</kbd>
     Figure 1
     
-    ![](https://sourcemaking.com/files/v2/content/antipatterns/Blob2%20-%204-2x.png)  
+    <kbd>![](https://sourcemaking.com/files/v2/content/antipatterns/Blob2%20-%204-2x.png)</kbd>
     Figure 2
 
 2.  The second step is to look for "natural homes" for these
@@ -222,7 +218,7 @@ as follows:
     encapsulated data tables. The result is a better object-oriented
     design.
     
-    ![](https://sourcemaking.com/files/v2/content/antipatterns/Blob2%20-%205-2x.png)  
+    <kbd>![](https://sourcemaking.com/files/v2/content/antipatterns/Blob2%20-%205-2x.png)</kbd>
     Figure 3
 
 3.  The third step is to remove all "far-coupled," or redundant,
@@ -234,7 +230,7 @@ as follows:
     a common base class. In the example, once the far-coupling has been
     removed between the LIBRARY and ITEM classes, we need to migrate
     ITEMs to CATALOGs, as shown in figure 4.
-    ![](https://sourcemaking.com/files/v2/content/antipatterns/Blob2%20-%206-2x.png)  
+    <kbd>![](https://sourcemaking.com/files/v2/content/antipatterns/Blob2%20-%206-2x.png)</kbd>
     Figure 4
 
 5.  Finally, we remove all transient associations, replacing them as
@@ -302,20 +298,13 @@ modules. An example of this is a PowerBuilder screen for customer data
 entry/retrieval. The screen can:
 
 1.  Display data.
-
 2.  Edit data.
-
-3.  Perform simple type validation. The developer then adds
-    functionality to what was intended to be the decision engine:
-
+3.  Perform simple type validation. The developer then adds functionality to what was intended to be the decision engine:
 4.    - Complex validation.
       - Algorithms that use the validated data to assess next actions.
-
 5.  The developer then gets new requirements to:
-
 6.    - Extend the GUI to three forms.
-      - Make it script-driven (including the development of a script
-        engine).
+      - Make it script-driven (including the development of a script engine).
       - Add new algorithms to the decision engine.
 
 The developer extends the current module to incorporate all of this
@@ -323,8 +312,8 @@ functionality. So instead of developing several modules, a single module
 is developed. If the intended application is architected and designed,
 it is easier to maintain and extend.
 
-![](https://sourcemaking.com/files/v2/content/antipatterns/Blob3%20-%201-2x.png)
-![](https://sourcemaking.com/files/v2/content/antipatterns/Blob3%20-%202-2x.png)
+<kbd>![](https://sourcemaking.com/files/v2/content/antipatterns/Blob3%20-%201-2x.png)</kbd>
+<kbd>![](https://sourcemaking.com/files/v2/content/antipatterns/Blob3%20-%202-2x.png)</kbd>
 
 ## Continuous Obsolescence
 
@@ -401,8 +390,7 @@ quality.
   - **Refactored Solution Name:** Architectural Configuration Management
   - **Refactored Solution Type:** Process
   - **Root Causes:** Avarice, Greed, Sloth
-  - **Unbalanced Forces:** Management of Functionality, Performance,
-    Complexity
+  - **Unbalanced Forces:** Management of Functionality, Performance, Complexity
   - **Anecdotal Evidence:** "Oh *that\!* Well Ray and Emil (they're no
     longer with the company) wrote that routine back when Jim (who left
     last month) was trying a workaround for Irene's input processing
@@ -444,7 +432,7 @@ interface design efforts, we had encountered the same pattern so
 frequently that we were routinely referring to Lava Flow throughout the
 department.
 
-![](https://sourcemaking.com/files/sm/images/antipatterns/img_29.jpg)
+<kbd>![](https://sourcemaking.com/files/sm/images/antipatterns/img_29.jpg)</kbd>
 
 ### General Form
 
@@ -715,8 +703,7 @@ least useful. Mixed viewpoints don't allow the fundamental separation of
 interfaces from implementation details, which are one of the primary
 benefits of the object-oriented paradigm.
 
-![Ambiguous
-Viewpoint](https://sourcemaking.com/files/sm/images/arrows.jpg)
+![Ambiguous Viewpoint](https://sourcemaking.com/files/sm/images/arrows.jpg)
 
 ### Refactored Solution
 
@@ -734,12 +721,9 @@ example, defining a class model for a telephone exchange system will
 vary significantly depending upon the focus provided by the following
 perspectives:
 
-  - Telephone user, who cares about the ease of making calls and
-    receiving itemized bills.
-  - Telephone operator, who cares about connecting users to required
-    numbers.
-  - Telephone accounting department, which cares about the formulae for
-    billing and records of all calls made by users.
+  - Telephone user, who cares about the ease of making calls and receiving itemized bills.
+  - Telephone operator, who cares about connecting users to required numbers.
+  - Telephone accounting department, which cares about the formulae for billing and records of all calls made by users.
 
 Some of the same classes will be identified, but not many; where there
 are, the methods will not be the same.
@@ -768,8 +752,7 @@ complex aspects of the system.
   - **Refactored Solution Type:** Process
   - **Root Causes:** Avarice, Greed, Sloth
   - **Unbalanced Forces:** Management of Complexity, Change
-  - **Anecdotal Evidence:** "This is our ‘main' routine, here in the
-    class called LISTENER."
+  - **Anecdotal Evidence:** "This is our ‘main' routine, here in the class called LISTENER."
 
 ### Background
 
@@ -797,7 +780,7 @@ FORTRAN in class structure. It can be incredibly complex, as smart
 procedural developers devise very clever ways to replicate their
 time-tested methods in an object-oriented architecture.
 
-![](https://sourcemaking.com/files/sm/images/big.jpg)
+<kbd>![](https://sourcemaking.com/files/sm/images/big.jpg)</kbd>
 
 You will most likely encounter this AntiPattern in a C shop that has
 recently gone to C++, or has tried to incorporate CORBA interfaces, or
@@ -910,7 +893,7 @@ associated data.
 The simple example in figure below shows a functional version of a
 customer loan scenario:
 
-![](https://sourcemaking.com/files/v2/content/antipatterns/Functional%20Decomposition%20-%201-2x.png)
+<kbd>![](https://sourcemaking.com/files/v2/content/antipatterns/Functional%20Decomposition%20-%201-2x.png)</kbd>
 
 1.  Adding a new customer.
 2.  Updating a customer address.
@@ -922,7 +905,7 @@ customer loan scenario:
 Next figure then shows the object-oriented view of a customer loan
 application. The previous functions map to object methods.
 
-![](https://sourcemaking.com/files/v2/content/antipatterns/Functional%20Decomposition%20-%202-2x.png)
+<kbd>![](https://sourcemaking.com/files/v2/content/antipatterns/Functional%20Decomposition%20-%202-2x.png)</kbd>
 
 ### Related Solutions
 
@@ -979,7 +962,7 @@ phenomena," that term better represented the "pop in to make something
 happen" concept of this AntiPattern while retaining the "here now then
 suddenly vanished" flavor of the initial Gypsy name.
 
-![](https://sourcemaking.com/files/v2/content/antipatterns/poltergeist-2x.png)
+<kbd>![](https://sourcemaking.com/files/v2/content/antipatterns/poltergeist-2x.png)</kbd>
 
 In the LISP language, as in many others, certain pure-evil programmers
 exist who take great glee in leveraging the "side effects" of certain
@@ -1014,10 +997,8 @@ greenhorn architect who doesn't really understand the object-oriented
 concept. Poltergeist classes constitute bad design artifacts for three
 key reasons:
 
-1.  They are unnecessary, so they waste resources every time they
-    "appear."
-2.  They are inefficient because they utilize several redundant
-    navigation paths.
+1.  They are unnecessary, so they waste resources every time they "appear."
+2.  They are inefficient because they utilize several redundant navigation paths.
 3.  They get in the way of proper object-oriented design by needlessly
     cluttering the object model.
 
@@ -1027,15 +1008,12 @@ key reasons:
   - Transient associations.
   - Stateless classes.
   - Temporary, short-duration objects and classes.
-  - Single-operation classes that exist only to "seed" or "invoke" other
-    classes through temporary associations.
-  - Classes with "control-like" operation names such as
-    start\_process\_alpha.
+  - Single-operation classes that exist only to "seed" or "invoke" other classes through temporary associations.
+  - Classes with "control-like" operation names such as start\_process\_alpha.
 
 ### Typical Causes
 
-  - *Lack of object-oriented architecture.* "The designers don't know
-    object orientation."
+  - *Lack of object-oriented architecture.* "The designers don't know object orientation."
   - *Incorrect tool for the job.* Contrary to popular opinion, the
     object-oriented approach isn't necessarily the right solution for
     every job. As a poster once read, "There is no right way to do the
@@ -1066,14 +1044,12 @@ In order to more clearly explain the Poltergeist, consider the
 peach-canning example in figure below. We see that the class
 PEACH\_CANNER\_CONTROLLER is a Poltergeist because:
 
-![](https://sourcemaking.com/files/v2/content/antipatterns/Poltergeist%20-%201-2x.png)
+<kbd>![](https://sourcemaking.com/files/v2/content/antipatterns/Poltergeist%20-%201-2x.png)</kbd>
 
-  - It has redundant navigation paths to all other classes in the
-    system.
+  - It has redundant navigation paths to all other classes in the system.
   - All of its associations are transient.
   - It has no state.
-  - It is a temporary, short-duration class that pops into existence
-    only to invoke other classes through temporary associations.
+  - It is a temporary, short-duration class that pops into existence only to invoke other classes through temporary associations.
 
 In this example, if we remove the Poltergeist class, the remaining
 classes lose the ability to interact. There is no longer any ordering of
@@ -1081,7 +1057,7 @@ processes. Thus, we need to place such interaction capability into the
 remaining hierarchy. Notice that certain operations are added to each
 process such that the individual classes interact and process results.
 
-![](https://sourcemaking.com/files/v2/content/antipatterns/Poltergeist%20-%202-2x.png)
+<kbd>![](https://sourcemaking.com/files/v2/content/antipatterns/Poltergeist%20-%202-2x.png)</kbd>
 
 ### Related Solutions
 
@@ -1129,7 +1105,7 @@ marketing often focuses on chief executive officers of small- to
 medium-size corporations. A commitment to the product is made without
 proper technical evaluation.
 
-![](https://sourcemaking.com/files/sm/images/anchor.jpg)
+<kbd>![](https://sourcemaking.com/files/sm/images/anchor.jpg)</kbd>
 
 The consequences for managers and software developers are that
 significant effort may have to be devoted to making the product work.
@@ -1200,7 +1176,7 @@ approach and unwilling to learn and apply one that is better suited.
 This is typified by the common "our database is our architecture"
 mind-set, particularly common in the world's banking community.
 
-![](https://sourcemaking.com/files/sm/images/hammer.jpg)
+<kbd>![](https://sourcemaking.com/files/sm/images/hammer.jpg)</kbd>
 
 Frequently, an advocate will propose the Golden Hammer and its
 associated product suite as a solution to most of the needs of an
@@ -1472,7 +1448,7 @@ susceptible to this AntiPattern, but it is fairly common among
 developers who have yet to fully master the advanced concepts underlying
 object orientation.
 
-![](https://sourcemaking.com/files/sm/images/spagett.jpg)
+<kbd>![](https://sourcemaking.com/files/sm/images/spagett.jpg)</kbd>
 
 ### General Form
 
@@ -1722,7 +1698,7 @@ input strings. The anecdotal evidence for an Input Kludge goes like
 this: "End users can break new programs within moments of touching the
 keyboard."
 
-![](https://sourcemaking.com/files/sm/images/input.jpg)
+<kbd>![](https://sourcemaking.com/files/sm/images/input.jpg)</kbd>
 
 ### Refactored Solution
 
@@ -1777,7 +1753,7 @@ before they are ready to support operational systems. A knowledgeable
 software engineer states that, "There are no real systems, not even
 ours."
 
-![](https://sourcemaking.com/files/sm/images/antipatterns/img_37.jpg)
+<kbd>![](https://sourcemaking.com/files/sm/images/antipatterns/img_37.jpg)</kbd>
 
 The location and consequences of software defects are unrelated to their
 apparent causes, and even a minor bug can be catastrophic. For example,
@@ -1882,8 +1858,7 @@ are pervasive, and there are no robust platforms underneath.
 ## Cut-and-Paste Programming
 
   - **AntiPattern Name:** Cut-and-Paste Programming
-  - **Also Known As:** Clipboard Coding, Software Cloning, Software
-    Propagation
+  - **Also Known As:** Clipboard Coding, Software Cloning, Software Propagation
   - **Most Applicable Scale:** Application
   - **Refactored Solution Name:** Black Box Reuse
   - **Refactored Solution Type:** Software
@@ -2089,7 +2064,7 @@ An experienced system architect recently stated, "Never let software
 developers talk to end users." Furthermore, without end-user
 participation, "The risk is that you end up building the wrong system."
 
-![](https://sourcemaking.com/files/sm/images/dev.jpg)
+<kbd>![](https://sourcemaking.com/files/sm/images/dev.jpg)</kbd>
 
 In some architecture and management circles, there is an explicit policy
 to isolate system developers from the system's end users. Requirements
@@ -2162,17 +2137,4 @@ represents only one opinion from the domain community.
 
 References
 
-  - [Source Making -
-    antipatterns](https://sourcemaking.com/antipatterns)
-
-
-
-
-
-
-
-
-
-
-
-
+  - [Source Making - AntiPatterns](https://sourcemaking.com/antipatterns)

@@ -15,8 +15,6 @@
 
 
 
-
-
 ## General
 
 To discuss about the object-oriented programming (abbreviate **OOP**) we
@@ -248,23 +246,8 @@ an object.
 
 References
 
-  - [Medium - What are four basic principles of Object Oriented
-    Programming?](https://medium.com/@cancerian0684/what-are-four-basic-principles-of-object-oriented-programming-645af8b43727)
-  - [Code Better - 4 major principles of Object-Oriented
-    Programming](http://codebetter.com/raymondlewallen/2005/07/19/4-major-principles-of-object-oriented-programming/)
-  - [Medium - The miracle of object oriented
-    programming](https://medium.com/quick-code/the-miracle-of-object-oriented-programming-837c3b1f1e59)
-  - [Medium - Is javascript a true oop
-    language](https://medium.com/@andrea.chiarelli/is-javascript-a-true-oop-language-c87c5b48bdf0)
-
-
-
-
-
-
-
-
-
-
-
+  - [Medium - What are four basic principles of Object Oriented Programming?](https://medium.com/@cancerian0684/what-are-four-basic-principles-of-object-oriented-programming-645af8b43727)
+  - [Code Better - 4 major principles of Object-Oriented  Programming](http://codebetter.com/raymondlewallen/2005/07/19/4-major-principles-of-object-oriented-programming/)
+  - [Medium - The miracle of object oriented programming](https://medium.com/quick-code/the-miracle-of-object-oriented-programming-837c3b1f1e59)
+  - [Medium - Is javascript a true oop language](https://medium.com/@andrea.chiarelli/is-javascript-a-true-oop-language-c87c5b48bdf0)
 
