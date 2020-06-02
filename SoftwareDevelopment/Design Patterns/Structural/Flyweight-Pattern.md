@@ -1,29 +1,13 @@
-<div id="main" class="aui-page-panel">
-
-<div id="main-header">
-
-<div id="breadcrumb-section">
-
-1.  [Information Technology](index.html)
-2.  [3.0 Sofware Development
-    Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
-3.  [Design Patterns](Design-Patterns_451820045.html)
-4.  [1.0 Design Pattern - Programming
-    Language](1.0-Design-Pattern---Programming-Language_451820065.html)
-5.  [Structural Design
-    Patterns](Structural-Design-Patterns_451820122.html)
-
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Software Development](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/README.md) | [Design Patterns](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/README.md) |
+------------
 
 
 # Information Technology : Flyweight Pattern
 
 
-
-
-
 ## Flyweight
 
-![](https://www.oodesign.com/images/structural/flyweight-pattern.png)
+<kbd>![](https://www.oodesign.com/images/structural/flyweight-pattern.png)</kbd>
 
 ### Intent
 
@@ -32,7 +16,7 @@ objects into the available amount of RAM by sharing common parts of
 state between multiple objects instead of keeping all of the data in
 each object.
 
-![](attachments/463530018/463530215.png)
+<kbd>![](./attachments/flyweight/463530215.png)</kbd>
 
 ### Problem
 
@@ -58,7 +42,7 @@ separate object containing plenty of data. At some point, when the
 carnage on a player’s screen reached its climax, newly created particles
 no longer fit into the remaining RAM, so the program crashed.
 
-![](attachments/463530018/463530217.png)
+<kbd>![](./attachments/flyweight/463530217.png)</kbd>
 
 ### Solution
 
@@ -67,7 +51,7 @@ color and sprite fields consume a lot more memory than other fields.
 What’s worse is that these two fields store almost identical data across
 all particles. For example, all bullets have the same color and sprite.
 
-![](attachments/463530018/463530218.png)
+<kbd>![](./attachments/flyweight/463530218.png)</kbd>
 
 Other parts of a particle’s state, such as coordinates, movement vector
 and speed, are unique to each particle. After all, the values of these
@@ -87,7 +71,7 @@ object, letting you reuse it in different contexts. As a result, you’d
 need fewer of these objects since they only differ in the intrinsic
 state, which has much fewer variations than the extrinsic.
 
-![](attachments/463530018/463530220.png)
+<kbd>![](./attachments/flyweight/463530220.png)</kbd>
 
 Let’s return to our game. Assuming that we had extracted the extrinsic
 state from our particle class, only three different objects would
@@ -109,7 +93,7 @@ another array for storing references to a specific flyweight that
 represents a particle. These arrays must be in sync so that you can
 access all data of a particle using the same index.
 
-![](attachments/463530018/463530219.png)
+<kbd>![](./attachments/flyweight/463530219.png)</kbd>
 
 A more elegant solution is to create a separate context class that would
 store the extrinsic state along with reference to the flyweight object.
@@ -146,14 +130,14 @@ it inside an actual flyweight class.
 
 ### Structure
 
-![](attachments/463530018/463530221.png)
+<kbd>![](./attachments/flyweight/463530221.png)</kbd>
 
 ### Pseudocode
 
 In this example, the **Flyweight** pattern helps to reduce memory usage
 when rendering millions of tree objects on a canvas.
 
-![](attachments/463530018/463530216.png)
+<kbd>![](./attachments/flyweight/463530216.png)</kbd>
 
 The pattern extracts the repeating intrinsic state from a main `Tree`
 class and moves it into the flyweight class `TreeType`.
@@ -189,23 +173,22 @@ unacceptable amount of memory.
 
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>You can save lots of RAM, assuming your program has tons of similar objects.</td>
-<td>You might be trading RAM over CPU cycles when some of the context data needs to be recalculated each time somebody calls a flyweight method.</td>
-</tr>
-<tr class="even">
-<td><br />
-</td>
-<td>The code becomes much more complicated. New team members will always be wondering why the state of an entity was separated in such a way.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr class="header">
+            <th>Pros</th>
+            <th>Cons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td>You can save lots of RAM, assuming your program has tons of similar objects.</td>
+            <td>You might be trading RAM over CPU cycles when some of the context data needs to be recalculated each time somebody calls a flyweight method.</td>
+        </tr>
+        <tr class="even">
+            <td><br /></td>
+            <td>The code becomes much more complicated. New team members will always be wondering why the state of an entity was separated in such a way.</td>
+        </tr>
+    </tbody>
 </table>
 
 
@@ -621,17 +604,6 @@ if __name__ == "__main__":
     doctest.testmod()
                 
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 
 

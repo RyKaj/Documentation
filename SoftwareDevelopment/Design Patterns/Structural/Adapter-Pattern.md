@@ -1,36 +1,18 @@
-<div id="main" class="aui-page-panel">
-
-<div id="main-header">
-
-<div id="breadcrumb-section">
-
-1.  [Information Technology](index.html)
-2.  [3.0 Sofware Development
-    Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
-3.  [Design Patterns](Design-Patterns_451820045.html)
-4.  [1.0 Design Pattern - Programming
-    Language](1.0-Design-Pattern---Programming-Language_451820065.html)
-5.  [Structural Design
-    Patterns](Structural-Design-Patterns_451820122.html)
-
-
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Software Development](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/README.md) | [Design Patterns](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/README.md) |
+------------
 
 # Information Technology : Adapter Pattern
 
-
-
-
-
 ## Adapter
 
-![](https://www.oodesign.com/images/structural/adapter-pattern.png)
+<kbd>![](https://www.oodesign.com/images/structural/adapter-pattern.png)</kbd>
 
 ### Intent
 
 **Adapter** is a structural design pattern that allows objects with
 incompatible interfaces to collaborate.
 
-![](attachments/463530012/463530256.png)
+<kbd>![](./attachments/adapter/463530256.png)</kbd>
 
 ### Problem
 
@@ -42,7 +24,7 @@ At some point, you decide to improve the app by integrating a smart
 3rd-party analytics library. But there’s a catch: the analytics library
 only works with data in JSON format.
 
-![](attachments/463530012/463530258.png)
+<kbd>![](./attachments/adapter/463530258.png)</kbd>
 
 You could change the library to work with XML. However, this might break
 some existing code that relies on the library. And worse, you might not
@@ -73,7 +55,7 @@ help objects with different interfaces collaborate. Here’s how it works:
 Sometimes it’s even possible to create a two-way adapter that can
 convert the calls in both directions.
 
-![](attachments/463530012/463530259.png)
+<kbd>![](./attachments/adapter/463530259.png)</kbd>
 
 Let’s get back to our stock market app. To solve the dilemma of
 incompatible formats, you can create XML-to-JSON adapters for every
@@ -98,7 +80,7 @@ This implementation uses the object composition principle: the adapter
 implements the interface of one object and wraps the other one. It can
 be implemented in all popular programming languages.
 
-![](attachments/463530012/463530261.png)
+<kbd>![](./attachments/adapter/463530261.png)</kbd>
 
 #### Class adapter
 
@@ -107,14 +89,14 @@ from both objects at the same time. Note that this approach can only be
 implemented in programming languages that support multiple inheritance,
 such as C++.
 
-![](attachments/463530012/463530260.png)
+<kbd>![](./attachments/adapter/463530260.png)</kbd>
 
 ### Pseudocode
 
 This example of the **Adapter** pattern is based on the classic conflict
 between square pegs and round holes.
 
-![](attachments/463530012/463530257.png)
+<kbd>![](./attachments/adapter/463530257.png)</kbd>
 
 ### Real world example
 
@@ -145,23 +127,22 @@ others without modifying their source code.
 
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>Single Responsibility Principle</em>. You can separate the interface or data conversion code from the primary business logic of the program.</td>
-<td>The overall complexity of the code increases because you need to introduce a set of new interfaces and classes. Sometimes it’s simpler just to change the service class so that it matches the rest of your code.</td>
-</tr>
-<tr class="even">
-<td><em>Open/Closed Principle</em>. You can introduce new types of adapters into the program without breaking the existing client code, as long as they work with the adapters through the client interface.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+    <thead>
+        <tr class="header">
+            <th>Pros</th>
+            <th>Cons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td><em>Single Responsibility Principle</em>. You can separate the interface or data conversion code from the primary business logic of the program.</td>
+            <td>The overall complexity of the code increases because you need to introduce a set of new interfaces and classes. Sometimes it’s simpler just to change the service class so that it matches the rest of your code.</td>
+        </tr>
+        <tr class="even">
+            <td><em>Open/Closed Principle</em>. You can introduce new types of adapters into the program without breaking the existing client code, as long as they work with the adapters through the client interface.</td>
+            <td><br /></td>
+        </tr>
+    </tbody>
 </table>
 
 
@@ -587,17 +568,4 @@ if __name__ == "__main__":
     doctest.testmod(optionflags=doctest.ELLIPSIS)
                 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
 

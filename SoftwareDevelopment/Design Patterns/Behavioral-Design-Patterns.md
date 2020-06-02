@@ -28,7 +28,7 @@ pass requests along a chain of handlers. Upon receiving a request, each
 handler decides either to process the request or to pass it to the next
 handler in the chain.
 
-![](attachments/463529897/463529890.png)
+<kbd>![](attachments/463529897/463529890.png)
 
 ### Problem
 
@@ -44,7 +44,7 @@ user’s credentials. However, if those credentials aren’t correct and
 authentication fails, there’s no reason to proceed with any other
 checks.
 
-![](attachments/463529897/463529891.png)
+<kbd>![](attachments/463529897/463529891.png)
 
 During the next few months, you implemented several more of those
 sequential checks.
@@ -62,7 +62,7 @@ sequential checks.
     data. Hence, you added another check which lets the request pass
     through to the system only if there’s no suitable cached response.
 
-![](attachments/463529897/463529892.png)
+<kbd>![](attachments/463529897/463529892.png)
 
 ### Solution
 
@@ -88,7 +88,7 @@ Assuming the request contains the right data, all the handlers can
 execute their primary behavior, whether it’s authentication checks or
 caching.
 
-![](attachments/463529897/463529893.png)
+<kbd>![](attachments/463529897/463529893.png)
 
 However, there’s a slightly different approach (and it’s a bit more
 canonical) in which, upon receiving a request, a handler decides whether
@@ -104,15 +104,15 @@ window. The event is processed by the first element in the chain that’s
 capable of handling it. This example is also noteworthy because it shows
 that a chain can always be extracted from an object tree.
 
-![](attachments/463529897/463529894.png)
+<kbd>![](attachments/463529897/463529894.png)
 
 ### Structure
 
-![](attachments/463529897/463529895.png)
+<kbd>![](attachments/463529897/463529895.png)
 
 ### Pseudocode
 
-![](attachments/463529897/463529896.png)
+<kbd>![](attachments/463529897/463529896.png)
 
 ### Real world example
 
@@ -590,7 +590,7 @@ stand-alone object that contains all information about the request. This
 transformation lets you parameterize methods with different requests,
 delay or queue a request’s execution, and support undoable operations.
 
-![](attachments/463529910/463529901.png)
+<kbd>![](attachments/463529910/463529901.png)
 
 ### Problem
 
@@ -600,7 +600,7 @@ the editor. You created a very neat `Button` class that can be used for
 buttons on the toolbar, as well as for generic buttons in various
 dialogs.
 
-![](attachments/463529910/463529902.png)
+<kbd>![](attachments/463529910/463529902.png)
 
 While all of these buttons look similar, they’re all supposed to do
 different things. Where would you put the code for the various click
@@ -608,7 +608,7 @@ handlers of these buttons? The simplest solution is to create tons of
 subclasses for each place where the button is used. These subclasses
 would contain the code that would have to be executed on a button click.
 
-![](attachments/463529910/463529903.png)
+<kbd>![](attachments/463529910/463529903.png)
 
 Before long, you realize that this approach is deeply flawed. First, you
 have an enormous number of subclasses, and that would be okay if you
@@ -616,7 +616,7 @@ weren’t risking breaking the code in these subclasses each time you
 modify the base `Button` class. Put simply, your GUI code has become
 awkwardly dependent on the volatile code of the business logic.
 
-![](attachments/463529910/463529904.png)
+<kbd>![](attachments/463529910/463529904.png)
 
 And here’s the ugliest part. Some operations, such as copying/pasting
 text, would need to be invoked from multiple places. For example, a user
@@ -647,7 +647,7 @@ In the code it might look like this: a GUI object calls a method of a
 business logic object, passing it some arguments. This process is
 usually described as one object sending another a *request*.
 
-![](attachments/463529910/463529905.png)
+<kbd>![](attachments/463529910/463529905.png)
 
 The Command pattern suggests that GUI objects shouldn’t send these
 requests directly. Instead, you should extract all of the request
@@ -660,7 +660,7 @@ objects. From now on, the GUI object doesn’t need to know what business
 logic object will receive the request and how it’ll be processed. The
 GUI object just triggers the command, which handles all the details.
 
-![](attachments/463529910/463529906.png)
+<kbd>![](attachments/463529910/463529906.png)
 
 The next step is to make your commands implement the same interface.
 Usually it has just a single execution method that takes no parameters.
@@ -676,7 +676,7 @@ have any parameters, how would we pass the request details to the
 receiver? It turns out the command should be either pre-configured with
 this data, or capable of getting it on its own.
 
-![](attachments/463529910/463529907.png)
+<kbd>![](attachments/463529910/463529907.png)
 
 Let’s get back to our text editor. After we apply the Command pattern,
 we no longer need all those button subclasses to implement various click
@@ -700,11 +700,11 @@ fraction of the benefits that the Command pattern can offer\!
 
 ### Structure
 
-![](attachments/463529910/463529908.png)
+<kbd>![](attachments/463529910/463529908.png)
 
 ### Pseudocode
 
-![](attachments/463529910/463529909.png)
+<kbd>![](attachments/463529910/463529909.png)
 
 ### Real world example
 
@@ -1200,14 +1200,14 @@ Iterator is a behavioral design pattern that lets you traverse elements
 of a collection without exposing its underlying representation (list,
 stack, tree, etc.).
 
-![](attachments/463529918/463529912.png)
+<kbd>![](attachments/463529918/463529912.png)
 
 ### Problem
 
 Collections are one of the most used data types in programming.
 Nonetheless, a collection is just a container for a group of objects.
 
-![](attachments/463529918/463529913.png)
+<kbd>![](attachments/463529918/463529913.png)
 
 Most collections store their elements in simple lists. However, some of
 them are based on stacks, trees, graphs and other complex data
@@ -1226,7 +1226,7 @@ traversal of a tree. Yet the next day you might require breadth-first
 traversal. And the next week, you might need something else, like random
 access to the tree elements.
 
-![](attachments/463529918/463529914.png)
+<kbd>![](attachments/463529918/463529914.png)
 
 Adding more and more traversal algorithms to the collection gradually
 blurs its primary responsibility, which is efficient data storage.
@@ -1245,7 +1245,7 @@ specific collection classes.
 The main idea of the Iterator pattern is to extract the traversal
 behavior of a collection into a separate object called an *iterator*.
 
-![](attachments/463529918/463529915.png)
+<kbd>![](attachments/463529918/463529915.png)
 
 In addition to implementing the algorithm itself, an iterator object
 encapsulates all of the traversal details, such as the current position
@@ -1266,11 +1266,11 @@ change the collection or the client.
 
 ### Structure
 
-![](attachments/463529918/463529916.png)
+<kbd>![](attachments/463529918/463529916.png)
 
 ### Pseudocode
 
-![](attachments/463529918/463529917.png)
+<kbd>![](attachments/463529918/463529917.png)
 
 ### Real world Example
 
@@ -1661,7 +1661,7 @@ if __name__ == "__main__":
 restore the previous state of an object without revealing the details of
 its implementation.
 
-![](attachments/463529936/463529928.png)
+<kbd>![](attachments/463529936/463529928.png)
 
 ### Problem
 
@@ -1677,7 +1677,7 @@ Later, when a user decides to revert an action, the app fetches the
 latest snapshot from the history and uses it to restore the state of all
 objects.
 
-![](attachments/463529936/463529929.png)
+<kbd>![](attachments/463529936/463529929.png)
 
 Let’s think about those state snapshots. How exactly would you produce
 one? You’d probably need to go over all the fields in an object and copy
@@ -1695,7 +1695,7 @@ classes, or add or remove some of the fields. Sounds easy, but this
 would also require changing the classes responsible for copying the
 state of the affected objects.
 
-![](attachments/463529936/463529930.png)
+<kbd>![](attachments/463529936/463529930.png)
 
 But there’s more. Let’s consider the actual “snapshots” of the editor’s
 state. What data does it contain? At a bare minimum, it must contain the
@@ -1741,7 +1741,7 @@ fetching the snapshot’s metadata (creation time, the name of the
 performed operation, etc.), but not the original object’s state
 contained in the snapshot.
 
-![](attachments/463529936/463529931.png)
+<kbd>![](attachments/463529936/463529931.png)
 
 Such a restrictive policy lets you store mementos inside other objects,
 usually called *caretakers*. Since the caretaker works with the memento
@@ -1769,7 +1769,7 @@ The classic implementation of the pattern relies on support for nested
 classes, available in many popular programming languages (such as C++,
 C\#, and Java).
 
-![](attachments/463529936/463529932.png)
+<kbd>![](attachments/463529936/463529932.png)
 
 #### Implementation based on an intermediate interface
 
@@ -1777,7 +1777,7 @@ There’s an alternative implementation, suitable for programming
 languages that don’t support nested classes (yeah, PHP, I’m talking
 about you).
 
-![](attachments/463529936/463529933.png)
+<kbd>![](attachments/463529936/463529933.png)
 
 #### Implementation with even stricter encapsulation
 
@@ -1785,11 +1785,11 @@ There’s another implementation which is useful when you don’t want to
 leave even the slightest chance of other classes accessing the state of
 the originator through the memento.
 
-![](attachments/463529936/463529934.png)
+<kbd>![](attachments/463529936/463529934.png)
 
 ### Pseudocode
 
-![](attachments/463529936/463529935.png)
+<kbd>![](attachments/463529936/463529935.png)
 
 ### Real world example
 
@@ -2256,7 +2256,7 @@ if __name__ == "__main__":
 subscription mechanism to notify multiple objects about any events that
 happen to the object they’re observing.
 
-![](attachments/463529939/463530128.png)
+<kbd>![](attachments/463529939/463530128.png)
 
 ## Problem
 
@@ -2269,7 +2269,7 @@ The customer could visit the store every day and check product
 availability. But while the product is still en route, most of these
 trips would be pointless.
 
-![](attachments/463529939/463530129.png)
+<kbd>![](attachments/463529939/463530129.png)
 
 On the other hand, the store could send tons of emails (which might be
 considered spam) to all customers each time a new product becomes
@@ -2296,7 +2296,7 @@ mechanism consists of 1) an array field for storing a list of references
 to subscriber objects and 2) several public methods which allow adding
 subscribers to and removing them from that list.
 
-![](attachments/463529939/463530130.png)
+<kbd>![](attachments/463529939/463530130.png)
 
 Now, whenever an important event happens to the publisher, it goes over
 its subscribers and calls the specific notification method on their
@@ -2314,7 +2314,7 @@ interface. This interface should declare the notification method along
 with a set of parameters that the publisher can use to pass some
 contextual data along with the notification.
 
-![](attachments/463529939/463530131.png)
+<kbd>![](attachments/463529939/463530131.png)
 
 If your app has several different types of publishers and you want to
 make your subscribers compatible with all of them, you can go even
@@ -2325,11 +2325,11 @@ coupling to their concrete classes.
 
 ### Structure
 
-![](attachments/463529939/463530132.png)
+<kbd>![](attachments/463529939/463530132.png)
 
 ### Pseudocode
 
-![](attachments/463529939/463530133.png)
+<kbd>![](attachments/463529939/463530133.png)
 
 ### Real world example
 
@@ -2810,7 +2810,7 @@ Then it can be used as
 **Visitor** is a behavioral design pattern that lets you separate
 algorithms from the objects on which they operate.
 
-![](attachments/463529941/463530158.png)
+<kbd>![](attachments/463529941/463530158.png)
 
 ### Problem
 
@@ -2822,7 +2822,7 @@ others if there’s a road between the real objects that they represent.
 Under the hood, each node type is represented by its own class, while
 each specific node is an object.
 
-![](attachments/463529941/463530160.png)
+<kbd>![](attachments/463529941/463530160.png)
 
 At some point, you got a task to implement exporting the graph into XML
 format. At first, the job seemed pretty straightforward. You planned to
@@ -2837,7 +2837,7 @@ existing node classes. He said that the code was already in production
 and he didn’t want to risk breaking it because of a potential bug in
 your changes.
 
-![](attachments/463529941/463530161.png)
+<kbd>![](attachments/463529941/463530161.png)
 
 Besides, he questioned whether it makes sense to have the XML export
 code within the node classes. The primary job of these classes was to
@@ -2890,14 +2890,14 @@ should be executed.
 
 ### Structure
 
-![](attachments/463529941/463530162.png)
+<kbd>![](attachments/463529941/463530162.png)
 
 ### Pseudocode
 
 In this example, the **Visitor** pattern adds XML export support to the
 class hierarchy of geometric shapes.
 
-![](attachments/463529941/463530159.png)
+<kbd>![](attachments/463529941/463530159.png)
 
 ### Real world example
 
@@ -3503,7 +3503,7 @@ visitor i.e.
 family of algorithms, put each of them into a separate class, and make
 their objects interchangeable.
 
-![](attachments/463529943/463530145.png)
+<kbd>![](attachments/463529943/463530145.png)
 
 ### Problem
 
@@ -3525,7 +3525,7 @@ However, that was only the beginning. Later you planned to add route
 building for cyclists. And even later, another option for building
 routes through all of a city’s tourist attractions.
 
-![](attachments/463529943/463530146.png)
+<kbd>![](attachments/463529943/463530146.png)
 
 While from a business perspective the app was a success, the technical
 part caused you many headaches. Each time you added a new routing
@@ -3563,7 +3563,7 @@ This way the context becomes independent of concrete strategies, so you
 can add new algorithms or modify existing ones without changing the code
 of the context or other strategies.
 
-![](attachments/463529943/463530147.png)
+<kbd>![](attachments/463529943/463530147.png)
 
 In our navigation app, each routing algorithm can be extracted to its
 own class with a single `buildRoute` method. The method accepts an
@@ -3580,7 +3580,7 @@ another one.
 
 ### Structure
 
-![](attachments/463529943/463530148.png)
+<kbd>![](attachments/463529943/463530148.png)
 
 ### Pseudocode
 
@@ -3921,14 +3921,14 @@ And it can be used as
 behavior when its internal state changes. It appears as if the object
 changed its class.
 
-![](attachments/463529945/463530136.png)
+<kbd>![](attachments/463529945/463530136.png)
 
 ### Problem
 
 The State pattern is closely related to the concept of a [Finite-State
 Machine](https://en.wikipedia.org/wiki/Finite-state_machine).
 
-![](attachments/463529945/463530138.png)
+<kbd>![](attachments/463529945/463530138.png)
 
 The main idea is that, at any given moment, there’s a *finite* number of
 *states* which a program can be in. Within any unique state, the program
@@ -3947,7 +3947,7 @@ a little bit differently in each state:
     current user is an administrator.
   - In `Published`, it doesn’t do anything at all.
 
-![](attachments/463529945/463530139.png)
+<kbd>![](attachments/463529945/463530139.png)
 
 State machines are usually implemented with lots of conditional
 operators ( `if` or `switch` ) that select the appropriate behavior
@@ -3980,7 +3980,7 @@ called *context*, stores a reference to one of the state objects that
 represents its current state, and delegates all the state-related work
 to that object.
 
-![](attachments/463529945/463530140.png)
+<kbd>![](attachments/463529945/463530140.png)
 
 To transition the context into another state, replace the active state
 object with another object that represents that new state. This is
@@ -3995,7 +3995,7 @@ state to another, whereas strategies almost never know about each other.
 
 ### Structure
 
-![](attachments/463529945/463530141.png)
+<kbd>![](attachments/463529945/463530141.png)
 
 ### Pseudocode
 
@@ -4003,7 +4003,7 @@ In this example, the **State** pattern lets the same controls of the
 media player behave differently, depending on the current playback
 state.
 
-![](attachments/463529945/463530137.png)
+<kbd>![](attachments/463529945/463530137.png)
 
 The main object of the player is always linked to a state object that
 performs most of the work for the player. Some actions replace the
@@ -4447,7 +4447,7 @@ And then it can be used as
 skeleton of an algorithm in the superclass but lets subclasses override
 specific steps of the algorithm without changing its structure.
 
-![](attachments/463529947/463530151.png)
+<kbd>![](attachments/463529947/463530151.png)
 
 ### Problem
 
@@ -4460,7 +4460,7 @@ The first version of the app could work only with DOC files. In the
 following version, it was able to support CSV files. A month later, you
 “taught” it to extract data from PDF files.
 
-![](attachments/463529947/463530153.png)
+<kbd>![](attachments/463529947/463530153.png)
 
 At some point, you noticed that all three classes have a lot of similar
 code. While the code for dealing with various data formats was entirely
@@ -4490,7 +4490,7 @@ base class for all three parsing algorithms. This class defines a
 template method consisting of a series of calls to various
 document-processing steps.
 
-![](attachments/463529947/463530154.png)
+<kbd>![](attachments/463529947/463530154.png)
 
 At first, we can declare all steps `abstract`, forcing the subclasses to
 provide their own implementations for these methods. In our case,
@@ -4529,7 +4529,7 @@ different from others.
 
 ### Structure
 
-![](attachments/463529947/463530155.png)
+<kbd>![](attachments/463529947/463530155.png)
 
 ### Pseudocode
 
@@ -4537,7 +4537,7 @@ In this example, the **Template Method** pattern provides a “skeleton”
 for various branches of artificial intelligence in a simple strategy
 video game.
 
-![](attachments/463529947/463530152.png)
+<kbd>![](attachments/463529947/463530152.png)
 
 ### Real world example
 

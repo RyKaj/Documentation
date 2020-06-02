@@ -1,29 +1,12 @@
-<div id="main" class="aui-page-panel">
-
-<div id="main-header">
-
-<div id="breadcrumb-section">
-
-1.  [Information Technology](index.html)
-2.  [3.0 Sofware Development
-    Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
-3.  [Design Patterns](Design-Patterns_451820045.html)
-4.  [1.0 Design Pattern - Programming
-    Language](1.0-Design-Pattern---Programming-Language_451820065.html)
-5.  [Structural Design
-    Patterns](Structural-Design-Patterns_451820122.html)
-
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Software Development](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/README.md) | [Design Patterns](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/README.md) |
+------------
 
 
 # Information Technology : Proxy Pattern
 
-
-
-
-
 ## Proxy
 
-![](https://www.oodesign.com/images/structural/proxy-pattern.png)
+<kbd>![](https://www.oodesign.com/images/structural/proxy-pattern.png)</kbd>
 
 ### Intent
 
@@ -32,7 +15,7 @@ substitute or placeholder for another object. A proxy controls access to
 the original object, allowing you to perform something either before or
 after the request gets through to the original object.
 
-![](attachments/463530019/463530208.png)
+<kbd>![](./attachments/proxy/463530208.png)</kbd>
 
 ### Problem
 
@@ -40,7 +23,7 @@ Why would you want to control access to an object? Here is an example:
 you have a massive object that consumes a vast amount of system
 resources. You need it from time to time, but not always.
 
-![](attachments/463530019/463530210.png)
+<kbd>![](./attachments/proxy/463530210.png)</kbd>
 
 You could implement lazy initialization: create this object only when
 it’s actually needed. All of the object’s clients would need to
@@ -59,7 +42,7 @@ so that it passes the proxy object to all of the original object’s
 clients. Upon receiving a request from a client, the proxy creates a
 real service object and delegates all the work to it.
 
-![](attachments/463530019/463530211.png)
+<kbd>![](./attachments/proxy/463530211.png)</kbd>
 
 But what’s the benefit? If you need to execute something either before
 or after the primary logic of the class, the proxy lets you do this
@@ -69,7 +52,7 @@ expects a real service object.
 
 ### Structure
 
-![](attachments/463530019/463530212.png)
+<kbd>![](./attachments/proxy/463530212.png)</kbd>
 
 ### Pseudocode
 
@@ -77,7 +60,7 @@ This example illustrates how the **Proxy** pattern can help to introduce
 lazy initialization and caching to a 3rd-party YouTube integration
 library.
 
-![](attachments/463530019/463530209.png)
+<kbd>![](./attachments/proxy/463530209.png)</kbd>
 
 The library provides us with the video downloading class. However, it’s
 very inefficient. If the client application requests the same video
@@ -119,32 +102,30 @@ operations on the real object are invoked.
 
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>You can control the service object without clients knowing about it.</td>
-<td>The code may become more complicated since you need to introduce a lot of new classes.</td>
-</tr>
-<tr class="even">
-<td>You can manage the lifecycle of the service object when clients don’t care about it.</td>
-<td>The response from the service might get delayed</td>
-</tr>
-<tr class="odd">
-<td>The proxy works even if the service object isn’t ready or is not available.</td>
-<td><br />
-</td>
-</tr>
-<tr class="even">
-<td><em>Open/Closed Principle</em>. You can introduce new proxies without changing the service or clients.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+    <thead>
+        <tr class="header">
+            <th>Pros</th>
+            <th>Cons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td>You can control the service object without clients knowing about it.</td>
+            <td>The code may become more complicated since you need to introduce a lot of new classes.</td>
+        </tr>
+        <tr class="even">
+            <td>You can manage the lifecycle of the service object when clients don’t care about it.</td>
+            <td>The response from the service might get delayed</td>
+        </tr>
+        <tr class="odd">
+            <td>The proxy works even if the service object isn’t ready or is not available.</td>
+            <td><br /></td>
+        </tr>
+        <tr class="even">
+            <td><em>Open/Closed Principle</em>. You can introduce new proxies without changing the service or clients.</td>
+            <td><br /></td>
+        </tr>
+    </tbody>
 </table>
 
 
@@ -520,15 +501,4 @@ if __name__ == '__main__':
 # This Sales Manager will not talk to you whether he/she is busy or not
                 
 ```
-
-
-
-
-
-
-
-
-
-
-
 
