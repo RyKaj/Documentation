@@ -1,18 +1,6 @@
-<div id="main" class="aui-page-panel">
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Software Development](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/README.md) | [Design Patterns](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/README.md) |
 
-<div id="main-header">
-
-<div id="breadcrumb-section">
-
-1.  [Information Technology](index.html)
-2.  [3.0 Sofware Development
-    Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
-3.  [Design Patterns](Design-Patterns_451820045.html)
-4.  [1.0 Design Pattern - Programming
-    Language](1.0-Design-Pattern---Programming-Language_451820065.html)
-5.  [Behavioral Design
-    Patterns](Behavioral-Design-Patterns_451820124.html)
-
+------------
 
 # Information Technology : Memento Pattern
 
@@ -25,7 +13,7 @@
 restore the previous state of an object without revealing the details of
 its implementation.
 
-<kbd>![](attachments/463529936/463529928.png)</kbd>
+<kbd>![](./attachments/memento/463529928.png)</kbd>
 
 ### Problem
 
@@ -41,7 +29,7 @@ Later, when a user decides to revert an action, the app fetches the
 latest snapshot from the history and uses it to restore the state of all
 objects.
 
-<kbd>![](attachments/463529936/463529929.png)</kbd>
+<kbd>![](./attachments/memento/463529929.png)</kbd>
 
 Let’s think about those state snapshots. How exactly would you produce
 one? You’d probably need to go over all the fields in an object and copy
@@ -59,7 +47,7 @@ classes, or add or remove some of the fields. Sounds easy, but this
 would also require changing the classes responsible for copying the
 state of the affected objects.
 
-<kbd>![](attachments/463529936/463529930.png)</kbd>
+<kbd>![](./attachments/memento/463529930.png)</kbd>
 
 But there’s more. Let’s consider the actual “snapshots” of the editor’s
 state. What data does it contain? At a bare minimum, it must contain the
@@ -105,7 +93,7 @@ fetching the snapshot’s metadata (creation time, the name of the
 performed operation, etc.), but not the original object’s state
 contained in the snapshot.
 
-<kbd>![](attachments/463529936/463529931.png)</kbd>
+<kbd>![](./attachments/memento/463529931.png)</kbd>
 
 Such a restrictive policy lets you store mementos inside other objects,
 usually called *caretakers*. Since the caretaker works with the memento
@@ -133,7 +121,7 @@ The classic implementation of the pattern relies on support for nested
 classes, available in many popular programming languages (such as C++,
 C\#, and Java).
 
-<kbd>![](attachments/463529936/463529932.png)</kbd>
+<kbd>![](./attachments/memento/463529932.png)</kbd>
 
 #### Implementation based on an intermediate interface
 
@@ -141,7 +129,7 @@ There’s an alternative implementation, suitable for programming
 languages that don’t support nested classes (yeah, PHP, I’m talking
 about you).
 
-<kbd>![](attachments/463529936/463529933.png)</kbd>
+<kbd>![](./attachments/memento/463529933.png)</kbd>
 
 #### Implementation with even stricter encapsulation
 
@@ -149,11 +137,11 @@ There’s another implementation which is useful when you don’t want to
 leave even the slightest chance of other classes accessing the state of
 the originator through the memento.
 
-<kbd>![](attachments/463529936/463529934.png)</kbd>
+<kbd>![](./attachments/memento/463529934.png)</kbd>
 
 ### Pseudocode
 
-<kbd>![](attachments/463529936/463529935.png)</kbd>
+<kbd>![](./attachments/memento/463529935.png)</kbd>
 
 ### Real world example
 

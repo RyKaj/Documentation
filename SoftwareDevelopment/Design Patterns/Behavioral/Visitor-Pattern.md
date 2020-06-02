@@ -1,19 +1,5 @@
-<div id="main" class="aui-page-panel">
-
-<div id="main-header">
-
-<div id="breadcrumb-section">
-
-1.  [Information Technology](index.html)
-2.  [3.0 Sofware Development
-    Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
-3.  [Design Patterns](Design-Patterns_451820045.html)
-4.  [1.0 Design Pattern - Programming
-    Language](1.0-Design-Pattern---Programming-Language_451820065.html)
-5.  [Behavioral Design
-    Patterns](Behavioral-Design-Patterns_451820124.html)
-
-
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Software Development](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/README.md) | [Design Patterns](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/README.md) |
+------------
 
 # Information Technology : Visitor Pattern
 
@@ -25,7 +11,7 @@
 **Visitor** is a behavioral design pattern that lets you separate
 algorithms from the objects on which they operate.
 
-<kbd>![](attachments/463529941/463530158.png)</kbd>
+<kbd>![](./attachments/visitor/463530158.png)</kbd>
 
 ### Problem
 
@@ -37,7 +23,7 @@ others if there’s a road between the real objects that they represent.
 Under the hood, each node type is represented by its own class, while
 each specific node is an object.
 
-<kbd>![](attachments/463529941/463530160.png)</kbd>
+<kbd>![](./attachments/visitor/463530160.png)</kbd>
 
 At some point, you got a task to implement exporting the graph into XML
 format. At first, the job seemed pretty straightforward. You planned to
@@ -52,7 +38,7 @@ existing node classes. He said that the code was already in production
 and he didn’t want to risk breaking it because of a potential bug in
 your changes.
 
-<kbd>![](attachments/463529941/463530161.png)</kbd>
+<kbd>![](./attachments/visitor/463530161.png)</kbd>
 
 Besides, he questioned whether it makes sense to have the XML export
 code within the node classes. The primary job of these classes was to
@@ -105,14 +91,14 @@ should be executed.
 
 ### Structure
 
-<kbd>![](attachments/463529941/463530162.png)</kbd>
+<kbd>![](./attachments/visitor/463530162.png)</kbd>
 
 ### Pseudocode
 
 In this example, the **Visitor** pattern adds XML export support to the
 class hierarchy of geometric shapes.
 
-<kbd>![](attachments/463529941/463530159.png)</kbd>
+<kbd>![](./attachments/visitor/463530159.png)</kbd>
 
 ### Real world example
 
@@ -332,7 +318,6 @@ And for the usage
 > dolphin.Accept(speak);  // Tuut tutt tuutt!
 > dolphin.Accept(jump);   // Walked on water a little and disappeared
 > 
->                 
 > ```
 
 
@@ -708,6 +693,4 @@ visitor i.e.
 >     doctest.testmod()
 >                 
 > ```
-
-
 

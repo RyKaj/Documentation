@@ -1,19 +1,6 @@
-<div id="main" class="aui-page-panel">
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Software Development](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/README.md) | [Design Patterns](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/README.md) |
 
-<div id="main-header">
-
-<div id="breadcrumb-section">
-
-1.  [Information Technology](index.html)
-2.  [3.0 Sofware Development
-    Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
-3.  [Design Patterns](Design-Patterns_451820045.html)
-4.  [1.0 Design Pattern - Programming
-    Language](1.0-Design-Pattern---Programming-Language_451820065.html)
-5.  [Behavioral Design
-    Patterns](Behavioral-Design-Patterns_451820124.html)
-
-
+------------
 
 # Information Technology : Iterator Pattern
 
@@ -26,14 +13,14 @@ Iterator is a behavioral design pattern that lets you traverse elements
 of a collection without exposing its underlying representation (list,
 stack, tree, etc.).
 
-<kbd>![](attachments/463529918/463529912.png)</kbd>
+<kbd>![](./attachments/iterator/463529912.png)</kbd>
 
 ### Problem
 
 Collections are one of the most used data types in programming.
 Nonetheless, a collection is just a container for a group of objects.
 
-<kbd>![](attachments/463529918/463529913.png)</kbd>
+<kbd>![](./attachments/iterator/463529913.png)</kbd>
 
 Most collections store their elements in simple lists. However, some of
 them are based on stacks, trees, graphs and other complex data
@@ -52,7 +39,7 @@ traversal of a tree. Yet the next day you might require breadth-first
 traversal. And the next week, you might need something else, like random
 access to the tree elements.
 
-<kbd>![](attachments/463529918/463529914.png)</kbd>
+<kbd>![](./attachments/iterator/463529914.png)</kbd>
 
 Adding more and more traversal algorithms to the collection gradually
 blurs its primary responsibility, which is efficient data storage.
@@ -71,7 +58,7 @@ specific collection classes.
 The main idea of the Iterator pattern is to extract the traversal
 behavior of a collection into a separate object called an *iterator*.
 
-<kbd>![](attachments/463529918/463529915.png)</kbd>
+<kbd>![](./attachments/iterator/463529915.png)</kbd>
 
 In addition to implementing the algorithm itself, an iterator object
 encapsulates all of the traversal details, such as the current position
@@ -92,11 +79,11 @@ change the collection or the client.
 
 ### Structure
 
-<kbd>![](attachments/463529918/463529916.png)</kbd>
+<kbd>![](./attachments/iterator/463529916.png)</kbd>
 
 ### Pseudocode
 
-<kbd>![](attachments/463529918/463529917.png)</kbd>
+<kbd>![](./attachments/iterator/463529917.png)</kbd>
 
 ### Real world Example
 

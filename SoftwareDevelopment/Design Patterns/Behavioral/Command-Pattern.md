@@ -1,19 +1,5 @@
-<div id="main" class="aui-page-panel">
-
-<div id="main-header">
-
-<div id="breadcrumb-section">
-
-1.  [Information Technology](index.html)
-2.  [3.0 Sofware Development
-    Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
-3.  [Design Patterns](Design-Patterns_451820045.html)
-4.  [1.0 Design Pattern - Programming
-    Language](1.0-Design-Pattern---Programming-Language_451820065.html)
-5.  [Behavioral Design
-    Patterns](Behavioral-Design-Patterns_451820124.html)
-
-
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Software Development](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/README.md) | [Design Patterns](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/README.md) |
+------------
 
 # Information Technology : Command Pattern
 
@@ -27,7 +13,7 @@ stand-alone object that contains all information about the request. This
 transformation lets you parameterize methods with different requests,
 delay or queue a request’s execution, and support undoable operations.
 
-<kbd>![](attachments/463529910/463529901.png)</kbd>
+<kbd>![](./attachments/command/463529901.png)</kbd>
 
 ### Problem
 
@@ -37,7 +23,7 @@ the editor. You created a very neat `Button` class that can be used for
 buttons on the toolbar, as well as for generic buttons in various
 dialogs.
 
-<kbd>![](attachments/463529910/463529902.png)</kbd>
+<kbd>![](./attachments/command/463529902.png)</kbd>
 
 While all of these buttons look similar, they’re all supposed to do
 different things. Where would you put the code for the various click
@@ -45,7 +31,7 @@ handlers of these buttons? The simplest solution is to create tons of
 subclasses for each place where the button is used. These subclasses
 would contain the code that would have to be executed on a button click.
 
-<kbd>![](attachments/463529910/463529903.png)</kbd>
+<kbd>![](./attachments/command/463529903.png)</kbd>
 
 Before long, you realize that this approach is deeply flawed. First, you
 have an enormous number of subclasses, and that would be okay if you
@@ -53,7 +39,7 @@ weren’t risking breaking the code in these subclasses each time you
 modify the base `Button` class. Put simply, your GUI code has become
 awkwardly dependent on the volatile code of the business logic.
 
-<kbd>![](attachments/463529910/463529904.png)</kbd>
+<kbd>![](./attachments/command/463529904.png)</kbd>
 
 And here’s the ugliest part. Some operations, such as copying/pasting
 text, would need to be invoked from multiple places. For example, a user
@@ -84,7 +70,7 @@ In the code it might look like this: a GUI object calls a method of a
 business logic object, passing it some arguments. This process is
 usually described as one object sending another a *request*.
 
-<kbd>![](attachments/463529910/463529905.png)</kbd>
+<kbd>![](./attachments/command/463529905.png)</kbd>
 
 The Command pattern suggests that GUI objects shouldn’t send these
 requests directly. Instead, you should extract all of the request
@@ -97,7 +83,7 @@ objects. From now on, the GUI object doesn’t need to know what business
 logic object will receive the request and how it’ll be processed. The
 GUI object just triggers the command, which handles all the details.
 
-<kbd>![](attachments/463529910/463529906.png)</kbd>
+<kbd>![](./attachments/command/463529906.png)</kbd>
 
 The next step is to make your commands implement the same interface.
 Usually it has just a single execution method that takes no parameters.
@@ -113,7 +99,7 @@ have any parameters, how would we pass the request details to the
 receiver? It turns out the command should be either pre-configured with
 this data, or capable of getting it on its own.
 
-<kbd>![](attachments/463529910/463529907.png)</kbd>
+<kbd>![](./attachments/command/463529907.png)</kbd>
 
 Let’s get back to our text editor. After we apply the Command pattern,
 we no longer need all those button subclasses to implement various click
@@ -137,11 +123,11 @@ fraction of the benefits that the Command pattern can offer\!
 
 ### Structure
 
-<kbd>![](attachments/463529910/463529908.png)</kbd>
+<kbd>![](./attachments/command/463529908.png)</kbd>
 
 ### Pseudocode
 
-<kbd>![](attachments/463529910/463529909.png)</kbd>
+<kbd>![](./attachments/command/463529909.png)</kbd>
 
 ### Real world example
 

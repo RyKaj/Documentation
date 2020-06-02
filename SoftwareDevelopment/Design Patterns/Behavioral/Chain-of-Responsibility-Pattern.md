@@ -1,18 +1,4 @@
-<div id="main" class="aui-page-panel">
-
-<div id="main-header">
-
-<div id="breadcrumb-section">
-
-1.  [Information Technology](index.html)
-2.  [3.0 Sofware Development
-    Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
-3.  [Design Patterns](Design-Patterns_451820045.html)
-4.  [1.0 Design Pattern - Programming
-    Language](1.0-Design-Pattern---Programming-Language_451820065.html)
-5.  [Behavioral Design
-    Patterns](Behavioral-Design-Patterns_451820124.html)
-
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Software Development](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/README.md) | [Design Patterns](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/README.md) |
 
 
 # Information Technology : Chain of Responsibility Pattern
@@ -28,7 +14,7 @@ pass requests along a chain of handlers. Upon receiving a request, each
 handler decides either to process the request or to pass it to the next
 handler in the chain.
 
-<kbd>![](attachments/463529897/463529890.png)</kbd>
+<kbd>![](./attachments/chain/463529890.png)</kbd>
 
 ### Problem
 
@@ -44,7 +30,7 @@ user’s credentials. However, if those credentials aren’t correct and
 authentication fails, there’s no reason to proceed with any other
 checks.
 
-<kbd>![](attachments/463529897/463529891.png)</kbd>
+<kbd>![](./attachments/chain/463529891.png)</kbd>
 
 During the next few months, you implemented several more of those
 sequential checks.
@@ -60,7 +46,7 @@ sequential checks.
     data. Hence, you added another check which lets the request pass
     through to the system only if there’s no suitable cached response.
 
-<kbd>![](attachments/463529897/463529892.png)</kbd>
+<kbd>![](./attachments/chain/463529892.png)</kbd>
 
 ### Solution
 
@@ -86,7 +72,7 @@ Assuming the request contains the right data, all the handlers can
 execute their primary behavior, whether it’s authentication checks or
 caching.
 
-<kbd>![](attachments/463529897/463529893.png)</kbd>
+<kbd>![](./attachments/chain/463529893.png)</kbd>
 
 However, there’s a slightly different approach (and it’s a bit more
 canonical) in which, upon receiving a request, a handler decides whether
@@ -102,15 +88,15 @@ window. The event is processed by the first element in the chain that’s
 capable of handling it. This example is also noteworthy because it shows
 that a chain can always be extracted from an object tree.
 
-<kbd>![](attachments/463529897/463529894.png)</kbd>
+<kbd>![](./attachments/chain/463529894.png)</kbd>
 
 ### Structure
 
-<kbd>![](attachments/463529897/463529895.png)</kbd>
+<kbd>![](./attachments/chain/463529895.png)</kbd>
 
 ## Pseudocode
 
-<kbd>![](attachments/463529897/463529896.png)</kbd>
+<kbd>![](./attachments/chain/463529896.png)</kbd>
 
 ### Real world example
 

@@ -1,19 +1,5 @@
-<div id="main" class="aui-page-panel">
-
-<div id="main-header">
-
-<div id="breadcrumb-section">
-
-1.  [Information Technology](index.html)
-2.  [3.0 Sofware Development
-    Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
-3.  [Design Patterns](Design-Patterns_451820045.html)
-4.  [1.0 Design Pattern - Programming
-    Language](1.0-Design-Pattern---Programming-Language_451820065.html)
-5.  [Behavioral Design
-    Patterns](Behavioral-Design-Patterns_451820124.html)
-
-
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Software Development](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/README.md) | [Design Patterns](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/README.md) |
+------------
 
 # Information Technology : Strategy Pattern
 
@@ -27,7 +13,7 @@
 family of algorithms, put each of them into a separate class, and make
 their objects interchangeable.
 
-<kbd>![](attachments/463529943/463530145.png)</kbd>
+<kbd>![](./attachments/strategy/463530145.png)</kbd>
 
 ### Problem
 
@@ -49,7 +35,7 @@ However, that was only the beginning. Later you planned to add route
 building for cyclists. And even later, another option for building
 routes through all of a city’s tourist attractions.
 
-<kbd>![](attachments/463529943/463530146.png)</kbd>
+<kbd>![](./attachments/strategy/463530146.png)</kbd>
 
 While from a business perspective the app was a success, the technical
 part caused you many headaches. Each time you added a new routing
@@ -87,7 +73,7 @@ This way the context becomes independent of concrete strategies, so you
 can add new algorithms or modify existing ones without changing the code
 of the context or other strategies.
 
-<kbd>![](attachments/463529943/463530147.png)</kbd>
+<kbd>![](./attachments/strategy/463530147.png)</kbd>
 
 In our navigation app, each routing algorithm can be extracted to its
 own class with a single `buildRoute` method. The method accepts an
@@ -104,7 +90,7 @@ another one.
 
 ### Structure
 
-<kbd>![](attachments/463529943/463530148.png)</kbd>
+<kbd>![](./attachments/strategy/463530148.png)</kbd>
 
 ### Pseudocode
 

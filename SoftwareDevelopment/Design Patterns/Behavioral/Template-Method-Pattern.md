@@ -1,19 +1,5 @@
-<div id="main" class="aui-page-panel">
-
-<div id="main-header">
-
-<div id="breadcrumb-section">
-
-1.  [Information Technology](index.html)
-2.  [3.0 Sofware Development
-	Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
-3.  [Design Patterns](Design-Patterns_451820045.html)
-4.  [1.0 Design Pattern - Programming
-	Language](1.0-Design-Pattern---Programming-Language_451820065.html)
-5.  [Behavioral Design
-	Patterns](Behavioral-Design-Patterns_451820124.html)
-
-
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Software Development](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/README.md) | [Design Patterns](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/README.md) |
+------------
 
 # Information Technology : Template Method Pattern
 
@@ -26,7 +12,7 @@
 skeleton of an algorithm in the superclass but lets subclasses override
 specific steps of the algorithm without changing its structure.
 
-<kbd>![](attachments/463529947/463530151.png)</kbd>
+<kbd>![](./attachments/template/463530151.png)</kbd>
 
 ### Problem
 
@@ -39,7 +25,7 @@ The first version of the app could work only with DOC files. In the
 following version, it was able to support CSV files. A month later, you
 “taught” it to extract data from PDF files.
 
-<kbd>![](attachments/463529947/463530153.png)</kbd>
+<kbd>![](./attachments/template/463530153.png)</kbd>
 
 At some point, you noticed that all three classes have a lot of similar
 code. While the code for dealing with various data formats was entirely
@@ -69,7 +55,7 @@ base class for all three parsing algorithms. This class defines a
 template method consisting of a series of calls to various
 document-processing steps.
 
-<kbd>![](attachments/463529947/463530154.png)</kbd>
+<kbd>![](./attachments/template/463530154.png)</kbd>
 
 At first, we can declare all steps `abstract`, forcing the subclasses to
 provide their own implementations for these methods. In our case,
@@ -108,7 +94,7 @@ different from others.
 
 ### Structure
 
-<kbd>![](attachments/463529947/463530155.png)</kbd>
+<kbd>![](./attachments/template/463530155.png)</kbd>
 
 ### Pseudocode
 
@@ -116,7 +102,7 @@ In this example, the **Template Method** pattern provides a “skeleton”
 for various branches of artificial intelligence in a simple strategy
 video game.
 
-<kbd>![](attachments/463529947/463530152.png)</kbd>
+<kbd>![](./attachments/template/463530152.png)</kbd>
 
 ### Real world example
 

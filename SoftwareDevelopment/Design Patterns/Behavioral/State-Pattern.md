@@ -1,19 +1,5 @@
-<div id="main" class="aui-page-panel">
-
-<div id="main-header">
-
-<div id="breadcrumb-section">
-
-1.  [Information Technology](index.html)
-2.  [3.0 Sofware Development
-    Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
-3.  [Design Patterns](Design-Patterns_451820045.html)
-4.  [1.0 Design Pattern - Programming
-    Language](1.0-Design-Pattern---Programming-Language_451820065.html)
-5.  [Behavioral Design
-    Patterns](Behavioral-Design-Patterns_451820124.html)
-
-
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Software Development](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/README.md) | [Design Patterns](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/README.md) |
+------------
 
 # Information Technology : State Pattern
 
@@ -26,13 +12,13 @@
 behavior when its internal state changes. It appears as if the object
 changed its class.
 
-<kbd>![](attachments/463529945/463530136.png)</kbd>
+<kbd>![](./attachments/state/463530136.png)</kbd>
 
 ### Problem
 
 The State pattern is closely related to the concept of a [Finite-State Machine](https://en.wikipedia.org/wiki/Finite-state_machine).
 
-<kbd>![](attachments/463529945/463530138.png)</kbd>
+<kbd>![](./attachments/state/463530138.png)</kbd>
 
 The main idea is that, at any given moment, there’s a *finite* number of
 *states* which a program can be in. Within any unique state, the program
@@ -50,7 +36,7 @@ a little bit differently in each state:
   - In `Moderation`, it makes the document public, but only if the current user is an administrator.
   - In `Published`, it doesn’t do anything at all.
 
-<kbd>![](attachments/463529945/463530139.png)</kbd>
+<kbd>![](./attachments/state/463530139.png)</kbd>
 
 State machines are usually implemented with lots of conditional
 operators ( `if` or `switch` ) that select the appropriate behavior
@@ -83,7 +69,7 @@ called *context*, stores a reference to one of the state objects that
 represents its current state, and delegates all the state-related work
 to that object.
 
-<kbd>![](attachments/463529945/463530140.png)</kbd>
+<kbd>![](./attachments/state/463530140.png)</kbd>
 
 To transition the context into another state, replace the active state
 object with another object that represents that new state. This is
@@ -98,7 +84,7 @@ state to another, whereas strategies almost never know about each other.
 
 ### Structure
 
-<kbd>![](attachments/463529945/463530141.png)</kbd>
+<kbd>![](./attachments/state/463530141.png)</kbd>
 
 ### Pseudocode
 
@@ -106,7 +92,7 @@ In this example, the **State** pattern lets the same controls of the
 media player behave differently, depending on the current playback
 state.
 
-<kbd>![](attachments/463529945/463530137.png)</kbd>
+<kbd>![](./attachments/state/463530137.png)</kbd>
 
 The main object of the player is always linked to a state object that
 performs most of the work for the player. Some actions replace the
@@ -303,7 +289,7 @@ Then we have our editor
 >         console.log(this._transform(words))
 >     }
 > }
->                     
+>
 > ```
 
 And then it can be used as
@@ -331,7 +317,7 @@ And then it can be used as
 > // THIRD LINE
 > // fourth line
 > // fifth line
->                     
+>
 > ```
 
 
@@ -377,7 +363,7 @@ First of all we have our state interface and some state implementations
 >         echo $words;
 >     }
 > }
->                     
+>
 > ```
 
 Then we have our editor
@@ -404,7 +390,7 @@ Then we have our editor
 >         $this->state->write($words);
 >     }
 > }
->                     
+>
 > ```
 
 And then it can be used as
@@ -537,6 +523,6 @@ And then it can be used as
 > Scanning... Station is 1250 AM
 > Scanning... Station is 1380 AM
 > """
->                         
+> 
 > ```
 

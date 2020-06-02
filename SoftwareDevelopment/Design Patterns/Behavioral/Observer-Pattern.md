@@ -1,23 +1,7 @@
-<div id="main" class="aui-page-panel">
-
-<div id="main-header">
-
-<div id="breadcrumb-section">
-
-1.  [Information Technology](index.html)
-2.  [3.0 Sofware Development
-    Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
-3.  [Design Patterns](Design-Patterns_451820045.html)
-4.  [1.0 Design Pattern - Programming
-    Language](1.0-Design-Pattern---Programming-Language_451820065.html)
-5.  [Behavioral Design
-    Patterns](Behavioral-Design-Patterns_451820124.html)
-
-
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Software Development](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/README.md) | [Design Patterns](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/README.md) |
+------------
 
 # Information Technology : Observer Pattern
-
-
 
 ## Observer
 
@@ -27,7 +11,7 @@
 subscription mechanism to notify multiple objects about any events that
 happen to the object they’re observing.
 
-<kbd>![](attachments/463529939/463530128.png)</kbd>
+<kbd>![](./attachments/observer/463530128.png)</kbd>
 
 ## Problem
 
@@ -40,7 +24,7 @@ The customer could visit the store every day and check product
 availability. But while the product is still en route, most of these
 trips would be pointless.
 
-<kbd>![](attachments/463529939/463530129.png)</kbd>
+<kbd>![](./attachments/observer/463530129.png)</kbd>
 
 On the other hand, the store could send tons of emails (which might be
 considered spam) to all customers each time a new product becomes
@@ -67,7 +51,7 @@ mechanism consists of 1) an array field for storing a list of references
 to subscriber objects and 2) several public methods which allow adding
 subscribers to and removing them from that list.
 
-<kbd>![](attachments/463529939/463530130.png)</kbd>
+<kbd>![](./attachments/observer/463530130.png)</kbd>
 
 Now, whenever an important event happens to the publisher, it goes over
 its subscribers and calls the specific notification method on their
@@ -85,7 +69,7 @@ interface. This interface should declare the notification method along
 with a set of parameters that the publisher can use to pass some
 contextual data along with the notification.
 
-<kbd>![](attachments/463529939/463530131.png)</kbd>
+<kbd>![](./attachments/observer/463530131.png)</kbd>
 
 If your app has several different types of publishers and you want to
 make your subscribers compatible with all of them, you can go even
@@ -96,11 +80,11 @@ coupling to their concrete classes.
 
 ### Structure
 
-<kbd>![](attachments/463529939/463530132.png)</kbd>
+<kbd>![](./attachments/observer/463530132.png)</kbd>
 
 ### Pseudocode
 
-<kbd>![](attachments/463529939/463530133.png)</kbd>
+<kbd>![](./attachments/observer/463530133.png)</kbd>
 
 ### Real world example
 
@@ -459,9 +443,6 @@ Then it can be used as
 #### Python
 
 
-
-> 
-> 
 > ``` 
 > #!/usr/bin/env python
 > # -*- coding: utf-8 -*-
