@@ -23,7 +23,7 @@
 		-   [Prototype Pattern](./Design%20Patterns/Creational/Prototype-Pattern.md)
 		-   [Simple Factory Pattern](./Design%20Patterns/Creational/Simple-Factory-Pattern.md)
 		-   [Singleton Pattern](./Design%20Patterns/Creational/Singleton-Pattern.md)	
-	-   [Structural](/Design%20Patterns/Structural-Design-Patterns.md)
+	-   [Structural](./Design%20Patterns/Structural-Design-Patterns.md)
 		-   [Adapter Pattern](./Design%20Patterns/Structural/Adapter-Pattern.md)
 		-   [Bridge Pattern](./Design%20Patterns/Structural/Bridge-Pattern.md)
 		-   [Composite Pattern](./Design%20Patterns/Structural/Composite-Pattern.md)
