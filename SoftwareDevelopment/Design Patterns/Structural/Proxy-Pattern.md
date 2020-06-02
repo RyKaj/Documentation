@@ -13,13 +13,13 @@
 5.  [Structural Design
     Patterns](Structural-Design-Patterns_451820122.html)
 
-</div>
+
 
 # Information Technology : Proxy Pattern
 
-</div>
 
-<div id="content" class="view">
+
+
 
 ## Proxy
 
@@ -116,7 +116,7 @@ operations on the real object are invoked.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
 <thead>
@@ -147,7 +147,7 @@ operations on the real object are invoked.
 </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
@@ -156,7 +156,7 @@ interface and an implementation of door
 
 #### C\#
 
-<div>
+
 
 > 
 > 
@@ -234,7 +234,7 @@ And here is how it can be used
 >                     
 > ```
 
-</div>
+
 
 #### Java
 
@@ -312,11 +312,11 @@ proxy.enter(new Wizard("Brown wizard")); // Brown wizard is not allowed to enter
             
 ```
 
-</div>
+
 
 #### JavaScript
 
-<div>
+
 
 Taking our security door example from above. Firstly we have the door
 interface and an implementation of door
@@ -379,11 +379,11 @@ door.close() // Closing lab door
             
 ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 ``` 
 interface Door {
@@ -448,7 +448,7 @@ $door->close(); // Closing lab door
             
 ```
 
-</div>
+
 
 Yet another example would be some sort of data-mapper implementation.
 For example, I recently made an ODM (Object Data Mapper) for MongoDB
@@ -460,7 +460,7 @@ required class objects and the object was returned instead of `Cursor`.
 
 #### Python
 
-<div>
+
 
 ``` 
 #!/usr/bin/env python
@@ -521,14 +521,14 @@ if __name__ == '__main__':
                 
 ```
 
-</div>
 
-</div>
 
-<div id="footer" role="contentinfo">
 
-<div class="section footer-body">
 
-</div>
 
-</div>
+
+
+
+
+
+

@@ -13,13 +13,13 @@
 5.  [Structural Design
     Patterns](Structural-Design-Patterns_451820122.html)
 
-</div>
+
 
 # Information Technology : Adapter Pattern
 
-</div>
 
-<div id="content" class="view">
+
+
 
 ## Adapter
 
@@ -142,7 +142,7 @@ others without modifying their source code.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
 <thead>
@@ -164,13 +164,13 @@ others without modifying their source code.
 </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
 #### C\#
 
-<div>
+
 
 Consider a game where there is a hunter and he hunts lions.
 
@@ -233,11 +233,11 @@ And now the `WildDog` can be used in our game using `WildDogAdapter`.
 >                     
 > ```
 
-</div>
+
 
 #### Java
 
-<div>
+
 
 First we have interfaces `RowingBoat` and `FishingBoat`
 
@@ -310,11 +310,11 @@ And now the `Captain` can use the `FishingBoat` to escape the pirates.
 >                 
 > ```
 
-</div>
+
 
 #### JavaScript
 
-<div>
+
 
 Consider a game where there is a hunter and he hunts lions.
 
@@ -386,11 +386,11 @@ hunter.hunt(wildDogAdapter)
                 
 ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 Consider a game where there is a hunter and he hunts lions.
 
@@ -463,11 +463,11 @@ $hunter->hunt($wildDogAdapter);
                 
 ```
 
-</div>
+
 
 #### Python
 
-<div>
+
 
 ``` 
 #!/usr/bin/env python
@@ -588,16 +588,16 @@ if __name__ == "__main__":
                 
 ```
 
-</div>
 
-</div>
 
-</div>
 
-<div id="footer" role="contentinfo">
 
-<div class="section footer-body">
 
-</div>
 
-</div>
+
+
+
+
+
+
+

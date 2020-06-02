@@ -13,13 +13,10 @@
 5.  [Behavioral Design
     Patterns](Behavioral-Design-Patterns_451820124.html)
 
-</div>
+
 
 # Information Technology : Mediator Pattern
 
-</div>
-
-<div id="content" class="view">
 
 ## Mediator
 
@@ -30,7 +27,7 @@ dependencies between objects. The pattern restricts direct
 communications between the objects and forces them to collaborate only
 via a mediator object.
 
-![](attachments/463529926/463529920.png)
+<kbd>![](attachments/463529926/463529920.png)</kbd>
 
 ### Problem
 
@@ -38,7 +35,7 @@ Say you have a dialog for creating and editing customer profiles. It
 consists of various form controls such as text fields, checkboxes,
 buttons, etc.
 
-![](attachments/463529926/463529921.png)
+<kbd>![](attachments/463529926/463529921.png)</kbd>
 
 Some of the formBy having this logic implemented directly inside the
 code of the form elements you make these elements’ classes much harder
@@ -51,7 +48,7 @@ hidden text field for entering the dog’s name. Another example is the
 submit button that has to validate values of all fields before saving
 the data.
 
-![](attachments/463529926/463529922.png)
+<kbd>![](attachments/463529926/463529922.png)</kbd>
 
 ### Solution
 
@@ -68,7 +65,7 @@ may act as the mediator. Most likely, the dialog class is already aware
 of all of its sub-elements, so you won’t even need to introduce new
 dependencies into this class.
 
-![](attachments/463529926/463529923.png)
+<kbd>![](attachments/463529926/463529923.png)</kbd>
 
 The most significant change happens to the actual form elements. Let’s
 consider the submit button. Previously, each time a user clicked the
@@ -93,11 +90,11 @@ or reuse that class.
 
 ### Structure
 
-![](attachments/463529926/463529924.png)
+<kbd>![](attachments/463529926/463529924.png)</kbd>
 
 ### Pseudocode
 
-![](attachments/463529926/463529925.png)
+<kbd>![](attachments/463529926/463529925.png)</kbd>
 
 A general example would be when you talk to someone on your mobile
 phone, there is a network provider sitting between you and them and your
@@ -121,45 +118,38 @@ running behavior.
 
 ### Pros and Cons
 
-<div class="table-wrap">
-
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>Single Responsibility Principle</em>. You can extract the communications between various components into a single place, making it easier to comprehend and maintain.</td>
-<td>Over time a mediator can evolve into a <a href="https://refactoring.guru/antipatterns/god-object">God Object</a>.</td>
-</tr>
-<tr class="even">
-<td><em>Open/Closed Principle</em>. You can introduce new mediators without having to change the actual components.</td>
-<td><br />
-</td>
-</tr>
-<tr class="odd">
-<td>You can reduce coupling between various components of a program.</td>
-<td><br />
-</td>
-</tr>
-<tr class="even">
-<td>You can reuse individual components more easily.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+    <thead>
+        <tr class="header">
+            <th>Pros</th>
+            <th>Cons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td><em>Single Responsibility Principle</em>. You can extract the communications between various components into a single place, making it easier to comprehend and maintain.</td>
+            <td>Over time a mediator can evolve into a <a href="https://refactoring.guru/antipatterns/god-object">God Object</a>.</td>
+        </tr>
+        <tr class="even">
+            <td><em>Open/Closed Principle</em>. You can introduce new mediators without having to change the actual components.</td>
+            <td><br /></td>
+        </tr>
+        <tr class="odd">
+            <td>You can reduce coupling between various components of a program.</td>
+            <td><br /></td>
+        </tr>
+        <tr class="even">
+            <td>You can reuse individual components more easily.</td>
+            <td><br /></td>
+        </tr>
+    </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
 #### C\#
-
-<div>
 
 Here is the simplest example of a chat room (i.e. mediator) with users
 (i.e. colleagues) sending messages to each other.
@@ -182,7 +172,7 @@ First of all, we have the mediator i.e. the chat room
 >         Console.WriteLine($"{DateTime.Now.ToString("MMMM dd, H:mm")} [{user.GetName()}]:{message}");
 >     }
 > }
->                     
+>
 > ```
 
 Then we have our users i.e. colleagues
@@ -211,7 +201,7 @@ Then we have our users i.e. colleagues
 >         mChatRoom.ShowMessage(this, message);
 >     }
 > }
->                     
+>
 > ```
 
 And the usage
@@ -229,14 +219,14 @@ And the usage
 > 
 > //April 14, 20:05[John]:Hi there!
 > //April 14, 20:05[Jane]:Hey!
->                     
+>
 > ```
 
-</div>
+
 
 #### JavaScript
 
-<div>
+
 
 Here is the simplest example of a chat room (i.e. mediator) with users
 (i.e. colleagues) sending messages to each other.
@@ -293,11 +283,11 @@ jane.send('Hey!')
                 
 ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 Here is the simplest example of a chat room (i.e. mediator) with users
 (i.e. colleagues) sending messages to each other.
@@ -364,11 +354,11 @@ $jane->send('Hey!');
                 
 ```
 
-</div>
+
 
 #### Python
 
-<div>
+
 
 ``` 
 #!/usr/bin/env python
@@ -427,16 +417,3 @@ if __name__ == '__main__':
                 
 ```
 
-</div>
-
-</div>
-
-</div>
-
-<div id="footer" role="contentinfo">
-
-<div class="section footer-body">
-
-</div>
-
-</div>

@@ -6,22 +6,17 @@
 
 1.  [Information Technology](index.html)
 2.  [3.0 Sofware Development
-    Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
+	Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
 3.  [Design Patterns](Design-Patterns_451820045.html)
 4.  [1.0 Design Pattern - Programming
-    Language](1.0-Design-Pattern---Programming-Language_451820065.html)
+	Language](1.0-Design-Pattern---Programming-Language_451820065.html)
 5.  [Behavioral Design
-    Patterns](Behavioral-Design-Patterns_451820124.html)
+	Patterns](Behavioral-Design-Patterns_451820124.html)
 
-</div>
+
 
 # Information Technology : Template Method Pattern
 
-</div>
-
-<div id="content" class="view">
-
-<div class="page-metadata">
 
 ## Template Method
 
@@ -31,7 +26,7 @@
 skeleton of an algorithm in the superclass but lets subclasses override
 specific steps of the algorithm without changing its structure.
 
-![](attachments/463529947/463530151.png)
+<kbd>![](attachments/463529947/463530151.png)</kbd>
 
 ### Problem
 
@@ -44,7 +39,7 @@ The first version of the app could work only with DOC files. In the
 following version, it was able to support CSV files. A month later, you
 “taught” it to extract data from PDF files.
 
-![](attachments/463529947/463530153.png)
+<kbd>![](attachments/463529947/463530153.png)</kbd>
 
 At some point, you noticed that all three classes have a lot of similar
 code. While the code for dealing with various data formats was entirely
@@ -74,7 +69,7 @@ base class for all three parsing algorithms. This class defines a
 template method consisting of a series of calls to various
 document-processing steps.
 
-![](attachments/463529947/463530154.png)
+<kbd>![](attachments/463529947/463530154.png)</kbd>
 
 At first, we can declare all steps `abstract`, forcing the subclasses to
 provide their own implementations for these methods. In our case,
@@ -93,7 +88,7 @@ As you can see, we’ve got two types of steps:
 
   - *abstract steps* must be implemented by every subclass
   - *optional steps* already have some default implementation, but still
-    can be overridden if needed
+	can be overridden if needed
 
 There’s another type of step, called *hooks*. A hook is an optional step
 with an empty body. A template method would work even if a hook isn’t
@@ -113,7 +108,7 @@ different from others.
 
 ### Structure
 
-![](attachments/463529947/463530155.png)
+<kbd>![](attachments/463529947/463530155.png)</kbd>
 
 ### Pseudocode
 
@@ -121,7 +116,7 @@ In this example, the **Template Method** pattern provides a “skeleton”
 for various branches of artificial intelligence in a simple strategy
 video game.
 
-![](attachments/463529947/463530152.png)
+<kbd>![](attachments/463529947/463530152.png)</kbd>
 
 ### Real world example
 
@@ -153,21 +148,48 @@ structure.
 
 ### Pros and Cons
 
-<div class="table-wrap">
-
-| Pros                                                                                                                                                    | Cons                                                                                                               |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| You can let clients override only certain parts of a large algorithm, making them less affected by changes that happen to other parts of the algorithm. | Some clients may be limited by the provided skeleton of an algorithm.                                              |
-| You can pull the duplicate code into a superclass.                                                                                                      | You might violate the *Liskov Substitution Principle* by suppressing a default step implementation via a subclass. |
-|                                                                                                                                                         | Template methods tend to be harder to maintain the more steps they have.                                           |
-
-</div>
+<table>
+	<colgroup>
+		<col />
+		<col />
+	</colgroup>
+	<tbody>
+		<tr>
+			<th>Pros</th>
+			<th>Cons</th>
+		</tr>
+		<tr>
+			<td>
+				You can let clients override only certain parts of a large algorithm, making them less affected by changes that happen to other parts of the algorithm.
+			</td>
+			<td>
+				Some clients may be limited by the provided skeleton of an algorithm.
+			</td>
+		</tr>
+		<tr>
+			<td>
+				You can pull the duplicate code into a superclass.
+			</td>
+			<td>
+				You might violate the
+				<em>Liskov Substitution Principle</em>
+				by suppressing a default step implementation via a subclass.
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				Template methods tend to be harder to maintain the more steps they have.
+			</td>
+		</tr>
+	</tbody>
+</table>
 
 #### Programmatic Example
 
 #### C\#
 
-<div>
+
 
 Imagine we have a build tool that helps us test, lint, build, generate
 build reports (i.e. code coverage reports, linting report etc) and
@@ -195,7 +217,7 @@ build algorithm
 >     abstract public void Assemble();
 >     abstract public void Deploy();
 > }
->                         
+>
 > ```
 
 Then we can have our implementations
@@ -248,7 +270,7 @@ Then we can have our implementations
 >         Console.WriteLine("Running ios tests");
 >     }
 > }
->                         
+>
 > ```
 
 And then it can be used as
@@ -273,14 +295,14 @@ And then it can be used as
 > // Linting the ios code
 > // Assembling the ios build
 > // Deploying ios build to server
->                         
+>
 > ```
 
-</div>
+
 
 #### JavaScript
 
-<div>
+
 
 Imagine we have a build tool that helps us test, lint, build, generate
 build reports (i.e. code coverage reports, linting report etc) and
@@ -302,7 +324,7 @@ build algorithm
 >     }
 > }
 > 
->                         
+>
 > ```
 
 Then we can have our implementations
@@ -345,7 +367,7 @@ Then we can have our implementations
 >         console.log('Deploying ios build to server')
 >     }
 > }
->                         
+>
 > ```
 
 And then it can be used as
@@ -371,14 +393,14 @@ And then it can be used as
 > // Assembling the ios build
 > // Deploying ios build to server
 > 
->                         
+>
 > ```
 
-</div>
+
 
 #### Python
 
-<div>
+
 
 > 
 > 
@@ -459,21 +481,6 @@ And then it can be used as
 >     import doctest
 >     doctest.testmod()
 > 
->                         
+>
 > ```
 
-</div>
-
-</div>
-
-</div>
-
-<div id="footer" role="contentinfo">
-
-<div class="section footer-body">
-
-</div>
-
-</div>
-
-</div>

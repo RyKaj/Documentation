@@ -13,7 +13,7 @@
 5.  [Creational Design
     Patterns](Creational-Design-Patterns_451820114.html)
 
-</div>
+
 
 # Information Technology : Builder Pattern
 
@@ -189,7 +189,7 @@ constructor like below:
 
 #### C\#
 
-<div>
+
 
 ``` 
 public Burger(int size, bool cheese, bool pepperoni, bool lettuce, bool tomato) {
@@ -197,11 +197,11 @@ public Burger(int size, bool cheese, bool pepperoni, bool lettuce, bool tomato) 
                 
 ```
 
-</div>
+
 
 #### Java
 
-<div>
+
 
 ``` 
 public Hero(Profession profession, String name, HairType hairType, HairColor hairColor, Armor armor, Weapon weapon) {
@@ -209,11 +209,11 @@ public Hero(Profession profession, String name, HairType hairType, HairColor hai
                 
 ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 ``` 
 public function __construct($size, $cheese = true, $pepperoni = true, $tomato = false, $lettuce = true) {
@@ -222,7 +222,7 @@ public function __construct($size, $cheese = true, $pepperoni = true, $tomato = 
                 
 ```
 
-</div>
+
 
 As you can see; the number of constructor parameters can quickly get out
 of hand and it might become difficult to understand the arrangement of
@@ -232,7 +232,7 @@ constructor anti-pattern.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
 <thead>
@@ -259,7 +259,7 @@ constructor anti-pattern.
 </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
@@ -268,7 +268,7 @@ our burger that we want to make
 
 #### C\#
 
-<div>
+
 
 > 
 > 
@@ -366,11 +366,11 @@ And then it can be used as:
 >                     
 > ```
 
-</div>
+
 
 #### Java
 
-<div>
+
 
 ``` 
  public final class Hero {
@@ -446,11 +446,11 @@ Hero mage = new Hero.Builder(Profession.MAGE, "Riobard").withHairColor(HairColor
                 
 ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 ``` 
  class Burger
@@ -535,11 +535,11 @@ $burger = (new BurgerBuilder(14))
                 
 ```
 
-</div>
+
 
 #### Python
 
-<div>
+
 
 ``` 
 #!/usr/bin/python
@@ -656,7 +656,7 @@ if __name__ == "__main__":
                 
 ```
 
-</div>
+
 
 ### When to use?
 
@@ -666,14 +666,14 @@ that; factory pattern is to be used when the creation is a one step
 process while builder pattern is to be used when the creation is a multi
 step process.
 
-</div>
 
-</div>
 
-<div id="footer" role="contentinfo">
 
-<div class="section footer-body">
 
-</div>
 
-</div>
+
+
+
+
+
+

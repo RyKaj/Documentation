@@ -13,13 +13,10 @@
 5.  [Behavioral Design
     Patterns](Behavioral-Design-Patterns_451820124.html)
 
-</div>
+
 
 # Information Technology : Command Pattern
 
-</div>
-
-<div id="content" class="view">
 
 ## Command
 
@@ -30,7 +27,7 @@ stand-alone object that contains all information about the request. This
 transformation lets you parameterize methods with different requests,
 delay or queue a request’s execution, and support undoable operations.
 
-![](attachments/463529910/463529901.png)
+<kbd>![](attachments/463529910/463529901.png)</kbd>
 
 ### Problem
 
@@ -40,7 +37,7 @@ the editor. You created a very neat `Button` class that can be used for
 buttons on the toolbar, as well as for generic buttons in various
 dialogs.
 
-![](attachments/463529910/463529902.png)
+<kbd>![](attachments/463529910/463529902.png)</kbd>
 
 While all of these buttons look similar, they’re all supposed to do
 different things. Where would you put the code for the various click
@@ -48,7 +45,7 @@ handlers of these buttons? The simplest solution is to create tons of
 subclasses for each place where the button is used. These subclasses
 would contain the code that would have to be executed on a button click.
 
-![](attachments/463529910/463529903.png)
+<kbd>![](attachments/463529910/463529903.png)</kbd>
 
 Before long, you realize that this approach is deeply flawed. First, you
 have an enormous number of subclasses, and that would be okay if you
@@ -56,7 +53,7 @@ weren’t risking breaking the code in these subclasses each time you
 modify the base `Button` class. Put simply, your GUI code has become
 awkwardly dependent on the volatile code of the business logic.
 
-![](attachments/463529910/463529904.png)
+<kbd>![](attachments/463529910/463529904.png)</kbd>
 
 And here’s the ugliest part. Some operations, such as copying/pasting
 text, would need to be invoked from multiple places. For example, a user
@@ -87,7 +84,7 @@ In the code it might look like this: a GUI object calls a method of a
 business logic object, passing it some arguments. This process is
 usually described as one object sending another a *request*.
 
-![](attachments/463529910/463529905.png)
+<kbd>![](attachments/463529910/463529905.png)</kbd>
 
 The Command pattern suggests that GUI objects shouldn’t send these
 requests directly. Instead, you should extract all of the request
@@ -100,7 +97,7 @@ objects. From now on, the GUI object doesn’t need to know what business
 logic object will receive the request and how it’ll be processed. The
 GUI object just triggers the command, which handles all the details.
 
-![](attachments/463529910/463529906.png)
+<kbd>![](attachments/463529910/463529906.png)</kbd>
 
 The next step is to make your commands implement the same interface.
 Usually it has just a single execution method that takes no parameters.
@@ -116,7 +113,7 @@ have any parameters, how would we pass the request details to the
 receiver? It turns out the command should be either pre-configured with
 this data, or capable of getting it on its own.
 
-![](attachments/463529910/463529907.png)
+<kbd>![](attachments/463529910/463529907.png)</kbd>
 
 Let’s get back to our text editor. After we apply the Command pattern,
 we no longer need all those button subclasses to implement various click
@@ -140,11 +137,11 @@ fraction of the benefits that the Command pattern can offer\!
 
 ### Structure
 
-![](attachments/463529910/463529908.png)
+<kbd>![](attachments/463529910/463529908.png)</kbd>
 
 ### Pseudocode
 
-![](attachments/463529910/463529909.png)
+<kbd>![](attachments/463529910/463529909.png)</kbd>
 
 ### Real world example
 
@@ -170,50 +167,46 @@ and values for the method parameters.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>Single Responsibility Principle</em>. You can decouple classes that invoke operations from classes that perform these operations.</td>
-<td>The code may become more complicated since you’re introducing a whole new layer between senders and receivers.</td>
-</tr>
-<tr class="even">
-<td><em>Open/Closed Principle</em>. You can introduce new commands into the app without breaking existing client code.</td>
-<td><br />
-</td>
-</tr>
-<tr class="odd">
-<td>You can implement undo/redo.</td>
-<td><br />
-</td>
-</tr>
-<tr class="even">
-<td>You can implement deferred execution of operations.</td>
-<td><br />
-</td>
-</tr>
-<tr class="odd">
-<td>You can assemble a set of simple commands into a complex one.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+    <thead>
+    <tr class="header">
+        <th>Pros</th>
+        <th>Cons</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td><em>Single Responsibility Principle</em>. You can decouple classes that invoke operations from classes that perform these operations.</td>
+            <td>The code may become more complicated since you’re introducing a whole new layer between senders and receivers.</td>
+        </tr>
+        <tr class="even">
+            <td><em>Open/Closed Principle</em>. You can introduce new commands into the app without breaking existing client code.</td>
+            <td><br /></td>
+        </tr>
+        <tr class="odd">
+            <td>You can implement undo/redo.</td>
+            <td><br /></td>
+        </tr>
+        <tr class="even">
+            <td>You can implement deferred execution of operations.</td>
+            <td><br /></td>
+        </tr>
+        <tr class="odd">
+            <td>You can assemble a set of simple commands into a complex one.</td>
+            <td><br /></td>
+        </tr>
+    </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
 #### C\#
 
-<div>
+
 
 First of all we have the receiver that has the implementation of every
 action that could be performed
@@ -336,11 +329,11 @@ you execute them. If the final command is successfully executed, all
 good otherwise just iterate through the history and keep executing the
 `undo` on all the executed commands.
 
-</div>
+
 
 #### JavaScript
 
-<div>
+
 
 First of all we have the receiver that has the implementation of every
 action that could be performed
@@ -437,11 +430,11 @@ remote.submit(turnOff) // Darkness!
                 
 ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 First of all we have the receiver that has the implementation of every
 action that could be performed
@@ -634,16 +627,4 @@ if __name__ == "__main__":
                 
 ```
 
-</div>
 
-</div>
-
-</div>
-
-<div id="footer" role="contentinfo">
-
-<div class="section footer-body">
-
-</div>
-
-</div>

@@ -13,13 +13,10 @@
 5.  [Behavioral Design
     Patterns](Behavioral-Design-Patterns_451820124.html)
 
-</div>
+
 
 # Information Technology : State Pattern
 
-</div>
-
-<div id="content" class="view">
 
 ## State
 
@@ -29,14 +26,13 @@
 behavior when its internal state changes. It appears as if the object
 changed its class.
 
-![](attachments/463529945/463530136.png)
+<kbd>![](attachments/463529945/463530136.png)</kbd>
 
 ### Problem
 
-The State pattern is closely related to the concept of a [Finite-State
-Machine](https://en.wikipedia.org/wiki/Finite-state_machine).
+The State pattern is closely related to the concept of a [Finite-State Machine](https://en.wikipedia.org/wiki/Finite-state_machine).
 
-![](attachments/463529945/463530138.png)
+<kbd>![](attachments/463529945/463530138.png)</kbd>
 
 The main idea is that, at any given moment, there’s a *finite* number of
 *states* which a program can be in. Within any unique state, the program
@@ -51,11 +47,10 @@ You can also apply this approach to objects. Imagine that we have a
 a little bit differently in each state:
 
   - In `Draft`, it moves the document to moderation.
-  - In `Moderation`, it makes the document public, but only if the
-    current user is an administrator.
+  - In `Moderation`, it makes the document public, but only if the current user is an administrator.
   - In `Published`, it doesn’t do anything at all.
 
-![](attachments/463529945/463530139.png)
+<kbd>![](attachments/463529945/463530139.png)</kbd>
 
 State machines are usually implemented with lots of conditional
 operators ( `if` or `switch` ) that select the appropriate behavior
@@ -88,7 +83,7 @@ called *context*, stores a reference to one of the state objects that
 represents its current state, and delegates all the state-related work
 to that object.
 
-![](attachments/463529945/463530140.png)
+<kbd>![](attachments/463529945/463530140.png)</kbd>
 
 To transition the context into another state, replace the active state
 object with another object that represents that new state. This is
@@ -103,7 +98,7 @@ state to another, whereas strategies almost never know about each other.
 
 ### Structure
 
-![](attachments/463529945/463530141.png)
+<kbd>![](attachments/463529945/463530141.png)</kbd>
 
 ### Pseudocode
 
@@ -111,7 +106,7 @@ In this example, the **State** pattern lets the same controls of the
 media player behave differently, depending on the current playback
 state.
 
-![](attachments/463529945/463530137.png)
+<kbd>![](attachments/463529945/463530137.png)</kbd>
 
 The main object of the player is always linked to a state object that
 performs most of the work for the player. Some actions replace the
@@ -142,40 +137,38 @@ of methods defined in the pattern's interface.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>Single Responsibility Principle</em> . Organize the code related to particular states into separate classes.</td>
-<td>Applying the pattern can be overkill if a state machine has only a few states or rarely changes.</td>
-</tr>
-<tr class="even">
-<td><em>Open/Closed Principle</em> . Introduce new states without changing existing state classes or the context.</td>
-<td><br />
-</td>
-</tr>
-<tr class="odd">
-<td>Simplify the code of the context by eliminating bulky state machine conditionals.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+    <thead>
+        <tr class="header">
+            <th>Pros</th>
+            <th>Cons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td><em>Single Responsibility Principle</em> . Organize the code related to particular states into separate classes.</td>
+            <td>Applying the pattern can be overkill if a state machine has only a few states or rarely changes.</td>
+        </tr>
+        <tr class="even">
+            <td><em>Open/Closed Principle</em> . Introduce new states without changing existing state classes or the context.</td>
+            <td><br /></td>
+        </tr>
+        <tr class="odd">
+            <td>Simplify the code of the context by eliminating bulky state machine conditionals.</td>
+            <td><br /></td>
+        </tr>
+    </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
 #### C\#
 
-<div>
+
 
 Let's take an example of text editor, it lets you change the state of
 text that is typed i.e. if you have selected bold, it starts writing in
@@ -271,11 +264,11 @@ And then it can be used as
 >                     
 > ```
 
-</div>
+
 
 ### JavaScript
 
-<div>
+
 
 Let's take an example of text editor, it let's you change the state of
 text that is typed i.e. if you have selected bold, it starts writing in
@@ -341,11 +334,11 @@ And then it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 Let's take an example of text editor, it lets you change the state of
 text that is typed i.e. if you have selected bold, it starts writing in
@@ -438,13 +431,13 @@ And then it can be used as
 > // SECOND LINE
 > // THIRD LINE
 > // fourth line
-> // fifth line                                                                           
->                     
+> // fifth line
+>
 > ```
 
 #### Python
 
-<div>
+
 
 > 
 > 
@@ -547,18 +540,3 @@ And then it can be used as
 >                         
 > ```
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div id="footer" role="contentinfo">
-
-<div class="section footer-body">
-
-</div>
-
-</div>

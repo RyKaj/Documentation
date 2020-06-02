@@ -13,13 +13,11 @@
 5.  [Behavioral Design
     Patterns](Behavioral-Design-Patterns_451820124.html)
 
-</div>
+
 
 # Information Technology : Observer Pattern
 
-</div>
 
-<div id="content" class="view">
 
 ## Observer
 
@@ -29,7 +27,7 @@
 subscription mechanism to notify multiple objects about any events that
 happen to the object they’re observing.
 
-![](attachments/463529939/463530128.png)
+<kbd>![](attachments/463529939/463530128.png)</kbd>
 
 ## Problem
 
@@ -42,7 +40,7 @@ The customer could visit the store every day and check product
 availability. But while the product is still en route, most of these
 trips would be pointless.
 
-![](attachments/463529939/463530129.png)
+<kbd>![](attachments/463529939/463530129.png)</kbd>
 
 On the other hand, the store could send tons of emails (which might be
 considered spam) to all customers each time a new product becomes
@@ -69,7 +67,7 @@ mechanism consists of 1) an array field for storing a list of references
 to subscriber objects and 2) several public methods which allow adding
 subscribers to and removing them from that list.
 
-![](attachments/463529939/463530130.png)
+<kbd>![](attachments/463529939/463530130.png)</kbd>
 
 Now, whenever an important event happens to the publisher, it goes over
 its subscribers and calls the specific notification method on their
@@ -87,7 +85,7 @@ interface. This interface should declare the notification method along
 with a set of parameters that the publisher can use to pass some
 contextual data along with the notification.
 
-![](attachments/463529939/463530131.png)
+<kbd>![](attachments/463529939/463530131.png)</kbd>
 
 If your app has several different types of publishers and you want to
 make your subscribers compatible with all of them, you can go even
@@ -98,11 +96,11 @@ coupling to their concrete classes.
 
 ### Structure
 
-![](attachments/463529939/463530132.png)
+<kbd>![](attachments/463529939/463530132.png)</kbd>
 
 ### Pseudocode
 
-![](attachments/463529939/463530133.png)
+<kbd>![](attachments/463529939/463530133.png)</kbd>
 
 ### Real world example
 
@@ -124,35 +122,34 @@ by calling one of their methods.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
 <thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>Open/Closed Principle</em>. You can introduce new subscriber classes without having to change the publisher’s code (and vice versa if there’s a publisher interface).</td>
-<td>Subscribers are notified in random order.</td>
-</tr>
-<tr class="even">
-<td>You can establish relations between objects at runtime.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+    <tr class="header">
+        <th>Pros</th>
+        <th>Cons</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td><em>Open/Closed Principle</em>. You can introduce new subscriber classes without having to change the publisher’s code (and vice versa if there’s a publisher interface).</td>
+            <td>Subscribers are notified in random order.</td>
+        </tr>
+        <tr class="even">
+            <td>You can establish relations between objects at runtime.</td>
+            <td><br /></td>
+        </tr>
+    </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
 #### C\#
 
-<div>
+
 
 Translating our example from above. First of all we have job seekers
 that need to be notified for a job posting
@@ -285,11 +282,11 @@ Then it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### JavaScript
 
-<div>
+
 
 Translating our example from above. First of all we have job seekers
 that need to be notified for a job posting
@@ -360,11 +357,11 @@ Then it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 Translating our example from above. First of all we have job seekers
 that need to be notified for a job posting
@@ -457,11 +454,11 @@ Then it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### Python
 
-<div>
+
 
 > 
 > 
@@ -576,16 +573,3 @@ Then it can be used as
 >                     
 > ```
 
-</div>
-
-</div>
-
-</div>
-
-<div id="footer" role="contentinfo">
-
-<div class="section footer-body">
-
-</div>
-
-</div>

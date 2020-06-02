@@ -13,13 +13,10 @@
 5.  [Behavioral Design
     Patterns](Behavioral-Design-Patterns_451820124.html)
 
-</div>
+
 
 # Information Technology : Iterator Pattern
 
-</div>
-
-<div id="content" class="view">
 
 ## Iterator
 
@@ -29,14 +26,14 @@ Iterator is a behavioral design pattern that lets you traverse elements
 of a collection without exposing its underlying representation (list,
 stack, tree, etc.).
 
-![](attachments/463529918/463529912.png)
+<kbd>![](attachments/463529918/463529912.png)</kbd>
 
 ### Problem
 
 Collections are one of the most used data types in programming.
 Nonetheless, a collection is just a container for a group of objects.
 
-![](attachments/463529918/463529913.png)
+<kbd>![](attachments/463529918/463529913.png)</kbd>
 
 Most collections store their elements in simple lists. However, some of
 them are based on stacks, trees, graphs and other complex data
@@ -55,7 +52,7 @@ traversal of a tree. Yet the next day you might require breadth-first
 traversal. And the next week, you might need something else, like random
 access to the tree elements.
 
-![](attachments/463529918/463529914.png)
+<kbd>![](attachments/463529918/463529914.png)</kbd>
 
 Adding more and more traversal algorithms to the collection gradually
 blurs its primary responsibility, which is efficient data storage.
@@ -74,7 +71,7 @@ specific collection classes.
 The main idea of the Iterator pattern is to extract the traversal
 behavior of a collection into a separate object called an *iterator*.
 
-![](attachments/463529918/463529915.png)
+<kbd>![](attachments/463529918/463529915.png)</kbd>
 
 In addition to implementing the algorithm itself, an iterator object
 encapsulates all of the traversal details, such as the current position
@@ -95,11 +92,11 @@ change the collection or the client.
 
 ### Structure
 
-![](attachments/463529918/463529916.png)
+<kbd>![](attachments/463529918/463529916.png)</kbd>
 
 ### Pseudocode
 
-![](attachments/463529918/463529917.png)
+<kbd>![](attachments/463529918/463529917.png)</kbd>
 
 ### Real world Example
 
@@ -125,44 +122,42 @@ and thus cannot be decoupled.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>Single Responsibility Principle</em>. You can clean up the client code and the collections by extracting bulky traversal algorithms into separate classes.</td>
-<td>Applying the pattern can be an overkill if your app only works with simple collections.</td>
-</tr>
-<tr class="even">
-<td><em>Open/Closed Principle</em>. You can implement new types of collections and iterators and pass them to existing code without breaking anything.</td>
-<td>Using an iterator may be less efficient than going through elements of some specialized collections directly.</td>
-</tr>
-<tr class="odd">
-<td>You can iterate over the same collection in parallel because each iterator object contains its own iteration state.</td>
-<td><br />
-</td>
-</tr>
-<tr class="even">
-<td>For the same reason, you can delay an iteration and continue it when needed.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+    <thead>
+        <tr class="header">
+            <th>Pros</th>
+            <th>Cons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td><em>Single Responsibility Principle</em>. You can clean up the client code and the collections by extracting bulky traversal algorithms into separate classes.</td>
+            <td>Applying the pattern can be an overkill if your app only works with simple collections.</td>
+        </tr>
+        <tr class="even">
+            <td><em>Open/Closed Principle</em>. You can implement new types of collections and iterators and pass them to existing code without breaking anything.</td>
+            <td>Using an iterator may be less efficient than going through elements of some specialized collections directly.</td>
+        </tr>
+        <tr class="odd">
+            <td>You can iterate over the same collection in parallel because each iterator object contains its own iteration state.</td>
+            <td><br /></td>
+        </tr>
+        <tr class="even">
+            <td>For the same reason, you can delay an iteration and continue it when needed.</td>
+            <td><br /></td>
+        </tr>
+    </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
 #### C\#
 
-<div>
+
 
 First of all we have RadioStation
 
@@ -183,7 +178,7 @@ First of all we have RadioStation
 >         return mFrequency;
 >     }
 > }
->                     
+>
 > ```
 
 Then we have our iterator
@@ -228,7 +223,7 @@ Then we have our iterator
 >         }
 >     }
 > }
->                     
+> 
 > ```
 
 And then it can be used as
@@ -258,11 +253,11 @@ And then it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### JavaScript
 
-<div>
+
 
 Translating our radio stations example from above. First of all we have
 `RadioStation`
@@ -325,11 +320,11 @@ And then it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 First of all we have RadioStation
 
@@ -430,11 +425,11 @@ $stationList->removeStation(new RadioStation(89)); // Will remove station 89
                 
 ```
 
-</div>
+
 
 #### Python
 
-<div>
+
 
 ``` 
 #!/usr/bin/env python
@@ -484,16 +479,3 @@ if __name__ == "__main__":
                 
 ```
 
-</div>
-
-</div>
-
-</div>
-
-<div id="footer" role="contentinfo">
-
-<div class="section footer-body">
-
-</div>
-
-</div>

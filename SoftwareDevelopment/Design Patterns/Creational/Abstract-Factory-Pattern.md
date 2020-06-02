@@ -13,13 +13,13 @@
 5.  [Creational Design
     Patterns](Creational-Design-Patterns_451820114.html)
 
-</div>
+
 
 # Information Technology : Abstract Factory Pattern
 
-</div>
 
-<div id="content" class="view">
+
+
 
 ## Abstract Factory
 
@@ -171,7 +171,7 @@ concrete classes
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
 <thead>
@@ -203,7 +203,7 @@ concrete classes
 </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
@@ -212,7 +212,7 @@ interface and some implementation for it
 
 #### C\#
 
-<div>
+
 
 > 
 > 
@@ -332,11 +332,11 @@ And then it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### Java
 
-<div>
+
 
 ``` 
 public interface Castle {
@@ -470,11 +470,11 @@ public static void main(String[] args) {
                 
 ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 ``` 
 interface Door
@@ -598,11 +598,11 @@ and the `  wooden door  ` also iron door factory has encapsulated the
 ` iron door  ` and `  welder  ` . And thus it had helped us make sure
 that for each of the created door, we do not get a wrong fitting expert.
 
-</div>
+
 
 #### Python
 
-<div>
+
 
 ``` 
 #!/usr/bin/env python
@@ -714,21 +714,21 @@ if __name__ == "__main__":
                 
 ```
 
-</div>
+
 
 ### When to use?
 
 When there are interrelated dependencies with not-that-simple creation
 logic involved
 
-</div>
 
-</div>
 
-<div id="footer" role="contentinfo">
 
-<div class="section footer-body">
 
-</div>
 
-</div>
+
+
+
+
+
+

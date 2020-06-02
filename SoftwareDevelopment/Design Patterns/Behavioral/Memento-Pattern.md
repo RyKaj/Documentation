@@ -13,13 +13,9 @@
 5.  [Behavioral Design
     Patterns](Behavioral-Design-Patterns_451820124.html)
 
-</div>
 
 # Information Technology : Memento Pattern
 
-</div>
-
-<div id="content" class="view">
 
 ## Memento
 
@@ -29,7 +25,7 @@
 restore the previous state of an object without revealing the details of
 its implementation.
 
-![](attachments/463529936/463529928.png)
+<kbd>![](attachments/463529936/463529928.png)</kbd>
 
 ### Problem
 
@@ -45,7 +41,7 @@ Later, when a user decides to revert an action, the app fetches the
 latest snapshot from the history and uses it to restore the state of all
 objects.
 
-![](attachments/463529936/463529929.png)
+<kbd>![](attachments/463529936/463529929.png)</kbd>
 
 Let’s think about those state snapshots. How exactly would you produce
 one? You’d probably need to go over all the fields in an object and copy
@@ -63,7 +59,7 @@ classes, or add or remove some of the fields. Sounds easy, but this
 would also require changing the classes responsible for copying the
 state of the affected objects.
 
-![](attachments/463529936/463529930.png)
+<kbd>![](attachments/463529936/463529930.png)</kbd>
 
 But there’s more. Let’s consider the actual “snapshots” of the editor’s
 state. What data does it contain? At a bare minimum, it must contain the
@@ -109,7 +105,7 @@ fetching the snapshot’s metadata (creation time, the name of the
 performed operation, etc.), but not the original object’s state
 contained in the snapshot.
 
-![](attachments/463529936/463529931.png)
+<kbd>![](attachments/463529936/463529931.png)</kbd>
 
 Such a restrictive policy lets you store mementos inside other objects,
 usually called *caretakers*. Since the caretaker works with the memento
@@ -137,7 +133,7 @@ The classic implementation of the pattern relies on support for nested
 classes, available in many popular programming languages (such as C++,
 C\#, and Java).
 
-![](attachments/463529936/463529932.png)
+<kbd>![](attachments/463529936/463529932.png)</kbd>
 
 #### Implementation based on an intermediate interface
 
@@ -145,7 +141,7 @@ There’s an alternative implementation, suitable for programming
 languages that don’t support nested classes (yeah, PHP, I’m talking
 about you).
 
-![](attachments/463529936/463529933.png)
+<kbd>![](attachments/463529936/463529933.png)</kbd>
 
 #### Implementation with even stricter encapsulation
 
@@ -153,11 +149,11 @@ There’s another implementation which is useful when you don’t want to
 leave even the slightest chance of other classes accessing the state of
 the originator through the memento.
 
-![](attachments/463529936/463529934.png)
+<kbd>![](attachments/463529936/463529934.png)</kbd>
 
 ### Pseudocode
 
-![](attachments/463529936/463529935.png)
+<kbd>![](attachments/463529936/463529935.png)</kbd>
 
 ### Real world example
 
@@ -180,39 +176,38 @@ Usually useful when you need to provide some sort of undo functionality.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>You can produce snapshots of the object’s state without violating its encapsulation.</td>
-<td>The app might consume lots of RAM if clients create mementos too often.</td>
-</tr>
-<tr class="even">
-<td>You can simplify the originator’s code by letting the caretaker maintain the history of the originator’s state.</td>
-<td>Caretakers should track the originator’s lifecycle to be able to destroy obsolete mementos.</td>
-</tr>
-<tr class="odd">
-<td><br />
-</td>
-<td>Most dynamic programming languages, such as PHP, Python and JavaScript, can’t guarantee that the state within the memento stays untouched.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr class="header">
+            <th>Pros</th>
+            <th>Cons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td>You can produce snapshots of the object’s state without violating its encapsulation.</td>
+            <td>The app might consume lots of RAM if clients create mementos too often.</td>
+        </tr>
+        <tr class="even">
+            <td>You can simplify the originator’s code by letting the caretaker maintain the history of the originator’s state.</td>
+            <td>Caretakers should track the originator’s lifecycle to be able to destroy obsolete mementos.</td>
+        </tr>
+        <tr class="odd">
+            <td><br /></td>
+            <td>Most dynamic programming languages, such as PHP, Python and JavaScript, can’t guarantee that the state within the memento stays untouched.</td>
+        </tr>
+    </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
 ### C\#
 
-<div>
+
 
 Lets take an example of text editor which keeps saving the state from
 time to time and that you can restore if you want.
@@ -304,11 +299,11 @@ And then it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### JavaScript
 
-<div>
+
 
 Lets take an example of text editor which keeps saving the state from
 time to time and that you can restore if you want.
@@ -382,11 +377,11 @@ console.log(editor.getContent()) // This is the first sentence. This is second.
                 
 ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 Lets take an example of text editor which keeps saving the state from
 time to time and that you can restore if you want.
@@ -468,11 +463,11 @@ $editor->getContent(); // This is the first sentence. This is second.
                 
 ```
 
-</div>
+
 
 #### Python
 
-<div>
+
 
 ``` 
 #!/usr/bin/env python
@@ -618,16 +613,4 @@ if __name__ == "__main__":
                 
 ```
 
-</div>
 
-</div>
-
-</div>
-
-<div id="footer" role="contentinfo">
-
-<div class="section footer-body">
-
-</div>
-
-</div>

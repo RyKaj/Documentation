@@ -11,13 +11,13 @@
 4.  [1.0 Design Pattern - Programming
     Language](1.0-Design-Pattern---Programming-Language_451820065.html)
 
-</div>
+
 
 # Information Technology : Creational Design Patterns
 
-</div>
 
-<div id="content" class="view">
+
+
 
 ![Example of Abstract
 Factory](https://sourcemaking.com/files/v2/content/patterns/Abstract_Factory-preview.png)
@@ -194,7 +194,7 @@ constructor like below:
 
 #### C\#
 
-<div>
+
 
 ``` 
 public Burger(int size, bool cheese, bool pepperoni, bool lettuce, bool tomato) {
@@ -202,11 +202,11 @@ public Burger(int size, bool cheese, bool pepperoni, bool lettuce, bool tomato) 
                 
 ```
 
-</div>
+
 
 #### Java
 
-<div>
+
 
 ``` 
 public Hero(Profession profession, String name, HairType hairType, HairColor hairColor, Armor armor, Weapon weapon) {
@@ -214,11 +214,11 @@ public Hero(Profession profession, String name, HairType hairType, HairColor hai
             
 ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 ``` 
 public function __construct($size, $cheese = true, $pepperoni = true, $tomato = false, $lettuce = true)
@@ -227,7 +227,7 @@ public function __construct($size, $cheese = true, $pepperoni = true, $tomato = 
                 
 ```
 
-</div>
+
 
 As you can see; the number of constructor parameters can quickly get out
 of hand and it might become difficult to understand the arrangement of
@@ -237,7 +237,7 @@ constructor anti-pattern.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
 <thead>
@@ -264,7 +264,7 @@ constructor anti-pattern.
 </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
@@ -273,7 +273,7 @@ our burger that we want to make
 
 #### C\#
 
-<div>
+
 
 > 
 > 
@@ -368,11 +368,11 @@ And then it can be used as:
 >                 
 > ```
 
-</div>
+
 
 #### Java
 
-<div>
+
 
 ``` 
 public final class Hero {
@@ -443,11 +443,11 @@ Hero mage = new Hero.Builder(Profession.MAGE, "Riobard").withHairColor(HairColor
                 
 ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 ``` 
 class Burger
@@ -531,11 +531,11 @@ $burger = (new BurgerBuilder(14))
                 
 ```
 
-</div>
+
 
 #### Python
 
-<div>
+
 
 ``` 
 #!/usr/bin/python
@@ -644,7 +644,7 @@ if __name__ == "__main__":
                 
 ```
 
-</div>
+
 
 ### When to use?
 
@@ -804,7 +804,7 @@ concrete classes
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
 <thead>
@@ -836,7 +836,7 @@ concrete classes
 </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
@@ -845,7 +845,7 @@ interface and some implementation for it
 
 #### C\#
 
-<div>
+
 
 > 
 > 
@@ -965,11 +965,11 @@ And then it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### Java
 
-<div>
+
 
 ``` 
 public interface Castle {
@@ -1103,11 +1103,11 @@ public static void main(String[] args) {
                 
 ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 ``` 
 interface Door
@@ -1231,11 +1231,11 @@ and the `  wooden door  ` also iron door factory has encapsulated the
 ` iron door  ` and `  welder  ` . And thus it had helped us make sure
 that for each of the created door, we do not get a wrong fitting expert.
 
-</div>
+
 
 #### Python
 
-<div>
+
 
 ``` 
 #!/usr/bin/env python
@@ -1347,7 +1347,7 @@ if __name__ == "__main__":
                 
 ```
 
-</div>
+
 
 ### When to use?
 
@@ -1656,7 +1656,7 @@ interviewer interface and some implementations for it
 
 #### C\#
 
-<div>
+
 
 > 
 > 
@@ -1740,11 +1740,11 @@ and then it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### Java
 
-<div>
+
 
 ``` 
 public interface Blacksmith {
@@ -1776,11 +1776,11 @@ blacksmith.manufactureWeapon(WeaponType.AXE);
                 
 ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 ``` 
 interface Interviewer
@@ -1856,11 +1856,11 @@ $marketingManager->takeInterview(); // Output: Asking about community building.
                 
 ```
 
-</div>
+
 
 #### Python
 
-<div>
+
 
 ``` 
 #!/usr/bin/env python
@@ -1940,9 +1940,9 @@ if __name__ == "__main__":
                 
 ```
 
-</div>
 
-</div>
+
+
 
 ### When to use?
 
@@ -2047,7 +2047,7 @@ creating an object from scratch and setting it up.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
 <thead>
@@ -2079,7 +2079,7 @@ creating an object from scratch and setting it up.
 </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
@@ -2125,11 +2125,11 @@ Then it can be cloned like below
 >                 
 > ```
 
-</div>
+
 
 #### Java
 
-<div>
+
 
 In Java, it can be easily done by implementing `Cloneable` and
 overriding `clone` from `Object`
@@ -2161,11 +2161,11 @@ System.out.println(cloned.getName()); // Dolly
             
 ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 ``` 
 class Sheep
@@ -2297,7 +2297,7 @@ if __name__ == '__main__':
             
 ```
 
-</div>
+
 
 ### When to use?
 
@@ -2403,7 +2403,7 @@ plus mocking the singleton could be difficult.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
 <thead>
@@ -2433,7 +2433,7 @@ plus mocking the singleton could be difficult.
 </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
@@ -2442,7 +2442,7 @@ disable extension and create a static variable to house the instance
 
 #### C\#
 
-<div>
+
 
 > 
 > 
@@ -2480,11 +2480,11 @@ Then in order to use
 >                     
 > ```
 
-</div>
+
 
 #### Java
 
-<div>
+
 
 ``` 
 public enum EnumIvoryTower {
@@ -2502,11 +2502,11 @@ assertEquals(enumIvoryTower1, enumIvoryTower2); // true
                 
 ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 ``` 
 final class President
@@ -2551,11 +2551,11 @@ var_dump($president1 === $president2); // true
                 
 ```
 
-</div>
+
 
 #### Python
 
-<div>
+
 
 ``` 
 #!/usr/bin/env python
@@ -2651,12 +2651,12 @@ if __name__ == '__main__':
                 
 ```
 
-</div>
 
-<div id="footer" role="contentinfo">
 
-<div class="section footer-body">
 
-</div>
 
-</div>
+
+
+
+
+

@@ -13,13 +13,11 @@
 5.  [Behavioral Design
     Patterns](Behavioral-Design-Patterns_451820124.html)
 
-</div>
+
 
 # Information Technology : Strategy Pattern
 
-</div>
 
-<div id="content" class="view">
 
 ## Strategy
 
@@ -29,7 +27,7 @@
 family of algorithms, put each of them into a separate class, and make
 their objects interchangeable.
 
-![](attachments/463529943/463530145.png)
+<kbd>![](attachments/463529943/463530145.png)</kbd>
 
 ### Problem
 
@@ -51,7 +49,7 @@ However, that was only the beginning. Later you planned to add route
 building for cyclists. And even later, another option for building
 routes through all of a city’s tourist attractions.
 
-![](attachments/463529943/463530146.png)
+<kbd>![](attachments/463529943/463530146.png)</kbd>
 
 While from a business perspective the app was a success, the technical
 part caused you many headaches. Each time you added a new routing
@@ -89,7 +87,7 @@ This way the context becomes independent of concrete strategies, so you
 can add new algorithms or modify existing ones without changing the code
 of the context or other strategies.
 
-![](attachments/463529943/463530147.png)
+<kbd>![](attachments/463529943/463530147.png)</kbd>
 
 In our navigation app, each routing algorithm can be extracted to its
 own class with a single `buildRoute` method. The method accepts an
@@ -106,7 +104,7 @@ another one.
 
 ### Structure
 
-![](attachments/463529943/463530148.png)
+<kbd>![](attachments/463529943/463530148.png)</kbd>
 
 ### Pseudocode
 
@@ -133,37 +131,36 @@ algorithm's behavior to be selected at runtime.
 
 #### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
-<thead>
-<tr class="header">
-<th>Pro</th>
-<th>Con</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>You can swap algorithms used inside an object at runtime.</td>
-<td>If you only have a couple of algorithms and they rarely change, there’s no real reason to overcomplicate the program with new classes and interfaces that come along with the pattern.</td>
-</tr>
-<tr class="even">
-<td>You can isolate the implementation details of an algorithm from the code that uses it.</td>
-<td>Clients must be aware of the differences between strategies to be able to select a proper one.</td>
-</tr>
-<tr class="odd">
-<td>You can replace inheritance with composition.</td>
-<td>A lot of modern programming languages have functional type support that lets you implement different versions of an algorithm inside a set of anonymous functions. Then you could use these functions exactly as you’d have used the strategy objects, but without bloating your code with extra classes and interfaces.</td>
-</tr>
-<tr class="even">
-<td><em>Open/Closed Principle</em>. You can introduce new strategies without having to change the context.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+    <thead>
+        <tr class="header">
+            <th>Pro</th>
+            <th>Con</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td>You can swap algorithms used inside an object at runtime.</td>
+            <td>If you only have a couple of algorithms and they rarely change, there’s no real reason to overcomplicate the program with new classes and interfaces that come along with the pattern.</td>
+        </tr>
+        <tr class="even">
+            <td>You can isolate the implementation details of an algorithm from the code that uses it.</td>
+            <td>Clients must be aware of the differences between strategies to be able to select a proper one.</td>
+        </tr>
+        <tr class="odd">
+            <td>You can replace inheritance with composition.</td>
+            <td>A lot of modern programming languages have functional type support that lets you implement different versions of an algorithm inside a set of anonymous functions. Then you could use these functions exactly as you’d have used the strategy objects, but without bloating your code with extra classes and interfaces.</td>
+        </tr>
+        <tr class="even">
+            <td><em>Open/Closed Principle</em>. You can introduce new strategies without having to change the context.</td>
+            <td><br /></td>
+        </tr>
+    </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
@@ -172,7 +169,7 @@ interface and different strategy implementations
 
 #### C\#
 
-<div>
+
 
 > 
 > 
@@ -240,11 +237,11 @@ And it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### JavaScript
 
-<div>
+
 
 Translating our example from above, we can easily implement this
 strategy in javascript using its feature of first class functions.
@@ -300,11 +297,11 @@ And it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 > 
 > 
@@ -376,11 +373,11 @@ And it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### Python
 
-<div>
+
 
 > 
 > 
@@ -439,16 +436,4 @@ And it can be used as
 >                     
 > ```
 
-</div>
 
-</div>
-
-</div>
-
-<div id="footer" role="contentinfo">
-
-<div class="section footer-body">
-
-</div>
-
-</div>

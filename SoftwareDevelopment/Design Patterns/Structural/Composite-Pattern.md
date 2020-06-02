@@ -13,13 +13,13 @@
 5.  [Structural Design
     Patterns](Structural-Design-Patterns_451820122.html)
 
-</div>
+
 
 # Information Technology : Composite Pattern
 
-</div>
 
-<div id="content" class="view">
+
+
 
 ## Composite
 
@@ -124,7 +124,7 @@ treat individual objects and compositions uniformly.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
 <thead>
@@ -146,7 +146,7 @@ treat individual objects and compositions uniformly.
 </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
@@ -155,7 +155,7 @@ types
 
 #### C\#
 
-<div>
+
 
 > 
 > 
@@ -261,11 +261,11 @@ And then it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### Java
 
-<div>
+
 
 Taking our sentence example from above. Here we have the base class and
 different printable types
@@ -369,11 +369,11 @@ elfMessage.print(); // Much wind pours from your mouth.
                 
 ```
 
-</div>
+
 
 #### JavaScript
 
-<div>
+
 
 Taking our employees example from above. Here we have different employee
 types
@@ -489,11 +489,11 @@ console.log("Net salaries: " , organization.getNetSalaries()) // Net Salaries: 2
                 
 ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 ``` 
 interface Employee
@@ -610,11 +610,11 @@ echo "Net salaries: " . $organization->getNetSalaries(); // Net Salaries: 27000
                 
 ```
 
-</div>
+
 
 #### Python
 
-<div>
+
 
 ``` 
 #!/usr/bin/env python
@@ -703,16 +703,16 @@ if __name__ == '__main__':
                 
 ```
 
-</div>
 
-</div>
 
-</div>
 
-<div id="footer" role="contentinfo">
 
-<div class="section footer-body">
 
-</div>
 
-</div>
+
+
+
+
+
+
+

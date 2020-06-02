@@ -13,13 +13,13 @@
 5.  [Structural Design
     Patterns](Structural-Design-Patterns_451820122.html)
 
-</div>
+
 
 # Information Technology : Bridge Pattern
 
-</div>
 
-<div id="content" class="view">
+
+
 
 ## Bridge
 
@@ -185,7 +185,7 @@ two can vary independently"
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
 <thead>
@@ -217,13 +217,13 @@ two can vary independently"
 </tbody>
 </table>
 
-</div>
+
 
 #### Programmatic Example
 
 #### C\#
 
-<div>
+
 
 <div id="expander-content-863576251" class="expand-content">
 
@@ -303,11 +303,11 @@ And both the hierarchies
 >                         
 > ```
 
-</div>
+
 
 #### Java
 
-<div>
+
 
 Translating our weapon example from above. Here we have the `Weapon`
 hierarchy
@@ -456,11 +456,11 @@ hammer.unwield();
                     
 ```
 
-</div>
+
 
 #### JavaScript
 
-<div>
+
 
 Translating our WebPage example from above. Here we have the `WebPage`
 hierarchy
@@ -534,11 +534,11 @@ console.log(careers.getContent() )// "Careers page in Dark Black"
                     
 ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 ``` 
 interface WebPage {  
@@ -604,11 +604,11 @@ echo $careers->getContent(); // "Careers page in Dark Black";
                     
 ```
 
-</div>
+
 
 #### Python
 
-<div>
+
 
 ``` 
 #!/usr/bin/env python
@@ -664,18 +664,18 @@ if __name__ == '__main__':
                     
 ```
 
-</div>
 
-</div>
 
-</div>
 
-<div id="footer" role="contentinfo">
 
-<div class="section footer-body">
 
-</div>
 
-</div>
 
-</div>
+
+
+
+
+
+
+
+

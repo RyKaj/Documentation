@@ -11,13 +11,13 @@
 4.  [1.0 Design Pattern - Programming
     Language](1.0-Design-Pattern---Programming-Language_451820065.html)
 
-</div>
+
 
 # Information Technology : AntiPatterns
 
-</div>
 
-<div id="content" class="view">
+
+
 
 AntiPatterns, like their design pattern counterparts, define an industry
 vocabulary for the common defective processes and implementations within
@@ -2165,14 +2165,14 @@ References
   - [Source Making -
     antipatterns](https://sourcemaking.com/antipatterns)
 
-</div>
 
-</div>
 
-<div id="footer" role="contentinfo">
 
-<div class="section footer-body">
 
-</div>
 
-</div>
+
+
+
+
+
+

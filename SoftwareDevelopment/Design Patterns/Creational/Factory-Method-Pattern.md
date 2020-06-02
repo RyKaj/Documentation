@@ -13,13 +13,13 @@
 5.  [Creational Design
     Patterns](Creational-Design-Patterns_451820114.html)
 
-</div>
+
 
 # Information Technology : Factory Method Pattern
 
-</div>
 
-<div id="content" class="view">
+
+
 
 ## Factory Method
 
@@ -157,7 +157,7 @@ interviewer interface and some implementations for it
 
 #### C\#
 
-<div>
+
 
 > 
 > 
@@ -241,11 +241,11 @@ and then it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### Java
 
-<div>
+
 
 ``` 
 public interface Blacksmith {
@@ -277,11 +277,11 @@ blacksmith.manufactureWeapon(WeaponType.AXE);
                 
 ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 ``` 
 interface Interviewer
@@ -357,11 +357,11 @@ $marketingManager->takeInterview(); // Output: Asking about community building.
                 
 ```
 
-</div>
+
 
 #### Python
 
-<div>
+
 
 ``` 
 #!/usr/bin/env python
@@ -441,9 +441,9 @@ if __name__ == "__main__":
                 
 ```
 
-</div>
 
-</div>
+
+
 
 ### When to use?
 
@@ -451,12 +451,12 @@ Useful when there is some generic processing in a class but the required
 sub-class is dynamically decided at runtime. Or putting it in other
 words, when the client doesn't know what exact sub-class it might need.
 
-</div>
 
-<div id="footer" role="contentinfo">
 
-<div class="section footer-body">
 
-</div>
 
-</div>
+
+
+
+
+

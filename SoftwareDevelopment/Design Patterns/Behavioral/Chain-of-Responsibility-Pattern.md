@@ -13,13 +13,11 @@
 5.  [Behavioral Design
     Patterns](Behavioral-Design-Patterns_451820124.html)
 
-</div>
+
 
 # Information Technology : Chain of Responsibility Pattern
 
-</div>
 
-<div id="content" class="view">
 
 ## Chain of Responsibility
 
@@ -30,7 +28,7 @@ pass requests along a chain of handlers. Upon receiving a request, each
 handler decides either to process the request or to pass it to the next
 handler in the chain.
 
-![](attachments/463529897/463529890.png)
+<kbd>![](attachments/463529897/463529890.png)</kbd>
 
 ### Problem
 
@@ -46,7 +44,7 @@ user’s credentials. However, if those credentials aren’t correct and
 authentication fails, there’s no reason to proceed with any other
 checks.
 
-![](attachments/463529897/463529891.png)
+<kbd>![](attachments/463529897/463529891.png)</kbd>
 
 During the next few months, you implemented several more of those
 sequential checks.
@@ -62,7 +60,7 @@ sequential checks.
     data. Hence, you added another check which lets the request pass
     through to the system only if there’s no suitable cached response.
 
-![](attachments/463529897/463529892.png)
+<kbd>![](attachments/463529897/463529892.png)</kbd>
 
 ### Solution
 
@@ -88,7 +86,7 @@ Assuming the request contains the right data, all the handlers can
 execute their primary behavior, whether it’s authentication checks or
 caching.
 
-![](attachments/463529897/463529893.png)
+<kbd>![](attachments/463529897/463529893.png)</kbd>
 
 However, there’s a slightly different approach (and it’s a bit more
 canonical) in which, upon receiving a request, a handler decides whether
@@ -104,15 +102,15 @@ window. The event is processed by the first element in the chain that’s
 capable of handling it. This example is also noteworthy because it shows
 that a chain can always be extracted from an object tree.
 
-![](attachments/463529897/463529894.png)
+<kbd>![](attachments/463529897/463529894.png)</kbd>
 
 ### Structure
 
-![](attachments/463529897/463529895.png)
+<kbd>![](attachments/463529897/463529895.png)</kbd>
 
 ## Pseudocode
 
-![](attachments/463529897/463529896.png)
+<kbd>![](attachments/463529897/463529896.png)</kbd>
 
 ### Real world example
 
@@ -143,40 +141,38 @@ the next processing object in the chain.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>You can control the order of request handling.</td>
-<td>Some requests may end up unhandled.</td>
-</tr>
-<tr class="even">
-<td><em>Single Responsibility Principle</em>. You can decouple classes that invoke operations from classes that perform operations.</td>
-<td><br />
-</td>
-</tr>
-<tr class="odd">
-<td><em>Open/Closed Principle</em>. You can introduce new handlers into the app without breaking the existing client code.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+    <thead>
+        <tr class="header">
+            <th>Pros</th>
+            <th>Cons</th>
+        </tr>
+        </thead>
+    <tbody>
+        <tr class="odd">
+            <td>You can control the order of request handling.</td>
+            <td>Some requests may end up unhandled.</td>
+        </tr>
+        <tr class="even">
+            <td><em>Single Responsibility Principle</em>. You can decouple classes that invoke operations from classes that perform operations.</td>
+            <td><br /></td>
+        </tr>
+        <tr class="odd">
+            <td><em>Open/Closed Principle</em>. You can introduce new handlers into the app without breaking the existing client code.</td>
+            <td><br /></td>
+        </tr>
+    </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
 #### C\#
 
-<div>
+
 
 Translating our account example above. First of all we have a base
 account having the logic for chaining the accounts together and some
@@ -272,11 +268,11 @@ Paypal, Bitcoin)
 >                     
 > ```
 
-</div>
+
 
 #### JavaScript
 
-<div>
+
 
 Translating our account example above. First of all we have a base
 account having the logic for chaining the accounts together and some
@@ -364,11 +360,11 @@ Paypal, Bitcoin)
 >                     
 > ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 Translating our account example above. First of all we have a base
 account having the logic for chaining the accounts together and some
@@ -467,11 +463,11 @@ accounts
 >                         
 > ```
 
-</div>
+
 
 #### Python
 
-<div>
+
 
 > 
 > 
@@ -591,16 +587,3 @@ accounts
 >                     
 > ```
 
-</div>
-
-</div>
-
-</div>
-
-<div id="footer" role="contentinfo">
-
-<div class="section footer-body">
-
-</div>
-
-</div>

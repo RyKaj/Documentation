@@ -13,13 +13,13 @@
 5.  [Structural Design
     Patterns](Structural-Design-Patterns_451820122.html)
 
-</div>
+
 
 # Information Technology : Decorator Pattern
 
-</div>
 
-<div id="content" class="view">
+
+
 
 **Decorator**
 
@@ -188,7 +188,7 @@ concern.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
 <thead>
@@ -218,7 +218,7 @@ concern.
 </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
@@ -227,7 +227,7 @@ implementing the coffee interface
 
 #### C\#
 
-<div>
+
 
 > 
 > 
@@ -339,11 +339,11 @@ Lets make a coffee now
 >                     
 > ```
 
-</div>
+
 
 #### Java
 
-<div>
+
 
 Let's take the troll example. First of all we have a simple troll
 implementing the troll interface
@@ -422,11 +422,11 @@ clubbedTroll.fleeBattle(); // The troll shrieks in horror and runs away!
                 
 ```
 
-</div>
+
 
 #### JavaScript
 
-<div>
+
 
 Lets take coffee for example. First of all we have a simple coffee
 implementing the coffee interface
@@ -516,11 +516,11 @@ console.log(someCoffee.getDescription())// Simple Coffee, milk, whip, vanilla
                 
 ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 ``` 
 interface Coffee
@@ -628,11 +628,11 @@ echo $someCoffee->getDescription(); // Simple Coffee, milk, whip, vanilla
                 
 ```
 
-</div>
+
 
 #### Python
 
-<div>
+
 
 ``` 
 #!/usr/bin/env python
@@ -706,16 +706,16 @@ if __name__ == '__main__':
                 
 ```
 
-</div>
 
-</div>
 
-</div>
 
-<div id="footer" role="contentinfo">
 
-<div class="section footer-body">
 
-</div>
 
-</div>
+
+
+
+
+
+
+

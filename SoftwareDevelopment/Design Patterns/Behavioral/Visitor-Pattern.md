@@ -13,13 +13,10 @@
 5.  [Behavioral Design
     Patterns](Behavioral-Design-Patterns_451820124.html)
 
-</div>
+
 
 # Information Technology : Visitor Pattern
 
-</div>
-
-<div id="content" class="view">
 
 ## Visitor
 
@@ -28,7 +25,7 @@
 **Visitor** is a behavioral design pattern that lets you separate
 algorithms from the objects on which they operate.
 
-![](attachments/463529941/463530158.png)
+<kbd>![](attachments/463529941/463530158.png)</kbd>
 
 ### Problem
 
@@ -40,7 +37,7 @@ others if there’s a road between the real objects that they represent.
 Under the hood, each node type is represented by its own class, while
 each specific node is an object.
 
-![](attachments/463529941/463530160.png)
+<kbd>![](attachments/463529941/463530160.png)</kbd>
 
 At some point, you got a task to implement exporting the graph into XML
 format. At first, the job seemed pretty straightforward. You planned to
@@ -55,7 +52,7 @@ existing node classes. He said that the code was already in production
 and he didn’t want to risk breaking it because of a potential bug in
 your changes.
 
-![](attachments/463529941/463530161.png)
+<kbd>![](attachments/463529941/463530161.png)</kbd>
 
 Besides, he questioned whether it makes sense to have the XML export
 code within the node classes. The primary job of these classes was to
@@ -108,14 +105,14 @@ should be executed.
 
 ### Structure
 
-![](attachments/463529941/463530162.png)
+<kbd>![](attachments/463529941/463530162.png)</kbd>
 
 ### Pseudocode
 
 In this example, the **Visitor** pattern adds XML export support to the
 class hierarchy of geometric shapes.
 
-![](attachments/463529941/463530159.png)
+<kbd>![](attachments/463529941/463530159.png)</kbd>
 
 ### Real world example
 
@@ -143,39 +140,38 @@ principle.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>Open/Closed Principle</em> . You can introduce a new behavior that can work with objects of different classes without changing these classes.</td>
-<td>You need to update all visitors each time a class gets added to or removed from the element hierarchy.</td>
-</tr>
-<tr class="even">
-<td><em>Single Responsibility Principle</em> . You can move multiple versions of the same behavior into the same class.</td>
-<td>Visitors might lack the necessary access to the private fields and methods of the elements that they’re supposed to work with.</td>
-</tr>
-<tr class="odd">
-<td>A visitor object can accumulate some useful information while working with various objects. This might be handy when you want to traverse some complex object structure, such as an object tree, and apply the visitor to each object of this structure.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+    <thead>
+        <tr class="header">
+            <th>Pros</th>
+            <th>Cons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td><em>Open/Closed Principle</em> . You can introduce a new behavior that can work with objects of different classes without changing these classes.</td>
+            <td>You need to update all visitors each time a class gets added to or removed from the element hierarchy.</td>
+        </tr>
+        <tr class="even">
+            <td><em>Single Responsibility Principle</em> . You can move multiple versions of the same behavior into the same class.</td>
+            <td>Visitors might lack the necessary access to the private fields and methods of the elements that they’re supposed to work with.</td>
+        </tr>
+        <tr class="odd">
+            <td>A visitor object can accumulate some useful information while working with various objects. This might be handy when you want to traverse some complex object structure, such as an object tree, and apply the visitor to each object of this structure.</td>
+            <td><br /></td>
+        </tr>
+    </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
 #### C\#
 
-<div>
+
 
 Let's take an example of a zoo simulation where we have several
 different kinds of animals and we have to make them Sound. Let's
@@ -197,7 +193,7 @@ translate this using visitor pattern
 >   void VisitLion(Lion lion);
 >   void VisitDolphin(Dolphin dolphin);
 > }
->             
+>
 > ```
 
 Then we have our implementations for the animals
@@ -243,7 +239,7 @@ Then we have our implementations for the animals
 >         operation.VisitDolphin(this);
 >     }
 > }
->                 
+>
 > ```
 
 Let's implement our visitor
@@ -269,7 +265,7 @@ Let's implement our visitor
 >         monkey.Shout();
 >     }
 > }
->                 
+>
 > ```
 
 And then it can be used as
@@ -287,7 +283,7 @@ And then it can be used as
 > lion.Accept(speak);      // Roaaar!
 > dolphin.Accept(speak);   // Tuut tutt tuutt!
 > 
->                 
+>
 > ```
 
 We could have done this simply by having an inheritance hierarchy for
@@ -317,7 +313,7 @@ visitor i.e.
 >         Console.WriteLine("Jumped 20 feet high! on to the tree!");
 >     }
 > }
->                 
+>
 > ```
 
 And for the usage
@@ -339,11 +335,11 @@ And for the usage
 >                 
 > ```
 
-</div>
+
 
 #### JavaScript
 
-<div>
+
 
 Let's take an example of a zoo simulation where we have several
 different kinds of animals and we have to make them Sound. Let's
@@ -462,11 +458,11 @@ And for the usage
 >                     
 > ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 Let's take an example of a zoo simulation where we have several
 different kinds of animals and we have to make them Sound. Let's
@@ -627,7 +623,7 @@ visitor i.e.
 >                 
 > ```
 
-</div>
+
 
 #### Python
 
@@ -713,14 +709,5 @@ visitor i.e.
 >                 
 > ```
 
-</div>
 
-</div>
 
-<div id="footer" role="contentinfo">
-
-<div class="section footer-body">
-
-</div>
-
-</div>

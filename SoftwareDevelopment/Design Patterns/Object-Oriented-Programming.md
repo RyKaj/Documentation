@@ -9,13 +9,13 @@
     Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
 3.  [Design Patterns](Design-Patterns_451820045.html)
 
-</div>
+
 
 # Information Technology : Object-Oriented Programming - OOP
 
-</div>
 
-<div id="content" class="view">
+
+
 
 ## General
 
@@ -257,14 +257,14 @@ References
   - [Medium - Is javascript a true oop
     language](https://medium.com/@andrea.chiarelli/is-javascript-a-true-oop-language-c87c5b48bdf0)
 
-</div>
 
-</div>
 
-<div id="footer" role="contentinfo">
 
-<div class="section footer-body">
 
-</div>
 
-</div>
+
+
+
+
+
+

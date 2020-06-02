@@ -11,13 +11,13 @@
 4.  [1.0 Design Pattern - Programming
     Language](1.0-Design-Pattern---Programming-Language_451820065.html)
 
-</div>
+
 
 # Information Technology : Behavioral Design Patterns
 
-</div>
 
-<div id="content" class="view">
+
+
 
 ## Chain of Responsibility
 
@@ -143,7 +143,7 @@ the next processing object in the chain.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
 <thead>
@@ -170,13 +170,13 @@ the next processing object in the chain.
 </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
 #### C\#
 
-<div>
+
 
 Translating our account example above. First of all we have a base
 account having the logic for chaining the accounts together and some
@@ -361,7 +361,7 @@ Paypal, Bitcoin)
 >                     
 > ```
 
-</div>
+
 
 #### PHP
 
@@ -730,7 +730,7 @@ and values for the method parameters.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
 <thead>
@@ -767,13 +767,13 @@ and values for the method parameters.
 </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
 #### C\#
 
-<div>
+
 
 First of all we have the receiver that has the implementation of every
 action that could be performed
@@ -896,11 +896,11 @@ you execute them. If the final command is successfully executed, all
 good otherwise just iterate through the history and keep executing the
 `undo` on all the executed commands.
 
-</div>
+
 
 #### JavaScript
 
-<div>
+
 
 First of all we have the receiver that has the implementation of every
 action that could be performed
@@ -997,7 +997,7 @@ remote.submit(turnOff) // Darkness!
                 
 ```
 
-</div>
+
 
 #### PHP
 
@@ -1296,7 +1296,7 @@ and thus cannot be decoupled.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
 <thead>
@@ -1327,13 +1327,13 @@ and thus cannot be decoupled.
 </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
 #### C\#
 
-<div>
+
 
 First of all we have RadioStation
 
@@ -1429,11 +1429,11 @@ And then it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### JavaScript
 
-<div>
+
 
 Translating our radio stations example from above. First of all we have
 `RadioStation`
@@ -1496,11 +1496,11 @@ And then it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 First of all we have RadioStation
 
@@ -1601,7 +1601,7 @@ $stationList->removeStation(new RadioStation(89)); // Will remove station 89
                 
 ```
 
-</div>
+
 
 #### Python
 
@@ -1812,7 +1812,7 @@ Usually useful when you need to provide some sort of undo functionality.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
 <thead>
@@ -1838,13 +1838,13 @@ Usually useful when you need to provide some sort of undo functionality.
 </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
 ### C\#
 
-<div>
+
 
 Lets take an example of text editor which keeps saving the state from
 time to time and that you can restore if you want.
@@ -1936,11 +1936,11 @@ And then it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### JavaScript
 
-<div>
+
 
 Lets take an example of text editor which keeps saving the state from
 time to time and that you can restore if you want.
@@ -2014,11 +2014,11 @@ console.log(editor.getContent()) // This is the first sentence. This is second.
                 
 ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 Lets take an example of text editor which keeps saving the state from
 time to time and that you can restore if you want.
@@ -2100,7 +2100,7 @@ $editor->getContent(); // This is the first sentence. This is second.
                 
 ```
 
-</div>
+
 
 #### Python
 
@@ -2351,7 +2351,7 @@ by calling one of their methods.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
 <thead>
@@ -2373,13 +2373,13 @@ by calling one of their methods.
 </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
 #### C\#
 
-<div>
+
 
 Translating our example from above. First of all we have job seekers
 that need to be notified for a job posting
@@ -2512,11 +2512,11 @@ Then it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### JavaScript
 
-<div>
+
 
 Translating our example from above. First of all we have job seekers
 that need to be notified for a job posting
@@ -2587,11 +2587,11 @@ Then it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 Translating our example from above. First of all we have job seekers
 that need to be notified for a job posting
@@ -2684,11 +2684,11 @@ Then it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### Python
 
-<div>
+
 
 > 
 > 
@@ -2925,7 +2925,7 @@ principle.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
 <thead>
@@ -2951,13 +2951,13 @@ principle.
 </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
 #### C\#
 
-<div>
+
 
 Let's take an example of a zoo simulation where we have several
 different kinds of animals and we have to make them Sound. Let's
@@ -3121,11 +3121,11 @@ And for the usage
 >                 
 > ```
 
-</div>
+
 
 #### JavaScript
 
-<div>
+
 
 Let's take an example of a zoo simulation where we have several
 different kinds of animals and we have to make them Sound. Let's
@@ -3244,11 +3244,11 @@ And for the usage
 >                     
 > ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 Let's take an example of a zoo simulation where we have several
 different kinds of animals and we have to make them Sound. Let's
@@ -3409,7 +3409,7 @@ visitor i.e.
 >                 
 > ```
 
-</div>
+
 
 #### Python
 
@@ -3607,7 +3607,7 @@ algorithm's behavior to be selected at runtime.
 
 #### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
 <thead>
@@ -3637,7 +3637,7 @@ algorithm's behavior to be selected at runtime.
 </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
@@ -3646,7 +3646,7 @@ interface and different strategy implementations
 
 #### C\#
 
-<div>
+
 
 > 
 > 
@@ -3714,11 +3714,11 @@ And it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### JavaScript
 
-<div>
+
 
 Translating our example from above, we can easily implement this
 strategy in javascript using its feature of first class functions.
@@ -3774,11 +3774,11 @@ And it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 > 
 > 
@@ -3850,11 +3850,11 @@ And it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### Python
 
-<div>
+
 
 > 
 > 
@@ -4034,7 +4034,7 @@ of methods defined in the pattern's interface.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
 <thead>
@@ -4061,13 +4061,13 @@ of methods defined in the pattern's interface.
 </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
 #### C\#
 
-<div>
+
 
 Let's take an example of text editor, it lets you change the state of
 text that is typed i.e. if you have selected bold, it starts writing in
@@ -4163,11 +4163,11 @@ And then it can be used as
 >                     
 > ```
 
-</div>
+
 
 ### JavaScript
 
-<div>
+
 
 Let's take an example of text editor, it let's you change the state of
 text that is typed i.e. if you have selected bold, it starts writing in
@@ -4233,11 +4233,11 @@ And then it can be used as
 >                     
 > ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 Let's take an example of text editor, it lets you change the state of
 text that is typed i.e. if you have selected bold, it starts writing in
@@ -4336,7 +4336,7 @@ And then it can be used as
 
 #### Python
 
-<div>
+
 
 > 
 > 
@@ -4569,7 +4569,7 @@ structure.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 | Pros                                                                                                                                                    | Cons                                                                                                               |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
@@ -4577,13 +4577,13 @@ structure.
 | You can pull the duplicate code into a superclass.                                                                                                      | You might violate the *Liskov Substitution Principle* by suppressing a default step implementation via a subclass. |
 |                                                                                                                                                         | Template methods tend to be harder to maintain the more steps they have.                                           |
 
-</div>
+
 
 #### Programmatic Example
 
 #### C\#
 
-<div>
+
 
 Imagine we have a build tool that helps us test, lint, build, generate
 build reports (i.e. code coverage reports, linting report etc) and
@@ -4692,11 +4692,11 @@ And then it can be used as
 >                         
 > ```
 
-</div>
+
 
 #### JavaScript
 
-<div>
+
 
 Imagine we have a build tool that helps us test, lint, build, generate
 build reports (i.e. code coverage reports, linting report etc) and
@@ -4790,11 +4790,11 @@ And then it can be used as
 >                         
 > ```
 
-</div>
+
 
 #### Python
 
-<div>
+
 
 > 
 > 
@@ -4878,32 +4878,3 @@ And then it can be used as
 >                         
 > ```
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div id="footer" role="contentinfo">
-
-<div class="section footer-body">
-
-Document generated by Confluence on May 21, 2020 14:36
-
-<div id="footer-logo">
-
-[Atlassian](http://www.atlassian.com/)
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>

@@ -13,13 +13,13 @@
 5.  [Creational Design
     Patterns](Creational-Design-Patterns_451820114.html)
 
-</div>
+
 
 # Information Technology : Prototype Pattern
 
-</div>
 
-<div id="content" class="view">
+
+
 
 ## Prototype
 
@@ -118,7 +118,7 @@ creating an object from scratch and setting it up.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
 <thead>
@@ -150,7 +150,7 @@ creating an object from scratch and setting it up.
 </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
@@ -196,11 +196,11 @@ Then it can be cloned like below
 >                 
 > ```
 
-</div>
+
 
 #### Java
 
-<div>
+
 
 In Java, it can be easily done by implementing `Cloneable` and
 overriding `clone` from `Object`
@@ -232,11 +232,11 @@ System.out.println(cloned.getName()); // Dolly
             
 ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 ``` 
 class Sheep
@@ -368,19 +368,19 @@ if __name__ == '__main__':
             
 ```
 
-</div>
+
 
 ### When to use?
 
 When an object is required that is similar to existing object or when
 the creation would be expensive as compared to cloning.
 
-</div>
 
-<div id="footer" role="contentinfo">
 
-<div class="section footer-body">
 
-</div>
 
-</div>
+
+
+
+
+

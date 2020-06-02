@@ -13,13 +13,13 @@
 5.  [Structural Design
     Patterns](Structural-Design-Patterns_451820122.html)
 
-</div>
+
 
 # Information Technology : Flyweight Pattern
 
-</div>
 
-<div id="content" class="view">
+
+
 
 ## Flyweight
 
@@ -186,7 +186,7 @@ unacceptable amount of memory.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
 <thead>
@@ -208,7 +208,7 @@ unacceptable amount of memory.
 </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic example
 
@@ -217,7 +217,7 @@ and tea maker
 
 #### C\#
 
-<div>
+
 
 > // Anything that will be cached is flyweight.
 > 
@@ -292,11 +292,11 @@ And it can be used as below
 >                     
 > ```
 
-</div>
+
 
 #### Java
 
-<div>
+
 
 Translating our alchemist shop example from above. First of all we have
 different potion types
@@ -385,11 +385,11 @@ factory.createPotion(PotionType.HEALING).drink(); // You feel healed. (Potion=64
                 
 ```
 
-</div>
+
 
 #### JavaScript
 
-<div>
+
 
 Translating our tea example from above. First of all we have tea types
 and tea maker
@@ -453,11 +453,11 @@ shop.serve()
                 
 ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 ``` 
 // Anything that will be cached is flyweight.
@@ -528,11 +528,11 @@ $shop->serve();
                 
 ```
 
-</div>
+
 
 #### Python
 
-<div>
+
 
 ``` 
 #!/usr/bin/env python
@@ -622,16 +622,16 @@ if __name__ == "__main__":
                 
 ```
 
-</div>
 
-</div>
 
-</div>
 
-<div id="footer" role="contentinfo">
 
-<div class="section footer-body">
 
-</div>
 
-</div>
+
+
+
+
+
+
+

@@ -13,7 +13,7 @@
 5.  [Creational Design
     Patterns](Creational-Design-Patterns_451820114.html)
 
-</div>
+
 
 # Information Technology : Singleton Pattern
 
@@ -116,7 +116,7 @@ plus mocking the singleton could be difficult.
 
 ### Pros and Cons
 
-<div class="table-wrap">
+
 
 <table>
 <thead>
@@ -146,7 +146,7 @@ plus mocking the singleton could be difficult.
 </tbody>
 </table>
 
-</div>
+
 
 ### Programmatic Example
 
@@ -155,7 +155,7 @@ disable extension and create a static variable to house the instance
 
 #### C\#
 
-<div>
+
 
 > 
 > 
@@ -193,11 +193,11 @@ Then in order to use
 >                     
 > ```
 
-</div>
+
 
 #### Java
 
-<div>
+
 
 ``` 
 public enum EnumIvoryTower {
@@ -215,11 +215,11 @@ assertEquals(enumIvoryTower1, enumIvoryTower2); // true
                 
 ```
 
-</div>
+
 
 #### PHP
 
-<div>
+
 
 ``` 
 final class President
@@ -264,11 +264,11 @@ var_dump($president1 === $president2); // true
                 
 ```
 
-</div>
+
 
 #### Python
 
-<div>
+
 
 ``` 
 #!/usr/bin/env python
@@ -364,16 +364,16 @@ if __name__ == '__main__':
                 
 ```
 
-</div>
 
-</div>
 
-</div>
 
-<div id="footer" role="contentinfo">
 
-<div class="section footer-body">
 
-</div>
 
-</div>
+
+
+
+
+
+
+

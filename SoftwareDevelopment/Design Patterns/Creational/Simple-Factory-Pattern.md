@@ -13,7 +13,7 @@
 5.  [Creational Design
     Patterns](Creational-Design-Patterns_451820114.html)
 
-</div>
+
 
 # Information Technology : Simple Factory Pattern
 
@@ -183,14 +183,14 @@ When creating an object is not just a few assignments and involves some
 logic, it makes sense to put it in a dedicated factory instead of
 repeating the same code everywhere.
 
-</div>
 
-</div>
 
-<div id="footer" role="contentinfo">
 
-<div class="section footer-body">
 
-</div>
 
-</div>
+
+
+
+
+
+
