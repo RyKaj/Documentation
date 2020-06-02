@@ -98,18 +98,91 @@ you're not building the right thing to begin with.
 Fake Agile versus True Agile
 ----------------------------
 
-<kbd>![fake agile timeline](https://www.process.st/wp-content/uploads/2019/08/Fake-Agile-Timeline.png)</kbd>
+<kbd>![fake agile timeline](<img src="./attachments/Fake-Agile-Timeline.webp" alt="">)</kbd>
 
 
- ||True Agile|Fake Agile|
-|--- |--- |--- |
-|Ignoring Users|Developers understand the importance of communicating and involving customers and users with the development and development process. They will share development progress and actively seek feedback in order to improve the process or product.|Developers are not interested in communicating with real users of the application (program testing and evaluation don’t count); if there is feedback, it is not continuous (only happens at the start of the project, for example).|
-|Time Management and diminishing returns|Prioritizes working builds and understands the importance of rapid iteration. New working builds either weekly or at least at the end of each sprint.|Attention to requirements over quickly deploying something useful. Rarely has a working build ready to show at the end of a sprint; working build is pushed to the hardening sprint or “next sprint”.|
-|Responsibility|Developers are active and willing to take responsibility for their role in providing the customer with value, and improving upon their offering.|Developers defer responsibility and act like “it’s not my job”.|
-|Streamlined Processes|Processes are automated as much as possible to eliminate tedious manual tasks and focus on providing value to the customer|Processes are mostly manual; lots of scope for automation.|
-|Importance of functionality|Focus on iterative development of working software, where feedback from key stakeholders is crucial at every step.|Focus on compliance and requirements where working software is a nice bonus that is normatively pushed back to “another sprint”.|
-|Misguided Agile Leadership|Agile is different because the nature of responsibility is fundamentally different. Individuals in a high-performing agile development team should have a shared sense of responsibility.|A common theme with this problem is the idea that there must be a “single throat to choke”. This is expected in traditional development structures, where the project manager is essentially responsible for making sure each member of the team is getting their work done.|
-
+<table>
+    <colgroup>
+        <col />
+        <col />
+        <col />
+    </colgroup>
+    <tbody>
+        <tr>
+            <th>
+                <br />
+            </th>
+            <th>True Agile</th>
+            <th>Fake Agile</th>
+        </tr>
+        <tr>
+            <td>
+                Ignoring Users
+            </td>
+            <td>
+                Developers understand the importance of communicating and involving customers and users with the development and development process. They will share development progress and actively seek feedback in order to improve the process or product.
+            </td>
+            <td>
+                Developers are not interested in communicating with real users of the application (program testing and evaluation don’t count); if there is feedback, it is not continuous (only happens at the start of the project, for example).
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Time Management and diminishing returns
+            </td>
+            <td>
+                Prioritizes working builds and understands the importance of rapid iteration. New working builds either weekly or at least at the end of each sprint.
+            </td>
+            <td>
+                Attention to requirements over quickly deploying something useful. Rarely has a working build ready to show at the end of a sprint; working build is pushed to the hardening sprint or “next sprint”.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Responsibility
+            </td>
+            <td>
+                Developers are active and willing to take responsibility for their role in providing the customer with value, and improving upon their offering.
+            </td>
+            <td>
+                Developers defer responsibility and act like “it’s not my job”.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Streamlined Processes
+            </td>
+            <td>
+                Processes are automated as much as possible to eliminate tedious manual tasks and focus on providing value to the customer
+            </td>
+            <td>
+                Processes are mostly manual; lots of scope for automation.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Importance of functionality
+            </td>
+            <td>
+                Focus on iterative development of working software, where feedback from key stakeholders is crucial at every step.
+            </td>
+            <td>
+                Focus on compliance and requirements where working software is a nice bonus that is normatively pushed back to “another sprint”.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Misguided Agile Leadership
+            </td>
+            <td>
+                Agile is different because the nature of responsibility is fundamentally different. Individuals in a high-performing agile development team should have a shared sense of responsibility.
+            </td>
+            <td>
+                A common theme with this problem is the idea that there must be a “single throat to choke”. This is expected in traditional development structures, where the project manager is essentially responsible for making sure each member of the team is getting their work done.
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 
 Product owners and scrum masters are there to fulfil key roles like
@@ -117,7 +190,7 @@ reporting back to business owners and communicating with stakeholders,
 but their roles are fundamentally different to a typical project
 management position.
 
-<kbd>![scrum team agile](https://www.process.st/wp-content/uploads/2019/08/Scrum-Team-Agile.png)</kbd>
+<kbd><img src="./attachments/Scrum-Team-Agile.webp" alt=""></kbd>
 
 This difference in managerial approach also highlights the difference in
 attitude towards punishment and fear in the workplace environment.
@@ -140,7 +213,7 @@ laws
 In pursuit of \"true\" agile 
 ----------------------------
 
-<kbd>![agile mentality agile philosophy](https://www.process.st/wp-content/uploads/2019/08/Agile-Mentality-Agile-Philosophy.png)</kbd>
+<kbd>![agile mentality agile philosophy](<img src="./attachments/Agile-Mentality-Agile-Philosophy.webp" alt="">)</kbd>
 
 Transformation To Agile
 -----------------------
@@ -150,7 +223,7 @@ sharing our insights on how to best organize and execute digital change
 in organizations. These are written by experts who have really done the
 work, to help others on their change journeys.
 
-<kbd>![Agile Transformation in the Digital Transformation Landscape](https://riverflex.com/wp-content/uploads/2019/03/Screen-Shot-2019-03-14-at-11.43.13.png)</kbd>
+<kbd>![Agile Transformation in the Digital Transformation Landscape](<img src="./attachments/Screen-Shot-2019-03-14-at-11.43.13.png" alt="">)</kbd>
 
     Figure 1: Typical areas tackled in a digital transformation. Source: Riverflex series – Digital Transformation Done Right, February 2019.
 
@@ -237,7 +310,7 @@ your transformation important? How will individuals contribute to your
 success? What does the happy ending look like? Keep telling the story
 over and over again so it seeps into the consciousness of the business.
 
-<kbd>![Reasons for adopting agile](https://riverflex.com/wp-content/uploads/2019/03/Screen-Shot-2019-03-19-at-13.00.16.png)</kbd>
+<kbd>![Reasons for adopting agile](<img src="./attachments/Screen-Shot-2019-03-19-at-13.00.16.png" alt="">)</kbd>
     Figure 2: Reasons for Adopting Agile*. Source: adapted from State of Agile, CollabNet VersionOne, 2018 
     *Respondents were able to select multiple options
 
@@ -1494,7 +1567,7 @@ story in the next sprint either. So they create "User Story X Part 3"
 and now move "Part 2" to Done. This exercise repeats itself a few more
 times.*
 
-*<kbd>![](https://miro.medium.com/max/2040/1*-gdzLa7T3-l5Cez1gkNwPQ.jpeg)</kbd>
+*<kbd><img src="./attachments/1*-gdzLa7T3-l5Cez1gkNwPQ.jpeg" alt=""></kbd>
 
 This one I've seen quite a lot, usually with digital task trackers ---
 probably because the operation of copying is so cheap there. Whenever a
