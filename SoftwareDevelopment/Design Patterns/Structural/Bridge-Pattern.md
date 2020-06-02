@@ -1,29 +1,11 @@
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Software Development](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/README.md) | [Design Patterns](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/README.md) |
-
 ------------
-
-<div id="breadcrumb-section">
-
-1.  [Information Technology](index.html)
-2.  [3.0 Sofware Development
-    Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
-3.  [Design Patterns](Design-Patterns_451820045.html)
-4.  [1.0 Design Pattern - Programming
-    Language](1.0-Design-Pattern---Programming-Language_451820065.html)
-5.  [Structural Design
-    Patterns](Structural-Design-Patterns_451820122.html)
-
-
 
 # Information Technology : Bridge Pattern
 
-
-
-
-
 ## Bridge
 
-![](https://www.oodesign.com/images/structural/bridge-pattern.png)
+<kbd>![](https://www.oodesign.com/images/structural/bridge-pattern.png)</kbd>
 
 ### Intent
 
@@ -32,7 +14,7 @@ class or a set of closely related classes into two separate
 hierarchies—abstraction and implementation—which can be developed
 independently of each other.
 
-![](attachments/463530014/463530247.png)
+<kbd>![](attachments/bridge/463530247.png)</kbd>
 
 ### Problem
 
@@ -45,7 +27,7 @@ incorporate colors, so you plan to create `Red` and `Blue` shape
 subclasses. However, since you already have two subclasses, you’ll need
 to create four class combinations such as `BlueCircle` and `RedSquare`.
 
-![](attachments/463530014/463530251.png)
+<kbd>![](attachments/bridge/463530251.png)</kbd>
 
 Adding new shape types and colors to the hierarchy will grow it
 exponentially. For example, to add a triangle shape you’d need to
@@ -65,7 +47,7 @@ extract one of the dimensions into a separate class hierarchy, so that
 the original classes will reference an object of the new hierarchy,
 instead of having all of its state and behaviors within one class.
 
-![](attachments/463530014/463530252.png)
+<kbd>![](attachments/bridge/463530252.png)</kbd>
 
 Following this approach, we can extract the color-related code into its
 own class with two subclasses: `Red` and `Blue`. The `Shape` class then
@@ -108,7 +90,7 @@ In a worst-case scenario, this app might look like a giant spaghetti
 bowl, where hundreds of conditionals connect different types of GUI with
 various APIs all over the code.
 
-![](attachments/463530014/463530249.png)
+<kbd>![](attachments/bridge/463530249.png)</kbd>
 
 You can bring order to this chaos by extracting the code related to
 specific interface-platform combinations into separate classes. However,
@@ -122,7 +104,7 @@ we divide the classes into two hierarchies:
   - Abstraction: the GUI layer of the app.
   - Implementation: the operating systems’ APIs.
 
-![](attachments/463530014/463530248.png)
+<kbd>![](attachments/bridge/463530248.png)</kbd>
 
 The abstraction object controls the appearance of the app, delegating
 the actual work to the linked implementation object. Different
@@ -136,7 +118,7 @@ hierarchy.
 
 ### Structure
 
-![](attachments/463530014/463530253.png)
+<kbd>![](attachments/bridge/463530253.png)</kbd>
 
 ### Pseudocode
 
@@ -145,7 +127,7 @@ monolithic code of an app that manages devices and their remote
 controls. The `Device` classes act as the implementation, whereas the
 `Remote`s act as the abstraction.
 
-![](attachments/463530014/463530250.png)
+<kbd>![](attachments/bridge/463530250.png)</kbd>
 
 The base remote control class declares a reference field that links it
 with a device object. All remotes work with the devices via the general
@@ -188,33 +170,30 @@ two can vary independently"
 
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>You can create platform-independent classes and apps.</td>
-<td>You might make the code more complicated by applying the pattern to a highly cohesive class.</td>
-</tr>
-<tr class="even">
-<td>The client code works with high-level abstractions. It isn’t exposed to the platform details.</td>
-<td><br />
-</td>
-</tr>
-<tr class="odd">
-<td><em>Open/Closed Principle</em>. You can introduce new abstractions and implementations independently from each other.</td>
-<td><br />
-</td>
-</tr>
-<tr class="even">
-<td><em>Single Responsibility Principle</em>. You can focus on high-level logic in the abstraction and on platform details in the implementation.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+	<thead>
+		<tr class="header">
+			<th>Pros</th>
+			<th>Cons</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="odd">
+			<td>You can create platform-independent classes and apps.</td>
+			<td>You might make the code more complicated by applying the pattern to a highly cohesive class.</td>
+		</tr>
+		<tr class="even">
+			<td>The client code works with high-level abstractions. It isn’t exposed to the platform details.</td>
+			<td><br /></td>
+		</tr>
+		<tr class="odd">
+			<td><em>Open/Closed Principle</em>. You can introduce new abstractions and implementations independently from each other.</td>
+			<td><br /></td>
+		</tr>
+		<tr class="even">
+			<td><em>Single Responsibility Principle</em>. You can focus on high-level logic in the abstraction and on platform details in the implementation.</td>
+			<td><br /></td>
+		</tr>
+	</tbody>
 </table>
 
 

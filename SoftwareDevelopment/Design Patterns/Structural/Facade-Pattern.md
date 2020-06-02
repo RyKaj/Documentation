@@ -1,29 +1,11 @@
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Software Development](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/README.md) | [Design Patterns](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/README.md) |
-
 ------------
-
-<div id="breadcrumb-section">
-
-1.  [Information Technology](index.html)
-2.  [3.0 Sofware Development
-    Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
-3.  [Design Patterns](Design-Patterns_451820045.html)
-4.  [1.0 Design Pattern - Programming
-    Language](1.0-Design-Pattern---Programming-Language_451820065.html)
-5.  [Creational Design
-    Patterns](Creational-Design-Patterns_451820114.html)
-
-
 
 # Information Technology : Factory Method Pattern
 
-
-
-
-
 ## Factory Method
 
-![](https://www.oodesign.com/images/creational/factory-method-pattern.gif)
+<kbd>![](https://www.oodesign.com/images/creational/factory-method-pattern.gif)</kbd>
 
 ### Intent
 
@@ -31,7 +13,7 @@
 interface for creating objects in a superclass, but allows subclasses to
 alter the type of objects that will be created.
 
-![](attachments/463530001/463530165.png)
+<kbd>![](attachments/facade/463530165.png)</kbd>
 
 ### Problem
 
@@ -43,7 +25,7 @@ After a while, your app becomes pretty popular. Each day you receive
 dozens of requests from sea transportation companies to incorporate sea
 logistics into the app.
 
-![](attachments/463530001/463530167.png)
+<kbd>![](attachments/facade/463530167.png)</kbd>
 
 Great news, right? But how about the code? At present, most of your code
 is coupled to the `Truck` class. Adding `Ships` into the app would
@@ -64,7 +46,7 @@ construction calls (using the `new` operator) with calls to a special
 Objects returned by a factory method are often referred to as
 “products.”
 
-![](attachments/463530001/463530168.png)
+<kbd>![](attachments/facade/463530168.png)</kbd>
 
 At first glance, this change may look pointless: we just moved the
 constructor call from one part of the program to another. However,
@@ -76,7 +58,7 @@ types of products only if these products have a common base class or
 interface. Also, the factory method in the base class should have its
 return type declared as this interface.
 
-![](attachments/463530001/463530169.png)
+<kbd>![](attachments/facade/463530169.png)</kbd>
 
 For example, both `Truck` and `Ship` classes should implement the
 `Transport` interface, which declares a method called `deliver`. Each
@@ -85,7 +67,7 @@ ships deliver cargo by sea. The factory method in the `RoadLogistics`
 class returns truck objects, whereas the factory method in the
 `SeaLogistics` class returns ships.
 
-![](attachments/463530001/463530170.png)
+<kbd>![](attachments/facade/463530170.png)</kbd>
 
 The code that uses the factory method (often called the *client* code)
 doesn’t see a difference between the actual products returned by various
@@ -96,7 +78,7 @@ client.
 
 ### Structure
 
-![](attachments/463530001/463530171.png)
+<kbd>![](attachments/facade/463530171.png)</kbd>
 
 ### Pseudocode
 
@@ -104,7 +86,7 @@ This example illustrates how the **Factory Method** can be used for
 creating cross-platform UI elements without coupling the client code to
 concrete UI classes.
 
-![](attachments/463530001/463530166.png)
+<kbd>![](attachments/facade/463530166.png)</kbd>
 
 The base dialog class uses different UI elements to render its window.
 Under various operating systems, these elements may look a little bit
@@ -431,15 +413,4 @@ if __name__ == "__main__":
 Useful when there is some generic processing in a class but the required
 sub-class is dynamically decided at runtime. Or putting it in other
 words, when the client doesn't know what exact sub-class it might need.
-
-
-
-
-
-
-
-
-
-
-
 
