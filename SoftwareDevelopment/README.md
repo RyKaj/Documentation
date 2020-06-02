@@ -24,6 +24,14 @@
 		-   [Simple Factory Pattern](./Design%20Patterns/Creational/Simple-Factory-Pattern.md)
 		-   [Singleton Pattern](./Design%20Patterns/Creational/Singleton-Pattern.md)	
 	-   Structural
+		-   [Adapter Pattern](./Design%20Patterns/Structural/Adapter-Pattern.md)
+		-   [Bridge Pattern](./Design%20Patterns/Structural/Bridge-Pattern.md)
+		-   [Composite Pattern](./Design%20Patterns/Structural/Composite-Pattern.md)
+		-   [Decorator Pattern](./Design%20Patterns/Structural/Decorator-Pattern.md)
+		-   [Facade Pattern](./Design%20Patterns/Structural/Facade-Pattern.md)
+		-   [Flyweight Pattern](./Design%20Patterns/Structural/Flyweight-Pattern.md)
+		-   [Proxy Pattern](./Design%20Patterns/Structural/Proxy-Pattern.md)
+
 	
 -   [Unit Test](./UnitTest/1.0-Unit-Tests.md)  
 	-   [What is Unit Test](./UnitTest/What-is-Unit-Test.md)

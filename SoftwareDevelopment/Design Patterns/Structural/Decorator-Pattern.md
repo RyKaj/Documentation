@@ -1,29 +1,13 @@
-<div id="main" class="aui-page-panel">
-
-<div id="main-header">
-
-<div id="breadcrumb-section">
-
-1.  [Information Technology](index.html)
-2.  [3.0 Sofware Development
-    Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
-3.  [Design Patterns](Design-Patterns_451820045.html)
-4.  [1.0 Design Pattern - Programming
-    Language](1.0-Design-Pattern---Programming-Language_451820065.html)
-5.  [Structural Design
-    Patterns](Structural-Design-Patterns_451820122.html)
-
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Software Development](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/README.md) | [Design Patterns](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/README.md) |
+------------
 
 
 # Information Technology : Decorator Pattern
 
 
-
-
-
 **Decorator**
 
-![](https://www.oodesign.com/images/structural/decorator-pattern.png)
+<kbd>![](https://www.oodesign.com/images/structural/decorator-pattern.png)</kbd>
 
 ### Intent
 
@@ -31,7 +15,7 @@
 behaviors to objects by placing these objects inside special wrapper
 objects that contain the behaviors.
 
-![](attachments/463530016/463530229.png)
+<kbd>![](./attachments/decorator/463530229.png)</kbd>
 
 ### Problem
 
@@ -46,14 +30,14 @@ constructor. A third-party app which acted as a client was supposed to
 create and configure the notifier object once, and then use it each time
 something important happened.
 
-![](attachments/463530016/463530231.png)
+<kbd>![](./attachments/decorator/463530231.png)</kbd>
 
 At some point, you realize that users of the library expect more than
 just email notifications. Many of them would like to receive an SMS
 about critical issues. Others would like to be notified on Facebook and,
 of course, the corporate users would love to get Slack notifications.
 
-![](attachments/463530016/463530235.png)
+<kbd>![](./attachments/decorator/463530235.png)</kbd>
 
 How hard can that be? You extended the `Notifier` class and put the
 additional notification methods into new subclasses. Now the client was
@@ -69,7 +53,7 @@ combined several notification methods within one class. However, it
 quickly became apparent that this approach would bloat the code
 immensely, not only the library code but the client code as well.
 
-![](attachments/463530016/463530233.png)
+<kbd>![](./attachments/decorator/463530233.png)</kbd>
 
 You have to find some other way to structure notifications classes so
 that their number won’t accidentally break some Guinness record.
@@ -101,7 +85,7 @@ Aggregation/composition is the key principle behind many design
 patterns, including Decorator. On that note, let’s return to the pattern
 discussion.
 
-![](attachments/463530016/463530234.png)
+<kbd>![](./attachments/decorator/463530234.png)</kbd>
 
 *Wrapper* is the alternative nickname for the Decorator pattern that
 clearly expresses the main idea of the pattern. A “wrapper” is an object
@@ -121,13 +105,13 @@ In our notifications example, let’s leave the simple email notification
 behavior inside the base `Notifier` class, but turn all other
 notification methods into decorators.
 
-![](attachments/463530016/463530232.png)
+<kbd>![](./attachments/decorator/463530232.png)</kbd>
 
 The client code would need to wrap a basic notifier object into a set of
 decorators that match the client’s preferences. The resulting objects
 will be structured as a stack.
 
-![](attachments/463530016/463530236.png)
+<kbd>![](./attachments/decorator/463530236.png)</kbd>
 
 The last decorator in the stack would be the object that the client
 actually works with. Since all decorators implement the same interface
@@ -141,14 +125,14 @@ interface as the others.
 
 ### Structure
 
-![](attachments/463530016/463530237.png)
+<kbd>![](./attachments/decorator/463530237.png)</kbd>
 
 ### Pseudocode
 
 In this example, the **Decorator** pattern lets you compress and encrypt
 sensitive data independently from the code that actually uses this data.
 
-![](attachments/463530016/463530230.png)
+<kbd>![](./attachments/decorator/463530230.png)</kbd>
 
 The application wraps the data source object with a pair of decorators.
 Both wrappers change the way the data is written to and read from the
@@ -191,31 +175,30 @@ concern.
 
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>You can extend an object’s behavior without making a new subclass.</td>
-<td>It’s hard to remove a specific wrapper from the wrappers stack.</td>
-</tr>
-<tr class="even">
-<td>You can add or remove responsibilities from an object at runtime.</td>
-<td>It’s hard to implement a decorator in such a way that its behavior doesn’t depend on the order in the decorators stack.</td>
-</tr>
-<tr class="odd">
-<td>You can combine several behaviors by wrapping an object into multiple decorators.</td>
-<td>The initial configuration code of layers might look pretty ugly.</td>
-</tr>
-<tr class="even">
-<td><em>Single Responsibility Principle</em>. You can divide a monolithic class that implements many possible variants of behavior into several smaller classes.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+    <thead>
+        <tr class="header">
+            <th>Pros</th>
+            <th>Cons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td>You can extend an object’s behavior without making a new subclass.</td>
+            <td>It’s hard to remove a specific wrapper from the wrappers stack.</td>
+        </tr>
+        <tr class="even">
+            <td>You can add or remove responsibilities from an object at runtime.</td>
+            <td>It’s hard to implement a decorator in such a way that its behavior doesn’t depend on the order in the decorators stack.</td>
+        </tr>
+        <tr class="odd">
+            <td>You can combine several behaviors by wrapping an object into multiple decorators.</td>
+            <td>The initial configuration code of layers might look pretty ugly.</td>
+        </tr>
+        <tr class="even">
+            <td><em>Single Responsibility Principle</em>. You can divide a monolithic class that implements many possible variants of behavior into several smaller classes.</td>
+            <td><br /></td>
+        </tr>
+    </tbody>
 </table>
 
 
@@ -705,17 +688,5 @@ if __name__ == '__main__':
 # after: <i><b>hello, world!</b></i>
                 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
 
 

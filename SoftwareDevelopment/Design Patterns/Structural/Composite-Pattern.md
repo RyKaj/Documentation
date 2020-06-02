@@ -1,29 +1,12 @@
-<div id="main" class="aui-page-panel">
-
-<div id="main-header">
-
-<div id="breadcrumb-section">
-
-1.  [Information Technology](index.html)
-2.  [3.0 Sofware Development
-    Lifecycle](3.0-Sofware-Development-Lifecycle_380470491.html)
-3.  [Design Patterns](Design-Patterns_451820045.html)
-4.  [1.0 Design Pattern - Programming
-    Language](1.0-Design-Pattern---Programming-Language_451820065.html)
-5.  [Structural Design
-    Patterns](Structural-Design-Patterns_451820122.html)
-
-
+###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Software Development](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/README.md) | [Design Patterns](https://github.com/RyKaj/Documentation/tree/master/SoftwareDevelopment/Design%20Patterns/README.md) |
+------------
 
 # Information Technology : Composite Pattern
 
 
-
-
-
 ## Composite
 
-![](https://www.oodesign.com/images/structural/composite-pattern.png)
+<kbd>![](https://www.oodesign.com/images/structural/composite-pattern.png)</kbd>
 
 ### Intent
 
@@ -31,7 +14,7 @@
 objects into tree structures and then work with these structures as if
 they were individual objects.
 
-![](attachments/463530015/463530240.png)
+<kbd>![](./attachments/composite/463530240.png)</kbd>
 
 ### Problem
 
@@ -48,7 +31,7 @@ Orders could contain simple products without any wrapping, as well as
 boxes stuffed with products...and other boxes. How would you determine
 the total price of such an order?
 
-![](attachments/463530015/463530243.png)
+<kbd>![](./attachments/composite/463530243.png)</kbd>
 
 You could try the direct approach: unwrap all the boxes, go over all the
 products and then calculate the total. That would be doable in the real
@@ -71,7 +54,7 @@ and so on, until the prices of all inner components were calculated. A
 box could even add some extra cost to the final price, such as packaging
 cost.
 
-![](attachments/463530015/463530241.png)
+<kbd>![](./attachments/composite/463530241.png)</kbd>
 
 The greatest benefit of this approach is that you don’t need to care
 about the concrete classes of objects that compose the tree. You don’t
@@ -81,14 +64,14 @@ call a method, the objects themselves pass the request down the tree.
 
 ### Structure
 
-![](attachments/463530015/463530244.png)
+<kbd>![](./attachments/composite/463530244.png)</kbd>
 
 ### Pseudocode
 
 In this example, the **Composite** pattern lets you implement stacking
 of geometric shapes in a graphical editor.
 
-![](attachments/463530015/463530242.png)
+<kbd>![](./attachments/composite/463530242.png)</kbd>
 
 The `CompoundGraphic` class is a container that can comprise any number
 of sub-shapes, including other compound shapes. A compound shape has the
@@ -127,23 +110,22 @@ treat individual objects and compositions uniformly.
 
 
 <table>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>You can work with complex tree structures more conveniently: use polymorphism and recursion to your advantage.</td>
-<td>It might be difficult to provide a common interface for classes whose functionality differs too much. In certain scenarios, you’d need to overgeneralize the component interface, making it harder to comprehend.</td>
-</tr>
-<tr class="even">
-<td><em>Open/Closed Principle</em>. You can introduce new element types into the app without breaking the existing code, which now works with the object tree.</td>
-<td><br />
-</td>
-</tr>
-</tbody>
+    <thead>
+        <tr class="header">
+            <th>Pros</th>
+            <th>Cons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td>You can work with complex tree structures more conveniently: use polymorphism and recursion to your advantage.</td>
+            <td>It might be difficult to provide a common interface for classes whose functionality differs too much. In certain scenarios, you’d need to overgeneralize the component interface, making it harder to comprehend.</td>
+        </tr>
+        <tr class="even">
+            <td><em>Open/Closed Principle</em>. You can introduce new element types into the app without breaking the existing code, which now works with the object tree.</td>
+            <td><br /></td>
+        </tr>
+    </tbody>
 </table>
 
 
@@ -702,17 +684,4 @@ if __name__ == '__main__':
 # Ellipse: 4    
                 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
 
