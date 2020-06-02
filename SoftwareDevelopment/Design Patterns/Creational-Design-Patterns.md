@@ -17,7 +17,7 @@ complex objects step by step. The pattern allows you to produce
 different types and representations of an object using the same
 construction code.
 
-<kbd>![](./attachments/builder/463530184.png)</kbd>
+<kbd>![](./Creational/attachments/builder/463530184.png)</kbd>
 
 ### Problem
 
@@ -26,7 +26,7 @@ initialization of many fields and nested objects. Such initialization
 code is usually buried inside a monstrous constructor with lots of
 parameters. Or even worse: scattered all over the client code.
 
-<kbd>![](./attachments/builder/463530188.png)</kbd>
+<kbd>![](./Creational/attachments/builder/463530188.png)</kbd>
 
 For example, let’s think about how to create a `House` object. To build
 a simple house, you need to construct four walls and a floor, install a
@@ -45,7 +45,7 @@ can create a giant constructor right in the base `House` class with all
 possible parameters that control the house object. While this approach
 indeed eliminates the need for subclasses, it creates another problem.
 
-<kbd>![](./attachments/builder/463530189.png)</kbd>
+<kbd>![](./Creational/attachments/builder/463530189.png)</kbd>
 
 In most cases most of the parameters will be unused, making [the
 constructor calls pretty
@@ -60,7 +60,7 @@ The Builder pattern suggests that you extract the object construction
 code out of its own class and move it to separate objects called
 *builders*.
 
-<kbd>![](./attachments/builder/463530190.png)</kbd>
+<kbd>![](./Creational/attachments/builder/463530190.png)</kbd>
 
 The pattern organizes object construction into a set of steps (
 `buildWalls`, `buildDoor`, etc.). To create an object, you execute a
@@ -80,7 +80,7 @@ Then you can use these builders in the construction process (i.e., an
 ordered set of calls to the building steps) to produce different kinds
 of objects.
 
-<kbd>![](./attachments/builder/463530185.png)</kbd>
+<kbd>![](./Creational/attachments/builder/463530185.png)</kbd>
 
 For example, imagine a builder that builds everything from wood and
 glass, a second one that builds everything with stone and iron and a
@@ -97,7 +97,7 @@ you use to construct a product into a separate class called *director*.
 The director class defines the order in which to execute the building
 steps, while the builder provides the implementation for those steps.
 
-<kbd>![](./attachments/builder/463530186.png)</kbd>
+<kbd>![](./Creational/attachments/builder/463530186.png)</kbd>
 
 Having a director class in your program isn’t strictly necessary. You
 can always call the building steps in a specific order directly from the
@@ -111,7 +111,7 @@ get the result from the builder.
 
 ### Structure
 
-<kbd>![](./attachments/builder/463530191.png)</kbd>
+<kbd>![](./Creational/attachments/builder/463530191.png)</kbd>
 
 ### Pseudocode
 
@@ -119,7 +119,7 @@ This example of the **Builder** pattern illustrates how you can reuse
 the same object construction code when building different types of
 products, such as cars, and create the corresponding manuals for them.
 
-<kbd>![](./attachments/builder/463530187.png)</kbd>
+<kbd>![](./Creational/attachments/builder/463530187.png)</kbd>
 
 A car is a complex object that can be constructed in a hundred different
 ways. Instead of bloating the `Car` class with a huge constructor, we
@@ -661,7 +661,7 @@ step process.
 produce families of related objects without specifying their concrete
 classes.
 
-<kbd>![](./attachments/abstract/463530174.png)</kbd>
+<kbd>![](./Creational/attachments/abstract/463530174.png)</kbd>
 
 ### Problem
 
@@ -674,13 +674,13 @@ consists of classes that represent:
     `Sofa` + `CoffeeTable` are available in these variants: `Modern`,
     `Victorian`, `ArtDeco`.
 
-<kbd>![](./attachments/abstract/463530178.png)</kbd>
+<kbd>![](./Creational/attachments/abstract/463530178.png)</kbd>
 
 You need a way to create individual furniture objects so that they match
 other objects of the same family. Customers get quite mad when they
 receive non-matching furniture.
 
-<kbd>![](./attachments/abstract/463530175.png)</kbd>
+<kbd>![](./Creational/attachments/abstract/463530175.png)</kbd>
 
 Also, you don’t want to change existing code when adding new products or
 families of products to the program. Furniture vendors update their
@@ -696,7 +696,7 @@ products follow those interfaces. For example, all chair variants can
 implement the `Chair` interface; all coffee table variants can implement
 the `CoffeeTable` interface, and so on.
 
-<kbd>![](./attachments/abstract/463530179.png)</kbd>
+<kbd>![](./Creational/attachments/abstract/463530179.png)</kbd>
 
 The next move is to declare the *Abstract Factory*—an interface with a
 list of creation methods for all products that are part of the product
@@ -705,7 +705,7 @@ family (for example, `createChair`, `createSofa` and
 types represented by the interfaces we extracted previously: `Chair`,
 `Sofa`, `CoffeeTable` and so on.
 
-<kbd>![](./attachments/abstract/463530180.png)</kbd>
+<kbd>![](./Creational/attachments/abstract/463530180.png)</kbd>
 
 Now, how about the product variants? For each variant of a product
 family, we create a separate factory class based on the
@@ -718,7 +718,7 @@ respective abstract interfaces. This lets you change the type of a
 factory that you pass to the client code, as well as the product variant
 that the client code receives, without breaking the actual client code.
 
-<kbd>![](./attachments/abstract/463530176.png)</kbd>
+<kbd>![](./Creational/attachments/abstract/463530176.png)</kbd>
 
 Say the client wants a factory to produce a chair. The client doesn’t
 have to be aware of the factory’s class, nor does it matter what kind of
@@ -738,7 +738,7 @@ type depending on the configuration or the environment settings.
 
 ### Structure
 
-<kbd>![](./attachments/abstract/463530181.png)</kbd>
+<kbd>![](./Creational/attachments/abstract/463530181.png)</kbd>
 
 ### Pseudocode
 
@@ -747,7 +747,7 @@ used for creating cross-platform UI elements without coupling the client
 code to concrete UI classes, while keeping all created elements
 consistent with a selected operating system.
 
-<kbd>![](./attachments/abstract/463530177.png)</kbd>
+<kbd>![](./Creational/attachments/abstract/463530177.png)</kbd>
 
 The same UI elements in a cross-platform application are expected to
 behave similarly, but look a little bit different under different
@@ -1525,7 +1525,7 @@ repeating the same code everywhere.
 interface for creating objects in a superclass, but allows subclasses to
 alter the type of objects that will be created.
 
-<kbd>![](./attachments/factory/463530165.png)</kbd>
+<kbd>![](./Creational/attachments/factory/463530165.png)</kbd>
 
 ### Problem
 
@@ -1537,7 +1537,7 @@ After a while, your app becomes pretty popular. Each day you receive
 dozens of requests from sea transportation companies to incorporate sea
 logistics into the app.
 
-<kbd>![](./attachments/factory/463530167.png)</kbd>
+<kbd>![](./Creational/attachments/factory/463530167.png)</kbd>
 
 Great news, right? But how about the code? At present, most of your code
 is coupled to the `Truck` class. Adding `Ships` into the app would
@@ -1558,7 +1558,7 @@ construction calls (using the `new` operator) with calls to a special
 Objects returned by a factory method are often referred to as
 “products.”
 
-<kbd>![](./attachments/factory/463530168.png)</kbd>
+<kbd>![](./Creational/attachments/factory/463530168.png)</kbd>
 
 At first glance, this change may look pointless: we just moved the
 constructor call from one part of the program to another. However,
@@ -1570,7 +1570,7 @@ types of products only if these products have a common base class or
 interface. Also, the factory method in the base class should have its
 return type declared as this interface.
 
-<kbd>![](./attachments/factory/463530169.png)</kbd>
+<kbd>![](./Creational/attachments/factory/463530169.png)</kbd>
 
 For example, both `Truck` and `Ship` classes should implement
 the`Transport` interface, which declares a method called`deliver`. Each
@@ -1579,7 +1579,7 @@ ships deliver cargo by sea. The factory method in the `RoadLogistics`
 class returns truck objects, whereas the factory method in the
 `SeaLogistics` class returns ships.
 
-<kbd>![](./attachments/factory/463530170.png)</kbd>
+<kbd>![](./Creational/attachments/factory/463530170.png)</kbd>
 
 The code that uses the factory method (often called the *client* code)
 doesn’t see a difference between the actual products returned by various
@@ -1590,7 +1590,7 @@ client.
 
 ### Structure
 
-<kbd>![](./attachments/factory/463530171.png)</kbd>
+<kbd>![](./Creational/attachments/factory/463530171.png)</kbd>
 
 ### Pseudocode
 
@@ -1598,7 +1598,7 @@ This example illustrates how the **Factory Method** can be used for
 creating cross-platform UI elements without coupling the client code to
 concrete UI classes.
 
-<kbd>![](./attachments/factory/463530166.png)</kbd>
+<kbd>![](./Creational/attachments/factory/463530166.png)</kbd>
 
 The base dialog class uses different UI elements to render its window.
 Under various operating systems, these elements may look a little bit
@@ -1958,7 +1958,7 @@ words, when the client doesn't know what exact sub-class it might need.
 **Prototype** is a creational design pattern that lets you copy existing
 objects without making your code dependent on their classes.
 
-<kbd>![](./attachments/prototype/463530194.png)</kbd>
+<kbd>![](./Creational/attachments/prototype/463530194.png)</kbd>
 
 ### Problem
 
@@ -1971,7 +1971,7 @@ Nice\! But there’s a catch. Not all objects can be copied that way
 because some of the object’s fields may be private and not visible from
 outside of the object itself.
 
-<kbd>![](./attachments/prototype/463530196.png)</kbd>
+<kbd>![](./Creational/attachments/prototype/463530196.png)</kbd>
 
 There’s one more problem with the direct approach. Since you have to
 know the object’s class to create a duplicate, your code becomes
@@ -1998,7 +1998,7 @@ An object that supports cloning is called a *prototype*. When your
 objects have dozens of fields and hundreds of possible configurations,
 cloning them might serve as an alternative to subclassing.
 
-<kbd>![](./attachments/prototype/463530197.png)</kbd>
+<kbd>![](./Creational/attachments/prototype/463530197.png)</kbd>
 
 Here’s how it works: you create a set of objects, configured in various
 ways. When you need an object like the one you’ve configured, you just
@@ -2008,18 +2008,18 @@ clone a prototype instead of constructing a new object from scratch.
 
 #### Base Implementation
 
-<kbd>![](./attachments/prototype/463530199.png)</kbd>
+<kbd>![](./Creational/attachments/prototype/463530199.png)</kbd>
 
 #### Prototype Registry Implementation
 
-<kbd>![](./attachments/prototype/463530200.png</kbd>
+<kbd>![](./Creational/attachments/prototype/463530200.png</kbd>
 
 ### Pseudocode
 
 In this example, the **Prototype** pattern lets you produce exact copies
 of geometric objects, without coupling the code to their classes.
 
-<kbd>![](./attachments/prototype/463530195.png)</kbd>
+<kbd>![](./Creational/attachments/prototype/463530195.png)</kbd>
 
 All shape classes follow the same interface, which provides a cloning
 method. A subclass may call the parent’s cloning method before copying
@@ -2311,7 +2311,7 @@ the creation would be expensive as compared to cloning.
 class has only one instance, while providing a global access point to
 this instance.
 
-<kbd>![](./attachments/singleton/463530331.png)</kbd>
+<kbd>![](./Creational/attachments/singleton/463530331.png)</kbd>
 
 ### Problem
 
@@ -2331,7 +2331,7 @@ the *Single Responsibility Principle*:
     constructor since a constructor call **must** always return a new
     object by design.
     
-    <kbd>![](./attachments/singleton/463530332.png)</kbd>
+    <kbd>![](./Creational/attachments/singleton/463530332.png)</kbd>
 
 2.  **Provide a global access point to that instance**. Remember those
     global variables that you (all right, me) used to store some
@@ -2369,7 +2369,7 @@ same object is always returned.
 
 ### Structure
 
-<kbd>![](./attachments/singleton/463530333.png)</kbd>
+<kbd>![](./Creational/attachments/singleton/463530333.png)</kbd>
 
 ### Pseudocode
 
