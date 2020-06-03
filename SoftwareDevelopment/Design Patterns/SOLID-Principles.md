@@ -5,8 +5,7 @@
 
 
 ## SOLID Design
-  - **S**ingle Responsibility
-    Principle (SRP)
+  - [**S**ingle Responsibility Principle (SRP)](#Single%20Responsbility%20Principle%20&#40;SRP&#41;)
       - A class should have a single responsibility and this
         responsibility should be entirely encapsulated by the class.
       - A class should have one, and only one, reason to change.
@@ -23,8 +22,7 @@
       - Regularly check the *Lack of Cohesion Of Methods* (LCOM) score
         of your classes.
       - Regularly check for too large and too complex classes.
-  - **O**pen/Closed Principle
-    (OCP)
+  - **O**pen/Closed Principle (OCP)
       - Objects and entities should be open for extensions, but closed
         for modifications
       - You should be able to extended a classes behavior, without
@@ -33,19 +31,16 @@
         for extention
       - A module will be side to be **closed** if it is available for
         use by other modules
-  - **L**iskov Substitution
-    Principle (LSP)
+  - **L**iskov Substitution Principle (LSP)
       - The parent class should be able to refer child objects
         seamlessly during run time polymorphism
       - Derived classes must be substitute for their base classes
-  - **I**nterface Segregation
-    Principle (ISP)
+  - **I**nterface Segregation Principle (ISP)
       - A client should never be forced to implement an interface that
         it doesn't use or clients shouldn't be forced to depend on
         methods they do not use
       - Make fine grained interfaces that are client specific
-  - **D**ependency Inversion
-    Principle (DIP)
+  - **D**ependency Inversion Principle (DIP)
       - Entities must depend on abstractions not on concretions. It
         states that the high level module must not depend on the low
         level module, but they should depend on abstractions.
