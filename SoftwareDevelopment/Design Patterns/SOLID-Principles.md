@@ -5,7 +5,7 @@
 
 
 ## SOLID Design
-  - [**S**ingle Responsibility Principle (SRP)](#Single%20Responsbility%20Principle%20&#40;SRP&#41;)
+  - **S**ingle Responsibility Principle (SRP)
       - A class should have a single responsibility and this
         responsibility should be entirely encapsulated by the class.
       - A class should have one, and only one, reason to change.
