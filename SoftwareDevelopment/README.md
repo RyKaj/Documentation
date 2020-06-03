@@ -5,6 +5,7 @@
 -   Design Patterns
 	-   [Anti Patterns](./Design%20Patterns/AntiPatterns.md)
 	-   [Object Oriented](./Design%20Patterns/Object-Oriented-Programming.md)
+	-   [S.O.L.I.D Principles](./Design%20Patterns/SOLID-Principles.md)
 	-   [Behavioral](./Design%20Patterns/Behavioral-Design-Patterns.md)
 		-   [Chain of Responsibility Pattern](./Design%20Patterns/Behavioral/Chain-of-Responsibility-Pattern.md)
 		-   [Command Pattern](./Design%20Patterns/Behavioral/Command-Pattern.md)
@@ -35,8 +36,8 @@
 	
 -   [Unit Test](./UnitTest/1.0-Unit-Tests.md)  
 	-   [What is Unit Test](./UnitTest/What-is-Unit-Test.md)
-    -   [Beavhiour Driven Development (BDD)](./UnitTest/Behavior-Driven%20Development%20(BDD).md) 
-    -   [Code Coverage](./UnitTest/Code-Coverage.md)	
+	-   [Beavhiour Driven Development (BDD)](./UnitTest/Behavior-Driven%20Development%20(BDD).md) 
+	-   [Code Coverage](./UnitTest/Code-Coverage.md)	
 	-   [Test Coverage](./UnitTest/Test-Coverage.md)
 	-   [Test Driven Development (TDD)](./UnitTest/Test-Driven%20Development%20(TDD).md)
 	-   [Unit Test Anti Pattern](./UnitTest/Unit-Test-Antipattern.md)
