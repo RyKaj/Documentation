@@ -6,9 +6,8 @@
 
 ## Purpose
 
-<kbd>![](attachments/451819851/451827323.png)<https://www.linkedin.com/posts/shizzle_management-leadership-teamwork-activity-6580153079222669312-Ud-S></kbd>
+<kbd>![](./attachments/451827323.png)<https://www.linkedin.com/posts/shizzle_management-leadership-teamwork-activity-6580153079222669312-Ud-S></kbd>
 
-<kbd>[![](rest/documentConversion/latest/conversion/thumbnail/458555496/1)](/download/attachments/451819851/The%20Art%20of%20the%20OneOnOne.pdf?version=1&modificationDate=1569753502917&api=v2)</kbd>
 
 ## Questions
 
