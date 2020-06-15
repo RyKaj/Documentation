@@ -287,23 +287,17 @@ of any team member in any kind of team.
 Problem is that mutual agreement leads to bias, tunnel vision,
 conventional creativity of thought.
 
-<kbd>![](attachments/451819854/451819855.jpg)</kbd>
+<kbd>![](./attachments/451819855.jpg)</kbd>
 
 [Source:
 https://www.atlassian.com/blog/teamwork/how-to-run-effective-meetings](https://www.atlassian.com/blog/teamwork/how-to-run-effective-meetings)
 
 References
 
-  - [How to Run a More Effective
-    Meeting](https://www.nytimes.com/guides/business/how-to-run-an-effective-meeting)
-  - [7 Tips To More Productive
-    Meetings](http://projectmanagementhacks.com/meeting-tips/)
-  - [Running effective meetings: a guide for
-    humans](https://www.atlassian.com/blog/teamwork/how-to-run-effective-meetings)
-  - [Inc -  6 ways to run productive meetings employees actually want to
-    go
-    to](https://www.inc.com/bruce-eckfeldt/6-ways-to-run-productive-meetings-employees-actually-want-to-go-to.md?cid=hmhero)
-  - [Sources of Insight - how to have more effective
-    meetings](http://sourcesofinsight.com/how-to-have-more-effective-meetings/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+SourcesOfInsight+%28Sources+of+Insight%29)
+  - [How to Run a More Effective Meeting](https://www.nytimes.com/guides/business/how-to-run-an-effective-meeting)
+  - [7 Tips To More Productive Meetings](http://projectmanagementhacks.com/meeting-tips/)
+  - [Running effective meetings: a guide for humans](https://www.atlassian.com/blog/teamwork/how-to-run-effective-meetings)
+  - [Inc -  6 ways to run productive meetings employees actually want to go to](https://www.inc.com/bruce-eckfeldt/6-ways-to-run-productive-meetings-employees-actually-want-to-go-to.md?cid=hmhero)
+  - [Sources of Insight - how to have more effective meetings](http://sourcesofinsight.com/how-to-have-more-effective-meetings/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+SourcesOfInsight+%28Sources+of+Insight%29)
 
 
