@@ -14,8 +14,6 @@ you do. DX is on a mission to create a more self-aware and human world
 by creating experiences to motivate leaders and teams to spend more time
 above the line, with the empathy our brain is telling us not to.
 
-[Locating Yourself - A Key to Conscious Leadership
-\[720p\].mp4](/download/attachments/463508918/Locating%20Yourself%20-%20A%20Key%20to%20Conscious%20Leadership%20%5B720p%5D.mp4?version=1&modificationDate=1574436243070&api=v2)
 
 References
 
