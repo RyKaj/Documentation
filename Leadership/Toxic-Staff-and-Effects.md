@@ -1,7 +1,7 @@
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Leadership](https://github.com/RyKaj/Documentation/tree/master/Leadership/README.md) |
 ------------
 
-# Information Technology : Toxic Staff and Effects
+# Leadership : Toxic Staff and Effects
 
 ## Employee
 

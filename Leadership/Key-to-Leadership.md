@@ -1,7 +1,7 @@
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Leadership](https://github.com/RyKaj/Documentation/tree/master/Leadership/README.md) |
 ------------
 
-# Information Technology : Key to Leadership
+# Leadership : Key to Leadership
 
 <kbd>![Top Leadership Qualities Every Manager Can't Live Without by TINYpulse](https://www.tinypulse.com/hs-fs/hubfs/The_Beginners_Guide_to_Great_Leadership.png?width=650&name=The_Beginners_Guide_to_Great_Leadership.png)</kbd>
 

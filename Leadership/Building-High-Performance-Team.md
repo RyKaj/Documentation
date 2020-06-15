@@ -2,7 +2,7 @@
 ------------
 
 
-# Information Technology : Building High Performance Team
+# Leadership : Building High Performance Team
 
 
 ## Dimensions That Deliver High Performance

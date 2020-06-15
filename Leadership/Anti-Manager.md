@@ -2,7 +2,7 @@
 ------------
 
 
-# Information Technology : Anti-Manager
+# Leadership : Anti-Manager
 
 
 ## Takes credit for others’ work

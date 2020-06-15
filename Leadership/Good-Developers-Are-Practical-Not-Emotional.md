@@ -1,7 +1,7 @@
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Leadership](https://github.com/RyKaj/Documentation/tree/master/Leadership/README.md) |
 ------------
 
-# Information Technology : Good Developers Are Practical Not Emotional
+# Leadership : Good Developers Are Practical Not Emotional
 
 In short, it is not the problem itself but our reaction to it that
 causes misery in our lives.

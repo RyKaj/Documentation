@@ -1,11 +1,10 @@
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Leadership](https://github.com/RyKaj/Documentation/tree/master/Leadership/README.md) |
 ------------
 
-# Information Technology : Getting Honest Productive Feedback
+# Leadership : Getting Honest Productive Feedback
 
 
-According to  [research on effective
-learning](http://www.columbia.edu/~mvp19/ETF/Feedback.pdf), to improve
+According to  [research on effective learning](http://www.columbia.edu/~mvp19/ETF/Feedback.pdf), to improve
 performance, people need three things:
 
   - A clear goal
@@ -157,6 +156,5 @@ reach our full potential.
 
 References
 
-  - [Harvard Business Review - how leaders can get honest productive
-    feedback](https://hbr.org/2019/01/how-leaders-can-get-honest-productive-feedback)
+  - [Harvard Business Review - how leaders can get honest productive feedback](https://hbr.org/2019/01/how-leaders-can-get-honest-productive-feedback)
 

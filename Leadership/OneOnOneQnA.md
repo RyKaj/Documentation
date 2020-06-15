@@ -1,7 +1,7 @@
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Leadership](https://github.com/RyKaj/Documentation/tree/master/Leadership/README.md) |
 ------------
 
-# Information Technology : 1:1 Purpose and Questions
+# Leadership : 1:1 Purpose and Questions
 
 
 ## Purpose

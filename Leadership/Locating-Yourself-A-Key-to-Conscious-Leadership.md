@@ -1,7 +1,7 @@
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Leadership](https://github.com/RyKaj/Documentation/tree/master/Leadership/README.md) |
 ------------
 
-# Information Technology : Locating Yourself - A Key to Conscious Leadership
+# Leadership : Locating Yourself - A Key to Conscious Leadership
 
 Where are you? Are you above the line or below the line? How would you
 know? What can you do to move yourself and your team to spend more time

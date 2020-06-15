@@ -1,7 +1,7 @@
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Leadership](https://github.com/RyKaj/Documentation/tree/master/Leadership/README.md) |
 ------------
 
-# Information Technology : Ways To Spot A Truly Exceptional Employee
+# Leadership : Ways To Spot A Truly Exceptional Employee
 
 
 Personality traits form at an early age and are fixed by early

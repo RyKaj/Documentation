@@ -2,7 +2,7 @@
 ------------
 
 
-# Information Technology : Signs your employee likes you
+# Leadership : Signs your employee likes you
 
 Are you striking the right balance between commanding respect and
 appearing accessible? Are your employees responding well to your style

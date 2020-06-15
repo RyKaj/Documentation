@@ -2,7 +2,7 @@
 ------------
 
 
-# Information Technology : Communication - D.I.S.C. (Dominance Influence Steadiness Conscientiousness)
+# Leadership : Communication - D.I.S.C. (Dominance Influence Steadiness Conscientiousness)
 
 
 ## Dominance

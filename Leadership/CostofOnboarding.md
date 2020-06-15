@@ -1,7 +1,7 @@
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Leadership](https://github.com/RyKaj/Documentation/tree/master/Leadership/README.md) |
 ------------
 
-# Information Technology : Cost of Onboarding a New Employee (& how to Avoid Them)
+# Leadership : Cost of Onboarding a New Employee (& how to Avoid Them)
 
 We all know that it costs money to hire. Recruiters have to advertise on
 job sites, conduct interviews, run background checks and, of course,

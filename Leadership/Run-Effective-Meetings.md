@@ -2,7 +2,7 @@
 ------------
 
 
-# Information Technology : Run Effective Meetings
+# Leadership : Run Effective Meetings
 
 ## Run Effective Meetings
 

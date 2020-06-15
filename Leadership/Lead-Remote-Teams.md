@@ -1,7 +1,7 @@
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Leadership](https://github.com/RyKaj/Documentation/tree/master/Leadership/README.md) |
 ------------
 
-# Information Technology : Lead Remote Teams
+# Leadership : Lead Remote Teams
 
 ## How to Effectively Lead Remote IT Teams
 

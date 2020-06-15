@@ -1,7 +1,7 @@
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Leadership](https://github.com/RyKaj/Documentation/tree/master/Leadership/README.md) |
 ------------
 
-# Information Technology : Manager handoffs
+# Leadership : Manager handoffs
 
 
 There are so many potential pitfalls when getting a new manager. Your

@@ -2,7 +2,7 @@
 ------------
 
 
-# Information Technology : Delegation
+# Leadership : Delegation
 
 
 Once a leader has begun to shift his or her mindset, it’s time to start

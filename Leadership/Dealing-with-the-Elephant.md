@@ -2,7 +2,7 @@
 ------------
 
 
-# Information Technology : Dealing with the Elephant
+# Leadership : Dealing with the Elephant
 
 
 Conflicts are fascinating. Now, this may be the organisational

@@ -2,7 +2,7 @@
 ------------
 
 
-# Information Technology : Handle Conflicts
+# Leadership : Handle Conflicts
 
 <kbd>![](https://miro.medium.com/max/2400/1*pE3BsygzHhHXOpD89WZaSQ.png)</kbd>
 

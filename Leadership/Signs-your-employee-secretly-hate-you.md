@@ -1,7 +1,7 @@
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Leadership](https://github.com/RyKaj/Documentation/tree/master/Leadership/README.md) |
 ------------
 
-# Information Technology : Signs your employee secretly hate you
+# Leadership : Signs your employee secretly hate you
 
 ## You've got a (bad) gut feeling
 

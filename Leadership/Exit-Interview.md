@@ -1,7 +1,7 @@
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Leadership](https://github.com/RyKaj/Documentation/tree/master/Leadership/README.md) |
 ------------
 
-# Information Technology : Exit Interview
+# Leadership : Exit Interview
 
 
 An  **exit interview** is a survey conducted with an individual who is

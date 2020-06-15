@@ -1,7 +1,7 @@
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Leadership](https://github.com/RyKaj/Documentation/tree/master/Leadership/README.md) |
 ------------
 
-# Information Technology : Emotional Intelligence - Emotional Quotient
+# Leadership : Emotional Intelligence - Emotional Quotient
 
 ## Measured in the Emotional Quotient (EQ) inventory, is composed of five categories, each with three subcategories
 

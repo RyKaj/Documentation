@@ -2,7 +2,7 @@
 ------------
 
 
-# Information Technology : Team Morale
+# Leadership : Team Morale
 
 ## “Good Job” Goes a Long Way
 

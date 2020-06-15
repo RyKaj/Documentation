@@ -1,7 +1,7 @@
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Leadership](https://github.com/RyKaj/Documentation/tree/master/Leadership/README.md) |
 ------------
 
-# Information Technology : Reasons why people leave
+# Leadership : Reasons why people leave
 
   - A lack of career growth
   - employees feel they're "on their own" to develop their careers at
