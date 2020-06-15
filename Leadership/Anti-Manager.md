@@ -17,8 +17,7 @@ also cover for themselves as opposed to working for the best of the
 company.”
 
 ``` 
-- Jesse Nieminen, Co-Founder of Viima
-            
+- Jesse Nieminen, Co-Founder of Viima         
 ```
 
 “There’s nothing worse than working for a manager that’s willing and
@@ -29,7 +28,6 @@ ensure wins are multiplied and losses minimized.”
 
 ``` 
 - Kris Hughes, Senior Content Marketing Manager at ProjectManager.com
-            
 ```
 
 ## Doesn’t show appreciation or give recognition to employees
@@ -40,8 +38,7 @@ when they’re doing a good job, it’s extremely motivating and shows you
 respect them professionally.”
 
 ``` 
-- Matt Reaney, Founder of Big Cloud
-            
+- Matt Reaney, Founder of Big Cloud         
 ```
 
 “They see you, their employee, as simply a set of hands and feet paid to
@@ -50,8 +47,7 @@ care. If it doesn’t have to do with getting the job done, they don’t
 care.”
 
 ``` 
-- Michael Wilkinson, CMF, CPF, Founder and Managing Director of Leadership Strategies, Inc. and Author of “The Secrets of Facilitation”
-            
+- Michael Wilkinson, CMF, CPF, Founder and Managing Director of Leadership Strategies, Inc. and Author of “The Secrets of Facilitation”         
 ```
 
 “A manager is the one leading their team and will also be the one that
@@ -62,8 +58,7 @@ give credit to their team while also taking all the credit for
 themselves.”
 
 ``` 
-- Sean Si, CEO and Founder of SEO Hacker, Qeryz, Sigil and Workplay
-            
+- Sean Si, CEO and Founder of SEO Hacker, Qeryz, Sigil and Workplay         
 ```
 
 ## Unable to trust (control freak)
@@ -78,8 +73,7 @@ productivity. Managers need to be able to trust the people they employ
 to do their work correctly.”
 
 ``` 
-- Michael Sunderland, Managing Director at Full Stack Talent
-            
+- Michael Sunderland, Managing Director at Full Stack Talent         
 ```
 
 “Similar to micromanagement, the untrusting manager wants the employee
@@ -89,8 +83,7 @@ so place greater emphasis in trying to catch them doing the wrong
 thing.”
 
 ``` 
-- Richard Pummell, Human Resources Lead at DevelopIntelligence
-            
+- Richard Pummell, Human Resources Lead at DevelopIntelligence         
 ```
 
 ## Plays favorites
@@ -105,8 +98,7 @@ members are quick to notice, and can easily become disengaged as a
 result.”
 
 ``` 
-- Fiona Adler, Founder of Actioned.com
-            
+- Fiona Adler, Founder of Actioned.com         
 ```
 
 “It can be hard to be recognised in the world of work, but even more so
@@ -119,8 +111,7 @@ frustrated with the company dynamic when it comes to completing
 deadlines and making complaints about those certain members of staff.”
 
 ``` 
-- Chris Wain, Sales Director for Africa Travel
-            
+- Chris Wain, Sales Director for Africa Travel         
 ```
 
 ## Doesn’t provide clear or realistic direction
@@ -131,8 +122,7 @@ not getting done if no one understands that the tasks are their
 responsibility.”
 
 ``` 
-- Nate Masterson, CEO of Maple Holistics
-            
+- Nate Masterson, CEO of Maple Holistics         
 ```
 
 “\[One thing you’ll find from bad managers is\] setting unrealistic
@@ -144,8 +134,7 @@ own way through a project, but it is also vital to show them the vital
 resources.”
 
 ``` 
-- Jacob Dayan, Esq., CEO and Co-founder of Community Tax
-            
+- Jacob Dayan, Esq., CEO and Co-founder of Community Tax         
 ```
 
 ## Is unavailable or avoids tough conversations
@@ -158,8 +147,7 @@ being too busy or too important for employees, you’ll likely miss out on
 the valuable insight they can offer.”
 
 ``` 
-- David Scarola, Vice President of The Alternative Board
-            
+- David Scarola, Vice President of The Alternative Board         
 ```
 
 “Dealing with conflict is part of the job description for managers—in
@@ -170,8 +158,7 @@ resolution techniques—and a manager simply isn’t doing their job if they
 shy away from conflict management responsibilities.”
 
 ``` 
-- Ben Aston, Founder of The Digital Project Manager
-            
+- Ben Aston, Founder of The Digital Project Manager         
 ```
 
 ## Lack of empathy or compassion (low emotional intelligence)
@@ -182,8 +169,7 @@ empathy, recognize and influence the emotions of others. A poor manager
 lacks this skill.”
 
 ``` 
-- Cynthia Corsetti, CPCC, SPHR, Executive Leadership Coach at Cynthia Corsetti Coaching, LLC
-            
+- Cynthia Corsetti, CPCC, SPHR, Executive Leadership Coach at Cynthia Corsetti Coaching, LLC        
 ```
 
 “Another quality of a bad manager is not caring if their employees are
@@ -194,7 +180,6 @@ of their employees.”
 
 ``` 
 - Nate Masterson, CEO of Maple Holistics
-            
 ```
 
 “When a manager fails to make a concerted effort to understand the needs
@@ -203,9 +188,7 @@ individual and group goals, morale suffers. This causes lowered
 productivity and a higher turnover rate.”
 
 ``` 
-- Kieran Canisius, CEO & Co-Founder of Seuss Recruiting, Seuss Consulting, and 
-            Zocket
-            
+- Kieran Canisius, CEO & Co-Founder of Seuss Recruiting, Seuss Consulting, and Zocket
 ```
 
 ## Unable to listen and respond to feedback (poor listener)
@@ -220,7 +203,6 @@ and effective team.”
 
 ``` 
 - Cynthia Corsetti, CPCC, SPHR, Executive Leadership Coach at Cynthia Corsetti Coaching, LLC
-            
 ```
 
 “The number one thing that defines a bad manager for me is an inability
@@ -235,7 +217,6 @@ I’ve encountered a great many managers like this.”
 
 ``` 
 - Ben Taylor, Founder of HomeWorkingClub
-            
 ```
 
 “\[With bad managers…\] One-way communication is rampant. In any meeting
@@ -245,7 +226,6 @@ explaining why you are wrong.”
 
 ``` 
 - Michael Wilkinson, CMF, CPF, Founder and Managing Director of Leadership Strategies, Inc. and Author of “The Secrets of Facilitation”
-            
 ```
 
 “Bad managers speak more than they listen. When you’re the loudest voice
@@ -260,7 +240,6 @@ manager’s plan.”
 
 ``` 
 - Dave Lane, CEO of Inventiv
-            
 ```
 
 ## Doesn’t lead by example
@@ -275,7 +254,6 @@ they want it or not.”
 
 ``` 
 - Jesse Nieminen, Co-Founder of Viima
-            
 ```
 
 “Pitching in with the ‘grunt’ work, being one of the team and showing up
@@ -285,7 +263,6 @@ they can follow in the right path\!”
 
 ``` 
 - Matt Reaney, Founder of Big Cloud
-            
 ```
 
 “\[Also known as a\] “do as I say, not as I do” mentality. As an
@@ -298,7 +275,6 @@ leadership, as is setting the positive tone for company culture.”
 
 ``` 
 -David Scarola, Vice President of The Alternative Board
-            
 ```
 
 “\[Similar to those who micromanage their team), managers who require
@@ -308,7 +284,6 @@ because they simply will not earn respect from their team.”
 
 ``` 
 - Kris Hughes, Senior Content Marketing Manager at ProjectManager.com
-            
 ```
 
 
@@ -325,7 +300,6 @@ their team.”
 
 ``` 
 - Tyler Hanna, CEO and Co-Founder of 8-bit Rex
-            
 ```
 
 “\[Some bad managers\] have such low self-awareness that they blame
@@ -334,7 +308,6 @@ inaction contribute significantly to the problems they have.”
 
 ``` 
 - Michael Wilkinson, CMF, CPF, Founder and Managing Director of Leadership Strategies, Inc. and Author of “The Secrets of Facilitation”
-            
 ```
 
 ## Manages with fear, not fairness
@@ -349,7 +322,6 @@ generally dislike any interactions with the manager.”
 
 ``` 
 - Richard Pummell, Human Resources Lead at DevelopIntelligence
-            
 ```
 
 “The old-style “my way or the highway” mindset of management has no
@@ -361,9 +333,7 @@ results in a business world now that is as complex and dynamic as it’s
 ever been.”
 
 ``` 
- 
 - Kris Hughes, Senior Content Marketing Manager at ProjectManager.com
-            
 ```
 
 ## Is complacent about poor performing or toxic team members
@@ -376,7 +346,6 @@ loose before it’s too late.”
 
 ``` 
 - Zach Hendrix Co-Founder of GreenPal
-            
 ```
 
 ## Doesn’t follow through or recognize their own responsibilities
@@ -390,7 +359,6 @@ get your team to quit on you than by being egotistical and entitled.”
 
 ``` 
 - Nick Glassett, Founder of OriginLeadership.com
-            
 ```
 
 “Countless managers receive requests, questions, concerns etc. from
@@ -413,7 +381,6 @@ members’ work. Pretty soon, people resent these types of managers.”
 
 ``` 
 - Fiona Adler, Founder of  Actioned.com
-            
 ```
 
 ## Doesn’t live up to workplace values
@@ -426,7 +393,6 @@ values is recipe for employee burnout.”
 
 ``` 
 - Nicholas Hobson, Workplace Psychologist and Co-Founder of PsychologyCompass.com
-            
 ```
 
 ## Aligning downward
@@ -444,8 +410,7 @@ when the leader needs support or a sounding board.
 peer and a friend. The new leader forgets that the subordinate is also
 good friends with other employees. But, sharing private information with
 subordinates instigates gossip and hearsay, often resulting in
-departmental drama or even  [unwanted
-turnover.](https://www.gallup.com/workplace/247391/fixable-problem-costs-businesses-trillion.aspx) (Does
+departmental drama or even  [unwanted turnover.](https://www.gallup.com/workplace/247391/fixable-problem-costs-businesses-trillion.aspx) (Does
 it really take a white paper or statistics from Gallup to understand
 that a leader who instigates gossip is costly to the organization?)
 
@@ -539,9 +504,7 @@ unequal power dynamic, as well as mistrust among the team.
 
 When they feel challenged, gaslighting bosses double-down with circular
 conversations, counterattacks, or arguments that deviate from the points
-at hand. The author of  [Power: Surviving and Thriving After
-Narcissistic
-Abuse](https://www.amazon.com/POWER-Surviving-Narcissistic-Collection-Narcissism/dp/1945796324),
+at hand. The author of  [Power: Surviving and Thriving After Narcissistic Abuse](https://www.amazon.com/POWER-Surviving-Narcissistic-Collection-Narcissism/dp/1945796324),
 Shahida Arabi, captures the outcome of this tactic perfectly: “They do
 this in order to discredit, confuse and frustrate you, distract you from
 the main problem and make you feel guilty for being a human being with
@@ -632,13 +595,9 @@ productively manage these situations:
 
 References
 
-  - [The Ladders -  unmistakable qualities of a bad
-    manager](https://www.theladders.com/career-advice/unmistakable-qualities-of-a-bad-manager)
-  - [The Ladder -  its not you its them how to survive a gaslighting
-    boss](https://www.theladders.com/career-advice/its-not-you-its-them-how-to-survive-a-gaslighting-boss)
-  - [The Ladders -  6 left handed executives on-how they approach
-    leadership](https://www.theladders.com/career-advice/6-left-handed-executives-on-how-they-approach-leadership)
-  - [Tiny Pulse - top leadership
-    qualities](https://www.tinypulse.com/blog/sk-top-leadership-qualities)
+  - [The Ladders - unmistakable qualities of a bad manager](https://www.theladders.com/career-advice/unmistakable-qualities-of-a-bad-manager)
+  - [The Ladder -  its not you its them how to survive a gaslighting boss](https://www.theladders.com/career-advice/its-not-you-its-them-how-to-survive-a-gaslighting-boss)
+  - [The Ladders - 6 left handed executives on-how they approach leadership](https://www.theladders.com/career-advice/6-left-handed-executives-on-how-they-approach-leadership)
+  - [Tiny Pulse - top leadership qualities](https://www.tinypulse.com/blog/sk-top-leadership-qualities)
 
 
