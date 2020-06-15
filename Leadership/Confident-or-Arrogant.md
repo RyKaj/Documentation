@@ -1,7 +1,7 @@
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Leadership](https://github.com/RyKaj/Documentation/tree/master/Leadership/README.md) |
 ------------
 
-# Information Technology : \_Confident or Arrogant
+# Leadership : \_Confident or Arrogant
 
 
 ## Drop names out of context
@@ -92,15 +92,6 @@ the fault of the photographer or the makeup artist. Needless to say,
 they don’t last long, even in an industry that has more than its share
 of divas.
 
-  
-
-  
-
-  
-
-  
-
-  
 
   
 References
