@@ -121,40 +121,40 @@ Positive psychology can also be related to the "Golden Rule", as Smets explained
 #### Communication Patterns
 Are these models true in practice? Not always, but it’s a good place to start, highlighting how differently teams approach communication and negotiation.
 
-![](https://s3.amazonaws.com/external_clips/attachments/55802/original/communication-patterns-cultures.gif?1430439073)
+<kbd>![](https://s3.amazonaws.com/external_clips/attachments/55802/original/communication-patterns-cultures.gif?1430439073)</kbd>
 
 But each culture’s perception of time can even be more complicated and conflicting than that. Take the case of how deadlines are perceived in Germany versus how they’re perceived in Spain, again from “When Cultures Collide” by Richard Lewis:
 
-![](https://s3.amazonaws.com/external_clips/attachments/55804/original/DEADLINES-spanishgerman.png?1430439272)
+<kbd>![](https://s3.amazonaws.com/external_clips/attachments/55804/original/DEADLINES-spanishgerman.png?1430439272)</kbd>
 
 #### Western vs Eastern Hemisphere
 Lifestyle: Independent vs. dependent
 
-![](https://i1.wp.com/www.brainpickings.org/wp-content/uploads/2009/10/eastwest_individual.jpg?w=480&ssl=1)
+<kbd>![](https://i1.wp.com/www.brainpickings.org/wp-content/uploads/2009/10/eastwest_individual.jpg?w=480&ssl=1)</kbd>
 
 ##### Attitude towards punctuality
-![](./attachments/458560619.jpg)
+<kbd>![](./attachments/458560619.jpg)</kbd>
 
 ##### Problem-solving approach
-![](./attachments/458560620.jpg)
+<kbd>![](./attachments/458560620.jpg)</kbd>
 
 ##### Size of the individual&#39;s ego
-![](./attachments/458560621.jpg)
+<kbd>![](./attachments/458560621.jpg)</kbd>
 
 ##### Perception: How Germans and the Chinese see one another
-![](./attachments/458560622.jpg)
+<kbd>![](./attachments/458560622.jpg)</kbd>
 
 ##### How to stand in line
-![](./attachments/458560623.jpg)
+<kbd>![](./attachments/458560623.jpg)</kbd>
 
 ##### Complexity of Self-expression
-![](./attachments/458560624.jpg)
+<kbd>![](./attachments/458560624.jpg)</kbd>
 
 ##### The evolution of transportation over the last three decades
-![](./attachments/458560625.jpg)
+<kbd>![](./attachments/458560625.jpg)</kbd>
 
 ##### Volume of sounds in restaurant
-![](./attachments/458560626.jpg)
+<kbd>![](./attachments/458560626.jpg)</kbd>
 
 
 
