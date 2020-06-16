@@ -7,7 +7,7 @@
 
 ## Company Culture
 
-<kbd>![](attachments/451819861/463532152.png)</kbd>
+<kbd>![](./attachments/463532152.png)</kbd>
 
 You might not have heard of this one very often. Surprised to find this
 to be at the top of our list? Having a sense of company culture can make

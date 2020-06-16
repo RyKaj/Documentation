@@ -446,7 +446,7 @@ two quadrants--people who are talented but difficult, which he referred
 to as "brilliant jerks," and people who are nice but don't perform well,
 which he termed "friendly incompetents."
 
-<kbd>![](attachments/458555498/458559752.jpg)</kbd>
+<kbd>![](./attachments/458559752.jpg)</kbd>
 
 Many organizations tolerate the brilliant jerk even though that person
 is very dangerous to company culture. However, he said people in the
@@ -508,7 +508,7 @@ standards and may move on.
 
 ### You are what you tolerate
 
-<kbd>![](attachments/458555498/458559752.jpg)</kbd>
+<kbd>![](./attachments/458559752.jpg)</kbd>
 
 It can be easy to overlook things like a few missed metrics or
 complaints about a difficult employee. But these might be smaller signs
@@ -532,7 +532,7 @@ your culture and company values.
 
 ### Increaseing Positive Culture
 
-#### Change starts wtih management
+#### Change starts with management
 
 Organizations that consider managers as leaders tend to be more
 forward-thinking and have replaced the outdated idea that managers sit

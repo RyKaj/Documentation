@@ -2,7 +2,7 @@
 ------------
 
 
-  - Leadership
+  - [Leadership](Leadership.md)
       - [1:1 Purpose and Questions](OneOnOneQnA.md)
       - [21 Irrefutable Laws of Leadership](21-Irrefutable-Laws-of-Leadership.md)
       - [Anti-Manager](Anti-Manager.md)
@@ -11,7 +11,7 @@
       - [Communication - D.I.S.C. (Dominance Influence Steadiness Conscientiousness)](DISC.md)
       - [Communication - Generation Differences](Communication-Generation-Differences.md)
       - [Cost of Onboarding a New Employee (& how to Avoid Them)](CostofOnboarding.md)
-      - [Cultural Fit](Cultural-Fit.md)         
+      - [Cultural Fit](Cultural-Fit.md)
       - [Confident or Arrogant](Confident-or-Arrogant.md) 
       - [Dealing with the Elephant](Dealing-with-the-Elephant.md)
       - [Delegation](Delegation.md)   
