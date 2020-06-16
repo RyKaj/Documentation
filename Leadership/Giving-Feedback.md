@@ -1,7 +1,7 @@
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [Leadership](https://github.com/RyKaj/Documentation/tree/master/Leadership/README.md) |
 ------------
 
-# Information Technology : Giving Feedback
+# Leadership : Giving Feedback
 
 ## Giving Feedback When You're Conflict Averse
 
@@ -114,7 +114,6 @@ minimal.
 
 References
 
-  - [Harvard Business Review - Giving feedback when you're conflict
-    averse](https://hbr.org/2015/08/giving-feedback-when-youre-conflict-averse)
+  - [Harvard Business Review - Giving feedback when you're conflict averse](https://hbr.org/2015/08/giving-feedback-when-youre-conflict-averse)
 
 
