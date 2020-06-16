@@ -17,13 +17,14 @@
 5.  Repeat this process until you have a "wall of words" with interconnected stories.
 
 #### Off-Premise
+
 ##### Scavenger Hunt
 This classic team building exercise encourages teamwork and creative thinking. Put together a list of items for your team members to find. This can be done individually or in small groups. The first to collect all of the items and bring them to you, wins\!
 
 ###### Rules
 Break the group into teams of two or more. Make a list of goofy tasks for each team to do as a group. Tasks can include taking a selfie with a stranger, taking a picture of a building or object around the office, etc. Give the list to each team, along with a deadline by which they must complete all tasks. Whoever completes the most tasks the quickest, wins\! (You can even create your own point system according to  [task](https://www.wrike.com/project-management-guide/faq/what-is-a-task-in-project-management/) difficulty if you want\!)  
 
-###### Objective  
+###### Objective
 Great team bonding exercise that helps break up office cliques by encouraging people to work with colleagues from other teams, departments, or just social circles.
 
 ##### Team Lunches
@@ -53,17 +54,22 @@ Both asynchronous and synchronous communication has its advantages and disadvant
 ![Sync Async](https://codingsans.com/uploads/images/SyncAsync.jpg)
 
 #### Balancing Synchronous and Asynchronous Work
- Managers always swing back and forth between synchronous and asynchronous, and I think at Buffer, we&#39;re starting to find a balance where the swings are not so extreme anymore. We&#39;re constantly trying to figure out how to mix the two in a healthier way—what should be synchronous and what can be asynchronous—and that’s probably the most difficult thing.
+
+Managers always swing back and forth between synchronous and asynchronous, and I think at Buffer, we&#39;re starting to find a balance where the swings are not so extreme anymore. We&#39;re constantly trying to figure out how to mix the two in a healthier way—what should be synchronous and what can be asynchronous—and that’s probably the most difficult thing.
  
 #### Knowledge Silos
- A problem we&#39;re always fighting at Buffer is  **knowledge silos** when only one person knows about an area of the code base. When they get sick or leave or something happens, then it’s the whole team’s problem. So, document your pull requests, write good commit messages, and leave status on  [JIRA](https://www.atlassian.com/software/jira) cards. These practices make it less likely to develop these knowledge silos.
+
+A problem we&#39;re always fighting at Buffer is  **knowledge silos** when only one person knows about an area of the code base. When they get sick or leave or something happens, then it’s the whole team’s problem. So, document your pull requests, write good commit messages, and leave status on  [JIRA](https://www.atlassian.com/software/jira) cards. These practices make it less likely to develop these knowledge silos.
 
 
 ### Standards
+
 #### Set clear standards of Communication
- Depending on the type of work you do, a daily or even a couple of daily meetings might be required to ensure team cohesiveness. Mandy Brown, the CEO of Editorially, a collaborative writing platform that was bought by Vox Media last year, advocates that remote teams over communicate on purpose. “On a remote team, opportunities for misunderstanding between teammates distributed across both time and geography magnify,” she wrote. Brown says one effective way to ensure communication is to record meetings so that anyone confused about what has transpired can go back and look at the record. Communication is key to effectively leading remote and distributed teams. Setting up the standard for communication and requiring it be followed will be critical.
+
+Depending on the type of work you do, a daily or even a couple of daily meetings might be required to ensure team cohesiveness. Mandy Brown, the CEO of Editorially, a collaborative writing platform that was bought by Vox Media last year, advocates that remote teams over communicate on purpose. “On a remote team, opportunities for misunderstanding between teammates distributed across both time and geography magnify,” she wrote. Brown says one effective way to ensure communication is to record meetings so that anyone confused about what has transpired can go back and look at the record. Communication is key to effectively leading remote and distributed teams. Setting up the standard for communication and requiring it be followed will be critical.
 
 #### Optimize the right kinds of communication tools
+
 Productivity pros will tell you that the best way to ensure a remote participant fully engages during a meeting is to talk to them via video conference. Otherwise, employees will merely call in and then multitask or zone out while they’re on the call.
 
 These days, offices have a wide variety of communication tools to choose from, including internal social networks, chat rooms and digital whiteboards, among others. Email is undoubtedly the most popular but some consider the least efficient mode of communication. Train your workers to use alternatives but require they video conference when working in your distributed team.
@@ -87,8 +93,11 @@ These days, offices have a wide variety of communication tools to choose from, i
 - [Lead Remote Teams](Lead-Remote-Teams.md)
 
 ## Managing Remote Team Members (off shore)
+
 ### Offshore - Communications
+
 #### Cultural Sensitivity in Working with Other Cultures
+
 Cultural differences can be a challenge in an international workplace, but at the same time cultural diversity can also be fascinating, said Rachel Smets. At Positive Psychology in Practice 2019 she suggested we prepare ourselves when working with other cultures or moving abroad, and develop our cultural sensitivity by learning about new cultures as much as we can.
 
 Smets stated that among the people she interviewed, including many digital nomads like herself, the one thing they all mentioned as a key ingredient to a successful move was "prepare well". She suggested to do research in advance:
