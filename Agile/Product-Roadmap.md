@@ -45,27 +45,22 @@ timelines are indicated by the milestone-markers in red.
 Sharing the Roadmap
 ===================
 
-Once a roadmap is built, it needs to be shared with the entire product
-team so everyone understands the vision and direction.
+Once a roadmap is built, it needs to be shared with the entire product team so everyone understands the vision and direction.
 
-Before we talk about dynamic forecasting solutions, let\'s talk about
-the steps to build a long-term agile plan using the metaphor of building
+Before we talk about dynamic forecasting solutions, let\'s talk about the steps to build a long-term agile plan using the metaphor of building
 a house:
 
 -   What are the relative priorities of each initiative?
 -   When do we intend to work on each initiative?
     -   Are there particular dates the team needs to hit?
-    -   What dependencies does the program have--either internal, or on
-        other teams
+    -   What dependencies does the program have--either internal, or on other teams
 -   Which [teams](https://www.atlassian.com/agile/teams) are
     working on each initiative?
-    -   Do the current teams have availability in their schedules and
-        enough capacity?
+    -   Do the current teams have availability in their schedules and enough capacity?
     -   Can we keep the current agile teams stable?
         -   If not\...
             -   How will teams be re-organized?
-                -   Are we accounting for ramping-up newly-formed teams
-                    in the project\'s timeline?
+                -   Are we accounting for ramping-up newly-formed teams in the project\'s timeline?
 
 Sharing the Roadmap
 -------------------
@@ -97,16 +92,14 @@ decision is the essence of an agile roadmap. It gives the team the
 ability to evolve features as they learn more about a product, and the
 market. Anti-patterns to watch out for
 
--   Future planning is completely ignored --- we\'re shootin\' from the
-    hip!
--   The \"rest of the business\" is kept in the dark as to what the team
-    is up to.
+-   Future planning is completely ignored --- we\'re shootin\' from the hip!
+-   The \"rest of the business\" is kept in the dark as to what the team is up to.
 -   The roadmap is continuously updated (or never updated).
 -   Detailed requirements are weighing down the roadmap.
 
 ### Story Map 
 
-<kbd>![](http://burozeven.nl/robbinschuurman/wp-content/uploads/2017/05/StoryMap-300x212.png)
+<kbd>![](./attachments/471992243.png)</kbd>
 
 The story map is a really nice type of roadmap that I often use in the
 beginning of new projects or products. The story map is an excellent way
@@ -146,10 +139,8 @@ done--a \"human\" sin, if ever there was one.
 
 For it\'s part, agile development runs into three different risks:
 
--   The team may lose confidence in the ability of the leadership to
-    make strategic decisions if the roadmap is updated too frequently.
--   The product might arrive too late on the market and miss out on
-    pent-up demand if the roadmap is not updated frequently enough.
+-   The team may lose confidence in the ability of the leadership to make strategic decisions if the roadmap is updated too frequently.
+-   The product might arrive too late on the market and miss out on pent-up demand if the roadmap is not updated frequently enough.
 -   Long-term efforts can seem \"too big and too difficult\" for shorter
     iterations. The team over-compensates by breaking the work down into
     powder-fine granularity, and ends up focusing too heavily on
@@ -176,19 +167,13 @@ tips with you about creating Agile product roadmaps:
 2.  Describe and validate your [product strategy](http://www.romanpichler.com/blog/elements-definition-product-strategy/);
 3.  Focus on goals and benefits, by creating a [goal oriented product roadmap](http://www.romanpichler.com/blog/goal-oriented-agile-product-roadmap/) (or
     one of the other types I\'ve explained before);
-4.  Tell a coherent story about the likely growth of your product and
-    don\'t oversell it;
-5.  Keep it simple! Resist the temptation to add too much details to
-    your roadmap;
+4.  Tell a coherent story about the likely growth of your product and don\'t oversell it;
+5.  Keep it simple! Resist the temptation to add too much details to your roadmap;
 6.  Actively collaborate with stakeholders to ensure buy-in;
-7.  Have the courage to say no, to prevent an overload of features in
-    your roadmap;
-8.  Think twice about adding timelines, dates or deadlines to your
-    roadmap;
-9.  Make sure your roadmap is measurable, by adding measurable goals and
-    KPI\'s;
-10. Create a rough estimate for each feature (\#people + required
-    skills) to determine the viability of a feature;
+7.  Have the courage to say no, to prevent an overload of features in your roadmap;
+8.  Think twice about adding timelines, dates or deadlines to your roadmap;
+9.  Make sure your roadmap is measurable, by adding measurable goals and KPI\'s;
+10. Create a rough estimate for each feature (\#people + required skills) to determine the viability of a feature;
 11. Review and adapt your product roadmap on a regular basis.
 
 ###### References
