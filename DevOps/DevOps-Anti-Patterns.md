@@ -3,13 +3,11 @@ DevOps :  Anti-Patterns
 ###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | [DevOps](https://github.com/RyKaj/Documentation/tree/master/DevOps/README.md) |
 ------------
 
-DevOps :  Anti-Patterns
-=============================================
+# DevOps :  Anti-Patterns
 
 Anti-Patterns: Department Structures
 
-Dev and Ops Silos (Anti-Type A)
--------------------------------
+## Dev and Ops Silos (Anti-Type A)
 
 This is the classic ‘throw it over the wall’ split between Dev and Ops. It means that story points can be claimed early (DONE means ‘feature-complete’, but not working in Production), and software operability suffers because Devs do not have enough context for operational features and Ops folks do not have time or inclination to engage Devs in order to fix the problems before the software goes live.
 
@@ -17,8 +15,7 @@ We likely all know this topology is bad, but I think there are actually worse to
 
 <img src="./attachments/451824400.png" alt=""></kbd>
 
-DevOps Team Silo (Anti-Type B)
-------------------------------
+## DevOps Team Silo (Anti-Type B)
 
 The DevOps Team Silo (Anti-Type B) typically results from a manager or exec deciding that they “need a bit of this DevOps thing” and starting a ‘DevOps team’ (probably full of people known as ‘a DevOp‘). The members of the DevOps team quickly form another silo, keeping Dev and Ops further apart than ever as they defend their corner, skills, and toolset from the ‘clueless Devs’ and ‘dinosaur Ops’ people.
 
@@ -26,8 +23,7 @@ The only situation where a separate DevOps silo really makes sense is when the t
 
 <img src="./attachments/451824401.png" alt=""></kbd>
 
-Dev Don't Need Ops (Anti-Type C)
---------------------------------
+## Dev Don't Need Ops (Anti-Type C)
 
 This topology is borne of a combination of naivety and arrogance from developers and development managers, particularly when starting on new projects or systems. Assuming that Ops is now a thing of the past (“we have the Cloud now, right?”), the developers wildly underestimate the complexity and importance of operational skills and activities, and believe that they can do without them, or just cover them in spare hours.
 
@@ -35,8 +31,7 @@ Such an Anti-Type C DevOps topology will probably end up needing either a [Type
 
 <img src="./attachments/451824402.png" alt=""></kbd>
 
-DevOps as Tools Team (Anti-Type D)
-----------------------------------
+## DevOps as Tools Team (Anti-Type D)
 
 In order to "become DevOps" without losing current dev teams velocity (read delivery of functional stories), a DevOps team is set up to work on the tooling required for deployment pipelines, configuration management, environment management, etc. Meanwhile Ops folks continue to work in isolation and Dev teams continue to throw them applications "over the wall".
 
@@ -44,8 +39,7 @@ Although the outcomes of this dedicated team can be beneficial in terms of an im
 
 <img src="./attachments/451824403.png" alt=""></kbd>
 
-Rebranded SysAdmin (Anti-Type E)
---------------------------------
+## Rebranded SysAdmin (Anti-Type E)
 
 This anti-type is typical in organizations with low engineering maturity. They want to improve their practices and reduce costs, yet they fail to see IT as a core driver of the business. Because industry successes with DevOps are now evident, they want to "do DevOps" as well. Unfortunately, instead of reflecting on the gaps in the current structure and relationships, they take the elusive path of hiring "DevOps engineers" for their Ops team(s).
 
@@ -53,8 +47,7 @@ DevOps becomes just a rebranding of the role previously known as SysAdmin, with 
 
 <img src="./attachments/451824404.png" alt=""></kbd>
 
-Ops Embedded in Dev Team (Anti-Type F)
---------------------------------------
+## Ops Embedded in Dev Team (Anti-Type F)
 
 The organization does not want to keep a separate Ops team, so development teams take responsibility for infrastructure, managing environments, monitoring, etc. However, doing so in a project or product-driven way means those items are subject to resource constraints and re-prioritizations which lead to subpar approaches and half-baked solutions.
 
@@ -64,8 +57,8 @@ _Thanks to [Scott Prugh](https://twitter.com/ScottPrugh) for suggesting clarif
 
 <img src="./attachments/451824405.png" alt=""></kbd>
 
-Dev and DBA Silos (Anti-Type G)
--------------------------------
+## Dev and DBA Silos (Anti-Type G)
+
 
 This is a form of [Anti-Type A (Dev and Ops Silos)](https://web.devopstopologies.com/#anti-type-a) which is prominent in medium-to-large companies where multiple legacy systems depend on the same core set of data. Because these databases are so vital for the business, a dedicated DBA team, often under the Ops umbrella, is responsible for their maintenance, performance tuning and disaster recovery. That is understandable. The problem is when this team becomes a gate keeper for any and every database change, effectively becoming an obstacle to small and frequent deployments (a core tenet of DevOps and Continuous Delivery).
 
@@ -75,22 +68,19 @@ Furthermore, just like Ops in [Anti-Type A](https://web.devopstopologies.com/#a
 
 Anti-Pattern Philosophy
 
-DevOps is a process
--------------------
+## DevOps is a process
 
 Not exactly. It’s a philosophy. It’s a way of thinking. DevOps is supported by process and tools. DevOps according to [Gene Kim](https://twitter.com/RealGeneKim), is underpinned by 3 core principles known as the “Three Ways”.
 
 The First Way emphasizes the performance of the entire system – the value stream. The Second Way is about shorting and amplifying feedback loops. The Third Way is about creating a culture that fosters continual learning and understanding.
 
-Agile equals DevOps?
---------------------
+## Agile equals DevOps?
 
 If you’re asking this question, then you’re probably running some agile process. That’s good. You’ve got a software development process that compliments DevOps, but Agile doesn’t mean you’ve adopted DevOps.
 
 DevOps is an agile enabler allowing operations to collaborate supporting a more continuous flow of work into IT Operations and out into production where customers can realize its value.
 
-Rebrand your Ops/Dev/any team as the DevOps
--------------------------------------------
+## Rebrand your Ops/Dev/any team as the DevOps
 
 CIO: “I want to embrace DevOps over the coming year.”
 
@@ -98,8 +88,7 @@ MGR: “Already ready done, we changed the department signage this morning. We a
 
 Yeah great. And I bet you now have lots of “DevOps” engineers walking round too. If you’re lucky they may sit next to each other at lunch.
 
-Start a separate DevOps group
------------------------------
+## Start a separate DevOps group
 
 Go on. I dare you. Done it? Well done. You’ve implemented DevOps. Actually what you just did is create yet another silo. Now you’ve got yourself another team you’ve got to try and integrate. Another team with walls to breakdown. Maybe you could go back and rebrand (see AP: x) and create 3 DevOps teams then you’d be super awesome.
 
@@ -107,9 +96,8 @@ DevOps is not about cherry picking some developers and some IT Operations people
 
 Collapse the development team into the ops team or vice-versa. You need to fully break down the barriers / walls / guards between the teams and mould them into a single unit with shared goals and responsibilities.
 
-The hostile takeover
+## The hostile takeover
 --------------------
-
 DevOps. So that’s a word that starts with “Dev”. That means development lead, because development comes first…… Problem?
 
 DevMgr – “Er, we’re now doing DevOps. My guys need to learn the production systems.”
@@ -120,15 +108,13 @@ The word DevOps is clever. It’s a [portmanteau](http://en.wikipedia.org/wiki/
 
 DevOps requires both groups to recognise their key skills. Share what needs to be shared to collaborate. Learn what needs to be learnt to improve. It does not mean retraining. It does not mean cross-skilling (however, this may be a welcome side-effect). It does mean providing feedback and visibility to improve.
 
-DevOps is a buzzword
---------------------
+## DevOps is a buzzword
 
 If you think DevOps is a buzzword, then you’ve probably been using “The Cloud” as a misnomer too. DevOps is a word, you got that right. Actually, it’s a [portmanteau](http://portmanteaur.com/) of Development and IT Operations (I’ll collect my gold star from teacher later).
 
 DevOps is more than just a cool buzz word. It’s a state of mind. You must embrace its values, you must help others embrace its values and you must continually improve yourself and help others to improve for it to be successful. Once you throw away the BS and start collaborating you might get people to think your catchy new word “DevOps” might actually be cool.
 
-Sell DevOps as a silver bullet
-------------------------------
+## Sell DevOps as a silver bullet
 
 DevOps is voodoo. You basically get your Development team and your IT Operations team together. They smoke some [peyote](http://en.wikipedia.org/wiki/Peyote) and then sacrifice a chicken. Once you’ve done that your organisation will be revolutionised.
 
@@ -136,8 +122,7 @@ You’ll be able to ship software faster than ever before. Configuration will be
 
 Get this….. DevOps is hard work! For most, it requires Culture Change! That’s one of the hardest things you’ll ever attempt. For seasoned development and IT Operations teams you’re about to try and turn their world up-side-down. Don’t try and do it overnight or you will fail.
 
-DevOps does not equal “Developers managing Production”
-------------------------------------------------------
+## DevOps does not equal “Developers managing Production”
 
 I’ve had a few conversations lately, mainly with smaller start-ups or development houses, who tell me “yes, we work in a DevOps model”. What they really mean is “We pretty much have no Operations capability at all, and we rely on the Developers to build, deploy and manage all of the environments from Development to Test to Production. Mostly by hand. Badly”.
 
@@ -166,8 +151,7 @@ In summary, what I am trying to get at is please don’t devalue the “DevOps�
 
 Unless you currently do both Development AND Operations separately, and do them well, AND you’re now trying to synthesise a better, more agile, more cloud-oriented way of working that takes the best part of BOTH disciplines… you aren’t doing DevOps!
 
-DevOps is Development-driven release management
------------------------------------------------
+## DevOps is Development-driven Release Management
 
 Let me get 2 things clear;
 
@@ -176,15 +160,13 @@ Let me get 2 things clear;
 
 If you want a developer-driven environment, fine, go create one. Just don’t call it DevOps. It’s not.
 
-We can’t do DevOps – We’re Unique
----------------------------------
+## We can’t do DevOps – We’re Unique
 
 Yes you are, you little beauty you! But you’re not special enough that you can’t adopt DevOps. I bet you’re the best developer out there; you code quicker than lighting, and deliver the sort of code that makes grown men cry with joy. No? Okay, so you’re the most awesome Ops Guy on planet. If [Chuck Norris](http://www.chucknorrisfacts.com/) were an IT Operations Engineer he’d be want to be you.
 
 However, you and your organisation don’t have some unique factor that won’t allow you to adopt DevOps. So give it a go!
 
-We can’t do DevOps – We’ve got the wrong people
------------------------------------------------
+## We can’t do DevOps – We’ve got the wrong people
 
 Well why did you hire them? That’s right – they’re awesome! If you don’t think that, then you need to take a long hard look at yourself, then go and discover the real hidden talents in your team.
 
@@ -194,15 +176,15 @@ DevOps fosters a collaborative working relationship between Development and IT O
 
 You don’t have the wrong people. You have the wrong thought process. Deal with it.
 
-Collaboration when things go pear-shaped
-----------------------------------------
+## Collaboration when things go pear-shaped
+
 
 Ok genius. You messed up. So what? We all do it. But now you want your IT Operations guys out of bed at 2am to clean-up something they know nothing about. They are IT Operations engineers – not the “fixer” like [Michael Clayton](http://www.imdb.com/title/tt0465538/). Waiting until an error occurs during a deployment for Development and IT Operations to collaborate sucks.
 
 It’s too late for this problem….. but maybe not for the next. You have your Development team and your IT Operations team talking (or swearing at 2am) with each other, but at least they are talking. Keep the dialogue going. Get a retrospective review of what happened and how you can fix it going forward. If you have encountered this situation, then try and keep the dialogue going with between your teams. Open the communication channels with Development and IT Operations early. There’s hope for you yet!
 
-Avoiding Tool Integration Like the Plague
------------------------------------------
+## Avoiding Tool Integration Like the Plague
+
 
 There is a prevalent notion, especially in larger enterprises, that integrating disparate tools is extremely expensive. That you’ll be locked for eternity maintaining glue code with high technical debt. That might have been true in the 2000s, but surely not today.
 
@@ -218,8 +200,8 @@ Instead, single-purpose, focused tools with a well-de ned API help reduce the bl
 
 Another gain with individual tools: you can actually expect an answer from the vendor when you ask for a feature since they have a reduced feature set and faster change cycles. A vendor of a one-stop solution has a lot more requests in its backlog. Chances are, if you’re not a major client, your requests will get buried for months or even years.
 
-Error Handling and Logging Behind Closed Doors
-----------------------------------------------
+## Error Handling and Logging Behind Closed Doors
+
 
 Another hidden time-consuming anti-pattern in one-stop solutions derives from generic error messages or inaccessible logging. This tends to be especially painful with SaaS solutions.
 
@@ -231,8 +213,8 @@ The problem is these tools assume they have all the use cases and all the failur
 
 Think of all the time spent deciphering error messages, trying to guess what went wrong, or waiting for a vendor’s support to get back to you (if you hit the jackpot with a technical issue deep in the tool’s gut, good luck waiting for the support-to-engineering return trip time). That time alone is an order of magnitude higher than any individual tool integration time you’d have spent.
 
-Environment-Driven Pipelines
-----------------------------
+## Environment-Driven Pipelines
+
 
 This one is pretty self-explanatory. Tools that assume your pipeline is nothing but a sequence of environments where you deploy your system and run some tests.
 
@@ -246,8 +228,8 @@ Thus pipeline stages should not be tightly coupled to environments. Assuming onl
 
 <kbd>![Image title](https://dzone.com/storage/temp/4177787-screen-shot-2017-01-30-at-30135-pm.png)</kbd>
 
-Flexing Is for Fitness, Not for Principles
-------------------------------------------
+## Flexing Is for Fitness, Not for Principles
+
 
 Adopting core [Continuous Delivery principles](https://continuousdelivery.com/principles/) is hard and often requires mental and cultural shifts. Without them, the underlying practices become ceremonies, instead of actual improvements in delivery. Flexibility is fine for the gym, but not for core principles required for a (often radical) new way of working.
 
@@ -255,8 +237,8 @@ If the tools supporting the practices do not align with the principles, they end
 
 Below are a couple of examples of misalignment between implementation and principles that we’ve seen in some out-of-the-box integrated tools.
 
-Status: ???
------------
+## Status: ???
+
 
 A pipeline status should be binary. Red or green. Not orange. Not gray. Not blue. Recurring ambiguities in status inevitably lead to disengagement by development teams. This is the
 
@@ -266,8 +248,8 @@ CD equivalent to warnings at compilation time. If the first warnings are ignored
 
 Having an uncontested pipeline status is a prerequisite to the Continuous Delivery principle of “stopping the line” when a pipeline fails (then either x it quickly or revert the changes that broke it). Interestingly, this is also a prerequisite to getting rid of those nasty compilation warnings (try making the pipeline go red if there are compilation warnings).
 
-Terminology Fail
-----------------
+## Terminology Fail
+
 
 Another plague in our industry is the proliferation of terminology. We have enough confusion as it is and quite frankly one-stop tool vendors are not helping. They, above all, should strive to align on common terminology, as they are informing their clients on the entire lifecycle. So, it better be correct. This is clearly complicated as those vendors have many different teams working on the integrated tools. But it is needed.
 
@@ -279,8 +261,8 @@ Another example are “release definitions” instead of “pipeline definitions
 
 This might seem like just nitpicking, but the accumulation of all these misunderstandings leads to unknowingly misinformed organizations and teams.
 
-Configurable Management
------------------------
+## Configurable Management
+
 
 ### Configurable Third-Party Software
 
@@ -318,8 +300,7 @@ Forcing the developer to define and configure environment variables. Making the 
 
 Parts of system are not versioned. Inability to get back to a previously configured software system
 
-Configurable Integration
-------------------------
+## Configurable Integration
 
 ### Build Threshold
 

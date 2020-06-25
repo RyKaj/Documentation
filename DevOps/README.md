@@ -12,6 +12,7 @@ DevOps
     *   [Continuous Deployment & Delivery](ContinuousDeploymentDelivery.md)
     *   [Advance Continuous Deployment & Delivery](Continuous-Deployment-Advance-Deployment-Patterns.md)
     *   [Enterprise](DevOps-Enterprises.md)
+    *   [Patterns](DevOps-Patterns.md)
     *   [Anti-Patterns](DevOps-Anti-Patterns.md)
     *   [Mature Model](DevOps-Maturity-Model.md)
     *   [Immature vs Mature Teams](DevOps-Immature-Teams-vs-Mature-Teams.md)
