@@ -104,3 +104,8 @@ In order to bridge the Dev-DBA chasm, some organisations have experimented with 
 **Type 9 suitability**: for organisations with one or more large, central databases with multiple connected applications.
 **Potential effectiveness: <span style="color:orange">MEDIUM</span>**
 
+
+<!---
+Reference
+https://web.devopstopologies.com/
+--->
