@@ -6,5 +6,4 @@
 Capability Maturity Model (CMM)
 =====
 
--   Capability Maturity Model (CMM)
-    -   [Capability Maturity Model (CMM)](Capability_Maturity_Model_(CMM).md)
+-   [What is Capability Maturity Model (CMM)](Capability_Maturity_Model_(CMM).md)
