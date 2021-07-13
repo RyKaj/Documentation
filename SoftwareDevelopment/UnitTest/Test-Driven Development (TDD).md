@@ -22,30 +22,47 @@ maintaining the code and adding new features is easy. This is because
 you have a large set of tests, so you can trust your code and changes
 work, and didn’t break any other code either.
 
-<kbd>![](attachments/463529105.png)</kbd>
+<kbd>![](attachments/463529105.jpg)</kbd>
 
 **Writing Efficient Code for your Unit Tests**
+
+<kbd>![](attachments/infographic.jpg)</kbd>
+
+**Red Stage**: When there is a need to develop a unit of functionality, we need to break the development process into smaller tasks. Here are the steps that have to be performed in the Red Stage:
+- Define the software functionalities into smaller units in order to break down the development unit into minute features.
+- Create a test for the task and write tests so that the developer focuses on the implementation of the features. Keep the test design super simple and super minimalistic.
+- Run all the tests and check whether the newly created test scenarios fail. This is required to test the newly implemented features in the product.
+
+**Green Stage**: In the Green Stage, we produce the code for small units of tests created in the Red Stage. Here are the major steps performed in this stage:
+- Write short and simple code for the previously defined test case(s).
+- Test the features by running the tests and verify whether they pass (or fail).
+- Run all the test cases again and make sure that all of them pass.
+
+**Refactor Stage**: Refactor Stage is used to keep all the tests workable. This is ensured by:
+- Refactoring the code by removing all the issues, thereby ensuring that all the tests are workable.
+- Improving the test code without adding any new code to test further functionalities.
+
 
 ## The First Principle
 
 F.I.R.S.T principles for clean tests
 
-  - **Fast:**The best tests are fast enough. If tests run slowly, you’ll
+  - **Fast**: The best tests are fast enough. If tests run slowly, you’ll
 	probably be discouraged from running them frequently.
   - **Independent**: Always strive to avoid test interdependence. At no
 	time should a test depend on the state of preceding tests. This
 	allows you to run tests individually, which is great for debugging
 	in the event of a test break.
-  - **Repeatable:**Ideally, every test should be repeatable in different
+  - **Repeatable:**: Ideally, every test should be repeatable in different
 	environments without being erroneous. If the tests do not rely on a
 	database or network, then it should work in any environment as it
 	only depends on the code to be tested. When such a test works in one
 	environment and fails in another, then chances are the test or the
 	method is set up wrongly.
-  - **Self-validating:**Each test should have a single Boolean output-
+  - **Self-validating:**: Each test should have a single Boolean output-
 	either a pass or a fail. You do not have to check through the log
 	files to identify whether the test result was valid or not.
-  - **Timely:**Unit tests should be created in a timely manner. In TDD,
+  - **Timely:**: Unit tests should be created in a timely manner. In TDD,
 	the ideal time for creating test code is before writing the
 	production code.
 
@@ -274,7 +291,7 @@ this makes the tests easier to read and analyze.
 		<tr class="even">
 			<td>
 				<p>
-					<strong>tailed Documentation:</strong> 
+					<strong>Detailed Documentation:</strong> 
 					Since tests are written for verifying micro-level functionalities, writing documentation becomes an easy task.
 				</p>
 			</td>

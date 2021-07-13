@@ -17,6 +17,7 @@ tedious.
 Behavior-Driven Development addresses this problem by showing you how to
 test. You should not test implementation, but instead behavior.
 
+<kbd>![](attachments/463529106.jpg)</kbd>
 
 
 **Pros and Cons of Behavior-Driven Development (BDD)**
