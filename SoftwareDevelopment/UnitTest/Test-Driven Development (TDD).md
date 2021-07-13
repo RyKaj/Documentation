@@ -74,8 +74,6 @@ this makes the tests easier to read and analyze.
 
 **Myths and Facts**
 
-
-
 <table>
 	<colgroup>
 		<col style="width: 50%" />
@@ -198,7 +196,7 @@ this makes the tests easier to read and analyze.
 	</tbody>
 </table>
 
-<h2>Pros and Cons of Behavior-Driven Development (BDD)</h2>
+**Pros and Cons of Behavior-Driven Development (BDD)**
 <table>
 	<colgroup>
 		<col style="width: 50%" />
@@ -220,67 +218,67 @@ this makes the tests easier to read and analyze.
 		<tr class="even">
 			<td>
 				<p>
-					<strong>Improved Communication:</strong> 
-					Creating scenarios requires close coordination between clients, managers, developers, testers, etc. This unifies the team in understanding the product behavior.
+					<strong>Reduced cost of Development</strong> 
+					The development process in TDD is divided into smaller chunks to simplify the detection of issues at the early stages of design and development.
 				</p>
 			</td>
 			<td>
 				<p>
-					<strong>Requires more time than the traditional approach:</strong>
-					Putting all the people together becomes difficult for teams. In addition, maintaining test scenarios also requires more time, which results in additional overhead.
+					<strong>Bugs leading to faulty code: </strong>
+					Tests could contain bugs which in turn results in faulty implementation. This can be averted by using the right BDD framework, performing detailed code review, and more.
 				</p>
 			</td>
 		</tr>
 		<tr class="odd">
 			<td>
 				<p>
-					<strong>Reduced cost of Quality Control:</strong> 
-					Automated acceptance tests are used to depict the scenarios, which in turn helps in reducing the costs involved in inspecting the product quality.
+					<strong>Focus on design and architecture: </strong> 
+					Writing tests before the implementation makes the development process more seamless and efficient.
 				</p>
 			</td>
 			<td>
 				<p>
-					<strong>Slowness in product development:</strong>
-					To create a shared understanding, the management, testing, and development teams must collaborate. BDD adaptation becomes slow if there is no mutual understanding between these divisions within the enterprise.
+					<strong>Costly Architectural mistakes:</strong>
+					If the generated test code is not in line with the desired architecture, it could result in huge losses.
 				</p>
 			</td>
 		</tr>
 		<tr class="even">
 			<td>
 				<p>
-					<strong>Accurate task estimation:</strong> 
-					Since the expected behavior is predicted before, there are few chances to change the software application’s architecture.
+					<strong>Improved Code Coverage:</strong> 
+					Through TDD, a well-designed system can achieve 100 percent code coverage.
 				</p>
 			</td>
 			<td>
 				<p>
-					<strong>Suited for large teams and less complex projects:</strong>
-					If the team includes a couple of developers who are constantly in touch with testers and project managers, then the development of scenarios can be additional overhead. Doing a detailed analysis between TDD vs. BDD testing and developing test cases before development can be useful for smaller teams.
+					<strong>Slowness in development:</strong>
+					Creating test cases before code development slows product development. In addition, framing test cases may take a huge time as the actual implementation is not available at that time.
 				</p>
 			</td>
 		</tr>
 		<tr class="odd">
 			<td>
 				<p>
-					<strong>Better user experience:</strong> 
-					The scenarios and tests written before development take the user’s perspective into account. The focus is on the desired behavior rather than on the implementation of features.
+					<strong>Code visibility:</strong> 
+					Tests are written to verify smaller functionalities, making it easy to refactor and maintain the code.
 				</p>
 			</td>
 			<td>
 				<p>
-					<strong>Implementation is necessary at the beginning of the project:</strong>
-					There is no point in developing scenarios between the development process. This will decrease efficiency and make minimal business sense. Also, retrofitting scenarios in legacy systems is nearly impossible.
+					<strong>Requires prior experience:</strong>
+					Prior experience with TDD is a must since many teams commit the mistake of not running tests at the Red Stage.
 				</p>
 			</td>
 		</tr>
 		<tr class="even">
 			<td>
 				<p>
-					<strong>Excellent documentation:</strong> 
-					When a certain test fails, the specification is updated, resulting in the detailed documentation.
+					<strong>tailed Documentation:</strong> 
+					Since tests are written for verifying micro-level functionalities, writing documentation becomes an easy task.
 				</p>
 			</td>
-			<td>				
+			<td>
 			</td>
 		</tr>
 	</tbody>
