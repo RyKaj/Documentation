@@ -133,7 +133,7 @@ this makes the tests easier to read and analyze.
 					<em>though it can cut down drastically on the number of paths integration tests need to take to be useful</em>. This is especially true of the brand of TDD I teach: FauxO
 					<br />
 					<br />
-Test Driven Development ensures teams of humans can work together to deliver better software, faster than if they hadn’t used TDD.
+					Test Driven Development ensures teams of humans can work together to deliver better software, faster than if they hadn’t used TDD.
 				</p>
 			</td>
 		</tr>
@@ -198,3 +198,90 @@ Test Driven Development ensures teams of humans can work together to deliver bet
 	</tbody>
 </table>
 
+<h2>Pros and Cons of Behavior-Driven Development (BDD)</h2>
+<table>
+	<colgroup>
+		<col style="width: 50%" />
+		<col style="width: 50%" />
+	</colgroup>
+	<tbody>
+		<tr class="odd">
+			<td>
+				<p>
+					<strong>Advantages</strong>
+				</p>
+			</td>
+			<td>
+				<p>
+					<strong>Disadvantages</strong>
+				</p>
+			</td>
+		</tr>			
+		<tr class="even">
+			<td>
+				<p>
+					<strong>Improved Communication:</strong> 
+					Creating scenarios requires close coordination between clients, managers, developers, testers, etc. This unifies the team in understanding the product behavior.
+				</p>
+			</td>
+			<td>
+				<p>
+					<strong>Requires more time than the traditional approach:</strong>
+					Putting all the people together becomes difficult for teams. In addition, maintaining test scenarios also requires more time, which results in additional overhead.
+				</p>
+			</td>
+		</tr>
+		<tr class="odd">
+			<td>
+				<p>
+					<strong>Reduced cost of Quality Control:</strong> 
+					Automated acceptance tests are used to depict the scenarios, which in turn helps in reducing the costs involved in inspecting the product quality.
+				</p>
+			</td>
+			<td>
+				<p>
+					<strong>Slowness in product development:</strong>
+					To create a shared understanding, the management, testing, and development teams must collaborate. BDD adaptation becomes slow if there is no mutual understanding between these divisions within the enterprise.
+				</p>
+			</td>
+		</tr>
+		<tr class="even">
+			<td>
+				<p>
+					<strong>Accurate task estimation:</strong> 
+					Since the expected behavior is predicted before, there are few chances to change the software application’s architecture.
+				</p>
+			</td>
+			<td>
+				<p>
+					<strong>Suited for large teams and less complex projects:</strong>
+					If the team includes a couple of developers who are constantly in touch with testers and project managers, then the development of scenarios can be additional overhead. Doing a detailed analysis between TDD vs. BDD testing and developing test cases before development can be useful for smaller teams.
+				</p>
+			</td>
+		</tr>
+		<tr class="odd">
+			<td>
+				<p>
+					<strong>Better user experience:</strong> 
+					The scenarios and tests written before development take the user’s perspective into account. The focus is on the desired behavior rather than on the implementation of features.
+				</p>
+			</td>
+			<td>
+				<p>
+					<strong>Implementation is necessary at the beginning of the project:</strong>
+					There is no point in developing scenarios between the development process. This will decrease efficiency and make minimal business sense. Also, retrofitting scenarios in legacy systems is nearly impossible.
+				</p>
+			</td>
+		</tr>
+		<tr class="even">
+			<td>
+				<p>
+					<strong>Excellent documentation:</strong> 
+					When a certain test fails, the specification is updated, resulting in the detailed documentation.
+				</p>
+			</td>
+			<td>				
+			</td>
+		</tr>
+	</tbody>
+</table>
