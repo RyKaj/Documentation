@@ -98,7 +98,7 @@ Levels serve as the pillars of the CMM visualization (Heat Map) shows the achiev
 					<li>Requirements management</li>
 					<li>Software project planning</li>
                     <li>Software project tracking and oversight</li>
-                    <li>Software subcontract management</li>                    
+                    <li>Software subcontract management</li>
                     <li>Software quality assurance</li>
                     <li>Software configuration management</li>
 				</ul>
@@ -231,6 +231,10 @@ Levels serve as the pillars of the CMM visualization (Heat Map) shows the achiev
 
 
 **Capability Areas (Example)**
+
+
+
+
 
 Capability areas required for high performance technology, teams and process
 
