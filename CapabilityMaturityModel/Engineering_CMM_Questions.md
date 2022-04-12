@@ -1,4 +1,5 @@
 ﻿
+
 ## Meeting Information
 <table>
 	<colgroup>
@@ -7,30 +8,30 @@
 	</colgroup>
 	<tbody>
 		<tr>
-			<th>Squad</th>
-			<th>&nbsp;</th>
+			<td>Squad</td>
+			<td></td>
 		</tr>
 		<tr>
 			<td>Location</td>
-			<td>&nbsp;</td>
+			<td></td>
 		</tr>		
 		<tr>
 			<td>Date & Time</td>
-			<td>&nbsp;</td>
+			<td></td>
 		</tr>		
 		<tr>
 			<td>Attendees</td>
-			<td>&nbsp;</td>
+			<td></td>
 		</tr>		
 	</tbody>
 </table>
 
 ## Rules
-- Scoring: 
-	- Questions with boolean (Yes/No) answers have a score of 1 or 0 points.
-	- Metric: review level under the section
+- Scoring
+	- Evidence type Questions:  With boolean (Yes/No) answers have a score of 1 or 0 points. 
+	- Evidence type Metric: Refer to notes within that cell
 - The average score is calculated for each Aspect.
-- Recommendations are based on conclusions and results from this document, for a later prioritized together with the squad.
+- Recommendations are based on conclusions and results from this document, for later to create a Engineering Health Check document to prioritized together with the squad. 
 
 # Levels
 ## CMM Levels
@@ -41,34 +42,187 @@
 	</colgroup>
 	<tbody>
 		<tr>
-			<th>Level</th>
-			<th>Description</th>
+			<td>Level</td>
+			<td>Description</td>
 		</tr>
 		<tr>
 			<td>L1 - Learning</td>
-			<td>The Squad is using  _ad hoc_  methods for testing, so results are not repeatable and there is no quality standard.</td>
+			<td>
+				<ul>
+					<li>Squad characterized by little systematic methods</li>
+					<li>The Squad is using ad hoc or standard practice might have existed are abandoned during crisis.</li>
+                    <li>No key process areas</li>
+                    <li>Unstable environment for software development</li>
+                    <li>No basis for predicting product quality or time for completion</li>
+				</ul>
+			</td>
 		</tr>		
 		<tr>
 			<td>L2 - Practicing </td>
-			<td>The testing process is defined, so there might be test strategies, test plans, test cases, based on requirements. Testing does not start until products are completed, so the aim of testing is to compare products against requirements.</td>
-		</tr>		
+			<td>
+				<ul>
+					<li>Squad are characterized by individual control</li>
+					<li>Focuses on established basic project management policy</li>
+                    <li>Configuration Management: Focus is on maintaining the performance of the software product</li>
+                    <li>Requirements Management: Review and feedback which results in some changes in the requirements set.  Consists of accommodation of those modified requirements</li>
+                    <li>Software Quality: Guarantees a good quality software product by following certain criteria and quality standard guidelines while development</li>
+				</ul>
+			</td>
+		</tr>
 		<tr>
 			<td>L3 - Systematic</td>
-			<td>The testing process is integrated into a software life cycle, e.g. the  [V-model] "V-Model (software development)"). The need for testing is based on risk management, and the testing is carried out with some independence from the development area.</td>
+			<td>
+				<ul>
+					<li>Squad institutionalize process, code review, inter-squad coordination, software product engineering, integrated software management, training programs, and organization process defined and focus</li>
+					<li>Documentation of standards guidelines and procedures are defined and followed</li>
+                    <li>Code Reviews on architecture design pattern, application design patterns, code format.</li>
+                    <li>Inter-team coordination and collaboration: Interacting between different squads and departments</li>
+                    <li>Organization & Squad Process definition: focus on the development and maintenance of standard development process</li>
+					<li>Organization & Squad Process focus: Activities and practices that should be followed to improve the process capabilities of an organization</li>
+					<li>Training Programs: Focus on enhancement of knowledge and skills for the Squad and insures an increase in work efficiency</li>
+				</ul>
+			</td>
 		</tr>
 		<tr>
 			<td>L4 - Measuring</td>
-			<td>The testing activities take place at all stages of the life cycle, including reviews of requirements and designs. Quality criteria are agreed upon for all products of an organization (internal and external).</td>
+			<td>
+				<ul>
+					<li>Organization & Squad incorporate process measurement and apply quality management as well as process measurement and analysis</li>
+					<li>Quantitative quality goals are set for the Organization & Squad on the software product and process</li>
+                    <li>Quality threshold are defined and set</li>
+                    <li>Measurements are set to help the Organization & Squad to predict the product and process quality with some limits defined quantitatively</li>
+                    <li>Established plans and strategies to development quantitative analysis and understanding of the product quality</li>
+					<li>Organization & Squad Process focus: Activities and practices that should be followed to improve the process capabilities of an organization</li>
+					<li>Focus on controlling the project velocity</li>
+				</ul>
+			</td>
 		</tr>
 		<tr>
 			<td>L5 - Innovation</td>
-			<td>The testing process itself is tested and improved at each iteration. This is typically achieved with tool support, and also introduces aims such as defect prevention through the life cycle, rather than defect detection (zero defects).</td>
+			<td>
+				<ul>
+					<li>Squad obtain feedback for improvement through Change Management, technology innovation, and defect prevention</li>
+					<li>Process Change Management: Squads continuous improvement, productivity, quality and cycle time</li>
+                    <li>Technology Change Management: Identification new technology to improve the product quality and decrease product development time</li>
+                    <li>Defect Prevention: Identification of causes of defects and to prevent them from recurring in future Stories by improving project and defined process</li>
+				</ul>
+			</td>
 		</tr>				
 	</tbody>
 </table>
+  
+## Development Aspects
+<table>
+	<colgroup>
+		<col  style="width: 20%" />
+		<col  style="width: 30%" />
+		<col  style="width: 20%" />
+		<col  style="width: 30%" />
+	</colgroup>
+	<tbody>
+		<tr>
+			<td>Source Code Management (SCM)</td>
+			<td>
+				<ul>
+					<li>Branch lifetime  (or non develop, master/main) branch exists/before it is removed</li>
+					<li>Duration it takes to merge (after code review approval, feature branch to develop branch, includes merge issue duration) on per request</li>
+				</ul>
+			</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<ul>
+					<li>( Rejected Pull Requests (PR) ) Percentage code rejection against (feature) branch on squad over a sprint</li>
+					<li>Percentage code not getting reviewed against (feature) branch on squad over a sprint</li>
+					<li>( Code Churn - Rework ) Percentage code refactor is dong on rejection per sprint</li>
+					<li>Resolution to Resolve (RTR) - Average time taken to resolve pull requests, merge and decline</li>
+				</ul>
+			</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Technical Standards</td>
+			<td>
+				<ul>
+					<li>dentify is there an established code principle that reduces dependencies and its repeatable</li>
+				</ul>
+			</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Technical Process</td>
+			<td>
+				<ul>
+					<li>Agile Software Development process or methodology (any options below). Are you following any methodology and gates in place that measures it.</li>
+				</ul>
+			</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Technical Debt</td>
+			<td>
+				<ul>
+					<li>( Code Churn / Technical Debt Ratio - Rework ) Percentage code refactor to resolve defects (QA to Production found)</li>
+					<li>( Code Churn - Rework ) Percentage code being Added, Deleted/Comment Out, and refactored on average per sprint to complete the Stories in the sprint</li>
+				</ul>
+			</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Collaboration (Tools)</td>
+			<td>
+				<ul>
+					<li>Is there a fluid process to communicate, demonstrate, and collaborate with non-sqaud or non-tribe members ( that would impact their work like external SME...  ie: Architect, Security, Database, Network, Monitoring, Data Engineers - no db interaction, ...  )</li>
+				</ul>
+			</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Self-Improvements</td>
+			<td>
+				<ul>
+					<li>What is the Cyclomatic Complexity / Code Complexity index value</li>
+					<li>What is the Code Duplication percentage</li>
+				</ul>
+			</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Coding Policy</td>
+			<td>
+				<ul>
+					<li>Policy Documentation</li>
+				</ul>
+			</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Confluence / Documentation</td>
+			<td>
+				<ul>
+					<li>Standard, process, architecture, documentation</li>
+				</ul>
+			</td>
+			<td></td>
+			<td></td>
+		</tr>											
+	</tbody>
+</table>
 
-## QA Aspects
 
+
+
+------- need to update below...
 
 
 ## Questionary
@@ -83,22 +237,22 @@
 		<col  style="width: 12%" />
 		<col  style="width: 12%" />
 		<col  style="width: 12%" />
-		<col  style="width: 12%" />								
+		<col  style="width: 12%" />
 	</colgroup>
 	<tbody>
 		<tr>
-			<th>Aspects</th>
-			<th>Description</th>
-			<th>Basic Statement (L1)</th>
-			<th>Acceptable Statement (L3)</th>
-			<th>Excellent Statement (L5)</th>
-			<th>Evidence Type</th>
-			<th>Evidence</th>
-			<th>Question</th>
-			<th>Acceptable</th>
-			<th>Excellent</th>
-			<th>Team</th>
-			<th>Comments</th>
+			<td>Aspects</td>
+			<td>Description</td>
+			<td>Basic Statement (L1)</td>
+			<td>Acceptable Statement (L3)</td>
+			<td>Excellent Statement (L5)</td>
+			<td>Evidence Type</td>
+			<td>Evidence</td>
+			<td>Question</td>
+			<td>Acceptable</td>
+			<td>Excellent</td>
+			<td>Team</td>
+			<td>Comments</td>	
 		</tr>
 		<tr>
 			<td>Test Process (level 2 (2/8 points) </td>
@@ -124,7 +278,7 @@
 					<tr>
 						<td>Question</td>
 						<td>Is There a QA manager/lead who drives the testing process?</td>
-						<td>How do you organize the QA work? Is it part of the standard team ceremonies? Do you follow the same estimation process, standup reports ..?</td>
+						<td>How do you organize the QA work? Is it part of the standard team ceremonies? Do you follow the same estimation process, standup reports...?</td>
 						<td></td>
 						<td></td>
 						<td></td>
