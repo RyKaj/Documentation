@@ -2,5 +2,5 @@
 ------------
 
 # Value Stream Mapping
--   [What is VSM](./ValueStreamMapping.md)
--   [VSM Template & Reports](./VSM - Template & Reports.md)
+-  [What is VSM](./ValueStreamMapping.md)
+-  [VSM Template & Reports](./VSM - Template & Reports.md)
