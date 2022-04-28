@@ -28,7 +28,7 @@ These are the Icons and Symbols to be used in a Value Stream Map
 <img src="./Resources/Aspose.Words.cb656e7f-31b8-440a-8b03-4dc11889a582.002.png" />|Data Box|The data box is placed under other icons that require data to analyze the system. For example, a data box could go below a factory icon to show shipping frequency, product handling data, batch size or other information.|
 <img src="./Resources/Aspose.Words.cb656e7f-31b8-440a-8b03-4dc11889a582.003.png" />|Push Arrow|This icon shows material being pushed downstream from one process to the next.|
 <img src="./Resources/Aspose.Words.cb656e7f-31b8-440a-8b03-4dc11889a582.001.png" />|Information|A box with a name in it that indicates information flow.|
-<img src="./Resources/Aspose.cb656e7f-31b8-440a-8b03-4dc11889a582.004.png" />|Manual Process|Requires a human to manage and drive the process through every step and know whom to send it to.|
+<img src="./Resources/Aspose.Words.cb656e7f-31b8-440a-8b03-4dc11889a582.004.png" />|Manual Process|Requires a human to manage and drive the process through every step and know whom to send it to.|
 <img src="./Resources/Aspose.Words.cb656e7f-31b8-440a-8b03-4dc11889a582.005.png" />|Automated Process|Refers to the use of technology to perform a process or processes in order to accomplish a workflow or function.|
 <img src="./Resources/Aspose.Words.cb656e7f-31b8-440a-8b03-4dc11889a582.006.png" />|Automated Testing|The use of software separate from the software being tested to control the execution of tests and the comparison of actual outcomes with predicted outcomes|
 <img src="./Resources/Aspose.Words.cb656e7f-31b8-440a-8b03-4dc11889a582.007.png" />|Manual Testing|Requires a human to execute test cases manually and to document outcomes|
