@@ -188,10 +188,12 @@ The 'agile mindset' discussion seems to be centered around five areas:
 
 The value comes form continuous feedback, feedback that comes directly from your customers.
 In traditional way of working the customer feedback is not possible during development since the end product is the result.
-<img src="./attachments/TraditionalDelivery.png" alt="Traditional Delivery" />
+
+<img src="./attachments/TraditionalDelivery.png" alt="Traditional Delivery" /> <br />
 
 In Agile each iteration will provide a usable product to the customer. In each iteration we can adapt and add value based on our customer feedback.
-<img src="./attachments/AgileDelivery.png" alt="Agile Delivery" />
+
+<img src="./attachments/AgileDelivery.png" alt="Agile Delivery" /> <br />
 
 -   Continuous value delivery to customers; outcome over output. (Manifesto of Agile Software Development: " [Working software is the primary measure of progress](https://agilemanifesto.org/principles.html "Principles behind the Agile Manifesto").")
 -   Continuous learning & applying empiricism:
