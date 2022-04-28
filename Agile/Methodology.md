@@ -269,12 +269,25 @@ We can aggregate and condense the before mentioned concepts and principles into 
 Traditional Management \<=\> Agile Leadership
 ---------------------------------------------
  
-1.  Predictive, long-term planning \<=\> Provision of vision, strategy,     and direction
+1.  Predictive, long-term planning \<=\> Provision of vision, strategy, and direction
 2.  Control of work, task assignment \<=\> Fostering self-organization
 3.  Maximize utilization and capacity \<=\> Supporting teams by removing what is impeding them
 4.  The go-to problem fixer for subordinates \<=\> Let those closest to the problem figure out a solution
 5.  Motivating others by extrinsic incentives (bonuses, titles, etc.) \<=\> Motivating others by enabling autonomy, mastery, and purpose
 6.  Information flows up the hierarchy (reports, meetings) \<=\> Management moves to where the information is, for example, by participation in Sprint Reviews.
+
+| Boss                                       | Leader    |
+|--------------------------------------------|---------------------------------------------------------------------------------|
+| Drives Employees  | Coaches Them |
+| Depends on Authority |  on good will |
+| Inspires Fear | Geneates Enthusiasum |
+| Says "I" | Says "We" |
+| Places blames for the breakdown | Fixes the breakdowns |
+| Knows how is done | Show how is done |
+|  Uses People | Develops People |
+| Takes Credit  | Gives Credit |
+| Says "Go" | Says "Let's go"|
+
 
 Subway Map to Agile Practices
 -----------------------------
