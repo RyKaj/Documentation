@@ -2,10 +2,6 @@
 ------------
 
 # Value Stream Mapping
-###### [Home](https://github.com/RyKaj/Documentation/blob/master/README.md) | 
-------------
-
-# Value Stream Mapping
 Value Stream Mapping (VSM) is a lean technique whose primary purpose is to illustrate, analyze, and improve the steps required to deliver a product or service. A key part of lean methodology, VSM reviews the flow of process steps and information from origin to delivery to the customer and represents this as a structured visualization.
 
 As with other types of flowcharts and process mapping, it uses symbols and statuses to depict various work activities and cadences. VSM is especially useful to find and eliminate waste. Items are mapped as adding value or not adding value from the customer’s standpoint, with the purpose of rooting out items that don’t add value or act as bottlenecks.
@@ -87,14 +83,14 @@ VSM Workshops should involve all the people who take part, participate, are invo
 #### Phases
 ##### Phase 1: Preliminary Guidelines 
 Facilitator in collaboration with the Sponsor discuss and plan the VSM workshop to identify:
--     Why do a VSM?
--     Goals and deliverable
--     What’s “in scope” and “out of scope”
--     Identified stakeholders of value stream flow
--     The participant list, both for in-person and remote participants
--     The anticipated time needed for each section of the work session
--     Digital Collaboration tools, meeting space and so on
--     VSM Template familiarization
+- Why do a VSM?
+- Goals and deliverable
+- What’s “in scope” and “out of scope”
+- Identified stakeholders of value stream flow
+- The participant list, both for in-person and remote participants
+- The anticipated time needed for each section of the work session
+- Digital Collaboration tools, meeting space and so on
+- VSM Template familiarization
 
 ##### Phase 2: Preparation
 There are three (3) big preparation tasks before the workshop.

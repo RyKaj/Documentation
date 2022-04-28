@@ -1,948 +1,1741 @@
-﻿
-
-## Meeting Information
-<table>
-	<colgroup>
-		<col  style="width: 30%" />
-		<col  style="width: 70%" />
-	</colgroup>
-	<tbody>
-		<tr>
-			<td>Squad</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Location</td>
-			<td></td>
-		</tr>		
-		<tr>
-			<td>Date & Time</td>
-			<td></td>
-		</tr>		
-		<tr>
-			<td>Attendees</td>
-			<td></td>
-		</tr>		
-	</tbody>
-</table>
-
-## Rules
-- Scoring
-	- Evidence type Questions:  With boolean (Yes/No) answers have a score of 1 or 0 points. 
-	- Evidence type Metric: Refer to notes within that cell
-- The average score is calculated for each Aspect.
-- Recommendations are based on conclusions and results from this document, for later to create a Engineering Health Check document to prioritized together with the squad. 
-
+﻿<!--
 # Levels
 ## CMM Levels
 <table>
-	<colgroup>
-		<col  style="width: 30%" />
-		<col  style="width: 70%" />
-	</colgroup>
-	<tbody>
-		<tr>
-			<td>Level</td>
-			<td>Description</td>
-		</tr>
-		<tr>
-			<td>L1 - Learning</td>
-			<td>
-				<ul>
-					<li>Squad characterized by little systematic methods</li>
-					<li>The Squad is using ad hoc or standard practice might have existed are abandoned during crisis.</li>
-                    <li>No key process areas</li>
-                    <li>Unstable environment for software development</li>
-                    <li>No basis for predicting product quality or time for completion</li>
-				</ul>
-			</td>
-		</tr>		
-		<tr>
-			<td>L2 - Practicing </td>
-			<td>
-				<ul>
-					<li>Squad are characterized by individual control</li>
-					<li>Focuses on established basic project management policy</li>
-                    <li>Configuration Management: Focus is on maintaining the performance of the software product</li>
-                    <li>Requirements Management: Review and feedback which results in some changes in the requirements set.  Consists of accommodation of those modified requirements</li>
-                    <li>Software Quality: Guarantees a good quality software product by following certain criteria and quality standard guidelines while development</li>
-				</ul>
-			</td>
-		</tr>
-		<tr>
-			<td>L3 - Systematic</td>
-			<td>
-				<ul>
-					<li>Squad institutionalize process, code review, inter-squad coordination, software product engineering, integrated software management, training programs, and organization process defined and focus</li>
-					<li>Documentation of standards guidelines and procedures are defined and followed</li>
-                    <li>Code Reviews on architecture design pattern, application design patterns, code format.</li>
-                    <li>Inter-team coordination and collaboration: Interacting between different squads and departments</li>
-                    <li>Organization & Squad Process definition: focus on the development and maintenance of standard development process</li>
-					<li>Organization & Squad Process focus: Activities and practices that should be followed to improve the process capabilities of an organization</li>
-					<li>Training Programs: Focus on enhancement of knowledge and skills for the Squad and insures an increase in work efficiency</li>
-				</ul>
-			</td>
-		</tr>
-		<tr>
-			<td>L4 - Measuring</td>
-			<td>
-				<ul>
-					<li>Organization & Squad incorporate process measurement and apply quality management as well as process measurement and analysis</li>
-					<li>Quantitative quality goals are set for the Organization & Squad on the software product and process</li>
-                    <li>Quality threshold are defined and set</li>
-                    <li>Measurements are set to help the Organization & Squad to predict the product and process quality with some limits defined quantitatively</li>
-                    <li>Established plans and strategies to development quantitative analysis and understanding of the product quality</li>
-					<li>Organization & Squad Process focus: Activities and practices that should be followed to improve the process capabilities of an organization</li>
-					<li>Focus on controlling the project velocity</li>
-				</ul>
-			</td>
-		</tr>
-		<tr>
-			<td>L5 - Innovation</td>
-			<td>
-				<ul>
-					<li>Squad obtain feedback for improvement through Change Management, technology innovation, and defect prevention</li>
-					<li>Process Change Management: Squads continuous improvement, productivity, quality and cycle time</li>
-                    <li>Technology Change Management: Identification new technology to improve the product quality and decrease product development time</li>
-                    <li>Defect Prevention: Identification of causes of defects and to prevent them from recurring in future Stories by improving project and defined process</li>
-				</ul>
-			</td>
-		</tr>				
-	</tbody>
+   <colgroup>
+      <col  style="width: 30%" />
+      <col  style="width: 70%" />
+   </colgroup>
+   <tbody>
+      <tr>
+         <td>Level</td>
+         <td>Description</td>
+      </tr>
+      <tr>
+         <td>L1 - Learning</td>
+         <td>
+            <ul>
+               <li>Squad characterized by little systematic methods</li>
+               <li>The Squad is using ad hoc or standard practice might have existed are abandoned during crisis.</li>
+               <li>No key process areas</li>
+               <li>Unstable environment for software development</li>
+               <li>No basis for predicting product quality or time for completion</li>
+            </ul>
+         </td>
+      </tr>
+      <tr>
+         <td>L2 - Practicing </td>
+         <td>
+            <ul>
+               <li>Squad are characterized by individual control</li>
+               <li>Focuses on established basic project management policy</li>
+               <li>Configuration Management: Focus is on maintaining the performance of the software product</li>
+               <li>Requirements Management: Review and feedback which results in some changes in the requirements set.  Consists of accommodation of those modified requirements</li>
+               <li>Software Quality: Guarantees a good quality software product by following certain criteria and quality standard guidelines while development</li>
+            </ul>
+         </td>
+      </tr>
+      <tr>
+         <td>L3 - Systematic</td>
+         <td>
+            <ul>
+               <li>Squad institutionalize process, code review, inter-squad coordination, software product engineering, integrated software management, training programs, and organization process defined and focus</li>
+               <li>Documentation of standards guidelines and procedures are defined and followed</li>
+               <li>Code Reviews on architecture design pattern, application design patterns, code format.</li>
+               <li>Inter-team coordination and collaboration: Interacting between different squads and departments</li>
+               <li>Organization & Squad Process definition: focus on the development and maintenance of standard development process</li>
+               <li>Organization & Squad Process focus: Activities and practices that should be followed to improve the process capabilities of an organization</li>
+               <li>Training Programs: Focus on enhancement of knowledge and skills for the Squad and insures an increase in work efficiency</li>
+            </ul>
+         </td>
+      </tr>
+      <tr>
+         <td>L4 - Measuring</td>
+         <td>
+            <ul>
+               <li>Organization & Squad incorporate process measurement and apply quality management as well as process measurement and analysis</li>
+               <li>Quantitative quality goals are set for the Organization & Squad on the software product and process</li>
+               <li>Quality threshold are defined and set</li>
+               <li>Measurements are set to help the Organization & Squad to predict the product and process quality with some limits defined quantitatively</li>
+               <li>Established plans and strategies to development quantitative analysis and understanding of the product quality</li>
+               <li>Organization & Squad Process focus: Activities and practices that should be followed to improve the process capabilities of an organization</li>
+               <li>Focus on controlling the project velocity</li>
+            </ul>
+         </td>
+      </tr>
+      <tr>
+         <td>L5 - Innovation</td>
+         <td>
+            <ul>
+               <li>Squad obtain feedback for improvement through Change Management, technology innovation, and defect prevention</li>
+               <li>Process Change Management: Squads continuous improvement, productivity, quality and cycle time</li>
+               <li>Technology Change Management: Identification new technology to improve the product quality and decrease product development time</li>
+               <li>Defect Prevention: Identification of causes of defects and to prevent them from recurring in future Stories by improving project and defined process</li>
+            </ul>
+         </td>
+      </tr>
+   </tbody>
 </table>
-  
+-->
+
 ## Development Aspects
+<h1 id="-questionnaire-"><strong>Questionnaire</strong></h1>
 <table>
-	<colgroup>
-		<col  style="width: 20%" />
-		<col  style="width: 30%" />
-		<col  style="width: 20%" />
-		<col  style="width: 30%" />
-	</colgroup>
-	<tbody>
-		<tr>
-			<td>Source Code Management (SCM)</td>
-			<td>
-				<ul>
-					<li>Branch lifetime  (or non develop, master/main) branch exists/before it is removed</li>
-					<li>Duration it takes to merge (after code review approval, feature branch to develop branch, includes merge issue duration) on per request</li>
-				</ul>
-			</td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>
-				<ul>
-					<li>( Rejected Pull Requests (PR) ) Percentage code rejection against (feature) branch on squad over a sprint</li>
-					<li>Percentage code not getting reviewed against (feature) branch on squad over a sprint</li>
-					<li>( Code Churn - Rework ) Percentage code refactor is dong on rejection per sprint</li>
-					<li>Resolution to Resolve (RTR) - Average time taken to resolve pull requests, merge and decline</li>
-				</ul>
-			</td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Technical Standards</td>
-			<td>
-				<ul>
-					<li>dentify is there an established code principle that reduces dependencies and its repeatable</li>
-				</ul>
-			</td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Technical Process</td>
-			<td>
-				<ul>
-					<li>Agile Software Development process or methodology (any options below). Are you following any methodology and gates in place that measures it.</li>
-				</ul>
-			</td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Technical Debt</td>
-			<td>
-				<ul>
-					<li>( Code Churn / Technical Debt Ratio - Rework ) Percentage code refactor to resolve defects (QA to Production found)</li>
-					<li>( Code Churn - Rework ) Percentage code being Added, Deleted/Comment Out, and refactored on average per sprint to complete the Stories in the sprint</li>
-				</ul>
-			</td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Collaboration (Tools)</td>
-			<td>
-				<ul>
-					<li>Is there a fluid process to communicate, demonstrate, and collaborate with non-sqaud or non-tribe members ( that would impact their work like external SME...  ie: Architect, Security, Database, Network, Monitoring, Data Engineers - no db interaction, ...  )</li>
-				</ul>
-			</td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Self-Improvements</td>
-			<td>
-				<ul>
-					<li>What is the Cyclomatic Complexity / Code Complexity index value</li>
-					<li>What is the Code Duplication percentage</li>
-				</ul>
-			</td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Coding Policy</td>
-			<td>
-				<ul>
-					<li>Policy Documentation</li>
-				</ul>
-			</td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Confluence / Documentation</td>
-			<td>
-				<ul>
-					<li>Standard, process, architecture, documentation</li>
-				</ul>
-			</td>
-			<td></td>
-			<td></td>
-		</tr>											
-	</tbody>
-</table>
-
-
-
-
-------- need to update below...
-
-
-## Questionary
-<table>
-	<colgroup>
-		<col  style="width: 12%" />
-		<col  style="width: 12%" />
-		<col  style="width: 12%" />
-		<col  style="width: 12%" />
-		<col  style="width: 12%" />
-		<col  style="width: 12%" />
-		<col  style="width: 12%" />
-		<col  style="width: 12%" />
-		<col  style="width: 12%" />
-		<col  style="width: 12%" />
-	</colgroup>
-	<tbody>
-		<tr>
-			<td>Aspects</td>
-			<td>Description</td>
-			<td>Basic Statement (L1)</td>
-			<td>Acceptable Statement (L3)</td>
-			<td>Excellent Statement (L5)</td>
-			<td>Evidence Type</td>
-			<td>Evidence</td>
-			<td>Question</td>
-			<td>Acceptable</td>
-			<td>Excellent</td>
-			<td>Team</td>
-			<td>Comments</td>	
-		</tr>
-		<tr>
-			<td>Test Process (level 2 (2/8 points) </td>
-			<td>The process examines the quality of the "end products" and the final outcome. Set up test process on the project, QA involvement into SDLC activates, visibility and transparency around testing activates</td>
-			<td>The testing process is clear inside the QA team, at least manual testing is a part of DoD, QAs are a part of SCRUM ceremonies. Testing activities start in parallel with development (test cases creation, data preparation, etc).</td>
-			<td>The testing process is fully clear for the whole team, including QAs, devs, POs, etc. Testing (including automation tests) is s part of DoD for feature stories. QAs participate in all SCRUM ceremonies, where required. The testing effort is a part of the total estimation of stories.</td>
-			<td>Excellent Statement (L5)</td>
-			<td>Evidence Type</td>
-			<td>Evidence</td>
-			<td>Question</td>
-			<td colspan=4>
-				<table>
-					<tr>
-						<td>Question</td>
-						<td>Is Testing a part of DoD for each feature story?</td>
-						<td>What is your definition of done?  
-                            Do you test every single feature before considering it as done?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Is There a QA manager/lead who drives the testing process?</td>
-						<td>How do you organize the QA work? Is it part of the standard team ceremonies? Do you follow the same estimation process, standup reports...?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Do QA team members participate in Agile ceremonies?</td>
-						<td>Are the QA part of all the Agile ceremonies, like poker planning, 3 amigos...?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Does QA team member start working on a story in parallel to the developer and communicate with developers & POs to provide feedback and align testing scope/plan?</td>
-						<td>When a new Sprint starts, what does a QA member usually do? Feature file description, add a new test to Xray, is this done in parallel with a developer? Is there communication with the developer / PO?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Is The testing effort a part of the total estimation of stories?</td>
-						<td>When the team is doing the estimation before the sprint planning, do you consider the effort of testing as part of the estimation? all testing, manual, automation, including functional and non-functional?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Is the Testing process defined and transparent allowing other squad members to step in when needed?</td>
-						<td>If the manual QA needs help because they are overloaded, can the Developers, or PO help with some test? Do they follow the process defined (Use Xray execution, upload results ...)</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Is there a Test Plan prepared for each release?</td>
-						<td>Do you have a dedicated test plan or execution per release/sprint? so every new feature developed in the sprint is added to the master plan?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Is there a test coverage review meeting (3 amigos) held for each release?</td>
-						<td>How do you keep the balance between automation and manual? Do you review your test coverage per release?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>										
-				</table>	
-			</td>
-		</tr>
-		<tr>
-			<td>Test Strategy</td>
-			<td>Overall test strategy on the project, clear understanding of how testing runs and integrated into SDLC process</td>
-			<td>Test strategy is partially documented and the squad is partially following it</td>
-			<td>Test strategy is documented and the squad is partially following it</td>
-			<td>Test Strategy is documented and fully followed by the squad. STLC is fully integrated with the SDLC</td>
-			<td colspan=4>
-				<table>
-					<tr>
-						<td>Question</td>
-						<td>Is Testing a part of DoD for each feature story?</td>
-						<td>What is your definition of done?  
-                            Do you test every single feature before considering it as done?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Are selected tools in line with tools used for the whole organization?</td>
-						<td>What tools are you using for your testing both for manual and automation pieces?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Is Test reporting and visibility on the testing process clear for all team members?</td>
-						<td>Who is responsible for creating Test reports? Is it done manually or in an automated way? Does everyone from the team have access to the reports?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Is Exploratory testing in place?</td>
-						<td>Do you have exploratory testing? If yes - how often and who is involved in this process?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Does Regression testing happen regularly?</td>
-						<td>Could you, please, describe your Regression testing process?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-                </table>
-            </td>
-		</tr>
-		<tr>
-			<td>Test Case Management process</td>
-			<td>Process of creating, updating, executing test cases, list of test cases executing on different stages</td>
-            <td>Test cases are not written for testing.</td>
-			<td>There is a Test Case Management Tool, which is aligned with what is used for the whole organization. At least 80% of stories are covered with test cases. All test cases are split by test suites for Smoke and Regression executions.</td>
-			<td>There is a Test Case Management Tool, which is aligned with what is used for the whole organization. All stories are covered with test cases, which are split by test suites for Smoke and Regression executions. A traceability matrix is created and there is a place to look at what stories are covered by which test cases.</td>
-			<td colspan=4>
-				<table>
-					<tr>
-						<td>Question</td>
-						<td>Is there a single source of truth for manual test cases (Xray)?</td>
-						<td>Do you use Xray to document testing scenarios, prepare the test plans, and record executions?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Does the requirement traceability matrix exist?</td>
-						<td>How do you track what functionalities are covered with tests and what are missing? Do you have a traceability matrix?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>What is your level of test coverage?</td>
-						<td>How many features are covered with tests? </td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Do the PO or developers review the tests?</td>
-						<td>Is there someone besides the QA team who reviews test cases? Devs, POs?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Do you have the test category "Smoke" and "Regression" defined?</td>
-						<td>How do you categorized and split tests? Do you have Smoke, Regression test suites defined?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-                </table>
-            </td>
-		</tr>
-		<tr>
-			<td>Defect Management</td>
-			<td>Process of defect creation, handling opened defects</td>
-            <td>Defects are not tracked, therefore the team does not triage or perform root analysis of the defects found.</td>
-			<td>Defects are tracked in Jira to the original feature's requirement. There isn't a ceremony for defects triage and prioritization is not according to the impact</td>
-			<td>Defects are tracked in Jira to the original feature's requirement. The team triages the defects and give the right priority according to the impact</td>
-			<td colspan=4>
-				<table>
-					<tr>
-						<td>Question</td>
-						<td>Do you track found defects into a bug tracking system?</td>
-						<td>When you find a bug, what do you do? how do you track the life cycle of the bug?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Do you link in Jira, defects to a feature's requirement?</td>
-						<td>Do you link in Jira, defects to a feature's requirement?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Do you have a template for defects creation process?</td>
-						<td>Do you have a template for defects creation process? 
-                            What fields are mandatory?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Are all mandatory fields, like Priority, Environment, Device, Build #, etc are filled in during defect creation?</td>
-						<td>Is there a list of all mandatory fields for defects creation defined and followed?
-                            Are all mandatory fields, like Priority, Environment, Device, Build #, etc are filled in during defect creation?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Are there any retrospectives (actions items/root cause analyses) done on defects area?
-                            For instance: the most problematic functionality, area with the most invalid bugs, etc.</td>
-						<td>Are there any retrospectives (actions items/root cause analyses) done on defects area?
-                            For instance: the most problematic functionality, area with the most invalid bugs, etc.</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Do you have a process for defects triage?</td>
-						<td>How does the team know what is the most important bug to fix? How do you give the severity or priorities to the bug? Does the team review this?
-                            How often do you review your bug backlog? Do you treat them as a normal feature or do they have different ceremonies to triage them?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>What is the average time to fix the critical bug?.</td>
-						<td>If a bug is found in UAT/Staging how long does it take to put it back into the team backlog? If the bug is found during the sprint how long does it take?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>How many bugs are closed as invalid?</td>
-						<td>Sometimes bugs raise by QA do not contain enough information, or are not a real bug (For example QA misunderstood the requirement), how often does it happen?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>                                        
-                </table>
-            </td>
-		</tr>
-		<tr>
-			<td>QA Metrics</td>
-			<td>Process of measuring the effectiveness of QA process, visibility on the testing activities, and product stability</td>
-            <td>QA metrics are not measured.</td>
-			<td>QA metrics for Defect Managements and Test Automation are measured.</td>
-			<td>QA metrics for Defect Managements and Test Automation are measured in an automated way. Also, some action items are built based on Metric results.</td>
-			<td colspan=4>
-				<table>
-					<tr>
-						<td>Question</td>
-						<td>Are Metrics around the Defect management area measured?</td>
-						<td>How do you track your QA progress? Are there any metrics/dashboards for the Defect Management area?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Are Metrics around the Test Automation area measured?</td>
-						<td>Are there any metrics/dashboards for the Test Automation area?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Are metrics measured in an automated way?</td>
-						<td>If yes for previous, how are you creating your dashboards?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Is Retro and action plan based on metrics results happening?</td>
-						<td>Based on metrics that you are receiving - are there any action items created?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-                </table>
-            </td>
-		</tr>
-		<tr>
-			<td>Test Automation and Quality Gates</td>
-			<td>The level of maturity in test automation area, including quality gates, following testing pyramid.</td>
-            <td>There is not automation tests or metrics that measure the level of coverage</td>
-			<td>There are automation tests and they run as part of the CI pipeline, but results and metrics are not used to influence the pipeline and prevent code changes with not enough quality changes to be merged into the main branch.</td>
-			<td>There are automation tests that run continuously and prevent code changes with regression to be merged into the main source code branch</td>
-			<td colspan=4>
-				<table>
-					<tr>
-						<td>Question</td>
-						<td>Does In-Sprint automation present?</td>
-						<td>Do you cover each feature with automation tests and automation tests are a part of DoD and done in the same sprint as feature item?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Do you calculate the code coverage for every build? </td>
-						<td>When was the last time you measure the code coverage? Is it done automatically as part of the CI pipeline? A drop in the code coverage makes the build fail? </td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Do you create unit tests for new functionalities and it is a part of DoD?</td>
-						<td>Are Unit tests mandatory to consider a given functionality ready to be tested? 	</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>What are your tests type distribution according to the test pyramid?</td>
-						<td>Do you have Unit test, integration test (Tests where you mock your dependencies), and E2E where you test everything together? How often do you execute them?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Do you have some smoke automated tests running on UAT/Prod continuously after each release?</td>
-						<td>Are you reusing your test to keep them running continuously in production and notify the team when something is not working as expected?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Are Quality Gates established, defined, and followed for each stage/environment?</td>
-						<td>What are the quality gates that the team follows in order to decide if a given release can be promoted from and environment to the next?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Metric</td>
-						<td>Is Automation testing a part of the testing strategy?</td>
-						<td>Do you have any automation tests?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Metric</td>
-						<td>Coverage for unit tests</td>
-						<td>Do you have Unit test? If yes what is the code coverage? </td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>                                        
-                </table>
-            </td>
-		</tr>
-		<tr>
-			<td>Test Execution and Reporting</td>
-			<td>There are either no automation tests, or all automation tests are executed locally, there is no reporting for automation tests. Only automation QA could execute tests and know where to find the results.</td>
-            <td>The majority of the tests are integrated into pipelines and executed on a regular basis. The pass rate for automation tests is close to 90%. QAs and developers have access to view the test results of test execution.</td>
-			<td>There is a Test Case Management Tool, which is aligned with what is used for the whole organization. At least 80% of stories are covered with test cases. All test cases are split by test suites for Smoke and Regression executions.</td>
-			<td>Automation tests are integrated into pipelines and executed on a regular basis. Automation tests are split for Smoke and Regression test suites and the pass rate is close to 99%. There is a single source of truth for manual and automation test cases, where everyone from the team is able to view the test results.</td>
-			<td colspan=4>
-				<table>
-					<tr>
-						<td>Question</td>
-						<td>Are all automated tests integrated into the pipelines and executed on a regular basis?</td>
-						<td>How often do you run your automation test?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Are automation tests split between Smoke and Regression test suites?</td>
-						<td>Are automation tests split between Smoke and Regression test suites?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>What is the average pass rate for your automation?</td>
-						<td>How often does the build fail because of a failure in a given test? When it fails, does it usually fail because of environmental issues or flaky tests?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Are Manual and Automation test aggregated under the same report (Xray)?</td>
-						<td>Do you upload the automation result also to Xray?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Do you have an automation test report tool with a test results timeline?</td>
-						<td>What do you do with the automation results report? Do you have an automation test report portal </td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Who has access to check the test results of test execution in reports?</td>
-						<td>How does the team know when a test is failing (automation and manual)? Does the team have access to the testing results?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>                    
-                </table>
-            </td>
-		</tr>
-		<tr>
-			<td>Non-Functional Testing</td>
-			<td>Presence of non-functional testing on the project, including performance and security testing. Accessing the state of Non-Functional Requirements, data load model, etc.</td>
-            <td>There are not Non-functional testing done manually neither automate, non-functional requirements are not collected during the analysis phase.</td>
-			<td>The team collects non-functional requirements and include them as the non-functional test in the testing plan. Automation is used to cover these tests but in a not dedicated environment where results and metrics are not available therefore conclusions are not generated after execution.</td>
-			<td>Automation tests cover the non-functional aspect of the product, there is a dedicated performance test environment used where the test suite is executed as part of the CI/CD pipeline, metrics are available therefore, the results and conclusions are generated after tests executions in a consistent manner. </td>
-			<td colspan=4>
-				<table>
-					<tr>
-						<td>Question</td>
-						<td>Is performance testing a part of the testing process?</td>
-						<td>When all the functionalities are tested and covered do you do any kind of non-functional test like performance before releasing to UAT, Staging, or Prod?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Does Non-Functional Requirements(NFR) exist?</td>
-						<td>How do you collect the non-functional requirements? </td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Are Performance tests correlated to end-user scenarios?</td>
-						<td>Do you run real performance tests correlated to end-user actions? Do you have a baseline to compare with the results?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Do you have a security test suite?</td>
-						<td>Do you have any automation security tests? Apart from static code analysis?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Do you correlate performance test results with standard metrics and logs?</td>
-						<td>When running the performance test? Are you able to collect the metrics (memory consumption, cpu ..) and logs from the servers under the test?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Do you run any of the NFT as part of the pipeline?</td>
-						<td>How often do you run these tests? are they part of your pipeline?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Do the results from the NFT influence the CI/CD pipeline?</td>
-						<td>What do you do with the results from these tests? Can they invalidate or block the progression of a given release in your pipeline?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>                                                            
-                </table>
-            </td>
-		</tr>
-		<tr>
-			<td>Test Environments</td>
-			<td>Set up of test environments, their usage and determine whether test envs are blockers for the usage</td>
-            <td>There aren't dedicated environments for functional and non-functional testing. Functional testing is happening on either Dev environments, or on upper environments. Only some specific people could deploy the specific builds to the environments.</td>
-			<td>There is a dedicated environment for functional testing, there is a place where non-functional could happen. There is no dependency on 3rd party unstable services. Anyone from the team can deploy and update environments for any specific build during 1 hour.</td>
-			<td>There is a dedicated environment for functional and non-functional testing. There is no dependency on 3rd party unstable services. Anyone from the team can deploy and update environments for any specific build during 15 minutes.</td>
-			<td colspan=4>
-				<table>
-					<tr>
-						<td>Question</td>
-						<td>Is there any environment for functional QA activities?</td>
-						<td>Where do you run your manual test? Do you have a dedicated environment for it? How do you ensure a given version of your app is there for testing?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Is there any environment for performance testing?</td>
-						<td>Do you have a dedicated environment to run non-functional tests such as performance tests?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Are there any dependencies on 3rd party unstable services/ environment?</td>
-						<td>What do you do with 3rd party dependencies in your test environment? Does your test environment suffer from unstable 3rd party services?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Is the test environment dedicated/isolated to the team?</td>
-						<td>What is the governance to not overlap with other test activities? How do you prepare and clean up the environment? Are you able to create an environment on the fly?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Can everyone from the team deploy any branch to QA environments?</td>
-						<td>Could deployment to QA environment be done by any team member?
-                            Is there some automation job in Jenkins for it?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Do you assert the expected state of the environment before running your test?</td>
-						<td>Before running your test, do you have a pre-step that ensures or prepares the environment into a given state to make sure your test is predictable and stable? for example, running a set of smoke tests</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-                    <tr>
-                        <td>Metric</td>
-                        <td>How much time does it take to deploy and update environments for a specific build?</td>
-                        <td>How long it takes to prepare the environment?</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
-            </td>
-		</tr>
-		<tr>
-			<td>Knowledge Transfer</td>
-			<td>How knowledge transfer and documentation regarding the Quality Assurance part is organized</td>
-            <td>There is a limited number of documentation for QA, no single source of truth, there is no documented and described on-boarding process for newcomers, only automation QA is aware of test automation tools, expertise and approach</td>
-			<td>The majority of QA areas are covered by documentation, however, it is stored in different places. The onboarding process is established, the basic checklist is created. Automation QAs and developers are aware of the process and able to execute needed tests</td>
-			<td>Documentation for QA process is created, everything is stored in Confluence and well structurally organized. A fully detailed onboarding process is established and documented in Confluence. The whole engineering team, including manual QAs are aware of the test automation approach and ability to execute it</td>
-			<td colspan=4>
-				<table>
-					<tr>
-						<td>Question</td>
-						<td>Is Documentation created and stored in Confluence?</td>
-						<td>How do you track your documentation? Do you use Confluence?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Are you updating your documentation on a regular basis?</td>
-						<td>Is your documentation up-to-date?
-                            How do you keep it up-to-date?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>How effective your documentation is?</td>
-						<td>Does your documentation work and viewed regularly?
-                            How many views do you have on average for your documents?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Is the onboarding process for newcomers is established and documented?</td>
-						<td>Do you have a formal process for updating documentation, is this documented anywhere?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Question</td>
-						<td>Are best practices for test automation expertise, test tools are shared inside the team?</td>
-						<td>Are there some online training, recorded sessions, guilds for best practices sessions for test automation expertise, test tools, etc inside the team?</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-                </table>
-            </td>
-		</tr>
-	</tbody>
+   <thead>
+      <tr>
+         <th style="text-align:left"><strong>Aspect</strong></th>
+         <th style="text-align:left"><strong>Questions</strong></th>
+         <th style="text-align:left"><strong>Evidence Type</strong></th>
+         <th style="text-align:left"><strong>L1 STARTING</strong></th>
+         <th style="text-align:left"><strong>L2 PRACTICING</strong></th>
+         <th style="text-align:left"><strong>L3 SYSTEMATIC</strong></th>
+         <th style="text-align:left"><strong>L4 MEASURING</strong></th>
+         <th style="text-align:left"><strong>L5 INNOVATING</strong></th>
+         <th style="text-align:left"><strong>Levels</strong></th>
+         <th style="text-align:left"><strong>Comments</strong></th>
+         <th style="text-align:left"><strong>Collaboration Notes</strong></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td style="text-align:left">
+            <p><strong>Source Code Management (SCM) / Version Control</strong></p>
+            <p></p>
+            <p><strong>Note:</strong></p>
+            <p>- <strong>Some squad might reference the term &quot;project&quot; as a branch reference.</strong></p>
+         </td>
+         <td style="text-align:left">
+            <p>Does the squad use and share a central source control for the application</p>
+            <p><br><br><br></p>
+         </td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">
+            <p>- Not using any SCM</p>
+            <p>- Branches (excluding master/main, develop) are kept around</p>
+            <p>- Only commits when everything is completed</p>
+            <p><br><br><br><br><br><br></p>
+         </td>
+         <td style="text-align:left">- Using other community or unauthorized SCM</td>
+         <td style="text-align:left">
+            <p>- Maintains all code in SCM</p>
+            <p>- Branching strategy protects the &quot;release&quot; branch from untested changes</p>
+            <p>- Squad has a dedicated central CSM repository</p>
+            <p>- Branches (excluding master/main, develop) exist until related change is deployed to production</p>
+            <p>- Occasional commits</p>
+            <p>- Stories are developed in separate branches</p>
+            <p><br><br><br><br></p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- Frequent commits within the day</p>
+            <p>- Merge duration is at its optimal to be most efficient for the process</p>
+            <p><br><br><br></p>
+         </td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>5 questions
+         </td>
+         <td>
+            4 metrics</p>
+            <p></p>
+         </td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">Do you have to use SCM to share all code changes</td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">Sharing files using slack, email, shared drive, or USB...etc</td>
+         <td style="text-align:left">Passing code snippets using slack, email, shared drive, or USB...etc</td>
+         <td style="text-align:left">
+            <p>- Code is only shared through Squad&#39;s SCM dedicated repository based on branch or commit id</p>
+            <p>- Using SCM collaboration tools (using Fork or Cherry-Pick)</p>
+            <p>- Using other plugin/add-on for secure collaboration</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>Cherry Pick - <a href="https://www.atlassian.com/git/tutorials/cherry-pick">https://www.atlassian.com/git/tutorials/cherry-pick</a></p>
+            <p>Fork - <a href="https://guides.co/g/bitbucket-101/11161">https://guides.co/g/bitbucket-101/11161</a></p>
+            <p></p>
+         </td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>Is the branching strategy protecting the release branch</p>
+            <p>Note:<br>There are different industry best practice branching patterns. As long as the team is following one of them and it is protecting the &quot;release&quot; branch.</p>
+         </td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">People are not aware of best practices to protect the release branch</td>
+         <td style="text-align:left">People can commit to the branch that is also used to deployed to environments</td>
+         <td style="text-align:left">
+            <p>- People can directly commit to the branch that is being deployed to environments - CI reference what branch commit ID to build from</p>
+            <p>- People can not directly commit to the branch that is being deployed to environments - CI pulls latest commit from branch</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p><a href="https://cycode.com/blog/how-to-setup-branch-protection-rules-2/">https://cycode.com/blog/how-to-setup-branch-protection-rules-2/</a></p>
+            <p>Branching Strategy</p>
+            <p>- <a href="https://martinfowler.com/articles/branching-patterns.html">https://martinfowler.com/articles/branching-patterns.html</a></p>
+            <p>- <a href="https://www.perforce.com/blog/vcs/best-branching-strategies-high-velocity-development#:~:text=A%20release%20branching%20strategy%20involves,release%20branching%20strategy%20is%20required">best-branching-strategies-high-velocity-development</a></p>
+            <p>- <a href="https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops">https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops</a></p>
+            <p>- <a href="https://launchdarkly.com/blog/git-branching-strategies-vs-trunk-based-development/">https://launchdarkly.com/blog/git-branching-strategies-vs-trunk-based-development/</a></p>
+            <p>- <a href="https://nvie.com/posts/a-successful-git-branching-model/">https://nvie.com/posts/a-successful-git-branching-model/</a></p>
+            <p>- <a href="https://www.gitkraken.com/learn/git/best-practices/git-branch-strategy">https://www.gitkraken.com/learn/git/best-practices/git-branch-strategy</a></p>
+         </td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>Do you put the Jira key in your commit comments?</p>
+            <p>Note:<br>Ie.. Jira Smart Commit</p>
+         </td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">Not referencing Jira Key in Commit comments</td>
+         <td style="text-align:left">Some squad members reference Jira Key in there commit comment</td>
+         <td style="text-align:left">
+            <p>- Main commit comment has Jira reference</p>
+            <p>- All commit comment has Jira ticket reference</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- links was sent in slack channel </p>
+            <p>&emsp;- Research was one - <a href="https://thestarsgroup.slack.com/archives/C028EUX1YBH/p1627044853028000">https://thestarsgroup.slack.com/archives/C028EUX1YBH/p1627044853028000</a></p>
+         </td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">Do you follow the &quot;1 story = 1 branch&quot; principle?</td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">n Story/feature : 1 Branch - all the time</td>
+         <td style="text-align:left">2 Story/feature : 1 Branch - occasionally have multiple stories in on branch</td>
+         <td style="text-align:left">1 Story/feature : 1 Branch - constantly</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>What git client do you use?</p>
+            <p>What add-on/plug-ins do you use?</p>
+         </td>
+         <td style="text-align:left">
+            <p>Research-Only</p>
+            <p><strong>No Impact in CMM</strong></p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">What is the average Feature branch life?</td>
+         <td style="text-align:left">
+            <p>Metric</p>
+            <p></p>
+         </td>
+         <td style="text-align:left">Branches are never deleted</td>
+         <td style="text-align:left">Branches are removed periodically</td>
+         <td style="text-align:left">More than 2 s or &gt;= sprint duration )</td>
+         <td style="text-align:left">&lt; 5 days (or &lt; 50% of sprint duration)</td>
+         <td style="text-align:left">&lt; 2 day (or &lt; 20% of sprint duration)</td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">How often do you commit?</td>
+         <td style="text-align:left">Metric</td>
+         <td style="text-align:left">When the work is done</td>
+         <td style="text-align:left">Occasionally commit - based on Story complexity</td>
+         <td style="text-align:left">Systematically, every 1-2 days</td>
+         <td style="text-align:left">Once a day</td>
+         <td style="text-align:left">More than once a day</td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">How long does it take on average to merge a commit once PR is approved?</td>
+         <td style="text-align:left">
+            <p>Metric</p>
+            <p></p>
+         </td>
+         <td style="text-align:left">&gt; 2d</td>
+         <td style="text-align:left">&lt; 2d</td>
+         <td style="text-align:left">&lt; 8h</td>
+         <td style="text-align:left">&lt; 4h</td>
+         <td style="text-align:left">&lt; 1hr</td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">What is the % code churn ( code reworked ) per sprint</td>
+         <td style="text-align:left">Metric</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"><strong>Code Review<br><br><br>The process of assuring code quality via code reviews.</strong></td>
+         <td style="text-align:left">
+            <p>Is Code Review being done for code merging?</p>
+            <p>Is the quality gate process integrated with pull request in Source Control Management?</p>
+         </td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left"><br><br></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- The Code Review process is set and clearly understood.</p>
+            <p>- Squad is not fully adhering to the process.</p>
+            <p>- Code rework after review could be high.</p>
+            <p>- Code review doesn&#39;t take too long.</p>
+            <p>- Squad is fully adhering to the process.</p>
+            <p>- Code refactoring after review is minimal</p>
+            <p>- Code review responses are fast, requests complete quickly.</p>
+            <p><br></p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p><br></p>
+            <p></p>
+         </td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">8 questions</td>
+         <td>3 metrics</td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">Is the squad doing code review before deploying to QA</td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">Not doing code review</td>
+         <td style="text-align:left">Occasionally doing code review</td>
+         <td style="text-align:left">Doing code review</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">Are the pull request comments constructive, descriptive, and useful in helping the developer improve their skills?</td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">Never</td>
+         <td style="text-align:left">
+            <p>- occasionally </p>
+            <p>- &lt; 80% of the time</p>
+         </td>
+         <td style="text-align:left">- all the time</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">Is the quality gate process integrated with pull request in Source Control Management?</td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">No thresholds or quality gates configured</td>
+         <td style="text-align:left">
+            <p>- Threshold has been set, not enforced</p>
+            <p>- Quality gate tools are only collecting data - not enforced </p>
+            <p>- Threshold has been adjusted to maintain, optimized high quality. </p>
+         </td>
+         <td style="text-align:left">Quality gate tools are enforced. Fails the process when threshold is not met.</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"><del>Are pull request usually an impediment to the delivery of flow</del></td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">
+            <p>- <del>Pull Request is the bottleneck within the process</del></p>
+            <p>- <del>Pull Request slows down the process</del></p>
+         </td>
+         <td style="text-align:left">
+            <p>- <del>Testing the code is later within the sprint instead of sooner</del></p>
+            <p>- <del>Pull request does not slow down process</del></p>
+         </td>
+         <td style="text-align:left">- <del>Pull request is address quickly that does not effect downstream process</del></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"><del>How does the code reviewer priorities the request</del></td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left"><del>No priority when code review request has received request</del></td>
+         <td style="text-align:left"><del>Treat code review request as normal priority - complete current task before code review others</del></td>
+         <td style="text-align:left"><del>Treat code review request as first priority</del></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">Do you validate business logic as part of code review process?</td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">Does not do business logic review</td>
+         <td style="text-align:left">Skims business logic</td>
+         <td style="text-align:left">Review business logic</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>Do you depend on external SMEs to complete code review?</p>
+            <p></p>
+            <p>Note: </p>
+            <p>SME - <a href="https://en.wikipedia.org/wiki/Subject-matter_expert">Subject Matter Expert</a></p>
+         </td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">No code review being done</td>
+         <td style="text-align:left">
+            <p>- All code review is done with external SME</p>
+            <p>- 50/50 code review is done with external SME</p>
+         </td>
+         <td style="text-align:left">
+            <p>- 80/20 - 20% is done by external SME</p>
+            <p>- All code review is done within the squad</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">What is the average cycle time for a pull request</td>
+         <td style="text-align:left">Metric</td>
+         <td style="text-align:left">&gt; 24 hr</td>
+         <td style="text-align:left">&lt; 24 hr</td>
+         <td style="text-align:left">&lt; 4 hr</td>
+         <td style="text-align:left">&lt; 1.5 hr</td>
+         <td style="text-align:left">&lt; 1 hr</td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>How many code review revision is required.</p>
+            <p>Note:<br>1 cycle = Reviewee submit &gt; Reviewer &gt; Reviewee needs to make changes</p>
+         </td>
+         <td style="text-align:left">Metric</td>
+         <td style="text-align:left">&gt; 5+ cycles</td>
+         <td style="text-align:left">&gt; 5 cycles</td>
+         <td style="text-align:left">&lt; 3 cycles</td>
+         <td style="text-align:left">&lt; 2 cycles</td>
+         <td style="text-align:left">&lt; 1 cycles</td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left">
+            <p><strong>Code Analysis / Integrated Analysis tool<br><br><br>Shows how rigorously the team enforces coding standards</strong></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+         </td>
+         <td style="text-align:left">
+            <p>Does your coding standard include or enforce the usage of local Lint - Static Analysis</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+         </td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">
+            <p>- Does not use any Lint on local IDE</p>
+            <p>- Use different local IDE Lint, not ways executing every time before commit</p>
+            <p>- Occasionally execute local IDE Lint, randomly resolve some issues before committing</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+         </td>
+         <td style="text-align:left">Executing local IDE Lint only addressing Critical and Blockers.</td>
+         <td style="text-align:left">
+            <p>Execute local IDE Lint and resolve all issues before committin</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+         </td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>3 questions
+         </td>
+         <td>
+            5 metrics</p>
+            <p></p>
+         </td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>Do you create/track (Jira tickets) on Static Analysis issues identified during scan</p>
+            <p>Note: </p>
+            <p>SQ Severity:</p>
+            <p>- Blocker</p>
+            <p>- Critical</p>
+            <p>- Major</p>
+            <p>- Minor</p>
+            <p>- Info</p>
+         </td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">
+            <p>- Does not log in or have an account to SonarQube</p>
+            <p>- Squad members log in to SonarQube to review - no other actions taken</p>
+         </td>
+         <td style="text-align:left">
+            <p>Tracks Blocker and Critical only in Jira</p>
+            <p>Tracks Major in Jira</p>
+            <p>Tracks Minor in Jira</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">Does the Continuous Integration ( CI ) process fail when quality gate threshold is surpassed</td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">
+            <p>- CI step is not configured / step does not exist</p>
+            <p>- CI step is configured, but not enabled</p>
+         </td>
+         <td style="text-align:left">
+            <p>- CI step executes only collects data </p>
+            <p>- SonarQube threshold configured - CI not enforced</p>
+         </td>
+         <td style="text-align:left">CI threshold is enforced - quality gates enabled</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>Does your coding standard include or enforce the Git hook to validate pre-commit</p>
+            <p>Note:</p>
+            <p>- Syntax check scan before commit </p>
+            <p>- configuration - <a href="https://pre-commit.com/">https://pre-commit.com/</a></p>
+         </td>
+         <td style="text-align:left">Metric</td>
+         <td style="text-align:left">Squad does not know about Git hook pre-commit</td>
+         <td style="text-align:left">
+            <p>- Squad does not include or enforce Git hook pre-commit</p>
+            <p>- Not all squad members have this installed on their system</p>
+            <p>- Squad members occasionally bypass/skip the validation </p>
+         </td>
+         <td style="text-align:left">
+            <p>- Pre-commit hook is configured to the squad&#39;s work</p>
+            <p>- Execute automatically / programmatically</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>How often does a build fail (on CI - based on code) after a change?</p>
+            <p>Note:<br>Any status is not success would be classified as failure (Example.. Aborted, Unstable)</p>
+         </td>
+         <td style="text-align:left">Metric</td>
+         <td style="text-align:left">&gt; 50%</td>
+         <td style="text-align:left">&lt; 49%</td>
+         <td style="text-align:left">&lt; 30%</td>
+         <td style="text-align:left">&lt; 20%</td>
+         <td style="text-align:left">&lt; 10%</td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>What is the Cyclomatic Complexity / Code Complexity index value</p>
+            <p></p>
+            <p>Note:<br>To reduce the complexity without compromise business rules or logic</p>
+         </td>
+         <td style="text-align:left">Metric</td>
+         <td style="text-align:left">&gt; 100</td>
+         <td style="text-align:left">&gt; 80 - &lt;= 100</td>
+         <td style="text-align:left">&gt; 60 - &lt;= 80</td>
+         <td style="text-align:left">&gt; 40 - &lt;= 60</td>
+         <td style="text-align:left">&lt; 40</td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>What is the Cognitive Complexity value</p>
+            <p>Note:<br>Cognitive tells you how difficult your code will be to read and understand</p>
+         </td>
+         <td style="text-align:left">Metric</td>
+         <td style="text-align:left">&gt;= 50</td>
+         <td style="text-align:left">&gt; 30 &lt; 50</td>
+         <td style="text-align:left">&gt; 20 &lt;= 30</td>
+         <td style="text-align:left">&gt; 10 &lt; 20</td>
+         <td style="text-align:left">&lt; 10</td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">What is the Code Duplication percentage</td>
+         <td style="text-align:left">Metric</td>
+         <td style="text-align:left">&gt; 40%</td>
+         <td style="text-align:left">&lt; 40%</td>
+         <td style="text-align:left">&lt; 30%</td>
+         <td style="text-align:left">&lt; 20%</td>
+         <td style="text-align:left">&lt; 10%</td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">What is percentage of code smell</td>
+         <td style="text-align:left">Metric</td>
+         <td style="text-align:left">Does not log in or have an account to SonarQube</td>
+         <td style="text-align:left">Squad members log in to SonarQube to review - no other actions taken</td>
+         <td style="text-align:left">0 Blockers &amp; Critical</td>
+         <td style="text-align:left">(0 Blockers &amp; Critical 0) and Majors</td>
+         <td style="text-align:left">(0 Blockers &amp; Critical * 0 Major) and 0 Minors</td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left">
+            <p><strong>Technical Standards</strong></p>
+            <p><strong>Awareness of design principles and their day-to-day application.</strong></p>
+            <p><strong>To reduce time wasted on:</strong></p>
+            <p>- <strong>Maintenance efforts</strong></p>
+            <p>- <strong>Compilation issues on  code modification or error-handling</strong></p>
+            <p><br><br><strong>Notes:</strong></p>
+            <p><a href="https://stackoverflow.blog/2021/11/01/why-solid-principles-are-still-the-foundation-for-modern-software-architecture/"><strong>SOLID</strong></a></p>
+            <p>- <strong>Single Responsibility Principle (SRP)</strong></p>
+            <p>- <strong>Open/Close Principle (OCP)</strong></p>
+            <p>- <strong>Liskov Substitution Principle (LSP)</strong></p>
+            <p>- <strong>Interface Segregation Principle (ISP)</strong></p>
+            <p>- <strong>Dependency Inversion Principle (DIP)</strong></p>
+            <p><strong>GOF - Gang of Four</strong></p>
+            <p>- <strong>Design Patterns</strong></p>
+            <p><strong>GRASP - General Responsibility Assignment Software Patterns</strong></p>
+            <p>- <strong>Design Patterns</strong></p>
+            <p><strong>Clean Coding</strong> </p>
+            <p>- <strong>Can code be read and enhanced by a developer other than original author (without spending a lot of time trying to understand it)</strong></p>
+         </td>
+         <td style="text-align:left">
+            <p>What design patterns does the squad use?</p>
+            <p><strong>Design Principle</strong>: </p>
+            <p>____________</p>
+         </td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">
+            <p>- Squad is NOT using any principles </p>
+            <p>- Squad uses different principles - &quot;developer choice&quot;</p>
+         </td>
+         <td style="text-align:left">
+            <p>- All Squad sort of follows the same principles</p>
+            <p>- Documented in their coding standards</p>
+         </td>
+         <td style="text-align:left">All Squad fully follows the same principles</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>1 questions
+         </td>
+         <td>
+            0 metrics</p>
+            <p></p>
+            <p></p>
+         </td>
+      </tr>
+      <tr>
+         <td style="text-align:left">
+            <p><strong>Technical Process</strong></p>
+            <p><strong>Agile Software Development process or methodology (any options below).</strong></p>
+            <p><strong>Any quality gates in place, metrics are being tracked</strong></p>
+            <p><strong>What are the threshold of those gates.</strong></p>
+            <p><strong>Note:</strong></p>
+            <p><strong>Anything under L3 should be flagged as high priority for further investigation</strong></p>
+            <p></p>
+            <p><strong>Pair Programming or XP (Extreme Programming)</strong></p>
+            <p>- <strong>Communication</strong></p>
+            <p>- <strong>Simplicity</strong></p>
+            <p>- <strong>Feedback</strong></p>
+            <p>- <strong>Respect</strong></p>
+            <p>- <strong>Courage</strong></p>
+            <p><strong>TDD - Test Driven Development</strong></p>
+            <p>- <strong>Develop unit of function</strong></p>
+            <p>- <strong>Produce the code for small units of test</strong></p>
+            <p>- <strong>Maintain workable test</strong></p>
+            <p><strong>BDD - Behaviour Driven Development or ATDD - Acceptance Test Driven Development</strong></p>
+            <p>- <strong>Discussing Features</strong></p>
+            <p>- <strong>Write Scenarios</strong></p>
+            <p>- <strong>Code Development</strong></p>
+            <p>- <strong>Passing the Scenarios</strong></p>
+            <p>- <strong>Refactor of Code</strong></p>
+            <p></p>
+            <p>**<br><br><br><br></p>
+         </td>
+         <td style="text-align:left">
+            <p>What methodology does the squad use?</p>
+            <p><strong>Methodology</strong>: </p>
+            <p>__________________</p>
+         </td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">Squad is not using (any methodology)</td>
+         <td style="text-align:left">
+            <p>- Squad uses different principles - &quot;developer choice&quot;</p>
+            <p>- Occasionally follow methodology</p>
+         </td>
+         <td style="text-align:left">
+            <p>- Documented in their coding standards</p>
+            <p>- Fully using this methodology</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">Are the engineers contributing to the evaluation of performance testing results?</td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">
+            <p>- Not doing any performance testing</p>
+            <p>- Only doing performance test if time permits</p>
+            <p></p>
+         </td>
+         <td style="text-align:left">
+            <p>- Periodically contribute to performance test</p>
+            <p>- Only doing performance test on areas that was found in Production</p>
+         </td>
+         <td style="text-align:left">Development  &amp; QA work together on everything including working out performance testing strategy, choosing tool suite, implementing any required plumbing code, analyzing results, drawing conclusions, maintaining related tech debt, informing architects about outcome</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"><del>Do you work on dependencies first during sprint to enable parallel development?</del></td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left"><del>Works on first ticket at the top of the list or takes lowest hanging fruit</del></td>
+         <td style="text-align:left"><del>Periodically works on dependency first</del></td>
+         <td style="text-align:left"><del>Always works on dependency first</del></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"><strong>Technical Debt Management (TDM)<br><br>How is technical debt being addressed.</strong> <br><br><br></td>
+         <td style="text-align:left">Do you know what <a href="https://confluence.pyrsoftware.ca/confluence/display/ATX/Playbook+Glossary#PlaybookGlossary-tocT">technical debt</a> is?</td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">
+            <p>- Never heard of the term</p>
+            <p>- Heard of the term, does not understand the meaning</p>
+         </td>
+         <td style="text-align:left">
+            <p>- Heard and understand the term. Unknown if the squad has technical debt</p>
+            <p>- Squad knows they have technical dept</p>
+         </td>
+         <td style="text-align:left">Knowledge on the term and is trying to address it</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"><br></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>6 questions
+         </td>
+         <td>
+            1 metrics </p>
+            <p></p>
+         </td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">Are you tracking technical debt?</td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">
+            <p>- Not tracking</p>
+            <p>- Squad knows some of the issues stored in their memory</p>
+         </td>
+         <td style="text-align:left">
+            <p>- Has it written down on paper or in memory</p>
+            <p>- Some squad members create ticket, others still write it down on paper</p>
+         </td>
+         <td style="text-align:left">- All squad members create Jira tickets</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">Are you (tech backlog) refinement with your technical debt?</td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">
+            <p>- Not grooming</p>
+            <p>- Review the list - no actions</p>
+         </td>
+         <td style="text-align:left">- Priorities couple of tickets with no solid methodology</td>
+         <td style="text-align:left">- Each tech debt item is tracked as a Jira ticket and they&#39;re all prioritized</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">Are you addressing in the technical debt within your sprint?</td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">
+            <p>- Not addressing any tickets</p>
+            <p>- Blue-moon addressing ticket(s)</p>
+         </td>
+         <td style="text-align:left">
+            <p>- Periodically 1 ticket have been added to the sprint</p>
+            <p>- Periodically &gt; 1 ticket have been added to the sprint</p>
+         </td>
+         <td style="text-align:left">- Min. 1 ticket are added to each sprint</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">How quickly can the technical debt be fixed (on average)</td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">&gt; 24 hr</td>
+         <td style="text-align:left">&lt; 24 hr</td>
+         <td style="text-align:left">&lt; 16 hr</td>
+         <td style="text-align:left">&lt; 8 hr</td>
+         <td style="text-align:left">&lt; 4 hr</td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>Potential this can be a metric?</p>
+            <p>- The life of a branch?</p>
+            <p>- Jira ticket (status changes or other updates)</p>
+         </td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>Do you classify the type of technical debt?</p>
+            <p>- Accidental - Reckless</p>
+            <p>- Deliberate - Reckless</p>
+            <p>- Accidental - Prudent</p>
+            <p>- Deliberate - Prudent</p>
+         </td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">No classifications</td>
+         <td style="text-align:left">
+            <p>- Jira ticket has a field for classification, tickets may not all been classified</p>
+            <p>- Jira ticket is being prioritized based on made up classification</p>
+         </td>
+         <td style="text-align:left">Jira ticket is being prioritized based on quadrant classification</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>From <a href="https://miro.com/app/board/o9J_l7EIMPk=/">Miro</a> board:</p>
+            <p><img src="Aspose.Words.373558dd-be62-49f6-a336-890fc455af18.003.jpeg" alt=""></p>
+            <p>Improving process to reduce</p>
+            <p>- Q3 &quot;Accidental - Reckless&quot;</p>
+            <p>- Q2 &quot;Deliberate - Reckless&quot;</p>
+            <p>- Q4 &quot;Accidental - Prudent&quot;</p>
+            <p>- Q1 &quot;Deliberate - Prudent&quot;</p>
+            <p></p>
+            <p>Martin Fowlers tech debt quadrant</p>
+            <p><a href="https://martinfowler.com/bliki/TechnicalDebtQuadrant.html">https://martinfowler.com/bliki/TechnicalDebtQuadrant.html</a></p>
+            <p><a href="https://www.stepsize.com/blog/complete-guide-to-technical-debt">https://www.stepsize.com/blog/complete-guide-to-technical-debt</a></p>
+            <p><a href="https://www.whitesourcesoftware.com/resources/blog/staying-on-top-of-your-organization-s-technical-debt/">https://www.whitesourcesoftware.com/resources/blog/staying-on-top-of-your-organization-s-technical-debt/</a></p>
+            <p></p>
+         </td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">What is the average % code churn ( code reworked ) on resolving technical debt issues</td>
+         <td style="text-align:left">Metric</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">Information could be pulled from Grafana - Needs to be hooked up</td>
+      </tr>
+      <tr>
+         <td style="text-align:left"><strong>Collaboration (Tools) <br><br>Is there a fluid process for collaboration with both squad internal &amp; external people.</strong><br></td>
+         <td style="text-align:left">
+            <p>Are you using the corporation standard Jira ticketing system to track all work and priorities order?</p>
+            <p></p>
+         </td>
+         <td style="text-align:left">
+            <p>Question</p>
+            <p>(default)</p>
+         </td>
+         <td style="text-align:left">
+            <p>- Not using Jira</p>
+            <p>- Using Jira only to update status on assigned tickets</p>
+         </td>
+         <td style="text-align:left">
+            <p>Occasionally add comments on progress and communication</p>
+            <p></p>
+         </td>
+         <td style="text-align:left">
+            <p>- Link other Jira tickets and Confluence (not just paste url in comments or description areas)</p>
+            <p>- Regularly add comments for visibility</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>Squad frequently shares knowledge internally and fully utilizes different types of collaboration tools on top of corporate standard tools.</p>
+            <p><br><br><br></p>
+         </td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>5 questions
+         </td>
+         <td>
+            0 metrics</p>
+            <p></p>
+            <p></p>
+         </td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">Are you using the corporation standard video conference tool</td>
+         <td style="text-align:left">
+            <p>Question</p>
+            <p>(default)</p>
+         </td>
+         <td style="text-align:left">
+            <p>- Using legacy corporate or unauthorized tools </p>
+            <p>- Not using Zoom or Slack</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">Is using Zoom or Slack</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">Are you using the corporation standard &quot;instant message&quot; tool</td>
+         <td style="text-align:left">
+            <p>Question</p>
+            <p>(default)</p>
+         </td>
+         <td style="text-align:left">
+            <p>Using legacy corporate or unauthorized tools </p>
+            <p>Not using Slack</p>
+         </td>
+         <td style="text-align:left">Is using Slack</td>
+         <td style="text-align:left">Using addon/plugin to increase productivity on corporate standard tools</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>Is the squad using any apps/tools to collaborate</p>
+            <p>- Ie, Miro, IDE that allows collaboration (ie.. <a href="https://visualstudio.microsoft.com/services/live-share/">Visual Studio Live Share</a> ).</p>
+         </td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">Not using any other tools</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">They are using other collaboration on demand</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>Do you do any squad knowledge sharing sessions?</p>
+            <p>- Lunch N&#39; Learn</p>
+            <p>- Brown Bag</p>
+            <p>- Hack-a-thon&#39;s</p>
+         </td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">Never shared</td>
+         <td style="text-align:left">Team is sharing occasionally (once or twice a year)</td>
+         <td style="text-align:left">Team is sharing quarterly or monthly</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"><strong>Coding Policy<br><br><br>Policy documentation is a set of files that describe the project, guidelines for contribution, and other standards and processes.</strong></td>
+         <td style="text-align:left">
+            <p>Does <a href="http://ReadMe.md">ReadMe.md</a> file exist?</p>
+            <p>- Does table of content exists</p>
+            <p>- Installation/Getting Started</p>
+            <p>- local system installation and setup</p>
+            <p>- prerequisite libraries</p>
+            <p>- Build status</p>
+            <p>- Project/Solution structure</p>
+            <p>- Execute Unit Test</p>
+            <p><br></p>
+         </td>
+         <td style="text-align:left">
+            <p>Question</p>
+            <p>Description: <br>ReadMe - A file that introduce and explains about the project. It contains information that is commonly required to understand about the project.</p>
+         </td>
+         <td style="text-align:left">
+            <p>- File does not exist</p>
+            <p>- Squad does not know what this file does</p>
+         </td>
+         <td style="text-align:left">File exists - maybe outdated, may not be using it</td>
+         <td style="text-align:left">
+            <p>Information is always up to date</p>
+            <p><br><br><br></p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>Does CODEOWNERS file exist?</p>
+            <p>- Is Default owner set</p>
+            <p>- Is the file automatically updated or manually updated</p>
+            <p>- Is the pull request required to merge?</p>
+         </td>
+         <td style="text-align:left">
+            <p>Question</p>
+            <p>Description: CodeOwner - A file to define individuals or squads that are responsible for the code in the repository.</p>
+            <p>A simple way to automatically assign reviewers to a pull request</p>
+         </td>
+         <td style="text-align:left">
+            <p>- File does not exist</p>
+            <p>- Squad does not know what this file does</p>
+         </td>
+         <td style="text-align:left">File exists - maybe outdated, may not be using it</td>
+         <td style="text-align:left">Fully configured</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>Does <a href="http://contributing.md">contributing.md</a> file exist?</p>
+            <p>- Does table of content exists</p>
+            <p>- Does code conduct section exists</p>
+            <p>- Does reporting defects section exists</p>
+            <p>- Does coding style section exists</p>
+         </td>
+         <td style="text-align:left">
+            <p>Question</p>
+            <p>Description: Contributor - A file that explains how people should contribute to the repo.</p>
+         </td>
+         <td style="text-align:left">
+            <p>- File does not exist</p>
+            <p>- Squad does not know what this file does</p>
+         </td>
+         <td style="text-align:left">File exists - maybe outdated, may not be using it</td>
+         <td style="text-align:left">Fully configured</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">Does .gitignore file exists</td>
+         <td style="text-align:left">
+            <p>Question</p>
+            <p>Description: gitignore - A file that manages the repo on what files and folders to ignore</p>
+         </td>
+         <td style="text-align:left">
+            <p>- File does not exist</p>
+            <p>- Squad does not know what this file does</p>
+         </td>
+         <td style="text-align:left">- File exists - maybe outdated, may not be using it (unwanted files are in the repo)</td>
+         <td style="text-align:left">Fully configured - Repo does not have any unwanted files</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">Is the squad adhering to the security policy standards</td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">Unaware there is a corporate security standard</td>
+         <td style="text-align:left">
+            <p>Not following security standards</p>
+            <p>File exists - maybe outdated, may not be using it</p>
+            <p>Squads copy/clone standard document into their space</p>
+         </td>
+         <td style="text-align:left">Squad reference corporate security standar</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"><strong>Documentation<br><br>Standards, process, architecture, and procedure documentation</strong></td>
+         <td style="text-align:left">What kind of documentation does the squad have?</td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">
+            <p>- No documentation</p>
+            <p>- Squad does not own documentation. Some aspects are covered</p>
+         </td>
+         <td style="text-align:left">
+            <p>Document covers the key aspects</p>
+            <p>- Coding Standards</p>
+            <p>- Best practices</p>
+            <p>- Application Architect</p>
+            <p>- On boarding</p>
+            <p>- Operational Support</p>
+         </td>
+         <td style="text-align:left">
+            <p>- Documentation is regularly updated</p>
+            <p>- Squad owns the documentation</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>7 questions
+         </td>
+         <td>
+            0 metrics</p>
+            <p></p>
+         </td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">Are industry standard coding policies documented for the squad?</td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">
+            <p>- No documentation</p>
+            <p>- Squad is using another squad&#39;s documentation, reference in the other squad&#39;s confluence space - Bookmarked</p>
+         </td>
+         <td style="text-align:left">Squad copy/clone another confluence page</td>
+         <td style="text-align:left">
+            <p>- In the squad confluence space reference by in hyperlink</p>
+            <p>- In the squad confluence space reference by &quot;include page&quot; </p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">Does the squad follow the coding standard?</td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">
+            <p>- Squad members are not even aware of document</p>
+            <p>- Squad members are aware, but follow only occasionally</p>
+         </td>
+         <td style="text-align:left">- Usually following it</td>
+         <td style="text-align:left">Always followed, continuously helping out each other to follow the standard properly.</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>Is there a document to help onboard a new member?</p>
+            <p>Note: </p>
+            <p>(Or act as a secondary backup from another squad)</p>
+         </td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">
+            <p>- No documentation</p>
+            <p>- Documentation exists with limited information. New members still need to ask lots of questions or inquire how to setup local system, what ticket request to gain proper access/permissions </p>
+            <p></p>
+         </td>
+         <td style="text-align:left">
+            <p>- Only needs to ask question for access/permissions </p>
+            <p>- New members only need minor clarifications</p>
+         </td>
+         <td style="text-align:left">New members do not need to inquire or refer to procedures to gain access/permissions to tools/sites they need to engage. Does not need any assistance to setup local environment</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>How is the on boarding document structured?</p>
+            <p>- checklist</p>
+            <p>- probation periods - 30, 60, 90</p>
+         </td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">
+            <p>- No documentation</p>
+            <p>- Document exists in their space. Content is not organized.</p>
+         </td>
+         <td style="text-align:left">Content might be organized, but no expectation set</td>
+         <td style="text-align:left">
+            <p>- Break down on expectations for 30-60-90 days </p>
+            <p>- Squad&#39;s document includes Tribes documentation.</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">What is the process to updating the on-boarding document</td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">
+            <p>No documentation</p>
+            <p>Does not have any process to update documentation </p>
+         </td>
+         <td style="text-align:left">Document is reviewed before new member starts</td>
+         <td style="text-align:left">Document is being updated by new staff on-boarding feedback.</td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+      <tr>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>Is the Security coding standard included within the squads Development Coding Standards?</p>
+            <p><strong>Not copying the original confluence page to the squad space. Expect hyperlink reference or using the macro &quot;include page&quot;</strong></p>
+         </td>
+         <td style="text-align:left">Question</td>
+         <td style="text-align:left">No documentation (from InfoSec or industry best practice sites)</td>
+         <td style="text-align:left">
+            <p>- Bookmark on local system internal (InfoSec) or external (Industry best practice). Not all squad members has reference</p>
+            <p>- copy/clone another confluence page </p>
+         </td>
+         <td style="text-align:left">
+            <p>- In the squad confluence space reference by in hyperlink</p>
+            <p>- In the squad confluence space reference by &quot;include page&quot; </p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left">
+            <p>- L1</p>
+            <p>- L2</p>
+            <p>- L3</p>
+            <p>- L4</p>
+            <p>- L5</p>
+            <p>- Skipped</p>
+         </td>
+         <td style="text-align:left"></td>
+         <td style="text-align:left"></td>
+      </tr>
+   </tbody>
 </table>
