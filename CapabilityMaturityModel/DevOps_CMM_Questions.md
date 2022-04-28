@@ -81,7 +81,6 @@
 <table>
    <thead>
       <tr>
-         <th style="text-align:center"></th>
          <th style="text-align:center"><strong>Aspects</strong></th>
          <th style="text-align:center"><strong>Sub-aspects</strong></th>
          <th style="text-align:center"><strong>Evidence</strong></th>
@@ -100,7 +99,6 @@
    </thead>
    <tbody>
       <tr>
-         <td style="text-align:center"><strong>1</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"><strong>Shift-left</strong></td>
          <td style="text-align:center"></td>
@@ -121,7 +119,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>2</strong></td>
          <td style="text-align:center"><strong>Process</strong></td>
          <td style="text-align:center">
             <p><strong>Coding Policies</strong></p>
@@ -171,7 +168,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>7</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Is the reusable code centralized for all tribes and squad to use</td>
@@ -206,7 +202,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>8</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Is the reusable or non-reusable code only target for a specific squad to use?</td>
@@ -237,7 +232,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>9</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -292,7 +286,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>10</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Is the branching strategy protecting the version the squad uses - until script has been properly tested</td>
@@ -327,7 +320,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>11</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Are the scripts written generically and/or data driven vs hard coded values and constraint to pipeline parameters?</td>
@@ -358,7 +350,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>12</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">What is the percentage of reusable and non-reusable scripts aren&#39;t using master branch</td>
@@ -393,7 +384,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>13</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Does the squad have access to the dependencies repo&#39;s to to build?</td>
@@ -424,7 +414,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>14</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -459,7 +448,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Are the parameters scripted?</td>
@@ -525,7 +513,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>15</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">What is the script Duplication percentage?</td>
@@ -562,7 +549,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>16</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">What is the % code churn ( code reworked ) per sprint/request</td>
@@ -593,7 +579,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>17</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">How long does  it take to make changes, test, and push to &quot;production&quot;</td>
@@ -624,7 +609,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>18</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">What are the pipelines (Jobs name and full URL) that the squad uses?</td>
@@ -651,7 +635,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>19</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Is the build process using Freestyle or Pipeline structure?</td>
@@ -678,7 +661,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>20</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -708,7 +690,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>21</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"><strong>Continuous Integration (CI) strategy</strong></td>
          <td style="text-align:center">
@@ -742,7 +723,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>24</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -770,7 +750,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>25</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"><strong>Continuous Deployment (CD) strategy</strong></td>
          <td style="text-align:center">Is there documentation on the deployment steps?<br>Can you provide the URL for us to review.</td>
@@ -801,7 +780,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>27</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -829,7 +807,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>28</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"><strong>Environment strategy</strong></td>
          <td style="text-align:center">
@@ -879,7 +856,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>30</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Do you offer self-service for squads members to provision an environment on-demand for their own needs?</td>
@@ -933,7 +909,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>32</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">How would you complete this sentence: &quot;Squads have enough environments in ...% of their time during sprint&quot;.</td>
@@ -957,7 +932,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>33</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">How would you complete this sentence: &quot;The tribe has enough environments to deliver value after sprints in ...% of their time.&quot;</td>
@@ -981,7 +955,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>34</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Does the tribe have enough environments to do testing?</td>
@@ -1008,7 +981,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>35</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -1055,7 +1027,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>36</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -1100,7 +1071,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>37</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Does the tribe have enough environments for regulatory &amp; compliance testing?</td>
@@ -1127,7 +1097,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>38</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Is there a non-production environment that exactly replicates production server on build and configuration for performance, security, and regulatory &amp; compliance testing?</td>
@@ -1181,7 +1150,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>39</strong></td>
          <td style="text-align:center"><strong>Continuous Integration (CI) - Build Process</strong></td>
          <td style="text-align:center"><strong>Pipeline</strong></td>
          <td style="text-align:center">Is the Squad using CI to build and package their work?</td>
@@ -1222,7 +1190,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>42</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Does each commit to squad&#39;s develop branch triggers build process?</td>
@@ -1259,7 +1226,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>43</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -1311,7 +1277,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>44</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -1356,7 +1321,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>45</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">When any unit test case fails, does it break the build process?</td>
@@ -1390,7 +1354,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>46</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">When unit test code coverage threshold is not met, does it break the build process?</td>
@@ -1421,7 +1384,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>47</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">When the build breaks, is it always the highest priority to resolve the builds issue?</td>
@@ -1455,7 +1417,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>48</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Is there adequate notifications in place to communicate the build status and failed build to the team?</td>
@@ -1493,7 +1454,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>49</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Who is being notified on all build status?</td>
@@ -1520,7 +1480,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>50</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Can the squad see the overall (accumulative) health status of the build process? Other than the build tool.</td>
@@ -1551,7 +1510,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>51</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -1585,7 +1543,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>52</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">What is the build success rate</td>
@@ -1616,7 +1573,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>53</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">What is the build time</td>
@@ -1652,7 +1608,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>54</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"><strong>Test Automation</strong></td>
          <td style="text-align:center">Is Unit Test part of the build process?</td>
@@ -1682,7 +1637,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>58</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"><strong>Automating Environments</strong></td>
          <td style="text-align:center"></td>
@@ -1699,7 +1653,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>62</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
             <p><strong>Artifact Repository</strong></p>
@@ -1735,7 +1688,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>63</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Does the Build Process generate release notes automatically? (Auditor and ISO Compliance level acceptance)</td>
@@ -1780,7 +1732,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>64</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -1847,7 +1798,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>67</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
             <p><strong>SAST - Static Application Security Testing (e.g. Code Analysis / Integrated Analysis tool)</strong></p>
@@ -1888,7 +1838,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>68</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Is the squad using a SAST tool to scan any binaries third party (not generated by the squads code)?</td>
@@ -1924,7 +1873,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>69</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Is the SAST tool thresholds configured for the squad</td>
@@ -1955,7 +1903,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>70</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -2002,7 +1949,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>71</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">What is the Security Hotspots severity break down that  SAST tool found?</td>
@@ -2040,8 +1986,7 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>75</strong></td>
-         <td style="text-align:center"><strong>Continuous Delivery  (CD) process</strong></td>
+         <td style="text-align:center"><strong>Continuous Delivery (CD) process</strong></td>
          <td style="text-align:center"><strong>Build promotion</strong></td>
          <td style="text-align:center">
             <p>Non-Production</p>
@@ -2084,7 +2029,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>76</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -2118,7 +2062,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>77</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Is the build package being rebuilt for each deployment or being pulled from Artifact repository?</td>
@@ -2149,7 +2092,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>78</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -2185,7 +2127,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>79</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -2223,7 +2164,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>80</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Production Environment - What is the Deployment frequency</td>
@@ -2254,7 +2194,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>81</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">What is the Mean Time to Respond?</td>
@@ -2288,7 +2227,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>82</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">What is the Mean Time to Acknowledge?</td>
@@ -2361,7 +2299,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>84</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">What is Mean Time to Failure?</td>
@@ -2400,7 +2337,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>85</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Change Failure Count</td>
@@ -2436,7 +2372,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>86</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Change Failure Count</td>
@@ -2472,7 +2407,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>87</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Change Lead Time</td>
@@ -2506,7 +2440,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>88</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">How long does it take to deploy to non-production environment</td>
@@ -2530,7 +2463,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>89</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">How long does it take to deploy to production environment</td>
@@ -2564,7 +2496,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>90</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -2603,7 +2534,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>91</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Can you deploy to production - at any time - on demand?</td>
@@ -2637,7 +2567,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>92</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -2702,92 +2631,6 @@
       </tr>
       <tr>
          <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>93</strong></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>94</strong></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>95</strong></td>
-         <td style="text-align:center"></td>
          <td style="text-align:center"><strong>Test Automation</strong></td>
          <td style="text-align:center">Does the squad have an option to start a series of automated tests as they see fit</td>
          <td style="text-align:center">Question</td>
@@ -2823,7 +2666,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>96</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Will the test automation automatically execute when the deployment is successful to all various environments ( QA, UAT, Prod, DR ) ?</td>
@@ -2973,7 +2815,6 @@
       <tr>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
          <td style="text-align:center">
             <p>Is Security Test Automation part of the development process?</p>
             <p></p>
@@ -3040,7 +2881,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>97</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Are automated test regularly run at least once per day and are part of the standard workflow</td>
@@ -3071,7 +2911,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>98</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Deployment to Production - Does the squad feel confident when all test automated pass. Those test cases will not be found by the customer</td>
@@ -3102,7 +2941,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>99</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">When any test automation has a test case failure. Is it likely to indicate a real defect?</td>
@@ -3133,7 +2971,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>100</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -3170,7 +3007,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>101</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -3191,7 +3027,7 @@
             <p>- L5</p>
             <p>- Skipped</p>
          </td>
-         <td style="text-align:center"><a href="https://confluence.pyrsoftware.ca/confluence/pages/createpage.action?spaceKey=ATX&amp;title=Metrics%252C+What+to+Measure%252C+Why+and+How&amp;linkCreation=true&amp;fromPageId=255682255">Metrics%2C What to Measure%2C Why and How</a></td>
+         <td style="text-align:center">Metrics What to Measure Why and How</td>
          <td style="text-align:center">
             <p>- L1</p>
             <p>- L2</p>
@@ -3204,7 +3040,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>102</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -3225,7 +3060,7 @@
             <p>- L5</p>
             <p>- Skipped</p>
          </td>
-         <td style="text-align:center"><a href="https://confluence.pyrsoftware.ca/confluence/pages/createpage.action?spaceKey=ATX&amp;title=Metrics%252C+What+to+Measure%252C+Why+and+How&amp;linkCreation=true&amp;fromPageId=255682255">Metrics%2C What to Measure%2C Why and How</a></td>
+         <td style="text-align:center">Metrics What to Measure Why and How</td>
          <td style="text-align:center">
             <p>- L1</p>
             <p>- L2</p>
@@ -3238,7 +3073,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>103</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -3259,7 +3093,7 @@
             <p>- L5</p>
             <p>- Skipped</p>
          </td>
-         <td style="text-align:center"><a href="https://confluence.pyrsoftware.ca/confluence/pages/createpage.action?spaceKey=ATX&amp;title=Metrics%252C+What+to+Measure%252C+Why+and+How&amp;linkCreation=true&amp;fromPageId=255682255">Metrics%2C What to Measure%2C Why and How</a></td>
+         <td style="text-align:center">Metrics What to Measure Why and How</td>
          <td style="text-align:center">
             <p>- L1</p>
             <p>- L2</p>
@@ -3272,7 +3106,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>104</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -3293,7 +3126,7 @@
             <p>- L5</p>
             <p>- Skipped</p>
          </td>
-         <td style="text-align:center"><a href="https://confluence.pyrsoftware.ca/confluence/pages/createpage.action?spaceKey=ATX&amp;title=Metrics%252C+What+to+Measure%252C+Why+and+How&amp;linkCreation=true&amp;fromPageId=255682255">Metrics%2C What to Measure%2C Why and How</a></td>
+         <td style="text-align:center">Metrics What to Measure Why and How</td>
          <td style="text-align:center">
             <p>- L1</p>
             <p>- L2</p>
@@ -3306,7 +3139,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>106</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
@@ -3323,7 +3155,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>107</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"><strong>Automating Environments</strong></td>
          <td style="text-align:center">
@@ -3427,7 +3258,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>108</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Can the squad see the overall (accumulative) health status of the deployment process on various environments?</td>
@@ -3458,7 +3288,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>109</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Can the tribe and other guilds, chapters see the overall (accumulative) health status of the deployment  process on various environments?</td>
@@ -3489,7 +3318,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>110</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Can anyone (tribe, squad, guilds, chapters) see the overall (accumulative) status on Unit Test code coverage</td>
@@ -3520,7 +3348,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>111</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Can anyone (tribe, squad, guilds, chapters) see the overall (accumulative) status on Security standards?</td>
@@ -3551,7 +3378,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>112</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Can anyone (tribe, squad, guilds, chapters) see the overall (accumulative) status on Test Automation ?</td>
@@ -3613,7 +3439,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>113</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">How long does it take to spin up a server for people/customers to use</td>
@@ -3726,58 +3551,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>114</strong></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>115</strong></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>116</strong></td>
          <td style="text-align:center"><strong>RK TechOps</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">What environments do you monitor</td>
@@ -3794,7 +3567,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>117</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -3814,7 +3586,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>118</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">What monitoring tools do you use?</td>
@@ -3831,7 +3602,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>119</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">How often does the system crash or require reboot?</td>
@@ -3848,24 +3618,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>120</strong></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>121</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
@@ -3882,7 +3634,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>122</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
@@ -3899,7 +3650,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>123</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
@@ -3916,7 +3666,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>124</strong></td>
          <td style="text-align:center"><strong>TechOps (Technical Operations)</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
@@ -3933,7 +3682,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>125</strong></td>
          <td style="text-align:center"><strong>General Support (Sub section)</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Do we know what service we are delivering?</td>
@@ -3961,7 +3709,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>126</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Do we know what systems we are responsible for?</td>
@@ -3985,7 +3732,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>127</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Is everything above documented clearly and visible for people outside of the team/dept.</td>
@@ -4014,7 +3760,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>128</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Is the support policy clearly defined?</td>
@@ -4038,7 +3783,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>129</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Are team roles defined and understood?</td>
@@ -4062,7 +3806,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>130</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Is the scope of our service defined?</td>
@@ -4086,7 +3829,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>131</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Responsible systems documented in the CMDB?</td>
@@ -4110,7 +3852,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>132</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
@@ -4127,7 +3868,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>133</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
@@ -4144,7 +3884,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>134</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
@@ -4161,7 +3900,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>135</strong></td>
          <td style="text-align:center"><strong>Incident and problem management (sub section)</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Do you have a defined and documented prioritization matrix which covers impact and severity?</td>
@@ -4189,7 +3927,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>136</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Do you use an Major Incident Report (MIR) template documented?</td>
@@ -4213,7 +3950,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>137</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">What template document type are you currently using?</td>
@@ -4230,7 +3966,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>138</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -4262,7 +3997,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>139</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -4289,7 +4023,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>140</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -4316,7 +4049,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>141</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Are incidents triaged with the correct severity/priority and assigned correctly?</td>
@@ -4340,7 +4072,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>142</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">MIRs are produced for major incidents (P0-P1) within 7 days of incident resolution</td>
@@ -4364,7 +4095,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>143</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Root Cause Analysis (RCA) is performed for major incidents and cause identified</td>
@@ -4388,7 +4118,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>144</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">All major incidents are resolved within 30 minutes</td>
@@ -4412,7 +4141,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>145</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">The major incident communications process is followed as documented</td>
@@ -4436,7 +4164,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>146</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Mean Time To Resolve (MTTR)</td>
@@ -4447,7 +4174,7 @@
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
-         <td style="text-align:center"><a href="file:///C:/confluence/pages/createpage.action?spaceKey=ATX&amp;title=Metrics%252C+What+to+Measure%252C+Why+and+How&amp;linkCreation=true&amp;fromPageId=255682255">Metrics%2C What to Measure%2C Why and How</a></td>
+         <td style="text-align:center">Metrics What to Measure Why and How</td>
          <td style="text-align:center">
             <p>- L1</p>
             <p>- L2</p>
@@ -4471,13 +4198,12 @@
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
-         <td style="text-align:center"><a href="file:///C:/confluence/pages/createpage.action?spaceKey=ATX&amp;title=Metrics%252C+What+to+Measure%252C+Why+and+How&amp;linkCreation=true&amp;fromPageId=255682255">Metrics%2C What to Measure%2C Why and How</a></td>
+         <td style="text-align:center">Metrics What to Measure Why and How</td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>148</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
@@ -4494,7 +4220,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>149</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
@@ -4511,7 +4236,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>150</strong></td>
          <td style="text-align:center">
             <p><strong>Technical Operations (sub section)</strong></p>
             <p></p>
@@ -4543,7 +4267,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>151</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Do you have fully realized Jira dashboards (both internal and business facing) that represents the team&#39;s work?</td>
@@ -4582,7 +4305,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>152</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Do have and use integrated communications tools such as Slack, Page Duty etc?</td>
@@ -4606,7 +4328,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>153</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Are you using integrated into the team&#39;s Jira project and workflows?<br>e.g. Slack, Pager Duty, etc</td>
@@ -4630,7 +4351,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>154</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -4661,7 +4381,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>155</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -4688,41 +4407,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>156</strong></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center">Question</td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>157</strong></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center">Question</td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>158</strong></td>
          <td style="text-align:center">
             <p><strong>Technical Operations (sub section)</strong></p>
             <p></p>
@@ -4757,7 +4441,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>159</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -4786,7 +4469,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>160</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Are production changes subject to peer review in Staging environment?</td>
@@ -4810,7 +4492,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>161</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Are production changes assessed, risk level identified, risk mitigation plan and rollback plan created prior to release?</td>
@@ -4837,7 +4518,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>162</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">What is your documented release communication strategy?</td>
@@ -4861,7 +4541,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>163</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Is there enough time allocated to the outage window to make production changes ( infrastructure, operating system update, network, proxy, etc..).</td>
@@ -4890,7 +4569,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>164</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">What is the average allocated outage window?</td>
@@ -4907,7 +4585,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>165</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -4935,7 +4612,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>166</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Is there any Rollback plans documented before each Production changes ( infrastructure, operating system update, network, proxy, etc..)?</td>
@@ -4959,7 +4635,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>167</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Number of releases without a rollback</td>
@@ -4986,7 +4661,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>168</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Number of outages caused by a release and how long were the outages?</td>
@@ -5013,7 +4687,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>169</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Number of Incidents caused by a release</td>
@@ -5037,7 +4710,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>170</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
@@ -5054,7 +4726,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>171</strong></td>
          <td style="text-align:center">
             <p><strong>Technical Operations</strong> </p>
             <p><strong>(sub section)</strong></p>
@@ -5089,7 +4760,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>172</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">What real-time monitoring dashboards tools are you using?</td>
@@ -5106,7 +4776,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>173</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Do you have a solution to report key business and system metrics?</td>
@@ -5130,7 +4799,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>174</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Do you have monitoring linked to notification tooling (eg; Pager Duty, Slack)?</td>
@@ -5154,7 +4822,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>175</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">What monitoring notification tools are you using?</td>
@@ -5178,7 +4845,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>176</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Systems monitoring coverage</td>
@@ -5202,7 +4868,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"><strong>177</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">Outages/System Degradation incidents prevented by monitoring and alerts</td>
@@ -5222,175 +4887,6 @@
             <p>- L5</p>
             <p>- Skipped</p>
          </td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>178</strong></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>179</strong></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-   </tbody>
-</table>
-<p>Question</p>
-<h1 id="-parked-items-"><strong>Parked Items</strong></h1>
-<p>Parked Aspects</p>
-<table>
-   <thead>
-      <tr>
-         <th style="text-align:center"></th>
-         <th style="text-align:center"><strong>Aspects</strong></th>
-         <th style="text-align:center"><strong>CMM - Metrics</strong></th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-   </tbody>
-</table>
-<p>Parked Questions</p>
-<table>
-   <thead>
-      <tr>
-         <th style="text-align:center"><strong>Aspects</strong></th>
-         <th style="text-align:center"><strong>Description</strong></th>
-         <th style="text-align:center"><strong>Basic Statement (L1)</strong></th>
-         <th style="text-align:center"><strong>Acceptable Statement (L3)</strong></th>
-         <th style="text-align:center"><strong>Excellent Statement (L5)</strong></th>
-         <th style="text-align:center"><strong>Evidence Type</strong></th>
-         <th style="text-align:center"><strong>Evidence</strong></th>
-         <th style="text-align:center"><strong>Scoring</strong></th>
-         <th style="text-align:center"></th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td style="text-align:center">Process</td>
-         <td style="text-align:center">Environment strategy</td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center">
-            <p>Question</p>
-            <p></p>
-            <p>Note:</p>
-            <p>SaaS = Software as a Service </p>
-         </td>
-         <td style="text-align:center">
-            <p>Do you make the best use of SaaS for utility applications (i.e. ones not used for competitive advantage such as version control)?&quot;</p>
-            <p></p>
-            <p>Note</p>
-            <p>If this does not make sense check  &quot;Skipped&quot; in the &quot;Scoring Results&quot; section</p>
-         </td>
-         <td style="text-align:center"><strong>L1</strong>: No - but makes sense to<br><strong>L2</strong>: Try to<br><strong>L3</strong>: Yes<br><strong>L4</strong>: <br><strong>L5</strong>:</td>
-         <td style="text-align:center">Question <a href="https://github.com/atosorigin/DevOpsMaturityAssessment">https://github.com/atosorigin/DevOpsMaturityAssessment</a> - questions.json 549</td>
-      </tr>
-      <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center">
-            <p>Question</p>
-            <p></p>
-            <p>Note:</p>
-            <p>PaaS = Platform as a Service</p>
-         </td>
-         <td style="text-align:center">
-            <p>As much as makes sense, do you use PaaS?</p>
-            <p></p>
-            <p>Note</p>
-            <p>If this does not make sense check  &quot;Skipped&quot; in the &quot;Scoring Results&quot; section</p>
-         </td>
-         <td style="text-align:center"><strong>L1</strong>: No - but makes to<br><strong>L2</strong>: Try to<br><strong>L3</strong>: Yes<br><strong>L4</strong>: <br><strong>L5</strong>:</td>
-         <td style="text-align:center">Question <a href="https://github.com/atosorigin/DevOpsMaturityAssessment">https://github.com/atosorigin/DevOpsMaturityAssessment</a> - questions.json 553</td>
-      </tr>
-      <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center">
-            <p>Question</p>
-            <p></p>
-            <p>Note:</p>
-            <p>PaaS = Platform as a Service</p>
-         </td>
-         <td style="text-align:center">
-            <p>As much as makes sense, do you use PaaS?</p>
-            <p></p>
-            <p>Note</p>
-            <p>If this does not make sense check  &quot;Skipped&quot; in the &quot;Scoring Results&quot; section</p>
-         </td>
-         <td style="text-align:center"><strong>L1</strong>: No - but makes to<br><strong>L2</strong>: Try to<br><strong>L3</strong>: Yes<br><strong>L4</strong>: <br><strong>L5</strong>:</td>
-         <td style="text-align:center">Question <a href="https://github.com/atosorigin/DevOpsMaturityAssessment">https://github.com/atosorigin/DevOpsMaturityAssessment</a> - questions.json 553</td>
-      </tr>
-      <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
       </tr>
