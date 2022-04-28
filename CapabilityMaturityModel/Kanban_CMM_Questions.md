@@ -1,4 +1,5 @@
-﻿# Levels
+﻿<!-- 
+# Levels
 ## CMM Levels
 <table>
    <colgroup>
@@ -32,6 +33,8 @@
       </tr>
    </tbody>
 </table>
+-->
+
 ## Kanban Aspects
 <h1 id="-questionnaire-"><strong>Questionnaire</strong></h1>
 <table>
@@ -80,18 +83,6 @@
          </td>
       </tr>
       <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
          <td style="text-align:center"><strong>Limit Work in Progress</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">- No Work In Progress (WIP) limits are defined <strong>OR</strong> Some WIP limits are defined, but are not always followed.</td>
@@ -118,18 +109,6 @@
             <p>- L5</p>
             <p>- Skipped</p>
          </td>
-      </tr>
-      <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
       </tr>
       <tr>
          <td style="text-align:center"><strong>Manage Flow</strong></td>
@@ -165,18 +144,6 @@
          </td>
       </tr>
       <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
          <td style="text-align:center"><strong>Make Policies Explicit</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -204,18 +171,6 @@
             <p>- L5</p>
             <p>- Skipped</p>
          </td>
-      </tr>
-      <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
       </tr>
       <tr>
          <td style="text-align:center"><strong>Establish Feedback Loop</strong></td>
@@ -254,18 +209,6 @@
          </td>
       </tr>
       <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
          <td style="text-align:center"><strong>Improve Collaboratively, Evolve Experimentally</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center">
@@ -295,17 +238,6 @@
             <p>- L5</p>
             <p>- Skipped</p>
          </td>
-      </tr>
-      <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
       </tr>
    </tbody>
 </table>

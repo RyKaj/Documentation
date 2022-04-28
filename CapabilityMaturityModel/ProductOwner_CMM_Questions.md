@@ -1,4 +1,5 @@
-﻿# Levels
+﻿<!--
+# Levels
 ## CMM Levels
 <table>
    <colgroup>
@@ -32,6 +33,8 @@
       </tr>
    </tbody>
 </table>
+-->
+
 ## Product Owner Aspects
 <h1 id="-questionnaire-"><strong>Questionnaire</strong></h1>
 <table>
@@ -88,20 +91,6 @@
             <p>- L5</p>
             <p>- Skipped</p>
          </td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
          <td style="text-align:center"></td>
       </tr>
       <tr>
@@ -281,20 +270,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
          <td style="text-align:center">
             <p><strong>Planning</strong> <br><br><br><br><br><br></p>
             <p></p>
@@ -367,20 +342,6 @@
             <p>- L5</p>
             <p>- Skipped</p>
          </td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
          <td style="text-align:center"></td>
       </tr>
       <tr>
@@ -568,20 +529,6 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
          <td style="text-align:center"><strong>Discovery</strong><br><br><br><br><br><br></td>
          <td style="text-align:center">
             <p>13. Product Owner Authority</p>
@@ -676,19 +623,6 @@
             <p>- L5</p>
             <p>- Skipped</p>
          </td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
          <td style="text-align:center"></td>
       </tr>
    </tbody>

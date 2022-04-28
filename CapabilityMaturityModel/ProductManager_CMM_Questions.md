@@ -1,4 +1,5 @@
-﻿# Levels
+﻿<!-- 
+# Levels
 ## CMM Levels
 <table>
    <colgroup>
@@ -32,6 +33,7 @@
       </tr>
    </tbody>
 </table>
+-->
 ## Product Manager Aspects
 <h1 id="-questionnaire-"><strong>Questionnaire</strong></h1>
 <table>
@@ -105,17 +107,6 @@
          <td style="text-align:left"></td>
       </tr>
       <tr>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-      </tr>
-      <tr>
          <td style="text-align:left"><strong>Data driven decision making</strong></td>
          <td style="text-align:left"></td>
          <td style="text-align:left">
@@ -152,17 +143,6 @@
          <td style="text-align:left"></td>
       </tr>
       <tr>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-      </tr>
-      <tr>
          <td style="text-align:left">
             <p><strong>Technical Acumen</strong></p>
             <p></p>
@@ -190,17 +170,6 @@
             <p>- L5</p>
             <p>- Skipped</p>
          </td>
-         <td style="text-align:left"></td>
-      </tr>
-      <tr>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
          <td style="text-align:left"></td>
       </tr>
       <tr>
@@ -251,17 +220,6 @@
          <td style="text-align:left"></td>
       </tr>
       <tr>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-      </tr>
-      <tr>
          <td style="text-align:left">
             <p><strong>Product portfolio management</strong></p>
             <p></p>
@@ -297,17 +255,6 @@
             <p>- L5</p>
             <p>- Skipped</p>
          </td>
-         <td style="text-align:left"></td>
-      </tr>
-      <tr>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
          <td style="text-align:left"></td>
       </tr>
       <tr>
@@ -474,17 +421,6 @@
          <td style="text-align:left"></td>
       </tr>
       <tr>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-      </tr>
-      <tr>
          <td style="text-align:left">
             <p><strong>Tools &amp; Artefacts</strong></p>
             <p></p>
@@ -522,17 +458,6 @@
             <p>- Skipped</p>
             <p></p>
          </td>
-         <td style="text-align:left"></td>
-      </tr>
-      <tr>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
          <td style="text-align:left"></td>
       </tr>
       <tr>
@@ -580,17 +505,6 @@
          <td style="text-align:left"></td>
       </tr>
       <tr>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-      </tr>
-      <tr>
          <td style="text-align:left">
             <p>Product Creation – <strong>Validate Phase</strong></p>
             <p></p>
@@ -635,17 +549,6 @@
          <td style="text-align:left"></td>
       </tr>
       <tr>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-      </tr>
-      <tr>
          <td style="text-align:left">Product Creation – <strong>Plan Phase</strong></td>
          <td style="text-align:left"></td>
          <td style="text-align:left">- Project style planning with fixed scope, budget, timelines (iron triangle)</td>
@@ -672,17 +575,6 @@
             <p>- L5</p>
             <p>- Skipped</p>
          </td>
-         <td style="text-align:left"></td>
-      </tr>
-      <tr>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
          <td style="text-align:left"></td>
       </tr>
       <tr>
@@ -733,17 +625,6 @@
             <p>- L5</p>
             <p>- Skipped</p>
          </td>
-         <td style="text-align:left"></td>
-      </tr>
-      <tr>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
-         <td style="text-align:left"></td>
          <td style="text-align:left"></td>
       </tr>
       <tr>

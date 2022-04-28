@@ -1,4 +1,5 @@
-﻿# Levels
+﻿<!---
+# Levels
 ## CMM Levels
 <table>
    <colgroup>
@@ -32,6 +33,7 @@
       </tr>
    </tbody>
 </table>
+-->
 ## QA Aspects
 <h1 id="-qa-metrics-"><strong>QA Metrics</strong></h1>
 <table>

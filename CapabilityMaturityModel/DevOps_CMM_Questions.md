@@ -1,34 +1,4 @@
-﻿## Meeting Information
-<table>
-   <colgroup>
-      <col  style="width: 30%" />
-      <col  style="width: 70%" />
-   </colgroup>
-   <tbody>
-      <tr>
-         <td>Squad</td>
-         <td></td>
-      </tr>
-      <tr>
-         <td>Location</td>
-         <td></td>
-      </tr>
-      <tr>
-         <td>Date & Time</td>
-         <td></td>
-      </tr>
-      <tr>
-         <td>Attendees</td>
-         <td></td>
-      </tr>
-   </tbody>
-</table>
-## Rules
-- Scoring
-- Evidence type Questions:  With boolean (Yes/No) answers have a score of 1 or 0 points. 
-- Evidence type Metric: Refer to notes within that cell
-- The average score is calculated for each Aspect.
-- Recommendations are based on conclusions and results from this document, for later to create a Engineering Health Check document to prioritized together with the squad. 
+﻿<!--
 # Levels
 ## CMM Levels
 <table>
@@ -106,6 +76,7 @@
       </tr>
    </tbody>
 </table>
+-->
 ## DevOps Aspects
 <table>
    <thead>
@@ -151,74 +122,6 @@
       </tr>
       <tr>
          <td style="text-align:center"><strong>2</strong></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>3</strong></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>4</strong></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>5</strong></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>6</strong></td>
          <td style="text-align:center"><strong>Process</strong></td>
          <td style="text-align:center">
             <p><strong>Coding Policies</strong></p>
@@ -807,57 +710,6 @@
       <tr>
          <td style="text-align:center"><strong>21</strong></td>
          <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>22</strong></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>23</strong></td>
-         <td style="text-align:center"></td>
          <td style="text-align:center"><strong>Continuous Integration (CI) strategy</strong></td>
          <td style="text-align:center">
             <p>Is there documentation on the deployment steps?</p>
@@ -920,40 +772,6 @@
       <tr>
          <td style="text-align:center"><strong>25</strong></td>
          <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>26</strong></td>
-         <td style="text-align:center"></td>
          <td style="text-align:center"><strong>Continuous Deployment (CD) strategy</strong></td>
          <td style="text-align:center">Is there documentation on the deployment steps?<br>Can you provide the URL for us to review.</td>
          <td style="text-align:center">Question</td>
@@ -1011,41 +829,7 @@
          <td style="text-align:center"></td>
       </tr>
       <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
          <td style="text-align:center"><strong>28</strong></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>29</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"><strong>Environment strategy</strong></td>
          <td style="text-align:center">
@@ -1064,7 +848,7 @@
             <p>- Identify if they are in POC or working on one.</p>
             <p>- Identify which environments they are using it.</p>
          </td>
-         <td style="text-align:center">None  / Unknown</td>
+         <td style="text-align:center">None / Unknown</td>
          <td style="text-align:center">Being used as part of the development</td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
@@ -1398,40 +1182,6 @@
       </tr>
       <tr>
          <td style="text-align:center"><strong>39</strong></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>40</strong></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>41</strong></td>
          <td style="text-align:center"><strong>Continuous Integration (CI) - Build Process</strong></td>
          <td style="text-align:center"><strong>Pipeline</strong></td>
          <td style="text-align:center">Is the Squad using CI to build and package their work?</td>
@@ -1904,40 +1654,6 @@
       <tr>
          <td style="text-align:center"><strong>54</strong></td>
          <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>55</strong></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
          <td style="text-align:center"><strong>Test Automation</strong></td>
          <td style="text-align:center">Is Unit Test part of the build process?</td>
          <td style="text-align:center">
@@ -1967,23 +1683,6 @@
       </tr>
       <tr>
          <td style="text-align:center"><strong>58</strong></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>59</strong></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"><strong>Automating Environments</strong></td>
          <td style="text-align:center"></td>
@@ -2144,40 +1843,6 @@
             <p>- L5</p>
             <p>- Skipped</p>
          </td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>65</strong></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>66</strong></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
       </tr>
@@ -2371,57 +2036,6 @@
             <p>- L5</p>
             <p>- Skipped</p>
          </td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>72</strong></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>73</strong></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-      </tr>
-      <tr>
-         <td style="text-align:center"><strong>74</strong></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
-         <td style="text-align:center"></td>
          <td style="text-align:center"></td>
          <td style="text-align:center"></td>
       </tr>
