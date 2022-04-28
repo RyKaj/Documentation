@@ -17,8 +17,6 @@ I usually ask the team individually to rank the list below to provide insight on
 
 Based off the results, custom my 1:1 to help that individual. 
 
+[`Excel Chart Jenkins Declarative pipeline refcard.pdf`](Resources/Team%20Motivation.xlsx)
 
-
-"Team Motivation.xlsx"
-
-Miro: https://miro.com/app/board/uXjVOG6jzo0=/
+I also created a Miro: https://miro.com/app/board/uXjVOG6jzo0=/
