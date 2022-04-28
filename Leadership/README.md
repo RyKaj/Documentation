@@ -38,6 +38,7 @@
       - [Signs your employee likes you](Signs-your-employee-likes-you.md)
       - [Signs your employee secretly hate you](Signs-your-employee-secretly-hate-you.md)
       - [Team Morale](Team-Morale.md)
+      - [What Motivates People](WhatMotivatesIndividual.md)
       - [Toxic Staff and Effects](Toxic-Staff-and-Effects.md)
       - [Ways To Spot A Truly Exceptional Employee](Ways-To-Spot-A-Truly-Exceptional-Employee.md)
 
