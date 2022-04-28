@@ -35,6 +35,45 @@ These are the Icons and Symbols to be used in a Value Stream Map
 <img src="./Resources/Aspose.Words.cb656e7f-31b8-440a-8b03-4dc11889a582.008.png" />|Timeline|Commonly placed at the bottom of the value stream map, the timeline shows waiting times (the “troughs”) and processing times (the “hills”). It can be used to calculate lead time, total cycle time, and the percentage of time in value add.|
 
 
+# Value Stream Mapping Report Template
+Value Stream Mapping workshop for XXX Tribe. Document existing value stream, identify key inefficiencies.
+[DOCX version ](./Resources/VSM%20Report%20Template.docx)
+
+## **Workshop**
+
+|**Date**|**Participants**|
+| :-: | :-: |
+||||
+
+## **Glossary**
+|**Abbreviation**|**Term**|**Meaning**|**Example**|
+| :-: | :-: | :-: | :-: |
+|CT|Cycle time|<p>Net effort needed for the work item to be completed</p><p>Synonym for VAT, which is Value-Adding Time.</p>|Net effort needed for developing a single feature.|
+|WT|Wait time|Wait time spent between two subsequent work items|Waiting for code reviews.|
+|TT|Transition time|Time it takes to make the step to next stage.|Code is complete, waiting for test to pick it up.|
+|TCT|Total cycle time|Sum of all CTs.||
+|TWT|Total wait time|Sum of all WTs and TTs.||
+|PLT|Production lead time|PLT = TCT + TWT||
+|-|Efficiency|<p>Ratio of net effort vs total time it takes to deliver value, expressed in %.</p><p>Efficiency = (TCT / PLT) \* 100.</p>|Efficiency = (2d / 10d) \* 100 = 20%.|
+# **Value Stream Map**
+TODO: add diagram here that was prepared during the workshop and finalized afterwards
+# **Key Observations**
+Priority may be High, Medium, Low. 
+
+|**Observation**|**Priority**|**Recommendation**|
+| :-: | :-: | :-: |
+||||
+|||||
+# **Next Steps**
+
+|**Next step**|**Addressed observation**|**Owner**|**Due Date**|**JIRA link**|
+| :-: | :-: | :-: | :-: | :-: |
+||||||
+|||||||
+
+
+
+
 
 
 
