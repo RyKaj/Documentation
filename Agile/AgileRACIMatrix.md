@@ -12,64 +12,860 @@
 |**N/A:** Not applicable** |
 
 
-|**Phase** |**Items**|**Tech Lead**|**Scum Master**|**Product Owner**|**Agile Delivery Squad \*\***|**Data Analyst**|**DevOps**|**Agile Coach**|**Delivery Manager**|**Architect**|**Product Manager**|**Dev Manager** |
-| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-|<h3>**Identify**</h3>|Vision/Mission|N/A|N/A|OWNs|N/A|Helps|N/A|Helps|N/A|N/A|OWNs/Execute|Helps|
-||Product Canvas|Helps|Helps|OWNs/Execute|Helps|Helps|N/A|Helps|Helps|Helps|Helps|Helps|
-||OKRs|Helps|Helps|OWNs/Execute|Helps|Helps|N/A|Helps|Helps|N/A|OWNs/Execute|Helps|
-|<h3>**Validate**</h3>|NFRs and Service Acceptance Criteria|Helps|Helps|OWNs/Execute|Helps|Helps|N/A|Helps|Helps|Helps|Execute|Helps|
-||Tribe Priorities, Cross-Tribe Priorities|Helps|Helps|OWNs/Execute|Helps|Helps|N/A|Helps|Helps|Helps|Execute|Helps|
-||Preliminary Roadmap Impact Analysis|Helps|Helps|OWNs/Execute|Helps|Helps|N/A|Helps|Helps|Helps|Execute|Helps|
-|<h3>**Plan**</h3>|Skills and Learning Development|OWNs/Execute|Helps|Helps|OWNs/Execute|N/A|OWNs/Execute|Helps|Helps|OWNs/Execute|Helps|OWNs/Execute|
-||Definition of Ready (DoR)|Helps|OWNs/Execute|OWNs/Execute|OWNs/Execute|N/A|N/A|Helps|Helps|Helps|Helps|Helps|
-||Definition of Done (DoD)|OWNs/Execute|OWNs/Execute|OWNs/Execute|OWNs/Execute|N/A|Helps|Helps|Helps|Helps|N/A|Helps|
-||Practices and Principles Adherence|OWNs/Execute|OWNs/Execute|OWNs/Execute|OWNs/Execute|Helps|OWNs/Execute|Helps|Helps|Helps|Helps|Helps|
-||Alignment/Mission Briefing|Helps|Helps|OWNs/Execute|Helps|Helps|N/A|Helps|Helps|Helps|Helps|Helps|
-||Architectural Runway|OWNs/Helps|Helps|Helps|Helps|Helps|N/A|Helps|Helps|OWNs/Execute|Helps|Helps|
-||Acceptance Criteria|OWNs/Helps|OWNs/Helps|OWNs/Execute|OWNs/Helps|Helps|N/A|Helps|N/A|Helps|Helps|N/A|
-||MVP Formulation / EPIC Development|Helps|Helps|OWNs/Execute|Helps|Helps|N/A|Helps|OWNs/Helps|Helps|OWNs/Execute|OWNs/Helps|
-|<h3>**Build**</h3>|Product Discovery|OWNs/Helps|OWNs/Helps|OWNs/Execute|OWNs/Helps|Helps|N/A|Helps|N/A|Helps|Helps|Helps|
-||Product Backlog Refinement|OWNs/Helps|OWNs/Execute|OWNs/Helps|OWNs/Execute|N/A|N/A|Helps|N/A|Helps|Helps|Helps|
-||Sprint (Goal) Planning|OWNs/Helps|OWNs/Helps|OWNs/Execute|OWNs/Execute|N/A|Helps|Helps|N/A|Helps|Helps|Helps|
-||Sprint Review/Retro and Output Ownership|Helps|OWNs/Execute|OWNs/Helps|OWNs/Helps|N/A|Helps|Helps|N/A|Helps|Helps|Helps|
-||Capability Snapshots|OWNs|OWNs|OWNs|OWNs|Helps|Helps|OWNs/Execute|Helps|Helps|Helps|OWNs|
-||Continuous Improvement / Focus Areas |OWNs/Helps|OWNs/Execute|OWNs/Execute|OWNs/Execute|N/A|OWNs/Helps|Helps|Helps|Helps|Helps|Helps|
-||Improvement / Enabler Backlog Prioritization|OWNs/Helps|OWNs/Helps|Helps|OWNs/Execute|N/A|OWNs/Helps|Helps|Helps|Helps|Helps|Helps|
-||Measure & Monitor Progress (Metrics/Reports/Dashboards)|Helps|OWNs/Execute|Helps|OWNs/Helps|N/A|OWNs/Helps|Helps|Helps|Helps|Helps|Helps|
-||Risk / Dependency Mapping|OWNs/Helps|OWNs/Helps|OWNs/Helps|OWNs/Execute|N/A|OWNs/Helps|Helps|Helps|Helps|Helps|Helps|
-||Scrum of Scrums|Helps|OWNs/Helps|Helps|OWNs/Execute|N/A|Helps|Helps|Helps|Helps|Helps|Helps|
-||Test Management - Xray (Includes Test Scenarios and Test Plans)|OWNs/Helps|OWNs/Helps|OWNs/Helps|OWNs/Execute|N/A|N/A|Helps|N/A|N/A|N/A|OWNs|
-||Quality coverage|OWNs/Helps|OWNs/Helps|OWNs/Helps|OWNs/Execute|N/A|N/A|Helps|N/A|N/A|N/A|OWNs|
-||Regression (Scope/Execution)|OWNs/Helps|OWNs/Helps|OWNs/Helps|OWNs/Execute|N/A|Helps|Helps|N/A|N/A|N/A|OWNs|
-||Configuration Management (Control) - Artifact/SVC/Architecture|OWNs/Helps|OWNs/Helps|Helps|OWNs/Execute|N/A|N/A|Helps|N/A|OWNs/Execute|N/A|Helps|
-||Service Catalog Management (CMDB)|OWNs/Helps|OWNs/Helps|Helps|OWNs/Execute|N/A|N/A|Helps|N/A|OWNs/Execute|N/A|Helps|
-||Architecture Diagrams |OWNs/Helps|OWNs/Helps|Helps|OWNs/Execute|N/A|N/A|Helps|N/A|OWNs/Execute|N/A|Helps|
-|<h3>**Land**</h3>|Release Risk Assessment|OWNs/Helps|OWNs/Helps|OWNs/Helps|OWNs/Execute|N/A|OWNs/Helps|Helps|OWNs/Helps|Helps|Helps|Helps|
-||CAB Sign Off|OWNs/Helps|OWNs/Helps|OWNs/Helps|OWNs/Helps|N/A|OWNs/Helps|Helps|OWNs/Execute|Helps|Helps|Helps|
-||Service Acceptance Criteria (SAC)|OWNs/Helps|OWNs/Helps|OWNs/Helps|OWNs/Execute|N/A|OWNs/Helps|Helps|OWNs/Helps|Helps|Helps|Helps|
-||Change Management Process/Documentation|OWNs/Helps|OWNs/Helps|OWNs/Helps|OWNs/Execute|N/A|OWNs/Helps|Helps|OWNs/Helps|Helps|Helps|Helps|
-||Measure & Monitor Progress (Metrics/Reports/Dashboards)|OWNs/Helps|OWNs/Helps|OWNs/Helps|OWNs/Helps|N/A|OWNs/Execute|Helps|OWNs/Helps|Helps|Helps|Helps|
-||Auditing & Compliance|OWNs/Helps|OWNs/Helps|OWNs/Helps|OWNs/Helps|N/A|OWNs/Helps|Helps|OWNs/Execute|Helps|Helps|Helps|
-||Release Planning & Cadence (Standards, Guidelines, Principles)|OWNs/Helps|OWNs/Helps|OWNs/Helps|OWNs/Helps|N/A|OWNs/Helps|Helps|OWNs/Execute|Helps|Helps|Helps|
-||Release Co-ordination |OWNs/Helps|OWNs/Helps|OWNs/Helps|OWNs/Helps|N/A|OWNs/Helps|Helps|OWNs/Execute|Helps|Helps|Helps|
-||Release - QR verification|OWNs/Helps|OWNs/Helps|OWNs/Helps|OWNs/Execute|N/A|OWNs/Helps|Helps|OWNs/Helps|Helps|Helps|Helps|
-||Release - Staging verification|OWNs/Helps|OWNs/Helps|OWNs/Execute|OWNs/Helps|N/A|OWNs/Helps|Helps|OWNs/Helps|Helps|OWNs/Execute|Helps|
-||Release - Criteria & Quality/Release Gates|OWNs/Helps|OWNs/Helps|OWNs/Helps|OWNs/Helps|N/A|OWNs/Execute|Helps|OWNs/Helps|Helps|OWNs/Helps|Helps|
-||Release - Production Authorization/Sign Off |OWNs/Helps|OWNs/Helps|OWNs/Execute|OWNs/Helps|N/A|OWNs/Helps|Helps|OWNs/Helps|Helps|OWNs/Execute|Helps|
-||Release - Production verification|OWNs/Helps|OWNs/Helps|OWNs/Execute|OWNs/Helps|N/A|OWNs/Helps|Helps|OWNs/Helps|Helps|OWNs/Execute|Helps|
-||Change Log / Release Notes Generation|OWNs/Helps|OWNs/Helps|OWNs/Execute|OWNs/Helps|N/A|OWNs/Helps|Helps|OWNs/Helps|Helps|OWNs/Execute|Helps|
-||Release Communications / Notifications|OWNs/Helps|OWNs/Helps|OWNs/Execute|OWNs/Helps|N/A|OWNs/Helps|Helps|OWNs/Helps|Helps|OWNs/Execute|Helps|
-|<h3>**Operate**</h3>|SLA Management & Governance (MTTR)|Helps|Helps|OWNs/and Coordinates|Helps|Helps|Helps|Helps|OWNs/and Coordinates|Helps|Helps|Helps|
-||Incident Management Process and Governance|Helps|N/A|OWNs/and Coordinates|Helps|N/A|Helps|N/A|N/A|Helps|N/A|Helps|
-||Problem Management Process and Governance|Helps|Helps|N/A|Helps|Helps|N/A|N/A|N/A|N/A|Helps|Helps|
-||Incident Classification and Prioritization|OWNs/and Coordinates|Helps|Helps|Helps|Helps|Helps|Helps|OWNs/and Coordinates|Helps|Helps|Helps|
-||Major Incident Coordinator|Coordinates|Helps|Helps|Helps|Helps|Helps|Helps|Helps|Helps|Helps|N/A|
-||Problem Management - Root Cause Analysis & PIR|Helps|Helps|OWNs/and Coordinates|Helps|Helps|Helps|Helps|Helps|Helps|Helps|N/A|
-||24/7 On-Call Rota Management|Helps|Helps|OWNs/and Coordinates|OWNs/and Coordinates|Helps|Helps|Helps|Helps|Helps|Helps|OWNs/and Coordinates|
-||Measure & Monitor Progress (Metrics/Reports/Dashboards)|Helps|Helps|OWNs/and Coordinates|Helps|Helps|Helps|Helps|OWNs/and Coordinates|Helps|Helps|Helps|
-||Incident/Problem Management Process/Documentation Life-cycle|Helps|N/A|Helps|Helps|N/A|Helps|N/A|Coordinates|Helps|N/A|N/A|
-||Measure & Monitor Progress (Metrics/Reports/Dashboards)|OWNs/and Coordinates|Helps|N/A|Helps|N/A|Helps|N/A|N/A|Helps|N/A|Helps|
-||Auditing & Compliance|OWNs/and Coordinates|Helps|N/A|Helps|N/A|Helps|N/A|N/A|Helps|N/A|Helps|
-
-
-
+<table>
+    <tr>
+        <td>**Phase**</td>
+        <td>**Items**</td>
+        <td>**Tech Lead**</td>
+        <td>**Scum Master**</td>
+        <td>**Product Owner**</td>
+        <td>**Agile Delivery Squad \*\***</td>
+        <td>**Data Analyst**</td>
+        <td>**DevOps**</td>
+        <td>**Agile Coach**</td>
+        <td>**Delivery Manager**</td>
+        <td>**Architect**</td>
+        <td>**Product Manager**</td>
+        <td>**Dev Manager**</td>
+    </tr>
+    <tr>
+        <td>&lt;h3&gt;**Identify**&lt;/h3&gt;</td>
+        <td>Vision/Mission</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>OWNs</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Product Canvas</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>OKRs</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td>&lt;h3&gt;**Validate**&lt;/h3&gt;</td>
+        <td>NFRs and Service Acceptance Criteria</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Execute</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Tribe Priorities, Cross-Tribe Priorities</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Execute</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Preliminary Roadmap Impact Analysis</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Execute</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td>&lt;h3&gt;**Plan**&lt;/h3&gt;</td>
+        <td>Skills and Learning Development</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>N/A</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Definition of Ready (DoR)</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>OWNs/Execute</td>
+        <td>OWNs/Execute</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Definition of Done (DoD)</td>
+        <td>OWNs/Execute</td>
+        <td>OWNs/Execute</td>
+        <td>OWNs/Execute</td>
+        <td>OWNs/Execute</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Practices and Principles Adherence</td>
+        <td>OWNs/Execute</td>
+        <td>OWNs/Execute</td>
+        <td>OWNs/Execute</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Alignment/Mission Briefing</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Architectural Runway</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Acceptance Criteria</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Execute</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>N/A</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>MVP Formulation / EPIC Development</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>OWNs/Helps</td>
+    </tr>
+    <tr>
+        <td>&lt;h3&gt;**Build**&lt;/h3&gt;</td>
+        <td>Product Discovery</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Execute</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Product Backlog Refinement</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Execute</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Execute</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Sprint (Goal) Planning</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Execute</td>
+        <td>OWNs/Execute</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Sprint Review/Retro and Output Ownership</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Capability Snapshots</td>
+        <td>OWNs</td>
+        <td>OWNs</td>
+        <td>OWNs</td>
+        <td>OWNs</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>OWNs</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Continuous Improvement / Focus Areas</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Execute</td>
+        <td>OWNs/Execute</td>
+        <td>OWNs/Execute</td>
+        <td>N/A</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Improvement / Enabler Backlog Prioritization</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>N/A</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Measure &amp; Monitor Progress (Metrics/Reports/Dashboards)</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+        <td>OWNs/Helps</td>
+        <td>N/A</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Risk / Dependency Mapping</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Execute</td>
+        <td>N/A</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Scrum of Scrums</td>
+        <td>Helps</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Test Management - Xray (Includes Test Scenarios and Test Plans)</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Execute</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>OWNs</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Quality coverage</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Execute</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>OWNs</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Regression (Scope/Execution)</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Execute</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>OWNs</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Configuration Management (Control) - Artifact/SVC/Architecture</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>OWNs/Execute</td>
+        <td>N/A</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Service Catalog Management (CMDB)</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>OWNs/Execute</td>
+        <td>N/A</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Architecture Diagrams</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>OWNs/Execute</td>
+        <td>N/A</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td>&lt;h3&gt;**Land**&lt;/h3&gt;</td>
+        <td>Release Risk Assessment</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Execute</td>
+        <td>N/A</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>CAB Sign Off</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>N/A</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Service Acceptance Criteria (SAC)</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Execute</td>
+        <td>N/A</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Change Management Process/Documentation</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Execute</td>
+        <td>N/A</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Measure &amp; Monitor Progress (Metrics/Reports/Dashboards)</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>N/A</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Auditing &amp; Compliance</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>N/A</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Release Planning &amp; Cadence (Standards, Guidelines, Principles)</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>N/A</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Release Co-ordination</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>N/A</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Release - QR verification</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Execute</td>
+        <td>N/A</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Release - Staging verification</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Execute</td>
+        <td>OWNs/Helps</td>
+        <td>N/A</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Release - Criteria &amp; Quality/Release Gates</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>N/A</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Release - Production Authorization/Sign Off</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Execute</td>
+        <td>OWNs/Helps</td>
+        <td>N/A</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Release - Production verification</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Execute</td>
+        <td>OWNs/Helps</td>
+        <td>N/A</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Change Log / Release Notes Generation</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Execute</td>
+        <td>OWNs/Helps</td>
+        <td>N/A</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Release Communications / Notifications</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Helps</td>
+        <td>OWNs/Execute</td>
+        <td>OWNs/Helps</td>
+        <td>N/A</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Helps</td>
+        <td>Helps</td>
+        <td>OWNs/Execute</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td>&lt;h3&gt;**Operate**&lt;/h3&gt;</td>
+        <td>SLA Management &amp; Governance (MTTR)</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>OWNs/and Coordinates</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>OWNs/and Coordinates</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Incident Management Process and Governance</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>OWNs/and Coordinates</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Problem Management Process and Governance</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Incident Classification and Prioritization</td>
+        <td>OWNs/and Coordinates</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>OWNs/and Coordinates</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Major Incident Coordinator</td>
+        <td>Coordinates</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>N/A</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Problem Management - Root Cause Analysis &amp; PIR</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>OWNs/and Coordinates</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>N/A</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>24/7 On-Call Rota Management</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>OWNs/and Coordinates</td>
+        <td>OWNs/and Coordinates</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>OWNs/and Coordinates</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Measure &amp; Monitor Progress (Metrics/Reports/Dashboards)</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>OWNs/and Coordinates</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>OWNs/and Coordinates</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Incident/Problem Management Process/Documentation Life-cycle</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Coordinates</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>N/A</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Measure &amp; Monitor Progress (Metrics/Reports/Dashboards)</td>
+        <td>OWNs/and Coordinates</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Auditing &amp; Compliance</td>
+        <td>OWNs/and Coordinates</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>Helps</td>
+        <td>N/A</td>
+        <td>Helps</td>
+    </tr>
+</table>
