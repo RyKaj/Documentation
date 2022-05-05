@@ -879,21 +879,27 @@ No Suitable Venue
 
 There is no adequate place available to run the retrospective. (The least appropriate place to have a retrospective is a meeting room with a rectangular table surrounded by chairs. And yet it is the most common venue to have a retrospective. Becoming agile requires space. If this space is not available, you should become creative and go somewhere else. If the weather is fine, grab your Post-its and go outside. Or rent a  suitable space somewhere else. If that is not working, for example, due to budget issues, remove at least the table so you can sit/stand in a circle. Just be creative. Read More: Agile Workspace: The Undervalued Success Factor.)
 
+No Psychological Saftey
+-----------------
+The Retrospective is an endless cycle of blame and finger-pointing. (The team wins together; the team fails together. The blame game documents both the failure of the Scrum Master as the facilitator of the Retrospective and the Scrum team’s lack of maturity and communication skills.)
+
+<img src="./attachments/Blame-Game-Retrospective-Making-Your-Scrum-Work-6.jpg" alt="BlameGame">
+
 
 
 ###### References
 
--   [Agile Management Anti-Patterns --- An Introduction](https://age-of-product.com/agile-management-anti-patterns/)
--   [DZone - Agile Antipatters](https://dzone.com/articles/agile-antipatterns)
--   [Agile Retrospective Antipatterns that Most Scrum Masters Never Realize](https://blog.scatterspoke.com/agile-retrospective-antipatterns-that-most-scrum-masters-never-realize/)
--   [Infoq - Agileindia 7 Sins scrum](https://www.infoq.com/news/2016/03/agileindia-7sins-scrum/)
--   [Dean P - The 4-isms of Agile Failure](https://deanondelivery.com/the-4-isms-of-agile-failures-a40c960ace1f)
--   [Process.st - fake-agile](https://www.process.st/fake-agile/)
--   [Forbes - understanding fake agile](https://www.forbes.com/sites/stevedenning/2019/05/23/understanding-fake-agile/#45223b454bbe)
--   [Forbes - another form of fake agile the agile sweatshop](https://www.forbes.com/sites/stevedenning/2019/08/18/another-form-of-fake-agile-the-agile-sweatshop/amp/)
--   [Medium agilelab - two common mistakes in understanding sprint](https://medium.com/agilelab/two-common-mistakes-in-understanding-sprint-2b3b8c6c829)
--   [Medium swlh - agile planning delivery five common mistakes and how to fix them](https://medium.com/swlh/agile-planning-delivery-five-common-mistakes-and-how-to-fix-them-400d1f040a45)
--   [ASPE Training - scrum master antipatterns](https://aspetraining.com/resources/blog/scrum-master-antipatterns)
--   [Business 2 community - 5 mistakes agile leaders need to watch out for](https://www.business2community.com/leadership/5-mistakes-agile-leaders-need-to-watch-out-for-02180482/amp)
--   [ScrumOrg -  27 sprint anti patterns](https://www.scrum.org/resources/blog/27-sprint-anti-patterns)
-
+- [Agile Management Anti-Patterns --- An Introduction](https://age-of-product.com/agile-management-anti-patterns/)
+- [DZone - Agile Antipatters](https://dzone.com/articles/agile-antipatterns)
+- [Agile Retrospective Antipatterns that Most Scrum Masters Never Realize](https://blog.scatterspoke.com/agile-retrospective-antipatterns-that-most-scrum-masters-never-realize/)
+- [Infoq - Agileindia 7 Sins scrum](https://www.infoq.com/news/2016/03/agileindia-7sins-scrum/)
+- [Dean P - The 4-isms of Agile Failure](https://deanondelivery.com/the-4-isms-of-agile-failures-a40c960ace1f)
+- [Process.st - fake-agile](https://www.process.st/fake-agile/)
+- [Forbes - understanding fake agile](https://www.forbes.com/sites/stevedenning/2019/05/23/understanding-fake-agile/#45223b454bbe)
+- [Forbes - another form of fake agile the agile sweatshop](https://www.forbes.com/sites/stevedenning/2019/08/18/another-form-of-fake-agile-the-agile-sweatshop/amp/)
+- [Medium agilelab - two common mistakes in understanding sprint](https://medium.com/agilelab/two-common-mistakes-in-understanding-sprint-2b3b8c6c829)
+- [Medium swlh - agile planning delivery five common mistakes and how to fix them](https://medium.com/swlh/agile-planning-delivery-five-common-mistakes-and-how-to-fix-them-400d1f040a45)
+- [ASPE Training - scrum master antipatterns](https://aspetraining.com/resources/blog/scrum-master-antipatterns)
+- [Business 2 community - 5 mistakes agile leaders need to watch out for](https://www.business2community.com/leadership/5-mistakes-agile-leaders-need-to-watch-out-for-02180482/amp)
+- [ScrumOrg -  27 sprint anti patterns](https://www.scrum.org/resources/blog/27-sprint-anti-patterns)
+- [Scrum Master Anti-Patterns — 20 Signs Your Scrum Master Needs Help](https://age--of--product-com.cdn.ampproject.org/c/s/age-of-product.com/scrum-master-anti-patterns/amp/)
