@@ -98,7 +98,7 @@ you're not building the right thing to begin with.
 Fake Agile versus True Agile
 ----------------------------
 
-<kbd>![fake agile timeline](<img src="./attachments/Fake-Agile-Timeline.webp" alt="">)</kbd>
+<img src="./attachments/Fake-Agile-Timeline.webp" alt="fake agile timeline">
 
 
 <table>
