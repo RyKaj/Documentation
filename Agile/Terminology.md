@@ -25,6 +25,8 @@ Agile : Glossary / Terminology
 
 **Agile Transformation**: The process of realigning an organisation towards the timely and empirical delivery of emergent value, in order that innovative potential might be harnessed. The change required is typically deep and pervasive. See also Agile Coach, Agile Sponsor.
 
+**Aging (Work Item)**: The amount of time (e.g. days, hours) that has passed since the work item was committed. For an upstream part of the workflow, this is the amount of time since the idea was first introduced. Work Item Aging is an indicator of the potential problems because the loner a work item is in progress, the higher the risk of not delivering on time.
+
 **Anti-pattern**: A behavioural or organisational pattern or practice which is contrary to an agile way of working, and which suggests the need for more appropriate patterns or practices.
 
 **Artefact**: An input or output of an agile process. In Scrum there are three artefacts: the Sprint Increment, the Sprint Backlog, and the Product Backlog.
@@ -45,11 +47,17 @@ Agile : Glossary / Terminology
 
 **Backlog Refinement**: The process of adding detail, order, and estimates to items of inventory in a backlog. Items will have been refined to a sufficient degree once they are ready  be worked on. Refinement is best conducted by those who will eventually do the work. 
 
+**Basic Policies**: A consolidated, refined version of the initial policies. They include the fundamental elements necessary for the team to make decisions in the concrete work context, and they serve as a baseline for further improvement. The policies usually address, but not limited to, the following: per-person WIP limits, team WIP limits, frequency and criteria for replenishing next column on the team Kanban board, other rules to guide decision making.
+
+**Basic Service Policies**: Define the essential requirements associated with a service delivery for each individual service based on its characteristics and the current understanding of who the customer is and what they expect. The following aspect usually covered: service description, criteria to determine the urgency of a work item, requirements to the service delivery, cadence for the service replenishment.
+
 **Batch**: A group of items drawn from a backlog which are processed jointly, rather than individually. Small batch sizes allow work to be processed comparatively quickly and for value to be evidenced earlier. Limiting inventory, such as work-in-progress, to a certain number of items is a common way of restricting batch size.
 
 **Behavior Driven Development (BDD)**: An approach to development in which the satisfaction of practical usage scenarios and their corresponding acceptance criteria is paramount. See also: Acceptance Test Driven Development.
 
 **Blocked**: The state of a work item when it can no longer be progressed due to an impediment which team members are unable to resolve. A Scrum Master will pro-actively seek to remove impediments which block team progress.
+
+**Bug**: Bug will be a defect that was caused as a result of developing  new code and found during sprint testing.
 
 **Burn-down Chart**: A chart which shows the amount of work which is thought to remain in a backlog. Time is shown on the horizontal axis and work remaining on the vertical axis. As time progresses and items are drawn from the backlog and completed, a plot line showing work remaining may be expected to fall. The amount of work may be assessed in any of several ways such as user story points or task hours. Work remaining in Sprint Backlogs and Product Backlogs may be communicated by means of a burn-down chart. See also: Burn-up chart.
 
@@ -78,6 +86,9 @@ which approach production quality. See also: automation, automated build, automa
 **Continuous Integration**: The automated integration of work done into an increment of potential release quality. See also continuous delivery, continuous deployment.
 
 **Cross Functional**: The quality of a team which allows them to complete work-in-progress by themselves, and without recourse to skills or resources outside the team. Compare with Skills Silo.
+
+**Cost of Delay (COD)**: A way to communicate the impact of time on the outcomes to achieve. It is a direct lost of the companies accrued by failing to delivery value to the customers.
+> Formula: Total COD = Lost Cost + Peak Reduction Cost
 
 
 ### D
@@ -111,7 +122,7 @@ which approach production quality. See also: automation, automated build, automa
 
 **Development Team**: Those persons who, by collaborative effort and shared commitment, may develop an increment of value and of usable quality. A Scrum Development Team ought to be cross-functional and should number between three and nine members.
 
-**DevOps**: The bridging of development work and operational support responsibilities in a cross-functional team. A DevOps capability is typically facilitated through a high level of automation.
+**DevOps**: The bridging of development work and operational support responsibilities in a cross-functional team. A DevOps capability is typically facilitated through a high level of automation. A unifies and accelerates the delivery pipeline into a continuous flow with the goal of releasing applications more quickly and easily.
 
 
 ### E
@@ -141,17 +152,25 @@ which approach production quality. See also: automation, automated build, automa
 
 **Fibonacci Sequence**: A sequence of numbers commonly used or approximated for estimation purposes, in which each successive number beyond the second number is the sum of the two prior numbers, viz: 1, 2, 3, 5, 8, 13. The use of this sequence reduces the opportunity for false precision when estimating large pieces of work.
 
+**Flow**: Movement of the Work (Work Item) from one activity to another in the workflow through the knowledge discovery process. It is visualized on the Kanban Board through the series, or sequence, of dominant steps to discover new knowledge, where each activity gives us specific knowledge, and at some point there will be diminishing returns from one activity and we move on to the next dominant activity. 
+
 **Forecast**: A plan or projection based on empirical evidence, such as the rate of work completed.
 
 
 
 ### G
 
+
+
 ### H
 
 **Huddle**: See Daily Scrum.
 
 ### I
+
+**Incident**: an unplanned interruption to or quality reduction of an IT service.
+
+**Incident Management**: The purpose of incident management is to minimize the negative impact of incidents by restoring normal service operation as quickly as possible.
 
 **Increment**: A usable implementation of an emergent product which is made available at a certain point in time. In Scrum, product increments are held to be cumulative, such that the latest increment will incorporate the value of all prior increments.
 
@@ -168,6 +187,16 @@ which approach production quality. See also: automation, automated build, automa
 **Inventory**: Work which is being held in a batch, such as a backlog or as work-in-progress, and which is subject to depreciation until the value of that work is released. See also: batch.
 
 **INVEST Criteria**: The qualities of a user story or similar item of inventory which make it independent of other items, negotiable as an element of scope, valuable to stakeholders, estimable by those doing the corresponding work, small enough to be completed by them in a timely manner, and testable in order to prove its fitness for release.
+
+<!-- |   |   |
+| ------------ | ------------ | -->
+| **I**ndependent  |  Can this story be completed by the team? We want the team to be able to complete the whole story rather than be dependent on a different team to do the GUI, for example. |
+| **N**egotiable  |  The story is not so detailed as to describe exactly how long the fields should be or give specifics about date formats and the like. Most likely there will be common routines or libraries that will allow the development team to implement in the way that makes the most sense for them. |
+| **V**aluable  | The product owner describes that the value being sought is the ability for the trainer to be able to advertise upcoming classes. This is clear in the "why" of the original statement and re-emphasized in the conversation.  |
+| **E**stimable  |  The team will ask enough questions and gather the details to feel confident in their ability to estimate the story.  |
+| **S**mall  |  The team needs to feel confident that they’ll be able to complete the story within a sprint. If they do not, they might split the story. For instance, in our sample story, they may decide to make the ability to gather the student information be a different story and simply display |
+| **T**estable |  With clear acceptance criteria, both the happy path and error conditions can be tested. |
+
 
 **Iteration**: A time-box of fixed duration and regular occurence during which one or more increments of value are developed and made available for immediate release, and at least one opportunity for inspection and adaptation is presented.
 
@@ -190,6 +219,8 @@ which approach production quality. See also: automation, automated build, automa
 
 **Latency**: The time it takes for a work item, following its acceptance by a Development Team, to be delivered as a usable increment of value.
 
+**Lead Time**: Measures the time elapsed from the point a piece of work – such as defect or feature – is requested (usually by a customer) to the point that it’s delivered. 
+
 **Lean Startup**: An organisation developing a product, service, or business model which enables sustainable growth, and which minimises waste in order to do so before resources expire.
 
 **Leap-of-Faith**: The time, money, or other resources which must be invested in a development effort before empirical proof of value is delivered. In Scrum, the leap-of-faith is minimised to one Sprint's worth of investment.
@@ -200,6 +231,8 @@ which approach production quality. See also: automation, automated build, automa
 ### M
 
 **Management by Exception**: The empowering of teams to self-organise and otherwise operate within certain tolerances. If those tolerances are exceeded then management will be notified and only at that point will they become actively involved. A Scrum Master may notify management by exception if he or she is unauthorised or otherwise unable to resolve impediments which affect the team.
+
+**Manual Testing**: This is the process in which a software application or product is being tested by a person or a group of testers without any machinery or software help. In other words, we can say here the testers test the application using their experience and expertise.
 
 **Metrics**: The key indicators and measures which allow progress to be assessed, and for inspection and adaptation to occur. The best metrics are based on empirical evidence and allow improving action to be taken.
 
@@ -212,7 +245,7 @@ which approach production quality. See also: automation, automated build, automa
 
 **Nexus**: A collaborative group of Scrum Teams who work together on the same product, planning and drawing work from the same Product Backlog, and who create an integrated and tested increment of release quality with respect to a commonly observed Sprint cadence.
 
-**Non-Functional Requirements**: Those requirements germane to a system's scope which are held to be invariant, which cannot be prioritised in relation to functional requirements for incremental delivery, and which, being applicable to every increment, may be indicative of the system's overarching qualities.
+**Non-Functional Requirements (NFR)**: Those requirements germane to a system's scope which are held to be invariant, which cannot be prioritised in relation to functional requirements for incremental delivery, and which, being applicable to every increment, may be indicative of the system's overarching qualities.
 
 **One Point One Card**: A very simple estimation technique in which each item of backlog inventory is held to be of equivalent magnitude (in effect, one point). The use of this technique can encourage the refinement of small pieces of inventory which are less likely to be impeded, and which may thus allow value to be made available earlier. However, it may also encourage a technical focus which makes business prioritisation of such items difficult. Where this estimation technique is used, throughput and velocity can be expected to resolve to the same measure.
 
@@ -253,11 +286,14 @@ which approach production quality. See also: automation, automated build, automa
 **Pull**: The demand exerted by consumers of value for completed work, and which encourages development teams to release usable increments at a sustainable pace and which maximises the value delivered.
 
 
+
 ### Q
 
 **Quality**: The characteristics of a product increment or service which render it fit for use by stakeholders.
 
 **Quality of Service**: The degree of quality which is appropriate for a particular service provided to stakeholders, such as may be defined by a service level agreement.
+
+
 
 ### R
 
@@ -267,13 +303,20 @@ which approach production quality. See also: automation, automated build, automa
 
 **Regression Testing**: The execution of all of test cases which assert that a product is fit for use, including those test cases which verify the functionality delivered in earlier product increments.
 
-**Release**: The delivery of a product or service increment into a production-quality environment, such that it is available for immediate use by stakeholders.
+**Release**: A release is milestone representing the internal or external delivery of a working, tested version of the system, or the delivery of a product or service increment into a production-quality environment, such that it is available for immediate use by stakeholders. A release is done when:
+    - Stress tested
+    - Performance tuned
+    - Security validation passes
+    - Disaster recovery plan tested
 
 **Release Plan**: A forecast which indicates the increments of value which may reasonably be expected in the future. Stakeholders, or a representative authority such as a Product Owner, may make such forecasts based on the empirical evidence of delivery and the work which is currently thought to remain in a Product Backlog.
 
 **Relative Estimation**: The sizing of backlog items in terms of their comparative scale. This contrasts to absolute estimation in terms of projected cost or likely time to complete. Relative estimation can be accomplished qualitatively, such as by T-Shirt Sizing (e.g. XS, S, M, L, XL, XXL) or quantitatively, such as by story points. See also: Planning Poker, Fibonacci sequence.
 
 **Requirements**: The characteristics which a product or service is expected to demonstrate, including its functional scope, its non-functional properties, and its degree of quality. Where the complexity of a product or service domain is high, requirements may be emergent.
+
+**Rework**: Any work item or repeated activity raised or incurred during the development/delivery cycle as a blocker to other items or the original version of the item itself that requires additional work to complete the items in conformance with User Story Acceptance Criteria and/or DoD.
+
 
 
 ### S
@@ -294,7 +337,17 @@ which approach production quality. See also: automation, automated build, automa
 
 **Self-Organisation**: The quality of a team which allows it to inspect and adapt its behaviours, without external guidance, so that a goal or purpose can be met. A self-organising team must be sufficiently cross-functional in terms of the skills it incorporates for planned work to be done. Team members may exhibit a degree of cross-skilling so that each is capable of doing more than one kind of activity.
 
+**Service**: A work that is performed by one or more people that benefits others. Any organization represents a network of services where each node in the network represents a service, even if that service spans across functions within the organizational hierarchy. With computer software, a service is software that performs automated tasks, responds to hardware events, or listens for data requests from other software.
+
+**Service Team**: A unit of capacity (service delivery unit) comprised of individuals and/or groups that need to be engaged to provide a service. Service Team can be formal or informal.
+
 **Skills Silo**: A constraint upon team self-organisation which restricts individual team members to performing only one type of activity.
+
+**Shift-left**: The premise behind “Shift Left” is that we move things that are typically performed in later stages earlier.
+
+**Skills Silo**: A constraint upon squad self-organisation which restricts individual team members to performing only one type of activity.
+
+**Sources of Dissatisfaction**: Reasons for internal dissatisfactions (What prevents teams and individuals from delivering professional results and meeting customer expectations? What affects their personal job  satisfaction?), and external to the team dissatisfactions (Why customers are unhappy? What do they complain about?) Find more here: Sources of Dissatisfaction 
 
 **Sponsorship**: The momentum provided by stakeholders for implementing change across an organisation. Agile transformation typically requires deep and pervasive change, and a correspondingly strong sponsorship which is communicated across multiple levels. See also: organisational gravity.
 
@@ -336,13 +389,30 @@ which approach production quality. See also: automation, automated build, automa
 
 **Task Board**: An information radiator showing the breakdown of work into technical tasks, and the progress of that work over various stations towards completion. See also: Scrum board. 
 
-**TDD**: Test Driven Development. The authoring of a test prior to the development of a capability which satisfies the condition. The test case can be assumed to fail when first executed. If it passes then it suggests either an error in the test, or the prior existence of a satisfactory capability. Enough development work is then done in order to ensure that the test passes. The code may then be refactored, and the test relied on to make sure that functionality has not been compromised. Also known as Red-Green-Refactor. See also: refactoring.
+**Test Driven Development (TDD) **: The authoring of a test prior to the development of a capability which satisfies the condition. The test case can be assumed to fail when first executed. If it passes then it suggests either an error in the test, or the prior existence of a satisfactory capability. Enough development work is then done in order to ensure that the test passes. The code may then be refactored, and the test relied on to make sure that functionality has not been compromised. Also known as Red-Green-Refactor. See also: refactoring.
 
 **Team**: A collaborative group of people with a joint sense of purpose, and who are able to demonstrate teamwork. As well as a Scrum Master and a Product Owner, a Scrum Team will further contain a Development Team.
+
+**Team Kanban Meeting**: Held daily, always at the same time, to coordinate the work within the team and facilitate self-organization. It is conducted in front of the Kanban Board walking the board from right (the part that is closest to completed work) to left (the part with not started work). Team members report the status of each ticket, each work item on the board always focusing on the work, rather than the workload of individual people, iterating across the tickets on the board, not around the group of people attending the meeting.
 
 **Technical Debt**: The longer-term consequence of poor design decisions. Technical debt is often incurred for the sake of expediency. A robust Definition of Done is instrumental in keeping technical debt under control.
 
 **The Three C's**: Card, Conversation and Confirmation. The three essential properties of a user story, which may be written on a "card\". A user story is not a requirement, but rather a placeholder for one or more "conversations" which are held in order to satisfy the requirement. The implementation of the requirement must then be "confirmed", such as by means of validated acceptance criteria or the successful execution of corresponding tests. 
+
+**Testing Coverage Review**: Usually held within the sprint after sprint planning. Once the involved squad members (Dev & QA) performed a deep dive into the story and fully understand it.
+Purpose of the meeting:
+    Discuss and agree on test plan and testing coverage
+    Map testing scenarios to testing levels (according to testing pyramid)
+
+Attendees: QA, developer & Product owner 
+
+**Three Amigos**: Story kick off meeting. The purpose of the meeting is to familiarize the team with a story and help develop a common understanding. Refers to the primary perspectives to examine an increment of work before, during, and after development. 
+Working as a team not individual on these perspective are:
+    Collaborative Requirements (Business): What problem are we trying to solve
+    Ready for Development Consensus (Development): How might we build a solution to resolve the Business problem
+    Acceptance for Definition of Done (Testing): What about this, what could possibly happen
+
+Three amigos meeting is usually conducted a sprint before the story is expected to be picked up, as part of the discovery phase. Meeting should take no longer than 30 min (based on the story). If you can't discuss it in 30 min, break it up.
 
 **Three Questions**: The planning considerations which each member of a Scrum Development Team must elicit during a Daily Scrum: namely, what they did yesterday to help the team meet the Sprint Goal, what they intend to do today to help meet that goal, and any impediments to their doing so.
 
@@ -356,13 +426,19 @@ which approach production quality. See also: automation, automated build, automa
 
 **T-Shirt Sizing**: A relative estimation technique which uses qualitative measures rather than quantitative ones to assert the projected size of backlog items. Typical sizes include XS, S, M, L, XL, and XXL. The use of T-Shirt sizing may make the elicitation of metrics, such as a burn-down chart, difficult unless they are mapped to a numerical scheme such as story points. See also: relative estimation.
 
+
+
 ### U
 
 **Unit Testing**: The authoring and execution of test cases which verify the functional correctness of specific units of code, such as functions or methods and their modules or classes. See also: TDD.
 
+**Upstream Flow**: The part of the workflow that represents a discovery phase that includes the activities through which an idea passes and until it becomes available to a squad to be committed to/selected for work, or discarded. Each idea goes through several steps of refinement such as gathering information, doing scientific research, market research, risk assessment, business analysis, etc.
+
 **Usability Testing**: The verification of system functionality by end-users or their representatives, thereby increasing the degree of assurance that an increment will prove to be of usable quality should it be released. 
 
 **User Story**: A placeholder for one or more conversations about a possible requirement. User stories are commonly used to represent the functional characteristics of a system from the perspective of an end-user, and will assert one or more acceptance criteria. A Product Backlog may consist largely or entirely of user stories. See also: The Three C's, acceptance criteria, INVEST.
+
+
 
 ### V
 
@@ -370,16 +446,33 @@ which approach production quality. See also: automation, automated build, automa
 
 **Value Stream**: The flow of work-in-progress across discrete stations where value is added. A product or service may incorporate one or more value streams. Development Teams may restrict their work to one value stream at a time in order to achieve focus and reduce waste.
 
+**Value Stream Mapping (VSM)**: This is a Lean technique that's primary purpose is to illustrate, analyze and improve the steps required to deliver a product or service. A key part of lean methodology, VSM reviews the flow of process steps and information from origin to delivery to the customer and represents this as a structured visualization.
+
  **Vanity Metrics**: Measurements which are taken to show progress or value in the best possible light, and which thus fail to provide adequate transparency for the purposes of inspection and adaptation. Compare with actionable metrics.
 
 **Velocity**: The rate at which work, expressed in terms of work items which have been relatively sized, is completed by a Development Team. In Scrum, a common measure of velocity is the number of story points which are, on average, reduced from the Product Backlog each Sprint.
+
+
 
 
 ### W
 
 **Waste**: The avoidable loss of value in a development and delivery process. Seven wastes are frequently attested for: transport costs (i.e. the handover of work), the cost of maintaining concurrently held inventory, the cost of moving work-in-progress around unnecessarily, time spent waiting and being unproductive, overproduction, the over-engineering of work, and depreciation.
 
+**Weighted Shortest Job First (WSJF)**: is a prioritization technique used to order Product Backlog Items
+> eg., Features, Capabilities, Epics, User Stories, etc. to produce maximum economic benefit. In our context WSJF = Relative Business Value (or Relative Cost of Delay) / Relative Job Size.
+
+
 **Work in Progress**: The work which has been accepted by a team and is pending completion. The limitation of WIP is generally desirable in order to improve throughput and to limit depreciation. See also: Little's Law
+
+**Work Item**: A particular piece of work that needs to get executed such as User Story, Bug, Task, Change Request, Issue. Work Items go through different activities until they are considered "Done".
+
+****Workflow: A sequence of activities through which a piece of work (Work Item) passes from initiation to completion. A Kanban workflow defines explicit policies and principles, followed by the Kanban team. Its main objective is to represent the rules and procedures of work while the work is flowing across different stages of its development and delivery cycle.
+
+**Workflow Kanban Meeting**: A higher version of the Team Kanban Meeting. Its scope includes the end-to-end workflow of a service or project. The intent is to involve the respective service teams in collaborative conversation about the status of work, queues between stages of the workflow, and problems that affect the flow of work. The identified issues are resolved after the meeting by team members with relevant knowledge and skills. It is held with regular frequency (e.g., weekly) to reduce coordination effort keeping the meeting short by focusing on completing work items and resolving issues such as possible delays, technical problems, lack of information, etc.
+
+**Workflow Replenishment Meeting**: Feedback loops practice in Kanban held to allow the service team (or the team of teams involved in the end-to-end service workflow) to select work requests and refill the Next-to-Start column on their Kanban Board, so that they do not run out of work before the next Replenishment Meeting. It involves leads or representatives of the service teams who take part in the entire workflow. Requests are selected and placed in the Requested Work column. It is necessary to make sure that the team understands the requested work. Technical aspects and dependencies are taken into consideration.
+
 
 ### X
 
