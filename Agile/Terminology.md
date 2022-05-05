@@ -7,8 +7,7 @@ Agile : Glossary / Terminology
 ===================
 
 
-###### [ A ](#A) | [B ](### B) | [C ](### C) | [D ](### D) | [E ](### E) | [F ](### F) | [G ](### G) | [H ](### H) | [I ](### I) | [J ](### J) | [K ](### K) | [L ](### L) | [M ](### M) | [N ](### N) | [O ](### O) | [P ](### P) | [Q ](### Q) | [R ](### R) | [S ](### S) | [T ](### T) | [U ](### U) | [V ](### V) | [W ](### W) | [X ](### X) | [Y ](### Y) | [Z ](### Z)
-
+###### [ A ](#A) | [ B ](#B) | [ C ](#C) | [ D ](#D) | [ E ](#E) | [ F ](#F) | [ G ](#G) | [ H ](#H) | [ I ](#I) | [ J ](#J) | [ K ](#K) | [ L ](#L) | [ M ](#M) | [ N ](#N) | [ O ](#O) | [ P ](#P) | [ Q ](#Q) | [ R ](#R) | [ S ](#S) | [ T ](#T) | [ U ](#U) | [ V ](#V) | [ W ](#W) | [ X ](#X) | [ Y ](#Y) | [ Z ](#Z)
 
 ### A
 
@@ -388,7 +387,7 @@ which approach production quality. See also: automation, automated build, automa
 
 ### Z
 
-###[Place 1](#A)<span id="A">HelloWorld</span>
+<!-- ###[Place 1](#A)<span id="A">HelloWorld</span> -->
 
 
 ###### References
