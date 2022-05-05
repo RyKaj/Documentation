@@ -33,12 +33,12 @@ The meeting also invites inspection of the metrics that show what occurred in ac
 
 The product owner and stakeholders use this meeting to evaluate the product and release backlog priorities:
 
--   Has one item been too costly to complete given its estimated value?     Should like items be re-evaluated?
+-   Has one item been too costly to complete given its estimated value? Should like items be re-evaluated?
 -   Is another item now not worth working on at all?
--   Should priorities shift higher for some items in the release backlog     based this findings in this meeting?
--   Should we re-allocate team resources based on the done items and     metrics?
+-   Should priorities shift higher for some items in the release backlog based this findings in this meeting?
+-   Should we re-allocate team resources based on the done items and metrics?
 -   Are there new items we need to add to the backlog?
--   Should the team stop work entirely on the product based on what we     have just learned?
+-   Should the team stop work entirely on the product based on what we have just learned?
 
 At the end of a good meeting, all attendees have a clear understanding of the completed iteration as well as a good sense of the value that was delivered. With this information, the product owner continues work on value definition in the form of backlog priorities and details. The team continues its work by taking the learning and applying it to the next iteration planning meeting. The scrum master collects action items and ensures each has an owner. The scrum master then takes on the ownership of ensuring each action item is completed.
 
