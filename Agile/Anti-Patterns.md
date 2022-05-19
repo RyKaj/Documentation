@@ -152,7 +152,7 @@ Fake Agile versus True Agile
 
 Product owners and scrum masters are there to fulfil key roles like reporting back to business owners and communicating with stakeholders, but their roles are fundamentally different to a typical project management position.
 
-<kbd><img src="./attachments/Scrum-Team-Agile.webp" alt=""></kbd>
+<img src="./attachments/Scrum-Team-Agile.webp" alt="" />
 
 This difference in managerial approach also highlights the difference in attitude towards punishment and fear in the workplace environment.
 
@@ -815,7 +815,7 @@ Cloning Incomplete Work Items Instead of Carrying Them Over
 
 *A team has completed a sprint but "User Story X" is still not finished. The team wants to visualize the progress they've made on this story. On their task board they have a card for it. They rename it to "User Story X Part 1" and move it to Done. They also create a card named "User Story X Part 2" and put it in the next sprint. They don't manage to finish the story in the next sprint either. So they create "User Story X Part 3" and now move "Part 2" to Done. This exercise repeats itself a few more times.*
 
-*<kbd><img src="./attachments/1*-gdzLa7T3-l5Cez1gkNwPQ.jpeg" alt=""></kbd>
+*<img src="./attachments/1*-gdzLa7T3-l5Cez1gkNwPQ.jpeg" alt="" />
 
 This one I've seen quite a lot, usually with digital task trackers --- probably because the operation of copying is so cheap there. Whenever a team is not able to complete a story, they clone it to the next iteration. The original story becomes "part N" and gets closed and the clone is now "part N+1".
 

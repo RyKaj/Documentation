@@ -17,7 +17,7 @@ Frameworks
 Scrum
 -----
 
-<kbd><img src="./attachments/463531684.jpg" alt="">
+<img src="./attachments/463531684.jpg" alt=""  />
 [T]{style="color: rgb(0,128,0);"}eams commit to ship working software through set intervals called sprints. Their goal is to create learning loops to quickly gather and integrate customer feedback. Scrum teams adopt specific roles, create special artifacts, and hold regular ceremonies to keep things moving forward. Scrum is best defined in [The Scrum Guide](https://www.scrumguides.org/scrum-guide.html).
 
 Scrum is a framework that helps teams work together. Which enables people to address complex adaptive problem. It aims to productively and creatively deliver products of the highest possible value through iterations and increments in a time-box setting.
@@ -54,7 +54,7 @@ Scrum moves fast, with sprints of two to at most four weeks with clear start an
 Sprints are punctuated by the sprint planning, sprint review, and retrospectivemeetings and peppered with daily scrum(standup) meetings. These scrum ceremonies are lightweight and run on a continuous basis.
 
 <kbd>![Diagram of the Scrum framework at a glance.](https://uploads.toptal.io/blog/image/127503/toptal-blog-image-1540989875651-a45bb8fe0b7a490aa2f9fe2365e59cf2.png)
-<img src="./attachments/463529391.png" alt="">
+<img src="./attachments/463529391.png" alt="" />
 
 ### Product backlog
 
@@ -86,7 +86,7 @@ Also at the end of each sprint, the team reflects on how well Scrum is working f
 
 ### Scrum Roles
 
-<kbd><img src="./attachments/463513501.png" alt="">
+<img src="./attachments/463513501.png" alt="" />
 <kbd>![What is Scrum Team](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-scrum-team/sites/7/2018/10/what-is-scrum-team.png)
 <kbd>![What is Scrum Team](https://www.visual-paradigm.com/servlet/editor-content/scrum/how-scrum-team-works/sites/7/2018/12/what-is-a-scrum-team.png)
 
@@ -1153,7 +1153,7 @@ Crystal Clear is part of the Crystal family of methodologies. It can be used wit
 
 
 
-<kbd><img src="./attachments/4463529379.png" alt="">
+<img src="./attachments/4463529379.png" alt="" />
 
  
 # Scrum & Kanban

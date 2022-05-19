@@ -5,7 +5,7 @@
 Agile : Coaching 
 ================
 
-[<kbd><img src="./attachments/EnterpriseAgileCoachingCompetencyFramework.png" alt="">](https://www.linkedin.com/pulse/enterprise-agile-coaching-competency-framework-amit-singh/) </kbd>
+[<kbd><img src="./attachments/EnterpriseAgileCoachingCompetencyFramework.png" alt="" />](https://www.linkedin.com/pulse/enterprise-agile-coaching-competency-framework-amit-singh/) </kbd>
 
 Implementing agile can help streamline processes, but it  [isn't easy to make significant changes](https://www.cio.com/article/3245504/leadership-management/8-ways-youre-failing-at-change-management.html) in an organization. Encouraging everyone to get on board with a new methodology requires significant effort on the part of management.
 

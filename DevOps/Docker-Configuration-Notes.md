@@ -6,7 +6,7 @@
 # Information Technology : Docker Configuration Notes
 
 
-<img src="./attachments/463513544.png" alt=""></kbd>
+<img src="./attachments/463513544.png" alt="" />
 
 
 

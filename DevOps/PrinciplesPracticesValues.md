@@ -41,7 +41,7 @@ Training, having security champions across teams, incorporating DevSecOps proces
 ## Process
   
 
-<kbd><img src="./attachments/463531992.png" alt=""></kbd>
+<img src="./attachments/463531992.png" alt="" />
 
   
 

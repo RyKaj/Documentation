@@ -11,7 +11,7 @@ Having these three DevOps patterns in mind let’s now unwrap DevOps software cr
 
 <kbd>![devops-as-a-process](https://blog.cherryservers.com/hubfs/devops-as-a-process.png)  </kbd>
 <kbd>![](http://techtowntraining.com/sites/default/files/inline-images/puppet_continuous_diagram.gif)</kbd>
-<kbd><img src="./attachments/463532378.png" alt=""></kbd>
+<img src="./attachments/463532378.png" alt="" />
 
 
 ## The DevOps Way

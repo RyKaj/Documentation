@@ -14,7 +14,7 @@ The Scaled Agile Framework is a framework that provides four different layers of
 Scaled agile framework abbreviated as SAFe is a framework of proven, integrated principles, practices and competencies for Lean, Agile, and DevOps.  SAFe is a scalable and configurable framework that helps organizations in  [scaling agile](https://reqtest.com/agile-blog/scaling-agile-reqtest/) and lean.
 
 <kbd>![SAFe](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2018/09/SAFe.png)</kbd>
-<kbd><img src="./attachments/471992239.png" alt=""></kbd>
+<img src="./attachments/471992239.png" alt="" />
 
 Scaled Agile Framework addresses the problems encountered when scaling agile beyond a single team.  SAFe promotes collaboration, coordination, and delivery across a large number of agile teams. This framework leverages three primary bodies of knowledge:
 

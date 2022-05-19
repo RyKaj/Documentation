@@ -4,7 +4,7 @@
 
 # DevOps : Delivering Continuous Value
 
-<img src="./attachments/463520995.png" alt=""></kbd>
+<img src="./attachments/463520995.png" alt="" />
  
 
 ## Continous
