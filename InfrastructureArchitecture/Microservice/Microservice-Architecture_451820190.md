@@ -1601,7 +1601,7 @@ request may be done in parallel, the application must send, wait, and
 process data for each request, all on separate connections, increasing
 the chance of failure.
 
-<kbd><img src="./attachments/463533348.png" alt=""></kbd>
+<img src="./attachments/463533348.png" alt="" />
 
 
 
@@ -1629,11 +1629,11 @@ relevant service (2). Each service returns a response to the gateway
 response to the application (4). The application makes a single request
 and receives only a single response from the gateway.
 
-<kbd><img src="./attachments/463533349.png" alt=""></kbd>
+<img src="./attachments/463533349.png" alt="" />
 <kbd>![New-API-GW-Diagram](https://d1.awsstatic.com/serverless/New-API-GW-Diagram.c9fc9835d2a9aa00ef90d0ddc4c6402a2536de0d.png)</kbd>
 <kbd>![](https://microservices.io/i/apigateway.jpg)</kbd>
-<kbd><img src="./attachments/463533529.png" alt=""></kbd>
-<kbd><img src="./attachments/463533530.png" alt=""></kbd>
+<img src="./attachments/463533529.png" alt="" />
+<img src="./attachments/463533530.png" alt="" />
 <kbd>![](https://microservices.io/i/bffe.png)</kbd>
 
 Using an API gateway has the following benefits {#MicroserviceArchitecture-UsinganAPIgatewayhasthefollowingbenefits}
@@ -2915,7 +2915,7 @@ states that mimic the functionality of an electrical circuit breaker:
     > recovery is complete, but while recovery is in progress a flood of
     > work can cause the service to time out or fail again.
 
-<kbd><img src="./attachments/463533310.png" alt=""></kbd>
+<img src="./attachments/463533310.png" alt="" />
 
 In the figure, the failure counter used by the **Closed** state is time
 based. It\'s automatically reset at periodic intervals. This helps to
@@ -3961,7 +3961,7 @@ optionally, any components or services it uses. The latency or response
 time check is performed by the monitoring tool or framework. The figure
 provides an overview of the pattern.
 
-<kbd><img src="./attachments/463533358.png" alt=""></kbd>
+<img src="./attachments/463533358.png" alt="" />
 
 Other checks that might be carried out by the health monitoring code in
 the application include:

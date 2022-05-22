@@ -11,164 +11,90 @@
 
 ### Intent
 
-**Decorator** is a structural design pattern that lets you attach new
-behaviors to objects by placing these objects inside special wrapper
-objects that contain the behaviors.
+**Decorator** is a structural design pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.
 
-<kbd>![](./attachments/decorator/463530229.png)</kbd>
+<img src"./attachments/decorator/463530229.png" />
 
 ### Problem
 
-Imagine that you’re working on a notification library which lets other
-programs notify their users about important events.
+Imagine that you’re working on a notification library which lets other programs notify their users about important events.
 
-The initial version of the library was based on the `Notifier` class
-that had only a few fields, a constructor and a single `send` method.
-The method could accept a message argument from a client and send the
-message to a list of emails that were passed to the notifier via its
-constructor. A third-party app which acted as a client was supposed to
-create and configure the notifier object once, and then use it each time
-something important happened.
+The initial version of the library was based on the `Notifier` class that had only a few fields, a constructor and a single `send` method. The method could accept a message argument from a client and send the message to a list of emails that were passed to the notifier via its constructor. A third-party app which acted as a client was supposed to create and configure the notifier object once, and then use it each time something important happened.
 
-<kbd>![](./attachments/decorator/463530231.png)</kbd>
+<img src"./attachments/decorator/463530231.png" />
 
-At some point, you realize that users of the library expect more than
-just email notifications. Many of them would like to receive an SMS
-about critical issues. Others would like to be notified on Facebook and,
-of course, the corporate users would love to get Slack notifications.
+At some point, you realize that users of the library expect more than just email notifications. Many of them would like to receive an SMS about critical issues. Others would like to be notified on Facebook and, of course, the corporate users would love to get Slack notifications.
 
-<kbd>![](./attachments/decorator/463530235.png)</kbd>
+<img src"./attachments/decorator/463530235.png" />
 
-How hard can that be? You extended the `Notifier` class and put the
-additional notification methods into new subclasses. Now the client was
-supposed to instantiate the desired notification class and use it for
-all further notifications.
+How hard can that be? You extended the `Notifier` class and put the additional notification methods into new subclasses. Now the client was supposed to instantiate the desired notification class and use it for all further notifications.
 
-But then someone reasonably asked you, “Why can’t you use several
-notification types at once? If your house is on fire, you’d probably
-want to be informed through every channel.”
+But then someone reasonably asked you, “Why can’t you use several notification types at once? If your house is on fire, you’d probably want to be informed through every channel.”
 
-You tried to address that problem by creating special subclasses which
-combined several notification methods within one class. However, it
-quickly became apparent that this approach would bloat the code
-immensely, not only the library code but the client code as well.
+You tried to address that problem by creating special subclasses which combined several notification methods within one class. However, it quickly became apparent that this approach would bloat the code immensely, not only the library code but the client code as well.
 
-<kbd>![](./attachments/decorator/463530233.png)</kbd>
+<img src"./attachments/decorator/463530233.png" />
 
-You have to find some other way to structure notifications classes so
-that their number won’t accidentally break some Guinness record.
+You have to find some other way to structure notifications classes so that their number won’t accidentally break some Guinness record.
 
 ### Solution
 
-Extending a class is the first thing that comes to mind when you need to
-alter an object’s behavior. However, inheritance has several serious
-caveats that you need to be aware of.
+Extending a class is the first thing that comes to mind when you need to alter an object’s behavior. However, inheritance has several serious caveats that you need to be aware of.
 
-  - Inheritance is static. You can’t alter the behavior of an existing
-    object at runtime. You can only replace the whole object with
-    another one that’s created from a different subclass.
-  - Subclasses can have just one parent class. In most languages,
-    inheritance doesn’t let a class inherit behaviors of multiple
-    classes at the same time.
+  - Inheritance is static. You can’t alter the behavior of an existing object at runtime. You can only replace the whole object with another one that’s created from a different subclass.
+  - Subclasses can have just one parent class. In most languages, inheritance doesn’t let a class inherit behaviors of multiple classes at the same time.
 
-One of the ways to overcome these caveats is by using *Aggregation* or
-*Composition* instead of *Inheritance*. Both of the alternatives work
-almost the same way: one object *has a* reference to another and
-delegates it some work, whereas with inheritance, the object itself *is*
-able to do that work, inheriting the behavior from its superclass.
+One of the ways to overcome these caveats is by using *Aggregation* or *Composition* instead of *Inheritance*. Both of the alternatives work almost the same way: one object *has a* reference to another and delegates it some work, whereas with inheritance, the object itself *is* able to do that work, inheriting the behavior from its superclass.
 
-With this new approach you can easily substitute the linked “helper”
-object with another, changing the behavior of the container at runtime.
-An object can use the behavior of various classes, having references to
-multiple objects and delegating them all kinds of work.
-Aggregation/composition is the key principle behind many design
-patterns, including Decorator. On that note, let’s return to the pattern
-discussion.
+With this new approach you can easily substitute the linked “helper” object with another, changing the behavior of the container at runtime. An object can use the behavior of various classes, having references to multiple objects and delegating them all kinds of work. Aggregation/composition is the key principle behind many design patterns, including Decorator. On that note, let’s return to the pattern discussion.
 
-<kbd>![](./attachments/decorator/463530234.png)</kbd>
+<img src"./attachments/decorator/463530234.png" />
 
-*Wrapper* is the alternative nickname for the Decorator pattern that
-clearly expresses the main idea of the pattern. A “wrapper” is an object
-that can be linked with some “target” object. The wrapper contains the
-same set of methods as the target and delegates to it all requests it
-receives. However, the wrapper may alter the result by doing something
-either before or after it passes the request to the target.
+*Wrapper* is the alternative nickname for the Decorator pattern that clearly expresses the main idea of the pattern. A “wrapper” is an object that can be linked with some “target” object. The wrapper contains the same set of methods as the target and delegates to it all requests it receives. However, the wrapper may alter the result by doing something either before or after it passes the request to the target.
 
-When does a simple wrapper become the real decorator? As I mentioned,
-the wrapper implements the same interface as the wrapped object. That’s
-why from the client’s perspective these objects are identical. Make the
-wrapper’s reference field accept any object that follows that interface.
-This will let you cover an object in multiple wrappers, adding the
-combined behavior of all the wrappers to it.
+When does a simple wrapper become the real decorator? As I mentioned, the wrapper implements the same interface as the wrapped object. That’s why from the client’s perspective these objects are identical. Make the wrapper’s reference field accept any object that follows that interface. This will let you cover an object in multiple wrappers, adding the combined behavior of all the wrappers to it.
 
-In our notifications example, let’s leave the simple email notification
-behavior inside the base `Notifier` class, but turn all other
-notification methods into decorators.
+In our notifications example, let’s leave the simple email notification behavior inside the base `Notifier` class, but turn all other notification methods into decorators.
 
-<kbd>![](./attachments/decorator/463530232.png)</kbd>
+<img src"./attachments/decorator/463530232.png" />
 
-The client code would need to wrap a basic notifier object into a set of
-decorators that match the client’s preferences. The resulting objects
-will be structured as a stack.
+The client code would need to wrap a basic notifier object into a set of decorators that match the client’s preferences. The resulting objects will be structured as a stack.
 
-<kbd>![](./attachments/decorator/463530236.png)</kbd>
+<img src"./attachments/decorator/463530236.png" />
 
-The last decorator in the stack would be the object that the client
-actually works with. Since all decorators implement the same interface
-as the base notifier, the rest of the client code won’t care whether it
-works with the “pure” notifier object or the decorated one.
+The last decorator in the stack would be the object that the client actually works with. Since all decorators implement the same interface as the base notifier, the rest of the client code won’t care whether it works with the “pure” notifier object or the decorated one.
 
-We could apply the same approach to other behaviors such as formatting
-messages or composing the recipient list. The client can decorate the
-object with any custom decorators, as long as they follow the same
-interface as the others.
+We could apply the same approach to other behaviors such as formatting messages or composing the recipient list. The client can decorate the object with any custom decorators, as long as they follow the same interface as the others.
 
 ### Structure
 
-<kbd>![](./attachments/decorator/463530237.png)</kbd>
+<img src"./attachments/decorator/463530237.png" />
 
 ### Pseudocode
 
-In this example, the **Decorator** pattern lets you compress and encrypt
-sensitive data independently from the code that actually uses this data.
+In this example, the **Decorator** pattern lets you compress and encrypt sensitive data independently from the code that actually uses this data.
 
-<kbd>![](./attachments/decorator/463530230.png)</kbd>
+<img src"./attachments/decorator/463530230.png" />
 
-The application wraps the data source object with a pair of decorators.
-Both wrappers change the way the data is written to and read from the
-disk:
+The application wraps the data source object with a pair of decorators. Both wrappers change the way the data is written to and read from the disk:
 
-  - Just before the data is **written to disk**, the decorators encrypt
-    and compress it. The original class writes the encrypted and
-    protected data to the file without knowing about the change.
+  - Just before the data is **written to disk**, the decorators encrypt and compress it. The original class writes the encrypted and protected data to the file without knowing about the change.
 
-  - Right after the data is **read from disk**, it goes through the same
-    decorators, which decompress and decode it.
+  - Right after the data is **read from disk**, it goes through the same     decorators, which decompress and decode it.
 
-The decorators and the data source class implement the same interface,
-which makes them all interchangeable in the client code.
+The decorators and the data source class implement the same interface, which makes them all interchangeable in the client code.
 
 ### Real world example
 
-Imagine you run a car service shop offering multiple services. Now how
-do you calculate the bill to be charged? You pick one service and
-dynamically keep adding to it the prices for the provided services till
-you get the final cost. Here each type of service is a decorator.
+Imagine you run a car service shop offering multiple services. Now how do you calculate the bill to be charged? You pick one service and dynamically keep adding to it the prices for the provided services till you get the final cost. Here each type of service is a decorator.
 
 ### In plain words
 
-Decorator pattern lets you dynamically change the behavior of an object
-at run time by wrapping them in an object of a decorator class.
+Decorator pattern lets you dynamically change the behavior of an object at run time by wrapping them in an object of a decorator class.
 
 ### Wikipedia says
 
-In object-oriented programming, the decorator pattern is a design
-pattern that allows behavior to be added to an individual object, either
-statically or dynamically, without affecting the behavior of other
-objects from the same class. The decorator pattern is often useful for
-adhering to the Single Responsibility Principle, as it allows
-functionality to be divided between classes with unique areas of
-concern.
+In object-oriented programming, the decorator pattern is a design pattern that allows behavior to be added to an individual object, either statically or dynamically, without affecting the behavior of other objects from the same class. The decorator pattern is often useful for adhering to the Single Responsibility Principle, as it allows functionality to be divided between classes with unique areas of concern.
 
 ### Pros and Cons
 
@@ -205,8 +131,7 @@ concern.
 
 ### Programmatic Example
 
-Lets take coffee for example. First of all we have a simple coffee
-implementing the coffee interface
+Lets take coffee for example. First of all we have a simple coffee implementing the coffee interface
 
 #### C\#
 
@@ -234,8 +159,7 @@ implementing the coffee interface
 >                     
 > ```
 
-We want to make the code extensible to allow options to modify it if
-required. Lets make some add-ons (decorators)
+We want to make the code extensible to allow options to modify it if required. Lets make some add-ons (decorators)
 
 > 
 > 
@@ -328,8 +252,7 @@ Lets make a coffee now
 
 
 
-Let's take the troll example. First of all we have a simple troll
-implementing the troll interface
+Let's take the troll example. First of all we have a simple troll implementing the troll interface
 
 ``` 
 public interface Troll {
@@ -359,8 +282,7 @@ public class SimpleTroll implements Troll {
                 
 ```
 
-Next we want to add club for the troll. We can do it dynamically by
-using a decorator
+Next we want to add club for the troll. We can do it dynamically by using a decorator
 
 ``` 
 public class ClubbedTroll implements Troll {
@@ -411,8 +333,7 @@ clubbedTroll.fleeBattle(); // The troll shrieks in horror and runs away!
 
 
 
-Lets take coffee for example. First of all we have a simple coffee
-implementing the coffee interface
+Lets take coffee for example. First of all we have a simple coffee implementing the coffee interface
 
 ``` 
 /*
@@ -434,8 +355,7 @@ class SimpleCoffee{
                 
 ```
 
-We want to make the code extensible to allow options to modify it if
-required. Lets make some add-ons (decorators)
+We want to make the code extensible to allow options to modify it if required. Lets make some add-ons (decorators)
 
 ``` 
 class MilkCoffee {
@@ -525,8 +445,7 @@ class SimpleCoffee implements Coffee
                 
 ```
 
-We want to make the code extensible to allow options to modify it if
-required. Lets make some add-ons (decorators)
+We want to make the code extensible to allow options to modify it if required. Lets make some add-ons (decorators)
 
 ``` 
 class MilkCoffee implements Coffee
@@ -623,22 +542,12 @@ echo $someCoffee->getDescription(); // Simple Coffee, milk, whip, vanilla
 
 """
 *What is this pattern about?
-The Decorator pattern is used to dynamically add a new feature to an
-object without changing its implementation. It differs from
-inheritance because the new feature is added only to that particular
-object, not to the entire subclass.
+The Decorator pattern is used to dynamically add a new feature to an object without changing its implementation. It differs from inheritance because the new feature is added only to that particular object, not to the entire subclass.
 
 *What does this example do?
-This example shows a way to add formatting options (boldface and
-italic) to a text by appending the corresponding tags (<b> and
-<i>). Also, we can see that decorators can be applied one after the other,
-since the original text is passed to the bold wrapper, which in turn
-is passed to the italic wrapper.
+This example shows a way to add formatting options (boldface and italic) to a text by appending the corresponding tags (<b> and <i>). Also, we can see that decorators can be applied one after the other, since the original text is passed to the bold wrapper, which in turn is passed to the italic wrapper.
 
-*Where is the pattern used practically?
-The Grok framework uses decorators to add functionalities to methods,
-like permissions or subscription to an event:
-http://grok.zope.org/doc/current/reference/decorators.html
+*Where is the pattern used practically? The Grok framework uses decorators to add functionalities to methods, like permissions or subscription to an event: http://grok.zope.org/doc/current/reference/decorators.html
 
 *References:
 https://sourcemaking.com/design_patterns/decorator

@@ -10,77 +10,48 @@
 
 ### Intent
 
-**Singleton** is a creational design pattern that lets you ensure that a
-class has only one instance, while providing a global access point to
-this instance.
+**Singleton** is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance.
 
-<kbd>![](./attachments/singleton/463530331.png)</kbd>
+<img src"./attachments/singleton/463530331.png" />
 
 ### Problem
 
-The Singleton pattern solves two problems at the same time, violating
-the *Single Responsibility Principle*:
+The Singleton pattern solves two problems at the same time, violating the *Single Responsibility Principle*:
 
-1.  **Ensure that a class has just a single instance**. Why would anyone
-    want to control how many instances a class has? The most common
-    reason for this is to control access to some shared resource—for
-    example, a database or a file.
+1.  **Ensure that a class has just a single instance**. Why would anyone want to control how many instances a class has? The most common reason for this is to control access to some shared resource—for example, a database or a file.
     
-    Here’s how it works: imagine that you created an object, but after a
-    while decided to create a new one. Instead of receiving a fresh
-    object, you’ll get the one you already created.
+    Here’s how it works: imagine that you created an object, but after a while decided to create a new one. Instead of receiving a fresh object, you’ll get the one you already created.
     
-    Note that this behavior is impossible to implement with a regular
-    constructor since a constructor call **must** always return a new
-    object by design.
+    Note that this behavior is impossible to implement with a regular constructor since a constructor call **must** always return a new object by design.
     
-    <kbd>![](./attachments/singleton/463530332.png)</kbd>
+    <img src"./attachments/singleton/463530332.png" />
 
-2.  **Provide a global access point to that instance**. Remember those
-    global variables that you (all right, me) used to store some
-    essential objects? While they’re very handy, they’re also very
-    unsafe since any code can potentially overwrite the contents of
-    those variables and crash the app.
+2.  **Provide a global access point to that instance**. Remember those global variables that you (all right, me) used to store some essential objects? While they’re very handy, they’re also very unsafe since any code can potentially overwrite the contents of those variables and crash the app.
     
-    Just like a global variable, the Singleton pattern lets you access
-    some object from anywhere in the program. However, it also protects
-    that instance from being overwritten by other code.
+    Just like a global variable, the Singleton pattern lets you access some object from anywhere in the program. However, it also protects that instance from being overwritten by other code.
     
-    There’s another side to this problem: you don’t want the code that
-    solves problem \#1 to be scattered all over your program. It’s much
-    better to have it within one class, especially if the rest of your
-    code already depends on it.
+    There’s another side to this problem: you don’t want the code that solves problem \#1 to be scattered all over your program. It’s much better to have it within one class, especially if the rest of your code already depends on it.
 
-Nowadays, the Singleton pattern has become so popular that people may
-call something a *singleton* even if it solves just one of the listed
-problems.
+Nowadays, the Singleton pattern has become so popular that people may call something a *singleton* even if it solves just one of the listed problems.
 
 ### Solution
 
 All implementations of the Singleton have these two steps in common:
 
-  - Make the default constructor private, to prevent other objects from
-    using the `new` operator with the Singleton class.
-  - Create a static creation method that acts as a constructor. Under
-    the hood, this method calls the private constructor to create an
-    object and saves it in a static field. All following calls to this
-    method return the cached object.
+  - Make the default constructor private, to prevent other objects from using the `new` operator with the Singleton class.
+  - Create a static creation method that acts as a constructor. Under the hood, this method calls the private constructor to create an object and saves it in a static field. All following calls to this method return the cached object.
 
-If your code has access to the Singleton class, then it’s able to call
-the Singleton’s static method. So whenever that method is called, the
-same object is always returned.
+If your code has access to the Singleton class, then it’s able to call the Singleton’s static method. So whenever that method is called, the same object is always returned.
 
 ### Structure
 
-<kbd>![](./attachments/singleton/463530333.png)</kbd>
+<img src"./attachments/singleton/463530333.png" />
 
 ### Pseudocode
 
 ### Real world example
 
-There can only be one president of a country at a time. The same
-president has to be brought to action, whenever duty calls. President
-here is singleton.
+There can only be one president of a country at a time. The same president has to be brought to action, whenever duty calls. President here is singleton.
 
 ### In plain words
 
@@ -88,18 +59,9 @@ Ensures that only one object of a particular class is ever created.
 
 ### Wikipedia says
 
-In software engineering, the singleton pattern is a software design
-pattern that restricts the instantiation of a class to one object. This
-is useful when exactly one object is needed to coordinate actions across
-the system.
+In software engineering, the singleton pattern is a software design pattern that restricts the instantiation of a class to one object. This is useful when exactly one object is needed to coordinate actions across the system.
 
-Singleton pattern is actually considered an anti-pattern and overuse of
-it should be avoided. It is not necessarily bad and could have some
-valid use-cases but should be used with caution because it introduces a
-global state in your application and change to it in one place could
-affect in the other areas and it could become pretty difficult to debug.
-The other bad thing about them is it makes your code tightly coupled
-plus mocking the singleton could be difficult.
+Singleton pattern is actually considered an anti-pattern and overuse of it should be avoided. It is not necessarily bad and could have some valid use-cases but should be used with caution because it introduces a global state in your application and change to it in one place could affect in the other areas and it could become pretty difficult to debug. The other bad thing about them is it makes your code tightly coupled plus mocking the singleton could be difficult.
 
 ### Pros and Cons
 
@@ -136,8 +98,7 @@ plus mocking the singleton could be difficult.
 
 ### Programmatic Example
 
-To create a singleton, make the constructor private, disable cloning,
-disable extension and create a static variable to house the instance
+To create a singleton, make the constructor private, disable cloning, disable extension and create a static variable to house the instance
 
 #### C\#
 
@@ -262,35 +223,16 @@ var_dump($president1 === $president2); // true
 
 """
 *What is this pattern about?
-The Borg pattern (also known as the Monostate pattern) is a way to
-implement singleton behavior, but instead of having only one instance
-of a class, there are multiple instances that share the same state. In
-other words, the focus is on sharing state instead of sharing instance
-identity.
+The Borg pattern (also known as the Monostate pattern) is a way to implement singleton behavior, but instead of having only one instance of a class, there are multiple instances that share the same state. In other words, the focus is on sharing state instead of sharing instance identity.
 
 *What does this example do?
-To understand the implementation of this pattern in Python, it is
-important to know that, in Python, instance attributes are stored in a
-attribute dictionary called __dict__. Usually, each instance will have
-its own dictionary, but the Borg pattern modifies this so that all
-instances have the same dictionary.
-In this example, the __shared_state attribute will be the dictionary
-shared between all instances, and this is ensured by assigining
-__shared_state to the __dict__ variable when initializing a new
-instance (i.e., in the __init__ method). Other attributes are usually
-added to the instance's attribute dictionary, but, since the attribute
-dictionary itself is shared (which is __shared_state), all other
-attributes will also be shared.
-For this reason, when the attribute self.state is modified using
-instance rm2, the value of self.state in instance rm1 also changes. The
-same happens if self.state is modified using rm3, which is an
-instance from a subclass.
-Notice that even though they share attributes, the instances are not
-the same, as seen by their ids.
+To understand the implementation of this pattern in Python, it is important to know that, in Python, instance attributes are stored in a attribute dictionary called __dict__. Usually, each instance will have its own dictionary, but the Borg pattern modifies this so that all instances have the same dictionary.
+In this example, the __shared_state attribute will be the dictionary shared between all instances, and this is ensured by assigining __shared_state to the __dict__ variable when initializing a new instance (i.e., in the __init__ method). Other attributes are usually added to the instance's attribute dictionary, but, since the attribute dictionary itself is shared (which is __shared_state), all other attributes will also be shared.
+For this reason, when the attribute self.state is modified using instance rm2, the value of self.state in instance rm1 also changes. The same happens if self.state is modified using rm3, which is an instance from a subclass.
+Notice that even though they share attributes, the instances are not the same, as seen by their ids.
 
 *Where is the pattern used practically?
-Sharing state is useful in applications like managing database connections:
-https://github.com/onetwopunch/pythonDbTemplate/blob/master/database.py
+Sharing state is useful in applications like managing database connections: https://github.com/onetwopunch/pythonDbTemplate/blob/master/database.py
 
 *References:
 https://fkromer.github.io/python-pattern-references/design/#singleton

@@ -10,147 +10,76 @@
 
 ### Intent
 
-**Abstract Factory** is a creational design pattern that lets you
-produce families of related objects without specifying their concrete
-classes.
+**Abstract Factory** is a creational design pattern that lets you produce families of related objects without specifying their concrete classes.
 
-<kbd>![](./attachments/abstract/463530174.png)</kbd>
+<img src"./attachments/abstract/463530174.png" />
 
 ### Problem
 
-Imagine that you’re creating a furniture shop simulator. Your code
-consists of classes that represent:
+Imagine that you’re creating a furniture shop simulator. Your code consists of classes that represent:
 
 1.  A family of related products, say: `Chair` + `Sofa` + `CoffeeTable`.
+2.  Several variants of this family. For example, products `Chair` + `Sofa` + `CoffeeTable` are available in these variants: `Modern`, `Victorian`, `ArtDeco`.
 
-2.  Several variants of this family. For example, products `Chair` +
-    `Sofa` + `CoffeeTable` are available in these variants: `Modern`,
-    `Victorian`, `ArtDeco`.
+<img src"./attachments/abstract/463530178.png" />
 
-<kbd>![](./attachments/abstract/463530178.png)</kbd>
+You need a way to create individual furniture objects so that they match other objects of the same family. Customers get quite mad when they receive non-matching furniture.
 
-You need a way to create individual furniture objects so that they match
-other objects of the same family. Customers get quite mad when they
-receive non-matching furniture.
+<img src"./attachments/abstract/463530175.png" />
 
-<kbd>![](./attachments/abstract/463530175.png)</kbd>
-
-Also, you don’t want to change existing code when adding new products or
-families of products to the program. Furniture vendors update their
-catalogs very often, and you wouldn’t want to change the core code each
-time it happens.
+Also, you don’t want to change existing code when adding new products or families of products to the program. Furniture vendors update their catalogs very often, and you wouldn’t want to change the core code each time it happens.
 
 ### Solution
 
-The first thing the Abstract Factory pattern suggests is to explicitly
-declare interfaces for each distinct product of the product family
-(e.g., chair, sofa or coffee table). Then you can make all variants of
-products follow those interfaces. For example, all chair variants can
-implement the `Chair` interface; all coffee table variants can implement
-the `CoffeeTable` interface, and so on.
+The first thing the Abstract Factory pattern suggests is to explicitly declare interfaces for each distinct product of the product family (e.g., chair, sofa or coffee table). Then you can make all variants of products follow those interfaces. For example, all chair variants can implement the `Chair` interface; all coffee table variants can implement the `CoffeeTable` interface, and so on.
 
-<kbd>![](./attachments/abstract/463530179.png)</kbd>
+<img src"./attachments/abstract/463530179.png" />
 
-The next move is to declare the *Abstract Factory*—an interface with a
-list of creation methods for all products that are part of the product
-family (for example, `createChair`, `createSofa` and
-`createCoffeeTable`). These methods must return **abstract** product
-types represented by the interfaces we extracted previously: `Chair`,
-`Sofa`, `CoffeeTable` and so on.
+The next move is to declare the *Abstract Factory*—an interface with a list of creation methods for all products that are part of the product family (for example, `createChair`, `createSofa` and `createCoffeeTable`). These methods must return **abstract** product types represented by the interfaces we extracted previously: `Chair`, `Sofa`, `CoffeeTable` and so on.
 
-<kbd>![](./attachments/abstract/463530180.png)</kbd>
+<img src"./attachments/abstract/463530180.png" />
 
-Now, how about the product variants? For each variant of a product
-family, we create a separate factory class based on the
-`AbstractFactory` interface. A factory is a class that returns products
-of a particular kind. For example, the `ModernFurnitureFactory` can only
-create `ModernChair`, `ModernSofa` and `ModernCoffeeTable` objects.
+Now, how about the product variants? For each variant of a product family, we create a separate factory class based on the `AbstractFactory` interface. A factory is a class that returns products of a particular kind. For example, the `ModernFurnitureFactory` can only create `ModernChair`, `ModernSofa` and `ModernCoffeeTable` objects.
 
-The client code has to work with both factories and products via their
-respective abstract interfaces. This lets you change the type of a
-factory that you pass to the client code, as well as the product variant
-that the client code receives, without breaking the actual client code.
+The client code has to work with both factories and products via their respective abstract interfaces. This lets you change the type of a factory that you pass to the client code, as well as the product variant that the client code receives, without breaking the actual client code. 
 
-<kbd>![](./attachments/abstract/463530176.png)</kbd>
+<img src"./attachments/abstract/463530176.png" />
 
-Say the client wants a factory to produce a chair. The client doesn’t
-have to be aware of the factory’s class, nor does it matter what kind of
-chair it gets. Whether it’s a Modern model or a Victorian-style chair,
-the client must treat all chairs in the same manner, using the abstract
-`Chair` interface. With this approach, the only thing that the client
-knows about the chair is that it implements the `sitOn` method in some
-way. Also, whichever variant of the chair is returned, it’ll always
-match the type of sofa or coffee table produced by the same factory
-object.
+Say the client wants a factory to produce a chair. The client doesn’t have to be aware of the factory’s class, nor does it matter what kind of chair it gets. Whether it’s a Modern model or a Victorian-style chair, the client must treat all chairs in the same manner, using the abstract `Chair` interface. With this approach, the only thing that the client knows about the chair is that it implements the `sitOn` method in some way. Also, whichever variant of the chair is returned, it’ll always match the type of sofa or coffee table produced by the same factory object.
 
-There’s one more thing left to clarify: if the client is only exposed to
-the abstract interfaces, what creates the actual factory objects?
-Usually, the application creates a concrete factory object at the
-initialization stage. Just before that, the app must select the factory
-type depending on the configuration or the environment settings.
+There’s one more thing left to clarify: if the client is only exposed to the abstract interfaces, what creates the actual factory objects? Usually, the application creates a concrete factory object at the initialization stage. Just before that, the app must select the factory type depending on the configuration or the environment settings.
 
 ### Structure
 
-<kbd>![](./attachments/abstract/463530181.png)</kbd>
+<img src"./attachments/abstract/463530181.png" />
 
 ### Pseudocode
 
-This example illustrates how the **Abstract Factory** pattern can be
-used for creating cross-platform UI elements without coupling the client
-code to concrete UI classes, while keeping all created elements
-consistent with a selected operating system.
+This example illustrates how the **Abstract Factory** pattern can be used for creating cross-platform UI elements without coupling the client code to concrete UI classes, while keeping all created elements consistent with a selected operating system.
 
-<kbd>![](./attachments/abstract/463530177.png)</kbd>
+<img src"./attachments/abstract/463530177.png" />
 
-The same UI elements in a cross-platform application are expected to
-behave similarly, but look a little bit different under different
-operating systems. Moreover, it’s your job to make sure that the UI
-elements match the style of the current operating system. You wouldn’t
-want your program to render macOS controls when it’s executed in
-Windows.
+The same UI elements in a cross-platform application are expected to behave similarly, but look a little bit different under different operating systems. Moreover, it’s your job to make sure that the UI elements match the style of the current operating system. You wouldn’t want your program to render macOS controls when it’s executed in Windows.
 
-The Abstract Factory interface declares a set of creation methods that
-the client code can use to produce different types of UI elements.
-Concrete factories correspond to specific operating systems and create
-the UI elements that match that particular OS.
+The Abstract Factory interface declares a set of creation methods that the client code can use to produce different types of UI elements. Concrete factories correspond to specific operating systems and create the UI elements that match that particular OS.
 
-It works like this: when an application launches, it checks the type of
-the current operating system. The app uses this information to create a
-factory object from a class that matches the operating system. The rest
-of the code uses this factory to create UI elements. This prevents the
-wrong elements from being created.
+It works like this: when an application launches, it checks the type of the current operating system. The app uses this information to create a factory object from a class that matches the operating system. The rest of the code uses this factory to create UI elements. This prevents the wrong elements from being created.
 
-With this approach, the client code doesn’t depend on concrete classes
-of factories and UI elements as long as it works with these objects via
-their abstract interfaces. This also lets the client code support other
-factories or UI elements that you might add in the future.
+With this approach, the client code doesn’t depend on concrete classes of factories and UI elements as long as it works with these objects via their abstract interfaces. This also lets the client code support other factories or UI elements that you might add in the future.
 
-As a result, you don’t need to modify the client code each time you add
-a new variation of UI elements to your app. You just have to create a
-new factory class that produces these elements and slightly modify the
-app’s initialization code so it selects that class when appropriate.
+As a result, you don’t need to modify the client code each time you add a new variation of UI elements to your app. You just have to create a new factory class that produces these elements and slightly modify the app’s initialization code so it selects that class when appropriate.
 
 ### Real world example
 
-Extending our door example from Simple Factory. Based on your needs you
-might get a wooden door from a wooden door shop, iron door from an iron
-shop or a PVC door from the relevant shop. Plus you might need a guy
-with different kind of specialities to fit the door, for example a
-carpenter for wooden door, welder for iron door etc. As you can see
-there is a dependency between the doors now, wooden door needs
-carpenter, iron door needs a welder etc.
+Extending our door example from Simple Factory. Based on your needs you might get a wooden door from a wooden door shop, iron door from an iron shop or a PVC door from the relevant shop. Plus you might need a guy with different kind of specialities to fit the door, for example a carpenter for wooden door, welder for iron door etc. As you can see there is a dependency between the doors now, wooden door needs carpenter, iron door needs a welder etc.
 
 ### In plain words
 
-A factory of factories; a factory that groups the individual but
-related/dependent factories together without specifying their concrete
-classes.
+A factory of factories; a factory that groups the individual but related/dependent factories together without specifying their concrete classes.
 
 ### Wikipedia says
 
-The abstract factory pattern provides a way to encapsulate a group of
-individual factories that have a common theme without specifying their
-concrete classes
+The abstract factory pattern provides a way to encapsulate a group of individual factories that have a common theme without specifying their concrete classes
 
 ### Pros and Cons
 
@@ -187,8 +116,7 @@ concrete classes
 
 ### Programmatic Example
 
-Translating the door example above. First of all we have our `Door`
-interface and some implementation for it
+Translating the door example above. First of all we have our `Door` interface and some implementation for it
 
 #### C\#
 
@@ -246,10 +174,7 @@ Then we have some fitting experts for each door type
 >                     
 > ```
 
-Now we have our abstract factory that would let us make family of
-related objects i.e. wooden door factory would create a wooden door and
-wooden door fitting expert and iron door factory would create an iron
-door and iron door fitting expert
+Now we have our abstract factory that would let us make family of related objects i.e. wooden door factory would create a wooden door and wooden door fitting expert and iron door factory would create an iron door and iron door fitting expert
 
 > 
 > 
@@ -391,9 +316,7 @@ public class OrcKingdomFactory implements KingdomFactory {
                 
 ```
 
-Now we have our abstract factory that lets us make family of related
-objects i.e. Elven kingdom factory creates Elven castle, king and army
-etc.
+Now we have our abstract factory that lets us make family of related objects i.e. Elven kingdom factory creates Elven castle, king and army etc.
 
 ``` 
 KingdomFactory factory = new ElfKingdomFactory();
@@ -407,14 +330,9 @@ army.getDescription(); // Output: This is the Elven Army!
                 
 ```
 
-Now, we can design a factory for our different kingdom factories. In
-this example, we created FactoryMaker, responsible for returning an
-instance of either ElfKingdomFactory or OrcKingdomFactory.  
-The client can use FactoryMaker to create the desired concrete factory
-which, in turn, will produce different concrete objects (Army, King,
-Castle).  
-In this example, we also used an enum to parameterize which type of
-kingdom factory the client will ask for.
+Now, we can design a factory for our different kingdom factories. In this example, we created FactoryMaker, responsible for returning an instance of either ElfKingdomFactory or OrcKingdomFactory.  
+The client can use FactoryMaker to create the desired concrete factory which, in turn, will produce different concrete objects (Army, King, Castle).  
+In this example, we also used an enum to parameterize which type of kingdom factory the client will ask for.
 
 ``` 
 public static class FactoryMaker {
@@ -508,10 +426,7 @@ class Carpenter implements DoorFittingExpert
                 
 ```
 
-Now we have our abstract factory that would let us make family of
-related objects i.e. wooden door factory would create a wooden door and
-wooden door fitting expert and iron door factory would create an iron
-door and iron door fitting expert
+Now we have our abstract factory that would let us make family of related objects i.e. wooden door factory would create a wooden door and wooden door fitting expert and iron door factory would create an iron door and iron door fitting expert
 
 ``` 
 interface DoorFactory
@@ -573,10 +488,7 @@ $expert->getDescription(); // Output: I can only fit iron doors
                 
 ```
 
-As you can see the wooden door factory has encapsulated the `carpenter`
-and the `  wooden door  ` also iron door factory has encapsulated the
-` iron door  ` and `  welder  ` . And thus it had helped us make sure
-that for each of the created door, we do not get a wrong fitting expert.
+As you can see the wooden door factory has encapsulated the `carpenter` and the `  wooden door  ` also iron door factory has encapsulated the ` iron door  ` and `  welder  ` . And thus it had helped us make sure that for each of the created door, we do not get a wrong fitting expert.
 
 
 
@@ -591,24 +503,14 @@ that for each of the created door, we do not get a wrong fitting expert.
 """
 *What is this pattern about?
 
-In Java and other languages, the Abstract Factory Pattern serves to provide an interface for
-creating related/dependent objects without need to specify their
-actual class.
+In Java and other languages, the Abstract Factory Pattern serves to provide an interface for creating related/dependent objects without need to specify their actual class.
 
-The idea is to abstract the creation of objects depending on business
-logic, platform choice, etc.
+The idea is to abstract the creation of objects depending on business logic, platform choice, etc.
 
-In Python, the interface we use is simply a callable, which is "builtin" interface
-in Python, and in normal circumstances we can simply use the class itself as
-that callable, because classes are first class objects in Python.
+In Python, the interface we use is simply a callable, which is "builtin" interface in Python, and in normal circumstances we can simply use the class itself as that callable, because classes are first class objects in Python.
 
 *What does this example do?
-This particular implementation abstracts the creation of a pet and
-does so depending on the factory we chose (Dog or Cat, or random_animal)
-This works because both Dog/Cat and random_animal respect a common
-interface (callable for creation and .speak()).
-Now my application can create pets abstractly and decide later,
-based on my own criteria, dogs over cats.
+This particular implementation abstracts the creation of a pet and does so depending on the factory we chose (Dog or Cat, or random_animal) This works because both Dog/Cat and random_animal respect a common interface (callable for creation and .speak()). Now my application can create pets abstractly and decide later, based on my own criteria, dogs over cats.
 
 *Where is the pattern used practically?
 

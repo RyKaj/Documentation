@@ -3,7 +3,7 @@
 
 # DevOps : Kubernetes Design Patterns
 
-  <img src="./attachments/471992249.png" alt="" />
+<img src="./attachments/471992249.png" alt="" />
 
 
 

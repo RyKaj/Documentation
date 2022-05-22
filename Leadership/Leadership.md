@@ -134,28 +134,28 @@ Lifestyle: Independent vs. dependent
 <kbd>![](https://i1.wp.com/www.brainpickings.org/wp-content/uploads/2009/10/eastwest_individual.jpg?w=480&ssl=1)</kbd>
 
 ##### Attitude towards punctuality
-<kbd>![](./attachments/458560619.jpg)</kbd>
+<img src"./attachments/458560619.jpg" />
 
 ##### Problem-solving approach
-<kbd>![](./attachments/458560620.jpg)</kbd>
+<img src"./attachments/458560620.jpg" />
 
 ##### Size of the individual&#39;s ego
-<kbd>![](./attachments/458560621.jpg)</kbd>
+<img src"./attachments/458560621.jpg" />
 
 ##### Perception: How Germans and the Chinese see one another
-<kbd>![](./attachments/458560622.jpg)</kbd>
+<img src"./attachments/458560622.jpg" />
 
 ##### How to stand in line
-<kbd>![](./attachments/458560623.jpg)</kbd>
+<img src"./attachments/458560623.jpg" />
 
 ##### Complexity of Self-expression
-<kbd>![](./attachments/458560624.jpg)</kbd>
+<img src"./attachments/458560624.jpg" />
 
 ##### The evolution of transportation over the last three decades
-<kbd>![](./attachments/458560625.jpg)</kbd>
+<img src"./attachments/458560625.jpg" />
 
 ##### Volume of sounds in restaurant
-<kbd>![](./attachments/458560626.jpg)</kbd>
+<img src"./attachments/458560626.jpg" />
 
 
 

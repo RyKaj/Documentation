@@ -18,7 +18,7 @@ hand in hand with agile development practices, continuous delivery and
 DevOps culture. Having an effective software testing approach allows
 teams to move fast and with confidence.
 
-<kbd><img src="./attachments/Test-Automation-Strategies.png" alt=""></kbd>
+<img src="./attachments/Test-Automation-Strategies.png" alt="" />
 
 ## Importance of Test Automation
 
@@ -101,7 +101,7 @@ have to be on the highest level of your pyramid - you're perfectly able
 to unit test your UI in all of these frameworks.
 
 <kbd>![](https://miro.medium.com/max/1092/0*q2maW8NjQFPvzZPL)</kbd>
-<kbd><img src="./attachments/446666626.png" alt=""></kbd>
+<img src="./attachments/446666626.png" alt="" />
 
 **Legends**
 

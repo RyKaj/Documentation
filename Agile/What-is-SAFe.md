@@ -132,7 +132,7 @@ Foundation
 
 The Foundation contains the supporting principles, values, mindset, implementation guidance, and leadership roles that are required to deliver the value successfully at scale.
 
-<img src="./attachments/471992242.png" alt="SAFe Core Values">
+<img src="./attachments/471992242.png" alt="SAFe Core Values" />
 
 Lean-Agile Leaders 
 ------------------

@@ -55,7 +55,7 @@ The ability to take a step back and research before we make a pivotal decision i
 
 ### Story Map 
 
-<kbd>![](./attachments/471992243.png)</kbd>
+<img src"./attachments/471992243.png"  />
 
 The story map is a really nice type of roadmap that I often use in the beginning of new projects or products. The story map is an excellent way to create a nice overview of all the features you and your stakeholders can think of, which will be important to your product. Although the idea is not to create an unlimited list of all the features and functionalities that will likely be developed somewhere in the future, it does provide a nice starting point to facilitate creative ideas for your product. What I like most about the story map is that it provides an overview of all the user activities that need to be covered by the system, which in turn enables you to create small and valuable user stories, which can be developed and delivered incrementally and iteratively.
 

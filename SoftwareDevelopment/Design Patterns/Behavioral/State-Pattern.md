@@ -8,103 +8,59 @@
 
 ### Intent
 
-**State** is a behavioral design pattern that lets an object alter its
-behavior when its internal state changes. It appears as if the object
-changed its class.
+**State** is a behavioral design pattern that lets an object alter its behavior when its internal state changes. It appears as if the object changed its class.
 
-<kbd>![](./attachments/state/463530136.png)</kbd>
+<img src"./attachments/state/463530136.png" />
 
 ### Problem
 
 The State pattern is closely related to the concept of a [Finite-State Machine](https://en.wikipedia.org/wiki/Finite-state_machine).
 
-<kbd>![](./attachments/state/463530138.png)</kbd>
+<img src"./attachments/state/463530138.png" />
 
-The main idea is that, at any given moment, there’s a *finite* number of
-*states* which a program can be in. Within any unique state, the program
-behaves differently, and the program can be switched from one state to
-another instantaneously. However, depending on a current state, the
-program may or may not switch to certain other states. These switching
-rules, called *transitions*, are also finite and predetermined.
+The main idea is that, at any given moment, there’s a *finite* number of *states* which a program can be in. Within any unique state, the program behaves differently, and the program can be switched from one state to another instantaneously. However, depending on a current state, the program may or may not switch to certain other states. These switching rules, called *transitions*, are also finite and predetermined.
 
-You can also apply this approach to objects. Imagine that we have a
-`Document` class. A document can be in one of three states: `Draft`,
-`Moderation` and `Published`. The `publish` method of the document works
-a little bit differently in each state:
+You can also apply this approach to objects. Imagine that we have a `Document` class. A document can be in one of three states: `Draft`, `Moderation` and `Published`. The `publish` method of the document works a little bit differently in each state:
 
   - In `Draft`, it moves the document to moderation.
   - In `Moderation`, it makes the document public, but only if the current user is an administrator.
   - In `Published`, it doesn’t do anything at all.
 
-<kbd>![](./attachments/state/463530139.png)</kbd>
+<img src"./attachments/state/463530139.png" />
 
-State machines are usually implemented with lots of conditional
-operators ( `if` or `switch` ) that select the appropriate behavior
-depending on the current state of the object. Usually, this “state” is
-just a set of values of the object’s fields. Even if you’ve never heard
-about finite-state machines before, you’ve probably implemented a state
-at least once. Does the following code structure ring a bell?
+State machines are usually implemented with lots of conditional operators ( `if` or `switch` ) that select the appropriate behavior depending on the current state of the object. Usually, this “state” is just a set of values of the object’s fields. Even if you’ve never heard about finite-state machines before, you’ve probably implemented a state at least once. Does the following code structure ring a bell?
 
-The biggest weakness of a state machine based on conditionals reveals
-itself once we start adding more and more states and state-dependent
-behaviors to the `Document` class. Most methods will contain monstrous
-conditionals that pick the proper behavior of a method according to the
-current state. Code like this is very difficult to maintain because any
-change to the transition logic may require changing state conditionals
-in every method.
+The biggest weakness of a state machine based on conditionals reveals itself once we start adding more and more states and state-dependent behaviors to the `Document` class. Most methods will contain monstrous conditionals that pick the proper behavior of a method according to the current state. Code like this is very difficult to maintain because any change to the transition logic may require changing state conditionals in every method.
 
-The problem tends to get bigger as a project evolves. It’s quite
-difficult to predict all possible states and transitions at the design
-stage. Hence, a lean state machine built with a limited set of
-conditionals can grow into a bloated mess over time.
+The problem tends to get bigger as a project evolves. It’s quite difficult to predict all possible states and transitions at the design stage. Hence, a lean state machine built with a limited set of conditionals can grow into a bloated mess over time.
 
 ### Solution
 
-The State pattern suggests that you create new classes for all possible
-states of an object and extract all state-specific behaviors into these
-classes.
+The State pattern suggests that you create new classes for all possible states of an object and extract all state-specific behaviors into these classes.
 
-Instead of implementing all behaviors on its own, the original object,
-called *context*, stores a reference to one of the state objects that
-represents its current state, and delegates all the state-related work
-to that object.
+Instead of implementing all behaviors on its own, the original object, called *context*, stores a reference to one of the state objects that represents its current state, and delegates all the state-related work to that object.
 
-<kbd>![](./attachments/state/463530140.png)</kbd>
+<img src"./attachments/state/463530140.png" />
 
-To transition the context into another state, replace the active state
-object with another object that represents that new state. This is
-possible only if all state classes follow the same interface and the
-context itself works with these objects through that interface.
+To transition the context into another state, replace the active state object with another object that represents that new state. This is possible only if all state classes follow the same interface and the context itself works with these objects through that interface.
 
-This structure may look similar to the
-[Strategy](https://refactoring.guru/design-patterns/strategy) pattern,
-but there’s one key difference. In the State pattern, the particular
-states may be aware of each other and initiate transitions from one
-state to another, whereas strategies almost never know about each other.
+This structure may look similar to the [Strategy](https://refactoring.guru/design-patterns/strategy) pattern, but there’s one key difference. In the State pattern, the particular states may be aware of each other and initiate transitions from one state to another, whereas strategies almost never know about each other.
 
 ### Structure
 
-<kbd>![](./attachments/state/463530141.png)</kbd>
+<img src"./attachments/state/463530141.png" />
 
 ### Pseudocode
 
-In this example, the **State** pattern lets the same controls of the
-media player behave differently, depending on the current playback
-state.
+In this example, the **State** pattern lets the same controls of the media player behave differently, depending on the current playback state.
 
-<kbd>![](./attachments/state/463530137.png)</kbd>
+<img src"./attachments/state/463530137.png" />
 
-The main object of the player is always linked to a state object that
-performs most of the work for the player. Some actions replace the
-current state object of the player with another, which changes the way
-the player reacts to user interactions.
+The main object of the player is always linked to a state object that performs most of the work for the player. Some actions replace the current state object of the player with another, which changes the way the player reacts to user interactions.
 
 ### Real world example
 
-Imagine you are using some drawing application, you choose the paint
-brush to draw. Now the brush changes its behavior based on the selected
-color i.e. if you have chosen red color it will draw in red, if blue
-then it will be in blue etc.
+Imagine you are using some drawing application, you choose the paint brush to draw. Now the brush changes its behavior based on the selected color i.e. if you have chosen red color it will draw in red, if blue then it will be in blue etc.
 
 ### In plain words
 
@@ -112,14 +68,7 @@ It lets you change the behavior of a class when the state changes.
 
 ### Wikipedia says
 
-The state pattern is a behavioral software design pattern that
-implements a state machine in an object-oriented way. With the state
-pattern, a state machine is implemented by implementing each individual
-state as a derived class of the state pattern interface, and
-implementing state transitions by invoking methods defined by the
-pattern's superclass. The state pattern can be interpreted as a strategy
-pattern which is able to switch the current strategy through invocations
-of methods defined in the pattern's interface.
+The state pattern is a behavioral software design pattern that implements a state machine in an object-oriented way. With the state pattern, a state machine is implemented by implementing each individual state as a derived class of the state pattern interface, and implementing state transitions by invoking methods defined by the pattern's superclass. The state pattern can be interpreted as a strategy pattern which is able to switch the current strategy through invocations of methods defined in the pattern's interface.
 
 ### Pros and Cons
 
@@ -156,9 +105,7 @@ of methods defined in the pattern's interface.
 
 
 
-Let's take an example of text editor, it lets you change the state of
-text that is typed i.e. if you have selected bold, it starts writing in
-bold, if italic then in italics etc.
+Let's take an example of text editor, it lets you change the state of text that is typed i.e. if you have selected bold, it starts writing in bold, if italic then in italics etc.
 
 First of all we have our state interface and some state implementations
 
@@ -256,9 +203,7 @@ And then it can be used as
 
 
 
-Let's take an example of text editor, it let's you change the state of
-text that is typed i.e. if you have selected bold, it starts writing in
-bold, if italic then in italics etc.
+Let's take an example of text editor, it let's you change the state of text that is typed i.e. if you have selected bold, it starts writing in bold, if italic then in italics etc.
 
 First of all we have our transformation functions
 
@@ -326,9 +271,7 @@ And then it can be used as
 
 
 
-Let's take an example of text editor, it lets you change the state of
-text that is typed i.e. if you have selected bold, it starts writing in
-bold, if italic then in italics etc.
+Let's take an example of text editor, it lets you change the state of text that is typed i.e. if you have selected bold, it starts writing in bold, if italic then in italics etc.
 
 First of all we have our state interface and some state implementations
 

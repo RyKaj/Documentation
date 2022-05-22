@@ -9,99 +9,51 @@
 
 ### Intent
 
-**Mediator** is a behavioral design pattern that lets you reduce chaotic
-dependencies between objects. The pattern restricts direct
-communications between the objects and forces them to collaborate only
-via a mediator object.
+**Mediator** is a behavioral design pattern that lets you reduce chaotic dependencies between objects. The pattern restricts direct communications between the objects and forces them to collaborate only via a mediator object.
 
-<kbd>![](./attachments/mediator/463529920.png)</kbd>
+<img src"./attachments/mediator/463529920.png" />
 
 ### Problem
 
-Say you have a dialog for creating and editing customer profiles. It
-consists of various form controls such as text fields, checkboxes,
-buttons, etc.
+Say you have a dialog for creating and editing customer profiles. It consists of various form controls such as text fields, checkboxes, buttons, etc.
 
-<kbd>![](./attachments/mediator/463529921.png)</kbd>
+<img src"./attachments/mediator/463529921.png' />
 
-Some of the formBy having this logic implemented directly inside the
-code of the form elements you make these elements’ classes much harder
-to reuse in other forms of the app. For example, you won’t be able to
-use that checkbox class inside another form, because it’s coupled to the
-dog’s text field. You can use either all the classes involved in
-rendering the profile form, or none at all. elements may interact with
-others. For instance, selecting the “I have a dog” checkbox may reveal a
-hidden text field for entering the dog’s name. Another example is the
-submit button that has to validate values of all fields before saving
-the data.
+Some of the formBy having this logic implemented directly inside the code of the form elements you make these elements’ classes much harder to reuse in other forms of the app. For example, you won’t be able to use that checkbox class inside another form, because it’s coupled to the dog’s text field. You can use either all the classes involved in rendering the profile form, or none at all. elements may interact with others. For instance, selecting the “I have a dog” checkbox may reveal a hidden text field for entering the dog’s name. Another example is the submit button that has to validate values of all fields before saving the data.
 
-<kbd>![](./attachments/mediator/463529922.png)</kbd>
+<img src"./attachments/mediator/463529922.png" />
 
 ### Solution
 
-The Mediator pattern suggests that you should cease all direct
-communication between the components which you want to make independent
-of each other. Instead, these components must collaborate indirectly, by
-calling a special mediator object that redirects the calls to
-appropriate components. As a result, the components depend only on a
-single mediator class instead of being coupled to dozens of their
-colleagues.
+The Mediator pattern suggests that you should cease all direct communication between the components which you want to make independent of each other. Instead, these components must collaborate indirectly, by calling a special mediator object that redirects the calls to appropriate components. As a result, the components depend only on a single mediator class instead of being coupled to dozens of their colleagues.
 
-In our example with the profile editing form, the dialog class itself
-may act as the mediator. Most likely, the dialog class is already aware
-of all of its sub-elements, so you won’t even need to introduce new
-dependencies into this class.
+In our example with the profile editing form, the dialog class itself may act as the mediator. Most likely, the dialog class is already aware of all of its sub-elements, so you won’t even need to introduce new dependencies into this class.
 
-<kbd>![](./attachments/mediator/463529923.png)</kbd>
+<img src"./attachments/mediator/463529923.png" />
 
-The most significant change happens to the actual form elements. Let’s
-consider the submit button. Previously, each time a user clicked the
-button, it had to validate the values of all individual form elements.
-Now its single job is to notify the dialog about the click. Upon
-receiving this notification, the dialog itself performs the validations
-or passes the task to the individual elements. Thus, instead of being
-tied to a dozen form elements, the button is only dependent on the
-dialog class.
+The most significant change happens to the actual form elements. Let’s consider the submit button. Previously, each time a user clicked the button, it had to validate the values of all individual form elements. Now its single job is to notify the dialog about the click. Upon receiving this notification, the dialog itself performs the validations or passes the task to the individual elements. Thus, instead of being tied to a dozen form elements, the button is only dependent on the dialog class.
 
-You can go further and make the dependency even looser by extracting the
-common interface for all types of dialogs. The interface would declare
-the notification method which all form elements can use to notify the
-dialog about events happening to those elements. Thus, our submit button
-should now be able to work with any dialog that implements that
-interface.
+You can go further and make the dependency even looser by extracting the common interface for all types of dialogs. The interface would declare the notification method which all form elements can use to notify the dialog about events happening to those elements. Thus, our submit button should now be able to work with any dialog that implements that interface.
 
-This way, the Mediator pattern lets you encapsulate a complex web of
-relations between various objects inside a single mediator object. The
-fewer dependencies a class has, the easier it becomes to modify, extend
-or reuse that class.
+This way, the Mediator pattern lets you encapsulate a complex web of relations between various objects inside a single mediator object. The fewer dependencies a class has, the easier it becomes to modify, extend or reuse that class.
 
 ### Structure
 
-<kbd>![](./attachments/mediator/463529924.png)</kbd>
+<img src"./attachments/mediator/463529924.png" />
 
 ### Pseudocode
 
-<kbd>![](./attachments/mediator/463529925.png)</kbd>
+<img src"./attachments/mediator/463529925.png" />
 
-A general example would be when you talk to someone on your mobile
-phone, there is a network provider sitting between you and them and your
-conversation goes through it instead of being directly sent. In this
-case network provider is mediator.
+A general example would be when you talk to someone on your mobile phone, there is a network provider sitting between you and them and your conversation goes through it instead of being directly sent. In this case network provider is mediator.
 
 ### In plain words
 
-Mediator pattern adds a third party object (called mediator) to control
-the interaction between two objects (called colleagues). It helps reduce
-the coupling between the classes communicating with each other. Because
-now they don't need to have the knowledge of each other's
-implementation.
+Mediator pattern adds a third party object (called mediator) to control the interaction between two objects (called colleagues). It helps reduce the coupling between the classes communicating with each other. Because now they don't need to have the knowledge of each other's implementation.
 
 ### Wikipedia says
 
-In software engineering, the mediator pattern defines an object that
-encapsulates how a set of objects interact. This pattern is considered
-to be a behavioral pattern due to the way it can alter the program's
-running behavior.
+In software engineering, the mediator pattern defines an object that encapsulates how a set of objects interact. This pattern is considered to be a behavioral pattern due to the way it can alter the program's running behavior.
 
 ### Pros and Cons
 
@@ -138,8 +90,7 @@ running behavior.
 
 #### C\#
 
-Here is the simplest example of a chat room (i.e. mediator) with users
-(i.e. colleagues) sending messages to each other.
+Here is the simplest example of a chat room (i.e. mediator) with users (i.e. colleagues) sending messages to each other.
 
 First of all, we have the mediator i.e. the chat room
 
@@ -215,8 +166,7 @@ And the usage
 
 
 
-Here is the simplest example of a chat room (i.e. mediator) with users
-(i.e. colleagues) sending messages to each other.
+Here is the simplest example of a chat room (i.e. mediator) with users (i.e. colleagues) sending messages to each other.
 
 First of all, we have the mediator i.e. the chat room
 
@@ -276,8 +226,7 @@ jane.send('Hey!')
 
 
 
-Here is the simplest example of a chat room (i.e. mediator) with users
-(i.e. colleagues) sending messages to each other.
+Here is the simplest example of a chat room (i.e. mediator) with users (i.e. colleagues) sending messages to each other.
 
 First of all, we have the mediator i.e. the chat room
 

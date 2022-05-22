@@ -87,8 +87,8 @@ Also at the end of each sprint, the team reflects on how well Scrum is working f
 ### Scrum Roles
 
 <img src="./attachments/463513501.png" alt="" />
-<kbd>![What is Scrum Team](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-scrum-team/sites/7/2018/10/what-is-scrum-team.png)
-<kbd>![What is Scrum Team](https://www.visual-paradigm.com/servlet/editor-content/scrum/how-scrum-team-works/sites/7/2018/12/what-is-a-scrum-team.png)
+<kbd>![What is Scrum Team](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-scrum-team/sites/7/2018/10/what-is-scrum-team.png)</kbd>
+<kbd>![What is Scrum Team](https://www.visual-paradigm.com/servlet/editor-content/scrum/how-scrum-team-works/sites/7/2018/12/what-is-a-scrum-team.png)</kbd>
 
 #### Scrum Master (close reference in Waterfall role Project Manager)
 
@@ -695,7 +695,7 @@ A Kanban board, whether it is physical or online, is made up of different swim l
 Kanban cards (like sticky notes) represent the work and each card is placed on the board in the lane that represents the status of that work. These cards communicate status at a glance. You could also use different color cards to represent different details. For example, green cards could represent a feature and orange cards could represent a task.  Kanban is a workflow management method designed to help you maximise efficiency through continuous visualisation of your work. The word literally translates to "*billboard"*, in Japanese*.* Originating from manufacturing, it later made its way into agile software development teams.
 
 <kbd>![What is Kanban - Scrum vs Kanban - Edureka](https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/07/What-is-Kanban-Scrum-vs-Kanban-Edureka.png)
-<img src="./attachments/463529392.png" alt="">
+<img src="./attachments/463529392.png" alt="" />
 
 
 ### Cadence
@@ -1042,7 +1042,7 @@ This Agile project delivery framework is used for developing software and non-IT
 # Lean Software Development - LSD
 
 
-<img src="./attachments/458555851.png" alt="">
+<img src="./attachments/458555851.png" alt="" />
 
 Lean Software Development takes Lean manufacturing and Lean IT principles and applies them to software development. It can be characterized by seven principles: eliminate waste, amplify learning, decide as late as possible, deliver as fast as possible, empower the team, build integrity in, and see the whole.
 

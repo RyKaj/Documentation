@@ -644,7 +644,7 @@ pattern to standardize and extend instrumentation. The proxy can monitor
 performance metrics such as latency or resource usage, and this
 monitoring happens in the same host environment as the application.
 
-<kbd><img src="./attachments/463533288.png" alt=""> </kbd>
+<img src="./attachments/463533288.png" alt="" /> 
 
 Features that are offloaded to the ambassador can be managed
 independently of the application. You can update and modify the
@@ -743,7 +743,7 @@ pattern to standardize and extend instrumentation. The proxy can monitor
 performance metrics such as latency or resource usage, and this
 monitoring happens in the same host environment as the application.
 
-<kbd><img src="./attachments/463533415.jpg" alt=""> </kbd>
+<img src="./attachments/463533415.jpg" alt="" />
 
 
 Features that are offloaded to the ambassador can be managed
@@ -893,7 +893,7 @@ much extra complexity.
 
 The following diagram shows a typical flow:
 
-<kbd>![](./attachments/463533293/463533292.png) </kbd>
+<img src="./attachments/463533293/463533292.png" />
 
 
 1.  The client sends a request and receives an HTTP 202 (Accepted)
@@ -1042,7 +1042,7 @@ in the development process. Conflicting update requirements, and the
 need to keep the service working for both frontends, can result in
 spending a lot of effort on a single deployable resource.
 
-<kbd><img src="./attachments/463533295.png" alt=""> </kbd>
+<img src="./attachments/463533295.png" alt="" />
 
 As the development activity focuses on the backend service, a separate
 team may be created to manage and maintain the backend. Ultimately, this
@@ -1059,7 +1059,7 @@ performance of each backend to best match the needs of the frontend
 environment, without worrying about affecting other frontend
 experiences.
 
-<kbd><img src="./attachments/463533296.png" alt=""> </kbd>
+<img src="./attachments/463533296.png" alt="" />
 
 Because each backend is specific to one interface, it can be optimized
 for that interface. As a result, it will be smaller, less complex, and
@@ -1172,7 +1172,7 @@ thread pool assigned to Service A are affected. Workloads that use
 Service B and C are not affected and can continue working without
 interruption.
 
-<kbd><img src="./attachments/463533299.png" alt=""> </kbd>
+<img src="./attachments/463533299.png" alt="" /> 
 
 The next diagram shows multiple clients calling a single service. Each
 client is assigned a separate service instance. Client 1 has made too
@@ -1180,7 +1180,7 @@ many requests and overwhelmed its instance. Because each service
 instance is isolated from the others, the other clients can continue
 making calls.
 
-<kbd><img src="./attachments/463533300.png" alt=""> </kbd>
+<img src="./attachments/463533300.png" alt="" /> 
 
 
 #### Issues and Considerations
@@ -1263,7 +1263,7 @@ implementing the cache-aside strategy. This strategy loads data into the
 cache on demand. The figure illustrates using the Cache-Aside pattern to
 store data in the cache.
 
-<kbd><img src="./attachments/463533303.png" alt=""> </kbd>
+<img src="./attachments/463533303.png" alt="" />
 
 If an application updates information, it can follow the write-through
 strategy by making the modification to the data store, and by
@@ -1380,7 +1380,7 @@ of the communication path. While you can configure the workflow, add or
 remove services easily with a well-designed orchestrator, such an
 implementation is complex hard to maintain.
 
-<kbd><img src="./attachments/463533306.png" alt=""> </kbd>
+<img src="./attachments/463533306.png" alt="" />
 
 #### Solution
 
@@ -1390,7 +1390,7 @@ instead of depending on a central orchestrator.
 One way to implement choreography is to use the  [asynchronous messaging pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/publisher-subscriber) to
 coordinate the business operations.
 
-<kbd><img src="./attachments/463533307.png" alt=""> </kbd>
+<img src="./attachments/463533307.png" alt="" />
 
 A client request publishes messages to a message queue. As messages
 arrive, they are pushed to subscribers, or services, interested in that
@@ -1570,7 +1570,7 @@ states that mimic the functionality of an electrical circuit breaker:
 	> recovery is complete, but while recovery is in progress a flood of
 	> work can cause the service to time out or fail again.
 
-<kbd><img src="./attachments/463533310.png" alt=""> </kbd>
+<img src="./attachments/463533310.png" alt="" />
 
 
 In the figure, the failure counter used by the  **Closed** state is time
@@ -1757,7 +1757,7 @@ to retrieve a piece of luggage, hence the name of the pattern. Clients
 interested in processing that specific message can use the obtained
 reference to retrieve the payload, if needed.
 
-<kbd><img src="./attachments/463533313.png" alt=""> </kbd>
+<img src="./attachments/463533313.png" alt="" />
 
 #### Issues and Considerations
 
@@ -1819,7 +1819,7 @@ does too much.
 Read and write workloads are often asymmetrical, with very different
 performance and scale requirements.
 
-<kbd><img src="./attachments/463533316.png" alt=""> </kbd>
+<img src="./attachments/463533316.png" alt="" />
 
 -   There is often a mismatch between the read and write representations
 	of the data, such as additional columns or properties that must be
@@ -1852,7 +1852,7 @@ CQRS separates reads and writes into different models, using 
 The models can then be isolated, as shown in the following diagram,
 although that\'s not an absolute requirement.
 
-<kbd><img src="./attachments/463533317.png" alt=""> </kbd>
+<img src="./attachments/463533317.png" alt="" />
 
 Having separate query and update models simplifies the design and
 implementation. However, one disadvantage is that CQRS code can\'t
@@ -1874,7 +1874,7 @@ sync. Typically this is accomplished by having the write model publish
 an event whenever it updates the database. Updating the database and
 publishing the event must occur in a single transaction.
 
-<kbd><img src="./attachments/463533318.png" alt=""> </kbd>
+<img src="./attachments/463533318.png" alt="" />
 
 The read store can be a read-only replica of the write store, or the
 read and write stores can have a different structure altogether. Using
@@ -2173,7 +2173,7 @@ approach enables the same pool of consumer service instances to handle
 messages from any instance of the application. The figure illustrates
 using a message queue to distribute work to instances of a service.
 
-<kbd><img src="./attachments/463533327.png" alt=""> </kbd>
+<img src="./attachments/463533327.png" alt="" />
 
 This solution has the following benefits:
 
@@ -2324,7 +2324,7 @@ computational unit. Each computational unit runs in its own virtual
 environment. Each function has been implemented as a separate task
 (labeled Task A through Task E) running in its own computational unit.
 
-<kbd><img src="./attachments/463533329.png" alt=""> </kbd>
+<img src="./attachments/463533329.png" alt="" />
 
 Each computational unit consumes chargeable resources, even when it\'s
 idle or lightly used. Therefore, this isn\'t always the most
@@ -2547,7 +2547,7 @@ options for using the event stream such as creating a materialized view,
 integrating events with external applications and systems, and replaying
 events to create projections of the current state of specific entities.
 
-<kbd><img src="./attachments/463533331.png" alt=""> </kbd>
+<img src="./attachments/463533331.png" alt="" />
 
 The Event Sourcing pattern provides the following advantages:
 
@@ -2787,7 +2787,7 @@ production, including multiple release versions of each one).
 > The figure illustrates an overview of the External Configuration Store
 > pattern with optional local cache.
 
-<kbd><img src="./attachments/463533333.png" alt=""> </kbd>
+<img src="./attachments/463533333.png" alt="" />
 
 #### Issues and Considerations
 
@@ -2931,7 +2931,7 @@ authenticated user. This information, referred to as claims, includes
 the user's identity, and might also include other information such as
 role membership and more granular access rights.
 
-<kbd><img src="./attachments/463533335.png" alt=""> </kbd>
+<img src="./attachments/463533335.png" alt="" />
 
 This model is often called claims-based access control. Applications and
 services authorize access to features and functionality based on the
@@ -3092,7 +3092,7 @@ and then hands off the request---perhaps through a decoupled
 interface---to the hosts or tasks that\'ll handle the request. The
 figure provides a high-level overview of this pattern.
 
-<kbd><img src="./attachments/463533346.png" alt=""> </kbd>
+<img src="./attachments/463533346.png" alt="" />
 
 The gatekeeper pattern can be used to simply protect storage, or it can
 be used as a more comprehensive façade to protect all of the functions
@@ -3186,7 +3186,7 @@ request may be done in parallel, the application must send, wait, and
 process data for each request, all on separate connections, increasing
 the chance of failure.
 
-<kbd><img src="./attachments/463533348.png" alt=""> </kbd>
+<img src="./attachments/463533348.png" alt="" />
 
 #### Solution
 
@@ -3207,11 +3207,11 @@ relevant service (2). Each service returns a response to the gateway
 response to the application (4). The application makes a single request
 and receives only a single response from the gateway.
 
-<kbd><img src="./attachments/463533349.png" alt=""> </kbd>
+<img src="./attachments/463533349.png" alt="" />
 <kbd>![New-API-GW-Diagram](https://d1.awsstatic.com/serverless/New-API-GW-Diagram.c9fc9835d2a9aa00ef90d0ddc4c6402a2536de0d.png) </kbd>
 <kbd>![](https://microservices.io/i/apigateway.jpg) </kbd>
-<kbd><img src="./attachments/463533529.png" alt=""> </kbd>
-<kbd><img src="./attachments/463533530.png" alt=""> </kbd>
+<img src="./attachments/463533529.png" alt="" />
+<img src="./attachments/463533530.png" alt="" />
 
 <kbd>![](https://microservices.io/i/bffe.png) </kbd>
 
@@ -3333,7 +3333,7 @@ The following diagram shows an API gateway that terminates inbound SSL
 connections. It requests data on behalf of the original requestor from
 any HTTP server upstream of the API gateway.
 
-<kbd><img src="./attachments/463533351.png" alt=""> </kbd>
+<img src="./attachments/463533351.png" alt="" />
 
 Benefits of this pattern include:
 
@@ -3423,7 +3423,7 @@ whatever service or services need to handle the expected client
 behavior, allowing you to add, split, and reorganize services behind the
 gateway without changing the client.
 
-<kbd><img src="./attachments/463533353.png" alt=""> </kbd>
+<img src="./attachments/463533353.png" alt="" />
 
 This pattern can also help with deployment, by allowing you to manage
 how updates are rolled out to users. When a new version of your service
@@ -3473,7 +3473,7 @@ any request for any client in any region. This pattern allows serving
 requests in an  *active-active* style, improving latency and increasing
 availability by distributing request processing around the globe.
 
-<kbd><img src="./attachments/463533355.png" alt=""> </kbd>
+<img src="./attachments/463533355.png" alt="" />
 
 #### Context and Problem
 
@@ -3514,7 +3514,7 @@ The key difference between a deployment stamp and a geode is that geodes
 never exist in isolation. There should always be more than one geode in
 a production platform.
 
-<kbd><img src="./attachments/463533356.png" alt=""> </kbd>
+<img src="./attachments/463533356.png" alt="" />
 
 Geodes have the following characteristics:
 
@@ -3662,7 +3662,7 @@ optionally, any components or services it uses. The latency or response
 time check is performed by the monitoring tool or framework. The figure
 provides an overview of the pattern.
 
-<kbd><img src="./attachments/463533358.png" alt=""> </kbd>
+<img src="./attachments/463533358.png" alt="" /> 
 
 Other checks that might be carried out by the health monitoring code in
 the application include:
@@ -3869,7 +3869,7 @@ data. The figure shows an example of a data store holding customer
 information. The primary key is the Customer ID. The figure shows
 customer information organized by the primary key (Customer ID).
 
-<kbd><img src="./attachments/463533360.png" alt=""> </kbd>
+<img src="./attachments/463533360.png" alt="" />
 
 While the primary key is valuable for queries that fetch data based on
 the value of this key, an application might not be able to use the
@@ -3880,747 +3880,300 @@ value of some other attribute, such as the town in which the customer is
 located. To perform a query such as this, the application might have to
 fetch and examine every customer record, which could be a slow process.
 
-Many relational database management systems support secondary indexes. A
-secondary index is a separate data structure that\'s organized by one or
-more nonprimary (secondary) key fields, and it indicates where the data
-for each indexed value is stored. The items in a secondary index are
-typically sorted by the value of the secondary keys to enable fast
-lookup of data. These indexes are usually maintained automatically by
-the database management system.
+Many relational database management systems support secondary indexes. A secondary index is a separate data structure that\'s organized by one or more nonprimary (secondary) key fields, and it indicates where the data for each indexed value is stored. The items in a secondary index are typically sorted by the value of the secondary keys to enable fast lookup of data. These indexes are usually maintained automatically by the database management system.
 
-You can create as many secondary indexes as you need to support the
-different queries that your application performs. For example, in a
-Customers table in a relational database where the Customer ID is the
-primary key, it\'s beneficial to add a secondary index over the town
-field if the application frequently looks up customers by the town where
-they reside.
+You can create as many secondary indexes as you need to support the different queries that your application performs. For example, in a Customers table in a relational database where the Customer ID is the primary key, it\'s beneficial to add a secondary index over the town field if the application frequently looks up customers by the town where they reside.
 
-However, although secondary indexes are common in relational systems,
-most NoSQL data stores used by cloud applications don\'t provide an
-equivalent feature.
+However, although secondary indexes are common in relational systems, most NoSQL data stores used by cloud applications don\'t provide an equivalent feature.
 
 #### Solution
 
-If the data store doesn\'t support secondary indexes, you can emulate
-them manually by creating your own index tables. An index table
-organizes the data by a specified key. Three strategies are commonly
-used for structuring an index table, depending on the number of
-secondary indexes that are required and the nature of the queries that
-an application performs.
+If the data store doesn\'t support secondary indexes, you can emulate them manually by creating your own index tables. An index table organizes the data by a specified key. Three strategies are commonly used for structuring an index table, depending on the number of secondary indexes that are required and the nature of the queries that an application performs.
 
-The first strategy is to duplicate the data in each index table but
-organize it by different keys (complete denormalization). The next
-figure shows index tables that organize the same customer information by
-Town and LastName.
+The first strategy is to duplicate the data in each index table but organize it by different keys (complete denormalization). The next figure shows index tables that organize the same customer information by Town and LastName.
 
-<kbd><img src="./attachments/463533361.png" alt=""> </kbd>
+<img src="./attachments/463533361.png" alt="" />
 
-This strategy is appropriate if the data is relatively static compared
-to the number of times it\'s queried using each key. If the data is more
-dynamic, the processing overhead of maintaining each index table becomes
-too large for this approach to be useful. Also, if the volume of data is
-very large, the amount of space required to store the duplicate data is
-significant.
+This strategy is appropriate if the data is relatively static compared to the number of times it\'s queried using each key. If the data is more dynamic, the processing overhead of maintaining each index table becomes too large for this approach to be useful. Also, if the volume of data is very large, the amount of space required to store the duplicate data is significant.
 
-The second strategy is to create normalized index tables organized by
-different keys and reference the original data by using the primary key
-rather than duplicating it, as shown in the following figure. The
-original data is called a fact table.
+The second strategy is to create normalized index tables organized by different keys and reference the original data by using the primary key rather than duplicating it, as shown in the following figure. The original data is called a fact table.
 
-<kbd><img src="./attachments/463533362.png" alt=""> </kbd>
+<img src="./attachments/463533362.png" alt="" />
 
-This technique saves space and reduces the overhead of maintaining
-duplicate data. The disadvantage is that an application has to perform
-two lookup operations to find data using a secondary key. It has to find
-the primary key for the data in the index table, and then use the
-primary key to look up the data in the fact table.
+This technique saves space and reduces the overhead of maintaining duplicate data. The disadvantage is that an application has to perform two lookup operations to find data using a secondary key. It has to find the primary key for the data in the index table, and then use the primary key to look up the data in the fact table.
 
-The third strategy is to create partially normalized index tables
-organized by different keys that duplicate frequently retrieved fields.
-Reference the fact table to access less frequently accessed fields. The
-next figure shows how commonly accessed data is duplicated in each index
-table.
+The third strategy is to create partially normalized index tables organized by different keys that duplicate frequently retrieved fields. Reference the fact table to access less frequently accessed fields. The next figure shows how commonly accessed data is duplicated in each index table.
 
-<kbd><img src="./attachments/463533363.png" alt=""> </kbd>
+<img src="./attachments/463533363.png" alt="" /> 
 
-With this strategy, you can strike a balance between the first two
-approaches. The data for common queries can be retrieved quickly by
-using a single lookup, while the space and maintenance overhead isn\'t
-as significant as duplicating the entire data set.
+With this strategy, you can strike a balance between the first two approaches. The data for common queries can be retrieved quickly by using a single lookup, while the space and maintenance overhead isn\'t as significant as duplicating the entire data set.
 
-If an application frequently queries data by specifying a combination of
-values (for example, "Find all customers that live in Redmond and that
-have a last name of Smith"), you could implement the keys to the items
-in the index table as a concatenation of the Town attribute and the
-LastName attribute. The next figure shows an index table based on
-composite keys. The keys are sorted by Town, and then by LastName for
-records that have the same value for Town.
+If an application frequently queries data by specifying a combination of values (for example, "Find all customers that live in Redmond and that have a last name of Smith"), you could implement the keys to the items in the index table as a concatenation of the Town attribute and the LastName attribute. The next figure shows an index table based on composite keys. The keys are sorted by Town, and then by LastName for records that have the same value for Town.
 
-<kbd><img src="./attachments/463533364.png" alt=""> </kbd>
+<img src="./attachments/463533364.png" alt="" />
 
-Index tables can speed up query operations over sharded data, and are
-especially useful where the shard key is hashed. The next figure shows
-an example where the shard key is a hash of the Customer ID. The index
-table can organize data by the nonhashed value (Town and LastName), and
-provide the hashed shard key as the lookup data. This can save the
-application from repeatedly calculating hash keys (an expensive
-operation) if it needs to retrieve data that falls within a range, or it
-needs to fetch data in order of the nonhashed key. For example, a query
-such as "Find all customers that live in Redmond" can be quickly
-resolved by locating the matching items in the index table, where
-they\'re all stored in a contiguous block. Then, follow the references
-to the customer data using the shard keys stored in the index table.
+Index tables can speed up query operations over sharded data, and are especially useful where the shard key is hashed. The next figure shows an example where the shard key is a hash of the Customer ID. The index table can organize data by the nonhashed value (Town and LastName), and provide the hashed shard key as the lookup data. This can save the application from repeatedly calculating hash keys (an expensive operation) if it needs to retrieve data that falls within a range, or it needs to fetch data in order of the nonhashed key. For example, a query such as "Find all customers that live in Redmond" can be quickly resolved by locating the matching items in the index table, where they\'re all stored in a contiguous block. Then, follow the references to the customer data using the shard keys stored in the index table.
 
-<kbd><img src="./attachments/463533365.png" alt=""> </kbd>
+<img src="./attachments/463533365.png" alt="" />
 
 
 #### Issues and Considerations
 
-Consider the following points when deciding how to implement this
-pattern:
+Consider the following points when deciding how to implement this pattern:
 
--   The overhead of maintaining secondary indexes can be significant.
-	You must analyze and understand the queries that your application
-	uses. Only create index tables when they\'re likely to be used
-	regularly. Don\'t create speculative index tables to support queries
-	that an application doesn\'t perform, or performs only occasionally.
+-   The overhead of maintaining secondary indexes can be significant. You must analyze and understand the queries that your application uses. Only create index tables when they\'re likely to be used regularly. Don\'t create speculative index tables to support queries that an application doesn\'t perform, or performs only occasionally.
+-   Duplicating data in an index table can add significant overhead in storage costs and the effort required to maintain multiple copies of data.
+-   Implementing an index table as a normalized structure that references the original data requires an application to perform two lookup operations to find data. The first operation searches the index table to retrieve the primary key, and the second uses the primary key to fetch the data.
+-   If a system incorporates a number of index tables over very large data sets, it can be difficult to maintain consistency between index tables and the original data. It might be possible to design the application around the eventual consistency model. For example, to insert, update, or delete data, an application could post a message to a queue and let a separate task perform the operation and maintain the index tables that reference this data asynchronously. For more information about implementing eventual consistency, see the [Data Consistency Primer](https://msdn.microsoft.com/library/dn589800.aspx).
 
--   Duplicating data in an index table can add significant overhead in
-	storage costs and the effort required to maintain multiple copies of
-	data.
-
--   Implementing an index table as a normalized structure that
-	references the original data requires an application to perform two
-	lookup operations to find data. The first operation searches the
-	index table to retrieve the primary key, and the second uses the
-	primary key to fetch the data.
-
--   If a system incorporates a number of index tables over very large
-	data sets, it can be difficult to maintain consistency between index
-	tables and the original data. It might be possible to design the
-	application around the eventual consistency model. For example, to
-	insert, update, or delete data, an application could post a message
-	to a queue and let a separate task perform the operation and
-	maintain the index tables that reference this data asynchronously.
-	For more information about implementing eventual consistency, see
-	the  [Data Consistency
-	Primer](https://msdn.microsoft.com/library/dn589800.aspx).
-
-	> Microsoft Azure storage tables support transactional updates for
-	> changes made to data held in the same partition (referred to as
-	> entity group transactions). If you can store the data for a fact
-	> table and one or more index tables in the same partition, you can
-	> use this feature to help ensure consistency.
+	> Microsoft Azure storage tables support transactional updates for changes made to data held in the same partition (referred to as entity group transactions). If you can store the data for a fact table and one or more index tables in the same partition, you can use this feature to help ensure consistency.
 
 -   Index tables might themselves be partitioned or sharded.
 
 #### When to use this Pattern
 
-Use this pattern to improve query performance when an application
-frequently needs to retrieve data by using a key other than the primary
-(or shard) key.
+Use this pattern to improve query performance when an application frequently needs to retrieve data by using a key other than the primary (or shard) key.
 
 This pattern might not be useful when:
 
--   Data is volatile. An index table can become out of date very
-	quickly, making it ineffective or making the overhead of maintaining
-	the index table greater than any savings made by using it.
--   A field selected as the secondary key for an index table is
-	nondiscriminating and can only have a small set of values (for
-	example, gender).
--   The balance of the data values for a field selected as the secondary
-	key for an index table are highly skewed. For example, if 90% of the
-	records contain the same value in a field, then creating and
-	maintaining an index table to look up data based on this field might
-	create more overhead than scanning sequentially through the data.
-	However, if queries very frequently target values that lie in the
-	remaining 10%, this index can be useful. You should understand the
-	queries that your application is performing, and how frequently
-	they\'re performed.
+-   Data is volatile. An index table can become out of date very quickly, making it ineffective or making the overhead of maintaining the index table greater than any savings made by using it.
+-   A field selected as the secondary key for an index table is nondiscriminating and can only have a small set of values (for example, gender).
+-   The balance of the data values for a field selected as the secondary key for an index table are highly skewed. For example, if 90% of the records contain the same value in a field, then creating and maintaining an index table to look up data based on this field might create more overhead than scanning sequentially through the data. However, if queries very frequently target values that lie in the remaining 10%, this index can be useful. You should understand the 	queries that your application is performing, and how frequently they\'re performed.
 
 ### Leader Election Pattern
 
 #### Overview
 
-Coordinate the actions performed by a collection of collaborating
-instances in a distributed application by electing one instance as the
-leader that assumes responsibility for managing the others. This can
-help to ensure that instances don\'t conflict with each other, cause
-contention for shared resources, or inadvertently interfere with the
-work that other instances are performing.
+Coordinate the actions performed by a collection of collaborating instances in a distributed application by electing one instance as the leader that assumes responsibility for managing the others. This can help to ensure that instances don\'t conflict with each other, cause contention for shared resources, or inadvertently interfere with the work that other instances are performing.
 
 #### Context and Problem
 
-A typical cloud application has many tasks acting in a coordinated
-manner. These tasks could all be instances running the same code and
-requiring access to the same resources, or they might be working
-together in parallel to perform the individual parts of a complex
-calculation.
+A typical cloud application has many tasks acting in a coordinated manner. These tasks could all be instances running the same code and requiring access to the same resources, or they might be working together in parallel to perform the individual parts of a complex calculation.
 
-The task instances might run separately for much of the time, but it
-might also be necessary to coordinate the actions of each instance to
-ensure that they don't conflict, cause contention for shared resources,
-or accidentally interfere with the work that other task instances are
-performing.
+The task instances might run separately for much of the time, but it might also be necessary to coordinate the actions of each instance to ensure that they don't conflict, cause contention for shared resources, or accidentally interfere with the work that other task instances are performing.
 
 For example:
 
--   In a cloud-based system that implements horizontal scaling, multiple
-	instances of the same task could be running at the same time with
-	each instance serving a different user. If these instances write to
-	a shared resource, it\'s necessary to coordinate their actions to
-	prevent each instance from overwriting the changes made by the
-	others.
--   If the tasks are performing individual elements of a complex
-	calculation in parallel, the results need to be aggregated when they
-	all complete.
+-   In a cloud-based system that implements horizontal scaling, multiple instances of the same task could be running at the same time with each instance serving a different user. If these instances write to a shared resource, it\'s necessary to coordinate their actions to prevent each instance from overwriting the changes made by the others.
+-   If the tasks are performing individual elements of a complex calculation in parallel, the results need to be aggregated when they all complete.
 
-The task instances are all peers, so there isn\'t a natural leader that
-can act as the coordinator or aggregator.
+The task instances are all peers, so there isn\'t a natural leader that can act as the coordinator or aggregator.
 
 #### Solution
 
-A single task instance should be elected to act as the leader, and this
-instance should coordinate the actions of the other subordinate task
-instances. If all of the task instances are running the same code, they
-are each capable of acting as the leader. Therefore, the election
-process must be managed carefully to prevent two or more instances
-taking over the leader role at the same time.
+A single task instance should be elected to act as the leader, and this instance should coordinate the actions of the other subordinate task instances. If all of the task instances are running the same code, they are each capable of acting as the leader. Therefore, the election process must be managed carefully to prevent two or more instances taking over the leader role at the same time.
 
-The system must provide a robust mechanism for selecting the leader.
-This method has to cope with events such as network outages or process
-failures. In many solutions, the subordinate task instances monitor the
-leader through some type of heartbeat method, or by polling. If the
-designated leader terminates unexpectedly, or a network failure makes
-the leader unavailable to the subordinate task instances, it\'s
-necessary for them to elect a new leader.
+The system must provide a robust mechanism for selecting the leader. This method has to cope with events such as network outages or process failures. In many solutions, the subordinate task instances monitor the leader through some type of heartbeat method, or by polling. If the designated leader terminates unexpectedly, or a network failure makes the leader unavailable to the subordinate task instances, it\'s necessary for them to elect a new leader.
 
-There are several strategies for electing a leader among a set of tasks
-in a distributed environment, including:
+There are several strategies for electing a leader among a set of tasks in a distributed environment, including:
 
--   Selecting the task instance with the lowest-ranked instance or
-	process ID.
--   Racing to acquire a shared, distributed mutex. The first task
-	instance that acquires the mutex is the leader. However, the system
-	must ensure that, if the leader terminates or becomes disconnected
-	from the rest of the system, the mutex is released to allow another
-	task instance to become the leader.
--   Implementing one of the common leader election algorithms such as
-	the  [Bully Algorithm](https://www.cs.colostate.edu/~cs551/CourseNotes/Synchronization/BullyExample.html) or
-	the  [Ring Algorithm](https://www.cs.colostate.edu/~cs551/CourseNotes/Synchronization/RingElectExample.html).
-	These algorithms assume that each candidate in the election has a
-	unique ID, and that it can communicate with the other candidates
-	reliably.
+-   Selecting the task instance with the lowest-ranked instance or process ID.
+-   Racing to acquire a shared, distributed mutex. The first task instance that acquires the mutex is the leader. However, the system must ensure that, if the leader terminates or becomes disconnected from the rest of the system, the mutex is released to allow another task instance to become the leader. 
+-   Implementing one of the common leader election algorithms such as the  [Bully Algorithm](https://www.cs.colostate.edu/~cs551/CourseNotes/Synchronization/BullyExample.html) or the  [Ring Algorithm](https://www.cs.colostate.edu/~cs551/CourseNotes/Synchronization/RingElectExample.html). These algorithms assume that each candidate in the election has a unique ID, and that it can communicate with the other candidates reliably.
 
 #### Issues and Considerations
 
-Consider the following points when deciding how to implement this
-pattern:
+Consider the following points when deciding how to implement this pattern:
 
--   The process of electing a leader should be resilient to transient
-	and persistent failures.
--   It must be possible to detect when the leader has failed or has
-	become otherwise unavailable (such as due to a communications
-	failure). How quickly detection is needed is system dependent. Some
-	systems might be able to function for a short time without a leader,
-	during which a transient fault might be fixed. In other cases, it
-	might be necessary to detect leader failure immediately and trigger
-	a new election.
--   In a system that implements horizontal autoscaling, the leader could
-	be terminated if the system scales back and shuts down some of the
-	computing resources.
--   Using a shared, distributed mutex introduces a dependency on the
-	external service that provides the mutex. The service constitutes a
-	single point of failure. If it becomes unavailable for any reason,
-	the system won\'t be able to elect a leader.
--   Using a single dedicated process as the leader is a straightforward
-	approach. However, if the process fails there could be a significant
-	delay while it\'s restarted. The resulting latency can affect the
-	performance and response times of other processes if they\'re
-	waiting for the leader to coordinate an operation.
--   Implementing one of the leader election algorithms manually provides
-	the greatest flexibility for tuning and optimizing the code.
+-   The process of electing a leader should be resilient to transient and persistent failures.
+-   It must be possible to detect when the leader has failed or has become otherwise unavailable (such as due to a communications failure). How quickly detection is needed is system dependent. Some systems might be able to function for a short time without a leader, during which a transient fault might be fixed. In other cases, it might be necessary to detect leader failure immediately and trigger a new election.
+-   In a system that implements horizontal autoscaling, the leader could be terminated if the system scales back and shuts down some of the computing resources.
+-   Using a shared, distributed mutex introduces a dependency on the external service that provides the mutex. The service constitutes a single point of failure. If it becomes unavailable for any reason, the system won\'t be able to elect a leader.
+-   Using a single dedicated process as the leader is a straightforward approach. However, if the process fails there could be a significant delay while it\'s restarted. The resulting latency can affect the performance and response times of other processes if they\'re waiting for the leader to coordinate an operation.
+-   Implementing one of the leader election algorithms manually provides the greatest flexibility for tuning and optimizing the code.
 
 #### When to use this Pattern
 
-Use this pattern when the tasks in a distributed application, such as a
-cloud-hosted solution, need careful coordination and there\'s no natural
-leader.
+Use this pattern when the tasks in a distributed application, such as a cloud-hosted solution, need careful coordination and there\'s no natural leader.
 
-> Avoid making the leader a bottleneck in the system. The purpose of the
-> leader is to coordinate the work of the subordinate tasks, and it
-> doesn\'t necessarily have to participate in this work
-> itself---although it should be able to do so if the task isn\'t
-> elected as the leader.
+> Avoid making the leader a bottleneck in the system. The purpose of the leader is to coordinate the work of the subordinate tasks, and it doesn\'t necessarily have to participate in this work itself---although it should be able to do so if the task isn\'t elected as the leader.
 
 This pattern might not be useful if:
 
--   There\'s a natural leader or dedicated process that can always act
-	as the leader. For example, it might be possible to implement a
-	singleton process that coordinates the task instances. If this
-	process fails or becomes unhealthy, the system can shut it down and
-	restart it.
--   The coordination between tasks can be achieved using a more
-	lightweight method. For example, if several task instances simply
-	need coordinated access to a shared resource, a better solution is
-	to use optimistic or pessimistic locking to control access.
--   A third-party solution is more appropriate. For example, the
-	Microsoft Azure HDInsight service (based on Apache Hadoop) uses the
-	services provided by Apache Zookeeper to coordinate the map and
-	reduce tasks that collect and summarize data.
+-   There\'s a natural leader or dedicated process that can always act as the leader. For example, it might be possible to implement a singleton process that coordinates the task instances. If this process fails or becomes unhealthy, the system can shut it down and restart it.
+-   The coordination between tasks can be achieved using a more lightweight method. For example, if several task instances simply need coordinated access to a shared resource, a better solution is to use optimistic or pessimistic locking to control access.
+-   A third-party solution is more appropriate. For example, the Microsoft Azure HDInsight service (based on Apache Hadoop) uses the services provided by Apache Zookeeper to coordinate the map and reduce tasks that collect and summarize data.
 
 ### Materialized View Pattern
 
 #### Overview
 
-Generate prepopulated views over the data in one or more data stores
-when the data isn\'t ideally formatted for required query operations.
-This can help support efficient querying and data extraction, and
-improve application performance.
+Generate prepopulated views over the data in one or more data stores when the data isn\'t ideally formatted for required query operations. This can help support efficient querying and data extraction, and improve application performance.
 
 #### Context and Problem
 
-When storing data, the priority for developers and data administrators
-is often focused on how the data is stored, as opposed to how it\'s
-read. The chosen storage format is usually closely related to the format
-of the data, requirements for managing data size and data integrity, and
-the kind of store in use. For example, when using NoSQL document store,
-the data is often represented as a series of aggregates, each containing
-all of the information for that entity.
+When storing data, the priority for developers and data administrators is often focused on how the data is stored, as opposed to how it\'s read. The chosen storage format is usually closely related to the format of the data, requirements for managing data size and data integrity, and the kind of store in use. For example, when using NoSQL document store, the data is often represented as a series of aggregates, each containing all of the information for that entity.
 
-However, this can have a negative effect on queries. When a query only
-needs a subset of the data from some entities, such as a summary of
-orders for several customers without all of the order details, it must
-extract all of the data for the relevant entities in order to obtain the
-required information.
+However, this can have a negative effect on queries. When a query only needs a subset of the data from some entities, such as a summary of orders for several customers without all of the order details, it must extract all of the data for the relevant entities in order to obtain the required information.
 
 #### Solution
 
-To support efficient querying, a common solution is to generate, in
-advance, a view that materializes the data in a format suited to the
-required results set. The Materialized View pattern describes generating
-prepopulated views of data in environments where the source data isn\'t
-in a suitable format for querying, where generating a suitable query is
-difficult, or where query performance is poor due to the nature of the
-data or the data store.
+To support efficient querying, a common solution is to generate, in advance, a view that materializes the data in a format suited to the required results set. The Materialized View pattern describes generating prepopulated views of data in environments where the source data isn\'t in a suitable format for querying, where generating a suitable query is difficult, or where query performance is poor due to the nature of the data or the data store.
 
-These materialized views, which only contain data required by a query,
-allow applications to quickly obtain the information they need. In
-addition to joining tables or combining data entities, materialized
-views can include the current values of calculated columns or data
-items, the results of combining values or executing transformations on
-the data items, and values specified as part of the query. A
-materialized view can even be optimized for just a single query.
+These materialized views, which only contain data required by a query, allow applications to quickly obtain the information they need. In addition to joining tables or combining data entities, materialized views can include the current values of calculated columns or data items, the results of combining values or executing transformations on the data items, and values specified as part of the query. A materialized view can even be optimized for just a single query.
 
-A key point is that a materialized view and the data it contains is
-completely disposable because it can be entirely rebuilt from the source
-data stores. A materialized view is never updated directly by an
-application, and so it\'s a specialized cache.
+A key point is that a materialized view and the data it contains is completely disposable because it can be entirely rebuilt from the source data stores. A materialized view is never updated directly by an application, and so it\'s a specialized cache.
 
-When the source data for the view changes, the view must be updated to
-include the new information. You can schedule this to happen
-automatically, or when the system detects a change to the original data.
-In some cases it might be necessary to regenerate the view manually. The
-figure shows an example of how the Materialized View pattern might be
-used.
+When the source data for the view changes, the view must be updated to include the new information. You can schedule this to happen automatically, or when the system detects a change to the original data. In some cases it might be necessary to regenerate the view manually. The figure shows an example of how the Materialized View pattern might be used.
 
-<kbd><img src="./attachments/463533368.png" alt=""> </kbd>
+<img src="./attachments/463533368.png" alt="" />
 
 #### Issues and Considerations
 
-Consider the following points when deciding how to implement this
-pattern:
+Consider the following points when deciding how to implement this pattern:
 
-How and when the view will be updated. Ideally it\'ll regenerate in
-response to an event indicating a change to the source data, although
-this can lead to excessive overhead if the source data changes rapidly.
-Alternatively, consider using a scheduled task, an external trigger, or
-a manual action to regenerate the view.
+How and when the view will be updated. Ideally it\'ll regenerate in response to an event indicating a change to the source data, although this can lead to excessive overhead if the source data changes rapidly. Alternatively, consider using a scheduled task, an external trigger, or a manual action to regenerate the view.
 
-In some systems, such as when using the Event Sourcing pattern to
-maintain a store of only the events that modified the data, materialized
-views are necessary. Prepopulating views by examining all events to
-determine the current state might be the only way to obtain information
-from the event store. If you\'re not using Event Sourcing, you need to
-consider whether a materialized view is helpful or not. Materialized
-views tend to be specifically tailored to one, or a small number of
-queries. If many queries are used, materialized views can result in
-unacceptable storage capacity requirements and storage cost.
+In some systems, such as when using the Event Sourcing pattern to maintain a store of only the events that modified the data, materialized views are necessary. Prepopulating views by examining all events to determine the current state might be the only way to obtain information from the event store. If you\'re not using Event Sourcing, you need to consider whether a materialized view is helpful or not. Materialized views tend to be specifically tailored to one, or a small number of queries. If many queries are used, materialized views can result in unacceptable storage capacity requirements and storage cost.
 
-Consider the impact on data consistency when generating the view, and
-when updating the view if this occurs on a schedule. If the source data
-is changing at the point when the view is generated, the copy of the
-data in the view won\'t be fully consistent with the original data.
+Consider the impact on data consistency when generating the view, and when updating the view if this occurs on a schedule. If the source data is changing at the point when the view is generated, the copy of the data in the view won\'t be fully consistent with the original data.
 
-Consider where you\'ll store the view. The view doesn\'t have to be
-located in the same store or partition as the original data. It can be a
-subset from a few different partitions combined.
+Consider where you\'ll store the view. The view doesn\'t have to be located in the same store or partition as the original data. It can be a subset from a few different partitions combined.
 
-A view can be rebuilt if lost. Because of that, if the view is transient
-and is only used to improve query performance by reflecting the current
-state of the data, or to improve scalability, it can be stored in a
-cache or in a less reliable location.
+A view can be rebuilt if lost. Because of that, if the view is transient and is only used to improve query performance by reflecting the current state of the data, or to improve scalability, it can be stored in a cache or in a less reliable location.
 
-When defining a materialized view, maximize its value by adding data
-items or columns to it based on computation or transformation of
-existing data items, on values passed in the query, or on combinations
-of these values when appropriate.
+When defining a materialized view, maximize its value by adding data items or columns to it based on computation or transformation of existing data items, on values passed in the query, or on combinations of these values when appropriate.
 
-Where the storage mechanism supports it, consider indexing the
-materialized view to further increase performance. Most relational
-databases support indexing for views, as do big data solutions based on
-Apache Hadoop.
+Where the storage mechanism supports it, consider indexing the materialized view to further increase performance. Most relational databases support indexing for views, as do big data solutions based on Apache Hadoop.
 
 #### When to use this Pattern
 
 This pattern is useful when:
 
--   Creating materialized views over data that\'s difficult to query
-	directly, or where queries must be very complex to extract data
-	that\'s stored in a normalized, semi-structured, or unstructured
-	way.
--   Creating temporary views that can dramatically improve query
-	performance, or can act directly as source views or data transfer
-	objects for the UI, for reporting, or for display.
--   Supporting occasionally connected or disconnected scenarios where
-	connection to the data store isn\'t always available. The view can
-	be cached locally in this case.
--   Simplifying queries and exposing data for experimentation in a way
-	that doesn\'t require knowledge of the source data format. For
-	example, by joining different tables in one or more databases, or
-	one or more domains in NoSQL stores, and then formatting the data to
-	fit its eventual use.
--   Providing access to specific subsets of the source data that, for
-	security or privacy reasons, shouldn\'t be generally accessible,
-	open to modification, or fully exposed to users.
--   Bridging different data stores, to take advantage of their
-	individual capabilities. For example, using a cloud store that\'s
-	efficient for writing as the reference data store, and a relational
-	database that offers good query and read performance to hold the
-	materialized views.
+-   Creating materialized views over data that\'s difficult to query directly, or where queries must be very complex to extract data that\'s stored in a normalized, semi-structured, or unstructured way.
+-   Creating temporary views that can dramatically improve query performance, or can act directly as source views or data transfer objects for the UI, for reporting, or for display.
+-   Supporting occasionally connected or disconnected scenarios where connection to the data store isn\'t always available. The view can be cached locally in this case.
+-   Simplifying queries and exposing data for experimentation in a way that doesn\'t require knowledge of the source data format. For example, by joining different tables in one or more databases, or one or more domains in NoSQL stores, and then formatting the data to fit its eventual use.
+-   Providing access to specific subsets of the source data that, for security or privacy reasons, shouldn\'t be generally accessible, open to modification, or fully exposed to users.
+-   Bridging different data stores, to take advantage of their individual capabilities. For example, using a cloud store that\'s efficient for writing as the reference data store, and a relational database that offers good query and read performance to hold the materialized views.
 
 This pattern isn\'t useful in the following situations:
 
 -   The source data is simple and easy to query.
--   The source data changes very quickly, or can be accessed without
-	using a view. In these cases, you should avoid the processing
-	overhead of creating views.
--   Consistency is a high priority. The views might not always be fully
-	consistent with the original data.
+-   The source data changes very quickly, or can be accessed without using a view. In these cases, you should avoid the processing overhead of creating views.
+-   Consistency is a high priority. The views might not always be fully consistent with the original data.
 
 ### Pipes and Filters Pattern
 
 #### Overview
 
-Decompose a task that performs complex processing into a series of
-separate elements that can be reused. This can improve performance,
-scalability, and reusability by allowing task elements that perform the
-processing to be deployed and scaled independently.
+Decompose a task that performs complex processing into a series of separate elements that can be reused. This can improve performance, scalability, and reusability by allowing task elements that perform the processing to be deployed and scaled independently.
 
 #### Context and Problem
 
-An application is required to perform a variety of tasks of varying
-complexity on the information that it processes. A straightforward but
-inflexible approach to implementing an application is to perform this
-processing as a monolithic module. However, this approach is likely to
-reduce the opportunities for refactoring the code, optimizing it, or
-reusing it if parts of the same processing are required elsewhere within
-the application.
+An application is required to perform a variety of tasks of varying complexity on the information that it processes. A straightforward but inflexible approach to implementing an application is to perform this processing as a monolithic module. However, this approach is likely to reduce the opportunities for refactoring the code, optimizing it, or reusing it if parts of the same processing are required elsewhere within the application.
 
-The figure illustrates the issues with processing data using the
-monolithic approach. An application receives and processes data from two
-sources. The data from each source is processed by a separate module
-that performs a series of tasks to transform this data, before passing
-the result to the business logic of the application.
+The figure illustrates the issues with processing data using the monolithic approach. An application receives and processes data from two sources. The data from each source is processed by a separate module that performs a series of tasks to transform this data, before passing the result to the business logic of the application.
 
-<kbd><img src="./attachments/463533383.png" alt=""> </kbd>
+<img src="./attachments/463533383.png" alt="" />
 
-Some of the tasks that the monolithic modules perform are functionally
-very similar, but the modules have been designed separately. The code
-that implements the tasks is closely coupled in a module, and has been
-developed with little or no thought given to reuse or scalability.
+Some of the tasks that the monolithic modules perform are functionally very similar, but the modules have been designed separately. The code that implements the tasks is closely coupled in a module, and has been developed with little or no thought given to reuse or scalability.
 
-However, the processing tasks performed by each module, or the
-deployment requirements for each task, could change as business
-requirements are updated. Some tasks might be compute intensive and
-could benefit from running on powerful hardware, while others might not
-require such expensive resources. Also, additional processing might be
-required in the future, or the order in which the tasks performed by the
-processing could change. A solution is required that addresses these
-issues, and increases the possibilities for code reuse.
+However, the processing tasks performed by each module, or the deployment requirements for each task, could change as business requirements are updated. Some tasks might be compute intensive and could benefit from running on powerful hardware, while others might not require such expensive resources. Also, additional processing might be required in the future, or the order in which the tasks performed by the processing could change. A solution is required that addresses these issues, and increases the possibilities for code reuse.
 
 #### Solution
 
-Break down the processing required for each stream into a set of
-separate components (or filters), each performing a single task. By
-standardizing the format of the data that each component receives and
-sends, these filters can be combined together into a pipeline. This
-helps to avoid duplicating code, and makes it easy to remove, replace,
-or integrate additional components if the processing requirements
-change. The next figure shows a solution implemented using pipes and
-filters.
+Break down the processing required for each stream into a set of separate components (or filters), each performing a single task. By standardizing the format of the data that each component receives and sends, these filters can be combined together into a pipeline. This helps to avoid duplicating code, and makes it easy to remove, replace, or integrate additional components if the processing requirements change. The next figure shows a solution implemented using pipes and filters.
 
-<kbd><img src="./attachments/463533384.png" alt=""> </kbd>
+<img src="./attachments/463533384.png" alt="" />
 
-The time it takes to process a single request depends on the speed of
-the slowest filter in the pipeline. One or more filters could be a
-bottleneck, especially if a large number of requests appear in a stream
-from a particular data source. A key advantage of the pipeline structure
-is that it provides opportunities for running parallel instances of slow
-filters, enabling the system to spread the load and improve throughput.
+The time it takes to process a single request depends on the speed of the slowest filter in the pipeline. One or more filters could be a bottleneck, especially if a large number of requests appear in a stream from a particular data source. A key advantage of the pipeline structure is that it provides opportunities for running parallel instances of slow filters, enabling the system to spread the load and improve throughput.
 
-The filters that make up a pipeline can run on different machines,
-enabling them to be scaled independently and take advantage of the
-elasticity that many cloud environments provide. A filter that is
-computationally intensive can run on high-performance hardware, while
-other less demanding filters can be hosted on less expensive commodity
-hardware. The filters don\'t even have to be in the same datacenter or
-geographic location, which allows each element in a pipeline to run in
-an environment close to the resources it requires. The next figure shows
-an example applied to the pipeline for the data from Source 1.
+The filters that make up a pipeline can run on different machines, enabling them to be scaled independently and take advantage of the elasticity that many cloud environments provide. A filter that is computationally intensive can run on high-performance hardware, while other less demanding filters can be hosted on less expensive commodity hardware. The filters don\'t even have to be in the same datacenter or geographic location, which allows each element in a pipeline to run in an environment close to the resources it requires. The next figure shows an example applied to the pipeline for the data from Source 1.
 
-<kbd><img src="./attachments/463533385.png" alt=""> </kbd>
+<img src="./attachments/463533385.png" alt="" />
 
-If the input and output of a filter are structured as a stream, it\'s
-possible to perform the processing for each filter in parallel. The
-first filter in the pipeline can start its work and output its results,
-which are passed directly on to the next filter in the sequence before
-the first filter has completed its work.
+If the input and output of a filter are structured as a stream, it\'s possible to perform the processing for each filter in parallel. The first filter in the pipeline can start its work and output its results, which are passed directly on to the next filter in the sequence before the first filter has completed its work.
 
-Another benefit is the resiliency that this model can provide. If a
-filter fails or the machine it\'s running on is no longer available, the
-pipeline can reschedule the work that the filter was performing and
-direct this work to another instance of the component. Failure of a
-single filter doesn\'t necessarily result in failure of the entire
-pipeline.
+Another benefit is the resiliency that this model can provide. If a filter fails or the machine it\'s running on is no longer available, the pipeline can reschedule the work that the filter was performing and direct this work to another instance of the component. Failure of a single filter doesn\'t necessarily result in failure of the entire pipeline.
 
-Using the Pipes and Filters pattern in conjunction with the 
-[Compensating Transaction
-pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction) is
-an alternative approach to implementing distributed transactions. A
-distributed transaction can be broken down into separate, compensable
-tasks, each of which can be implemented by using a filter that also
-implements the Compensating Transaction pattern. The filters in a
-pipeline can be implemented as separate hosted tasks running close to
-the data that they maintain.
+Using the Pipes and Filters pattern in conjunction with the  [Compensating Transaction pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction) is an alternative approach to implementing distributed transactions. A distributed transaction can be broken down into separate, compensable tasks, each of which can be implemented by using a filter that also implements the Compensating Transaction pattern. The filters in a pipeline can be implemented as separate hosted tasks running close to the data that they maintain.
 
 #### Issues and Considerations
 
-You should consider the following points when deciding how to implement
-this pattern:
+You should consider the following points when deciding how to implement this pattern:
 
--   **Complexity**. The increased flexibility that this pattern provides
-	can also introduce complexity, especially if the filters in a
-	pipeline are distributed across different servers.
+-   **Complexity**. The increased flexibility that this pattern provides can also introduce complexity, especially if the filters in a pipeline are distributed across different servers.
+-   **Reliability**. Use an infrastructure that ensures that data flowing between filters in a pipeline won\'t be lost.
+-   **Idempotency**. If a filter in a pipeline fails after receiving a message and the work is rescheduled to another instance of the filter, part of the work might have already been completed. If this work updates some aspect of the global state (such as information stored in a database), the same update could be repeated. A similar issue might occur if a filter fails after posting its results to the next filter in the pipeline, but before indicating that it\'s completed its work successfully. In these cases, the same work could be repeated by another instance of the filter, causing the same results to be posted twice. This could result in subsequent filters in the pipeline processing the same data twice. Therefore filters in a pipeline should be designed to be idempotent. For more information, see  [Idempotency Patterns](https://blog.jonathanoliver.com/idempotency-patterns/) on Jonathan Oliver's blog.
 
--   **Reliability**. Use an infrastructure that ensures that data
-	flowing between filters in a pipeline won\'t be lost.
+-   **Repeated messages**. If a filter in a pipeline fails after posting a message to the next stage of the pipeline, another instance of the filter might be run, and it\'ll post a copy of the same message to the pipeline. This could cause two instances of the same message to be passed to the next filter. To avoid this, the pipeline should detect and eliminate duplicate messages.
 
--   **Idempotency**. If a filter in a pipeline fails after receiving a
-	message and the work is rescheduled to another instance of the
-	filter, part of the work might have already been completed. If this
-	work updates some aspect of the global state (such as information
-	stored in a database), the same update could be repeated. A similar
-	issue might occur if a filter fails after posting its results to the
-	next filter in the pipeline, but before indicating that it\'s
-	completed its work successfully. In these cases, the same work could
-	be repeated by another instance of the filter, causing the same
-	results to be posted twice. This could result in subsequent filters
-	in the pipeline processing the same data twice. Therefore filters in
-	a pipeline should be designed to be idempotent. For more
-	information, see  [Idempotency
-	Patterns](https://blog.jonathanoliver.com/idempotency-patterns/) on
-	Jonathan Oliver's blog.
+	> If you\'re implementing the pipeline by using message queues (such as Microsoft Azure Service Bus queues), the message queuing infrastructure might provide automatic duplicate message detection and removal.
 
--   **Repeated messages**. If a filter in a pipeline fails after posting
-	a message to the next stage of the pipeline, another instance of the
-	filter might be run, and it\'ll post a copy of the same message to
-	the pipeline. This could cause two instances of the same message to
-	be passed to the next filter. To avoid this, the pipeline should
-	detect and eliminate duplicate messages.
-
-	> If you\'re implementing the pipeline by using message queues (such
-	> as Microsoft Azure Service Bus queues), the message queuing
-	> infrastructure might provide automatic duplicate message detection
-	> and removal.
-
--   **Context and state**. In a pipeline, each filter essentially runs
-	in isolation and shouldn\'t make any assumptions about how it was
-	invoked. This means that each filter should be provided with
-	sufficient context to perform its work. This context could include a
-	large amount of state information.
+-   **Context and state**. In a pipeline, each filter essentially runs in isolation and shouldn\'t make any assumptions about how it was invoked. This means that each filter should be provided with sufficient context to perform its work. This context could include a large amount of state information.
 
 #### When to use this Pattern
 
 Use this pattern when:
 
--   The processing required by an application can easily be broken down
-	into a set of independent steps.
+-   The processing required by an application can easily be broken down into a set of independent steps.
+-   The processing steps performed by an application have different scalability requirements.
 
--   The processing steps performed by an application have different
-	scalability requirements.
+	> It\'s possible to group filters that should scale together in the same process. For more information, see the [Compute Resource Consolidation pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/compute-resource-consolidation).
 
-	> It\'s possible to group filters that should scale together in the
-	> same process. For more information, see the 
-	> [Compute Resource Consolidation pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/compute-resource-consolidation).
-
--   Flexibility is required to allow reordering of the processing steps
-	performed by an application, or the capability to add and remove
-	steps.
-
--   The system can benefit from distributing the processing for steps
-	across different servers.
-
--   A reliable solution is required that minimizes the effects of
-	failure in a step while data is being processed.
+-   Flexibility is required to allow reordering of the processing steps performed by an application, or the capability to add and remove steps.
+-   The system can benefit from distributing the processing for steps across different servers.
+-   A reliable solution is required that minimizes the effects of failure in a step while data is being processed.
 
 This pattern might not be useful when:
 
--   The processing steps performed by an application aren\'t
-	independent, or they have to be performed together as part of the
-	same transaction.
-
--   The amount of context or state information required by a step makes
-	this approach inefficient. It might be possible to persist state
-	information to a database instead, but don\'t use this strategy if
-	the additional load on the database causes excessive contention.
+-   The processing steps performed by an application aren\'t independent, or they have to be performed together as part of the same transaction.
+-   The amount of context or state information required by a step makes this approach inefficient. It might be possible to persist state information to a database instead, but don\'t use this strategy if the additional load on the database causes excessive contention.
 
 ### Priority Queue Pattern
 
 #### Overview
 
-Prioritize requests sent to services so that requests with a higher
-priority are received and processed more quickly than those with a lower
-priority. This pattern is useful in applications that offer different
-service level guarantees to individual clients.
+Prioritize requests sent to services so that requests with a higher priority are received and processed more quickly than those with a lower priority. This pattern is useful in applications that offer different service level guarantees to individual clients.
 
 #### Context and Problem
 
-Applications can delegate specific tasks to other services, for example,
-to perform background processing or to integrate with other applications
-or services. In the cloud, a message queue is typically used to delegate
-tasks to background processing. In many cases the order requests are
-received in by a service isn\'t important. In some cases, though, it\'s
-necessary to prioritize specific requests. These requests should be
-processed earlier than lower priority requests that were sent previously
-by the application.
+Applications can delegate specific tasks to other services, for example, to perform background processing or to integrate with other applications or services. In the cloud, a message queue is typically used to delegate tasks to background processing. In many cases the order requests are received in by a service isn\'t important. In some cases, though, it\'s necessary to prioritize specific requests. These requests should be processed earlier than lower priority requests that were sent previously by the application.
 
 #### Solution
 
-A queue is usually a first-in, first-out (FIFO) structure, and consumers
-typically receive messages in the same order that they were posted to
-the queue. However, some message queues support priority messaging. The
-application posting a message can assign a priority and the messages in
-the queue are automatically reordered so that those with a higher
-priority will be received before those with a lower priority. The figure
-illustrates a queue with priority messaging.
+A queue is usually a first-in, first-out (FIFO) structure, and consumers typically receive messages in the same order that they were posted to the queue. However, some message queues support priority messaging. The application posting a message can assign a priority and the messages in the queue are automatically reordered so that those with a higher priority will be received before those with a lower priority. The figure illustrates a queue with priority messaging.
 
-<kbd><img src="./attachments/463533387.png" alt=""> </kbd>
+<img src="./attachments/463533387.png" alt="" />
 
-> Most message queue implementations support multiple consumers (following the  [Competing Consumers
-> pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/competing-consumers)),
-> and the number of consumer processes can be scaled up or down depending on demand.
+> Most message queue implementations support multiple consumers (following the  [Competing Consumers pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/competing-consumers)), and the number of consumer processes can be scaled up or down depending on demand.
 
-In systems that don\'t support priority-based message queues, an
-alternative solution is to maintain a separate queue for each priority.
-The application is responsible for posting messages to the appropriate
-queue. Each queue can have a separate pool of consumers. Higher priority
-queues can have a larger pool of consumers running on faster hardware
-than lower priority queues. The next figure illustrates using separate
-message queues for each priority.
+In systems that don\'t support priority-based message queues, an alternative solution is to maintain a separate queue for each priority. The application is responsible for posting messages to the appropriate queue. Each queue can have a separate pool of consumers. Higher priority queues can have a larger pool of consumers running on faster hardware than lower priority queues. The next figure illustrates using separate message queues for each priority.
 
-<kbd><img src="./attachments/463533388.png" alt=""> </kbd>
+<img src="./attachments/463533388.png" alt="" />
 
-A variation on this strategy is to have a single pool of consumers that
-check for messages on high priority queues first, and only then start to
-fetch messages from lower priority queues. There are some semantic
-differences between a solution that uses a single pool of consumer
-processes (either with a single queue that supports messages with
-different priorities or with multiple queues that each handle messages
-of a single priority), and a solution that uses multiple queues with a
-separate pool for each queue.
+A variation on this strategy is to have a single pool of consumers that check for messages on high priority queues first, and only then start to fetch messages from lower priority queues. There are some semantic differences between a solution that uses a single pool of consumer processes (either with a single queue that supports messages with different priorities or with multiple queues that each handle messages of a single priority), and a solution that uses multiple queues with a separate pool for each queue.
 
-In the single pool approach, higher priority messages are always
-received and processed before lower priority messages. In theory,
-messages that have a very low priority could be continually superseded
-and might never be processed. In the multiple pool approach, lower
-priority messages will always be processed, just not as quickly as those
-of a higher priority (depending on the relative size of the pools and
-the resources that they have available).
+In the single pool approach, higher priority messages are always received and processed before lower priority messages. In theory, messages that have a very low priority could be continually superseded and might never be processed. In the multiple pool approach, lower priority messages will always be processed, just not as quickly as those of a higher priority (depending on the relative size of the pools and the resources that they have available).
 
 Using a priority queuing mechanism can provide the following advantages:
 
--   It allows applications to meet business requirements that require
-	prioritization of availability or performance, such as offering
-	different levels of service to specific groups of customers.
--   It can help to minimize operational costs. In the single queue
-	approach, you can scale back the number of consumers if necessary.
-	High priority messages will still be processed first (although
-	possibly more slowly), and lower priority messages might be delayed
-	for longer. If you\'ve implemented the multiple message queue
-	approach with separate pools of consumers for each queue, you can
-	reduce the pool of consumers for lower priority queues, or even
-	suspend processing for some very low priority queues by stopping all
-	the consumers that listen for messages on those queues.
--   The multiple message queue approach can help maximize application
-	performance and scalability by partitioning messages based on
-	processing requirements. For example, vital tasks can be prioritized
-	to be handled by receivers that run immediately while less important
-	background tasks can be handled by receivers that are scheduled to
-	run at less busy periods.
+-   It allows applications to meet business requirements that require prioritization of availability or performance, such as offering different levels of service to specific groups of customers.
+-   It can help to minimize operational costs. In the single queue approach, you can scale back the number of consumers if necessary. High priority messages will still be processed first (although possibly more slowly), and lower priority messages might be delayed for longer. If you\'ve implemented the multiple message queue approach with separate pools of consumers for each queue, you can reduce the pool of consumers for lower priority queues, or even suspend processing for some very low priority queues by stopping all the consumers that listen for messages on those queues.
+-   The multiple message queue approach can help maximize application performance and scalability by partitioning messages based on processing requirements. For example, vital tasks can be prioritized to be handled by receivers that run immediately while less important background tasks can be handled by receivers that are scheduled to run at less busy periods.
 
 #### Issues and Considerations
 
-Consider the following points when deciding how to implement this
-pattern:
+Consider the following points when deciding how to implement this pattern:
 
-Define the priorities in the context of the solution. For example, high
-priority could mean that messages should be processed within ten
-seconds. Identify the requirements for handling high priority items, and
-the other resources that should be allocated to meet these criteria.
+Define the priorities in the context of the solution. For example, high priority could mean that messages should be processed within ten seconds. Identify the requirements for handling high priority items, and the other resources that should be allocated to meet these criteria.
 
-Decide if all high priority items must be processed before any lower
-priority items. If the messages are being processed by a single pool of
-consumers, you have to provide a mechanism that can preempt and suspend
-a task that\'s handling a low priority message if a higher priority
-message becomes available.
+Decide if all high priority items must be processed before any lower priority items. If the messages are being processed by a single pool of consumers, you have to provide a mechanism that can preempt and suspend a task that\'s handling a low priority message if a higher priority message becomes available.
 
-In the multiple queue approach, when using a single pool of consumer
-processes that listen on all queues rather than a dedicated consumer
-pool for each queue, the consumer must apply an algorithm that ensures
-it always services messages from higher priority queues before those
-from lower priority queues.
+In the multiple queue approach, when using a single pool of consumer processes that listen on all queues rather than a dedicated consumer pool for each queue, the consumer must apply an algorithm that ensures it always services messages from higher priority queues before those from lower priority queues.
 
-Monitor the processing speed on high and low priority queues to ensure
-that messages in these queues are processed at the expected rates.
+Monitor the processing speed on high and low priority queues to ensure that messages in these queues are processed at the expected rates.
 
-If you need to guarantee that low priority messages will be processed,
-it\'s necessary to implement the multiple message queue approach with
-multiple pools of consumers. Alternatively, in a queue that supports
-message prioritization, it\'s possible to dynamically increase the
-priority of a queued message as it ages. However, this approach depends
-on the message queue providing this feature.
+If you need to guarantee that low priority messages will be processed, it\'s necessary to implement the multiple message queue approach with multiple pools of consumers. Alternatively, in a queue that supports message prioritization, it\'s possible to dynamically increase the priority of a queued message as it ages. However, this approach depends on the message queue providing this feature.
 
-Using a separate queue for each message priority works best for systems
-that have a small number of well-defined priorities.
+Using a separate queue for each message priority works best for systems that have a small number of well-defined priorities.
 
-Message priorities can be determined logically by the system. For
-example, rather than having explicit high and low priority messages,
-they could be designated as "fee paying customer," or "non-fee paying
-customer." Depending on your business model, your system can allocate
-more resources to processing messages from fee paying customers than
-non-fee paying ones.
+Message priorities can be determined logically by the system. For example, rather than having explicit high and low priority messages, they could be designated as "fee paying customer," or "non-fee paying customer." Depending on your business model, your system can allocate more resources to processing messages from fee paying customers than non-fee paying ones.
 
-There might be a financial and processing cost associated with checking
-a queue for a message (some commercial messaging systems charge a small
-fee each time a message is posted or retrieved, and each time a queue is
-queried for messages). This cost increases when checking multiple
-queues.
+There might be a financial and processing cost associated with checking a queue for a message (some commercial messaging systems charge a small fee each time a message is posted or retrieved, and each time a queue is queried for messages). This cost increases when checking multiple queues.
 
-It\'s possible to dynamically adjust the size of a pool of consumers
-based on the length of the queue that the pool is servicing. For more
-information, see the  [Autoscaling
-Guidance](https://msdn.microsoft.com/library/dn589774.aspx).
+It\'s possible to dynamically adjust the size of a pool of consumers based on the length of the queue that the pool is servicing. For more information, see the  [Autoscaling Guidance](https://msdn.microsoft.com/library/dn589774.aspx).
 
 #### When to use this Pattern
 
@@ -4633,950 +4186,354 @@ This pattern is useful in scenarios where:
 
 #### Overview
 
-Enable an application to announce events to multiple interested
-consumers asynchronously, without coupling the senders to the receivers.
+Enable an application to announce events to multiple interested consumers asynchronously, without coupling the senders to the receivers.
 
 **Also called**: Pub/sub messaging
 
 #### Context and Problem
 
-In cloud-based and distributed applications, components of the system
-often need to provide information to other components as events happen.
+In cloud-based and distributed applications, components of the system often need to provide information to other components as events happen.
 
-Asynchronous messaging is an effective way to decouple senders from
-consumers, and avoid blocking the sender to wait for a response.
-However, using a dedicated message queue for each consumer does not
-effectively scale to many consumers. Also, some of the consumers might
-be interested in only a subset of the information. How can the sender
-announce events to all interested consumers without knowing their
-identities?
+Asynchronous messaging is an effective way to decouple senders from consumers, and avoid blocking the sender to wait for a response. However, using a dedicated message queue for each consumer does not effectively scale to many consumers. Also, some of the consumers might be interested in only a subset of the information. How can the sender announce events to all interested consumers without knowing their identities?
 
 #### Solution
 
-Introduce an asynchronous messaging subsystem that includes the
-following:
+Introduce an asynchronous messaging subsystem that includes the following:
 
--   An input messaging channel used by the sender. The sender packages
-	events into messages, using a known message format, and sends these
-	messages via the input channel. The sender in this pattern is also
-	called the  *publisher*.
+-   An input messaging channel used by the sender. The sender packages events into messages, using a known message format, and sends these messages via the input channel. The sender in this pattern is also called the  *publisher*.
 
 	 Note
 
-	A  *message* is a packet of data. An  *event* is a message that
-	notifies other components about a change or an action that has taken
-	place.
+	A  *message* is a packet of data. An  *event* is a message that notifies other components about a change or an action that has taken place.
 
--   One output messaging channel per consumer. The consumers are known
-	as  *subscribers*.
+-   One output messaging channel per consumer. The consumers are known as *subscribers*.
 
--   A mechanism for copying each message from the input channel to the
-	output channels for all subscribers interested in that message. This
-	operation is typically handled by an intermediary such as a message
-	broker or event bus.
+-   A mechanism for copying each message from the input channel to the output channels for all subscribers interested in that message. This operation is typically handled by an intermediary such as a message broker or event bus.
 
 The following diagram shows the logical components of this pattern:
 
-<kbd><img src="./attachments/463533390.png" alt=""> </kbd>
+<img src="./attachments/463533390.png" alt="" />
 
 Pub/sub messaging has the following benefits:
 
--   It decouples subsystems that still need to communicate. Subsystems
-	can be managed independently, and messages can be properly managed
-	even if one or more receivers are offline.
-
--   It increases scalability and improves responsiveness of the sender.
-	The sender can quickly send a single message to the input channel,
-	then return to its core processing responsibilities. The messaging
-	infrastructure is responsible for ensuring messages are delivered to
-	interested subscribers.
-
--   It improves reliability. Asynchronous messaging helps applications
-	continue to run smoothly under increased loads and handle
-	intermittent failures more effectively.
-
--   It allows for deferred or scheduled processing. Subscribers can wait
-	to pick up messages until off-peak hours, or messages can be routed
-	or processed according to a specific schedule.
-
--   It enables simpler integration between systems using different
-	platforms, programming languages, or communication protocols, as
-	well as between on-premises systems and applications running in the
-	cloud.
-
+-   It decouples subsystems that still need to communicate. Subsystems can be managed independently, and messages can be properly managed even if one or more receivers are offline.
+-   It increases scalability and improves responsiveness of the sender. The sender can quickly send a single message to the input channel, then return to its core processing responsibilities. The messaging infrastructure is responsible for ensuring messages are delivered to interested subscribers.
+-   It improves reliability. Asynchronous messaging helps applications continue to run smoothly under increased loads and handle intermittent failures more effectively.
+-   It allows for deferred or scheduled processing. Subscribers can wait to pick up messages until off-peak hours, or messages can be routed or processed according to a specific schedule.
+-   It enables simpler integration between systems using different platforms, programming languages, or communication protocols, as well as between on-premises systems and applications running in the cloud.
 -   It facilitates asynchronous workflows across an enterprise.
-
--   It improves testability. Channels can be monitored and messages can
-	be inspected or logged as part of an overall integration test
-	strategy.
-
--   It provides separation of concerns for your applications. Each
-	application can focus on its core capabilities, while the messaging
-	infrastructure handles everything required to reliably route
-	messages to multiple consumers.
+-   It improves testability. Channels can be monitored and messages can be inspected or logged as part of an overall integration test strategy.
+-   It provides separation of concerns for your applications. Each application can focus on its core capabilities, while the messaging infrastructure handles everything required to reliably route messages to multiple consumers.
 
 #### Issues and Considerations
 
-Consider the following points when deciding how to implement this
-pattern:
+Consider the following points when deciding how to implement this pattern:
 
--   **Existing technologies.** It is strongly recommended to use
-	available messaging products and services that support a
-	publish-subscribe model, rather than building your own. In Azure,
-	consider using  [Service Bus](https://docs.microsoft.com/en-us/azure/service-bus-messaging/) or 
-	[Event Grid](https://docs.microsoft.com/en-us/azure/event-grid/).
-	Other technologies that can be used for pub/sub messaging include
-	Redis, RabbitMQ, and Apache Kafka.
+-   **Existing technologies.** It is strongly recommended to use available messaging products and services that support a publish-subscribe model, rather than building your own. In Azure, consider using  [Service Bus](https://docs.microsoft.com/en-us/azure/service-bus-messaging/) or  [Event Grid](https://docs.microsoft.com/en-us/azure/event-grid/). Other technologies that can be used for pub/sub messaging include Redis, RabbitMQ, and Apache Kafka.
 
--   **Subscription handling.** The messaging infrastructure must provide
-	mechanisms that consumers can use to subscribe to or unsubscribe
-	from available channels.
+-   **Subscription handling.** The messaging infrastructure must provide mechanisms that consumers can use to subscribe to or unsubscribe from available channels.
 
--   **Security.** Connecting to any message channel must be restricted
-	by security policy to prevent eavesdropping by unauthorized users or
-	applications.
+-   **Security.** Connecting to any message channel must be restricted by security policy to prevent eavesdropping by unauthorized users or applications.
 
--   **Subsets of messages.** Subscribers are usually only interested in
-	subset of the messages distributed by a publisher. Messaging
-	services often allow subscribers to narrow the set of messages
-	received by:
+-   **Subsets of messages.** Subscribers are usually only interested in subset of the messages distributed by a publisher. Messaging services often allow subscribers to narrow the set of messages received by:
 
-	-   **Topics.** Each topic has a dedicated output channel, and each
-		consumer can subscribe to all relevant topics.
-	-   **Content filtering.** Messages are inspected and distributed
-		based on the content of each message. Each subscriber can
-		specify the content it is interested in.
+	-   **Topics.** Each topic has a dedicated output channel, and each consumer can subscribe to all relevant topics.
+	-   **Content filtering.** Messages are inspected and distributed based on the content of each message. Each subscriber can specify the content it is interested in.
 
 -   **Wildcard subscribers.** Consider allowing subscribers to subscribe
 	to multiple topics via wildcards.
-
--   **Bi-directional communication.** The channels in a
-	publish-subscribe system are treated as unidirectional. If a
-	specific subscriber needs to send acknowledgment or communicate
-	status back to the publisher, consider using the  [Request/Reply
-	Pattern](http://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReply.html).
-	This pattern uses one channel to send a message to the subscriber,
-	and a separate reply channel for communicating back to the
-	publisher.
-
--   **Message ordering.** The order in which consumer instances receive
-	messages isn\'t guaranteed, and doesn\'t necessarily reflect the
-	order in which the messages were created. Design the system to
-	ensure that message processing is idempotent to help eliminate any
-	dependency on the order of message handling.
-
--   **Message priority.** Some solutions may require that messages are
-	processed in a specific order. The  [Priority Queue
-	pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/priority-queue) provides
-	a mechanism for ensuring specific messages are delivered before
-	others.
-
--   **Poison messages.** A malformed message, or a task that requires
-	access to resources that aren\'t available, can cause a service
-	instance to fail. The system should prevent such messages being
-	returned to the queue. Instead, capture and store the details of
-	these messages elsewhere so that they can be analyzed if necessary.
-
--   **Repeated messages.** The same message might be sent more than
-	once. For example, the sender might fail after posting a message.
-	Then a new instance of the sender might start up and repeat the
-	message. The messaging infrastructure should implement duplicate
-	message detection and removal (also known as de-duping) based on
-	message IDs in order to provide at-most-once delivery of messages.
-
--   **Message expiration.** A message might have a limited lifetime. If
-	it isn\'t processed within this period, it might no longer be
-	relevant and should be discarded. A sender can specify an expiration
-	time as part of the data in the message. A receiver can examine this
-	information before deciding whether to perform the business logic
-	associated with the message.
-
--   **Message scheduling.** A message might be temporarily embargoed and
-	should not be processed until a specific date and time. The message
-	should not be available to a receiver until this time.
+-   **Bi-directional communication.** The channels in a publish-subscribe system are treated as unidirectional. If a specific subscriber needs to send acknowledgment or communicate status back to the publisher, consider using the  [Request/Reply Pattern](http://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReply.html). This pattern uses one channel to send a message to the subscriber, and a separate reply channel for communicating back to the publisher.
+-   **Message ordering.** The order in which consumer instances receive messages isn\'t guaranteed, and doesn\'t necessarily reflect the order in which the messages were created. Design the system to ensure that message processing is idempotent to help eliminate any dependency on the order of message handling.
+-   **Message priority.** Some solutions may require that messages are processed in a specific order. The  [Priority Queue pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/priority-queue) provides a mechanism for ensuring specific messages are delivered before others.
+-   **Poison messages.** A malformed message, or a task that requires access to resources that aren\'t available, can cause a service instance to fail. The system should prevent such messages being returned to the queue. Instead, capture and store the details of these messages elsewhere so that they can be analyzed if necessary.
+-   **Repeated messages.** The same message might be sent more than once. For example, the sender might fail after posting a message. Then a new instance of the sender might start up and repeat the message. The messaging infrastructure should implement duplicate message detection and removal (also known as de-duping) based on message IDs in order to provide at-most-once delivery of messages.
+-   **Message expiration.** A message might have a limited lifetime. If it isn\'t processed within this period, it might no longer be relevant and should be discarded. A sender can specify an expiration time as part of the data in the message. A receiver can examine this information before deciding whether to perform the business logic associated with the message.
+-   **Message scheduling.** A message might be temporarily embargoed and should not be processed until a specific date and time. The message should not be available to a receiver until this time.
 
 #### When to use this Pattern
 
 Use this pattern when:
 
--   An application needs to broadcast information to a significant
-	number of consumers.
-
--   An application needs to communicate with one or more
-	independently-developed applications or services, which may use
-	different platforms, programming languages, and communication
-	protocols.
-
--   An application can send information to consumers without requiring
-	real-time responses from the consumers.
-
--   The systems being integrated are designed to support an eventual
-	consistency model for their data.
-
--   An application needs to communicate information to multiple
-	consumers, which may have different availability requirements or
-	uptime schedules than the sender.
+-   An application needs to broadcast information to a significant number of consumers.
+-   An application needs to communicate with one or more independently-developed applications or services, which may use different platforms, programming languages, and communication protocols.
+-   An application can send information to consumers without requiring real-time responses from the consumers.
+-   The systems being integrated are designed to support an eventual consistency model for their data.
+-   An application needs to communicate information to multiple consumers, which may have different availability requirements or uptime schedules than the sender.
 
 This pattern might not be useful when:
 
--   An application has only a few consumers who need significantly
-	different information from the producing application.
-
+-   An application has only a few consumers who need significantly 	different information from the producing application.
 -   An application requires near real-time interaction with consumers.
 
 ### Queue-Based Load Leveling Pattern
 
 #### Overview
 
-Use a queue that acts as a buffer between a task and a service it
-invokes in order to smooth intermittent heavy loads that can cause the
-service to fail or the task to time out. This can help to minimize the
-impact of peaks in demand on availability and responsiveness for both
-the task and the service.
+Use a queue that acts as a buffer between a task and a service it invokes in order to smooth intermittent heavy loads that can cause the service to fail or the task to time out. This can help to minimize the impact of peaks in demand on availability and responsiveness for both the task and the service.
 
 #### Context and Problem
 
-Many solutions in the cloud involve running tasks that invoke services.
-In this environment, if a service is subjected to intermittent heavy
-loads, it can cause performance or reliability issues.
+Many solutions in the cloud involve running tasks that invoke services. In this environment, if a service is subjected to intermittent heavy loads, it can cause performance or reliability issues.
 
-A service could be part of the same solution as the tasks that use it,
-or it could be a third-party service providing access to frequently used
-resources such as a cache or a storage service. If the same service is
-used by a number of tasks running concurrently, it can be difficult to
-predict the volume of requests to the service at any time.
+A service could be part of the same solution as the tasks that use it, or it could be a third-party service providing access to frequently used resources such as a cache or a storage service. If the same service is used by a number of tasks running concurrently, it can be difficult to predict the volume of requests to the service at any time.
 
-A service might experience peaks in demand that cause it to overload and
-be unable to respond to requests in a timely manner. Flooding a service
-with a large number of concurrent requests can also result in the
-service failing if it\'s unable to handle the contention these requests
-cause.
+A service might experience peaks in demand that cause it to overload and be unable to respond to requests in a timely manner. Flooding a service with a large number of concurrent requests can also result in the service failing if it\'s unable to handle the contention these requests cause.
 
 #### Solution
 
-Refactor the solution and introduce a queue between the task and the
-service. The task and the service run asynchronously. The task posts a
-message containing the data required by the service to a queue. The
-queue acts as a buffer, storing the message until it\'s retrieved by the
-service. The service retrieves the messages from the queue and processes
-them. Requests from a number of tasks, which can be generated at a
-highly variable rate, can be passed to the service through the same
-message queue. This figure shows using a queue to level the load on a
-service.
+Refactor the solution and introduce a queue between the task and the service. The task and the service run asynchronously. The task posts a message containing the data required by the service to a queue. The queue acts as a buffer, storing the message until it\'s retrieved by the service. The service retrieves the messages from the queue and processes them. Requests from a number of tasks, which can be generated at a highly variable rate, can be passed to the service through the same message queue. This figure shows using a queue to level the load on a service.
 
-<kbd><img src="./attachments/463533392.png" alt=""> </kbd>
+<img src="./attachments/463533392.png" alt="" />
 
-The queue decouples the tasks from the service, and the service can
-handle the messages at its own pace regardless of the volume of requests
-from concurrent tasks. Additionally, there\'s no delay to a task if the
-service isn\'t available at the time it posts a message to the queue.
+The queue decouples the tasks from the service, and the service can handle the messages at its own pace regardless of the volume of requests from concurrent tasks. Additionally, there\'s no delay to a task if the service isn\'t available at the time it posts a message to the queue.
 
 This pattern provides the following benefits:
 
--   It can help to maximize availability because delays arising in
-	services won\'t have an immediate and direct impact on the
-	application, which can continue to post messages to the queue even
-	when the service isn\'t available or isn\'t currently processing
-	messages.
-
--   It can help to maximize scalability because both the number of
-	queues and the number of services can be varied to meet demand.
-
--   It can help to control costs because the number of service instances
-	deployed only have to be adequate to meet average load rather than
-	the peak load.
-
-	> Some services implement throttling when demand reaches a threshold
-	> beyond which the system could fail. Throttling can reduce the
-	> functionality available. You can implement load leveling with
-	> these services to ensure that this threshold isn\'t reached.
+-   It can help to maximize availability because delays arising in services won\'t have an immediate and direct impact on the application, which can continue to post messages to the queue even when the service isn\'t available or isn\'t currently processing messages.
+-   It can help to maximize scalability because both the number of queues and the number of services can be varied to meet demand.
+-   It can help to control costs because the number of service instances deployed only have to be adequate to meet average load rather than the peak load.
+	
+	> Some services implement throttling when demand reaches a threshold beyond which the system could fail. Throttling can reduce the functionality available. You can implement load leveling with these services to ensure that this threshold isn\'t reached.
 
 #### Issues and Considerations
 
-Consider the following points when deciding how to implement this
-pattern:
+Consider the following points when deciding how to implement this pattern:
 
--   It\'s necessary to implement application logic that controls the
-	rate at which services handle messages to avoid overwhelming the
-	target resource. Avoid passing spikes in demand to the next stage of
-	the system. Test the system under load to ensure that it provides
-	the required leveling, and adjust the number of queues and the
-	number of service instances that handle messages to achieve this.
--   Message queues are a one-way communication mechanism. If a task
-	expects a reply from a service, it might be necessary to implement a
-	mechanism that the service can use to send a response. For more
-	information, see the  [Asynchronous Messaging Primer](https://msdn.microsoft.com/library/dn589781.aspx).
--   Be careful if you apply autoscaling to services that are listening
-	for requests on the queue. This can result in increased contention
-	for any resources that these services share and diminish the
-	effectiveness of using the queue to level the load.
+-   It\'s necessary to implement application logic that controls the rate at which services handle messages to avoid overwhelming the target resource. Avoid passing spikes in demand to the next stage of the system. Test the system under load to ensure that it provides the required leveling, and adjust the number of queues and the number of service instances that handle messages to achieve this.
+-   Message queues are a one-way communication mechanism. If a task expects a reply from a service, it might be necessary to implement a mechanism that the service can use to send a response. For more information, see the  [Asynchronous Messaging Primer](https://msdn.microsoft.com/library/dn589781.aspx).
+-   Be careful if you apply autoscaling to services that are listening for requests on the queue. This can result in increased contention for any resources that these services share and diminish the effectiveness of using the queue to level the load.
 
 #### When to use this Pattern
 
-This pattern is useful to any application that uses services that are
-subject to overloading.
+This pattern is useful to any application that uses services that are subject to overloading.
 
-This pattern isn\'t useful if the application expects a response from
-the service with minimal latency.
+This pattern isn\'t useful if the application expects a response from the service with minimal latency.
 
 ### Retry Pattern
 
 #### Overview
 
-Enable an application to handle transient failures when it tries to
-connect to a service or network resource, by transparently retrying a
-failed operation. This can improve the stability of the application.
+Enable an application to handle transient failures when it tries to connect to a service or network resource, by transparently retrying a failed operation. This can improve the stability of the application.
 
 #### Context and Problem
 
-An application that communicates with elements running in the cloud has
-to be sensitive to the transient faults that can occur in this
-environment. Faults include the momentary loss of network connectivity
-to components and services, the temporary unavailability of a service,
-or timeouts that occur when a service is busy.
+An application that communicates with elements running in the cloud has to be sensitive to the transient faults that can occur in this environment. Faults include the momentary loss of network connectivity to components and services, the temporary unavailability of a service, or timeouts that occur when a service is busy.
 
-These faults are typically self-correcting, and if the action that
-triggered a fault is repeated after a suitable delay it\'s likely to be
-successful. For example, a database service that\'s processing a large
-number of concurrent requests can implement a throttling strategy that
-temporarily rejects any further requests until its workload has eased.
-An application trying to access the database might fail to connect, but
-if it tries again after a delay it might succeed.
+These faults are typically self-correcting, and if the action that triggered a fault is repeated after a suitable delay it\'s likely to be successful. For example, a database service that\'s processing a large number of concurrent requests can implement a throttling strategy that temporarily rejects any further requests until its workload has eased. An application trying to access the database might fail to connect, but if it tries again after a delay it might succeed.
 
 #### Solution
 
-In the cloud, transient faults aren\'t uncommon and an application
-should be designed to handle them elegantly and transparently. This
-minimizes the effects faults can have on the business tasks the
-application is performing.
+In the cloud, transient faults aren\'t uncommon and an application should be designed to handle them elegantly and transparently. This minimizes the effects faults can have on the business tasks the application is performing.
 
-If an application detects a failure when it tries to send a request to a
-remote service, it can handle the failure using the following
-strategies:
+If an application detects a failure when it tries to send a request to a remote service, it can handle the failure using the following strategies:
 
--   **Cancel**. If the fault indicates that the failure isn\'t transient
-	or is unlikely to be successful if repeated, the application should
-	cancel the operation and report an exception. For example, an
-	authentication failure caused by providing invalid credentials is
-	not likely to succeed no matter how many times it\'s attempted.
+-   **Cancel**. If the fault indicates that the failure isn\'t transient or is unlikely to be successful if repeated, the application should cancel the operation and report an exception. For example, an authentication failure caused by providing invalid credentials is not likely to succeed no matter how many times it\'s attempted.
+-   **Retry**. If the specific fault reported is unusual or rare, it might have been caused by unusual circumstances such as a network packet becoming corrupted while it was being transmitted. In this case, the application could retry the failing request again immediately because the same failure is unlikely to be repeated and the request will probably be successful.
+-   **Retry after delay**. If the fault is caused by one of the more commonplace connectivity or busy failures, the network or service might need a short period while the connectivity issues are corrected or the backlog of work is cleared. The application should wait for a suitable time before retrying the request.
 
--   **Retry**. If the specific fault reported is unusual or rare, it
-	might have been caused by unusual circumstances such as a network
-	packet becoming corrupted while it was being transmitted. In this
-	case, the application could retry the failing request again
-	immediately because the same failure is unlikely to be repeated and
-	the request will probably be successful.
+For the more common transient failures, the period between retries should be chosen to spread requests from multiple instances of the application as evenly as possible. This reduces the chance of a busy service continuing to be overloaded. If many instances of an application are continually overwhelming a service with retry requests, it\'ll take the service longer to recover.
 
--   **Retry after delay**. If the fault is caused by one of the more
-	commonplace connectivity or busy failures, the network or service
-	might need a short period while the connectivity issues are
-	corrected or the backlog of work is cleared. The application should
-	wait for a suitable time before retrying the request.
+If the request still fails, the application can wait and make another attempt. If necessary, this process can be repeated with increasing delays between retry attempts, until some maximum number of requests have been attempted. The delay can be increased incrementally or exponentially, depending on the type of failure and the probability that it\'ll be corrected during this time.
 
-For the more common transient failures, the period between retries
-should be chosen to spread requests from multiple instances of the
-application as evenly as possible. This reduces the chance of a busy
-service continuing to be overloaded. If many instances of an application
-are continually overwhelming a service with retry requests, it\'ll take
-the service longer to recover.
+The following diagram illustrates invoking an operation in a hosted service using this pattern. If the request is unsuccessful after a predefined number of attempts, the application should treat the fault as an exception and handle it accordingly.
 
-If the request still fails, the application can wait and make another
-attempt. If necessary, this process can be repeated with increasing
-delays between retry attempts, until some maximum number of requests
-have been attempted. The delay can be increased incrementally or
-exponentially, depending on the type of failure and the probability that
-it\'ll be corrected during this time.
+<img src="./attachments/463533394.png" alt="" />
 
-The following diagram illustrates invoking an operation in a hosted
-service using this pattern. If the request is unsuccessful after a
-predefined number of attempts, the application should treat the fault as
-an exception and handle it accordingly.
+The application should wrap all attempts to access a remote service in code that implements a retry policy matching one of the strategies listed above. Requests sent to different services can be subject to different policies. Some vendors provide libraries that implement retry policies, where the application can specify the maximum number of retries, the time between retry attempts, and other parameters.
 
-<kbd><img src="./attachments/463533394.png" alt=""> </kbd>
+An application should log the details of faults and failing operations. This information is useful to operators. If a service is frequently unavailable or busy, it\'s often because the service has exhausted its resources. You can reduce the frequency of these faults by scaling out the service. For example, if a database service is continually overloaded, it might be beneficial to partition the database and spread the load across multiple servers.
 
-The application should wrap all attempts to access a remote service in
-code that implements a retry policy matching one of the strategies
-listed above. Requests sent to different services can be subject to
-different policies. Some vendors provide libraries that implement retry
-policies, where the application can specify the maximum number of
-retries, the time between retry attempts, and other parameters.
-
-An application should log the details of faults and failing operations.
-This information is useful to operators. If a service is frequently
-unavailable or busy, it\'s often because the service has exhausted its
-resources. You can reduce the frequency of these faults by scaling out
-the service. For example, if a database service is continually
-overloaded, it might be beneficial to partition the database and spread
-the load across multiple servers.
-
-> [Microsoft Entity Framework](https://docs.microsoft.com/en-us/ef) provides
-> facilities for retrying database operations. Also, most Azure services
-> and client SDKs include a retry mechanism. For more information, see 
-> [Retry guidance for specific services](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific).
+> [Microsoft Entity Framework](https://docs.microsoft.com/en-us/ef) provides facilities for retrying database operations. Also, most Azure services and client SDKs include a retry mechanism. For more information, see [Retry guidance for specific services](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific).
 
 #### Issues and Considerations
 
-You should consider the following points when deciding how to implement
-this pattern.
+You should consider the following points when deciding how to implement this pattern.
 
-The retry policy should be tuned to match the business requirements of
-the application and the nature of the failure. For some noncritical
-operations, it\'s better to fail fast rather than retry several times
-and impact the throughput of the application. For example, in an
-interactive web application accessing a remote service, it\'s better to
-fail after a smaller number of retries with only a short delay between
-retry attempts, and display a suitable message to the user (for example,
-"please try again later"). For a batch application, it might be more
-appropriate to increase the number of retry attempts with an
-exponentially increasing delay between attempts.
+The retry policy should be tuned to match the business requirements of the application and the nature of the failure. For some noncritical operations, it\'s better to fail fast rather than retry several times and impact the throughput of the application. For example, in an interactive web application accessing a remote service, it\'s better to fail after a smaller number of retries with only a short delay between retry attempts, and display a suitable message to the user (for example, "please try again later"). For a batch application, it might be more appropriate to increase the number of retry attempts with an exponentially increasing delay between attempts.
 
-An aggressive retry policy with minimal delay between attempts, and a
-large number of retries, could further degrade a busy service that\'s
-running close to or at capacity. This retry policy could also affect the
-responsiveness of the application if it\'s continually trying to perform
-a failing operation.
+An aggressive retry policy with minimal delay between attempts, and a large number of retries, could further degrade a busy service that\'s running close to or at capacity. This retry policy could also affect the responsiveness of the application if it\'s continually trying to perform a failing operation.
 
-If a request still fails after a significant number of retries, it\'s
-better for the application to prevent further requests going to the same
-resource and simply report a failure immediately. When the period
-expires, the application can tentatively allow one or more requests
-through to see whether they\'re successful. For more details of this
-strategy, see the  [Circuit Breaker pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker).
+If a request still fails after a significant number of retries, it\'s better for the application to prevent further requests going to the same resource and simply report a failure immediately. When the period expires, the application can tentatively allow one or more requests through to see whether they\'re successful. For more details of this strategy, see the  [Circuit Breaker pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker).
 
-Consider whether the operation is idempotent. If so, it\'s inherently
-safe to retry. Otherwise, retries could cause the operation to be
-executed more than once, with unintended side effects. For example, a
-service might receive the request, process the request successfully, but
-fail to send a response. At that point, the retry logic might re-send
-the request, assuming that the first request wasn\'t received.
+Consider whether the operation is idempotent. If so, it\'s inherently safe to retry. Otherwise, retries could cause the operation to be executed more than once, with unintended side effects. For example, a service might receive the request, process the request successfully, but fail to send a response. At that point, the retry logic might re-send the request, assuming that the first request wasn\'t received.
 
-A request to a service can fail for a variety of reasons raising
-different exceptions depending on the nature of the failure. Some
-exceptions indicate a failure that can be resolved quickly, while others
-indicate that the failure is longer lasting. It\'s useful for the retry
-policy to adjust the time between retry attempts based on the type of
-the exception.
+A request to a service can fail for a variety of reasons raising different exceptions depending on the nature of the failure. Some exceptions indicate a failure that can be resolved quickly, while others indicate that the failure is longer lasting. It\'s useful for the retry policy to adjust the time between retry attempts based on the type of the exception.
 
-Consider how retrying an operation that\'s part of a transaction will
-affect the overall transaction consistency. Fine tune the retry policy
-for transactional operations to maximize the chance of success and
-reduce the need to undo all the transaction steps.
+Consider how retrying an operation that\'s part of a transaction will affect the overall transaction consistency. Fine tune the retry policy for transactional operations to maximize the chance of success and reduce the need to undo all the transaction steps.
 
-Ensure that all retry code is fully tested against a variety of failure
-conditions. Check that it doesn\'t severely impact the performance or
-reliability of the application, cause excessive load on services and
-resources, or generate race conditions or bottlenecks.
+Ensure that all retry code is fully tested against a variety of failure conditions. Check that it doesn\'t severely impact the performance or reliability of the application, cause excessive load on services and resources, or generate race conditions or bottlenecks.
 
-Implement retry logic only where the full context of a failing operation
-is understood. For example, if a task that contains a retry policy
-invokes another task that also contains a retry policy, this extra layer
-of retries can add long delays to the processing. It might be better to
-configure the lower-level task to fail fast and report the reason for
-the failure back to the task that invoked it. This higher-level task can
-then handle the failure based on its own policy.
+Implement retry logic only where the full context of a failing operation is understood. For example, if a task that contains a retry policy invokes another task that also contains a retry policy, this extra layer of retries can add long delays to the processing. It might be better to configure the lower-level task to fail fast and report the reason for the failure back to the task that invoked it. This higher-level task can then handle the failure based on its own policy.
 
-It\'s important to log all connectivity failures that cause a retry so
-that underlying problems with the application, services, or resources
-can be identified.
+It\'s important to log all connectivity failures that cause a retry so that underlying problems with the application, services, or resources can be identified.
 
-Investigate the faults that are most likely to occur for a service or a
-resource to discover if they\'re likely to be long lasting or terminal.
-If they are, it\'s better to handle the fault as an exception. The
-application can report or log the exception, and then try to continue
-either by invoking an alternative service (if one is available), or by
-offering degraded functionality. For more information on how to detect
-and handle long-lasting faults, see the  [Circuit Breaker
-pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker).
+Investigate the faults that are most likely to occur for a service or a resource to discover if they\'re likely to be long lasting or terminal. If they are, it\'s better to handle the fault as an exception. The application can report or log the exception, and then try to continue either by invoking an alternative service (if one is available), or by offering degraded functionality. For more information on how to detect and handle long-lasting faults, see the  [Circuit Breaker pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker).
 
 #### When to use this Pattern
 
-Use this pattern when an application could experience transient faults
-as it interacts with a remote service or accesses a remote resource.
-These faults are expected to be short lived, and repeating a request
-that has previously failed could succeed on a subsequent attempt.
+Use this pattern when an application could experience transient faults as it interacts with a remote service or accesses a remote resource. These faults are expected to be short lived, and repeating a request that has previously failed could succeed on a subsequent attempt.
 
 This pattern might not be useful:
 
--   When a fault is likely to be long lasting, because this can affect
-	the responsiveness of an application. The application might be
-	wasting time and resources trying to repeat a request that\'s likely
-	to fail.
--   For handling failures that aren\'t due to transient faults, such as
-	internal exceptions caused by errors in the business logic of an
-	application.
--   As an alternative to addressing scalability issues in a system. If
-	an application experiences frequent busy faults, it\'s often a sign
-	that the service or resource being accessed should be scaled up.
+-   When a fault is likely to be long lasting, because this can affect the responsiveness of an application. The application might be wasting time and resources trying to repeat a request that\'s likely to fail.
+-   For handling failures that aren\'t due to transient faults, such as internal exceptions caused by errors in the business logic of an application.
+-   As an alternative to addressing scalability issues in a system. If an application experiences frequent busy faults, it\'s often a sign that the service or resource being accessed should be scaled up.
 
 ### Scheduler Agent Supervisor Pattern
 
 #### Overview
 
-Coordinate a set of distributed actions as a single operation. If any of
-the actions fail, try to handle the failures transparently, or else undo
-the work that was performed, so the entire operation succeeds or fails
-as a whole. This can add resiliency to a distributed system, by enabling
-it to recover and retry actions that fail due to transient exceptions,
-long-lasting faults, and process failures.
+Coordinate a set of distributed actions as a single operation. If any of the actions fail, try to handle the failures transparently, or else undo the work that was performed, so the entire operation succeeds or fails as a whole. This can add resiliency to a distributed system, by enabling it to recover and retry actions that fail due to transient exceptions, long-lasting faults, and process failures.
 
 #### Context and Problem
 
-An application performs tasks that include a number of steps, some of
-which might invoke remote services or access remote resources. The
-individual steps might be independent of each other, but they are
-orchestrated by the application logic that implements the task.
+An application performs tasks that include a number of steps, some of which might invoke remote services or access remote resources. The individual steps might be independent of each other, but they are orchestrated by the application logic that implements the task.
 
-Whenever possible, the application should ensure that the task runs to
-completion and resolve any failures that might occur when accessing
-remote services or resources. Failures can occur for many reasons. For
-example, the network might be down, communications could be interrupted,
-a remote service might be unresponsive or in an unstable state, or a
-remote resource might be temporarily inaccessible, perhaps due to
-resource constraints. In many cases the failures will be transient and
-can be handled by using the  [Retry
-pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/retry).
+Whenever possible, the application should ensure that the task runs to completion and resolve any failures that might occur when accessing remote services or resources. Failures can occur for many reasons. For example, the network might be down, communications could be interrupted, a remote service might be unresponsive or in an unstable state, or a remote resource might be temporarily inaccessible, perhaps due to resource constraints. In many cases the failures will be transient and can be handled by using the  [Retry pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/retry).
 
-If the application detects a more permanent fault it can\'t easily
-recover from, it must be able to restore the system to a consistent
-state and ensure integrity of the entire operation.
+If the application detects a more permanent fault it can\'t easily recover from, it must be able to restore the system to a consistent state and ensure integrity of the entire operation.
 
 #### Solution
 
-The Scheduler Agent Supervisor pattern defines the following actors.
-These actors orchestrate the steps to be performed as part of the
-overall task.
+The Scheduler Agent Supervisor pattern defines the following actors. These actors orchestrate the steps to be performed as part of the overall task.
 
--   The  **Scheduler** arranges for the steps that make up the task to
-	be executed and orchestrates their operation. These steps can be
-	combined into a pipeline or workflow. The Scheduler is responsible
-	for ensuring that the steps in this workflow are performed in the
-	right order. As each step is performed, the Scheduler records the
-	state of the workflow, such as \"step not yet started,\" \"step
-	running,\" or \"step completed." The state information should also
-	include an upper limit of the time allowed for the step to finish,
-	called the complete-by time. If a step requires access to a remote
-	service or resource, the Scheduler invokes the appropriate Agent,
-	passing it the details of the work to be performed. The Scheduler
-	typically communicates with an Agent using asynchronous
-	request/response messaging. This can be implemented using queues,
-	although other distributed messaging technologies could be used
-	instead.
+-   The  **Scheduler** arranges for the steps that make up the task to be executed and orchestrates their operation. These steps can be combined into a pipeline or workflow. The Scheduler is responsible for ensuring that the steps in this workflow are performed in the right order. As each step is performed, the Scheduler records the state of the workflow, such as \"step not yet started,\" \"step running,\" or \"step completed." The state information should also include an upper limit of the time allowed for the step to finish, called the complete-by time. If a step requires access to a remote service or resource, the Scheduler invokes the appropriate Agent, passing it the details of the work to be performed. The Scheduler typically communicates with an Agent using asynchronous request/response messaging. This can be implemented using queues, although other distributed messaging technologies could be used instead.
 
-	> The Scheduler performs a similar function to the Process Manager
-	> in the  [Process Manager pattern](https://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html).
-	> The actual workflow is typically defined and implemented by a
-	> workflow engine that\'s controlled by the Scheduler. This approach
-	> decouples the business logic in the workflow from the Scheduler.
+	> The Scheduler performs a similar function to the Process Manager in the  [Process Manager pattern](https://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html). The actual workflow is typically defined and implemented by a workflow engine that\'s controlled by the Scheduler. This approach decouples the business logic in the workflow from the Scheduler.
 
--   The  **Agent** contains logic that encapsulates a call to a remote
-	service, or access to a remote resource referenced by a step in a
-	task. Each Agent typically wraps calls to a single service or
-	resource, implementing the appropriate error handling and retry
-	logic (subject to a timeout constraint, described later). If the
-	steps in the workflow being run by the Scheduler use several
-	services and resources across different steps, each step might
-	reference a different Agent (this is an implementation detail of the
-	pattern).
+-   The  **Agent** contains logic that encapsulates a call to a remote 	service, or access to a remote resource referenced by a step in a task. Each Agent typically wraps calls to a single service or resource, implementing the appropriate error handling and retry logic (subject to a timeout constraint, described later). If the steps in the workflow being run by the Scheduler use several services and resources across different steps, each step might reference a different Agent (this is an implementation detail of the pattern).
+-   The  **Supervisor** monitors the status of the steps in the task being performed by the Scheduler. It runs periodically (the frequency will be system-specific), and examines the status of steps maintained by the Scheduler. If it detects any that have timed out or failed, it arranges for the appropriate Agent to recover the step or execute the appropriate remedial action (this might involve modifying the status of a step). Note that the recovery or remedial actions are implemented by the Scheduler and Agents. The Supervisor should simply request that these actions be performed.
 
--   The  **Supervisor** monitors the status of the steps in the task
-	being performed by the Scheduler. It runs periodically (the
-	frequency will be system-specific), and examines the status of steps
-	maintained by the Scheduler. If it detects any that have timed out
-	or failed, it arranges for the appropriate Agent to recover the step
-	or execute the appropriate remedial action (this might involve
-	modifying the status of a step). Note that the recovery or remedial
-	actions are implemented by the Scheduler and Agents. The Supervisor
-	should simply request that these actions be performed.
+The Scheduler, Agent, and Supervisor are logical components and their physical implementation depends on the technology being used. For example, several logical agents might be implemented as part of a single web service.
 
-The Scheduler, Agent, and Supervisor are logical components and their
-physical implementation depends on the technology being used. For
-example, several logical agents might be implemented as part of a single
-web service.
+The Scheduler maintains information about the progress of the task and the state of each step in a durable data store, called the state store. The Supervisor can use this information to help determine whether a step has failed. The figure illustrates the relationship between the Scheduler, the Agents, the Supervisor, and the state store.
 
-The Scheduler maintains information about the progress of the task and
-the state of each step in a durable data store, called the state store.
-The Supervisor can use this information to help determine whether a step
-has failed. The figure illustrates the relationship between the
-Scheduler, the Agents, the Supervisor, and the state store.
+<img src="./attachments/463533396.png" alt="" />
 
-<kbd><img src="./attachments/463533396.png" alt=""> </kbd>
+> This diagram shows a simplified version of the pattern. In a real implementation, there might be many instances of the Scheduler running concurrently, each a subset of tasks. Similarly, the system could run multiple instances of each Agent, or even multiple Supervisors. In this case, Supervisors must coordinate their work with each other carefully to ensure that they don't compete to recover the same failed steps and tasks. The  [Leader Election pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/leader-election) provides one possible solution to this problem.
 
-> This diagram shows a simplified version of the pattern. In a real
-> implementation, there might be many instances of the Scheduler running
-> concurrently, each a subset of tasks. Similarly, the system could run
-> multiple instances of each Agent, or even multiple Supervisors. In
-> this case, Supervisors must coordinate their work with each other
-> carefully to ensure that they don't compete to recover the same failed
-> steps and tasks. The  [Leader Election
-> pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/leader-election) provides
-> one possible solution to this problem.
+When the application is ready to run a task, it submits a request to the Scheduler. The Scheduler records initial state information about the task and its steps (for example, step not yet started) in the state store and then starts performing the operations defined by the workflow. As the Scheduler starts each step, it updates the information about the state of that step in the state store (for example, step running).
 
-When the application is ready to run a task, it submits a request to the
-Scheduler. The Scheduler records initial state information about the
-task and its steps (for example, step not yet started) in the state
-store and then starts performing the operations defined by the workflow.
-As the Scheduler starts each step, it updates the information about the
-state of that step in the state store (for example, step running).
+If a step references a remote service or resource, the Scheduler sends a message to the appropriate Agent. The message contains the information that the Agent needs to pass to the service or access the resource, in addition to the complete-by time for the operation. If the Agent completes its operation successfully, it returns a response to the Scheduler. The Scheduler can then update the state information in the state store (for example, step completed) and perform the next step. This process continues until the entire task is complete.
 
-If a step references a remote service or resource, the Scheduler sends a
-message to the appropriate Agent. The message contains the information
-that the Agent needs to pass to the service or access the resource, in
-addition to the complete-by time for the operation. If the Agent
-completes its operation successfully, it returns a response to the
-Scheduler. The Scheduler can then update the state information in the
-state store (for example, step completed) and perform the next step.
-This process continues until the entire task is complete.
+An Agent can implement any retry logic that\'s necessary to perform its work. However, if the Agent doesn\'t complete its work before the complete-by period expires, the Scheduler will assume that the operation has failed. In this case, the Agent should stop its work and not try to return anything to the Scheduler (not even an error message), or try any form of recovery. The reason for this restriction is that, after a step has timed out or failed, another instance of the Agent might be scheduled to run the failing step (this process is described later).
 
-An Agent can implement any retry logic that\'s necessary to perform its
-work. However, if the Agent doesn\'t complete its work before the
-complete-by period expires, the Scheduler will assume that the operation
-has failed. In this case, the Agent should stop its work and not try to
-return anything to the Scheduler (not even an error message), or try any
-form of recovery. The reason for this restriction is that, after a step
-has timed out or failed, another instance of the Agent might be
-scheduled to run the failing step (this process is described later).
+If the Agent fails, the Scheduler won\'t receive a response. The pattern doesn\'t make a distinction between a step that has timed out and one that has genuinely failed.
 
-If the Agent fails, the Scheduler won\'t receive a response. The pattern
-doesn\'t make a distinction between a step that has timed out and one
-that has genuinely failed.
+If a step times out or fails, the state store will contain a record that indicates that the step is running, but the complete-by time will have passed. The Supervisor looks for steps like this and tries to recover them. One possible strategy is for the Supervisor to update the complete-by value to extend the time available to complete the step, and then send a message to the Scheduler identifying the step that has timed out. The Scheduler can then try to repeat this step. However, this design requires the tasks to be idempotent.
 
-If a step times out or fails, the state store will contain a record that
-indicates that the step is running, but the complete-by time will have
-passed. The Supervisor looks for steps like this and tries to recover
-them. One possible strategy is for the Supervisor to update the
-complete-by value to extend the time available to complete the step, and
-then send a message to the Scheduler identifying the step that has timed
-out. The Scheduler can then try to repeat this step. However, this
-design requires the tasks to be idempotent.
+The Supervisor might need to prevent the same step from being retried if it continually fails or times out. To do this, the Supervisor could maintain a retry count for each step, along with the state information, in the state store. If this count exceeds a predefined threshold the Supervisor can adopt a strategy of waiting for an extended period before notifying the Scheduler that it should retry the step, in the expectation that the fault will be resolved during this period. Alternatively, the Supervisor can send a message to the Scheduler to request the entire task be undone by implementing a  [Compensating Transaction pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction). This approach will depend on the Scheduler and Agents providing the information necessary to implement the compensating operations for each step that completed successfully.
 
-The Supervisor might need to prevent the same step from being retried if
-it continually fails or times out. To do this, the Supervisor could
-maintain a retry count for each step, along with the state information,
-in the state store. If this count exceeds a predefined threshold the
-Supervisor can adopt a strategy of waiting for an extended period before
-notifying the Scheduler that it should retry the step, in the
-expectation that the fault will be resolved during this period.
-Alternatively, the Supervisor can send a message to the Scheduler to
-request the entire task be undone by implementing a  [Compensating
-Transaction
-pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction).
-This approach will depend on the Scheduler and Agents providing the
-information necessary to implement the compensating operations for each
-step that completed successfully.
+> It isn\'t the purpose of the Supervisor to monitor the Scheduler and Agents, and restart them if they fail. This aspect of the system should be handled by the infrastructure these components are running in. Similarly, the Supervisor shouldn\'t have knowledge of the actual business operations that the tasks being performed by the Scheduler are running (including how to compensate should these tasks fail). This is the purpose of the workflow logic implemented by the Scheduler. The sole responsibility of the Supervisor is to determine  whether a step has failed and arrange either for it to be repeated or for the entire task containing the failed step to be undone.
 
-> It isn\'t the purpose of the Supervisor to monitor the Scheduler and
-> Agents, and restart them if they fail. This aspect of the system
-> should be handled by the infrastructure these components are running
-> in. Similarly, the Supervisor shouldn\'t have knowledge of the actual
-> business operations that the tasks being performed by the Scheduler
-> are running (including how to compensate should these tasks fail).
-> This is the purpose of the workflow logic implemented by the
-> Scheduler. The sole responsibility of the Supervisor is to determine
-> whether a step has failed and arrange either for it to be repeated or
-> for the entire task containing the failed step to be undone.
+If the Scheduler is restarted after a failure, or the workflow being performed by the Scheduler terminates unexpectedly, the Scheduler should be able to determine the status of any inflight task that it was handling when it failed, and be prepared to resume this task from that point. The implementation details of this process are likely to be system-specific. If the task can\'t be recovered, it might be necessary to undo the work already performed by the task. This might also require implementing a  [compensating transaction](https://docs.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction).
 
-If the Scheduler is restarted after a failure, or the workflow being
-performed by the Scheduler terminates unexpectedly, the Scheduler should
-be able to determine the status of any inflight task that it was
-handling when it failed, and be prepared to resume this task from that
-point. The implementation details of this process are likely to be
-system-specific. If the task can\'t be recovered, it might be necessary
-to undo the work already performed by the task. This might also require
-implementing a  [compensating
-transaction](https://docs.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction).
-
-The key advantage of this pattern is that the system is resilient in the
-event of unexpected temporary or unrecoverable failures. The system can
-be constructed to be self-healing. For example, if an Agent or the
-Scheduler fails, a new one can be started and the Supervisor can arrange
-for a task to be resumed. If the Supervisor fails, another instance can
-be started and can take over from where the failure occurred. If the
-Supervisor is scheduled to run periodically, a new instance can be
-automatically started after a predefined interval. The state store can
-be replicated to reach an even greater degree of resiliency.
+The key advantage of this pattern is that the system is resilient in the event of unexpected temporary or unrecoverable failures. The system can be constructed to be self-healing. For example, if an Agent or the Scheduler fails, a new one can be started and the Supervisor can arrange for a task to be resumed. If the Supervisor fails, another instance can be started and can take over from where the failure occurred. If the Supervisor is scheduled to run periodically, a new instance can be automatically started after a predefined interval. The state store can be replicated to reach an even greater degree of resiliency.
 
 #### Issues and Considerations
 
-You should consider the following points when deciding how to implement
-this pattern:
+You should consider the following points when deciding how to implement this pattern:
 
--   This pattern can be difficult to implement and requires thorough
-	testing of each possible failure mode of the system.
-
--   The recovery/retry logic implemented by the Scheduler is complex and
-	dependent on state information held in the state store. It might
-	also be necessary to record the information required to implement a
-	compensating transaction in a durable data store.
-
--   How often the Supervisor runs will be important. It should run often
-	enough to prevent any failed steps from blocking an application for
-	an extended period, but it shouldn\'t run so often that it becomes
-	an overhead.
-
--   The steps performed by an Agent could be run more than once. The
-	logic that implements these steps should be idempotent.
+-   This pattern can be difficult to implement and requires thorough testing of each possible failure mode of the system.
+-   The recovery/retry logic implemented by the Scheduler is complex and dependent on state information held in the state store. It might also be necessary to record the information required to implement a compensating transaction in a durable data store.
+-   How often the Supervisor runs will be important. It should run often enough to prevent any failed steps from blocking an application for an extended period, but it shouldn\'t run so often that it becomes an overhead.
+-   The steps performed by an Agent could be run more than once. The logic that implements these steps should be idempotent.
 
 #### When to use this Pattern
 
-Use this pattern when a process that runs in a distributed environment,
-such as the cloud, must be resilient to communications failure and/or
-operational failure.
+Use this pattern when a process that runs in a distributed environment, such as the cloud, must be resilient to communications failure and/or operational failure.
 
-This pattern might not be suitable for tasks that don\'t invoke remote
-services or access remote resources.
+This pattern might not be suitable for tasks that don\'t invoke remote services or access remote resources.
 
 ### Scheduler Agent Supervisor Pattern
 
 #### Overview
 
-Coordinate a set of distributed actions as a single operation. If any of
-the actions fail, try to handle the failures transparently, or else undo
-the work that was performed, so the entire operation succeeds or fails
-as a whole. This can add resiliency to a distributed system, by enabling
-it to recover and retry actions that fail due to transient exceptions,
-long-lasting faults, and process failures.
+Coordinate a set of distributed actions as a single operation. If any of the actions fail, try to handle the failures transparently, or else undo the work that was performed, so the entire operation succeeds or fails as a whole. This can add resiliency to a distributed system, by enabling it to recover and retry actions that fail due to transient exceptions, long-lasting faults, and process failures.
 
 #### Context and Problem
 
-An application performs tasks that include a number of steps, some of
-which might invoke remote services or access remote resources. The
-individual steps might be independent of each other, but they are
-orchestrated by the application logic that implements the task.
+An application performs tasks that include a number of steps, some of which might invoke remote services or access remote resources. The individual steps might be independent of each other, but they are orchestrated by the application logic that implements the task.
 
-Whenever possible, the application should ensure that the task runs to
-completion and resolve any failures that might occur when accessing
-remote services or resources. Failures can occur for many reasons. For
-example, the network might be down, communications could be interrupted,
-a remote service might be unresponsive or in an unstable state, or a
-remote resource might be temporarily inaccessible, perhaps due to
-resource constraints. In many cases the failures will be transient and
-can be handled by using the  [Retry
-pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/retry).
+Whenever possible, the application should ensure that the task runs to completion and resolve any failures that might occur when accessing remote services or resources. Failures can occur for many reasons. For example, the network might be down, communications could be interrupted, a remote service might be unresponsive or in an unstable state, or a remote resource might be temporarily inaccessible, perhaps due to resource constraints. In many cases the failures will be transient and can be handled by using the  [Retry pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/retry).
 
-If the application detects a more permanent fault it can\'t easily
-recover from, it must be able to restore the system to a consistent
-state and ensure integrity of the entire operation.
+If the application detects a more permanent fault it can\'t easily recover from, it must be able to restore the system to a consistent state and ensure integrity of the entire operation.
 
 #### Solution
 
-The Scheduler Agent Supervisor pattern defines the following actors.
-These actors orchestrate the steps to be performed as part of the
-overall task.
+The Scheduler Agent Supervisor pattern defines the following actors. These actors orchestrate the steps to be performed as part of the overall task.
 
--   The  **Scheduler** arranges for the steps that make up the task to
-	be executed and orchestrates their operation. These steps can be
-	combined into a pipeline or workflow. The Scheduler is responsible
-	for ensuring that the steps in this workflow are performed in the
-	right order. As each step is performed, the Scheduler records the
-	state of the workflow, such as \"step not yet started,\" \"step
-	running,\" or \"step completed." The state information should also
-	include an upper limit of the time allowed for the step to finish,
-	called the complete-by time. If a step requires access to a remote
-	service or resource, the Scheduler invokes the appropriate Agent,
-	passing it the details of the work to be performed. The Scheduler
-	typically communicates with an Agent using asynchronous
-	request/response messaging. This can be implemented using queues,
-	although other distributed messaging technologies could be used
-	instead.
+-   The  **Scheduler** arranges for the steps that make up the task to be executed and orchestrates their operation. These steps can be combined into a pipeline or workflow. The Scheduler is responsible for ensuring that the steps in this workflow are performed in the right order. As each step is performed, the Scheduler records the state of the workflow, such as \"step not yet started,\" \"step running,\" or \"step completed." The state information should also include an upper limit of the time allowed for the step to finish, called the complete-by time. If a step requires access to a remote service or resource, the Scheduler invokes the appropriate Agent, passing it the details of the work to be performed. The Scheduler typically communicates with an Agent using asynchronous request/response messaging. This can be implemented using queues, although other distributed messaging technologies could be used instead.
 
-	> The Scheduler performs a similar function to the Process Manager
-	> in the  [Process Manager pattern](https://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html).
-	> The actual workflow is typically defined and implemented by a
-	> workflow engine that\'s controlled by the Scheduler. This approach
-	> decouples the business logic in the workflow from the Scheduler.
+	> The Scheduler performs a similar function to the Process Manager in the  [Process Manager pattern](https://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html). The actual workflow is typically defined and implemented by a workflow engine that\'s controlled by the Scheduler. This approach decouples the business logic in the workflow from the Scheduler.
 
--   The  **Agent** contains logic that encapsulates a call to a remote
-	service, or access to a remote resource referenced by a step in a
-	task. Each Agent typically wraps calls to a single service or
-	resource, implementing the appropriate error handling and retry
-	logic (subject to a timeout constraint, described later). If the
-	steps in the workflow being run by the Scheduler use several
-	services and resources across different steps, each step might
-	reference a different Agent (this is an implementation detail of the
-	pattern).
+-   The  **Agent** contains logic that encapsulates a call to a remote service, or access to a remote resource referenced by a step in a task. Each Agent typically wraps calls to a single service or resource, implementing the appropriate error handling and retry logic (subject to a timeout constraint, described later). If the steps in the workflow being run by the Scheduler use several services and resources across different steps, each step might reference a different Agent (this is an implementation detail of the pattern).
+-   The  **Supervisor** monitors the status of the steps in the task being performed by the Scheduler. It runs periodically (the frequency will be system-specific), and examines the status of steps maintained by the Scheduler. If it detects any that have timed out or failed, it arranges for the appropriate Agent to recover the step or execute the appropriate remedial action (this might involve modifying the status of a step). Note that the recovery or remedial actions are implemented by the Scheduler and Agents. The Supervisor should simply request that these actions be performed.
 
--   The  **Supervisor** monitors the status of the steps in the task
-	being performed by the Scheduler. It runs periodically (the
-	frequency will be system-specific), and examines the status of steps
-	maintained by the Scheduler. If it detects any that have timed out
-	or failed, it arranges for the appropriate Agent to recover the step
-	or execute the appropriate remedial action (this might involve
-	modifying the status of a step). Note that the recovery or remedial
-	actions are implemented by the Scheduler and Agents. The Supervisor
-	should simply request that these actions be performed.
+The Scheduler, Agent, and Supervisor are logical components and their physical implementation depends on the technology being used. For example, several logical agents might be implemented as part of a single web service.
 
-The Scheduler, Agent, and Supervisor are logical components and their
-physical implementation depends on the technology being used. For
-example, several logical agents might be implemented as part of a single
-web service.
+The Scheduler maintains information about the progress of the task and the state of each step in a durable data store, called the state store. The Supervisor can use this information to help determine whether a step has failed. The figure illustrates the relationship between the Scheduler, the Agents, the Supervisor, and the state store.
 
-The Scheduler maintains information about the progress of the task and
-the state of each step in a durable data store, called the state store.
-The Supervisor can use this information to help determine whether a step
-has failed. The figure illustrates the relationship between the
-Scheduler, the Agents, the Supervisor, and the state store.
+<img src="./attachments/463533396.png" alt="" />
 
-<kbd><img src="./attachments/463533396.png" alt=""> </kbd>
+> This diagram shows a simplified version of the pattern. In a real implementation, there might be many instances of the Scheduler running concurrently, each a subset of tasks. Similarly, the system could run multiple instances of each Agent, or even multiple Supervisors. In this case, Supervisors must coordinate their work with each other carefully to ensure that they don't compete to recover the same failed steps and tasks. The  [Leader Election pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/leader-election) provides one possible solution to this problem.
 
-> This diagram shows a simplified version of the pattern. In a real
-> implementation, there might be many instances of the Scheduler running
-> concurrently, each a subset of tasks. Similarly, the system could run
-> multiple instances of each Agent, or even multiple Supervisors. In
-> this case, Supervisors must coordinate their work with each other
-> carefully to ensure that they don't compete to recover the same failed
-> steps and tasks. The  [Leader Election
-> pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/leader-election) provides
-> one possible solution to this problem.
+When the application is ready to run a task, it submits a request to the Scheduler. The Scheduler records initial state information about the task and its steps (for example, step not yet started) in the state store and then starts performing the operations defined by the workflow. As the Scheduler starts each step, it updates the information about the state of that step in the state store (for example, step running).
 
-When the application is ready to run a task, it submits a request to the
-Scheduler. The Scheduler records initial state information about the
-task and its steps (for example, step not yet started) in the state
-store and then starts performing the operations defined by the workflow.
-As the Scheduler starts each step, it updates the information about the
-state of that step in the state store (for example, step running).
+If a step references a remote service or resource, the Scheduler sends a message to the appropriate Agent. The message contains the information that the Agent needs to pass to the service or access the resource, in addition to the complete-by time for the operation. If the Agent completes its operation successfully, it returns a response to the Scheduler. The Scheduler can then update the state information in the state store (for example, step completed) and perform the next step. This process continues until the entire task is complete.
 
-If a step references a remote service or resource, the Scheduler sends a
-message to the appropriate Agent. The message contains the information
-that the Agent needs to pass to the service or access the resource, in
-addition to the complete-by time for the operation. If the Agent
-completes its operation successfully, it returns a response to the
-Scheduler. The Scheduler can then update the state information in the
-state store (for example, step completed) and perform the next step.
-This process continues until the entire task is complete.
+An Agent can implement any retry logic that\'s necessary to perform its work. However, if the Agent doesn\'t complete its work before the complete-by period expires, the Scheduler will assume that the operation has failed. In this case, the Agent should stop its work and not try to return anything to the Scheduler (not even an error message), or try any form of recovery. The reason for this restriction is that, after a step has timed out or failed, another instance of the Agent might be scheduled to run the failing step (this process is described later).
 
-An Agent can implement any retry logic that\'s necessary to perform its
-work. However, if the Agent doesn\'t complete its work before the
-complete-by period expires, the Scheduler will assume that the operation
-has failed. In this case, the Agent should stop its work and not try to
-return anything to the Scheduler (not even an error message), or try any
-form of recovery. The reason for this restriction is that, after a step
-has timed out or failed, another instance of the Agent might be
-scheduled to run the failing step (this process is described later).
+If the Agent fails, the Scheduler won\'t receive a response. The pattern doesn\'t make a distinction between a step that has timed out and one that has genuinely failed.
 
-If the Agent fails, the Scheduler won\'t receive a response. The pattern
-doesn\'t make a distinction between a step that has timed out and one
-that has genuinely failed.
+If a step times out or fails, the state store will contain a record that indicates that the step is running, but the complete-by time will have passed. The Supervisor looks for steps like this and tries to recover them. One possible strategy is for the Supervisor to update the complete-by value to extend the time available to complete the step, and then send a message to the Scheduler identifying the step that has timed out. The Scheduler can then try to repeat this step. However, this design requires the tasks to be idempotent.
 
-If a step times out or fails, the state store will contain a record that
-indicates that the step is running, but the complete-by time will have
-passed. The Supervisor looks for steps like this and tries to recover
-them. One possible strategy is for the Supervisor to update the
-complete-by value to extend the time available to complete the step, and
-then send a message to the Scheduler identifying the step that has timed
-out. The Scheduler can then try to repeat this step. However, this
-design requires the tasks to be idempotent.
+The Supervisor might need to prevent the same step from being retried if it continually fails or times out. To do this, the Supervisor could maintain a retry count for each step, along with the state information, in the state store. If this count exceeds a predefined threshold the Supervisor can adopt a strategy of waiting for an extended period before notifying the Scheduler that it should retry the step, in the expectation that the fault will be resolved during this period. Alternatively, the Supervisor can send a message to the Scheduler to request the entire task be undone by implementing a  [Compensating Transaction pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction). This approach will depend on the Scheduler and Agents providing the information necessary to implement the compensating operations for each step that completed successfully.
 
-The Supervisor might need to prevent the same step from being retried if
-it continually fails or times out. To do this, the Supervisor could
-maintain a retry count for each step, along with the state information,
-in the state store. If this count exceeds a predefined threshold the
-Supervisor can adopt a strategy of waiting for an extended period before
-notifying the Scheduler that it should retry the step, in the
-expectation that the fault will be resolved during this period.
-Alternatively, the Supervisor can send a message to the Scheduler to
-request the entire task be undone by implementing a  [Compensating Transaction pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction).
-This approach will depend on the Scheduler and Agents providing the
-information necessary to implement the compensating operations for each
-step that completed successfully.
+> It isn\'t the purpose of the Supervisor to monitor the Scheduler and Agents, and restart them if they fail. This aspect of the system should be handled by the infrastructure these components are running in. Similarly, the Supervisor shouldn\'t have knowledge of the actual business operations that the tasks being performed by the Scheduler are running (including how to compensate should these tasks fail). This is the purpose of the workflow logic implemented by the Scheduler. The sole responsibility of the Supervisor is to determine whether a step has failed and arrange either for it to be repeated or for the entire task containing the failed step to be undone.
 
-> It isn\'t the purpose of the Supervisor to monitor the Scheduler and
-> Agents, and restart them if they fail. This aspect of the system
-> should be handled by the infrastructure these components are running
-> in. Similarly, the Supervisor shouldn\'t have knowledge of the actual
-> business operations that the tasks being performed by the Scheduler
-> are running (including how to compensate should these tasks fail).
-> This is the purpose of the workflow logic implemented by the
-> Scheduler. The sole responsibility of the Supervisor is to determine
-> whether a step has failed and arrange either for it to be repeated or
-> for the entire task containing the failed step to be undone.
+If the Scheduler is restarted after a failure, or the workflow being performed by the Scheduler terminates unexpectedly, the Scheduler should be able to determine the status of any inflight task that it was handling when it failed, and be prepared to resume this task from that point. The implementation details of this process are likely to be system-specific. If the task can\'t be recovered, it might be necessary to undo the work already performed by the task. This might also require implementing a  [compensating transaction](https://docs.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction).
 
-If the Scheduler is restarted after a failure, or the workflow being
-performed by the Scheduler terminates unexpectedly, the Scheduler should
-be able to determine the status of any inflight task that it was
-handling when it failed, and be prepared to resume this task from that
-point. The implementation details of this process are likely to be
-system-specific. If the task can\'t be recovered, it might be necessary
-to undo the work already performed by the task. This might also require
-implementing a  [compensating transaction](https://docs.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction).
-
-The key advantage of this pattern is that the system is resilient in the
-event of unexpected temporary or unrecoverable failures. The system can
-be constructed to be self-healing. For example, if an Agent or the
-Scheduler fails, a new one can be started and the Supervisor can arrange
-for a task to be resumed. If the Supervisor fails, another instance can
-be started and can take over from where the failure occurred. If the
-Supervisor is scheduled to run periodically, a new instance can be
-automatically started after a predefined interval. The state store can
-be replicated to reach an even greater degree of resiliency.
+The key advantage of this pattern is that the system is resilient in the event of unexpected temporary or unrecoverable failures. The system can be constructed to be self-healing. For example, if an Agent or the Scheduler fails, a new one can be started and the Supervisor can arrange for a task to be resumed. If the Supervisor fails, another instance can be started and can take over from where the failure occurred. If the Supervisor is scheduled to run periodically, a new instance can be automatically started after a predefined interval. The state store can be replicated to reach an even greater degree of resiliency.
 
 #### Issues and Considerations
 
-You should consider the following points when deciding how to implement
-this pattern:
+You should consider the following points when deciding how to implement this pattern:
 
--   This pattern can be difficult to implement and requires thorough
-	testing of each possible failure mode of the system.
-
--   The recovery/retry logic implemented by the Scheduler is complex and
-	dependent on state information held in the state store. It might
-	also be necessary to record the information required to implement a
-	compensating transaction in a durable data store.
-
--   How often the Supervisor runs will be important. It should run often
-	enough to prevent any failed steps from blocking an application for
-	an extended period, but it shouldn\'t run so often that it becomes
-	an overhead.
-
--   The steps performed by an Agent could be run more than once. The
-	logic that implements these steps should be idempotent.
+-   This pattern can be difficult to implement and requires thorough testing of each possible failure mode of the system.
+-   The recovery/retry logic implemented by the Scheduler is complex and dependent on state information held in the state store. It might also be necessary to record the information required to implement a compensating transaction in a durable data store.
+-   How often the Supervisor runs will be important. It should run often enough to prevent any failed steps from blocking an application for an extended period, but it shouldn\'t run so often that it becomes an overhead.
+-   The steps performed by an Agent could be run more than once. The logic that implements these steps should be idempotent.
 
 #### When to use this Pattern
 
-Use this pattern when a process that runs in a distributed environment,
-such as the cloud, must be resilient to communications failure and/or
-operational failure.
+Use this pattern when a process that runs in a distributed environment, such as the cloud, must be resilient to communications failure and/or operational failure.
 
-This pattern might not be suitable for tasks that don\'t invoke remote
-services or access remote resources.
+This pattern might not be suitable for tasks that don\'t invoke remote services or access remote resources.
 
 ### Sequential Convoy Pattern
 
 #### Overview
 
-Process a set of related messages in a defined order, without blocking
-processing of other groups of messages.
+Process a set of related messages in a defined order, without blocking processing of other groups of messages.
 
 #### Context and Problem
 
-Applications often need to process a sequence of messages in the order
-they arrive, while still being able to scale out to handle increased
-load. In a distributed architecture, processing these messages in order
-is not straightforward, because the workers can scale independently and
-often pull messages independently, using a  [Competing Consumers
-pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/competing-consumers).
+Applications often need to process a sequence of messages in the order they arrive, while still being able to scale out to handle increased load. In a distributed architecture, processing these messages in order is not straightforward, because the workers can scale independently and often pull messages independently, using a  [Competing Consumers pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/competing-consumers).
 
-For example, an order tracking system receives a ledger containing
-orders and the relevant operations on those orders. These operations
-could be to create an order, add a transaction to the order, modify a
-past transaction, or delete an order. In this system, operations must be
-performed in a first-in-first-out (FIFO) manner, but only at the order
-level. However, the initial queue receives a ledger containing
-transactions for many orders, which may be interleaved.
+For example, an order tracking system receives a ledger containing orders and the relevant operations on those orders. These operations could be to create an order, add a transaction to the order, modify a past transaction, or delete an order. In this system, operations must be performed in a first-in-first-out (FIFO) manner, but only at the order level. However, the initial queue receives a ledger containing transactions for many orders, which may be interleaved.
 
 #### Solution
 
-Push related messages into categories within the queuing system, and
-have the queue listeners lock and pull only from one category, one
-message at a time.
+Push related messages into categories within the queuing system, and have the queue listeners lock and pull only from one category, one message at a time.
 
-Here\'s what the general Sequential Convoy pattern looks like:
+Here\'s what the general Sequential Convoy pattern looks like: 
 
-<kbd><img src="./attachments/463533398.png" alt=""> </kbd>
+<img src="./attachments/463533398.png" alt="" />
 
-In the queue, messages for different categories may be interleaved, as
-shown in the following diagram:
+In the queue, messages for different categories may be interleaved, as shown in the following diagram:
 
-<kbd><img src="./attachments/463533399.png" alt=""> </kbd>
+<img src="./attachments/463533399.png" alt="" />
 
 #### Issues and Considerations
 
@@ -5586,705 +4543,250 @@ shown in the following diagram:
 
 #### Overview
 
-Divide a data store into a set of horizontal partitions or shards. This
-can improve scalability when storing and accessing large volumes of
-data.
+Divide a data store into a set of horizontal partitions or shards. This can improve scalability when storing and accessing large volumes of data.
 
 #### Context and Problem
 
-A data store hosted by a single server might be subject to the following
-limitations:
+A data store hosted by a single server might be subject to the following limitations:
 
--   **Storage space**. A data store for a large-scale cloud application
-	is expected to contain a huge volume of data that could increase
-	significantly over time. A server typically provides only a finite
-	amount of disk storage, but you can replace existing disks with
-	larger ones, or add further disks to a machine as data volumes grow.
-	However, the system will eventually reach a limit where it isn\'t
-	possible to easily increase the storage capacity on a given server.
+-   **Storage space**. A data store for a large-scale cloud application is expected to contain a huge volume of data that could increase significantly over time. A server typically provides only a finite amount of disk storage, but you can replace existing disks with larger ones, or add further disks to a machine as data volumes grow. However, the system will eventually reach a limit where it isn\'t possible to easily increase the storage capacity on a given server.
+-   **Computing resources**. A cloud application is required to support a large number of concurrent users, each of which run queries that retrieve information from the data store. A single server hosting the data store might not be able to provide the necessary computing power to support this load, resulting in extended response times for users and frequent failures as applications attempting to store and retrieve data time out. It might be possible to add memory or upgrade processors, but the system will reach a limit when it isn\'t possible to increase the compute resources any further.
+-   **Network bandwidth**. Ultimately, the performance of a data store running on a single server is governed by the rate the server can receive requests and send replies. It\'s possible that the volume of network traffic might exceed the capacity of the network used to connect to the server, resulting in failed requests.
+-   **Geography**. It might be necessary to store data generated by specific users in the same region as those users for legal, compliance, or performance reasons, or to reduce latency of data access. If the users are dispersed across different countries or regions, it might not be possible to store the entire data for the application in a single data store.
 
--   **Computing resources**. A cloud application is required to support
-	a large number of concurrent users, each of which run queries that
-	retrieve information from the data store. A single server hosting
-	the data store might not be able to provide the necessary computing
-	power to support this load, resulting in extended response times for
-	users and frequent failures as applications attempting to store and
-	retrieve data time out. It might be possible to add memory or
-	upgrade processors, but the system will reach a limit when it isn\'t
-	possible to increase the compute resources any further.
-
--   **Network bandwidth**. Ultimately, the performance of a data store
-	running on a single server is governed by the rate the server can
-	receive requests and send replies. It\'s possible that the volume of
-	network traffic might exceed the capacity of the network used to
-	connect to the server, resulting in failed requests.
-
--   **Geography**. It might be necessary to store data generated by
-	specific users in the same region as those users for legal,
-	compliance, or performance reasons, or to reduce latency of data
-	access. If the users are dispersed across different countries or
-	regions, it might not be possible to store the entire data for the
-	application in a single data store.
-
-Scaling vertically by adding more disk capacity, processing power,
-memory, and network connections can postpone the effects of some of
-these limitations, but it\'s likely to only be a temporary solution. A
-commercial cloud application capable of supporting large numbers of
-users and high volumes of data must be able to scale almost
-indefinitely, so vertical scaling isn\'t necessarily the best solution.
+Scaling vertically by adding more disk capacity, processing power, memory, and network connections can postpone the effects of some of these limitations, but it\'s likely to only be a temporary solution. A commercial cloud application capable of supporting large numbers of users and high volumes of data must be able to scale almost indefinitely, so vertical scaling isn\'t necessarily the best solution.
 
 #### Solution
 
-Divide the data store into horizontal partitions or shards. Each shard
-has the same schema, but holds its own distinct subset of the data. A
-shard is a data store in its own right (it can contain the data for many
-entities of different types), running on a server acting as a storage
-node.
+Divide the data store into horizontal partitions or shards. Each shard has the same schema, but holds its own distinct subset of the data. A shard is a data store in its own right (it can contain the data for many entities of different types), running on a server acting as a storage node.
 
 This pattern has the following benefits:
 
--   You can scale the system out by adding further shards running on
-	additional storage nodes.
+-   You can scale the system out by adding further shards running on additional storage nodes.
+-   A system can use off-the-shelf hardware rather than specialized and expensive computers for each storage node.
+-   You can reduce contention and improve performance by balancing the workload across shards.
+-   In the cloud, shards can be located physically close to the users that\'ll access the data.
 
--   A system can use off-the-shelf hardware rather than specialized and
-	expensive computers for each storage node.
+When dividing a data store up into shards, decide which data should be placed in each shard. A shard typically contains items that fall within a specified range determined by one or more attributes of the data. These attributes form the shard key (sometimes referred to as the partition key). The shard key should be static. It shouldn\'t be based on data that might change.
 
--   You can reduce contention and improve performance by balancing the
-	workload across shards.
+Sharding physically organizes the data. When an application stores and retrieves data, the sharding logic directs the application to the appropriate shard. This sharding logic can be implemented as part of the data access code in the application, or it could be implemented by the data storage system if it transparently supports sharding.
 
--   In the cloud, shards can be located physically close to the users
-	that\'ll access the data.
+Abstracting the physical location of the data in the sharding logic provides a high level of control over which shards contain which data. It also enables data to migrate between shards without reworking the business logic of an application if the data in the shards need to be redistributed later (for example, if the shards become unbalanced). The tradeoff is the additional data access overhead required in determining the location of each data item as it\'s retrieved.
 
-When dividing a data store up into shards, decide which data should be
-placed in each shard. A shard typically contains items that fall within
-a specified range determined by one or more attributes of the data.
-These attributes form the shard key (sometimes referred to as the
-partition key). The shard key should be static. It shouldn\'t be based
-on data that might change.
+To ensure optimal performance and scalability, it\'s important to split the data in a way that\'s appropriate for the types of queries that the application performs. In many cases, it\'s unlikely that the sharding scheme will exactly match the requirements of every query. For example, in a multi-tenant system an application might need to retrieve tenant data using the tenant ID, but it might also need to look up this data based on some other attribute such as the tenant's name or location. To handle these situations, implement a sharding strategy with a shard key that supports the most commonly performed queries.
 
-Sharding physically organizes the data. When an application stores and
-retrieves data, the sharding logic directs the application to the
-appropriate shard. This sharding logic can be implemented as part of the
-data access code in the application, or it could be implemented by the
-data storage system if it transparently supports sharding.
-
-Abstracting the physical location of the data in the sharding logic
-provides a high level of control over which shards contain which data.
-It also enables data to migrate between shards without reworking the
-business logic of an application if the data in the shards need to be
-redistributed later (for example, if the shards become unbalanced). The
-tradeoff is the additional data access overhead required in determining
-the location of each data item as it\'s retrieved.
-
-To ensure optimal performance and scalability, it\'s important to split
-the data in a way that\'s appropriate for the types of queries that the
-application performs. In many cases, it\'s unlikely that the sharding
-scheme will exactly match the requirements of every query. For example,
-in a multi-tenant system an application might need to retrieve tenant
-data using the tenant ID, but it might also need to look up this data
-based on some other attribute such as the tenant's name or location. To
-handle these situations, implement a sharding strategy with a shard key
-that supports the most commonly performed queries.
-
-If queries regularly retrieve data using a combination of attribute
-values, you can likely define a composite shard key by linking
-attributes together. Alternatively, use a pattern such as 
-[Index Table](https://docs.microsoft.com/en-us/azure/architecture/patterns/index-table) to
-provide fast lookup to data based on attributes that aren\'t covered by
-the shard key.
+If queries regularly retrieve data using a combination of attribute values, you can likely define a composite shard key by linking attributes together. Alternatively, use a pattern such as [Index Table](https://docs.microsoft.com/en-us/azure/architecture/patterns/index-table) to provide fast lookup to data based on attributes that aren\'t covered by the shard key.
 
 Sharding Strategies
 -------------------
 
-Three strategies are commonly used when selecting the shard key and
-deciding how to distribute data across shards. Note that there doesn\'t
-have to be a one-to-one correspondence between shards and the servers
-that host them---a single server can host multiple shards. The
-strategies are:
+Three strategies are commonly used when selecting the shard key and deciding how to distribute data across shards. Note that there doesn\'t have to be a one-to-one correspondence between shards and the servers that host them---a single server can host multiple shards. The strategies are:
 
-**The Lookup strategy**. In this strategy the sharding logic implements
-a map that routes a request for data to the shard that contains that
-data using the shard key. In a multi-tenant application all the data for
-a tenant might be stored together in a shard using the tenant ID as the
-shard key. Multiple tenants might share the same shard, but the data for
-a single tenant won\'t be spread across multiple shards. The figure
-illustrates sharding tenant data based on tenant IDs.
+**The Lookup strategy**. In this strategy the sharding logic implements a map that routes a request for data to the shard that contains that data using the shard key. In a multi-tenant application all the data for a tenant might be stored together in a shard using the tenant ID as the shard key. Multiple tenants might share the same shard, but the data for a single tenant won\'t be spread across multiple shards. The figure illustrates sharding tenant data based on tenant IDs.
 
-<kbd><img src="./attachments/463533401.png" alt=""> </kbd>
+<img src="./attachments/463533401.png" alt="" />
 
-The mapping between the shard key and the physical storage can be based
-on physical shards where each shard key maps to a physical partition.
-Alternatively, a more flexible technique for rebalancing shards is
-virtual partitioning, where shard keys map to the same number of virtual
-shards, which in turn map to fewer physical partitions. In this
-approach, an application locates data using a shard key that refers to a
-virtual shard, and the system transparently maps virtual shards to
-physical partitions. The mapping between a virtual shard and a physical
-partition can change without requiring the application code be modified
-to use a different set of shard keys.
+The mapping between the shard key and the physical storage can be based on physical shards where each shard key maps to a physical partition. Alternatively, a more flexible technique for rebalancing shards is virtual partitioning, where shard keys map to the same number of virtual shards, which in turn map to fewer physical partitions. In this approach, an application locates data using a shard key that refers to a virtual shard, and the system transparently maps virtual shards to physical partitions. The mapping between a virtual shard and a physical partition can change without requiring the application code be modified to use a different set of shard keys.
 
-**The Range strategy**. This strategy groups related items together in
-the same shard, and orders them by shard key---the shard keys are
-sequential. It\'s useful for applications that frequently retrieve sets
-of items using range queries (queries that return a set of data items
-for a shard key that falls within a given range). For example, if an
-application regularly needs to find all orders placed in a given month,
-this data can be retrieved more quickly if all orders for a month are
-stored in date and time order in the same shard. If each order was
-stored in a different shard, they\'d have to be fetched individually by
-performing a large number of point queries (queries that return a single
-data item). The next figure illustrates storing sequential sets (ranges)
-of data in shard.
+**The Range strategy**. This strategy groups related items together in the same shard, and orders them by shard key---the shard keys are sequential. It\'s useful for applications that frequently retrieve sets of items using range queries (queries that return a set of data items for a shard key that falls within a given range). For example, if an application regularly needs to find all orders placed in a given month 
+this data can be retrieved more quickly if all orders for a month are stored in date and time order in the same shard. If each order was stored in a different shard, they\'d have to be fetched individually by performing a large number of point queries (queries that return a single data item). The next figure illustrates storing sequential sets (ranges) of data in shard.
 
-<kbd><img src="./attachments/463533402.png" alt=""> </kbd>
+<img src="./attachments/463533402.png" alt="" />
 
-In this example, the shard key is a composite key containing the order
-month as the most significant element, followed by the order day and the
-time. The data for orders is naturally sorted when new orders are
-created and added to a shard. Some data stores support two-part shard
-keys containing a partition key element that identifies the shard and a
-row key that uniquely identifies an item in the shard. Data is usually
-held in row key order in the shard. Items that are subject to range
-queries and need to be grouped together can use a shard key that has the
-same value for the partition key but a unique value for the row key.
+In this example, the shard key is a composite key containing the order month as the most significant element, followed by the order day and the time. The data for orders is naturally sorted when new orders are created and added to a shard. Some data stores support two-part shard keys containing a partition key element that identifies the shard and a row key that uniquely identifies an item in the shard. Data is usually held in row key order in the shard. Items that are subject to range queries and need to be grouped together can use a shard key that has the same value for the partition key but a unique value for the row key.
 
-**The Hash strategy**. The purpose of this strategy is to reduce the
-chance of hotspots (shards that receive a disproportionate amount of
-load). It distributes the data across the shards in a way that achieves
-a balance between the size of each shard and the average load that each
-shard will encounter. The sharding logic computes the shard to store an
-item in based on a hash of one or more attributes of the data. The
-chosen hashing function should distribute data evenly across the shards,
-possibly by introducing some random element into the computation. The
-next figure illustrates sharding tenant data based on a hash of tenant
-IDs.
+**The Hash strategy**. The purpose of this strategy is to reduce the chance of hotspots (shards that receive a disproportionate amount of load). It distributes the data across the shards in a way that achieves a balance between the size of each shard and the average load that each shard will encounter. The sharding logic computes the shard to store an item in based on a hash of one or more attributes of the data. The chosen hashing function should distribute data evenly across the shards, possibly by introducing some random element into the computation. The next figure illustrates sharding tenant data based on a hash of tenant IDs.
 
-<kbd><img src="./attachments/463533403.png" alt=""> </kbd>
+<img src="./attachments/463533403.png" alt="" />
 
-To understand the advantage of the Hash strategy over other sharding
-strategies, consider how a multi-tenant application that enrolls new
-tenants sequentially might assign the tenants to shards in the data
-store. When using the Range strategy, the data for tenants 1 to n will
-all be stored in shard A, the data for tenants n+1 to m will all be
-stored in shard B, and so on. If the most recently registered tenants
-are also the most active, most data activity will occur in a small
-number of shards, which could cause hotspots. In contrast, the Hash
-strategy allocates tenants to shards based on a hash of their tenant ID.
-This means that sequential tenants are most likely to be allocated to
-different shards, which will distribute the load across them. The
-previous figure shows this for tenants 55 and 56.
+To understand the advantage of the Hash strategy over other sharding strategies, consider how a multi-tenant application that enrolls new tenants sequentially might assign the tenants to shards in the data store. When using the Range strategy, the data for tenants 1 to n will all be stored in shard A, the data for tenants n+1 to m will all be stored in shard B, and so on. If the most recently registered tenants are also the most active, most data activity will occur in a small number of shards, which could cause hotspots. In contrast, the Hash strategy allocates tenants to shards based on a hash of their tenant ID. This means that sequential tenants are most likely to be allocated to different shards, which will distribute the load across them. The previous figure shows this for tenants 55 and 56.
 
 The three sharding strategies have the following advantages and considerations:
 
--   **Lookup**. This offers more control over the way that shards are
-	configured and used. Using virtual shards reduces the impact when
-	rebalancing data because new physical partitions can be added to
-	even out the workload. The mapping between a virtual shard and the
-	physical partitions that implement the shard can be modified without
-	affecting application code that uses a shard key to store and
-	retrieve data. Looking up shard locations can impose an additional
-	overhead.
--   **Range**. This is easy to implement and works well with range
-	queries because they can often fetch multiple data items from a
-	single shard in a single operation. This strategy offers easier data
-	management. For example, if users in the same region are in the same
-	shard, updates can be scheduled in each time zone based on the local
-	load and demand pattern. However, this strategy doesn\'t provide
-	optimal balancing between shards. Rebalancing shards is difficult
-	and might not resolve the problem of uneven load if the majority of
-	activity is for adjacent shard keys.
--   **Hash**. This strategy offers a better chance of more even data and
-	load distribution. Request routing can be accomplished directly by
-	using the hash function. There\'s no need to maintain a map. Note
-	that computing the hash might impose an additional overhead. Also,
-	rebalancing shards is difficult.
+-   **Lookup**. This offers more control over the way that shards are configured and used. Using virtual shards reduces the impact when rebalancing data because new physical partitions can be added to even out the workload. The mapping between a virtual shard and the physical partitions that implement the shard can be modified without affecting application code that uses a shard key to store and retrieve data. Looking up shard locations can impose an additional overhead.
+-   **Range**. This is easy to implement and works well with range queries because they can often fetch multiple data items from a single shard in a single operation. This strategy offers easier data management. For example, if users in the same region are in the same shard, updates can be scheduled in each time zone based on the local load and demand pattern. However, this strategy doesn\'t provide optimal balancing between shards. Rebalancing shards is difficult and might not resolve the problem of uneven load if the majority of activity is for adjacent shard keys.
+-   **Hash**. This strategy offers a better chance of more even data and load distribution. Request routing can be accomplished directly by using the hash function. There\'s no need to maintain a map. Note: that computing the hash might impose an additional overhead. Also, rebalancing shards is difficult.
 
-Most common sharding systems implement one of the approaches described
-above, but you should also consider the business requirements of your
-applications and their patterns of data usage. For example, in a
-multi-tenant application:
+Most common sharding systems implement one of the approaches described above, but you should also consider the business requirements of your applications and their patterns of data usage. For example, in a multi-tenant application:
 
--   You can shard data based on workload. You could segregate the data
-	for highly volatile tenants in separate shards. The speed of data
-	access for other tenants might be improved as a result.
-
--   You can shard data based on the location of tenants. You can take
-	the data for tenants in a specific geographic region offline for
-	backup and maintenance during off-peak hours in that region, while
-	the data for tenants in other regions remains online and accessible
-	during their business hours.
-
--   High-value tenants could be assigned their own private, high
-	performing, lightly loaded shards, whereas lower-value tenants might
-	be expected to share more densely-packed, busy shards.
-
--   The data for tenants that need a high degree of data isolation and
-	privacy can be stored on a completely separate server.
+-   You can shard data based on workload. You could segregate the data for highly volatile tenants in separate shards. The speed of data access for other tenants might be improved as a result.
+-   You can shard data based on the location of tenants. You can take the data for tenants in a specific geographic region offline for backup and maintenance during off-peak hours in that region, while the data for tenants in other regions remains online and accessible during their business hours.
+-   High-value tenants could be assigned their own private, high performing, lightly loaded shards, whereas lower-value tenants might be expected to share more densely-packed, busy shards.
+-   The data for tenants that need a high degree of data isolation and privacy can be stored on a completely separate server.
 
 Scaling and data movement operations 
 ------------------------------------
 
-Each of the sharding strategies implies different capabilities and
-levels of complexity for managing scale in, scale out, data movement,
-and maintaining state.
+Each of the sharding strategies implies different capabilities and levels of complexity for managing scale in, scale out, data movement, and maintaining state.
 
-The Lookup strategy permits scaling and data movement operations to be
-carried out at the user level, either online or offline. The technique
-is to suspend some or all user activity (perhaps during off-peak
-periods), move the data to the new virtual partition or physical shard,
-change the mappings, invalidate or refresh any caches that hold this
-data, and then allow user activity to resume. Often this type of
-operation can be centrally managed. The Lookup strategy requires state
-to be highly cacheable and replica friendly.
+The Lookup strategy permits scaling and data movement operations to be carried out at the user level, either online or offline. The technique is to suspend some or all user activity (perhaps during off-peak periods), move the data to the new virtual partition or physical shard, change the mappings, invalidate or refresh any caches that hold this data, and then allow user activity to resume. Often this type of operation can be centrally managed. The Lookup strategy requires state to be highly cacheable and replica friendly.
 
-The Range strategy imposes some limitations on scaling and data movement
-operations, which must typically be carried out when a part or all of
-the data store is offline because the data must be split and merged
-across the shards. Moving the data to rebalance shards might not resolve
-the problem of uneven load if the majority of activity is for adjacent
-shard keys or data identifiers that are within the same range. The Range
-strategy might also require some state to be maintained in order to map
-ranges to the physical partitions.
+The Range strategy imposes some limitations on scaling and data movement operations, which must typically be carried out when a part or all of the data store is offline because the data must be split and merged across the shards. Moving the data to rebalance shards might not resolve the problem of uneven load if the majority of activity is for adjacent shard keys or data identifiers that are within the same range. The Range strategy might also require some state to be maintained in order to map ranges to the physical partitions.
 
-The Hash strategy makes scaling and data movement operations more
-complex because the partition keys are hashes of the shard keys or data
-identifiers. The new location of each shard must be determined from the
-hash function, or the function modified to provide the correct mappings.
-However, the Hash strategy doesn\'t require maintenance of state.
+The Hash strategy makes scaling and data movement operations more complex because the partition keys are hashes of the shard keys or data identifiers. The new location of each shard must be determined from the hash function, or the function modified to provide the correct mappings. However, the Hash strategy doesn\'t require maintenance of state.
 
 #### Issues and Considerations
 
-Consider the following points when deciding how to implement this
-pattern:
+Consider the following points when deciding how to implement this pattern:
 
--   Sharding is complementary to other forms of partitioning, such as
-	vertical partitioning and functional partitioning. For example, a
-	single shard can contain entities that have been partitioned
-	vertically, and a functional partition can be implemented as
-	multiple shards. For more information about partitioning, see the 
-	[Data Partitioning
-	Guidance](https://msdn.microsoft.com/library/dn589795.aspx).
+-   Sharding is complementary to other forms of partitioning, such as vertical partitioning and functional partitioning. For example, a single shard can contain entities that have been partitioned vertically, and a functional partition can be implemented as multiple shards. For more information about partitioning, see the [Data Partitioning Guidance](https://msdn.microsoft.com/library/dn589795.aspx).
+-   Keep shards balanced so they all handle a similar volume of I/O. As data is inserted and deleted, it\'s necessary to periodically rebalance the shards to guarantee an even distribution and to reduce the chance of hotspots. Rebalancing can be an expensive operation. To reduce the necessity of rebalancing, plan for growth by ensuring that each shard contains sufficient free space to handle the expected volume of changes. You should also develop strategies and scripts you can use to quickly rebalance shards if this becomes necessary.
+-   Use stable data for the shard key. If the shard key changes, the corresponding data item might have to move between shards, increasing the amount of work performed by update operations. For this reason, avoid basing the shard key on potentially volatile information. Instead, look for attributes that are invariant or that naturally form a key.
+-   Ensure that shard keys are unique. For example, avoid using autoincrementing fields as the shard key. Is some systems, autoincremented fields can\'t be coordinated across shards, possibly resulting in items in different shards having the same shard key.
 
--   Keep shards balanced so they all handle a similar volume of I/O. As
-	data is inserted and deleted, it\'s necessary to periodically
-	rebalance the shards to guarantee an even distribution and to reduce
-	the chance of hotspots. Rebalancing can be an expensive operation.
-	To reduce the necessity of rebalancing, plan for growth by ensuring
-	that each shard contains sufficient free space to handle the
-	expected volume of changes. You should also develop strategies and
-	scripts you can use to quickly rebalance shards if this becomes
-	necessary.
+	> Autoincremented values in other fields that are not shard keys can also cause problems. For example, if you use autoincremented fields to generate unique IDs, then two different items located in different shards might be assigned the same ID.
 
--   Use stable data for the shard key. If the shard key changes, the
-	corresponding data item might have to move between shards,
-	increasing the amount of work performed by update operations. For
-	this reason, avoid basing the shard key on potentially volatile
-	information. Instead, look for attributes that are invariant or that
-	naturally form a key.
+-   It might not be possible to design a shard key that matches the requirements of every possible query against the data. Shard the data to support the most frequently performed queries, and if necessary create secondary index tables to support queries that retrieve data using criteria based on attributes that aren\'t part of the shard key. For more information, see the  [Index Table pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/index-table).
+-   Queries that access only a single shard are more efficient than those that retrieve data from multiple shards, so avoid implementing a sharding system that results in applications performing large numbers of queries that join data held in different shards. Remember that a single shard can contain the data for multiple types of entities. Consider denormalizing your data to keep related entities that are commonly queried together (such as the details of customers and the orders that they have placed) in the same shard to reduce the number of separate reads that an application performs.
 
--   Ensure that shard keys are unique. For example, avoid using
-	autoincrementing fields as the shard key. Is some systems,
-	autoincremented fields can\'t be coordinated across shards, possibly
-	resulting in items in different shards having the same shard key.
+	> If an entity in one shard references an entity stored in another shard, include the shard key for the second entity as part of the schema for the first entity. This can help to improve the performance of queries that reference related data across shards. 
+	
+-   If an application must perform queries that retrieve data from multiple shards, it might be possible to fetch this data by using parallel tasks. Examples include fan-out queries, where data from multiple shards is retrieved in parallel and then aggregated into a single result. However, this approach inevitably adds some complexity to the data access logic of a solution.
+-   For many applications, creating a larger number of small shards can be more efficient than having a small number of large shards because they can offer increased opportunities for load balancing. This can also be useful if you anticipate the need to migrate shards from one physical location to another. Moving a small shard is quicker than moving a large one.
+-   Make sure the resources available to each shard storage node are sufficient to handle the scalability requirements in terms of data size and throughput. For more information, see the section "Designing Partitions for Scalability" in the  [Data Partitioning Guidance](https://msdn.microsoft.com/library/dn589795.aspx).
+-   Consider replicating reference data to all shards. If an operation that retrieves data from a shard also references static or slow-moving data as part of the same query, add this data to the shard. The application can then fetch all of the data for the query easily, without having to make an additional round trip to a separate data store.
 
-	> Autoincremented values in other fields that are not shard keys can
-	> also cause problems. For example, if you use autoincremented
-	> fields to generate unique IDs, then two different items located in
-	> different shards might be assigned the same ID.
-
--   It might not be possible to design a shard key that matches the
-	requirements of every possible query against the data. Shard the
-	data to support the most frequently performed queries, and if
-	necessary create secondary index tables to support queries that
-	retrieve data using criteria based on attributes that aren\'t part
-	of the shard key. For more information, see the  [Index Table
-	pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/index-table).
-
--   Queries that access only a single shard are more efficient than
-	those that retrieve data from multiple shards, so avoid implementing
-	a sharding system that results in applications performing large
-	numbers of queries that join data held in different shards. Remember
-	that a single shard can contain the data for multiple types of
-	entities. Consider denormalizing your data to keep related entities
-	that are commonly queried together (such as the details of customers
-	and the orders that they have placed) in the same shard to reduce
-	the number of separate reads that an application performs.
-
-	> If an entity in one shard references an entity stored in another
-	> shard, include the shard key for the second entity as part of the
-	> schema for the first entity. This can help to improve the
-	> performance of queries that reference related data across shards.
-
--   If an application must perform queries that retrieve data from
-	multiple shards, it might be possible to fetch this data by using
-	parallel tasks. Examples include fan-out queries, where data from
-	multiple shards is retrieved in parallel and then aggregated into a
-	single result. However, this approach inevitably adds some
-	complexity to the data access logic of a solution.
-
--   For many applications, creating a larger number of small shards can
-	be more efficient than having a small number of large shards because
-	they can offer increased opportunities for load balancing. This can
-	also be useful if you anticipate the need to migrate shards from one
-	physical location to another. Moving a small shard is quicker than
-	moving a large one.
-
--   Make sure the resources available to each shard storage node are
-	sufficient to handle the scalability requirements in terms of data
-	size and throughput. For more information, see the section
-	"Designing Partitions for Scalability" in the  [Data Partitioning
-	Guidance](https://msdn.microsoft.com/library/dn589795.aspx).
-
--   Consider replicating reference data to all shards. If an operation
-	that retrieves data from a shard also references static or
-	slow-moving data as part of the same query, add this data to the
-	shard. The application can then fetch all of the data for the query
-	easily, without having to make an additional round trip to a
-	separate data store.
-
-	> If reference data held in multiple shards changes, the system must
-	> synchronize these changes across all shards. The system can
-	> experience a degree of inconsistency while this synchronization
-	> occurs. If you do this, you should design your applications to be
-	> able to handle it.
-
--   It can be difficult to maintain referential integrity and
-	consistency between shards, so you should minimize operations that
-	affect data in multiple shards. If an application must modify data
-	across shards, evaluate whether complete data consistency is
-	actually required. Instead, a common approach in the cloud is to
-	implement eventual consistency. The data in each partition is
-	updated separately, and the application logic must take
-	responsibility for ensuring that the updates all complete
-	successfully, as well as handling the inconsistencies that can arise
-	from querying data while an eventually consistent operation is
-	running. For more information about implementing eventual
-	consistency, see the  [Data Consistency
-	Primer](https://msdn.microsoft.com/library/dn589800.aspx).
-
--   Configuring and managing a large number of shards can be a
-	challenge. Tasks such as monitoring, backing up, checking for
-	consistency, and logging or auditing must be accomplished on
-	multiple shards and servers, possibly held in multiple locations.
-	These tasks are likely to be implemented using scripts or other
-	automation solutions, but that might not completely eliminate the
-	additional administrative requirements.
-
--   Shards can be geolocated so that the data that they contain is close
-	to the instances of an application that use it. This approach can
-	considerably improve performance, but requires additional
-	consideration for tasks that must access multiple shards in
-	different locations.
+	> If reference data held in multiple shards changes, the system must synchronize these changes across all shards. The system can experience a degree of inconsistency while this synchronization occurs. If you do this, you should design your applications to be able to handle it.
+	
+-   It can be difficult to maintain referential integrity and consistency between shards, so you should minimize operations that affect data in multiple shards. If an application must modify data across shards, evaluate whether complete data consistency is actually required. Instead, a common approach in the cloud is to implement eventual consistency. The data in each partition is updated separately, and the application logic must take responsibility for ensuring that the updates all complete successfully, as well as handling the inconsistencies that can arise from querying data while an eventually consistent operation is running. For more information about implementing eventual consistency, see the  [Data Consistency Primer](https://msdn.microsoft.com/library/dn589800.aspx).
+-   Configuring and managing a large number of shards can be a challenge. Tasks such as monitoring, backing up, checking for consistency, and logging or auditing must be accomplished on multiple shards and servers, possibly held in multiple locations. These tasks are likely to be implemented using scripts or other automation solutions, but that might not completely eliminate the additional administrative requirements.
+-   Shards can be geolocated so that the data that they contain is close to the instances of an application that use it. This approach can considerably improve performance, but requires additional consideration for tasks that must access multiple shards in different locations.
 
 #### When to use this Pattern
 
-Use this pattern when a data store is likely to need to scale beyond the
-resources available to a single storage node, or to improve performance
-by reducing contention in a data store.
+Use this pattern when a data store is likely to need to scale beyond the resources available to a single storage node, or to improve performance by reducing contention in a data store.
 
-The primary focus of sharding is to improve the performance and
-scalability of a system, but as a by-product it can also improve
-availability due to how the data is divided into separate partitions. A
-failure in one partition doesn\'t necessarily prevent an application
-from accessing data held in other partitions, and an operator can
-perform maintenance or recovery of one or more partitions without making
-the entire data for an application inaccessible. For more information,
-see the  [Data Partitioning Guidance](https://msdn.microsoft.com/library/dn589795.aspx).
+The primary focus of sharding is to improve the performance and scalability of a system, but as a by-product it can also improve availability due to how the data is divided into separate partitions. A failure in one partition doesn\'t necessarily prevent an application from accessing data held in other partitions, and an operator can perform maintenance or recovery of one or more partitions without making the entire data for an application inaccessible. For more information, see the  [Data Partitioning Guidance](https://msdn.microsoft.com/library/dn589795.aspx).
 
 
 ### Sidecar Pattern
 
 #### Overview
 
-Deploy components of an application into a separate process or container
-to provide isolation and encapsulation. This pattern can also enable
-applications to be composed of heterogeneous components and
-technologies.
+Deploy components of an application into a separate process or container to provide isolation and encapsulation. This pattern can also enable applications to be composed of heterogeneous components and technologies.
 
-This pattern is named  *Sidecar* because it resembles a sidecar attached
-to a motorcycle. In the pattern, the sidecar is attached to a parent
-application and provides supporting features for the application. The
-sidecar also shares the same lifecycle as the parent application, being
-created and retired alongside the parent. The sidecar pattern is
-sometimes referred to as the sidekick pattern and is a decomposition
-pattern.
+This pattern is named  *Sidecar* because it resembles a sidecar attached to a motorcycle. In the pattern, the sidecar is attached to a parent application and provides supporting features for the application. The sidecar also shares the same lifecycle as the parent application, being created and retired alongside the parent. The sidecar pattern is sometimes referred to as the sidekick pattern and is a decomposition pattern.
 
 #### Context and Problem
 
-Applications and services often require related functionality, such as
-monitoring, logging, configuration, and networking services. These
-peripheral tasks can be implemented as separate components or services.
+Applications and services often require related functionality, such as monitoring, logging, configuration, and networking services. These peripheral tasks can be implemented as separate components or services.
 
-If they are tightly integrated into the application, they can run in the
-same process as the application, making efficient use of shared
-resources. However, this also means they are not well isolated, and an
-outage in one of these components can affect other components or the
-entire application. Also, they usually need to be implemented using the
-same language as the parent application. As a result, the component and
-the application have close interdependence on each other.
+If they are tightly integrated into the application, they can run in the same process as the application, making efficient use of shared resources. However, this also means they are not well isolated, and an outage in one of these components can affect other components or the entire application. Also, they usually need to be implemented using the same language as the parent application. As a result, the component and the application have close interdependence on each other.
 
-If the application is decomposed into services, then each service can be
-built using different languages and technologies. While this gives more
-flexibility, it means that each component has its own dependencies and
-requires language-specific libraries to access the underlying platform
-and any resources shared with the parent application. In addition,
-deploying these features as separate services can add latency to the
-application. Managing the code and dependencies for these
-language-specific interfaces can also add considerable complexity,
-especially for hosting, deployment, and management.
+If the application is decomposed into services, then each service can be built using different languages and technologies. While this gives more flexibility, it means that each component has its own dependencies and requires language-specific libraries to access the underlying platform and any resources shared with the parent application. In addition, deploying these features as separate services can add latency to the application. Managing the code and dependencies for these language-specific interfaces can also add considerable complexity, especially for hosting, deployment, and management.
 
 #### Solution
 
-Co-locate a cohesive set of tasks with the primary application, but
-place them inside their own process or container, providing a
-homogeneous interface for platform services across languages.
+Co-locate a cohesive set of tasks with the primary application, but place them inside their own process or container, providing a homogeneous interface for platform services across languages.
 
-<kbd><img src="./attachments/463533405.png" alt=""> </kbd>
+<img src="./attachments/463533405.png" alt="" />
 
-A sidecar service is not necessarily part of the application, but is
-connected to it. It goes wherever the parent application goes. Sidecars
-are supporting processes or services that are deployed with the primary
-application. On a motorcycle, the sidecar is attached to one motorcycle,
-and each motorcycle can have its own sidecar. In the same way, a sidecar
-service shares the fate of its parent application. For each instance of
-the application, an instance of the sidecar is deployed and hosted
-alongside it.
+A sidecar service is not necessarily part of the application, but is connected to it. It goes wherever the parent application goes. Sidecars are supporting processes or services that are deployed with the primary application. On a motorcycle, the sidecar is attached to one motorcycle, and each motorcycle can have its own sidecar. In the same way, a sidecar service shares the fate of its parent application. For each instance of the application, an instance of the sidecar is deployed and hosted alongside it.
 
 Advantages of using a sidecar pattern include:
 
--   A sidecar is independent from its primary application in terms of
-	runtime environment and programming language, so you don\'t need to
-	develop one sidecar per language.
+-   A sidecar is independent from its primary application in terms of runtime environment and programming language, so you don\'t need to develop one sidecar per language.
+-   The sidecar can access the same resources as the primary application. For example, a sidecar can monitor system resources used by both the sidecar and the primary application.
+-   Because of its proximity to the primary application, there's no significant latency when communicating between them.
+-   Even for applications that don't provide an extensibility mechanism, you can use a sidecar to extend functionality by attaching it as its own process in the same host or sub-container as the primary application.
 
--   The sidecar can access the same resources as the primary
-	application. For example, a sidecar can monitor system resources
-	used by both the sidecar and the primary application.
-
--   Because of its proximity to the primary application, there's no
-	significant latency when communicating between them.
-
--   Even for applications that don't provide an extensibility mechanism,
-	you can use a sidecar to extend functionality by attaching it as its
-	own process in the same host or sub-container as the primary
-	application.
-
-The sidecar pattern is often used with containers and referred to as a
-sidecar container or sidekick container.
+The sidecar pattern is often used with containers and referred to as a sidecar container or sidekick container.
 
 #### Issues and Considerations
 
--   Consider the deployment and packaging format you will use to deploy
-	services, processes, or containers. Containers are particularly well
-	suited to the sidecar pattern.
--   When designing a sidecar service, carefully decide on the
-	interprocess communication mechanism. Try to use language- or
-	framework-agnostic technologies unless performance requirements make
-	that impractical.
--   Before putting functionality into a sidecar, consider whether it
-	would work better as a separate service or a more traditional
-	daemon.
--   Also consider whether the functionality could be implemented as a
-	library or using a traditional extension mechanism.
-	Language-specific libraries may have a deeper level of integration
-	and less network overhead.
+-   Consider the deployment and packaging format you will use to deploy services, processes, or containers. Containers are particularly well suited to the sidecar pattern.
+-   When designing a sidecar service, carefully decide on the interprocess communication mechanism. Try to use language- or framework-agnostic technologies unless performance requirements make that impractical.
+-   Before putting functionality into a sidecar, consider whether it would work better as a separate service or a more traditional daemon.
+-   Also consider whether the functionality could be implemented as a library or using a traditional extension mechanism. Language-specific libraries may have a deeper level of integration and less network overhead.
 
 #### When to use this Pattern
 
 Use this pattern when:
 
--   Your primary application uses a heterogeneous set of languages and
-	frameworks. A component located in a sidecar service can be consumed
-	by applications written in different languages using different
-	frameworks.
+-   Your primary application uses a heterogeneous set of languages and frameworks. A component located in a sidecar service can be consumed by applications written in different languages using different frameworks.
 -   A component is owned by a remote team or a different organization.
--   A component or feature must be co-located on the same host as the
-	application
--   You need a service that shares the overall lifecycle of your main
-	application, but can be independently updated.
--   You need fine-grained control over resource limits for a particular
-	resource or component. For example, you may want to restrict the
-	amount of memory a specific component uses. You can deploy the
-	component as a sidecar and manage memory usage independently of the
-	main application.
+-   A component or feature must be co-located on the same host as the application
+-   You need a service that shares the overall lifecycle of your main application, but can be independently updated.
+-   You need fine-grained control over resource limits for a particular resource or component. For example, you may want to restrict the amount of memory a specific component uses. You can deploy the component as a sidecar and manage memory usage independently of the main application.
 
 This pattern may not be suitable:
 
--   When interprocess communication needs to be optimized. Communication
-	between a parent application and sidecar services includes some
-	overhead, notably latency in the calls. This may not be an
-	acceptable trade-off for chatty interfaces.
--   For small applications where the resource cost of deploying a
-	sidecar service for each instance is not worth the advantage of
-	isolation.
--   When the service needs to scale differently than or independently
-	from the main applications. If so, it may be better to deploy the
-	feature as a separate service.
+-   When interprocess communication needs to be optimized. Communication between a parent application and sidecar services includes some overhead, notably latency in the calls. This may not be an acceptable trade-off for chatty interfaces.
+-   For small applications where the resource cost of deploying a sidecar service for each instance is not worth the advantage of isolation.
+-   When the service needs to scale differently than or independently from the main applications. If so, it may be better to deploy the feature as a separate service.
 
 ### Static Content Hosting Pattern
 
 #### Overview
 
-Deploy static content to a cloud-based storage service that can deliver
-them directly to the client. This can reduce the need for potentially
-expensive compute instances.
+Deploy static content to a cloud-based storage service that can deliver them directly to the client. This can reduce the need for potentially expensive compute instances.
 
 #### Context and Problem
 
-Web applications typically include some elements of static content. This
-static content might include HTML pages and other resources such as
-images and documents that are available to the client, either as part of
-an HTML page (such as inline images, style sheets, and client-side
-JavaScript files) or as separate downloads (such as PDF documents).
+Web applications typically include some elements of static content. This static content might include HTML pages and other resources such as images and documents that are available to the client, either as part of an HTML page (such as inline images, style sheets, and client-side JavaScript files) or as separate downloads (such as PDF documents).
 
-Although web servers are optimized for dynamic rendering and output
-caching, they still have to handle requests to download static content.
-This consumes processing cycles that could often be put to better use.
+Although web servers are optimized for dynamic rendering and output caching, they still have to handle requests to download static content. This consumes processing cycles that could often be put to better use.
 
 #### Solution
 
-In most cloud hosting environments, you can put some of an
-application\'s resources and static pages in a storage service. The
-storage service can serve requests for these resources, reducing load on
-the compute resources that handle other web requests. The cost for
-cloud-hosted storage is typically much less than for compute instances.
+In most cloud hosting environments, you can put some of an application\'s resources and static pages in a storage service. The storage service can serve requests for these resources, reducing load on the compute resources that handle other web requests. The cost for cloud-hosted storage is typically much less than for compute instances.
 
-When hosting some parts of an application in a storage service, the main
-considerations are related to deployment of the application and to
-securing resources that aren\'t intended to be available to anonymous
-users.
+When hosting some parts of an application in a storage service, the main considerations are related to deployment of the application and to securing resources that aren\'t intended to be available to anonymous users.
 
 #### Issues and Considerations
 
-Consider the following points when deciding how to implement this
-pattern:
+Consider the following points when deciding how to implement this pattern:
 
--   The hosted storage service must expose an HTTP endpoint that users
-	can access to download the static resources. Some storage services
-	also support HTTPS, so it\'s possible to host resources in storage
-	services that require SSL.
-
--   For maximum performance and availability, consider using a content
-	delivery network (CDN) to cache the contents of the storage
-	container in multiple datacenters around the world. However, you\'ll
-	likely have to pay for using the CDN.
-
--   Storage accounts are often geo-replicated by default to provide
-	resiliency against events that might affect a datacenter. This means
-	that the IP address might change, but the URL will remain the same.
-
--   When some content is located in a storage account and other content
-	is in a hosted compute instance, it becomes more challenging to
-	deploy and update the application. You might have to perform
-	separate deployments, and version the application and content to
-	manage it more easily---especially when the static content includes
-	script files or UI components. However, if only static resources
-	have to be updated, they can simply be uploaded to the storage
-	account without needing to redeploy the application package.
-
--   Storage services might not support the use of custom domain names.
-	In this case it\'s necessary to specify the full URL of the
-	resources in links because they\'ll be in a different domain from
-	the dynamically-generated content containing the links.
-
--   The storage containers must be configured for public read access,
-	but it\'s vital to ensure that they aren\'t configured for public
-	write access to prevent users being able to upload content.
-
--   Consider using a valet key or token to control access to resources
-	that shouldn\'t be available anonymously. See the 
-	[Valet Key pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/valet-key) for
-	more information.
+-   The hosted storage service must expose an HTTP endpoint that users can access to download the static resources. Some storage services also support HTTPS, so it\'s possible to host resources in storage services that require SSL.
+-   For maximum performance and availability, consider using a content delivery network (CDN) to cache the contents of the storage container in multiple datacenters around the world. However, you\'ll likely have to pay for using the CDN.
+-   Storage accounts are often geo-replicated by default to provide resiliency against events that might affect a datacenter. This means that the IP address might change, but the URL will remain the same.
+-   When some content is located in a storage account and other content is in a hosted compute instance, it becomes more challenging to deploy and update the application. You might have to perform separate deployments, and version the application and content to manage it more easily---especially when the static content includes script files or UI components. However, if only static resources have to be updated, they can simply be uploaded to the storage account without needing to redeploy the application package.
+-   Storage services might not support the use of custom domain names. In this case it\'s necessary to specify the full URL of the resources in links because they\'ll be in a different domain from the dynamically-generated content containing the links.
+-   The storage containers must be configured for public read access, but it\'s vital to ensure that they aren\'t configured for public write access to prevent users being able to upload content.
+-   Consider using a valet key or token to control access to resources that shouldn\'t be available anonymously. See the  [Valet Key pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/valet-key) for more information.
 
 #### When to use this Pattern
 
 This pattern is useful for:
 
--   Minimizing the hosting cost for websites and applications that
-	contain some static resources.
-
--   Minimizing the hosting cost for websites that consist of only static
-	content and resources. Depending on the capabilities of the hosting
-	provider\'s storage system, it might be possible to entirely host a
-	fully static website in a storage account.
-
--   Exposing static resources and content for applications running in
-	other hosting environments or on-premises servers.
-
--   Locating content in more than one geographical area using a content
-	delivery network that caches the contents of the storage account in
-	multiple datacenters around the world.
-
--   Monitoring costs and bandwidth usage. Using a separate storage
-	account for some or all of the static content allows the costs to be
-	more easily separated from hosting and runtime costs.
+-   Minimizing the hosting cost for websites and applications that contain some static resources.
+-   Minimizing the hosting cost for websites that consist of only static content and resources. Depending on the capabilities of the hosting provider\'s storage system, it might be possible to entirely host a fully static website in a storage account.
+-   Exposing static resources and content for applications running in other hosting environments or on-premises servers.
+-   Locating content in more than one geographical area using a content delivery network that caches the contents of the storage account in multiple datacenters around the world.
+-   Monitoring costs and bandwidth usage. Using a separate storage account for some or all of the static content allows the costs to be more easily separated from hosting and runtime costs.
 
 This pattern might not be useful in the following situations:
-
--   The application needs to perform some processing on the static
-	content before delivering it to the client. For example, it might be
-	necessary to add a timestamp to a document.
-
--   The volume of static content is very small. The overhead of
-	retrieving this content from separate storage can outweigh the cost
-	benefit of separating it out from the compute resource.
+-   The application needs to perform some processing on the static content before delivering it to the client. For example, it might be necessary to add a timestamp to a document.
+-   The volume of static content is very small. The overhead of retrieving this content from separate storage can outweigh the cost benefit of separating it out from the compute resource.
 
 ### Strangler Pattern
 
 #### Overview
 
-Incrementally migrate a legacy system by gradually replacing specific
-pieces of functionality with new applications and services. As features
-from the legacy system are replaced, the new system eventually replaces
-all of the old system\'s features, strangling the old system and
-allowing you to decommission it.
+Incrementally migrate a legacy system by gradually replacing specific pieces of functionality with new applications and services. As features from the legacy system are replaced, the new system eventually replaces all of the old system\'s features, strangling the old system and allowing you to decommission it.
 
 #### Context and Problem
 
-As systems age, the development tools, hosting technology, and even
-system architectures they were built on can become increasingly
-obsolete. As new features and functionality are added, the complexity of
-these applications can increase dramatically, making them harder to
-maintain or add new features to.
+As systems age, the development tools, hosting technology, and even system architectures they were built on can become increasingly obsolete. As new features and functionality are added, the complexity of these applications can increase dramatically, making them harder to maintain or add new features to.
 
-Completely replacing a complex system can be a huge undertaking. Often,
-you will need a gradual migration to a new system, while keeping the old
-system to handle features that haven\'t been migrated yet. However,
-running two separate versions of an application means that clients have
-to know where particular features are located. Every time a feature or
-service is migrated, clients need to be updated to point to the new
-location.
+Completely replacing a complex system can be a huge undertaking. Often, you will need a gradual migration to a new system, while keeping the old system to handle features that haven\'t been migrated yet. However, running two separate versions of an application means that clients have to know where particular features are located. Every time a feature or service is migrated, clients need to be updated to point to the new location.
 
 #### Solution
 
-Incrementally replace specific pieces of functionality with new
-applications and services. Create a façade that intercepts requests
-going to the backend legacy system. The façade routes these requests
-either to the legacy application or the new services. Existing features
-can be migrated to the new system gradually, and consumers can continue
-using the same interface, unaware that any migration has taken place.
+Incrementally replace specific pieces of functionality with new applications and services. Create a façade that intercepts requests going to the backend legacy system. The façade routes these requests either to the legacy application or the new services. Existing features can be migrated to the new system gradually, and consumers can continue using the same interface, unaware that any migration has taken place.
 
-<kbd><img src="./attachments/463533408.png" alt=""> </kbd>
+<img src="./attachments/463533408.png" alt="" />
 
-This pattern helps to minimize risk from the migration, and spread the
-development effort over time. With the façade safely routing users to
-the correct application, you can add functionality to the new system at
-whatever pace you like, while ensuring the legacy application continues
-to function. Over time, as features are migrated to the new system, the
-legacy system is eventually \"strangled\" and is no longer necessary.
-Once this process is complete, the legacy system can safely be retired.
+This pattern helps to minimize risk from the migration, and spread the development effort over time. With the façade safely routing users to the correct application, you can add functionality to the new system at whatever pace you like, while ensuring the legacy application continues to function. Over time, as features are migrated to the new system, the legacy system is eventually \"strangled\" and is no longer necessary. Once this process is complete, the legacy system can safely be retired.
 
 #### Issues and Considerations
 
--   Consider how to handle services and data stores that are potentially
-	used by both new and legacy systems. Make sure both can access these
-	resources side-by-side.
+-   Consider how to handle services and data stores that are potentially used by both new and legacy systems. Make sure both can access these resources side-by-side.
 -   Structure new applications and services in a way that they can
 	easily be intercepted and replaced in future strangler migrations.
--   At some point, when the migration is complete, the strangler façade
-	will either go away or evolve into an adaptor for legacy clients.
+-   At some point, when the migration is complete, the strangler façade will either go away or evolve into an adaptor for legacy clients.
 -   Make sure the façade keeps up with the migration.
--   Make sure the façade doesn\'t become a single point of failure or a
-	performance bottleneck.
+-   Make sure the façade doesn\'t become a single point of failure or a performance bottleneck.
 
 #### When to use this Pattern
 
@@ -6299,158 +4801,49 @@ This pattern may not be suitable:
 
 #### Overview
 
-Control the consumption of resources used by an instance of an
-application, an individual tenant, or an entire service. This can allow
-the system to continue to function and meet service level agreements,
-even when an increase in demand places an extreme load on resources.
+Control the consumption of resources used by an instance of an application, an individual tenant, or an entire service. This can allow the system to continue to function and meet service level agreements, even when an increase in demand places an extreme load on resources.
 
 #### Context and Problem
 
-The load on a cloud application typically varies over time based on the
-number of active users or the types of activities they are performing.
-For example, more users are likely to be active during business hours,
-or the system might be required to perform computationally expensive
-analytics at the end of each month. There might also be sudden and
-unanticipated bursts in activity. If the processing requirements of the
-system exceed the capacity of the resources that are available, it\'ll
-suffer from poor performance and can even fail. If the system has to
-meet an agreed level of service, such failure could be unacceptable.
+The load on a cloud application typically varies over time based on the number of active users or the types of activities they are performing. For example, more users are likely to be active during business hours, or the system might be required to perform computationally expensive analytics at the end of each month. There might also be sudden and unanticipated bursts in activity. If the processing requirements of the system exceed the capacity of the resources that are available, it\'ll suffer from poor performance and can even fail. If the system has to meet an agreed level of service, such failure could be unacceptable.
 
-There\'re many strategies available for handling varying load in the
-cloud, depending on the business goals for the application. One strategy
-is to use autoscaling to match the provisioned resources to the user
-needs at any given time. This has the potential to consistently meet
-user demand, while optimizing running costs. However, while autoscaling
-can trigger the provisioning of additional resources, this provisioning
-isn\'t immediate. If demand grows quickly, there can be a window of time
-where there\'s a resource deficit.
+There\'re many strategies available for handling varying load in the cloud, depending on the business goals for the application. One strategy is to use autoscaling to match the provisioned resources to the user needs at any given time. This has the potential to consistently meet user demand, while optimizing running costs. However, while autoscaling can trigger the provisioning of additional resources, this provisioning isn\'t immediate. If demand grows quickly, there can be a window of time where there\'s a resource deficit.
 
 #### Solution
 
-An alternative strategy to autoscaling is to allow applications to use
-resources only up to a limit, and then throttle them when this limit is
-reached. The system should monitor how it\'s using resources so that,
-when usage exceeds the threshold, it can throttle requests from one or
-more users. This will enable the system to continue functioning and meet
-any service level agreements (SLAs) that are in place. For more
-information on monitoring resource usage, see the  [Instrumentation and
-Telemetry
-Guidance](https://msdn.microsoft.com/library/dn589775.aspx).
+An alternative strategy to autoscaling is to allow applications to use resources only up to a limit, and then throttle them when this limit is reached. The system should monitor how it\'s using resources so that, when usage exceeds the threshold, it can throttle requests from one or more users. This will enable the system to continue functioning and meet any service level agreements (SLAs) that are in place. For more information on monitoring resource usage, see the [Instrumentation and Telemetry Guidance](https://msdn.microsoft.com/library/dn589775.aspx).
 
 The system could implement several throttling strategies, including:
 
--   Rejecting requests from an individual user who\'s already accessed
-	system APIs more than n times per second over a given period of
-	time. This requires the system to meter the use of resources for
-	each tenant or user running an application. For more information,
-	see the  [Service Metering
-	Guidance](https://msdn.microsoft.com/library/dn589796.aspx).
+-   Rejecting requests from an individual user who\'s already accessed system APIs more than n times per second over a given period of time. This requires the system to meter the use of resources for each tenant or user running an application. For more information, see the  [Service Metering Guidance](https://msdn.microsoft.com/library/dn589796.aspx).
+-   Disabling or degrading the functionality of selected nonessential services so that essential services can run unimpeded with sufficient resources. For example, if the application is streaming video output, it could switch to a lower resolution.
+-   Using load leveling to smooth the volume of activity (this approach is covered in more detail by the  [Queue-based Load Leveling pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/queue-based-load-leveling)). In a multi-tenant environment, this approach will reduce the performance for every tenant. If the system must support a mix of tenants with different SLAs, the work for high-value tenants might be performed immediately. Requests for other tenants can be held back, and handled when the backlog has eased. The  [Priority Queue pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/priority-queue) could be used to help implement this approach.
+-   Deferring operations being performed on behalf of lower priority applications or tenants. These operations can be suspended or limited, with an exception generated to inform the tenant that the system is busy and that the operation should be retried later.
 
--   Disabling or degrading the functionality of selected nonessential
-	services so that essential services can run unimpeded with
-	sufficient resources. For example, if the application is streaming
-	video output, it could switch to a lower resolution.
+The figure shows an area graph for resource use (a combination of memory, CPU, bandwidth, and other factors) against time for applications that are making use of three features. A feature is an area of functionality, such as a component that performs a specific set of tasks, a piece of code that performs a complex calculation, or an element that provides a service such as an in-memory cache. These features are labeled A, B, and C.
 
--   Using load leveling to smooth the volume of activity (this approach
-	is covered in more detail by the  [Queue-based Load Leveling
-	pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/queue-based-load-leveling)).
-	In a multi-tenant environment, this approach will reduce the
-	performance for every tenant. If the system must support a mix of
-	tenants with different SLAs, the work for high-value tenants might
-	be performed immediately. Requests for other tenants can be held
-	back, and handled when the backlog has eased. The  [Priority Queue
-	pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/priority-queue) could
-	be used to help implement this approach.
+<img src="./attachments/463533410.png" alt="" />
 
--   Deferring operations being performed on behalf of lower priority
-	applications or tenants. These operations can be suspended or
-	limited, with an exception generated to inform the tenant that the
-	system is busy and that the operation should be retried later.
+> The area immediately below the line for a feature indicates the resources that are used by applications when they invoke this feature. For example, the area below the line for Feature A shows the resources used by applications that are making use of Feature A, and the area between the lines for Feature A and Feature B indicates the resources used by applications invoking Feature B. Aggregating the areas for each feature shows the total resource use of the system.
 
-The figure shows an area graph for resource use (a combination of
-memory, CPU, bandwidth, and other factors) against time for applications
-that are making use of three features. A feature is an area of
-functionality, such as a component that performs a specific set of
-tasks, a piece of code that performs a complex calculation, or an
-element that provides a service such as an in-memory cache. These
-features are labeled A, B, and C.
+The previous figure illustrates the effects of deferring operations. Just prior to time T1, the total resources allocated to all applications using these features reach a threshold (the limit of resource use). At this point, the applications are in danger of exhausting the resources available. In this system, Feature B is less critical than Feature A or Feature C, so it\'s temporarily disabled and the resources that it was using are released. Between times T1 and T2, the applications using Feature A and Feature C continue running as normal. Eventually, the resource use of these two features diminishes to the point when, at time T2, there is sufficient capacity to enable Feature B again.
 
-<kbd><img src="./attachments/463533410.png" alt=""> </kbd>
+The autoscaling and throttling approaches can also be combined to help keep the applications responsive and within SLAs. If the demand is expected to remain high, throttling provides a temporary solution while the system scales out. At this point, the full functionality of the system can be restored.
 
-> The area immediately below the line for a feature indicates the
-> resources that are used by applications when they invoke this feature.
-> For example, the area below the line for Feature A shows the resources
-> used by applications that are making use of Feature A, and the area
-> between the lines for Feature A and Feature B indicates the resources
-> used by applications invoking Feature B. Aggregating the areas for
-> each feature shows the total resource use of the system.
+The next figure shows an area graph of the overall resource use by all applications running in a system against time, and illustrates how throttling can be combined with autoscaling.
 
-The previous figure illustrates the effects of deferring operations.
-Just prior to time T1, the total resources allocated to all applications
-using these features reach a threshold (the limit of resource use). At
-this point, the applications are in danger of exhausting the resources
-available. In this system, Feature B is less critical than Feature A or
-Feature C, so it\'s temporarily disabled and the resources that it was
-using are released. Between times T1 and T2, the applications using
-Feature A and Feature C continue running as normal. Eventually, the
-resource use of these two features diminishes to the point when, at time
-T2, there is sufficient capacity to enable Feature B again.
+<img src="./attachments/463533411.png" alt="" />
 
-The autoscaling and throttling approaches can also be combined to help
-keep the applications responsive and within SLAs. If the demand is
-expected to remain high, throttling provides a temporary solution while
-the system scales out. At this point, the full functionality of the
-system can be restored.
-
-The next figure shows an area graph of the overall resource use by all
-applications running in a system against time, and illustrates how
-throttling can be combined with autoscaling.
-
-<kbd><img src="./attachments/463533411.png" alt=""> </kbd>
-
-At time T1, the threshold specifying the soft limit of resource use is
-reached. At this point, the system can start to scale out. However, if
-the new resources don\'t become available quickly enough, then the
-existing resources might be exhausted and the system could fail. To
-prevent this from occurring, the system is temporarily throttled, as
-described earlier. When autoscaling has completed and the additional
-resources are available, throttling can be relaxed.
+At time T1, the threshold specifying the soft limit of resource use is reached. At this point, the system can start to scale out. However, if the new resources don\'t become available quickly enough, then the existing resources might be exhausted and the system could fail. To prevent this from occurring, the system is temporarily throttled, as described earlier. When autoscaling has completed and the additional resources are available, throttling can be relaxed.
 
 #### Issues and Considerations
 
-You should consider the following points when deciding how to implement
-this pattern:
-
--   Throttling an application, and the strategy to use, is an
-	architectural decision that impacts the entire design of a system.
-	Throttling should be considered early in the application design
-	process because it isn\'t easy to add once a system has been
-	implemented.
-
--   Throttling must be performed quickly. The system must be capable of
-	detecting an increase in activity and react accordingly. The system
-	must also be able to revert to its original state quickly after the
-	load has eased. This requires that the appropriate performance data
-	is continually captured and monitored.
-
--   If a service needs to temporarily deny a user request, it should
-	return a specific error code so the client application understands
-	that the reason for the refusal to perform an operation is due to
-	throttling. The client application can wait for a period before
-	retrying the request.
-
--   Throttling can be used as a temporary measure while a system
-	autoscales. In some cases it\'s better to simply throttle, rather
-	than to scale, if a burst in activity is sudden and isn\'t expected
-	to be long lived because scaling can add considerably to running
-	costs.
-
--   If throttling is being used as a temporary measure while a system
-	autoscales, and if resource demands grow very quickly, the system
-	might not be able to continue functioning---even when operating in a
-	throttled mode. If this isn\'t acceptable, consider maintaining
-	larger capacity reserves and configuring more aggressive
-	autoscaling.
+You should consider the following points when deciding how to implement this pattern:
+-   Throttling an application, and the strategy to use, is an architectural decision that impacts the entire design of a system. Throttling should be considered early in the application design process because it isn\'t easy to add once a system has been implemented.
+-   Throttling must be performed quickly. The system must be capable of detecting an increase in activity and react accordingly. The system must also be able to revert to its original state quickly after the load has eased. This requires that the appropriate performance data is continually captured and monitored.
+-   If a service needs to temporarily deny a user request, it should return a specific error code so the client application understands that the reason for the refusal to perform an operation is due to throttling. The client application can wait for a period before retrying the request.
+-   Throttling can be used as a temporary measure while a system autoscales. In some cases it\'s better to simply throttle, rather than to scale, if a burst in activity is sudden and isn\'t expected to be long lived because scaling can add considerably to running costs.
+-   If throttling is being used as a temporary measure while a system autoscales, and if resource demands grow very quickly, the system might not be able to continue functioning---even when operating in a throttled mode. If this isn\'t acceptable, consider maintaining larger capacity reserves and configuring more aggressive autoscaling.
 
 #### When to use this Pattern
 
@@ -6465,248 +4858,78 @@ Use this pattern:
 
 #### Overview
 
-Use a token that provides clients with restricted direct access to a
-specific resource, in order to offload data transfer from the
-application. This is particularly useful in applications that use
-cloud-hosted storage systems or queues, and can minimize cost and
-maximize scalability and performance.
+Use a token that provides clients with restricted direct access to a specific resource, in order to offload data transfer from the application. This is particularly useful in applications that use cloud-hosted storage systems or queues, and can minimize cost and maximize scalability and performance.
 
 #### Context and Problem
 
-Client programs and web browsers often need to read and write files or
-data streams to and from an application's storage. Typically, the
-application will handle the movement of the data --- either by fetching
-it from storage and streaming it to the client, or by reading the
-uploaded stream from the client and storing it in the data store.
-However, this approach absorbs valuable resources such as compute,
-memory, and bandwidth.
+Client programs and web browsers often need to read and write files or data streams to and from an application's storage. Typically, the application will handle the movement of the data --- either by fetching it from storage and streaming it to the client, or by reading the uploaded stream from the client and storing it in the data store. However, this approach absorbs valuable resources such as compute, memory, and bandwidth.
 
-Data stores have the ability to handle upload and download of data
-directly, without requiring that the application perform any processing
-to move this data. But, this typically requires the client to have
-access to the security credentials for the store. This can be a useful
-technique to minimize data transfer costs and the requirement to scale
-out the application, and to maximize performance. It means, though, that
-the application is no longer able to manage the security of the data.
-After the client has a connection to the data store for direct access,
-the application can\'t act as the gatekeeper. It\'s no longer in control
-of the process and can\'t prevent subsequent uploads or downloads from
-the data store.
+Data stores have the ability to handle upload and download of data directly, without requiring that the application perform any processing to move this data. But, this typically requires the client to have access to the security credentials for the store. This can be a useful technique to minimize data transfer costs and the requirement to scale out the application, and to maximize performance. It means, though, that the application is no longer able to manage the security of the data. After the client has a connection to the data store for direct access, the application can\'t act as the gatekeeper. It\'s no longer in control of the process and can\'t prevent subsequent uploads or downloads from the data store.
 
-This isn\'t a realistic approach in distributed systems that need to
-serve untrusted clients. Instead, applications must be able to securely
-control access to data in a granular way, but still reduce the load on
-the server by setting up this connection and then allowing the client to
-communicate directly with the data store to perform the required read or
-write operations.
+This isn\'t a realistic approach in distributed systems that need to serve untrusted clients. Instead, applications must be able to securely control access to data in a granular way, but still reduce the load on the server by setting up this connection and then allowing the client to communicate directly with the data store to perform the required read or write operations.
 
 #### Solution
 
-You need to resolve the problem of controlling access to a data store
-where the store can\'t manage authentication and authorization of
-clients. One typical solution is to restrict access to the data store's
-public connection and provide the client with a key or token that the
-data store can validate.
+You need to resolve the problem of controlling access to a data store where the store can\'t manage authentication and authorization of clients. One typical solution is to restrict access to the data store's public connection and provide the client with a key or token that the data store can validate.
 
-This key or token is usually referred to as a valet key. It provides
-time-limited access to specific resources and allows only predefined
-operations such as reading and writing to storage or queues, or
-uploading and downloading in a web browser. Applications can create and
-issue valet keys to client devices and web browsers quickly and easily,
-allowing clients to perform the required operations without requiring
-the application to directly handle the data transfer. This removes the
-processing overhead, and the impact on performance and scalability, from
-the application and the server.
+This key or token is usually referred to as a valet key. It provides time-limited access to specific resources and allows only predefined operations such as reading and writing to storage or queues, or uploading and downloading in a web browser. Applications can create and issue valet keys to client devices and web browsers quickly and easily, allowing clients to perform the required operations without requiring the application to directly handle the data transfer. This removes the processing overhead, and the impact on performance and scalability, from the application and the server.
 
-The client uses this token to access a specific resource in the data
-store for only a specific period, and with specific restrictions on
-access permissions, as shown in the figure. After the specified period,
-the key becomes invalid and won\'t allow access to the resource.
+The client uses this token to access a specific resource in the data store for only a specific period, and with specific restrictions on access permissions, as shown in the figure. After the specified period, the key becomes invalid and won\'t allow access to the resource.
 
-<kbd><img src="./attachments/463533413.png" alt=""> </kbd>
+<img src="./attachments/463533413.png" alt="" />
 
-It\'s also possible to configure a key that has other dependencies, such
-as the scope of the data. For example, depending on the data store
-capabilities, the key can specify a complete table in a data store, or
-only specific rows in a table. In cloud storage systems the key can
-specify a container, or just a specific item within a container.
+It\'s also possible to configure a key that has other dependencies, such as the scope of the data. For example, depending on the data store capabilities, the key can specify a complete table in a data store, or only specific rows in a table. In cloud storage systems the key can specify a container, or just a specific item within a container.
 
-The key can also be invalidated by the application. This is a useful
-approach if the client notifies the server that the data transfer
-operation is complete. The server can then invalidate that key to
-prevent further access.
+The key can also be invalidated by the application. This is a useful approach if the client notifies the server that the data transfer operation is complete. The server can then invalidate that key to prevent further access.
 
-Using this pattern can simplify managing access to resources because
-there\'s no requirement to create and authenticate a user, grant
-permissions, and then remove the user again. It also makes it easy to
-limit the location, the permission, and the validity period---all by
-simply generating a key at runtime. The important factors are to limit
-the validity period, and especially the location of the resource, as
-tightly as possible so that the recipient can only use it for the
-intended purpose.
+Using this pattern can simplify managing access to resources because there\'s no requirement to create and authenticate a user, grant permissions, and then remove the user again. It also makes it easy to limit the location, the permission, and the validity period---all by simply generating a key at runtime. The important factors are to limit the validity period, and especially the location of the resource, as tightly as possible so that the recipient can only use it for the intended purpose.
 
 #### Issues and Considerations
 
-Consider the following points when deciding how to implement this
-pattern:
+Consider the following points when deciding how to implement this pattern:
 
-**Manage the validity status and period of the key**. If leaked or
-compromised, the key effectively unlocks the target item and makes it
-available for malicious use during the validity period. A key can
-usually be revoked or disabled, depending on how it was issued.
-Server-side policies can be changed or, the server key it was signed
-with can be invalidated. Specify a short validity period to minimize the
-risk of allowing unauthorized operations to take place against the data
-store. However, if the validity period is too short, the client might
-not be able to complete the operation before the key expires. Allow
-authorized users to renew the key before the validity period expires if
-multiple accesses to the protected resource are required.
+**Manage the validity status and period of the key**. If leaked or compromised, the key effectively unlocks the target item and makes it available for malicious use during the validity period. A key can usually be revoked or disabled, depending on how it was issued. Server-side policies can be changed or, the server key it was signed with can be invalidated. Specify a short validity period to minimize the risk of allowing unauthorized operations to take place against the data store. However, if the validity period is too short, the client might not be able to complete the operation before the key expires. Allow authorized users to renew the key before the validity period expires if multiple accesses to the protected resource are required.
 
-**Control the level of access the key will provide**. Typically, the key
-should allow the user to only perform the actions necessary to complete
-the operation, such as read-only access if the client shouldn\'t be able
-to upload data to the data store. For file uploads, it\'s common to
-specify a key that provides write-only permission, as well as the
-location and the validity period. It\'s critical to accurately specify
-the resource or the set of resources to which the key applies.
+**Control the level of access the key will provide**. Typically, the key should allow the user to only perform the actions necessary to complete the operation, such as read-only access if the client shouldn\'t be able to upload data to the data store. For file uploads, it\'s common to specify a key that provides write-only permission, as well as the location and the validity period. It\'s critical to accurately specify the resource or the set of resources to which the key applies.
 
-**Consider how to control users' behavior**. Implementing this pattern
-means some loss of control over the resources users are granted access
-to. The level of control that can be exerted is limited by the
-capabilities of the policies and permissions available for the service
-or the target data store. For example, it\'s usually not possible to
-create a key that limits the size of the data to be written to storage,
-or the number of times the key can be used to access a file. This can
-result in huge unexpected costs for data transfer, even when used by the
-intended client, and might be caused by an error in the code that causes
-repeated upload or download. To limit the number of times a file can be
-uploaded, where possible, force the client to notify the application
-when one operation has completed. For example, some data stores raise
-events the application code can use to monitor operations and control
-user behavior. However, it\'s hard to enforce quotas for individual
-users in a multi-tenant scenario where the same key is used by all the
-users from one tenant.
+**Consider how to control users' behavior**. Implementing this pattern means some loss of control over the resources users are granted access to. The level of control that can be exerted is limited by the capabilities of the policies and permissions available for the service or the target data store. For example, it\'s usually not possible to create a key that limits the size of the data to be written to storage, or the number of times the key can be used to access a file. This can result in huge unexpected costs for data transfer, even when used by the intended client, and might be caused by an error in the code that causes repeated upload or download. To limit the number of times a file can be uploaded, where possible, force the client to notify the application when one operation has completed. For example, some data stores raise events the application code can use to monitor operations and control user behavior. However, it\'s hard to enforce quotas for individual users in a multi-tenant scenario where the same key is used by all the users from one tenant.
 
-**Validate, and optionally sanitize, all uploaded data**. A malicious
-user that gains access to the key could upload data designed to
-compromise the system. Alternatively, authorized users might upload data
-that\'s invalid and, when processed, could result in an error or system
-failure. To protect against this, ensure that all uploaded data is
-validated and checked for malicious content before use.
+**Validate, and optionally sanitize, all uploaded data**. A malicious user that gains access to the key could upload data designed to compromise the system. Alternatively, authorized users might upload data that\'s invalid and, when processed, could result in an error or system failure. To protect against this, ensure that all uploaded data is validated and checked for malicious content before use.
 
-**Audit all operations**. Many key-based mechanisms can log operations
-such as uploads, downloads, and failures. These logs can usually be
-incorporated into an audit process, and also used for billing if the
-user is charged based on file size or data volume. Use the logs to
-detect authentication failures that might be caused by issues with the
-key provider, or accidental removal of a stored access policy.
+**Audit all operations**. Many key-based mechanisms can log operations such as uploads, downloads, and failures. These logs can usually be incorporated into an audit process, and also used for billing if the user is charged based on file size or data volume. Use the logs to detect authentication failures that might be caused by issues with the key provider, or accidental removal of a stored access policy.
 
-**Deliver the key securely**. It can be embedded in a URL that the user
-activates in a web page, or it can be used in a server redirection
-operation so that the download occurs automatically. Always use HTTPS to
-deliver the key over a secure channel.
+**Deliver the key securely**. It can be embedded in a URL that the user activates in a web page, or it can be used in a server redirection operation so that the download occurs automatically. Always use HTTPS to deliver the key over a secure channel.
 
-**Protect sensitive data in transit**. Sensitive data delivered through
-the application will usually take place using SSL or TLS, and this
-should be enforced for clients accessing the data store directly.
+**Protect sensitive data in transit**. Sensitive data delivered through the application will usually take place using SSL or TLS, and this should be enforced for clients accessing the data store directly.
 
 Other issues to be aware of when implementing this pattern are:
 
--   If the client doesn\'t, or can\'t, notify the server of completion
-	of the operation, and the only limit is the expiration period of the
-	key, the application won\'t be able to perform auditing operations
-	such as counting the number of uploads or downloads, or preventing
-	multiple uploads or downloads.
-
--   The flexibility of key policies that can be generated might be
-	limited. For example, some mechanisms only allow the use of a timed
-	expiration period. Others aren\'t able to specify a sufficient
-	granularity of read/write permissions.
-
--   If the start time for the key or token validity period is specified,
-	ensure that it\'s a little earlier than the current server time to
-	allow for client clocks that might be slightly out of
-	synchronization. The default, if not specified, is usually the
-	current server time.
-
--   The URL containing the key will be recorded in server log files.
-	While the key will typically have expired before the log files are
-	used for analysis, ensure that you limit access to them. If log data
-	is transmitted to a monitoring system or stored in another location,
-	consider implementing a delay to prevent leakage of keys until after
-	their validity period has expired.
-
--   If the client code runs in a web browser, the browser might need to
-	support cross-origin resource sharing (CORS) to enable code that
-	executes within the web browser to access data in a different domain
-	from the one that served the page. Some older browsers and some data
-	stores don\'t support CORS, and code that runs in these browsers
-	might not be able to use a valet key to provide access to data in a
-	different domain, such as a cloud storage account.
+-   If the client doesn\'t, or can\'t, notify the server of completion of the operation, and the only limit is the expiration period of the key, the application won\'t be able to perform auditing operations such as counting the number of uploads or downloads, or preventing multiple uploads or downloads.
+-   The flexibility of key policies that can be generated might be limited. For example, some mechanisms only allow the use of a timed expiration period. Others aren\'t able to specify a sufficient granularity of read/write permissions.
+-   If the start time for the key or token validity period is specified, ensure that it\'s a little earlier than the current server time to allow for client clocks that might be slightly out of synchronization. The default, if not specified, is usually the current server time.
+-   The URL containing the key will be recorded in server log files. While the key will typically have expired before the log files are used for analysis, ensure that you limit access to them. If log data is transmitted to a monitoring system or stored in another location, consider implementing a delay to prevent leakage of keys until after their validity period has expired.
+-   If the client code runs in a web browser, the browser might need to support cross-origin resource sharing (CORS) to enable code that executes within the web browser to access data in a different domain from the one that served the page. Some older browsers and some data stores don\'t support CORS, and code that runs in these browsers might not be able to use a valet key to provide access to data in a different domain, such as a cloud storage account.
 
 #### When to use this Pattern
 
 This pattern is useful for the following situations:
 
--   To minimize resource loading and maximize performance and
-	scalability. Using a valet key doesn\'t require the resource to be
-	locked, no remote server call is required, there\'s no limit on the
-	number of valet keys that can be issued, and it avoids a single
-	point of failure resulting from performing the data transfer through
-	the application code. Creating a valet key is typically a simple
-	cryptographic operation of signing a string with a key.
+-   To minimize resource loading and maximize performance and scalability. Using a valet key doesn\'t require the resource to be locked, no remote server call is required, there\'s no limit on the number of valet keys that can be issued, and it avoids a single point of failure resulting from performing the data transfer through the application code. Creating a valet key is typically a simple cryptographic operation of signing a string with a key.
+-   To minimize operational cost. Enabling direct access to stores and queues is resource and cost efficient, can result in fewer network round trips, and might allow for a reduction in the number of compute resources required.
+-   When clients regularly upload or download data, particularly where there\'s a large volume or when each operation involves large files.
+-   When the application has limited compute resources available, either due to hosting limitations or cost considerations. In this scenario, the pattern is even more helpful if there are many concurrent data uploads or downloads because it relieves the application from handling the data transfer.
 
--   To minimize operational cost. Enabling direct access to stores and
-	queues is resource and cost efficient, can result in fewer network
-	round trips, and might allow for a reduction in the number of
-	compute resources required.
-
--   When clients regularly upload or download data, particularly where
-	there\'s a large volume or when each operation involves large files.
-
--   When the application has limited compute resources available, either
-	due to hosting limitations or cost considerations. In this scenario,
-	the pattern is even more helpful if there are many concurrent data
-	uploads or downloads because it relieves the application from
-	handling the data transfer.
-
--   When the data is stored in a remote data store or a different
-	datacenter. If the application was required to act as a gatekeeper,
-	there might be a charge for the additional bandwidth of transferring
-	the data between datacenters, or across public or private networks
-	between the client and the application, and then between the
-	application and the data store.
+-   When the data is stored in a remote data store or a different datacenter. If the application was required to act as a gatekeeper, there might be a charge for the additional bandwidth of transferring the data between datacenters, or across public or private networks between the client and the application, and then between the application and the data store.
 
 This pattern might not be useful in the following situations:
 
--   If the application must perform some task on the data before it\'s
-	stored or before it\'s sent to the client. For example, if the
-	application needs to perform validation, log access success, or
-	execute a transformation on the data. However, some data stores and
-	clients are able to negotiate and carry out simple transformations
-	such as compression and decompression (for example, a web browser
-	can usually handle GZip formats).
-
--   If the design of an existing application makes it difficult to
-	incorporate the pattern. Using this pattern typically requires a
-	different architectural approach for delivering and receiving data.
-
--   If it\'s necessary to maintain audit trails or control the number of
-	times a data transfer operation is executed, and the valet key
-	mechanism in use doesn\'t support notifications that the server can
-	use to manage these operations.
-
--   If it\'s necessary to limit the size of the data, especially during
-	upload operations. The only solution to this is for the application
-	to check the data size after the operation is complete, or check the
-	size of uploads after a specified period or on a scheduled basis.
+-   If the application must perform some task on the data before it\'s stored or before it\'s sent to the client. For example, if the application needs to perform validation, log access success, or execute a transformation on the data. However, some data stores and clients are able to negotiate and carry out simple transformations such as compression and decompression (for example, a web browser can usually handle GZip formats).
+-   If the design of an existing application makes it difficult to incorporate the pattern. Using this pattern typically requires a different architectural approach for delivering and receiving data.
+-   If it\'s necessary to maintain audit trails or control the number of times a data transfer operation is executed, and the valet key mechanism in use doesn\'t support notifications that the server can use to manage these operations.
+-   If it\'s necessary to limit the size of the data, especially during upload operations. The only solution to this is for the application to check the data size after the operation is complete, or check the size of uploads after a specified period or on a scheduled basis.
 
 References
 
 -   [MS Doc - architecture patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/)
-
-
- 
-
 
 

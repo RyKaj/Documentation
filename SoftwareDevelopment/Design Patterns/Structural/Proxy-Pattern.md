@@ -10,92 +10,53 @@
 
 ### Intent
 
-**Proxy** is a structural design pattern that lets you provide a
-substitute or placeholder for another object. A proxy controls access to
-the original object, allowing you to perform something either before or
-after the request gets through to the original object.
+**Proxy** is a structural design pattern that lets you provide a substitute or placeholder for another object. A proxy controls access to the original object, allowing you to perform something either before or after the request gets through to the original object.
 
-<kbd>![](./attachments/proxy/463530208.png)</kbd>
+<img src"./attachments/proxy/463530208.png" />
 
 ### Problem
 
-Why would you want to control access to an object? Here is an example:
-you have a massive object that consumes a vast amount of system
-resources. You need it from time to time, but not always.
+Why would you want to control access to an object? Here is an example: you have a massive object that consumes a vast amount of system resources. You need it from time to time, but not always.
 
-<kbd>![](./attachments/proxy/463530210.png)</kbd>
+<img src"./attachments/proxy/463530210.png" />
 
-You could implement lazy initialization: create this object only when
-it’s actually needed. All of the object’s clients would need to
-execute some deferred initialization code. Unfortunately, this would
-probably cause a lot of code duplication.
+You could implement lazy initialization: create this object only when it’s actually needed. All of the object’s clients would need to execute some deferred initialization code. Unfortunately, this would probably cause a lot of code duplication.
 
-In an ideal world, we’d want to put this code directly into our object’s
-class, but that isn’t always possible. For instance, the class may be
-part of a closed 3rd-party library.
+In an ideal world, we’d want to put this code directly into our object’s class, but that isn’t always possible. For instance, the class may be part of a closed 3rd-party library.
 
 ### Solution
 
-The Proxy pattern suggests that you create a new proxy class with the
-same interface as an original service object. Then you update your app
-so that it passes the proxy object to all of the original object’s
-clients. Upon receiving a request from a client, the proxy creates a
-real service object and delegates all the work to it.
+The Proxy pattern suggests that you create a new proxy class with the same interface as an original service object. Then you update your app so that it passes the proxy object to all of the original object’s clients. Upon receiving a request from a client, the proxy creates a real service object and delegates all the work to it.
 
-<kbd>![](./attachments/proxy/463530211.png)</kbd>
+<img src"./attachments/proxy/463530211.png" />
 
-But what’s the benefit? If you need to execute something either before
-or after the primary logic of the class, the proxy lets you do this
-without changing that class. Since the proxy implements the same
-interface as the original class, it can be passed to any client that
-expects a real service object.
+But what’s the benefit? If you need to execute something either before or after the primary logic of the class, the proxy lets you do this without changing that class. Since the proxy implements the same interface as the original class, it can be passed to any client that expects a real service object.
 
 ### Structure
 
-<kbd>![](./attachments/proxy/463530212.png)</kbd>
+<img src"./attachments/proxy/463530212.png" />
 
 ### Pseudocode
 
-This example illustrates how the **Proxy** pattern can help to introduce
-lazy initialization and caching to a 3rd-party YouTube integration
-library.
+This example illustrates how the **Proxy** pattern can help to introduce lazy initialization and caching to a 3rd-party YouTube integration library.
 
-<kbd>![](./attachments/proxy/463530209.png)</kbd>
+<img src"./attachments/proxy/463530209.png" />
 
-The library provides us with the video downloading class. However, it’s
-very inefficient. If the client application requests the same video
-multiple times, the library just downloads it over and over, instead of
-caching and reusing the first downloaded file.
+The library provides us with the video downloading class. However, it’s very inefficient. If the client application requests the same video multiple times, the library just downloads it over and over, instead of caching and reusing the first downloaded file.
 
-The proxy class implements the same interface as the original downloader
-and delegates it all the work. However, it keeps track of the downloaded
-files and returns the cached result when the app requests the same video
-multiple times.
+The proxy class implements the same interface as the original downloader and delegates it all the work. However, it keeps track of the downloaded files and returns the cached result when the app requests the same video multiple times.
 
 ### Real world example
 
-Have you ever used an access card to go through a door? There are
-multiple options to open that door i.e. it can be opened either using
-access card or by pressing a button that bypasses the security. The
-door's main functionality is to open but there is a proxy added on top
-of it to add some functionality. Let me better explain it using the code
-example below.
+Have you ever used an access card to go through a door? There are multiple options to open that door i.e. it can be opened either using access card or by pressing a button that bypasses the security. The door's main functionality is to open but there is a proxy added on top of it to add some functionality. Let me better explain it using the code example below.
 
 ### In plain words
 
-Using the proxy pattern, a class represents the functionality of another
-class.
+Using the proxy pattern, a class represents the functionality of another class.
 
 ### Wikipedia says
 
-A proxy, in its most general form, is a class functioning as an
-interface to something else. A proxy is a wrapper or agent object that
-is being called by the client to access the real serving object behind
-the scenes. Use of the proxy can simply be forwarding to the real
-object, or can provide additional logic. In the proxy extra
-functionality can be provided, for example caching when operations on
-the real object are resource intensive, or checking preconditions before
-operations on the real object are invoked.
+A proxy, in its most general form, is a class functioning as an interface to something else. A proxy is a wrapper or agent object that is being called by the client to access the real serving object behind the scenes. Use of the proxy can simply be forwarding to the real object, or can provide additional logic. In the proxy extra functionality can be provided, for example caching when operations on the real object are resource intensive, or checking preconditions before operations on the real object are invoked.
 
 ### Pros and Cons
 
@@ -132,8 +93,7 @@ operations on the real object are invoked.
 
 ### Programmatic Example
 
-Taking our security door example from above. Firstly we have the door
-interface and an implementation of door
+Taking our security door example from above. Firstly we have the door interface and an implementation of door
 
 #### C\#
 
@@ -219,8 +179,7 @@ And here is how it can be used
 
 #### Java
 
-Taking our wizard tower example from above. Firstly we have the wizard
-tower interface and the ivory tower class
+Taking our wizard tower example from above. Firstly we have the wizard tower interface and the ivory tower class
 
 ``` 
 public interface WizardTower {
@@ -431,13 +390,7 @@ $door->close(); // Closing lab door
 
 
 
-Yet another example would be some sort of data-mapper implementation.
-For example, I recently made an ODM (Object Data Mapper) for MongoDB
-using this pattern where I wrote a proxy around mongo classes while
-utilizing the magic method `  __call()  `. All the method calls were
-proxied to the original mongo class and result retrieved was returned as
-it is but in case of  `find` or `findOne` data was mapped to the
-required class objects and the object was returned instead of `Cursor`.
+Yet another example would be some sort of data-mapper implementation. For example, I recently made an ODM (Object Data Mapper) for MongoDB using this pattern where I wrote a proxy around mongo classes while utilizing the magic method `  __call()  `. All the method calls were proxied to the original mongo class and result retrieved was returned as it is but in case of  `find` or `findOne` data was mapped to the required class objects and the object was returned instead of `Cursor`.
 
 #### Python
 
