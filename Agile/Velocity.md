@@ -5,7 +5,6 @@
 Agile : Velocity 
 ================
 
-
 **Velocity** is how a scrum team measures the amount of work they can complete in a typical sprint. Velocity is measured historically, from one sprint to the next. By tracking the number of story points the team can complete according to their own definition of done, they can build up a reliable and predictable sense of how long it will take them to complete new stories based on their relative point value.
 
 Keeping track of the velocity is the responsibility of the scrum master. At the end of each sprint demo, the scrum master should calculate the number of points that were estimated for the stories that were accepted as done during that sprint. This number should be added as a data point on the velocity chart for that sprint.
@@ -14,9 +13,10 @@ Velocity charts tend to start out jumping around from very high numbers to very 
 
 Over time, if the composition of the team stays consistent, a velocity chart that started off very erratic will start to find itself averaging toward a consistent value. Unlike many charts in a business environment, the point of the velocity chart isn't to see a constant increase, but rather to see the values converging around a consistent horizontal line. That line represents the amount of work the team can realistically and sustainably accomplish in a single sprint.
 
-
-
 People outside the scrum process may be confused about the nature of the velocity chart. From a management perspective, there may be an impulse to favor an increase in the amount of work a team is doing, and look for velocity to grow over time. But a velocity chart is intended to trend toward a horizontal average. You may hear executives talking about trying to increase the team's velocity, or celebrating a sprint in which the velocity was higher than typical sprints. Get ahead of these conversations by reminding everyone that the point of velocity tracking is to improve the team's ability to estimate how much work they can get done consistently and reliably. A velocity chart that shows a constant increase (or decrease) over time usually reflects a problem in the process.
+
+<img src="./attachments/1652268847577.jpg" alt="Scrum Velocity" />
+
 
 
 
@@ -48,7 +48,7 @@ CFD is one of the most advanced [analytics for Lean management](https://kanbaniz
 
 Its main purpose is to show you how stable your flow is and help you understand where you need to focus in order to make your process more predictable. It gives you both quantitative and qualitative insight into both past and existing problems and can visualize massive amounts of data.
 
-<kbd>![ALTTEXT](https://kanbanize.com/wp-content/uploads/website-images/kanban-resources/cumulative-flow-diagram-kanbanize.png)
+<kbd>![ALTTEXT](https://kanbanize.com/wp-content/uploads/website-images/kanban-resources/cumulative-flow-diagram-kanbanize.png)</kbd>
 
 
 How to read a Cumulative Flow Diagram (CFD) 
@@ -70,7 +70,7 @@ The number of days/weeks/months that have passed is the approximate average cycl
 
 > ***The distance between the lines of a CFD will show you the problems of your workflow.***
 
-<kbd><img src="./attachments/451819532.jpg" alt="">
+<img src="./attachments/451819532.jpg" alt="" />
 
 Team Velocity
 -------------
@@ -92,7 +92,7 @@ staying more-less even, except for the \"completed tasks\" ban, which
 shall be continuously getting taller, as the number of tasks done is
 hopefully always growing.
 
-<kbd>![Cumulative Flow Diagram by Kanban Tool](https://static.kanbantool.com/kanban+landing/kanban-cumulative-flow-diagram/kanban-tool-cumulative-flow-diagram.png)
+<kbd>![Cumulative Flow Diagram by Kanban Tool](https://static.kanbantool.com/kanban+landing/kanban-cumulative-flow-diagram/kanban-tool-cumulative-flow-diagram.png)</kbd>
 
 ### What to look out for
 

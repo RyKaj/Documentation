@@ -21,9 +21,9 @@ Using these insights into a Scrum-flavored RACI, we can build a RACI Matrix Temp
 
 This section provides best practice and examples of the Roles of Responsibility across Squads, Tribes, Chapters and Guilds and help shape a view of how each member contributes to responsibilities.
 
-<kbd><img src="./attachments/463513501.png" alt="">
-<kbd>![What is Scrum Team](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-scrum-team/sites/7/2018/10/what-is-scrum-team.png)
-<kbd>![What is Scrum Team](https://www.visual-paradigm.com/servlet/editor-content/scrum/how-scrum-team-works/sites/7/2018/12/what-is-a-scrum-team.png)
+<img src="./attachments/463513501.png" alt="" />
+<kbd>![What is Scrum Team](https://www.visual-paradigm.com/servlet/editor-content/scrum/what-is-scrum-team/sites/7/2018/10/what-is-scrum-team.png)</kbd>
+<kbd>![What is Scrum Team](https://www.visual-paradigm.com/servlet/editor-content/scrum/how-scrum-team-works/sites/7/2018/12/what-is-a-scrum-team.png)</kbd>
 
 
 

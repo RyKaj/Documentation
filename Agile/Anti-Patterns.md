@@ -63,7 +63,7 @@ Fake agile is "building the wrong thing righter". It doesn't matter whether you'
 Fake Agile versus True Agile
 ----------------------------
 
-<img src="./attachments/Fake-Agile-Timeline.webp" alt="fake agile timeline">
+<img src="./attachments/Fake-Agile-Timeline.webp" alt="fake agile timeline" />
 
 
 <table>
@@ -152,7 +152,7 @@ Fake Agile versus True Agile
 
 Product owners and scrum masters are there to fulfil key roles like reporting back to business owners and communicating with stakeholders, but their roles are fundamentally different to a typical project management position.
 
-<kbd><img src="./attachments/Scrum-Team-Agile.webp" alt=""></kbd>
+<img src="./attachments/Scrum-Team-Agile.webp" alt="" />
 
 This difference in managerial approach also highlights the difference in attitude towards punishment and fear in the workplace environment.
 
@@ -167,14 +167,14 @@ The two different mindsets have the de facto force of organizational laws
 In pursuit of \"true\" agile 
 ----------------------------
 
-<img src="./attachments/Agile-Mentality-Agile-Philosophy.webp" alt="agile mentality agile philosophy">
+<img src="./attachments/Agile-Mentality-Agile-Philosophy.webp" alt="agile mentality agile philosophy" />
 
 Transformation To Agile
 -----------------------
 
 As part of our \"Digital Transformation Done Right,\" series we are sharing our insights on how to best organize and execute digital change in organizations. These are written by experts who have really done the work, to help others on their change journeys.
 
-<img src="./attachments/DigitalTransformationLandscape.png" alt="Agile Transformation in the Digital Transformation Landscape">
+<img src="./attachments/DigitalTransformationLandscape.png" alt="Agile Transformation in the Digital Transformation Landscape" />
 
     Figure 1: Typical areas tackled in a digital transformation. Source: Riverflex series – Digital Transformation Done Right, February 2019.
 
@@ -216,7 +216,7 @@ There is a reason why your organization is embarking on this journey. Maybe a ne
 
 Don't underestimate the value of storytelling as it creates a much more emotional reaction than facts and figures, and helps individuals feel personally invested in the outcome. A good story is also more easily shared and commonly owned by a group of individuals, which helps with alignment. We suggest spending time working on the narrative: why is your transformation important? How will individuals contribute to your success? What does the happy ending look like? Keep telling the story over and over again so it seeps into the consciousness of the business.
 
-<img src="./attachments/Reasonsforadoptingagile.png" alt="Reasons for adopting agile">
+<img src="./attachments/Reasonsforadoptingagile.png" alt="Reasons for adopting agile" />
     Figure 2: Reasons for Adopting Agile*. Source: adapted from State of Agile, CollabNet VersionOne, 2018 
     *Respondents were able to select multiple options
 
@@ -815,7 +815,7 @@ Cloning Incomplete Work Items Instead of Carrying Them Over
 
 *A team has completed a sprint but "User Story X" is still not finished. The team wants to visualize the progress they've made on this story. On their task board they have a card for it. They rename it to "User Story X Part 1" and move it to Done. They also create a card named "User Story X Part 2" and put it in the next sprint. They don't manage to finish the story in the next sprint either. So they create "User Story X Part 3" and now move "Part 2" to Done. This exercise repeats itself a few more times.*
 
-*<kbd><img src="./attachments/1*-gdzLa7T3-l5Cez1gkNwPQ.jpeg" alt=""></kbd>
+*<img src="./attachments/1*-gdzLa7T3-l5Cez1gkNwPQ.jpeg" alt="" />
 
 This one I've seen quite a lot, usually with digital task trackers --- probably because the operation of copying is so cheap there. Whenever a team is not able to complete a story, they clone it to the next iteration. The original story becomes "part N" and gets closed and the clone is now "part N+1".
 
@@ -883,7 +883,7 @@ No Psychological Saftey
 -----------------
 The Retrospective is an endless cycle of blame and finger-pointing. (The team wins together; the team fails together. The blame game documents both the failure of the Scrum Master as the facilitator of the Retrospective and the Scrum team’s lack of maturity and communication skills.)
 
-<img src="./attachments/Blame-Game-Retrospective-Making-Your-Scrum-Work-6.jpg" alt="BlameGame">
+<img src="./attachments/Blame-Game-Retrospective-Making-Your-Scrum-Work-6.jpg" alt="BlameGame" />
 
 
 

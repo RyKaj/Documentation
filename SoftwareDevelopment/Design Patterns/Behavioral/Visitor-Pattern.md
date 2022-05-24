@@ -8,121 +8,59 @@
 
 ### Intent
 
-**Visitor** is a behavioral design pattern that lets you separate
-algorithms from the objects on which they operate.
+**Visitor** is a behavioral design pattern that lets you separate algorithms from the objects on which they operate.
 
-<kbd>![](./attachments/visitor/463530158.png)</kbd>
+<img src"./attachments/visitor/463530158.png" />
 
 ### Problem
 
-Imagine that your team develops an app which works with geographic
-information structured as one colossal graph. Each node of the graph may
-represent a complex entity such as a city, but also more granular things
-like industries, sightseeing areas, etc. The nodes are connected with
-others if there’s a road between the real objects that they represent.
-Under the hood, each node type is represented by its own class, while
-each specific node is an object.
+Imagine that your team develops an app which works with geographic information structured as one colossal graph. Each node of the graph may represent a complex entity such as a city, but also more granular things like industries, sightseeing areas, etc. The nodes are connected with others if there’s a road between the real objects that they represent. Under the hood, each node type is represented by its own class, while each specific node is an object.
 
-<kbd>![](./attachments/visitor/463530160.png)</kbd>
+<img src"./attachments/visitor/463530160.png" />
 
-At some point, you got a task to implement exporting the graph into XML
-format. At first, the job seemed pretty straightforward. You planned to
-add an export method to each node class and then leverage recursion to
-go over each node of the graph, executing the export method. The
-solution was simple and elegant: thanks to polymorphism, you weren’t
-coupling the code which called the export method to concrete classes of
-nodes.
+At some point, you got a task to implement exporting the graph into XML format. At first, the job seemed pretty straightforward. You planned to add an export method to each node class and then leverage recursion to go over each node of the graph, executing the export method. The solution was simple and elegant: thanks to polymorphism, you weren’t coupling the code which called the export method to concrete classes of nodes.
 
-Unfortunately, the system architect refused to allow you to alter
-existing node classes. He said that the code was already in production
-and he didn’t want to risk breaking it because of a potential bug in
-your changes.
+Unfortunately, the system architect refused to allow you to alter existing node classes. He said that the code was already in production and he didn’t want to risk breaking it because of a potential bug in your changes.
 
-<kbd>![](./attachments/visitor/463530161.png)</kbd>
+<img src"./attachments/visitor/463530161.png" />
 
-Besides, he questioned whether it makes sense to have the XML export
-code within the node classes. The primary job of these classes was to
-work with geodata. The XML export behavior would look alien there.
+Besides, he questioned whether it makes sense to have the XML export code within the node classes. The primary job of these classes was to work with geodata. The XML export behavior would look alien there.
 
-There was another reason for the refusal. It was highly likely that
-after this feature was implemented, someone from the marketing
-department would ask you to provide the ability to export into a
-different format, or request some other weird stuff. This would force
-you to change those precious and fragile classes again.
+There was another reason for the refusal. It was highly likely that after this feature was implemented, someone from the marketing department would ask you to provide the ability to export into a different format, or request some other weird stuff. This would force you to change those precious and fragile classes again.
 
 ### Solution
 
-The Visitor pattern suggests that you place the new behavior into a
-separate class called *visitor*, instead of trying to integrate it into
-existing classes. The original object that had to perform the behavior
-is now passed to one of the visitor’s methods as an argument, providing
-the method access to all necessary data contained within the object.
+The Visitor pattern suggests that you place the new behavior into a separate class called *visitor*, instead of trying to integrate it into existing classes. The original object that had to perform the behavior is now passed to one of the visitor’s methods as an argument, providing the method access to all necessary data contained within the object.
 
-Now, what if that behavior can be executed over objects of different
-classes? For example, in our case with XML export, the actual
-implementation will probably be a little bit different across various
-node classes.
+Now, what if that behavior can be executed over objects of different classes? For example, in our case with XML export, the actual implementation will probably be a little bit different across various node classes.
 
-But how exactly would we call these methods, especially when dealing
-with the whole graph? These methods have different signatures, so we
-can’t use polymorphism. To pick a proper visitor method that’s able to
-process a given object, we’d need to check its class. Doesn’t this sound
-like a nightmare?
+But how exactly would we call these methods, especially when dealing with the whole graph? These methods have different signatures, so we can’t use polymorphism. To pick a proper visitor method that’s able to process a given object, we’d need to check its class. Doesn’t this sound like a nightmare?
 
-You might ask, why don’t we use method overloading? That’s when you give
-all methods the same name, even if they support different sets of
-parameters. Unfortunately, even assuming that our programming language
-supports it at all (as Java and C\# do), it won’t help us. Since the
-exact class of a node object is unknown in advance, the overloading
-mechanism won’t be able to determine the correct method to execute.
-It’ll default to the method that takes an object of the base `Node`
-class.
+You might ask, why don’t we use method overloading? That’s when you give all methods the same name, even if they support different sets of parameters. Unfortunately, even assuming that our programming language supports it at all (as Java and C\# do), it won’t help us. Since the exact class of a node object is unknown in advance, the overloading mechanism won’t be able to determine the correct method to execute. It’ll default to the method that takes an object of the base `Node` class.
 
-However, the Visitor pattern addresses this problem. It uses a technique
-called [Double
-Dispatch](https://refactoring.guru/design-patterns/visitor-double-dispatch),
-which helps to execute the proper method on an object without cumbersome
-conditionals. Instead of letting the client select a proper version of
-the method to call, how about we delegate this choice to objects we’re
-passing to the visitor as an argument? Since the objects know their own
-classes, they’ll be able to pick a proper method on the visitor less
-awkwardly. They “accept” a visitor and tell it what visiting method
-should be executed.
+However, the Visitor pattern addresses this problem. It uses a technique called [Double Dispatch](https://refactoring.guru/design-patterns/visitor-double-dispatch), which helps to execute the proper method on an object without cumbersome conditionals. Instead of letting the client select a proper version of the method to call, how about we delegate this choice to objects we’re passing to the visitor as an argument? Since the objects know their own classes, they’ll be able to pick a proper method on the visitor less awkwardly. They “accept” a visitor and tell it what visiting method should be executed.
 
 ### Structure
 
-<kbd>![](./attachments/visitor/463530162.png)</kbd>
+<img src"./attachments/visitor/463530162.png" />
 
 ### Pseudocode
 
-In this example, the **Visitor** pattern adds XML export support to the
-class hierarchy of geometric shapes.
+In this example, the **Visitor** pattern adds XML export support to the class hierarchy of geometric shapes.
 
-<kbd>![](./attachments/visitor/463530159.png)</kbd>
+<img src"./attachments/visitor/463530159.png" />
 
 ### Real world example
 
-Consider someone visiting Dubai. They just need a way (i.e. visa) to
-enter Dubai. After arrival, they can come and visit any place in Dubai
-on their own without having to ask for permission or to do some leg work
-in order to visit any place here; just let them know of a place and they
-can visit it. Visitor pattern lets you do just that, it helps you add
-places to visit so that they can visit as much as they can without
-having to do any legwork.
+Consider someone visiting Dubai. They just need a way (i.e. visa) to enter Dubai. After arrival, they can come and visit any place in Dubai on their own without having to ask for permission or to do some leg work in order to visit any place here; just let them know of a place and they can visit it. Visitor pattern lets you do just that, it helps you add places to visit so that they can visit as much as they can without having to do any legwork.
 
 ### In plain words
 
-Visitor pattern lets you add further operations to objects without
-having to modify them.
+Visitor pattern lets you add further operations to objects without having to modify them.
 
 ### Wikipedia says
 
-In object-oriented programming and software engineering, the visitor
-design pattern is a way of separating an algorithm from an object
-structure on which it operates. A practical result of this separation is
-the ability to add new operations to existing object structures without
-modifying those structures. It is one way to follow the open/closed
-principle.
+In object-oriented programming and software engineering, the visitor design pattern is a way of separating an algorithm from an object structure on which it operates. A practical result of this separation is the ability to add new operations to existing object structures without modifying those structures. It is one way to follow the open/closed principle.
 
 ### Pros and Cons
 
@@ -159,9 +97,7 @@ principle.
 
 
 
-Let's take an example of a zoo simulation where we have several
-different kinds of animals and we have to make them Sound. Let's
-translate this using visitor pattern
+Let's take an example of a zoo simulation where we have several different kinds of animals and we have to make them Sound. Let's translate this using visitor pattern
 
 > 
 > 
@@ -272,12 +208,7 @@ And then it can be used as
 >
 > ```
 
-We could have done this simply by having an inheritance hierarchy for
-the animals but then we would have to modify the animals whenever we
-would have to add new actions to animals. But now we will not have to
-change them. For example, let's say we are asked to add the jump
-behavior to the animals, we can simply add that by creating a new
-visitor i.e.
+We could have done this simply by having an inheritance hierarchy for the animals but then we would have to modify the animals whenever we would have to add new actions to animals. But now we will not have to change them. For example, let's say we are asked to add the jump behavior to the animals, we can simply add that by creating a new visitor i.e.
 
 > 
 > 
@@ -326,9 +257,7 @@ And for the usage
 
 
 
-Let's take an example of a zoo simulation where we have several
-different kinds of animals and we have to make them Sound. Let's
-translate this using visitor pattern
+Let's take an example of a zoo simulation where we have several different kinds of animals and we have to make them Sound. Let's translate this using visitor pattern
 
 We have our implementations for the animals
 
@@ -402,11 +331,7 @@ And then it can be used as
 >                     
 > ```
 
-We could have done this simply by having a inheritance hierarchy for the
-animals but then we would have to modify the animals whenever we would
-have to add new actions to animals. But now we will not have to change
-them. For example, let's say we are asked to add the jump behavior to
-the animals, we can simply add that by creating a new visitor i.e.
+We could have done this simply by having a inheritance hierarchy for the animals but then we would have to modify the animals whenever we would have to add new actions to animals. But now we will not have to change them. For example, let's say we are asked to add the jump behavior to the animals, we can simply add that by creating a new visitor i.e.
 
 > 
 > 
@@ -449,9 +374,7 @@ And for the usage
 
 
 
-Let's take an example of a zoo simulation where we have several
-different kinds of animals and we have to make them Sound. Let's
-translate this using visitor pattern
+Let's take an example of a zoo simulation where we have several different kinds of animals and we have to make them Sound. Let's translate this using visitor pattern
 
 > 
 > 
@@ -560,12 +483,7 @@ translate this using visitor pattern
 >                 
 > ```
 
-We could have done this simply by having an inheritance hierarchy for
-the animals but then we would have to modify the animals whenever we
-would have to add new actions to animals. But now we will not have to
-change them. For example, let's say we are asked to add the jump
-behavior to the animals, we can simply add that by creating a new
-visitor i.e.
+We could have done this simply by having an inheritance hierarchy for the animals but then we would have to modify the animals whenever we would have to add new actions to animals. But now we will not have to change them. For example, let's say we are asked to add the jump behavior to the animals, we can simply add that by creating a new visitor i.e.
 
 > 
 > 
@@ -624,8 +542,7 @@ visitor i.e.
 > *TL;DR
 > Separates an algorithm from an object structure on which it operates.
 > 
-> An interesting recipe could be found in
-> Brian Jones, David Beazley "Python Cookbook" (2013):
+> An interesting recipe could be found in Brian Jones, David Beazley "Python Cookbook" (2013):
 > - "8.21. Implementing the Visitor Pattern"
 > - "8.22. Implementing the Visitor Pattern Without Recursion"
 > 

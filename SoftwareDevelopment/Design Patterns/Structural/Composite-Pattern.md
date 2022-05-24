@@ -10,100 +10,57 @@
 
 ### Intent
 
-**Composite** is a structural design pattern that lets you compose
-objects into tree structures and then work with these structures as if
-they were individual objects.
+**Composite** is a structural design pattern that lets you compose objects into tree structures and then work with these structures as if they were individual objects.
 
-<kbd>![](./attachments/composite/463530240.png)</kbd>
+<img src"./attachments/composite/463530240.png" />
 
 ### Problem
 
-Using the Composite pattern makes sense only when the core model of your
-app can be represented as a tree.
+Using the Composite pattern makes sense only when the core model of your app can be represented as a tree.
 
-For example, imagine that you have two types of objects: `Products` and
-`Boxes`. A `Box` can contain several `Products` as well as a number of
-smaller `Boxes`. These little `Boxes` can also hold some `Products` or
-even smaller `Boxes`, and so on.
+For example, imagine that you have two types of objects: `Products` and `Boxes`. A `Box` can contain several `Products` as well as a number of smaller `Boxes`. These little `Boxes` can also hold some `Products` or even smaller `Boxes`, and so on.
 
-Say you decide to create an ordering system that uses these classes.
-Orders could contain simple products without any wrapping, as well as
-boxes stuffed with products...and other boxes. How would you determine
-the total price of such an order?
+Say you decide to create an ordering system that uses these classes. Orders could contain simple products without any wrapping, as well as boxes stuffed with products...and other boxes. How would you determine the total price of such an order?
 
-<kbd>![](./attachments/composite/463530243.png)</kbd>
+<img src"./attachments/composite/463530243.png" />
 
-You could try the direct approach: unwrap all the boxes, go over all the
-products and then calculate the total. That would be doable in the real
-world; but in a program, it’s not as simple as running a loop. You have
-to know the classes of `Products` and `Boxes` you’re going through, the
-nesting level of the boxes and other nasty details beforehand. All of
-this makes the direct approach either too awkward or even impossible.
+You could try the direct approach: unwrap all the boxes, go over all the products and then calculate the total. That would be doable in the real world; but in a program, it’s not as simple as running a loop. You have to know the classes of `Products` and `Boxes` you’re going through, the nesting level of the boxes and other nasty details beforehand. All of this makes the direct approach either too awkward or even impossible.
 
 ### Solution
 
-The Composite pattern suggests that you work with `Products` and `Boxes`
-through a common interface which declares a method for calculating the
-total price.
+The Composite pattern suggests that you work with `Products` and `Boxes` through a common interface which declares a method for calculating the total price.
 
-How would this method work? For a product, it’d simply return the
-product’s price. For a box, it’d go over each item the box contains, ask
-its price and then return a total for this box. If one of these items
-were a smaller box, that box would also start going over its contents
-and so on, until the prices of all inner components were calculated. A
-box could even add some extra cost to the final price, such as packaging
-cost.
+How would this method work? For a product, it’d simply return the product’s price. For a box, it’d go over each item the box contains, ask its price and then return a total for this box. If one of these items were a smaller box, that box would also start going over its contents and so on, until the prices of all inner components were calculated. A box could even add some extra cost to the final price, such as packaging cost.
 
-<kbd>![](./attachments/composite/463530241.png)</kbd>
+<img src"./attachments/composite/463530241.png" />
 
-The greatest benefit of this approach is that you don’t need to care
-about the concrete classes of objects that compose the tree. You don’t
-need to know whether an object is a simple product or a sophisticated
-box. You can treat them all the same via the common interface. When you
-call a method, the objects themselves pass the request down the tree.
+The greatest benefit of this approach is that you don’t need to care about the concrete classes of objects that compose the tree. You don’t need to know whether an object is a simple product or a sophisticated box. You can treat them all the same via the common interface. When you call a method, the objects themselves pass the request down the tree.
 
 ### Structure
 
-<kbd>![](./attachments/composite/463530244.png)</kbd>
+<img src"./attachments/composite/463530244.png" />
 
 ### Pseudocode
 
-In this example, the **Composite** pattern lets you implement stacking
-of geometric shapes in a graphical editor.
+In this example, the **Composite** pattern lets you implement stacking of geometric shapes in a graphical editor.
 
-<kbd>![](./attachments/composite/463530242.png)</kbd>
+<img src"./attachments/composite/463530242.png" />
 
-The `CompoundGraphic` class is a container that can comprise any number
-of sub-shapes, including other compound shapes. A compound shape has the
-same methods as a simple shape. However, instead of doing something on
-its own, a compound shape passes the request recursively to all its
-children and “sums up” the result.
+The `CompoundGraphic` class is a container that can comprise any number of sub-shapes, including other compound shapes. A compound shape has the same methods as a simple shape. However, instead of doing something on its own, a compound shape passes the request recursively to all its children and “sums up” the result.
 
-The client code works with all shapes through the single interface
-common to all shape classes. Thus, the client doesn’t know whether it’s
-working with a simple shape or a compound one. The client can work with
-very complex object structures without being coupled to concrete classes
-that form that structure.
+The client code works with all shapes through the single interface common to all shape classes. Thus, the client doesn’t know whether it’s working with a simple shape or a compound one. The client can work with very complex object structures without being coupled to concrete classes that form that structure.
 
 ### Real world example
 
-Every organization is composed of employees. Each of the employees has
-the same features i.e. has a salary, has some responsibilities, may or
-may not report to someone, may or may not have some subordinates etc.
+Every organization is composed of employees. Each of the employees has the same features i.e. has a salary, has some responsibilities, may or may not report to someone, may or may not have some subordinates etc.
 
 ### In plain words
 
-Composite pattern lets clients treat the individual objects in a uniform
-manner.
+Composite pattern lets clients treat the individual objects in a uniform manner.
 
 ### Wikipedia says
 
-In software engineering, the composite pattern is a partitioning design
-pattern. The composite pattern describes that a group of objects is to
-be treated in the same way as a single instance of an object. The intent
-of a composite is to "compose" objects into tree structures to represent
-part-whole hierarchies. Implementing the composite pattern lets clients
-treat individual objects and compositions uniformly.
+In software engineering, the composite pattern is a partitioning design pattern. The composite pattern describes that a group of objects is to be treated in the same way as a single instance of an object. The intent of a composite is to "compose" objects into tree structures to represent part-whole hierarchies. Implementing the composite pattern lets clients treat individual objects and compositions uniformly.
 
 ### Pros and Cons
 
@@ -132,8 +89,7 @@ treat individual objects and compositions uniformly.
 
 ### Programmatic Example
 
-Taking our employees example from above. Here we have different employee
-types
+Taking our employees example from above. Here we have different employee types
 
 #### C\#
 
@@ -196,8 +152,7 @@ types
 >                     
 > ```
 
-Then we have an organization which consists of several different types
-of employees
+Then we have an organization which consists of several different types of employees
 
 > 
 > 
@@ -248,9 +203,7 @@ And then it can be used as
 #### Java
 
 
-
-Taking our sentence example from above. Here we have the base class and
-different printable types
+Taking our sentence example from above. Here we have the base class and different printable types
 
 ``` 
 public abstract class LetterComposite {
@@ -357,8 +310,7 @@ elfMessage.print(); // Much wind pours from your mouth.
 
 
 
-Taking our employees example from above. Here we have different employee
-types
+Taking our employees example from above. Here we have different employee types
 
 ``` 
 /*
@@ -428,8 +380,7 @@ class Designer {
                 
 ```
 
-Then we have an organization which consists of several different types
-of employees
+Then we have an organization which consists of several different types of employees
 
 ``` 
 class Organization {
@@ -474,7 +425,6 @@ console.log("Net salaries: " , organization.getNetSalaries()) // Net Salaries: 2
 
 
 #### PHP
-
 
 
 ``` 
@@ -550,8 +500,7 @@ class Designer implements Employee
                 
 ```
 
-Then we have an organization which consists of several different types
-of employees
+Then we have an organization which consists of several different types of employees
 
 ``` 
 class Organization
@@ -604,23 +553,13 @@ echo "Net salaries: " . $organization->getNetSalaries(); // Net Salaries: 27000
 
 """
 *What is this pattern about?
-The composite pattern describes a group of objects that is treated the
-same way as a single instance of the same type of object. The intent of
-a composite is to "compose" objects into tree structures to represent
-part-whole hierarchies. Implementing the composite pattern lets clients
-treat individual objects and compositions uniformly.
+The composite pattern describes a group of objects that is treated the same way as a single instance of the same type of object. The intent of a composite is to "compose" objects into tree structures to represent part-whole hierarchies. Implementing the composite pattern lets clients treat individual objects and compositions uniformly.
 
 *What does this example do?
-The example implements a graphic class，which can be either an ellipse
-or a composition of several graphics. Every graphic can be printed.
+The example implements a graphic class，which can be either an ellipse or a composition of several graphics. Every graphic can be printed.
 
 *Where is the pattern used practically?
-In graphics editors a shape can be basic or complex. An example of a
-simple shape is a line, where a complex shape is a rectangle which is
-made of four line objects. Since shapes have many operations in common
-such as rendering the shape to screen, and since shapes follow a
-part-whole hierarchy, composite pattern can be used to enable the
-program to deal with all shapes uniformly.
+In graphics editors a shape can be basic or complex. An example of a simple shape is a line, where a complex shape is a rectangle which is made of four line objects. Since shapes have many operations in common such as rendering the shape to screen, and since shapes follow a part-whole hierarchy, composite pattern can be used to enable the program to deal with all shapes uniformly.
 
 *References:
 https://en.wikipedia.org/wiki/Composite_pattern

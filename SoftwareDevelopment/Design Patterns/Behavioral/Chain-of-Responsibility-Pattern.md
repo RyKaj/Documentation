@@ -9,121 +9,63 @@
 
 ### Intent
 
-**Chain of Responsibility** is a behavioral design pattern that lets you
-pass requests along a chain of handlers. Upon receiving a request, each
-handler decides either to process the request or to pass it to the next
-handler in the chain.
+**Chain of Responsibility** is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
 
-<kbd>![](./attachments/chain/463529890.png)</kbd>
+<img src"./attachments/chain/463529890.png" />
 
 ### Problem
 
-Imagine that you’re working on an online ordering system. You want to
-restrict access to the system so only authenticated users can create
-orders. Also, users who have administrative permissions must have full
-access to all orders.
+Imagine that you’re working on an online ordering system. You want to restrict access to the system so only authenticated users can create orders. Also, users who have administrative permissions must have full access to all orders.
 
-After a bit of planning, you realized that these checks must be
-performed sequentially. The application can attempt to authenticate a
-user to the system whenever it receives a request that contains the
-user’s credentials. However, if those credentials aren’t correct and
-authentication fails, there’s no reason to proceed with any other
-checks.
+After a bit of planning, you realized that these checks must be performed sequentially. The application can attempt to authenticate a user to the system whenever it receives a request that contains the user’s credentials. However, if those credentials aren’t correct and authentication fails, there’s no reason to proceed with any other checks.
 
-<kbd>![](./attachments/chain/463529891.png)</kbd>
+<img src"./attachments/chain/463529891.png" />
 
-During the next few months, you implemented several more of those
-sequential checks.
+During the next few months, you implemented several more of those sequential checks.
 
-  - One of your colleagues suggested that it’s unsafe to pass raw data
-    straight to the ordering system. So you added an extra validation
-    step to sanitize the data in a request.
-  - Later, somebody noticed that the system is vulnerable to brute force
-    password cracking. To negate this, you promptly added a check that
-    filters repeated failed requests coming from the same IP address.
-  - Someone else suggested that you could speed up the system by
-    returning cached results on repeated requests containing the same
-    data. Hence, you added another check which lets the request pass
-    through to the system only if there’s no suitable cached response.
+  - One of your colleagues suggested that it’s unsafe to pass raw data straight to the ordering system. So you added an extra validation step to sanitize the data in a request.
+  - Later, somebody noticed that the system is vulnerable to brute force password cracking. To negate this, you promptly added a check that filters repeated failed requests coming from the same IP address.
+  - Someone else suggested that you could speed up the system by returning cached results on repeated requests containing the same data. Hence, you added another check which lets the request pass through to the system only if there’s no suitable cached response.
 
-<kbd>![](./attachments/chain/463529892.png)</kbd>
+<img src"./attachments/chain/463529892.png" />
 
 ### Solution
 
-Like many other behavioral design patterns, the **Chain of
-Responsibility** relies on transforming particular behaviors into
-stand-alone objects called *handlers*. In our case, each check should be
-extracted to its own class with a single method that performs the check.
-The request, along with its data, is passed to this method as an
-argument.
+Like many other behavioral design patterns, the **Chain of Responsibility** relies on transforming particular behaviors into stand-alone objects called *handlers*. In our case, each check should be extracted to its own class with a single method that performs the check. The request, along with its data, is passed to this method as an argument.
 
-The pattern suggests that you link these handlers into a chain. Each
-linked handler has a field for storing a reference to the next handler
-in the chain. In addition to processing a request, handlers pass the
-request further along the chain. The request travels along the chain
-until all handlers have had a chance to process it.
+The pattern suggests that you link these handlers into a chain. Each linked handler has a field for storing a reference to the next handler in the chain. In addition to processing a request, handlers pass the request further along the chain. The request travels along the chain until all handlers have had a chance to process it.
 
-Here’s the best part: a handler can decide not to pass the request
-further down the chain and effectively stop any further processing.
+Here’s the best part: a handler can decide not to pass the request further down the chain and effectively stop any further processing.
 
-In our example with ordering systems, a handler performs the processing
-and then decides whether to pass the request further down the chain.
-Assuming the request contains the right data, all the handlers can
-execute their primary behavior, whether it’s authentication checks or
-caching.
+In our example with ordering systems, a handler performs the processing and then decides whether to pass the request further down the chain. Assuming the request contains the right data, all the handlers can execute their primary behavior, whether it’s authentication checks or caching.
 
-<kbd>![](./attachments/chain/463529893.png)</kbd>
+<img src"./attachments/chain/463529893.png" />
 
-However, there’s a slightly different approach (and it’s a bit more
-canonical) in which, upon receiving a request, a handler decides whether
-it can process it. If it can, it doesn’t pass the request any further.
-So it’s either only one handler that processes the request or none at
-all. This approach is very common when dealing with events in stacks of
-elements within a graphical user interface.
+However, there’s a slightly different approach (and it’s a bit more canonical) in which, upon receiving a request, a handler decides whether it can process it. If it can, it doesn’t pass the request any further. So it’s either only one handler that processes the request or none at all. This approach is very common when dealing with events in stacks of elements within a graphical user interface.
 
-For instance, when a user clicks a button, the event propagates through
-the chain of GUI elements that starts with the button, goes along its
-containers (like forms or panels), and ends up with the main application
-window. The event is processed by the first element in the chain that’s
-capable of handling it. This example is also noteworthy because it shows
-that a chain can always be extracted from an object tree.
+For instance, when a user clicks a button, the event propagates through the chain of GUI elements that starts with the button, goes along its containers (like forms or panels), and ends up with the main application window. The event is processed by the first element in the chain that’s capable of handling it. This example is also noteworthy because it shows that a chain can always be extracted from an object tree.
 
-<kbd>![](./attachments/chain/463529894.png)</kbd>
+<img src"./attachments/chain/463529894.png"/>
 
 ### Structure
 
-<kbd>![](./attachments/chain/463529895.png)</kbd>
+<img src"./attachments/chain/463529895.png" />
 
 ## Pseudocode
 
-<kbd>![](./attachments/chain/463529896.png)</kbd>
+<img src"./attachments/chain/463529896.png" />
 
 ### Real world example
 
-For example, you have three payment methods (A, B and C) setup in your
-account; each having a different amount in it. A has 100 USD, B has 300
-USD and C having 1000 USD and the preference for payments is chosen
-as A then B then C. You try to purchase something that is worth 210
-USD. Using Chain of Responsibility, first of all account A will be
-checked if it can make the purchase, if yes purchase will be made and
-the chain will be broken. If not, request will move forward to
-account B checking for amount if yes chain will be broken otherwise
-the request will keep forwarding till it finds the suitable handler.
-Here A, B and C are links of the chain and the whole phenomenon is Chain
-of Responsibility.
+For example, you have three payment methods (A, B and C) setup in your account; each having a different amount in it. A has 100 USD, B has 300 USD and C having 1000 USD and the preference for payments is chosen as A then B then C. You try to purchase something that is worth 210 USD. Using Chain of Responsibility, first of all account A will be checked if it can make the purchase, if yes purchase will be made and the chain will be broken. If not, request will move forward to account B checking for amount if yes chain will be broken otherwise the request will keep forwarding till it finds the suitable handler. Here A, B and C are links of the chain and the whole phenomenon is Chain of Responsibility.
 
 ### In plain words
 
-It helps building a chain of objects. Request enters from one end and
-keeps going from object to object till it finds the suitable handler.
+It helps building a chain of objects. Request enters from one end and keeps going from object to object till it finds the suitable handler.
 
 ### Wikipedia says
 
-In object-oriented design, the chain-of-responsibility pattern is a
-design pattern consisting of a source of command objects and a series of
-processing objects. Each processing object contains logic that defines
-the types of command objects that it can handle; the rest are passed to
-the next processing object in the chain.
+In object-oriented design, the chain-of-responsibility pattern is a design pattern consisting of a source of command objects and a series of processing objects. Each processing object contains logic that defines the types of command objects that it can handle; the rest are passed to the next processing object in the chain.
 
 ### Pros and Cons
 
@@ -160,9 +102,7 @@ the next processing object in the chain.
 
 
 
-Translating our account example above. First of all we have a base
-account having the logic for chaining the accounts together and some
-accounts
+Translating our account example above. First of all we have a base account having the logic for chaining the accounts together and some accounts
 
 > 
 > 
@@ -225,8 +165,7 @@ accounts
 >                     
 > ```
 
-Now let's prepare the chain using the links defined above (i.e. Bank,
-Paypal, Bitcoin)
+Now let's prepare the chain using the links defined above (i.e. Bank, Paypal, Bitcoin)
 
 > 
 > 
@@ -260,9 +199,7 @@ Paypal, Bitcoin)
 
 
 
-Translating our account example above. First of all we have a base
-account having the logic for chaining the accounts together and some
-accounts
+Translating our account example above. First of all we have a base account having the logic for chaining the accounts together and some accounts
 
 > 
 > 
@@ -315,8 +252,7 @@ accounts
 >                         
 > ```
 
-Now let's prepare the chain using the links defined above (i.e. Bank,
-Paypal, Bitcoin)
+Now let's prepare the chain using the links defined above (i.e. Bank, Paypal, Bitcoin)
 
 > 
 > 
@@ -352,9 +288,7 @@ Paypal, Bitcoin)
 
 
 
-Translating our account example above. First of all we have a base
-account having the logic for chaining the accounts together and some
-accounts
+Translating our account example above. First of all we have a base account having the logic for chaining the accounts together and some accounts
 
 > 
 > 

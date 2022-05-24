@@ -3,7 +3,7 @@
 
 # DevOps : Kubernetes Design Patterns
 
-  <kbd><img src="./attachments/471992249.png" alt=""></kbd>
+<img src="./attachments/471992249.png" alt="" />
 
 
 
@@ -171,7 +171,7 @@ An _Operator_ is a Controller that uses a CustomResourceDefinitions to encapsu
 
 Kubernetes is the new application portability layer and the common denominator among everybody on the cloud. If you are a software developer or architect, the odds are that Kubernetes will become part of your life in one form or another. Learning about the Kubernetes patterns described here will change the way you think about this platform. I believe that Kubernetes and the concepts originating from it will become as fundamental as object-oriented programming concepts.
 
-</kbd><img src="./attachments/471992250.png" alt=""></kbd>
+<img src="./attachments/471992250.png" alt="" />
 
   
 

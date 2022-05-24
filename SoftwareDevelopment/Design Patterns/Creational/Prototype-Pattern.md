@@ -10,80 +10,54 @@
 
 ### Intent
 
-**Prototype** is a creational design pattern that lets you copy existing
-objects without making your code dependent on their classes.
+**Prototype** is a creational design pattern that lets you copy existing objects without making your code dependent on their classes.
 
-<kbd>![](./attachments/prototype/463530194.png)</kbd>
+<img src"./attachments/prototype/463530194.png" />
 
 ### Problem
 
-Say you have an object, and you want to create an exact copy of it. How
-would you do it? First, you have to create a new object of the same
-class. Then you have to go through all the fields of the original object
-and copy their values over to the new object.
+Say you have an object, and you want to create an exact copy of it. How would you do it? First, you have to create a new object of the same class. Then you have to go through all the fields of the original object and copy their values over to the new object.
 
-Nice\! But there’s a catch. Not all objects can be copied that way
-because some of the object’s fields may be private and not visible from
-outside of the object itself.
+Nice\! But there’s a catch. Not all objects can be copied that way because some of the object’s fields may be private and not visible from outside of the object itself.
 
-<kbd>![](./attachments/prototype/463530196.png)</kbd>
+<img src"./attachments/prototype/463530196.png" />
 
-There’s one more problem with the direct approach. Since you have to
-know the object’s class to create a duplicate, your code becomes
-dependent on that class. If the extra dependency doesn’t scare you,
-there’s another catch. Sometimes you only know the interface that the
-object follows, but not its concrete class, when, for example, a
-parameter in a method accepts any objects that follow some interface.
+There’s one more problem with the direct approach. Since you have to know the object’s class to create a duplicate, your code becomes dependent on that class. If the extra dependency doesn’t scare you, there’s another catch. Sometimes you only know the interface that the object follows, but not its concrete class, when, for example, a parameter in a method accepts any objects that follow some interface.
 
 ### Solution
 
-The Prototype pattern delegates the cloning process to the actual
-objects that are being cloned. The pattern declares a common interface
-for all objects that support cloning. This interface lets you clone an
-object without coupling your code to the class of that object. Usually,
-such an interface contains just a single `clone` method.
+The Prototype pattern delegates the cloning process to the actual objects that are being cloned. The pattern declares a common interface for all objects that support cloning. This interface lets you clone an object without coupling your code to the class of that object. Usually, such an interface contains just a single `clone` method.
 
-The implementation of the `clone` method is very similar in all classes.
-The method creates an object of the current class and carries over all
-of the field values of the old object into the new one. You can even
-copy private fields because most programming languages let objects
-access private fields of other objects that belong to the same class.
+The implementation of the `clone` method is very similar in all classes. The method creates an object of the current class and carries over all of the field values of the old object into the new one. You can even copy private fields because most programming languages let objects access private fields of other objects that belong to the same class.
 
-An object that supports cloning is called a *prototype*. When your
-objects have dozens of fields and hundreds of possible configurations,
-cloning them might serve as an alternative to subclassing.
+An object that supports cloning is called a *prototype*. When your objects have dozens of fields and hundreds of possible configurations, cloning them might serve as an alternative to subclassing.
 
-<kbd>![](./attachments/prototype/463530197.png)</kbd>
+<img src"./attachments/prototype/463530197.png" />
 
-Here’s how it works: you create a set of objects, configured in various
-ways. When you need an object like the one you’ve configured, you just
-clone a prototype instead of constructing a new object from scratch.
+Here’s how it works: you create a set of objects, configured in various ways. When you need an object like the one you’ve configured, you just clone a prototype instead of constructing a new object from scratch.
 
 ### Structure
 
 #### Base Implementation
 
-<kbd>![](./attachments/prototype/463530199.png)</kbd>
+<img src"./attachments/prototype/463530199.png" />
 
 #### Prototype Registry Implementation
 
-<kbd>![](./attachments/prototype/463530200.png</kbd>
+<img src"./attachments/prototype/463530200.png" />
 
 ### Pseudocode
 
 In this example, the **Prototype** pattern lets you produce exact copies
 of geometric objects, without coupling the code to their classes.
 
-<kbd>![](./attachments/prototype/463530195.png)</kbd>
+<img src"./attachments/prototype/463530195.png" />
 
-All shape classes follow the same interface, which provides a cloning
-method. A subclass may call the parent’s cloning method before copying
-its own field values to the resulting object.
+All shape classes follow the same interface, which provides a cloning method. A subclass may call the parent’s cloning method before copying its own field values to the resulting object.
 
 ### Real world example
 
-Remember dolly? The sheep that was cloned\! Lets not get into the
-details but the key point here is that it is all about cloning
+Remember dolly? The sheep that was cloned\! Lets not get into the details but the key point here is that it is all about cloning
 
 ### In plain words
 
@@ -91,13 +65,9 @@ Create object based on an existing object through cloning.
 
 ### Wikipedia says
 
-The prototype pattern is a creational design pattern in software
-development. It is used when the type of objects to create is determined
-by a prototypical instance, which is cloned to produce new objects.
+The prototype pattern is a creational design pattern in software development. It is used when the type of objects to create is determined by a prototypical instance, which is cloned to produce new objects.
 
-In short, it allows you to create a copy of an existing object and
-modify it to your needs, instead of going through the trouble of
-creating an object from scratch and setting it up.
+In short, it allows you to create a copy of an existing object and modify it to your needs, instead of going through the trouble of creating an object from scratch and setting it up.
 
 ### Pros and Cons
 
@@ -183,8 +153,7 @@ Then it can be cloned like below
 
 
 
-In Java, it can be easily done by implementing `Cloneable` and
-overriding `clone` from `Object`
+In Java, it can be easily done by implementing `Cloneable` and overriding `clone` from `Object`
 
 ``` 
 class Sheep implements Cloneable {
@@ -269,8 +238,7 @@ echo $cloned->getCategory(); // Mountain sheep
             
 ```
 
-Also you could use the magic method `__clone` to modify the cloning
-behavior.
+Also you could use the magic method `__clone` to modify the cloning behavior.
 
 #### Python
 
@@ -280,22 +248,14 @@ behavior.
 
 """
 *What is this pattern about?
-This patterns aims to reduce the number of classes required by an
-application. Instead of relying on subclasses it creates objects by
-copying a prototypical instance at run-time.
+This patterns aims to reduce the number of classes required by an application. Instead of relying on subclasses it creates objects by copying a prototypical instance at run-time.
 
-This is useful as it make it easier to derive new kinds of objects,
-when instances of the class have only a few different combinations of
-state, and when instantiation is expensive.
+This is useful as it make it easier to derive new kinds of objects, when instances of the class have only a few different combinations of state, and when instantiation is expensive.
 
 *What does this example do?
-When the number of prototypes in an application can vary, it can be
-useful to keep a Dispatcher (aka, Registry or Manager). This allows
-clients to query the Dispatcher for a prototype before cloning a new
-instance.
+When the number of prototypes in an application can vary, it can be useful to keep a Dispatcher (aka, Registry or Manager). This allows clients to query the Dispatcher for a prototype before cloning a new instance.
 
-Below provides an example of such Dispatcher, which contains three
-copies of the prototype: 'default', 'objecta' and 'objectb'.
+Below provides an example of such Dispatcher, which contains three copies of the prototype: 'default', 'objecta' and 'objectb'.
 
 *TL;DR
 Creates new object instances by cloning prototype.
@@ -353,6 +313,5 @@ if __name__ == '__main__':
 
 ### When to use?
 
-When an object is required that is similar to existing object or when
-the creation would be expensive as compared to cloning.
+When an object is required that is similar to existing object or when the creation would be expensive as compared to cloning.
 

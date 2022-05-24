@@ -8,129 +8,73 @@
 
 ### Intent
 
-**Template Method** is a behavioral design pattern that defines the
-skeleton of an algorithm in the superclass but lets subclasses override
-specific steps of the algorithm without changing its structure.
+**Template Method** is a behavioral design pattern that defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
 
-<kbd>![](./attachments/template/463530151.png)</kbd>
+<img src"./attachments/template/463530151.png" />
 
 ### Problem
 
-Imagine that you’re creating a data mining application that analyzes
-corporate documents. Users feed the app documents in various formats
-(PDF, DOC, CSV), and it tries to extract meaningful data from these docs
-in a uniform format.
+Imagine that you’re creating a data mining application that analyzes corporate documents. Users feed the app documents in various formats (PDF, DOC, CSV), and it tries to extract meaningful data from these docs in a uniform format.
 
-The first version of the app could work only with DOC files. In the
-following version, it was able to support CSV files. A month later, you
-“taught” it to extract data from PDF files.
+The first version of the app could work only with DOC files. In the following version, it was able to support CSV files. A month later, you “taught” it to extract data from PDF files.
 
-<kbd>![](./attachments/template/463530153.png)</kbd>
+<img src"./attachments/template/463530153.png" />
 
-At some point, you noticed that all three classes have a lot of similar
-code. While the code for dealing with various data formats was entirely
-different in all classes, the code for data processing and analysis is
-almost identical. Wouldn’t it be great to get rid of the code
-duplication, leaving the algorithm structure intact?
+At some point, you noticed that all three classes have a lot of similar code. While the code for dealing with various data formats was entirely different in all classes, the code for data processing and analysis is almost identical. Wouldn’t it be great to get rid of the code duplication, leaving the algorithm structure intact?
 
-There was another problem related to client code that used these
-classes. It had lots of conditionals that picked a proper course of
-action depending on the class of the processing object. If all three
-processing classes had a common interface or a base class, you’d be able
-to eliminate the conditionals in client code and use polymorphism when
-calling methods on a processing object.
+There was another problem related to client code that used these classes. It had lots of conditionals that picked a proper course of action depending on the class of the processing object. If all three processing classes had a common interface or a base class, you’d be able to eliminate the conditionals in client code and use polymorphism when calling methods on a processing object.
 
 ### Solution
 
-The Template Method pattern suggests that you break down an algorithm
-into a series of steps, turn these steps into methods, and put a series
-of calls to these methods inside a single “template method.” The steps
-may either be `abstract`, or have some default implementation. To use
-the algorithm, the client is supposed to provide its own subclass,
-implement all abstract steps, and override some of the optional ones if
-needed (but not the template method itself).
+The Template Method pattern suggests that you break down an algorithm into a series of steps, turn these steps into methods, and put a series of calls to these methods inside a single “template method.” The steps may either be `abstract`, or have some default implementation. To use the algorithm, the client is supposed to provide its own subclass, implement all abstract steps, and override some of the optional ones if needed (but not the template method itself).
 
-Let’s see how this will play out in our data mining app. We can create a
-base class for all three parsing algorithms. This class defines a
-template method consisting of a series of calls to various
-document-processing steps.
+Let’s see how this will play out in our data mining app. We can create a base class for all three parsing algorithms. This class defines a template method consisting of a series of calls to various document-processing steps.
 
-<kbd>![](./attachments/template/463530154.png)</kbd>
+<img src"./attachments/template/463530154.png" />
 
-At first, we can declare all steps `abstract`, forcing the subclasses to
-provide their own implementations for these methods. In our case,
-subclasses already have all necessary implementations, so the only thing
-we might need to do is adjust signatures of the methods to match the
-methods of the superclass.
+At first, we can declare all steps `abstract`, forcing the subclasses to provide their own implementations for these methods. In our case, subclasses already have all necessary implementations, so the only thing we might need to do is adjust signatures of the methods to match the methods of the superclass.
 
-Now, let’s see what we can do to get rid of the duplicate code. It looks
-like the code for opening/closing files and extracting/parsing data is
-different for various data formats, so there’s no point in touching
-those methods. However, implementation of other steps, such as analyzing
-the raw data and composing reports, is very similar, so it can be pulled
-up into the base class, where subclasses can share that code.
+Now, let’s see what we can do to get rid of the duplicate code. It looks like the code for opening/closing files and extracting/parsing data is different for various data formats, so there’s no point in touching those methods. However, implementation of other steps, such as analyzing the raw data and composing reports, is very similar, so it can be pulled up into the base class, where subclasses can share that code.
 
 As you can see, we’ve got two types of steps:
 
   - *abstract steps* must be implemented by every subclass
-  - *optional steps* already have some default implementation, but still
-	can be overridden if needed
+  - *optional steps* already have some default implementation, but still can be overridden if needed
 
-There’s another type of step, called *hooks*. A hook is an optional step
-with an empty body. A template method would work even if a hook isn’t
-overridden. Usually, hooks are placed before and after crucial steps of
-algorithms, providing subclasses with additional extension points for an
-algorithm.
+There’s another type of step, called *hooks*. A hook is an optional step with an empty body. A template method would work even if a hook isn’t overridden. Usually, hooks are placed before and after crucial steps of algorithms, providing subclasses with additional extension points for an algorithm.
 
-The template method approach can be used in mass housing construction.
-The architectural plan for building a standard house may contain several
-extension points that would let a potential owner adjust some details of
-the resulting house.
+The template method approach can be used in mass housing construction. The architectural plan for building a standard house may contain several extension points that would let a potential owner adjust some details of the resulting house.
 
-Each building step, such as laying the foundation, framing, building
-walls, installing plumbing and wiring for water and electricity, etc.,
-can be slightly changed to make the resulting house a little bit
-different from others.
+Each building step, such as laying the foundation, framing, building walls, installing plumbing and wiring for water and electricity, etc., can be slightly changed to make the resulting house a little bit different from others.
 
 ### Structure
 
-<kbd>![](./attachments/template/463530155.png)</kbd>
+<img src"./attachments/template/463530155.png" />
 
 ### Pseudocode
 
-In this example, the **Template Method** pattern provides a “skeleton”
-for various branches of artificial intelligence in a simple strategy
-video game.
+In this example, the **Template Method** pattern provides a “skeleton” for various branches of artificial intelligence in a simple strategy video game.
 
-<kbd>![](./attachments/template/463530152.png)</kbd>
+<img src"./attachments/template/463530152.png" />
 
 ### Real world example
 
-Suppose we are getting some house built. The steps for building might
-look like
+Suppose we are getting some house built. The steps for building might look like
 
   - Prepare the base of house
   - Build the walls
   - Add roof
   - Add other floors
 
-The order of these steps could never be changed i.e. you can't build the
-roof before building the walls etc but each of the steps could be
-modified for example walls can be made of wood or polyester or stone.
+The order of these steps could never be changed i.e. you can't build the roof before building the walls etc but each of the steps could be modified for example walls can be made of wood or polyester or stone.
 
 ### In plain words
 
-Template method defines the skeleton of how a certain algorithm could be
-performed, but defers the implementation of those steps to the children
-classes.
+Template method defines the skeleton of how a certain algorithm could be performed, but defers the implementation of those steps to the children classes.
 
 ### Wikipedia says
 
-In software engineering, the template method pattern is a behavioral
-design pattern that defines the program skeleton of an algorithm in an
-operation, deferring some steps to subclasses. It lets one redefine
-certain steps of an algorithm without changing the algorithm's
-structure.
+In software engineering, the template method pattern is a behavioral design pattern that defines the program skeleton of an algorithm in an operation, deferring some steps to subclasses. It lets one redefine certain steps of an algorithm without changing the algorithm's structure.
 
 ### Pros and Cons
 
@@ -177,12 +121,9 @@ structure.
 
 
 
-Imagine we have a build tool that helps us test, lint, build, generate
-build reports (i.e. code coverage reports, linting report etc) and
-deploy our app on the test server.
+Imagine we have a build tool that helps us test, lint, build, generate build reports (i.e. code coverage reports, linting report etc) and deploy our app on the test server.
 
-First of all we have our base class that specifies the skeleton for the
-build algorithm
+First of all we have our base class that specifies the skeleton for the build algorithm
 
 > 
 > 
@@ -290,12 +231,9 @@ And then it can be used as
 
 
 
-Imagine we have a build tool that helps us test, lint, build, generate
-build reports (i.e. code coverage reports, linting report etc) and
-deploy our app on the test server.
+Imagine we have a build tool that helps us test, lint, build, generate build reports (i.e. code coverage reports, linting report etc) and deploy our app on the test server.
 
-First of all we have our base class that specifies the skeleton for the
-build algorithm
+First of all we have our base class that specifies the skeleton for the build algorithm
 
 > 
 > 

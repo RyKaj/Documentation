@@ -324,7 +324,7 @@ As a DevOps team matures, they often find that their environment fills with a gr
 
 Savvy teams seek ways to avoid these kinds of failures. As a team learns, it progresses through various states of DevOps maturity. Sometimes those tools to avoid failure will be technical in nature, but just as often they’ll be changes to process or lines of communication. A team can have the best tech in the world, but if they have bad processes, they’re still going to fail as often as they succeed.
 
-<img src="./attachments/463532394.png" alt=""></kbd>
+<img src="./attachments/463532394.png" alt="" />
 
 
 **Release management** is the process of how a team coordinates the actual release of code to customers. Good code tends to pass through a variety of steps so that stakeholders throughout the business can verify its validity. Beyond simply designing and writing the code, code needs to go through testing, user acceptance, and compliance phases. These steps ensure that the code does what it says it does, that customers are happy with what it does, and that it doesn’t expose the company to risk.

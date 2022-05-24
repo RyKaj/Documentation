@@ -4,7 +4,7 @@
 # Continuous Deployment - Advance Deployment Patterns
   
 
-<img src="./attachments/451824926.jpg" alt=""></kbd>
+<img src="./attachments/451824926.jpg" alt=""  />
 
 
 ## Rolling Deployments
@@ -79,7 +79,7 @@ Instead, use load balancing. Load balancers enable you to set your new servers i
 Switching all your servers from an old version to a new one at once may result in downtime.  
 To avoid that, you can execute a “rolling update”. This means that instead of switching from all Blue servers to all Green servers in a single cut-off, you can work with an integrated environment. Add one new server, retire one old server, and repeat this until all the new servers are inside (see image below):
 
-<img src="./attachments/451819638.png" alt=""></kbd>
+<img src="./attachments/451819638.png" alt="" />
 
 One thing to make sure though, is that your new code can run alongside your old code, because they will be running together side-by-side (see more on backward and forward compatibility below).
 

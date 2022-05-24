@@ -30,7 +30,7 @@ The CMM is intended to be a cohesive, coherent, ordered set of incremental impro
 # **Levels**
 Levels serve as the pillars of the CMM visualization (Heat Map) shows the achieved levels and the improvement path towards continues improvement (Major level: L1, L3, L5; Transition level: L2, L4)
 
-<img src="./attachments/CapabilityMaturityModel.png" alt=""></kbd>
+<img src="./attachments/CapabilityMaturityModel.png" alt="" />
 
 <table>
 	<colgroup>
@@ -282,7 +282,7 @@ Levels serve as the pillars of the CMM visualization (Heat Map) shows the achiev
 
 Capability areas required for high performance technology, teams and process
 
-<img src="./attachments/TargetPracticesLevelMetrics.png" alt=""></kbd>
+<img src="./attachments/TargetPracticesLevelMetrics.png" alt="" />
 
 
 

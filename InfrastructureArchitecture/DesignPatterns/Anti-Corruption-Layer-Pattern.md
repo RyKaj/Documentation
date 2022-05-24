@@ -53,7 +53,7 @@ pattern to standardize and extend instrumentation. The proxy can monitor
 performance metrics such as latency or resource usage, and this
 monitoring happens in the same host environment as the application.
 
-<kbd><img src="./attachments/463533415.png" alt=""></kbd>
+<img src="./attachments/463533415.png" alt="" />
 
 Features that are offloaded to the ambassador can be managed
 independently of the application. You can update and modify the

@@ -1825,38 +1825,14 @@ An _Operator_ is a Controller that uses a CustomResourceDefinitions to encapsu
 
 Kubernetes is the new application portability layer and the common denominator among everybody on the cloud. If you are a software developer or architect, the odds are that Kubernetes will become part of your life in one form or another. Learning about the Kubernetes patterns described here will change the way you think about this platform. I believe that Kubernetes and the concepts originating from it will become as fundamental as object-oriented programming concepts.
 
-<kbd>![](./attachments/471992252/471992250.png)</kbd>
-
+<img src="./attachments/471992252/471992250.png" />
   
-
-
-  
-
-  
-
-  
+ 
 
 References
 
 *   [Developers Redhat - top 10 must know kubernetes design patterns](https://developers.redhat.com/blog/2020/05/11/top-10-must-know-kubernetes-design-patterns/)
 *   [Subscription packtpub - kubernetes design patterns](https://subscription.packtpub.com/book/virtualization_and_cloud/9781789619270/1/ch01lvl1sec10/kubernetes-design-patterns)
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-References
-
 *   [Kubernetes.io - what is kubernetes](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 *   [Arungupta.me - docker container anti patterns](http://blog.arungupta.me/docker-container-anti-patterns/)
 *   [https://vitalflux.com/container-design-patterns-kubernetes-pods-design](https://vitalflux.com/container-design-patterns-kubernetes-pods-design/)

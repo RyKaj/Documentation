@@ -7,12 +7,7 @@ Agile : Team Culture
 ====================
 
 
-Model of group development was first proposed by  [Bruce
-Tuckman](https://en.wikipedia.org/wiki/Bruce_Tuckman) in
-1965, who said that these phases are all necessary and inevitable in
-order for the team to grow, face up to challenges, tackle problems, find
-solutions, plan work, and deliver results. The theory remains a good
-explanation of team development and behavior.
+Model of group development was first proposed by  [Bruce Tuckman](https://en.wikipedia.org/wiki/Bruce_Tuckman) in 1965, who said that these phases are all necessary and inevitable in order for the team to grow, face up to challenges, tackle problems, find solutions, plan work, and deliver results. The theory remains a good explanation of team development and behavior.
 
 The progression is:
 -   Forming

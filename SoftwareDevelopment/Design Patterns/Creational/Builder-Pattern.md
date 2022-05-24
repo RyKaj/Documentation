@@ -10,169 +10,83 @@
 
 ### Intent
 
-**Builder** is a creational design pattern that lets you construct
-complex objects step by step. The pattern allows you to produce
-different types and representations of an object using the same
-construction code.
+**Builder** is a creational design pattern that lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
 
-<kbd>![](./attachments/builder/463530184.png)</kbd>
+<img src"./attachments/builder/463530184.png" />
 
 ### Problem
 
-Imagine a complex object that requires laborious, step-by-step
-initialization of many fields and nested objects. Such initialization
-code is usually buried inside a monstrous constructor with lots of
-parameters. Or even worse: scattered all over the client code.
+Imagine a complex object that requires laborious, step-by-step initialization of many fields and nested objects. Such initialization code is usually buried inside a monstrous constructor with lots of parameters. Or even worse: scattered all over the client code.
 
-<kbd>![](./attachments/builder/463530188.png)</kbd>
+<img src"./attachments/builder/463530188.png" />
 
-For example, let’s think about how to create a `House` object. To build
-a simple house, you need to construct four walls and a floor, install a
-door, fit a pair of windows, and build a roof. But what if you want a
-bigger, brighter house, with a backyard and other goodies (like a
-heating system, plumbing, and electrical wiring)?
+For example, let’s think about how to create a `House` object. To build a simple house, you need to construct four walls and a floor, install a door, fit a pair of windows, and build a roof. But what if you want a bigger, brighter house, with a backyard and other goodies (like a heating system, plumbing, and electrical wiring)?
 
-The simplest solution is to extend the base `House` class and create a
-set of subclasses to cover all combinations of the parameters. But
-eventually you’ll end up with a considerable number of subclasses. Any
-new parameter, such as the porch style, will require growing this
-hierarchy even more.
+The simplest solution is to extend the base `House` class and create a set of subclasses to cover all combinations of the parameters. But eventually you’ll end up with a considerable number of subclasses. Any new parameter, such as the porch style, will require growing this hierarchy even more.
 
-There’s another approach that doesn’t involve breeding subclasses. You
-can create a giant constructor right in the base `House` class with all
-possible parameters that control the house object. While this approach
-indeed eliminates the need for subclasses, it creates another problem.
+There’s another approach that doesn’t involve breeding subclasses. You can create a giant constructor right in the base `House` class with all possible parameters that control the house object. While this approach indeed eliminates the need for subclasses, it creates another problem.
 
-<kbd>![](./attachments/builder/463530189.png)</kbd>
+<img src"./attachments/builder/463530189.png" />
 
-In most cases most of the parameters will be unused, making [the
-constructor calls pretty
-ugly](https://refactoring.guru/smells/long-parameter-list) . For
-instance, only a fraction of houses have swimming pools, so the
-parameters related to swimming pools will be useless nine times out of
-ten.
+In most cases most of the parameters will be unused, making [the constructor calls pretty ugly](https://refactoring.guru/smells/long-parameter-list) . For instance, only a fraction of houses have swimming pools, so the parameters related to swimming pools will be useless nine times out of ten.
 
 ### Solution
 
-The Builder pattern suggests that you extract the object construction
-code out of its own class and move it to separate objects called
-*builders*.
+The Builder pattern suggests that you extract the object construction code out of its own class and move it to separate objects called *builders*.
 
-<kbd>![](./attachments/builder/463530190.png)</kbd>
+<img src"./attachments/builder/463530190.png" />
 
-The pattern organizes object construction into a set of steps (
-`buildWalls`, `buildDoor`, etc.). To create an object, you execute a
-series of these steps on a builder object. The important part is that
-you don’t need to call all of the steps. You can call only those steps
-that are necessary for producing a particular configuration of an
-object.
+The pattern organizes object construction into a set of steps ( `buildWalls`, `buildDoor`, etc.). To create an object, you execute a series of these steps on a builder object. The important part is that you don’t need to call all of the steps. You can call only those steps that are necessary for producing a particular configuration of an object.
 
-Some of the construction steps might require different implementation
-when you need to build various representations of the product. For
-example, walls of a cabin may be built of wood, but the castle walls
-must be built with stone.
+Some of the construction steps might require different implementation when you need to build various representations of the product. For example, walls of a cabin may be built of wood, but the castle walls must be built with stone.
 
-In this case, you can create several different builder classes that
-implement the same set of building steps, but in a different manner.
-Then you can use these builders in the construction process (i.e., an
-ordered set of calls to the building steps) to produce different kinds
-of objects.
+In this case, you can create several different builder classes that implement the same set of building steps, but in a different manner. Then you can use these builders in the construction process (i.e., an  ordered set of calls to the building steps) to produce different kinds of objects.
 
-<kbd>![](./attachments/builder/463530185.png)</kbd>
+<img src"./attachments/builder/463530185.png" />
 
-For example, imagine a builder that builds everything from wood and
-glass, a second one that builds everything with stone and iron and a
-third one that uses gold and diamonds. By calling the same set of steps,
-you get a regular house from the first builder, a small castle from the
-second and a palace from the third. However, this would only work if the
-client code that calls the building steps is able to interact with
-builders using a common interface.
+For example, imagine a builder that builds everything from wood and glass, a second one that builds everything with stone and iron and a third one that uses gold and diamonds. By calling the same set of steps, you get a regular house from the first builder, a small castle from the second and a palace from the third. However, this would only work if the client code that calls the building steps is able to interact with builders using a common interface.
 
 ### Director
 
-You can go further and extract a series of calls to the builder steps
-you use to construct a product into a separate class called *director*.
-The director class defines the order in which to execute the building
-steps, while the builder provides the implementation for those steps.
+You can go further and extract a series of calls to the builder steps you use to construct a product into a separate class called *director*. The director class defines the order in which to execute the building steps, while the builder provides the implementation for those steps.
 
-<kbd>![](./attachments/builder/463530186.png)</kbd>
+<img src"./attachments/builder/463530186.png" />
 
-Having a director class in your program isn’t strictly necessary. You
-can always call the building steps in a specific order directly from the
-client code. However, the director class might be a good place to put
-various construction routines so you can reuse them across your program.
+Having a director class in your program isn’t strictly necessary. You can always call the building steps in a specific order directly from the client code. However, the director class might be a good place to put various construction routines so you can reuse them across your program.
 
-In addition, the director class completely hides the details of product
-construction from the client code. The client only needs to associate a
-builder with a director, launch the construction with the director, and
-get the result from the builder.
+In addition, the director class completely hides the details of product construction from the client code. The client only needs to associate a builder with a director, launch the construction with the director, and get the result from the builder.
 
 ### Structure
 
-<kbd>![](./attachments/builder/463530191.png)</kbd>
+<img src"./attachments/builder/463530191.png" />
 
 ### Pseudocode
 
-This example of the **Builder** pattern illustrates how you can reuse
-the same object construction code when building different types of
-products, such as cars, and create the corresponding manuals for them.
+This example of the **Builder** pattern illustrates how you can reuse the same object construction code when building different types of products, such as cars, and create the corresponding manuals for them.
 
-<kbd>![](./attachments/builder/463530187.png)</kbd>
+<img src"./attachments/builder/463530187.png" />
 
-A car is a complex object that can be constructed in a hundred different
-ways. Instead of bloating the `Car` class with a huge constructor, we
-extracted the car assembly code into a separate car builder class. This
-class has a set of methods for configuring various parts of a car.
+A car is a complex object that can be constructed in a hundred different ways. Instead of bloating the `Car` class with a huge constructor, we extracted the car assembly code into a separate car builder class. This class has a set of methods for configuring various parts of a car.
 
-If the client code needs to assemble a special, fine-tuned model of a
-car, it can work with the builder directly. On the other hand, the
-client can delegate the assembly to the director class, which knows how
-to use a builder to construct several of the most popular models of
-cars.
+If the client code needs to assemble a special, fine-tuned model of a car, it can work with the builder directly. On the other hand, the client can delegate the assembly to the director class, which knows how to use a builder to construct several of the most popular models of cars.
 
-You might be shocked, but every car needs a manual (seriously, who reads
-them?). The manual describes every feature of the car, so the details in
-the manuals vary across the different models. That’s why it makes sense
-to reuse an existing construction process for both real cars and their
-respective manuals. Of course, building a manual isn’t the same as
-building a car, and that’s why we must provide another builder class
-that specializes in composing manuals. This class implements the same
-building methods as its car-building sibling, but instead of crafting
-car parts, it describes them. By passing these builders to the same
-director object, we can construct either a car or a manual.
+You might be shocked, but every car needs a manual (seriously, who reads them?). The manual describes every feature of the car, so the details in the manuals vary across the different models. That’s why it makes sense to reuse an existing construction process for both real cars and their respective manuals. Of course, building a manual isn’t the same as building a car, and that’s why we must provide another builder class that specializes in composing manuals. This class implements the same building methods as its car-building sibling, but instead of crafting car parts, it describes them. By passing these builders to the same director object, we can construct either a car or a manual.
 
-The final part is fetching the resulting object. A metal car and a paper
-manual, although related, are still very different things. We can’t
-place a method for fetching results in the director without coupling the
-director to concrete product classes. Hence, we obtain the result of the
-construction from the builder which performed the job.
+The final part is fetching the resulting object. A metal car and a paper manual, although related, are still very different things. We can’t place a method for fetching results in the director without coupling the director to concrete product classes. Hence, we obtain the result of the construction from the builder which performed the job.
 
 ### Real world example
 
-Imagine you are at Hardee's and you order a specific deal, lets say,
-"Big Hardee" and they hand it over to you without *any questions*; this
-is the example of simple factory. But there are cases when the creation
-logic might involve more steps. For example you want a customized Subway
-deal, you have several options in how your burger is made e.g what bread
-do you want? what types of sauces would you like? What cheese would you
-want? etc. In such cases builder pattern comes to the rescue.
+Imagine you are at Hardee's and you order a specific deal, lets say, "Big Hardee" and they hand it over to you without *any questions*; this is the example of simple factory. But there are cases when the creation  logic might involve more steps. For example you want a customized Subway deal, you have several options in how your burger is made e.g what bread do you want? what types of sauces would you like? What cheese would you want? etc. In such cases builder pattern comes to the rescue.
 
 ### In plain words
 
-Allows you to create different flavors of an object while avoiding
-constructor pollution. Useful when there could be several flavors of an
-object. Or when there are a lot of steps involved in creation of an
-object.
+Allows you to create different flavors of an object while avoiding constructor pollution. Useful when there could be several flavors of an object. Or when there are a lot of steps involved in creation of an object.
 
 ### Wikipedia says
 
-The builder pattern is an object creation software design pattern with
-the intentions of finding a solution to the telescoping constructor
-anti-pattern.
+The builder pattern is an object creation software design pattern with the intentions of finding a solution to the telescoping constructor anti-pattern.
 
-Having said that let me add a bit about what telescoping constructor
-anti-pattern is. At one point or the other we have all seen a
-constructor like below:
+Having said that let me add a bit about what telescoping constructor anti-pattern is. At one point or the other we have all seen a constructor like below:
 
 #### C\#
 
@@ -208,11 +122,7 @@ public function __construct($size, $cheese = true, $pepperoni = true, $tomato = 
 
 
 
-As you can see; the number of constructor parameters can quickly get out
-of hand and it might become difficult to understand the arrangement of
-parameters. Plus this parameter list could keep on growing if you would
-want to add more options in future. This is called telescoping
-constructor anti-pattern.
+As you can see; the number of constructor parameters can quickly get out of hand and it might become difficult to understand the arrangement of parameters. Plus this parameter list could keep on growing if you would want to add more options in future. This is called telescoping constructor anti-pattern.
 
 ### Pros and Cons
 
@@ -245,8 +155,7 @@ constructor anti-pattern.
 
 ### Programmatic Example
 
-The sane alternative is to use the builder pattern. First of all we have
-our burger that we want to make
+The sane alternative is to use the builder pattern. First of all we have our burger that we want to make
 
 #### C\#
 
@@ -529,27 +438,18 @@ $burger = (new BurgerBuilder(14))
 
 """
 *What is this pattern about?
-It decouples the creation of a complex object and its representation,
-so that the same process can be reused to build objects from the same
-family.
-This is useful when you must separate the specification of an object
-from its actual representation (generally for abstraction).
+It decouples the creation of a complex object and its representation, so that the same process can be reused to build objects from the same family.
+This is useful when you must separate the specification of an object from its actual representation (generally for abstraction).
 
 *What does this example do?
 
-The first example achieves this by using an abstract base
-class for a building, where the initializer (__init__ method) specifies the
-steps needed, and the concrete subclasses implement these steps.
+The first example achieves this by using an abstract base class for a building, where the initializer (__init__ method) specifies the steps needed, and the concrete subclasses implement these steps.
 
-In other programming languages, a more complex arrangement is sometimes
-necessary. In particular, you cannot have polymorphic behaviour in a constructor in C++ -
+In other programming languages, a more complex arrangement is sometimes necessary. In particular, you cannot have polymorphic behaviour in a constructor in C++ -
 see https://stackoverflow.com/questions/1453131/how-can-i-get-polymorphic-behavior-in-a-c-constructor
-- which means this Python technique will not work. The polymorphism
-required has to be provided by an external, already constructed
-instance of a different class.
+- which means this Python technique will not work. The polymorphism required has to be provided by an external, already constructed instance of a different class.
 
-In general, in Python this won't be necessary, but a second example showing
-this kind of arrangement is also included.
+In general, in Python this won't be necessary, but a second example showing this kind of arrangement is also included.
 
 *Where is the pattern used practically?
 
@@ -642,10 +542,6 @@ if __name__ == "__main__":
 
 ### When to use?
 
-When there could be several flavors of an object and to avoid the
-constructor telescoping. The key difference from the factory pattern is
-that; factory pattern is to be used when the creation is a one step
-process while builder pattern is to be used when the creation is a multi
-step process.
+When there could be several flavors of an object and to avoid the constructor telescoping. The key difference from the factory pattern is that; factory pattern is to be used when the creation is a one step process while builder pattern is to be used when the creation is a multi step process.
 
 

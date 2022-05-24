@@ -9,118 +9,71 @@
 
 ### Intent
 
-**Adapter** is a structural design pattern that allows objects with
-incompatible interfaces to collaborate.
+**Adapter** is a structural design pattern that allows objects with incompatible interfaces to collaborate.
 
-<kbd>![](./attachments/adapter/463530256.png)</kbd>
+<img src"./attachments/adapter/463530256.png" />
 
 ### Problem
 
-Imagine that you’re creating a stock market monitoring app. The app
-downloads the stock data from multiple sources in XML format and then
-displays nice-looking charts and diagrams for the user.
+Imagine that you’re creating a stock market monitoring app. The app downloads the stock data from multiple sources in XML format and then displays nice-looking charts and diagrams for the user.
 
-At some point, you decide to improve the app by integrating a smart
-3rd-party analytics library. But there’s a catch: the analytics library
-only works with data in JSON format.
+At some point, you decide to improve the app by integrating a smart 3rd-party analytics library. But there’s a catch: the analytics library only works with data in JSON format.
 
-<kbd>![](./attachments/adapter/463530258.png)</kbd>
+<img src"./attachments/adapter/463530258.png" />
 
-You could change the library to work with XML. However, this might break
-some existing code that relies on the library. And worse, you might not
-have access to the library’s source code in the first place, making this
-approach impossible.
+You could change the library to work with XML. However, this might break some existing code that relies on the library. And worse, you might not have access to the library’s source code in the first place, making this approach impossible.
 
 ### Solution
 
-You can create an *adapter*. This is a special object that converts the
-interface of one object so that another object can understand it.
+You can create an *adapter*. This is a special object that converts the interface of one object so that another object can understand it.
 
-An adapter wraps one of the objects to hide the complexity of conversion
-happening behind the scenes. The wrapped object isn’t even aware of the
-adapter. For example, you can wrap an object that operates in meters and
-kilometers with an adapter that converts all of the data to imperial
-units such as feet and miles.
+An adapter wraps one of the objects to hide the complexity of conversion happening behind the scenes. The wrapped object isn’t even aware of the adapter. For example, you can wrap an object that operates in meters and kilometers with an adapter that converts all of the data to imperial units such as feet and miles.
 
-Adapters can not only convert data into various formats but can also
-help objects with different interfaces collaborate. Here’s how it works:
+Adapters can not only convert data into various formats but can also help objects with different interfaces collaborate. Here’s how it works:
 
-1.  The adapter gets an interface, compatible with one of the existing
-    objects.
-2.  Using this interface, the existing object can safely call the
-    adapter’s methods.
-3.  Upon receiving a call, the adapter passes the request to the second
-    object, but in a format and order that the second object expects.
+1.  The adapter gets an interface, compatible with one of the existing objects.
+2.  Using this interface, the existing object can safely call the adapter’s methods.
+3.  Upon receiving a call, the adapter passes the request to the second object, but in a format and order that the second object expects.
 
-Sometimes it’s even possible to create a two-way adapter that can
-convert the calls in both directions.
+Sometimes it’s even possible to create a two-way adapter that can convert the calls in both directions.
 
-<kbd>![](./attachments/adapter/463530259.png)</kbd>
+<img src"./attachments/adapter/463530259.png" />
 
-Let’s get back to our stock market app. To solve the dilemma of
-incompatible formats, you can create XML-to-JSON adapters for every
-class of the analytics library that your code works with directly. Then
-you adjust your code to communicate with the library only via these
-adapters. When an adapter receives a call, it translates the incoming
-XML data into a JSON structure and passes the call to the appropriate
-methods of a wrapped analytics object.
+Let’s get back to our stock market app. To solve the dilemma of incompatible formats, you can create XML-to-JSON adapters for every class of the analytics library that your code works with directly. Then you adjust your code to communicate with the library only via these adapters. When an adapter receives a call, it translates the incoming XML data into a JSON structure and passes the call to the appropriate methods of a wrapped analytics object.
 
-When you travel from the US to Europe for the first time, you may get a
-surprise when trying to charge your laptop. The power plug and sockets
-standards are different in different countries. That’s why your US plug
-won’t fit a German socket. The problem can be solved by using a power
-plug adapter that has the American-style socket and the European-style
-plug.
+When you travel from the US to Europe for the first time, you may get a surprise when trying to charge your laptop. The power plug and sockets standards are different in different countries. That’s why your US plug won’t fit a German socket. The problem can be solved by using a power plug adapter that has the American-style socket and the European-style plug.
 
 ### Structure
 
 #### Object adapter
 
-This implementation uses the object composition principle: the adapter
-implements the interface of one object and wraps the other one. It can
-be implemented in all popular programming languages.
+This implementation uses the object composition principle: the adapter implements the interface of one object and wraps the other one. It can be implemented in all popular programming languages.
 
-<kbd>![](./attachments/adapter/463530261.png)</kbd>
+<img src"./attachments/adapter/463530261.png" />
 
 #### Class adapter
 
-This implementation uses inheritance: the adapter inherits interfaces
-from both objects at the same time. Note that this approach can only be
-implemented in programming languages that support multiple inheritance,
-such as C++.
+This implementation uses inheritance: the adapter inherits interfaces from both objects at the same time. Note that this approach can only be implemented in programming languages that support multiple inheritance, such as C++.
 
-<kbd>![](./attachments/adapter/463530260.png)</kbd>
+<img src"./attachments/adapter/463530260.png" />
 
 ### Pseudocode
 
-This example of the **Adapter** pattern is based on the classic conflict
-between square pegs and round holes.
+This example of the **Adapter** pattern is based on the classic conflict between square pegs and round holes.
 
-<kbd>![](./attachments/adapter/463530257.png)</kbd>
+<img src"./attachments/adapter/463530257.png" />
 
 ### Real world example
 
-Consider that you have some pictures in your memory card and you need to
-transfer them to your computer. In order to transfer them you need some
-kind of adapter that is compatible with your computer ports so that you
-can attach memory card to your computer. In this case card reader is an
-adapter. Another example would be the famous power adapter; a three
-legged plug can't be connected to a two pronged outlet, it needs to use
-a power adapter that makes it compatible with the two pronged outlet.
-Yet another example would be a translator translating words spoken by
-one person to another
+Consider that you have some pictures in your memory card and you need to transfer them to your computer. In order to transfer them you need some kind of adapter that is compatible with your computer ports so that you can attach memory card to your computer. In this case card reader is an adapter. Another example would be the famous power adapter; a three legged plug can't be connected to a two pronged outlet, it needs to use a power adapter that makes it compatible with the two pronged outlet. Yet another example would be a translator translating words spoken by one person to another
 
 ### In plain words
 
-Adapter pattern lets you wrap an otherwise incompatible object in an
-adapter to make it compatible with another class.
+Adapter pattern lets you wrap an otherwise incompatible object in an adapter to make it compatible with another class.
 
 ### Wikipedia says
 
-In software engineering, the adapter pattern is a software design
-pattern that allows the interface of an existing class to be used as
-another interface. It is often used to make existing classes work with
-others without modifying their source code.
+In software engineering, the adapter pattern is a software design pattern that allows the interface of an existing class to be used as another interface. It is often used to make existing classes work with others without modifying their source code.
 
 ### Pros and Cons
 
@@ -155,8 +108,7 @@ others without modifying their source code.
 
 Consider a game where there is a hunter and he hunts lions.
 
-First we have an interface `Lion` that all types of lions have to
-implement
+First we have an interface `Lion` that all types of lions have to implement
 
 > interface ILion { void Roar(); } class AfricanLion : ILion { public
 > void Roar() {} } class AsiaLion : ILion { public void Roar() { } }
@@ -173,10 +125,7 @@ And hunter expects any implementation of `Lion` interface to hunt.
 >                     
 > ```
 
-Now let's say we have to add a `WildDog` in our game so that hunter can
-hunt that also. But we can't do that directly because dog has a
-different interface. To make it compatible for our hunter, we will have
-to create an adapter that is compatible
+Now let's say we have to add a `WildDog` in our game so that hunter can hunt that also. But we can't do that directly because dog has a different interface. To make it compatible for our hunter, we will have to create an adapter that is compatible
 
 > 
 > 
@@ -238,8 +187,7 @@ First we have interfaces `RowingBoat` and `FishingBoat`
 >                     
 > ```
 
-And captain expects an implementation of `RowingBoat` interface to be
-able to move
+And captain expects an implementation of `RowingBoat` interface to be able to move
 
 > 
 > 
@@ -258,10 +206,7 @@ able to move
 >                     
 > ```
 
-Now let's say the pirates are coming and our captain needs to escape but
-there is only fishing boat available. We need to create an adapter that
-allows the captain to operate the fishing boat with his rowing boat
-skills.
+Now let's say the pirates are coming and our captain needs to escape but there is only fishing boat available. We need to create an adapter that allows the captain to operate the fishing boat with his rowing boat skills.
 
 > 
 > 
@@ -299,8 +244,7 @@ And now the `Captain` can use the `FishingBoat` to escape the pirates.
 
 Consider a game where there is a hunter and he hunts lions.
 
-First we have an interface `Lion` that all types of lions have to
-implement
+First we have an interface `Lion` that all types of lions have to implement
 
 ``` 
 /*
@@ -330,10 +274,7 @@ class Hunter {
                 
 ```
 
-Now let's say we have to add a `WildDog` in our game so that hunter can
-hunt that also. But we can't do that directly because dog has a
-different interface. To make it compatible for our hunter, we will have
-to create an adapter that is compatible
+Now let's say we have to add a `WildDog` in our game so that hunter can hunt that also. But we can't do that directly because dog has a different interface. To make it compatible for our hunter, we will have to create an adapter that is compatible
 
 ``` 
 // This needs to be added to the game
@@ -375,8 +316,7 @@ hunter.hunt(wildDogAdapter)
 
 Consider a game where there is a hunter and he hunts lions.
 
-First we have an interface  `Lion` that all types of lions have to
-implement interface
+First we have an interface  `Lion` that all types of lions have to implement interface
 
 ``` 
                                                            
@@ -406,10 +346,7 @@ class Hunter
                 
 ```
 
-Now let's say we have to add a `WildDog` in our game so that hunter can
-hunt that also. But we can't do that directly because dog has a
-different interface. To make it compatible for our hunter, we will have
-to create an adapter that is compatible
+Now let's say we have to add a `WildDog` in our game so that hunter can hunt that also. But we can't do that directly because dog has a different interface. To make it compatible for our hunter, we will have to create an adapter that is compatible
 
 ``` 
 // This needs to be added to the game
@@ -456,24 +393,14 @@ $hunter->hunt($wildDogAdapter);
 
 """
 *What is this pattern about?
-The Adapter pattern provides a different interface for a class. We can
-think about it as a cable adapter that allows you to charge a phone
-somewhere that has outlets in a different shape. Following this idea,
-the Adapter pattern is useful to integrate classes that couldn't be
-integrated due to their incompatible interfaces.
+The Adapter pattern provides a different interface for a class. We can think about it as a cable adapter that allows you to charge a phone somewhere that has outlets in a different shape. Following this idea, the Adapter pattern is useful to integrate classes that couldn't be integrated due to their incompatible interfaces.
 
 *What does this example do?
 
-The example has classes that represent entities (Dog, Cat, Human, Car)
-that make different noises. The Adapter class provides a different
-interface to the original methods that make such noises. So the
-original interfaces (e.g., bark and meow) are available under a
-different name: make_noise.
+The example has classes that represent entities (Dog, Cat, Human, Car) that make different noises. The Adapter class provides a different interface to the original methods that make such noises. So the original interfaces (e.g., bark and meow) are available under a different name: make_noise.
 
 *Where is the pattern used practically?
-The Grok framework uses adapters to make objects work with a
-particular API without modifying the objects themselves:
-http://grok.zope.org/doc/current/grok_overview.html#adapters
+The Grok framework uses adapters to make objects work with a particular API without modifying the objects themselves: http://grok.zope.org/doc/current/grok_overview.html#adapters
 
 *References:
 http://ginstrom.com/scribbles/2008/11/06/generic-adapter-class-in-python/

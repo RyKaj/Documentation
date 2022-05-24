@@ -5,6 +5,7 @@
   - [Leadership](Leadership.md)
       - [Managers Path](ManagersPath.md)
       - [1:1 Purpose and Questions](OneOnOneQnA.md)
+      - [GROW Model ](GROWModel.md)
       - [Individual Motivation Priority](IndividualMotivationPriority.md)
       - [21 Irrefutable Laws of Leadership](21-Irrefutable-Laws-of-Leadership.md)
       - [Anti-Manager](Anti-Manager.md)
