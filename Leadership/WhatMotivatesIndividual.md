@@ -17,6 +17,6 @@ I usually ask the team individually to rank the list below to provide insight on
 
 Based off the results, custom my 1:1 to help that individual. 
 
-[`Excel Chart.xlsx`](Resources/Team%20Motivation.xlsx)
+[`Excel Chart.xlsx`](attachments/Team%20Motivation.xlsx)
 
 I also created a Miro: https://miro.com/app/board/uXjVOG6jzo0=/
