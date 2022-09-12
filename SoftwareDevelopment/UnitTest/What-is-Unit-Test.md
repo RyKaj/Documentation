@@ -7,7 +7,7 @@ Unit testing is a proven technique for ensuring software quality, with
 plenty of benefits. Here are (more than) a few great reasons to unit
 test:
 
-  - Unit testing **validates**that each piece of your software not only
+  - Unit testing **validates** that each piece of your software not only
     works properly today, but continues to work in the future, providing
     a solid foundation for future development.
   - Unit testing **identifies defects at early stages** of the
@@ -37,7 +37,7 @@ So please consider my following best-practice recommendations on how to
 write clean, maintainable, automated tests that give you all the
 benefits of unit testing, with a minimum amount of time and effort.
 
-## Less Tiem Performing Functional Tests
+## Less Time Performing Functional Tests
 
 Functional tests are expensive. They typically involve opening up the
 application and performing a series of steps that you (or someone else),
